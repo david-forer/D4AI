@@ -1,0 +1,70 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About">
+	<main>
+		<h1>About <span class="text-gradient">Me</span></h1>
+		<div class="content">
+			<p>Hello! I'm a web developer passionate about creating amazing websites.</p>
+			<h2>My Skills</h2>
+			<ul>
+				<li>Web Development</li>
+				<li>UI/UX Design</li>
+				<li>Problem Solving</li>
+			</ul>
+			<h2>Experience</h2>
+			<p>I've been working in web development for several years, focusing on creating user-friendly and performant websites.</p>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.content {
+		background: #23262d;
+		padding: 2rem;
+		border-radius: 8px;
+	}
+	h2 {
+		color: rgb(var(--accent-light));
+		margin-top: 2rem;
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	li {
+		margin: 0.5rem 0;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+	li:before {
+		content: "→";
+		position: absolute;
+		left: 0;
+		color: rgb(var(--accent-light));
+	}
+</style>

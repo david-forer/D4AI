@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="HTML Page">
+	<main>
+		<h1>Pure HTML Page</h1>
+		<div class="content">
+			<h2>Welcome to my website</h2>
+			<p>This is a regular HTML page built with Astro.</p>
+			<a href="/" class="button">Go Home</a>
+			<a href="/blog" class="button">Visit Blog</a>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.content {
+		background: #23262d;
+		padding: 2rem;
+		border-radius: 8px;
+		margin-top: 2rem;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.button {
+		display: inline-block;
+		padding: 0.5rem 1rem;
+		background: rgb(var(--accent));
+		color: white;
+		text-decoration: none;
+		border-radius: 4px;
+		margin-right: 1rem;
+		transition: background-color 0.2s;
+	}
+	.button:hover {
+		background: rgb(var(--accent-light));
+	}
+</style>

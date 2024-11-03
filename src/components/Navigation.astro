@@ -1,0 +1,48 @@
+---
+---
+<nav>
+  <div class="nav-content">
+    <a href="/" class="logo">My Site</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/contact">Contact</a>
+      <a href="/blog">Blog</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  nav {
+    background: #23262d;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+  }
+  .nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(var(--accent-light));
+    text-decoration: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover {
+    color: rgb(var(--accent-light));
+  }
+</style>
