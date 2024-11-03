@@ -1,6 +1,5 @@
 ---
 import { useStoryblokApi } from '@storyblok/astro'
-import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
 import Layout from '../../layouts/Layout.astro'
 
 export async function getStaticPaths() {
@@ -17,8 +16,11 @@ export async function getStaticPaths() {
 }
 
 const { story } = Astro.props;
+
+// Add this line to inspect Storyblok data in the terminal console
+console.log('Storyblok content:', story.content);
 ---
 
 <Layout title={story.content.title}>
-  <StoryblokComponent blok={story.content} />
+  <p>Check the console output for Storyblok data.</p>
 </Layout>
