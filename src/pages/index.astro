@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Features from '../components/Features.astro';
+import Container from '../components/Container.astro';
 ---
 
 <Layout title="Welcome">
@@ -22,6 +24,8 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 			</div>
 		</div>
+		<Features />
+		<Container />
 	</main>
 </Layout>
 
@@ -29,9 +33,9 @@ import Layout from '../layouts/Layout.astro';
 	main {
 		margin: auto;
 		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
+		width: 100%;
+		max-width: calc(100% - 1rem);
+		color: rgb(255, 255, 255);
 		font-size: 20px;
 		line-height: 1.6;
 	}
