@@ -1,73 +1,470 @@
 ---
+// src/pages/index.astro - Homepage for AI SEO Operations
 import Layout from '../layouts/Layout.astro';
 import Features from '../components/Features.astro';
 import Container from '../components/Container.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Welcome">
-	<main>
-		<h1>Welcome to <span class="text-gradient">My Site</span></h1>
-		<div class="content">
-			<p>This is my awesome website built with Astro!</p>
-			<div class="features">
-				<div class="feature">
-					<h3>Fast ⚡</h3>
-					<p>Built with speed in mind</p>
-				</div>
-				<div class="feature">
-					<h3>Simple 🎯</h3>
-					<p>Easy to use and maintain</p>
-				</div>
-				<div class="feature">
-					<h3>Powerful 💪</h3>
-					<p>All the features you need</p>
-				</div>
-			</div>
-		</div>
-		<Features />
-		<Container />
-	</main>
-</Layout>
+<Layout title="AI SEO Operations | Master AI SEO with Operational Excellence">
+  <div class="bg-gray-50 overflow-hidden">
+    <!-- Hero Section -->
+    <section class="relative pt-16 pb-20 md:pt-24 md:pb-32 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-5xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+                Tired of Scattered AI Efforts? Master AI SEO Operations.
+              </h1>
+              <p class="text-xl text-blue-100 mb-8">
+                Implement AI in your SEO systematically with <span class="font-bold">The SEO Ops Framework™</span> -- your proven path from chaotic tactics to predictable, scalable results. Systems Beat Scattered Strategies.
+              </p>
+              <a href="/resources/checklist" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-md transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                Download Your Free SEO Ops Checklist
+              </a>
+            </div>
+            <div class="hidden md:block">
+              <div class="relative">
+                <div class="absolute inset-0 bg-blue-600 rounded-full opacity-10 blur-2xl"></div>
+                <img src="/images/seo-ops-framework.svg" alt="The SEO Ops Framework™" class="relative z-10 mx-auto max-w-md" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="fill-gray-50">
+          <path d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,224C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+      </div>
+    </section>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 100%;
-		max-width: calc(100% - 1rem);
-		color: rgb(255, 255, 255);
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.content {
-		background: #23262d;
-		padding: 2rem;
-		border-radius: 8px;
-	}
-	.features {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		gap: 2rem;
-		margin-top: 2rem;
-	}
-	.feature {
-		text-align: center;
-	}
-	.feature h3 {
-		color: rgb(var(--accent-light));
-	}
-</style>
+      <!-- Problem/Pain Point Section -->
+      <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+              Is Your AI SEO Implementation Stuck in Chaos?
+            </h2>
+            <p class="text-lg text-gray-700 mb-12 text-center">
+              You're investing in powerful AI tools, but are you seeing the strategic results you need? 
+              Many ambitious teams find themselves grappling with:
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+              <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                <h3 class="font-bold text-xl mb-3 text-gray-800">Process Fragmentation</h3>
+                <p class="text-gray-600">
+                  Multiple AI tools used inconsistently across teams, leading to duplicated effort and missed opportunities.
+                </p>
+              </div>
+              
+              <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-orange-500">
+                <h3 class="font-bold text-xl mb-3 text-gray-800">Implementation Hurdles</h3>
+                <p class="text-gray-600">
+                  Difficulty translating AI insights into actionable SEO tasks and scaling content operations effectively.
+                </p>
+              </div>
+              
+              <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+                <h3 class="font-bold text-xl mb-3 text-gray-800">Measurement Gaps</h3>
+                <p class="text-gray-600">
+                  Struggling to attribute real performance gains to AI initiatives or define meaningful KPIs beyond tool usage.
+                </p>
+              </div>
+              
+              <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                <h3 class="font-bold text-xl mb-3 text-gray-800">Strategic Disconnect</h3>
+                <p class="text-gray-600">
+                  Choosing AI tools tactically without a clear operational strategy or alignment with core business objectives.
+                </p>
+              </div>
+              
+              <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                <h3 class="font-bold text-xl mb-3 text-gray-800">Team Friction</h3>
+                <p class="text-gray-600">
+                  Siloed workflows between content and SEO specialists, hampered by undocumented processes and resistance to change.
+                </p>
+              </div>
+            </div>
+            
+            <p class="text-xl font-semibold text-center text-gray-700">
+              Sound familiar? You're not alone. The excitement around AI often overshadows the need for operational rigor.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solution/Framework Introduction Section -->
+      <section class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gray-800">
+              Introducing The SEO Ops Framework™: <br>
+              <span class="text-blue-600">Your Blueprint for AI SEO Success</span>
+            </h2>
+            <p class="text-lg text-gray-700 mb-10">
+              Stop chasing shiny AI objects or relying on disconnected SEO tactics. 
+              Start building a high-performance <strong>operational engine</strong>. 
+              The <strong>SEO Ops Framework™</strong> provides a structured, 7-stage process 
+              designed specifically to integrate AI effectively and systematically into your 
+              <em>entire</em> SEO workflow.
+            </p>
+          </div>
+          
+          <!-- 7 Stage Framework Visual -->
+          <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-7 gap-4 mb-12">
+              <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                <div class="h-12 w-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span class="font-bold">1</span>
+                </div>
+                <h3 class="font-semibold text-sm md:text-base">Intake & Audit</h3>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                <div class="h-12 w-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span class="font-bold">2</span>
+                </div>
+                <h3 class="font-semibold text-sm md:text-base">Tool Selection</h3>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                <div class="h-12 w-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span class="font-bold">3</span>
+                </div>
+                <h3 class="font-semibold text-sm md:text-base">Content Production</h3>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                <div class="h-12 w-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span class="font-bold">4</span>
+                </div>
+                <h3 class="font-semibold text-sm md:text-base">On-Page SOPs</h3>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                <div class="h-12 w-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span class="font-bold">5</span>
+                </div>
+                <h3 class="font-semibold text-sm md:text-base">Content Refresh</h3>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                <div class="h-12 w-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span class="font-bold">6</span>
+                </div>
+                <h3 class="font-semibold text-sm md:text-base">Reporting</h3>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                <div class="h-12 w-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span class="font-bold">7</span>
+                </div>
+                <h3 class="font-semibold text-sm md:text-base">Maintenance</h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="max-w-4xl mx-auto text-center">
+            <p class="text-lg text-gray-700">
+              We focus on establishing robust <strong>operations first</strong>, ensuring your 
+              technology investments deliver measurable value, not just more complexity. 
+              This process-first, tool-second approach moves you beyond random acts of AI to a 
+              cohesive, efficient, and results-driven <strong>operation</strong>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits/Value Proposition Section -->
+      <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gray-800">
+              Go From AI Confusion to Operational Clarity & Predictable Results
+            </h2>
+          </div>
+          
+          <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600 flex items-start">
+                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-xl mb-2 text-gray-800">Achieve Predictable Growth</h3>
+                  <p class="text-gray-600">
+                    Move from inconsistent results to a systematic approach that drives reliable SEO performance.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600 flex items-start">
+                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-xl mb-2 text-gray-800">Scale Effectively</h3>
+                  <p class="text-gray-600">
+                    Confidently scale your AI-enhanced content and optimization efforts without sacrificing quality or consistency.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600 flex items-start">
+                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-xl mb-2 text-gray-800">Measure What Matters</h3>
+                  <p class="text-gray-600">
+                    Implement clear KPIs and attribution models to track the <em>real</em> impact of AI on your bottom line.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600 flex items-start">
+                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-xl mb-2 text-gray-800">Reduce Team Friction</h3>
+                  <p class="text-gray-600">
+                    Foster collaboration with standardized workflows, clear roles, and documented processes everyone can follow.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-md border-t-4 border-blue-600 flex items-start">
+                <div class="flex-shrink-0 bg-blue-100 p-3 rounded-full mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-bold text-xl mb-2 text-gray-800">Maximize AI Tool ROI</h3>
+                  <p class="text-gray-600">
+                    Ensure your chosen tools are integrated strategically and utilized effectively within a robust operational structure.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lead Magnet Section -->
+      <section class="py-16 md:py-24 bg-blue-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+              <div class="order-2 md:order-1">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+                  Get Started: Download the Free SEO Ops Checklist
+                </h2>
+                <p class="text-lg text-gray-700 mb-6">
+                  Ready to identify the critical gaps in your current AI SEO approach? 
+                  This essential checklist walks you through the <strong>7 core processes</strong> 
+                  every team needs to master for successful AI implementation.
+                </p>
+                
+                <ul class="mb-8 space-y-4">
+                  <li class="flex items-start">
+                    <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Assess your current operational maturity.</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Pinpoint key areas for improvement.</span>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Take the crucial first step towards building a winning AI SEO operation.</span>
+                  </li>
+                </ul>
+                
+                <a href="/resources/checklist" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-md transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                  Download Your Checklist Now
+                </a>
+              </div>
+              
+              <div class="order-1 md:order-2">
+                <div class="relative mx-auto max-w-sm">
+                  <div class="absolute inset-0 bg-blue-600 rounded-lg opacity-10 transform rotate-3"></div>
+                  <div class="relative bg-white p-2 rounded-lg shadow-xl transform -rotate-3">
+                    <img src="/images/seo-ops-checklist.png" alt="SEO Ops Checklist" class="rounded-md" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Overview Section -->
+      <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gray-800">
+              How We Help You Implement the Framework
+            </h2>
+            <p class="text-lg text-gray-700 mb-10">
+              We provide strategic guidance and hands-on services to build your AI SEO 
+              operational maturity across all 7 stages:
+            </p>
+          </div>
+          
+          <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+              <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <div class="h-12 w-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                  </svg>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-gray-800">AI SEO Audits & Gap Analysis</h3>
+              </div>
+              
+              <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <div class="h-12 w-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                  </svg>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-gray-800">Strategic AI Tool Selection & Integration</h3>
+              </div>
+              
+              <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <div class="h-12 w-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-gray-800">Streamlined Content Production Workflows</h3>
+              </div>
+              
+              <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <div class="h-12 w-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-gray-800">AI-Enhanced On-Page Optimization SOPs</h3>
+              </div>
+              
+              <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <div class="h-12 w-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-gray-800">Data-Driven Content Refresh Protocols</h3>
+              </div>
+              
+              <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <div class="h-12 w-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-gray-800">Performance Measurement & Reporting Frameworks</h3>
+              </div>
+              
+              <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <div class="h-12 w-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                </div>
+                <h3 class="font-bold text-lg mb-2 text-gray-800">Ongoing SEO Operations Maintenance & Training</h3>
+              </div>
+            </div>
+            
+            <div class="text-center mt-12">
+              <a href="/methodology" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition duration-150">
+                Explore Our Approach
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA Section -->
+      <section class="py-16 md:py-24 bg-gradient-to-br from-blue-900 to-indigo-900 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Build a Scalable AI SEO Engine?
+            </h2>
+            <p class="text-xl text-blue-100 mb-10">
+              Stop letting operational gaps undermine your AI investments. Implement the documented processes that drive real results and give you a competitive edge. Start by assessing your foundation today.
+            </p>
+            
+            <a href="/resources/checklist" class="inline-block bg-white hover:bg-gray-100 text-blue-900 font-medium text-lg py-4 px-10 rounded-md transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              Download the Free SEO Ops Checklist
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <Footer />
+    
+    <!-- Simple back to top button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-blue-600 text-white p-2 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+      </svg>
+    </button>
+    
+    <script>
+      // Back to top button functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        if (backToTopButton) {
+          window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) {
+              backToTopButton.classList.replace('opacity-0', 'opacity-100');
+              backToTopButton.classList.replace('invisible', 'visible');
+            } else {
+              backToTopButton.classList.replace('opacity-100', 'opacity-0');
+              setTimeout(() => {
+                backToTopButton.classList.replace('visible', 'invisible');
+              }, 300);
+            }
+          });
+          
+          backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
+          });
+        }
+      });
+    </script>
+  </div>
+</Layout>
