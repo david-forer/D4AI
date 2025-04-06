@@ -1,48 +1,276 @@
 ---
+// NavBar.astro - Navigation component using Tailwind CSS
+// This component includes mobile responsiveness and vertically centered items
 ---
-<nav>
-  <div class="nav-content">
-    <a href="/" class="logo">My Site</a>
-    <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/services">Services</a>
-      <a href="/contact">Contact</a>
-      <a href="/blog">Blog</a>
+
+<nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+        <a href="/" class="flex items-center">
+          <img class="h-8 w-auto" src="/images/logo.svg" alt="AI SEO Operations Logo" />
+        </a>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden md:ml-6 md:flex md:items-center md:space-x-6">
+        <!-- Methodology Dropdown -->
+        <div class="relative group h-16 flex items-center">
+          <button class="inline-flex items-center px-1 py-2 text-sm font-medium text-gray-800 hover:text-blue-600 transition duration-150">
+            Methodology
+            <svg class="ml-1 h-4 w-4 text-gray-600 group-hover:text-blue-600 transition duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="absolute left-0 top-full w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-150 transform origin-top-left">
+            <div class="py-1 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical">
+              <a href="/methodology/framework" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Framework</a>
+              <a href="/methodology/processes" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Processes</a>
+              <a href="/methodology/implementation" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Implementation</a>
+              <a href="/methodology/case-studies" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Case Studies</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Services Dropdown -->
+        <div class="relative group h-16 flex items-center">
+          <button class="inline-flex items-center px-1 py-2 text-sm font-medium text-gray-800 hover:text-blue-600 transition duration-150">
+            Services
+            <svg class="ml-1 h-4 w-4 text-gray-600 group-hover:text-blue-600 transition duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="absolute left-0 top-full w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-150 transform origin-top-left">
+            <div class="py-1 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical">
+              <a href="/services/content" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Content Optimization</a>
+              <a href="/services/technical" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Technical SEO</a>
+              <a href="/services/analytics" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Analytics</a>
+              <a href="/services/strategy" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Strategy</a>
+              <a href="/services/performance" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Performance</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Solutions Dropdown -->
+        <div class="relative group h-16 flex items-center">
+          <button class="inline-flex items-center px-1 py-2 text-sm font-medium text-gray-800 hover:text-blue-600 transition duration-150">
+            Solutions
+            <svg class="ml-1 h-4 w-4 text-gray-600 group-hover:text-blue-600 transition duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="absolute left-0 top-full w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-150 transform origin-top-left">
+            <div class="py-1 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical">
+              <a href="/solutions/ecommerce" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">E-commerce</a>
+              <a href="/solutions/saas" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">SaaS</a>
+              <a href="/solutions/publishers" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Publishers</a>
+              <a href="/solutions/local" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Local Business</a>
+              <a href="/solutions/enterprise" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Enterprise</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Resources Dropdown -->
+        <div class="relative group h-16 flex items-center">
+          <button class="inline-flex items-center px-1 py-2 text-sm font-medium text-gray-800 hover:text-blue-600 transition duration-150">
+            Resources
+            <svg class="ml-1 h-4 w-4 text-gray-600 group-hover:text-blue-600 transition duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="absolute left-0 top-full w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-150 transform origin-top-left">
+            <div class="py-1 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical">
+              <a href="/resources/checklist" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">SEO Ops Checklist</a>
+              <a href="/resources/tools" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Tools</a>
+              <a href="/resources/templates" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Templates</a>
+              <a href="/resources/blog" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Blog</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Training Dropdown -->
+        <div class="relative group h-16 flex items-center">
+          <button class="inline-flex items-center px-1 py-2 text-sm font-medium text-gray-800 hover:text-blue-600 transition duration-150">
+            Training
+            <svg class="ml-1 h-4 w-4 text-gray-600 group-hover:text-blue-600 transition duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="absolute left-0 top-full w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-150 transform origin-top-left">
+            <div class="py-1 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical">
+              <a href="/training/courses" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Courses</a>
+              <a href="/training/workshops" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Workshops</a>
+              <a href="/training/tutorials" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Tutorials</a>
+              <a href="/training/certification" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600" role="menuitem">Certification</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Standard menu items -->
+        <div class="relative group h-16 flex items-center">
+          <a href="/about" class="inline-flex items-center px-1 py-2 text-sm font-medium text-gray-800 hover:text-blue-600 transition duration-150">About</a>
+        </div>
+        
+        <div class="relative group h-16 flex items-center">
+          <a href="/contact" class="inline-flex items-center px-1 py-2 text-sm font-medium text-gray-800 hover:text-blue-600 transition duration-150">Contact</a>
+        </div>
+        
+        <!-- CTA Button -->
+        <div class="h-16 flex items-center">
+          <a href="/resources/checklist" class="ml-4 px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150">
+            SEO Ops Checklist
+          </a>
+        </div>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <div class="flex items-center md:hidden">
+        <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <!-- Heroicon name: menu -->
+          <svg id="menu-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <!-- Heroicon name: x -->
+          <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Mobile menu, toggle classes based on menu state -->
+  <div id="mobile-menu" class="hidden md:hidden">
+    <div class="pt-2 pb-3 space-y-1">
+      <!-- Methodology -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-button w-full flex justify-between items-center px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
+          <span>Methodology</span>
+          <svg class="mobile-dropdown-icon h-5 w-5 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="mobile-submenu hidden pl-4 pr-4 py-2 space-y-1">
+          <a href="/methodology/framework" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Framework</a>
+          <a href="/methodology/processes" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Processes</a>
+          <a href="/methodology/implementation" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Implementation</a>
+          <a href="/methodology/case-studies" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Case Studies</a>
+        </div>
+      </div>
+      
+      <!-- Services -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-button w-full flex justify-between items-center px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
+          <span>Services</span>
+          <svg class="mobile-dropdown-icon h-5 w-5 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="mobile-submenu hidden pl-4 pr-4 py-2 space-y-1">
+          <a href="/services/content" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Content Optimization</a>
+          <a href="/services/technical" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Technical SEO</a>
+          <a href="/services/analytics" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Analytics</a>
+          <a href="/services/strategy" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Strategy</a>
+          <a href="/services/performance" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Performance</a>
+        </div>
+      </div>
+      
+      <!-- Solutions -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-button w-full flex justify-between items-center px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
+          <span>Solutions</span>
+          <svg class="mobile-dropdown-icon h-5 w-5 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="mobile-submenu hidden pl-4 pr-4 py-2 space-y-1">
+          <a href="/solutions/ecommerce" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">E-commerce</a>
+          <a href="/solutions/saas" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">SaaS</a>
+          <a href="/solutions/publishers" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Publishers</a>
+          <a href="/solutions/local" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Local Business</a>
+          <a href="/solutions/enterprise" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Enterprise</a>
+        </div>
+      </div>
+      
+      <!-- Resources -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-button w-full flex justify-between items-center px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
+          <span>Resources</span>
+          <svg class="mobile-dropdown-icon h-5 w-5 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="mobile-submenu hidden pl-4 pr-4 py-2 space-y-1">
+          <a href="/resources/checklist" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">SEO Ops Checklist</a>
+          <a href="/resources/tools" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Tools</a>
+          <a href="/resources/templates" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Templates</a>
+          <a href="/resources/blog" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Blog</a>
+        </div>
+      </div>
+      
+      <!-- Training -->
+      <div class="mobile-dropdown">
+        <button class="mobile-dropdown-button w-full flex justify-between items-center px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
+          <span>Training</span>
+          <svg class="mobile-dropdown-icon h-5 w-5 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="mobile-submenu hidden pl-4 pr-4 py-2 space-y-1">
+          <a href="/training/courses" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Courses</a>
+          <a href="/training/workshops" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Workshops</a>
+          <a href="/training/tutorials" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Tutorials</a>
+          <a href="/training/certification" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Certification</a>
+        </div>
+      </div>
+      
+      <!-- Standard menu items -->
+      <a href="/about" class="block px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">About</a>
+      <a href="/contact" class="block px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Contact</a>
+      
+      <!-- Mobile CTA -->
+      <div class="px-4 py-3">
+        <a href="/resources/checklist" class="block w-full px-4 py-2 text-center text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+          SEO Ops Checklist
+        </a>
+      </div>
     </div>
   </div>
 </nav>
 
-<style>
-  nav {
-    background: #23262d;
-    padding: 1rem 0;
-    margin-bottom: 2rem;
-  }
-  .nav-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(var(--accent-light));
-    text-decoration: none;
-  }
-  .nav-links {
-    display: flex;
-    gap: 2rem;
-  }
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-  .nav-links a:hover {
-    color: rgb(var(--accent-light));
-  }
-</style>
+<!-- Add space after the fixed navbar to prevent content from being hidden -->
+<div class="h-16"></div>
+
+<script>
+  // JavaScript for mobile menu toggle
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+        menuIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+      });
+    }
+    
+    // Handle mobile submenus
+    const mobileDropdownButtons = document.querySelectorAll('.mobile-dropdown-button');
+    mobileDropdownButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const submenu = this.nextElementSibling;
+        const icon = this.querySelector('.mobile-dropdown-icon');
+        
+        if (submenu && submenu.classList.contains('mobile-submenu')) {
+          submenu.classList.toggle('hidden');
+          icon.classList.toggle('rotate-180');
+        }
+      });
+    });
+  });
+</script>
