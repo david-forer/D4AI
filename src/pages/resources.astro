@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Resources">
+	<div class="mx-auto px-4 py-12 max-w-7xl text-white">
+		<h1 class="text-5xl font-bold text-center mb-12">AI <span class="text-gradient">Resources</span></h1>
+		
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+			<a href="/free-resources" class="bg-slate-800 rounded-lg p-8 shadow-lg border border-white border-solid hover:translate-y-[-5px] transition-transform hover:shadow-xl">
+				<h2 class="text-3xl font-bold text-blue-500 mb-4">Free Resources</h2>
+				<p class="text-xl text-slate-200 mb-6">Access our collection of free resources to help you get started with AI and SEO optimization.</p>
+				<div class="text-4xl mb-4">🎁</div>
+				<div class="inline-block px-4 py-2 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700 transition-colors">
+					Explore Free Resources
+				</div>
+			</a>
+			
+			<a href="/guides-templates" class="bg-slate-800 rounded-lg p-8 shadow-lg border border-white border-solid hover:translate-y-[-5px] transition-transform hover:shadow-xl">
+				<h2 class="text-3xl font-bold text-blue-500 mb-4">Guides and Templates</h2>
+				<p class="text-xl text-slate-200 mb-6">Comprehensive guides and ready-to-use templates to streamline your AI and SEO operations.</p>
+				<div class="text-4xl mb-4">📚</div>
+				<div class="inline-block px-4 py-2 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700 transition-colors">
+					Browse Guides & Templates
+				</div>
+			</a>
+			
+			<a href="/seo-ai-resources" class="bg-slate-800 rounded-lg p-8 shadow-lg border border-white border-solid hover:translate-y-[-5px] transition-transform hover:shadow-xl">
+				<h2 class="text-3xl font-bold text-blue-500 mb-4">SEO & AI Resources</h2>
+				<p class="text-xl text-slate-200 mb-6">Specialized resources focused on integrating AI with SEO strategies for maximum impact.</p>
+				<div class="text-4xl mb-4">🔍</div>
+				<div class="inline-block px-4 py-2 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700 transition-colors">
+					Discover SEO & AI Resources
+				</div>
+			</a>
+			
+			<a href="/playbooks-checklists" class="bg-slate-800 rounded-lg p-8 shadow-lg border border-white border-solid hover:translate-y-[-5px] transition-transform hover:shadow-xl">
+				<h2 class="text-3xl font-bold text-blue-500 mb-4">Playbooks and Checklists</h2>
+				<p class="text-xl text-slate-200 mb-6">Step-by-step playbooks and comprehensive checklists to ensure your AI and SEO success.</p>
+				<div class="text-4xl mb-4">✅</div>
+				<div class="inline-block px-4 py-2 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700 transition-colors">
+					Get Playbooks & Checklists
+				</div>
+			</a>
+		</div>
+		
+		<div class="bg-indigo-900 bg-opacity-30 p-8 rounded-lg text-center mt-12 max-w-4xl mx-auto">
+			<h3 class="text-2xl font-bold text-blue-500 mb-4">Need Custom Resources?</h3>
+			<p class="text-xl text-slate-200 mb-6">Contact our team for personalized resources tailored to your specific business needs.</p>
+			<a href="/contact" class="inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700 transition-colors">Contact Us</a>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+</style>

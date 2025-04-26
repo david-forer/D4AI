@@ -1,0 +1,114 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Custom Consulting | Services">
+	<div class="mx-auto px-4 py-12 max-w-7xl text-white">
+		<h1 class="text-5xl font-bold text-center mb-12">Custom <span class="text-gradient">Consulting</span></h1>
+		
+		<div class="bg-slate-800 rounded-lg p-8 shadow-lg">
+			<div class="mb-8 text-center">
+				<img src="/images/ai operations optimize.png" alt="Custom Consulting" class="max-w-full h-auto rounded-lg shadow-md mx-auto">
+			</div>
+			
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-3xl font-bold text-center text-blue-500 mb-6">Tailored AI Solutions for Your Unique Challenges</h2>
+				<p class="text-xl text-slate-200 mb-8">
+					Our Custom Consulting service provides specialized expertise to address your organization's specific AI and technology needs. We work closely with your team to develop strategic solutions that drive innovation and competitive advantage.
+				</p>
+				
+				<h3 class="text-2xl font-bold text-blue-500 mt-10 mb-4">Areas of Expertise:</h3>
+				<ul class="space-y-2 mb-8">
+					<li class="flex items-center">
+						<span class="text-blue-500 mr-2">→</span>
+						<span>AI Strategy Development</span>
+					</li>
+					<li class="flex items-center">
+						<span class="text-blue-500 mr-2">→</span>
+						<span>Technology Selection and Implementation</span>
+					</li>
+					<li class="flex items-center">
+						<span class="text-blue-500 mr-2">→</span>
+						<span>Data Strategy and Management</span>
+					</li>
+					<li class="flex items-center">
+						<span class="text-blue-500 mr-2">→</span>
+						<span>Process Optimization and Automation</span>
+					</li>
+					<li class="flex items-center">
+						<span class="text-blue-500 mr-2">→</span>
+						<span>AI Governance and Ethics</span>
+					</li>
+					<li class="flex items-center">
+						<span class="text-blue-500 mr-2">→</span>
+						<span>Change Management and Adoption</span>
+					</li>
+				</ul>
+				
+				<h3 class="text-2xl font-bold text-blue-500 mt-10 mb-6">Our Consulting Approach:</h3>
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
+						<div class="text-4xl mb-4">🔍</div>
+						<h4 class="text-xl font-bold text-blue-500 mb-2">Discovery</h4>
+						<p class="text-slate-200">We begin by thoroughly understanding your business, challenges, goals, and existing technology landscape.</p>
+					</div>
+					
+					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
+						<div class="text-4xl mb-4">📋</div>
+						<h4 class="text-xl font-bold text-blue-500 mb-2">Strategy</h4>
+						<p class="text-slate-200">We develop a customized roadmap that aligns AI initiatives with your business objectives and priorities.</p>
+					</div>
+					
+					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
+						<div class="text-4xl mb-4">🛠️</div>
+						<h4 class="text-xl font-bold text-blue-500 mb-2">Implementation</h4>
+						<p class="text-slate-200">Our experts work alongside your team to execute the strategy, providing guidance and hands-on support.</p>
+					</div>
+					
+					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
+						<div class="text-4xl mb-4">📈</div>
+						<h4 class="text-xl font-bold text-blue-500 mb-2">Optimization</h4>
+						<p class="text-slate-200">We continuously measure results, refine approaches, and identify new opportunities for improvement.</p>
+					</div>
+				</div>
+				
+				<h3 class="text-2xl font-bold text-blue-500 mt-10 mb-6">Why Choose Our Custom Consulting:</h3>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
+						<div class="text-4xl mb-4">👥</div>
+						<h4 class="text-xl font-bold text-blue-500 mb-2">Expert Team</h4>
+						<p class="text-slate-200">Access to seasoned professionals with deep expertise in AI, data science, and business transformation.</p>
+					</div>
+					
+					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
+						<div class="text-4xl mb-4">🎯</div>
+						<h4 class="text-xl font-bold text-blue-500 mb-2">Tailored Solutions</h4>
+						<p class="text-slate-200">Customized approaches that address your specific challenges rather than one-size-fits-all solutions.</p>
+					</div>
+					
+					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
+						<div class="text-4xl mb-4">💡</div>
+						<h4 class="text-xl font-bold text-blue-500 mb-2">Knowledge Transfer</h4>
+						<p class="text-slate-200">We empower your team with the skills and knowledge to maintain and evolve solutions independently.</p>
+					</div>
+				</div>
+				
+				<div class="bg-indigo-900 bg-opacity-30 p-8 rounded-lg text-center mt-12">
+					<h3 class="text-2xl font-bold text-blue-500 mb-4">Ready for expert guidance?</h3>
+					<p class="text-xl text-slate-200 mb-6">Schedule a consultation to discuss your unique challenges and how we can help.</p>
+					<a href="/contact" class="inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700 transition-colors">Book a Consultation</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+</style>

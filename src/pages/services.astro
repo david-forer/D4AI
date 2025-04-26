@@ -2,53 +2,53 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Services">
+<Layout title="AI Services">
 	<div class="services-container">
-		<h1>My <span class="text-gradient">Services</span></h1>
+		<h1>AI <span class="text-gradient">Services</span></h1>
 		<div class="services-grid">
-			<div class="service-card">
-				<h3>Web Development</h3>
-				<div class="icon">💻</div>
-				<p>Custom website development using modern technologies and best practices.</p>
+			<a href="/ai-audit" class="service-card">
+				<h3>AI Audit</h3>
+				<div class="icon">🔍</div>
+				<p>Comprehensive assessment of your AI systems and infrastructure.</p>
 				<ul>
-					<li>Responsive Design</li>
-					<li>Performance Optimization</li>
-					<li>SEO Best Practices</li>
+					<li>Performance Evaluation</li>
+					<li>Security Analysis</li>
+					<li>Optimization Recommendations</li>
 				</ul>
-			</div>
+			</a>
 
-			<div class="service-card">
-				<h3>UI/UX Design</h3>
-				<div class="icon">🎨</div>
-				<p>Creating beautiful and intuitive user interfaces that engage visitors.</p>
+			<a href="/seo-accelerator" class="service-card">
+				<h3>SEO Accelerator</h3>
+				<div class="icon">🚀</div>
+				<p>Boost your search engine rankings and drive organic traffic.</p>
 				<ul>
-					<li>User Research</li>
-					<li>Wireframing</li>
-					<li>Prototyping</li>
+					<li>Keyword Optimization</li>
+					<li>Technical SEO</li>
+					<li>Content Strategy</li>
 				</ul>
-			</div>
+			</a>
 
-			<div class="service-card">
-				<h3>Maintenance</h3>
-				<div class="icon">🔧</div>
-				<p>Keeping your website up-to-date and running smoothly.</p>
+			<a href="/operational-buildout" class="service-card">
+				<h3>Operational Buildout</h3>
+				<div class="icon">⚙️</div>
+				<p>Implement AI-powered systems to streamline your business operations.</p>
 				<ul>
-					<li>Regular Updates</li>
-					<li>Security Monitoring</li>
-					<li>Performance Tracking</li>
+					<li>Process Automation</li>
+					<li>Workflow Optimization</li>
+					<li>System Integration</li>
 				</ul>
-			</div>
+			</a>
 
-			<div class="service-card">
-				<h3>Consulting</h3>
+			<a href="/custom-consulting" class="service-card">
+				<h3>Custom Consulting</h3>
 				<div class="icon">💡</div>
-				<p>Expert advice on your web development projects and strategies.</p>
+				<p>Tailored AI solutions for your unique business challenges.</p>
 				<ul>
-					<li>Technical Planning</li>
-					<li>Code Review</li>
-					<li>Best Practices</li>
+					<li>Strategic Planning</li>
+					<li>Technology Selection</li>
+					<li>Implementation Support</li>
 				</ul>
-			</div>
+			</a>
 		</div>
 	</div>
 	<section
@@ -429,11 +429,15 @@ import Layout from '../layouts/Layout.astro';
 		background: #23262d;
 		padding: 2rem;
 		border-radius: 8px;
-		transition: transform 0.2s;
+		transition: transform 0.2s, box-shadow 0.2s;
 		text-align: center;
+		text-decoration: none;
+		color: inherit;
+		display: block;
 	}
 	.service-card:hover {
 		transform: translateY(-5px);
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 	}
 	.icon {
 		font-size: 3rem;
