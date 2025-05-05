@@ -1,5 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import LeadMagnet from '../components/LeadMagnet.astro';
+
+// Define the lead magnet configuration for this page
+const leadMagnetConfig = {
+  title: "Get Our Free Guide",
+  description: "Learn how to optimize your website with our comprehensive guide.",
+  imageUrl: "/images/guide-cover.jpg",
+  formFields: [
+    {
+      id: "email",
+      label: "Email Address",
+      inputType: "email" as const,
+      required: true,
+      placeholder: "you@example.com"
+    }
+  ],
+  ctaText: "Send Me the Guide",
+  leadMagnetType: "ebook",
+  thankYouMessage: "Your guide is on its way! Please check your email inbox.",
+  variant: "fullWidth" as const, // You can choose: inline, card, fullWidth, sidebar
+  backgroundColor: "bg-blue-50",
+  accentColor: "bg-blue-600"
+};
 ---
 
 <Layout title="About David and AI Operations">
@@ -48,6 +71,11 @@ import Layout from '../layouts/Layout.astro';
 	</div>
 </div>
 <!-- End of New Section -->
+
+  <!-- Place the lead magnet where you want it to appear -->
+  <section class="lead-magnet-section py-8">
+    <LeadMagnet {...leadMagnetConfig} />
+  </section>
 
 <div
   class="relative py-12 px-4 mx-auto max-w-6xl tracking-tight leading-7 lg:py-20 md:px-6 md:py-16"
