@@ -5,14 +5,14 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "node server.js",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "astro": "^4.15.3",
-    "serve": "^14.2.0"
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.2",
