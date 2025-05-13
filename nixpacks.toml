@@ -1,8 +1,21 @@
+# nixpacks.toml
+
+# We explicitly tell Nixpacks what to install in the environment.
+# This is good practice.
 [phases.setup]
-nixPkgs = ["nodejs", "npm"]
+nixPkgs = ["nodejs", "npm"] # Or just "nodejs" if npm comes with it, but this is safer.
 
+# Define the install phase for your project dependencies
+[phases.install]
+cmds = ["npm install"]
+
+# Define the build phase for your Astro site
 [phases.build]
-cmds = ["npm install", "npm run build"]
+cmds = ["npm run build"]
 
-[phases.start]
-cmd = "npx serve dist -l 3000"
+#
+# IMPORTANT: DO NOT INCLUDE A [phases.start] section for a static site
+# being served by Coolify's Nginx.
+# Coolify will handle serving the files from the "Publish Directory"
+# specified in its UI (which should be 'dist').
+#
