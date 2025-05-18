@@ -1,0 +1,159 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import SimpleContainer from '../../components/SimpleContainer.astro';
+
+// Get all blog posts
+const allPosts = await getCollection('blog');
+
+// Sort posts by publication date (newest first)
+const sortedPosts = allPosts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+// Get the latest 6 posts for display
+const latestPosts = sortedPosts.slice(0, 6);
+
+// Default image for posts without a hero image
+const defaultPostImage = "/images/ai operations logo.png";
+
+// Define categories for the navigation
+const categories = [
+  { name: "AI Integration", slug: "ai" },
+  { name: "SEO Strategy", slug: "seo" },
+  { name: "Operations", slug: "operations" },
+  { name: "Automation", slug: "automation" },
+  { name: "Business Growth", slug: "business" }
+];
+---
+
+<Layout title="Blog | D4AI">
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20">
+      <div class="container mx-auto px-6 max-w-5xl">
+        <div class="flex flex-col justify-center">
+          <div class="text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">AI Operations Blog</h1>
+            <h2 class="text-xl md:text-2xl text-blue-100 mb-6">Insights on AI, SEO, and Operational Excellence</h2>
+            <p class="text-white text-lg max-w-3xl mx-auto">
+              Practical strategies, case studies, and tutorials to help you leverage AI,
+              optimize your operations, and grow your business through strategic SEO.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Introduction Section -->
+    <SimpleContainer>
+      <div class="py-12 text-center max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">Welcome to the AI Operations Blog</h2>
+        <p class="text-lg text-gray-700 mb-8">
+          Our blog is dedicated to helping businesses leverage AI, optimize operations, and improve SEO strategies.
+          We share practical insights, case studies, and step-by-step guides that you can implement right away.
+          Whether you're looking to streamline your workflows, enhance your search visibility, or integrate AI
+          into your business processes, you'll find valuable resources here.
+        </p>
+      </div>
+      
+      <!-- Category Navigation -->
+      <div class="border-t border-b border-gray-200 py-4 mb-12">
+        <div class="flex flex-wrap justify-center gap-4 md:gap-8">
+          <a href="/blog" class="px-4 py-2 rounded-md transition-colors bg-blue-100 text-blue-800">
+            All Posts
+          </a>
+          {categories.map(cat => (
+            <a
+              href={`/blog/category/${cat.slug}`}
+              class="px-4 py-2 rounded-md transition-colors text-blue-700 hover:text-blue-900 hover:bg-blue-50"
+            >
+              {cat.name}
+            </a>
+          ))}
+        </div>
+      </div>
+    </SimpleContainer>
+    
+    <!-- Blog Posts Section -->
+    <SimpleContainer>
+      <div class="pb-16">
+        <h2 class="text-2xl font-bold mb-8 text-gray-900">Latest Articles</h2>
+        
+        {latestPosts.length > 0 ? (
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {latestPosts.map((post) => (
+              <div class="group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+                <div class="relative aspect-[16/9] overflow-hidden bg-blue-100">
+                  <img
+                    src={post.data.heroImage || defaultPostImage}
+                    alt={post.data.title}
+                    class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div class="p-6">
+                  <a href={`/blog/${post.slug}`} class="block">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700 group-hover:text-blue-800 transition-colors">
+                      {post.data.title}
+                    </h3>
+                  </a>
+                  <p class="text-gray-600 text-sm mb-3">
+                    {new Date(post.data.pubDate).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    })}
+                  </p>
+                  <p class="text-gray-700 line-clamp-3 mb-4">{post.data.description}</p>
+                  
+                  <a href={`/blog/${post.slug}`} class="inline-block text-blue-600 hover:text-blue-800 hover:underline mb-4">
+                    Read More →
+                  </a>
+                  
+                  {post.data.tags && (
+                    <div class="mt-4 flex flex-wrap gap-2">
+                      {post.data.tags.slice(0, 3).map((tag) => {
+                        // Find if this tag matches one of our defined categories
+                        const matchedCategory = categories.find(cat =>
+                          cat.slug === tag.toLowerCase() ||
+                          cat.name.toLowerCase() === tag.toLowerCase()
+                        );
+                        
+                        return matchedCategory ? (
+                          <a
+                            href={`/blog/category/${matchedCategory.slug}`}
+                            class="px-2 py-1 bg-blue-50 text-blue-700 text-xs rounded-full hover:bg-blue-100 transition-colors"
+                          >
+                            {matchedCategory.name}
+                          </a>
+                        ) : (
+                          <span class="px-2 py-1 bg-gray-50 text-gray-700 text-xs rounded-full">
+                            {tag}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div class="text-center py-12">
+            <p class="text-gray-600">No blog posts found. Check back soon!</p>
+          </div>
+        )}
+      </div>
+    </SimpleContainer>
+  </main>
+</Layout>
+
+<style>
+  /* Add line-clamp utility if not available in your Tailwind config */
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
