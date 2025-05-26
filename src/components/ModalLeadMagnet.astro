@@ -1,0 +1,43 @@
+---
+const { showModalId, formTitle, formDescription, formSrc } = Astro.props;
+---
+
+<div id={showModalId} class="fixed inset-0 z-50 bg-black bg-opacity-60 hidden justify-center items-center">
+  <div class="relative bg-white rounded-2xl shadow-xl w-full max-w-2xl p-6 mx-4">
+    <!-- Close button -->
+    <button
+      aria-label="Close"
+      onclick={`document.getElementById('${showModalId}').classList.add('hidden')`}
+      class="absolute top-3 right-3 text-gray-400 hover:text-gray-800 text-2xl"
+    >
+      &times;
+    </button>
+
+    <!-- Modal heading -->
+    <h2 class="text-xl font-bold mb-2">{formTitle}</h2>
+    <p class="text-sm text-gray-600 mb-4">{formDescription}</p>
+
+    <!-- Form embed -->
+    <div class="relative h-[500px] overflow-hidden rounded-lg">
+      <iframe
+        src={formSrc}
+        class="absolute top-0 left-0 w-full h-full border-0"
+        allowtransparency="true"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Toggle logic for buttons anywhere on page -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const openButtons = document.querySelectorAll("[data-open-modal]");
+    openButtons.forEach(button => {
+      const targetId = button.getAttribute("data-open-modal");
+      button.addEventListener("click", () => {
+        const modal = document.getElementById(targetId);
+        if (modal) modal.classList.remove("hidden");
+      });
+    });
+  });
+</script>
