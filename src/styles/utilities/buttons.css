@@ -1,0 +1,25 @@
+@layer components {
+  .btn-primary {
+    @apply bg-[color:var(--primary)] hover:bg-[color:var(--primary-hover)] text-[color:var(--primary-text)] px-6 py-3 rounded-xl transition;
+  }
+
+  .btn-secondary {
+    @apply bg-[color:var(--secondary)] hover:bg-[color:var(--secondary-hover)] text-[color:var(--secondary-text)] px-6 py-3 rounded-xl transition;
+  }
+
+  .btn-accent {
+    @apply bg-[color:var(--accent)] hover:bg-[color:var(--accent-hover)] text-[color:var(--accent-text)] px-6 py-3 rounded-xl transition;
+  }
+
+  .btn-outline-primary {
+    @apply border border-[color:var(--primary)] text-[color:var(--primary)] hover:bg-[color:var(--primary)] hover:text-[color:var(--primary-text)] px-6 py-3 rounded-xl transition;
+  }
+
+  .btn-outline-secondary {
+    @apply border border-[color:var(--secondary)] text-[color:var(--secondary)] hover:bg-[color:var(--secondary)] hover:text-[color:var(--secondary-text)] px-6 py-3 rounded-xl transition;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent border border-transparent text-[color:var(--neutral-text)] hover:bg-gray-100 px-6 py-3 rounded-xl transition;
+  }
+}
