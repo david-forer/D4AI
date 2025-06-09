@@ -58,8 +58,9 @@ const { title, description = "AI Operations with David Forer" } = Astro.props;
 	/* Add styling for the content wrapper */
 	.content-wrapper {
 		/*max-width: 1800px;*/ /* Set the maximum width */
-		margin: 0 auto; /* Center the content */
-		padding: 0 auto; /* Optional: add padding for mobile spacing */
+		margin: 0; /* Center the content */
+		padding: 0; /* Optional: add padding for mobile spacing */
+		width: 100%;
 	}
 	code {
 		font-family:
@@ -73,8 +74,8 @@ const { title, description = "AI Operations with David Forer" } = Astro.props;
 			monospace;
 	}
 	main {
-		margin: auto;
-		/*padding: 1rem;*/
+		margin: 0;
+		padding: 0;
 		width: 100%; 
 		/*max-width: 1800px !important;*/
 	}	
