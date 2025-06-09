@@ -1,0 +1,103 @@
+---
+title: "Using Tailwind CSS in MDX Blog Posts"
+description: "Learn how to leverage Tailwind CSS classes directly in your MDX blog content for enhanced styling and components."
+pubDate: 2025-06-09T00:00:00Z
+tags: ["tailwind", "mdx", "content"]
+---
+
+# Using Tailwind CSS in MDX Blog Posts
+
+With MDX, you can now use Tailwind CSS classes directly in your blog content. This gives you much more flexibility in styling your content without having to add custom CSS.
+
+## Basic Text Styling with Tailwind
+
+You can apply Tailwind classes to any HTML element:
+
+<p className="text-blue-600 font-bold text-xl">
+  This paragraph is styled with Tailwind classes!
+</p>
+
+<div className="bg-gray-100 p-4 rounded-lg my-6">
+  <p className="text-gray-800">
+    This is a custom box with padding and rounded corners.
+  </p>
+</div>
+
+## Creating Custom Components in MDX
+
+One of the powerful features of MDX is the ability to create reusable components right in your content:
+
+<div className="flex flex-col md:flex-row gap-4 my-8">
+  <div className="bg-blue-100 p-4 rounded-lg flex-1">
+    <h3 className="text-lg font-bold text-blue-800">Feature One</h3>
+    <p>This is the first feature box with Tailwind styling.</p>
+  </div>
+  <div className="bg-green-100 p-4 rounded-lg flex-1">
+    <h3 className="text-lg font-bold text-green-800">Feature Two</h3>
+    <p>This is the second feature box with different colors.</p>
+  </div>
+</div>
+
+## Callout Boxes
+
+Create attention-grabbing callout boxes:
+
+<div className="border-l-4 border-yellow-500 bg-yellow-50 p-4 my-6">
+  <h4 className="text-yellow-800 font-bold">Note</h4>
+  <p className="text-yellow-700">
+    This is an important note that stands out from the rest of the content.
+  </p>
+</div>
+
+<div className="border-l-4 border-red-500 bg-red-50 p-4 my-6">
+  <h4 className="text-red-800 font-bold">Warning</h4>
+  <p className="text-red-700">
+    This is a warning message that requires attention.
+  </p>
+</div>
+
+## Interactive Elements
+
+You can even style interactive elements:
+
+<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  This is a button styled with Tailwind
+</button>
+
+## Code Blocks Still Work
+
+```javascript
+// Your code blocks still work as expected
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+```
+
+## Combining Markdown and Tailwind
+
+You can still use regular markdown syntax for basic formatting:
+
+- **Bold text** and *italic text* work as expected
+- [Links](https://tailwindcss.com) work normally
+- Lists and other markdown features work too
+
+But now you can enhance your content with Tailwind when needed!
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+  <div className="p-4 bg-blue-50 rounded-lg">
+    <h4 className="font-bold text-center">Column 1</h4>
+    <p>This is the first column in a responsive grid.</p>
+  </div>
+  <div className="p-4 bg-blue-50 rounded-lg">
+    <h4 className="font-bold text-center">Column 2</h4>
+    <p>This is the second column in a responsive grid.</p>
+  </div>
+  <div className="p-4 bg-blue-50 rounded-lg">
+    <h4 className="font-bold text-center">Column 3</h4>
+    <p>This is the third column in a responsive grid.</p>
+  </div>
+</div>
+
+## Conclusion
+
+With MDX and Tailwind CSS, you have the flexibility to create rich, interactive, and beautifully styled blog content without leaving your markdown files.

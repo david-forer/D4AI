@@ -6,6 +6,7 @@ import Container from '../components/Container.astro';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import Hero from '../components/Hero.astro';
+import ModalLeadMagnet from "../components/ModalLeadMagnet.astro";
 
 ---
 
@@ -303,10 +304,10 @@ import Hero from '../components/Hero.astro';
             <div class="grid md:grid-cols-2 gap-12 items-center">
               <div class="order-2 md:order-1">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-                  Get Started: Download the Free SEO Ops Checklist
+                  Automate Your SEO with AI - No Coding Needed
                 </h2>
                 <p class="text-lg text-gray-700 mb-6">
-                  Ready to identify the critical gaps in your current AI SEO approach and stop falling behind competitors? This essential checklist walks you through the <strong class="text-blue-600">7 core processes</strong> every team needs to master for streamlined, predictable SEO results.
+                  Discover how to streamline content, links, and audits using AI and n8n. This guide is built for small business owners and marketing teams who want scalable growth without the chaos. <strong class="text-blue-600">No coding required</strong> 
                 </p>
                 
                 <ul class="mb-8 space-y-4">
@@ -314,26 +315,30 @@ import Hero from '../components/Hero.astro';
                     <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Assess your current operational maturity.</span>
+                    <span><strong>Save 10+ hours/week</strong> by automating your SEO workflow</span>
                   </li>
                   <li class="flex items-start">
                     <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Pinpoint key areas for improvement.</span>
+                    <span><strong>No coding needed</strong> - beginner-friendly n8n templates included</span>
                   </li>
                   <li class="flex items-start">
                     <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Take the crucial first step to a winning AI SEO operation.</span>
+                    <span><strong>Boost results</strong> by integrating AI directly into content, audit, and link workflows</span>
                   </li>
                 </ul>
 
                                
-                <a href="/resources/checklist" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-md transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                  Download Your Checklist Now
-                </a>
+                <button
+  data-formbricks-open="cmb58d1pc001qoj016qyr3jh5"
+  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition duration-200"
+  data-open-modal="modal-ai-seo"
+>
+  Get the Free Guide Now
+</button>
               </div>
               
               <div class="order-1 md:order-2">
@@ -494,14 +499,20 @@ import Hero from '../components/Hero.astro';
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
           <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-3xl md:text-3xl font-bold mb-6">
-              Ready to Build a Scalable AI Operations System?
+              Learn How to Rank in a World Run by AI
             </h2>
             <p class="text-xl text-blue-100 mb-10">
-              Stop letting operational gaps undermine your AI investments. Implement documented processes that reduce team friction, drive consistent results, and give you a competitive edge. Get started today with our 3-minute assessment to identify your biggest operational bottlenecks and receive customized AI solutions.
+              Google’s new AI Overviews are changing how search works.
+This free guide shows you how to adapt with Generative Engine Optimization (GEO) —
+a smarter, faster way to stay visible, relevant, and ranked in 2025 and beyond.
+Showing up in AI Search is the next big frontier for SEO, and this playbook is your roadmap to success.
             </p>
-            
-            <a href="/resources/checklist" class="inline-block bg-white hover:bg-gray-100 text-blue-900 font-medium text-lg py-4 px-10 rounded-md transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-              Take the Free AI Operations Assessment
+            <button
+  class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-xl transition duration-200"
+  data-open-modal="modal-geo-playbook"
+>
+  Download the GEO Playbook
+</button>
             </a>
           </div>
         </div>
@@ -545,5 +556,19 @@ import Hero from '../components/Hero.astro';
       });
     </script>
   </div>
+
+  <ModalLeadMagnet
+  showModalId="modal-ai-seo"
+  formTitle="AI SEO Automation Guide"
+  formDescription="Learn how to automate content, links, and audits using AI + n8n."
+  formSrc="https://bricks.davidjforer.com/s/cmb58d1pc001qoj016qyr3jh5"
+/>
+
+<ModalLeadMagnet
+  showModalId="modal-geo-playbook"
+  formTitle="Get the Free GEO Playbook"
+  formDescription="Optimize for the AI that's optimizing you. Learn how to rank in a generative world."
+  formSrc="https://bricks.davidjforer.com/s/cmb5e24z30025oj01buxiw43r"
+/>
 
 </Layout>
