@@ -1,0 +1,18 @@
+<!-- ✅ FeaturedImage Component -->
+<!-- Save as components/FeaturedImage.astro -->
+---
+interface Props {
+  src: string;
+  alt?: string;
+}
+
+const { src, alt = "Post featured image" } = Astro.props;
+---
+<section class="w-full max-w-4xl mx-auto mb-8">
+  <img
+    src={src}
+    alt={alt}
+    class="w-full h-auto object-cover rounded-xl shadow-md"
+    loading="lazy"
+  />
+</section>
