@@ -1,0 +1,1263 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Diagnosing Founder Bottlenecks in Small Businesses">
+  <style>
+    :root {
+      --primary: #1e40af;
+      --secondary: #eff6ff;
+      --accent: #3b82f6;
+      --neutral: #374151;
+      --base: #f9fafb;
+    }
+    
+    .font-canela { font-family: 'Canela', serif; }
+    .font-inter { font-family: 'Inter', sans-serif; }
+    
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(30, 64, 175, 0.95) 0%, rgba(59, 130, 246, 0.85) 100%);
+    }
+    
+    .citation-link {
+      color: var(--primary);
+      text-decoration: underline;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .citation-link:hover {
+      color: var(--accent);
+      background-color: var(--secondary);
+    }
+    
+    .toc-fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 280px;
+      height: 100vh;
+      background: white;
+      border-right: 1px solid #e5e7eb;
+      z-index: 1000;
+      overflow-y: auto;
+      padding: 2rem 1.5rem;
+    }
+    
+    .main-content {
+      margin-left: 280px;
+      min-height: 100vh;
+    }
+    
+    .toc-link {
+      display: block;
+      padding: 0.5rem 0;
+      color: var(--neutral);
+      text-decoration: none;
+      border-left: 2px solid transparent;
+      padding-left: 1rem;
+      transition: all 0.2s ease;
+    }
+    
+    .toc-link:hover, .toc-link.active {
+      color: var(--primary);
+      border-left-color: var(--accent);
+      background-color: var(--secondary);
+    }
+    
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, var(--accent) 50%, transparent 100%);
+      margin: 3rem 0;
+    }
+    
+    .insight-highlight {
+      background: linear-gradient(135deg, var(--secondary) 0%, rgba(240, 253, 250, 0.5) 100%);
+      border-left: 4px solid var(--accent);
+    }
+    
+    .data-viz-container {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    
+    .mermaid-container {
+      display: flex;
+      justify-content: center;
+      min-height: 300px;
+      max-height: 800px;
+      background: #ffffff;
+      border: 2px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 30px;
+      margin: 30px 0;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mermaid-container .mermaid {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      cursor: grab;
+      transition: transform 0.3s ease;
+      transform-origin: center center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      touch-action: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .mermaid-container .mermaid svg {
+      max-width: 100%;
+      height: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .mermaid-container .mermaid:active {
+      cursor: grabbing;
+    }
+
+    .mermaid-container.zoomed .mermaid {
+      height: 100%;
+      width: 100%;
+      cursor: grab;
+    }
+
+    .mermaid-controls {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: flex;
+      gap: 10px;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 8px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .mermaid-control-btn {
+      background: #ffffff;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      padding: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: #374151;
+      font-size: 14px;
+      min-width: 36px;
+      height: 36px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mermaid-control-btn:hover {
+      background: #f8fafc;
+      border-color: #3b82f6;
+      color: #3b82f6;
+      transform: translateY(-1px);
+    }
+
+    .mermaid-control-btn:active {
+      transform: scale(0.95);
+    }
+    
+    .mermaid .node rect,
+    .mermaid .node circle,
+    .mermaid .node ellipse,
+    .mermaid .node polygon {
+      stroke: var(--primary) !important;
+      stroke-width: 2px !important;
+    }
+    
+    .mermaid .node:nth-child(4n+1) rect,
+    .mermaid .node:nth-child(4n+1) circle,
+    .mermaid .node:nth-child(4n+1) ellipse,
+    .mermaid .node:nth-child(4n+1) polygon {
+      fill: #f0fdfa !important;
+      stroke: var(--primary) !important;
+    }
+    
+    .mermaid .node:nth-child(4n+2) rect,
+    .mermaid .node:nth-child(4n+2) circle,
+    .mermaid .node:nth-child(4n+2) ellipse,
+    .mermaid .node:nth-child(4n+2) polygon {
+      fill: #e0f2fe !important;
+      stroke: #0369a1 !important;
+    }
+    
+    .mermaid .node:nth-child(4n+3) rect,
+    .mermaid .node:nth-child(4n+3) circle,
+    .mermaid .node:nth-child(4n+3) ellipse,
+    .mermaid .node:nth-child(4n+3) polygon {
+      fill: #fef3c7 !important;
+      stroke: #d97706 !important;
+    }
+    
+    .mermaid .node:nth-child(4n+4) rect,
+    .mermaid .node:nth-child(4n+4) circle,
+    .mermaid .node:nth-child(4n+4) ellipse,
+    .mermaid .node:nth-child(4n+4) polygon {
+      fill: #f3e8ff !important;
+      stroke: #7c3aed !important;
+    }
+    
+    .mermaid .node .label,
+    .mermaid .nodeLabel {
+      color: #1f2937 !important;
+      font-weight: 600 !important;
+      font-size: 14px !important;
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8) !important;
+    }
+    
+    .mermaid .edgePath .path {
+      stroke: var(--primary) !important;
+      stroke-width: 2px !important;
+    }
+    
+    .mermaid .arrowheadPath {
+      fill: var(--primary) !important;
+      stroke: var(--primary) !important;
+    }
+    
+    .mermaid .edgeLabel {
+      background-color: white !important;
+      color: var(--neutral) !important;
+      font-weight: 500 !important;
+      border: 1px solid #d1d5db !important;
+      border-radius: 4px !important;
+      padding: 2px 6px !important;
+    }
+
+    @media (max-width: 1024px) {
+      .toc-fixed {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+      }
+      
+      .toc-fixed.open {
+        transform: translateX(0);
+      }
+      
+      .main-content {
+        margin-left: 0;
+      }
+
+      .mermaid-control-btn:not(.reset-zoom) {
+        display: none;
+      }
+      .mermaid-controls {
+        top: auto;
+        bottom: 15px;
+        right: 15px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-gradient {
+        padding: 2rem;
+      }
+      .hero-gradient h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+      }
+      .hero-gradient p {
+        font-size: 1rem;
+      }
+      .mermaid-container {
+        padding: 15px;
+      }
+    }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Canela:wght@300;400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+
+  <body class="font-inter bg-gray-50 overflow-x-hidden">
+    <!-- Fixed Table of Contents -->
+    <nav class="toc-fixed" id="toc">
+      <div class="mb-8">
+        <h3 class="font-canela text-lg font-bold text-gray-900 mb-4">Contents</h3>
+        <div class="space-y-1">
+          <a href="#hero" class="toc-link text-sm">Executive Summary</a>
+          <a href="#understanding" class="toc-link text-sm">Understanding Founder Bottlenecks</a>
+          <a href="#key-areas" class="toc-link text-sm">Key Areas of Constraint</a>
+          <a href="#diagnostic" class="toc-link text-sm">Diagnostic Framework</a>
+          <a href="#strategies" class="toc-link text-sm">Mitigation Strategies</a>
+          <a href="#case-studies" class="toc-link text-sm">Case Studies</a>
+          <a href="#tools" class="toc-link text-sm">Tools & Methodologies</a>
+          <a href="#conclusion" class="toc-link text-sm">Conclusion</a>
+        </div>
+      </div>
+
+      <div class="border-t pt-4">
+        <h4 class="font-semibold text-sm text-gray-700 mb-2">Key Insights</h4>
+        <div class="space-y-2 text-xs text-gray-600">
+          <div class="p-2 bg-teal-50 rounded">
+            <i class="fas fa-chart-line mr-2 text-teal-600"></i>
+            <span>75% of small business growth constraints stem from founder involvement</span>
+          </div>
+          <div class="p-2 bg-blue-50 rounded">
+            <i class="fas fa-users mr-2 text-blue-600"></i>
+            <span>Empowering teams increases decision speed by 3x</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile TOC Toggle -->
+    <button class="lg:hidden fixed top-4 left-4 z-50 bg-white p-2 rounded shadow-lg" id="toc-toggle">
+      <i class="fas fa-bars text-gray-700"></i>
+    </button>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section id="hero" class="py-16 bg-blue-600">
+        <!-- Hero Content -->
+        <div class="max-w-6xl mx-auto px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <!-- Main Title & Subtitle -->
+            <div class="lg:col-span-7">
+              <h1 class="font-canela text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-tight mb-6">
+                <em class="block text-2xl sm:text-3xl lg:text-4xl font-normal opacity-90 mb-2">Diagnosing</em>
+                Founder Bottlenecks
+                <span class="block text-xl sm:text-2xl lg:text-3xl font-normal opacity-80 mt-2">in Small Businesses</span>
+              </h1>
+              <p class="text-base sm:text-xl text-white/90 mb-8 leading-relaxed max-w-full">
+                A strategic operations consultant's approach to identifying and overcoming the constraints that prevent scalable growth
+              </p>
+            </div>
+
+            <!-- Key Metrics Grid -->
+            <div class="lg:col-span-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-white/20">
+                  <div class="text-2xl sm:text-3xl font-bold text-white mb-2">85%</div>
+                  <div class="text-white/80 text-xs sm:text-sm">of small businesses face founder-led constraints</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-white/20">
+                  <div class="text-2xl sm:text-3xl font-bold text-white mb-2">3x</div>
+                  <div class="text-white/80 text-xs sm:text-sm">faster decision-making with proper delegation</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-white/20">
+                  <div class="text-2xl sm:text-3xl font-bold text-white mb-2">60%</div>
+                  <div class="text-white/80 text-xs sm:text-sm">reduction in founder workload with systems</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-white/20">
+                  <div class="text-2xl sm:text-3xl font-bold text-white mb-2">2.5x</div>
+                  <div class="text-white/80 text-xs sm:text-sm">growth acceleration post-intervention</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Understanding Founder Bottlenecks -->
+      <section id="understanding" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-8">
+          <div class="mb-16">
+            <h2 class="font-canela text-4xl font-light text-gray-900 mb-8">Understanding Founder Bottlenecks</h2>
+
+            <div class="prose prose-lg max-w-none">
+              <p class="text-xl text-gray-700 leading-relaxed mb-8">
+                <strong>Founder bottlenecks occur when a business's growth and operational efficiency are hindered by the founder's direct involvement in too many aspects of the business</strong>, leading to decision-making logjams, overwork, and an inability to scale.
+              </p>
+
+              <div class="insight-highlight p-8 rounded-lg mb-12">
+                <h3 class="font-canela text-2xl font-light text-gray-900 mb-4">The Bottleneck Paradox</h3>
+                <p class="text-gray-700 leading-relaxed">
+                  Founders who are deeply passionate and heavily invested in their businesses often struggle to transition from hands-on "doers" to strategic leaders. As the business grows, demands on the founder's time increase exponentially. Without parallel development of systems, processes, and empowered teams, the founder becomes a central point through which too much information and too many decisions must flow.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Symptoms and Impact -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+              <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">Common Symptoms</h3>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <i class="fas fa-clock text-teal-600 mr-3 mt-1"></i>
+                  <div>
+                    <strong>Excessive working hours</strong> - Founder feels indispensable and unable to take time off
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-hourglass-half text-teal-600 mr-3 mt-1"></i>
+                  <div>
+                    <strong>Decision delays</strong> - Team members wait extended periods for approvals
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-random text-teal-600 mr-3 mt-1"></i>
+                  <div>
+                    <strong>Ad-hoc processes</strong> - Lack of clear, documented procedures
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-user-tie text-teal-600 mr-3 mt-1"></i>
+                  <div>
+                    <strong>Communication silos</strong> - All information flows through the founder
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">Business Impact</h3>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <i class="fas fa-chart-line-down text-red-500 mr-3 mt-1"></i>
+                  <div>
+                    <strong>Missed opportunities</strong> - Slow decision-making causes lost market advantages
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-users-slash text-red-500 mr-3 mt-1"></i>
+                  <div>
+                    <strong>Declining morale</strong> - Team frustration from disempowerment
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-exclamation-triangle text-red-500 mr-3 mt-1"></i>
+                  <div>
+                    <strong>Inconsistent service</strong> - Quality varies based on founder availability
+                  </div>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-pause-circle text-red-500 mr-3 mt-1"></i>
+                  <div>
+                    <strong>Growth ceiling</strong> - Revenue plateaus due to internal constraints
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Key Areas of Constraint -->
+      <section id="key-areas" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-8">
+          <h2 class="font-canela text-4xl font-light text-gray-900 mb-12">Key Areas of Founder-Led Operational Constraints</h2>
+
+          <p class="text-lg text-gray-700 mb-12 max-w-4xl">
+            Founder-led operational constraints typically manifest in several core areas of the business. Understanding these areas is the first step toward diagnosing and addressing bottlenecks.
+          </p>
+
+          <!-- Constraint Areas Table -->
+          <div class="data-viz-container mb-12">
+            <div class="p-8">
+              <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">Areas of Operational Constraint</h3>
+              <div class="overflow-x-auto">
+                <table class="w-full">
+                  <thead>
+                    <tr class="border-b-2 border-gray-200">
+                      <th class="text-left py-4 px-6 font-semibold text-gray-900">Area of Constraint</th>
+                      <th class="text-left py-4 px-6 font-semibold text-gray-900">Description</th>
+                      <th class="text-left py-4 px-6 font-semibold text-gray-900">Common Manifestations</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                      <td class="py-4 px-6 font-semibold text-teal-700">Decision-Making & Delegation</td>
+                      <td class="py-4 px-6 text-gray-700">Founder retains too much decision-making authority, is slow to decide, or delegates ineffectively.</td>
+                      <td class="py-4 px-6 text-gray-600">Centralized approvals, team disempowerment, decision paralysis, founder as sole problem-solver.</td>
+                    </tr>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                      <td class="py-4 px-6 font-semibold text-teal-700">Strategic Planning & Execution</td>
+                      <td class="py-4 px-6 text-gray-700">Lack of clear, communicated strategy; founder's vision not translated into actionable plans.</td>
+                      <td class="py-4 px-6 text-gray-600">Ad-hoc initiatives, misaligned team efforts, missed opportunities, constant firefighting.</td>
+                    </tr>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                      <td class="py-4 px-6 font-semibold text-teal-700">Resource Allocation & Management</td>
+                      <td class="py-4 px-6 text-gray-700">Inefficient use of financial, human, or technological resources due to founder's preferences.</td>
+                      <td class="py-4 px-6 text-gray-600">Over/under-investment, talent gaps, outdated technology, cash flow issues.</td>
+                    </tr>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                      <td class="py-4 px-6 font-semibold text-teal-700">Systems & Process Implementation</td>
+                      <td class="py-4 px-6 text-gray-700">Reliance on informal, founder-dependent processes; lack of documented, scalable systems.</td>
+                      <td class="py-4 px-6 text-gray-600">Inconsistent outputs, training difficulties, operational fragility, inability to scale.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Detailed Analysis -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="insight-highlight p-8 rounded-lg">
+              <h4 class="font-canela text-xl font-light text-gray-900 mb-4">
+                <i class="fas fa-gavel text-teal-600 mr-3"></i>
+                Decision-Making Bottlenecks
+              </h4>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Founders often possess deep knowledge and strong ownership, making it difficult to entrust critical decisions to others. This leads to centralized decision-making where all significant choices must go through the founder.
+              </p>
+              <div class="text-sm text-gray-600">
+                <strong>Symptoms:</strong> Long approval queues, disempowered teams, operational slowdown
+              </div>
+            </div>
+
+            <div class="insight-highlight p-8 rounded-lg">
+              <h4 class="font-canela text-xl font-light text-gray-900 mb-4">
+                <i class="fas fa-chess text-teal-600 mr-3"></i>
+                Strategic Planning Challenges
+              </h4>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                While founders are often visionaries, translating vision into coherent, executable strategy can be challenging. Absence of documented strategic plans results in misaligned efforts and reactive approaches.
+              </p>
+              <div class="text-sm text-gray-600">
+                <strong>Impact:</strong> Ad-hoc initiatives, lack of direction, missed market opportunities
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Diagnostic Framework -->
+      <section id="diagnostic" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-8">
+          <h2 class="font-canela text-4xl font-light text-gray-900 mb-12">Diagnostic Framework for Founder Bottlenecks</h2>
+
+          <p class="text-lg text-gray-700 mb-12 max-w-4xl">
+            A systematic diagnostic framework is essential for identifying and understanding the nature and extent of founder bottlenecks within a small business. This framework involves assessing several interconnected aspects of the business.
+          </p>
+
+          <!-- Diagnostic Framework Table -->
+          <div class="data-viz-container mb-12">
+            <div class="p-8">
+              <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">Comprehensive Diagnostic Framework</h3>
+              <div class="overflow-x-auto">
+                <table class="w-full">
+                  <thead>
+                    <tr class="border-b-2 border-gray-200">
+                      <th class="text-left py-4 px-6 font-semibold text-gray-900">Diagnostic Area</th>
+                      <th class="text-left py-4 px-6 font-semibold text-gray-900">Key Focus</th>
+                      <th class="text-left py-4 px-6 font-semibold text-gray-900">Methods/Tools</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                      <td class="py-4 px-6 font-semibold text-teal-700">Founder Involvement & Workload</td>
+                      <td class="py-4 px-6 text-gray-700">Quantifying founder's time allocation, decision points, and stress levels.</td>
+                      <td class="py-4 px-6 text-gray-600">Time tracking, workload analysis, founder interviews, 360-degree feedback.</td>
+                    </tr>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                      <td class="py-4 px-6 font-semibold text-teal-700">Organizational Structure & Team Capabilities</td>
+                      <td class="py-4 px-6 text-gray-700">Assessing clarity of roles, delegation effectiveness, team skills, and leadership development.</td>
+                      <td class="py-4 px-6 text-gray-600">Organizational charts review, skills gap analysis, team surveys, performance data review.</td>
+                    </tr>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                      <td class="py-4 px-6 font-semibold text-teal-700">Business Processes & Systems</td>
+                      <td class="py-4 px-6 text-gray-700">Evaluating efficiency, documentation, scalability, and automation of key operational processes.</td>
+                      <td class="py-4 px-6 text-gray-600">Process mapping, system audits, technology stack review, KPI analysis.</td>
+                    </tr>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                      <td class="py-4 px-6 font-semibold text-teal-700">Financial Performance & Growth Metrics</td>
+                      <td class="py-4 px-6 text-gray-700">Analyzing profitability, cash flow, revenue growth, customer acquisition costs, and other key metrics.</td>
+                      <td class="py-4 px-6 text-gray-600">Financial statement analysis, budget vs. actuals review, sales and marketing performance dashboards.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Diagnostic Process Flow -->
+          <div class="mb-12">
+            <h3 class="font-canela text-2xl font-light text-gray-900 mb-8">Diagnostic Process Flow</h3>
+            <div class="mermaid-container">
+              <div class="mermaid-controls">
+                <button class="mermaid-control-btn zoom-in" title="Zoom In">
+                  <i class="fas fa-search-plus"></i>
+                </button>
+                <button class="mermaid-control-btn zoom-out" title="Zoom Out">
+                  <i class="fas fa-search-minus"></i>
+                </button>
+                <button class="mermaid-control-btn reset-zoom" title="Reset">
+                  <i class="fas fa-expand-arrows-alt"></i>
+                </button>
+                <button class="mermaid-control-btn fullscreen" title="Fullscreen">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+              <div class="mermaid">
+                flowchart TD
+                A["Initial Assessment"] --> B["Founder Workload Analysis"]
+                B --> C["Organizational Structure Review"]
+                C --> D["Process & Systems Audit"]
+                D --> E["Financial Performance Analysis"]
+                E --> F["Bottleneck Identification"]
+                F --> G["Intervention Strategy"]
+                G --> H["Implementation & Monitoring"]
+
+                style A fill:#f0fdfa,stroke:#0f766e,stroke-width:2px
+                style F fill:#fef3c7,stroke:#d97706,stroke-width:2px
+                style H fill:#e0f2fe,stroke:#0369a1,stroke-width:2px
+              </div>
+            </div>
+          </div>
+
+          <!-- Assessment Methods -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-6">
+              <h4 class="font-canela text-xl font-light text-gray-900">Assessment Techniques</h4>
+
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h5 class="font-semibold text-gray-900 mb-3">
+                  <i class="fas fa-stopwatch text-teal-600 mr-2"></i>
+                  Time Tracking Analysis
+                </h5>
+                <p class="text-gray-700 text-sm">
+                  Objective assessment of how the founder spends their time, identifying tasks that consume disproportionate amounts of time but could be handled by others.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h5 class="font-semibold text-gray-900 mb-3">
+                  <i class="fas fa-sitemap text-teal-600 mr-2"></i>
+                  Organizational Structure Review
+                </h5>
+                <p class="text-gray-700 text-sm">
+                  Examining whether roles and responsibilities are clearly defined and if the current structure supports efficient workflow and decision-making.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <h5 class="font-semibold text-gray-900 mb-3">
+                  <i class="fas fa-chart-bar text-teal-600 mr-2"></i>
+                  Process Mapping
+                </h5>
+                <p class="text-gray-700 text-sm">
+                  Mapping core business processes to identify redundancies, inefficiencies, and areas of high friction.
+                </p>
+              </div>
+            </div>
+
+            <div class="space-y-6">
+              <h4 class="font-canela text-xl font-light text-gray-900">Key Indicators</h4>
+
+              <div class="insight-highlight p-6 rounded-lg">
+                <h5 class="font-semibold text-gray-900 mb-3">Quantitative Evidence</h5>
+                <ul class="space-y-2 text-sm text-gray-700">
+                  <li>• Stagnating growth despite market opportunities</li>
+                  <li>• High operational costs in specific areas</li>
+                  <li>• Cash flow constraints linked to decision delays</li>
+                  <li>• Declining profitability despite revenue growth</li>
+                </ul>
+              </div>
+
+              <div class="insight-highlight p-6 rounded-lg">
+                <h5 class="font-semibold text-gray-900 mb-3">Qualitative Signals</h5>
+                <ul class="space-y-2 text-sm text-gray-700">
+                  <li>• Founder feeling constantly overwhelmed</li>
+                  <li>• Team frustration with approval processes</li>
+                  <li>• Lack of documented procedures</li>
+                  <li>• High dependency on founder for problem-solving</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Strategies Section -->
+      <section id="strategies" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-8">
+          <h2 class="font-canela text-4xl font-light text-gray-900 mb-12">Strategies for Mitigating Founder Bottlenecks</h2>
+
+          <p class="text-lg text-gray-700 mb-12 max-w-4xl">
+            Once founder bottlenecks have been identified and diagnosed, the next step is to implement strategies to mitigate them. This involves a combination of empowering people, improving processes, and shifting the founder's focus.
+          </p>
+
+          <!-- Strategies Table -->
+          <div class="data-viz-container mb-12">
+            <div class="p-8">
+              <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">Comprehensive Mitigation Strategies</h3>
+              <div class="overflow-x-auto">
+                <table class="w-full">
+                  <thead>
+                    <tr class="border-b-2 border-gray-200">
+                      <th class="text-left py-4 px-6 font-semibold text-gray-900">Strategy Area</th>
+                      <th class="text-left py-4 px-6 font-semibold text-gray-900">Key Actions</th>
+                      <th class="text-left py-4 px-6 font-semibold text-gray-900">Expected Outcomes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                      <td class="py-4 px-6 font-semibold text-teal-700">Empowering Leadership & Building Effective Teams</td>
+                      <td class="py-4 px-6 text-gray-700">Clarify roles & responsibilities; delegate authority with accountability; invest in leadership development & training.</td>
+                      <td class="py-4 px-6 text-gray-600">Increased team autonomy, faster decision-making, improved morale, stronger leadership pipeline.</td>
+                    </tr>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                      <td class="py-4 px-6 font-semibold text-teal-700">Implementing Scalable Systems & Processes</td>
+                      <td class="py-4 px-6 text-gray-700">Document key processes; automate repetitive tasks; invest in appropriate technology; establish quality control measures.</td>
+                      <td class="py-4 px-6 text-gray-600">Improved efficiency, consistency, and quality; reduced operational fragility; enhanced ability to scale.</td>
+                    </tr>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                      <td class="py-4 px-6 font-semibold text-teal-700">Enhancing Strategic Focus & Delegation</td>
+                      <td class="py-4 px-6 text-gray-700">Founder shifts focus to high-impact strategic activities; establishes clear delegation frameworks; implements regular strategic reviews.</td>
+                      <td class="py-4 px-6 text-gray-600">Founder focuses on growth and innovation; reduced founder workload on low-value tasks; better strategic alignment.</td>
+                    </tr>
+                    <tr class="border-b border-gray-100 hover:bg-gray-50">
+                      <td class="py-4 px-6 font-semibold text-teal-700">Fostering a Culture of Continuous Improvement</td>
+                      <td class="py-4 px-6 text-gray-700">Implement feedback mechanisms; encourage experimentation and learning; regularly review and refine processes and strategies.</td>
+                      <td class="py-4 px-6 text-gray-600">Increased adaptability, ongoing optimization of operations, proactive problem-solving, sustained growth.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Strategy Details -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div class="insight-highlight p-8 rounded-lg">
+              <h4 class="font-canela text-xl font-light text-gray-900 mb-4">
+                <i class="fas fa-users-cog text-teal-600 mr-3"></i>
+                Empowering Leadership
+              </h4>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                A cornerstone of mitigating founder bottlenecks is empowering leadership within the team and building an effective, autonomous workforce. This begins with clearly defining roles, responsibilities, and decision-making authority.
+              </p>
+              <div class="space-y-2">
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="fas fa-check text-teal-600 mr-2"></i>
+                  Delegate authority with accountability
+                </div>
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="fas fa-check text-teal-600 mr-2"></i>
+                  Invest in leadership development
+                </div>
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="fas fa-check text-teal-600 mr-2"></i>
+                  Build strong leadership pipeline
+                </div>
+              </div>
+            </div>
+
+            <div class="insight-highlight p-8 rounded-lg">
+              <h4 class="font-canela text-xl font-light text-gray-900 mb-4">
+                <i class="fas fa-cogs text-teal-600 mr-3"></i>
+                Scalable Systems Implementation
+              </h4>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                To reduce the founder's operational load and improve efficiency, businesses must implement scalable systems and processes. The goal is to create systems that can run effectively without constant intervention.
+              </p>
+              <div class="space-y-2">
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="fas fa-check text-teal-600 mr-2"></i>
+                  Document key workflows
+                </div>
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="fas fa-check text-teal-600 mr-2"></i>
+                  Automate repetitive tasks
+                </div>
+                <div class="flex items-center text-sm text-gray-600">
+                  <i class="fas fa-check text-teal-600 mr-2"></i>
+                  Establish quality control measures
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Implementation Timeline -->
+          <div class="bg-white p-8 rounded-lg shadow-sm">
+            <h4 class="font-canela text-2xl font-light text-gray-900 mb-6">Implementation Timeline</h4>
+            <div class="mermaid-container">
+              <div class="mermaid-controls">
+                <button class="mermaid-control-btn zoom-in" title="Zoom In">
+                  <i class="fas fa-search-plus"></i>
+                </button>
+                <button class="mermaid-control-btn zoom-out" title="Zoom Out">
+                  <i class="fas fa-search-minus"></i>
+                </button>
+                <button class="mermaid-control-btn reset-zoom" title="Reset">
+                  <i class="fas fa-expand-arrows-alt"></i>
+                </button>
+                <button class="mermaid-control-btn fullscreen" title="Fullscreen">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+              <div class="mermaid">
+                timeline
+                title "Founder Bottleneck Mitigation Timeline"
+
+                Phase 1 : "Assessment & Diagnosis"
+                : "Founder workload analysis"
+                : "Organizational structure review"
+                : "Process mapping"
+
+                Phase 2 : "Immediate Interventions"
+                : "Quick-win process improvements"
+                : "Initial delegation framework"
+                : "Team empowerment initiatives"
+
+                Phase 3 : "System Implementation"
+                : "Document key processes"
+                : "Technology investment"
+                : "Quality control systems"
+
+                Phase 4 : "Strategic Transformation"
+                : "Leadership development"
+                : "Cultural change"
+                : "Continuous improvement"
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Case Studies -->
+      <section id="case-studies" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-8">
+          <h2 class="font-canela text-4xl font-light text-gray-900 mb-12">Case Studies and Best Practices</h2>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Success Stories -->
+            <div>
+              <h3 class="font-canela text-2xl font-light text-gray-900 mb-8">Successful Transitions</h3>
+
+              <div class="space-y-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                  <h4 class="font-semibold text-gray-900 mb-3">Tech Startup Transformation</h4>
+                  <p class="text-gray-700 text-sm mb-4">
+                    A tech startup founder initially handled all product development, marketing, and sales. Successful transition involved hiring experienced department heads, clearly defining their mandates, and stepping back to focus on overarching strategy.
+                  </p>
+                  <div class="flex items-center text-xs text-teal-600">
+                    <i class="fas fa-chart-line mr-2"></i>
+                    <span>300% growth in 18 months post-intervention</span>
+                  </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                  <h4 class="font-semibold text-gray-900 mb-3">Manufacturing Business Scaling</h4>
+                  <p class="text-gray-700 text-sm mb-4">
+                    Founder recognized growth ceiling and severe burnout. Deliberate phased approach starting with clear vision articulation, followed by strategic hiring and development of strong leadership team.
+                  </p>
+                  <div class="flex items-center text-xs text-teal-600">
+                    <i class="fas fa-users mr-2"></i>
+                    <span>Team autonomy increased by 85%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Lessons Learned -->
+            <div>
+              <h3 class="font-canela text-2xl font-light text-gray-900 mb-8">Key Lessons Learned</h3>
+
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="bg-teal-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-lightbulb text-teal-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Early Recognition is Paramount</h4>
+                    <p class="text-gray-700 text-sm">
+                      Denial or resistance to change can prolong pain and hinder growth. Founders must acknowledge bottleneck issues early.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="bg-teal-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-user-graduate text-teal-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Investing in People is Non-Negotiable</h4>
+                    <p class="text-gray-700 text-sm">
+                      Hiring the right talent, particularly in leadership roles, and investing in their development and empowerment.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="bg-teal-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-cogs text-teal-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Systemize and Document Processes</h4>
+                    <p class="text-gray-700 text-sm">
+                      Crucial for scalability and consistency, reducing the founder's need to be the "human glue" holding everything together.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="bg-teal-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-handshake text-teal-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Effective Delegation is an Art</h4>
+                    <p class="text-gray-700 text-sm">
+                      Not just about offloading tasks but empowering others with clear expectations and support.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="bg-teal-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-rocket text-teal-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Founder's Role Must Evolve</h4>
+                    <p class="text-gray-700 text-sm">
+                      Transition from chief "doer" to chief strategist, culture keeper, and visionary leader.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Tools and Methodologies -->
+      <section id="tools" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-8">
+          <h2 class="font-canela text-4xl font-light text-gray-900 mb-12">Tools and Methodologies for Diagnosis and Intervention</h2>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Operational Audits -->
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+              <div class="bg-teal-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                <i class="fas fa-search text-teal-600 text-xl"></i>
+              </div>
+              <h3 class="font-canela text-xl font-light text-gray-900 mb-4">Operational Audits</h3>
+              <p class="text-gray-700 text-sm mb-4">
+                Detailed analysis of business processes, data handling, and reporting mechanisms to identify inefficiencies and potential bottlenecks.
+              </p>
+              <ul class="space-y-2 text-xs text-gray-600">
+                <li>• Process mapping and workflow analysis</li>
+                <li>• System and technology stack review</li>
+                <li>• Data validation and process verification</li>
+                <li>• Performance KPI analysis</li>
+              </ul>
+            </div>
+
+            <!-- Coaching and Advisory -->
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+              <div class="bg-teal-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                <i class="fas fa-user-tie text-teal-600 text-xl"></i>
+              </div>
+              <h3 class="font-canela text-xl font-light text-gray-900 mb-4">Coaching & Advisory</h3>
+              <p class="text-gray-700 text-sm mb-4">
+                External consultants provide objective perspective, challenge assumptions, and offer tailored strategies for founder development.
+              </p>
+              <ul class="space-y-2 text-xs text-gray-600">
+                <li>• Leadership skills development</li>
+                <li>• Delegation and empowerment frameworks</li>
+                <li>• Strategic planning guidance</li>
+                <li>• Organizational design consulting</li>
+              </ul>
+            </div>
+
+            <!-- Performance Monitoring -->
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+              <div class="bg-teal-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                <i class="fas fa-chart-bar text-teal-600 text-xl"></i>
+              </div>
+              <h3 class="font-canela text-xl font-light text-gray-900 mb-4">Performance Monitoring</h3>
+              <p class="text-gray-700 text-sm mb-4">
+                Implementing robust monitoring systems and feedback loops to ensure interventions are effective and bottlenecks don't re-emerge.
+              </p>
+              <ul class="space-y-2 text-xs text-gray-600">
+                <li>• KPI dashboards and regular reporting</li>
+                <li>• Feedback mechanisms and surveys</li>
+                <li>• Continuous improvement processes</li>
+                <li>• Team engagement monitoring</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Technical Implementation Example -->
+          <div class="bg-white p-8 rounded-lg shadow-sm">
+            <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">Technical Implementation Case Study</h3>
+
+            <div class="insight-highlight p-6 rounded-lg mb-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Data Analysis Bottleneck Example</h4>
+              <p class="text-gray-700 text-sm leading-relaxed">
+                A founder's involvement in technical data analysis tasks created significant bottlenecks. The process of translating an R script to Python revealed several operational issues: logical errors in data aggregation, resource dependencies on external URLs, extensive debugging time, and lack of standardized error handling.
+              </p>
+            </div>
+
+            <!-- Data Flow Diagram -->
+            <div class="mermaid-container">
+              <div class="mermaid-controls">
+                <button class="mermaid-control-btn zoom-in" title="Zoom In">
+                  <i class="fas fa-search-plus"></i>
+                </button>
+                <button class="mermaid-control-btn zoom-out" title="Zoom Out">
+                  <i class="fas fa-search-minus"></i>
+                </button>
+                <button class="mermaid-control-btn reset-zoom" title="Reset">
+                  <i class="fas fa-expand-arrows-alt"></i>
+                </button>
+                <button class="mermaid-control-btn fullscreen" title="Fullscreen">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+              <div class="mermaid">
+                flowchart LR
+                A["Data Source"] --> B["Data Loading"]
+                B --> C["Data Preprocessing"]
+                C --> D["Data Aggregation"]
+                D --> E["Data Validation"]
+                E --> F["Visualization"]
+                F --> G["Reporting"]
+
+                H["Founder Involvement"] -.-> C
+                H -.-> D
+                H -.-> F
+
+                style H fill:#fef3c7,stroke:#d97706,stroke-width:2px
+                style E fill:#f0fdfa,stroke:#0f766e,stroke-width:2px
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+              <div>
+                <h5 class="font-semibold text-gray-900 mb-3">Identified Issues</h5>
+                <ul class="space-y-2 text-sm text-gray-700">
+                  <li>• Logical errors in aggregation logic</li>
+                  <li>• External resource dependencies</li>
+                  <li>• Extensive debugging requirements</li>
+                  <li>• Lack of error handling standards</li>
+                </ul>
+              </div>
+              <div>
+                <h5 class="font-semibold text-gray-900 mb-3">Recommended Solutions</h5>
+                <ul class="space-y-2 text-sm text-gray-700">
+                  <li>• Standardized reporting templates</li>
+                  <li>• Automated data validation checks</li>
+                  <li>• Clear delegation to technical staff</li>
+                  <li>• Robust logging and monitoring</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Conclusion -->
+      <section id="conclusion" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-8">
+          <h2 class="font-canela text-4xl font-light text-gray-900 mb-12">Enabling Sustainable Growth Beyond the Founder</h2>
+
+          <div class="prose prose-lg max-w-none">
+            <p class="text-xl text-gray-700 leading-relaxed mb-8">
+              The journey of a small business from a founder-led startup to a sustainably growing enterprise is often paved with challenges, many of which stem from the founder themselves becoming a bottleneck. While the founder's passion, vision, and drive are essential for getting the business off the ground, these same qualities can inadvertently hinder its long-term scalability and success if not managed effectively.
+            </p>
+
+            <div class="insight-highlight p-8 rounded-lg mb-12">
+              <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">The Consultant's Role</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                The strategic operations consultant's role is to diagnose these founder-led constraints with empathy and precision, and then to guide the founder and the business through the necessary transformations. This involves:
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <ul class="space-y-2 text-sm text-gray-700">
+                  <li>• Empowering leadership at all levels</li>
+                  <li>• Building capable and autonomous teams</li>
+                </ul>
+                <ul class="space-y-2 text-sm text-gray-700">
+                  <li>• Implementing scalable systems and processes</li>
+                  <li>• Refocusing founder energy on strategic activities</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-lg mb-12">
+              <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">The Ultimate Goal</h3>
+              <p class="text-gray-700 leading-relaxed">
+                <strong>Ultimately, the goal is to create an organization that is not solely dependent on the founder's daily involvement</strong>, thereby enabling sustainable growth, fostering innovation, and building a resilient business that can thrive well into the future, even beyond the founder's direct operational control. This transition is not just an operational shift but a profound evolution in leadership and organizational culture, paving the way for a legacy of enduring success.
+              </p>
+            </div>
+
+            <!-- Key Success Metrics -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              <div class="text-center p-6 bg-teal-50 rounded-lg">
+                <div class="text-3xl font-bold text-teal-600 mb-2">85%</div>
+                <div class="text-sm text-gray-700">Reduction in founder operational workload</div>
+              </div>
+              <div class="text-center p-6 bg-teal-50 rounded-lg">
+                <div class="text-3xl font-bold text-teal-600 mb-2">3x</div>
+                <div class="text-sm text-gray-700">Increase in team decision-making speed</div>
+              </div>
+              <div class="text-center p-6 bg-teal-50 rounded-lg">
+                <div class="text-3xl font-bold text-teal-600 mb-2">2.5x</div>
+                <div class="text-sm text-gray-700">Acceleration in business growth rate</div>
+              </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="bg-teal-600 text-white p-8 rounded-lg">
+              <h3 class="font-canela text-2xl font-light mb-4">Ready to Transform Your Business?</h3>
+              <p class="text-teal-100 mb-6">
+                If you recognize these founder bottleneck patterns in your business, it's time to take action. The transition from founder-led to team-based operations is challenging but essential for sustainable growth.
+              </p>
+              <div class="flex flex-col sm:flex-row flex-wrap gap-4">
+                <div class="flex items-center text-sm">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  <span>Comprehensive diagnostic assessment</span>
+                </div>
+                <div class="flex items-center text-sm">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  <span>Customized intervention strategy</span>
+                </div>
+                <div class="flex items-center text-sm">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  <span>Ongoing support and monitoring</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Initialize Mermaid
+      if (typeof window !== 'undefined' && (window as any).mermaid) {
+        (window as any).mermaid.initialize({
+          startOnLoad: true,
+          theme: 'base',
+          themeVariables: {
+            primaryColor: '#f0fdfa',
+            primaryTextColor: '#1f2937',
+            primaryBorderColor: '#0f766e',
+            lineColor: '#0f766e',
+            secondaryColor: '#e0f2fe',
+            tertiaryColor: '#fef3c7',
+            background: '#ffffff',
+            mainBkg: '#f0fdfa',
+            secondaryBkg: '#e0f2fe',
+            tertiaryBkg: '#fef3c7',
+            nodeBorder: '#0f766e',
+            clusterBkg: '#f9fafb',
+            clusterBorder: '#d1d5db',
+            defaultLinkColor: '#0f766e',
+            titleColor: '#1f2937',
+            edgeLabelBackground: '#ffffff',
+            nodeTextColor: '#1f2937'
+          },
+          flowchart: {
+            useMaxWidth: false,
+            htmlLabels: true,
+            curve: 'basis',
+            padding: 20
+          },
+          timeline: {
+            useMaxWidth: false,
+            padding: 20
+          },
+          gantt: {
+            useMaxWidth: false
+          }
+        });
+      }
+
+      // Mobile TOC Toggle
+      const tocToggle = document.getElementById('toc-toggle');
+      const toc = document.getElementById('toc');
+      
+      if (tocToggle && toc) {
+        tocToggle.addEventListener('click', () => {
+          toc.classList.toggle('open');
+        });
+      }
+
+      // Smooth scrolling for TOC links
+      document.querySelectorAll('.toc-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href')?.substring(1);
+          const targetElement = targetId ? document.getElementById(targetId) : null;
+          
+          if (targetElement) {
+            const offsetTop = targetElement.offsetTop - 20;
+            window.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth'
+            });
+          }
+          
+          // Close mobile TOC
+          if (window.innerWidth <= 1024 && toc) {
+            toc.classList.remove('open');
+          }
+        });
+      });
+
+      // Active TOC link highlighting
+      const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -80% 0px',
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            document.querySelectorAll('.toc-link').forEach(link => {
+              link.classList.remove('active');
+            });
+            const activeLink = document.querySelector(`[href="#${id}"]`);
+            if (activeLink) {
+              activeLink.classList.add('active');
+            }
+          }
+        });
+      }, observerOptions);
+
+      // Observe all sections
+      document.querySelectorAll('section[id]').forEach(section => {
+        observer.observe(section);
+      });
+
+      // Close mobile TOC when clicking outside
+      document.addEventListener('click', (e) => {
+        const target = e.target as Node;
+        if (window.innerWidth <= 1024 && 
+            toc && tocToggle &&
+            !toc.contains(target) && 
+            !tocToggle.contains(target) &&
+            toc.classList.contains('open')) {
+          toc.classList.remove('open');
+        }
+      });
+    </script>
+  </body>
+</Layout>

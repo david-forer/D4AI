@@ -1,464 +1,391 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="AI Services">
-	<div class="services-container">
-		<h1>AI <span class="text-gradient">Services</span></h1>
-		<div class="services-grid">
-			<a href="/ai-audit" class="service-card">
-				<h3>AI Audit</h3>
-				<div class="icon">🔍</div>
-				<p>Comprehensive assessment of your AI systems and infrastructure.</p>
-				<ul>
-					<li>Performance Evaluation</li>
-					<li>Security Analysis</li>
-					<li>Optimization Recommendations</li>
-				</ul>
-			</a>
+<Layout title="AI Services | AI SEO Operations">
+	<div class="bg-gray-50 overflow-hidden">
+		
+		<!-- Hero Section -->
+		<section class="bg-gradient-to-br from-blue-600 to-blue-800 py-20">
+			<div class="container mx-auto px-6 max-w-6xl">
+				<div class="text-center">
+					<h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+						AI <span class="text-gradient">Services</span>
+					</h1>
+					<h2 class="text-xl md:text-2xl text-blue-100 mb-8">
+						Transform Your Business with Strategic AI Implementation
+					</h2>
+					<p class="text-white text-lg mb-8 max-w-3xl mx-auto">
+						From comprehensive audits to full operational buildouts, our services help you leverage AI to scale efficiently, reduce manual work, and drive sustainable growth.
+					</p>
+				</div>
+			</div>
+		</section>
 
-			<a href="/seo-accelerator" class="service-card">
-				<h3>SEO Accelerator</h3>
-				<div class="icon">🚀</div>
-				<p>Boost your search engine rankings and drive organic traffic.</p>
-				<ul>
-					<li>Keyword Optimization</li>
-					<li>Technical SEO</li>
-					<li>Content Strategy</li>
-				</ul>
-			</a>
+		<!-- AI Audit Section -->
+		<section class="py-16 bg-white">
+			<div class="container mx-auto px-6 max-w-6xl">
+				<div class="flex flex-col lg:flex-row items-center gap-12">
+					<div class="lg:w-1/2">
+						<div class="inline-block bg-blue-100 text-blue-800 text-sm font-bold py-1 px-3 rounded-full mb-4">
+							ASSESSMENT
+						</div>
+						<h2 class="text-3xl font-bold text-gray-800 mb-6">AI Readiness Audit</h2>
+						<p class="text-lg text-gray-600 mb-6">
+							Discover how AI can transform your operations, reduce manual tasks, and scale your business without adding headcount. Our comprehensive audit identifies 3-6 high-potential AI opportunities specific to your business.
+						</p>
+						
+						<div class="space-y-4 mb-8">
+							<div class="flex items-start">
+								<svg class="h-6 w-6 text-blue-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span><strong>AI Maturity Assessment</strong> across six critical dimensions</span>
+							</div>
+							<div class="flex items-start">
+								<svg class="h-6 w-6 text-blue-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span><strong>Systems & Workflow Review</strong> to identify automation opportunities</span>
+							</div>
+							<div class="flex items-start">
+								<svg class="h-6 w-6 text-blue-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span><strong>Phased Implementation Roadmap</strong> with quick wins and long-term strategies</span>
+							</div>
+						</div>
 
-			<a href="/operational-buildout" class="service-card">
-				<h3>Operational Buildout</h3>
-				<div class="icon">⚙️</div>
-				<p>Implement AI-powered systems to streamline your business operations.</p>
-				<ul>
-					<li>Process Automation</li>
-					<li>Workflow Optimization</li>
-					<li>System Integration</li>
-				</ul>
-			</a>
+						<div class="bg-blue-50 p-6 rounded-lg mb-8">
+							<h3 class="text-xl font-bold text-gray-800 mb-4">What You'll Get:</h3>
+							<ul class="space-y-2 text-gray-700">
+								<li>• Complete 5-7 day audit process</li>
+								<li>• Comprehensive report with executive summary</li>
+								<li>• Custom AI prompts & templates for your business</li>
+								<li>• 1-hour implementation planning call</li>
+							</ul>
+						</div>
 
-			<a href="/custom-consulting" class="service-card">
-				<h3>Custom Consulting</h3>
-				<div class="icon">💡</div>
-				<p>Tailored AI solutions for your unique business challenges.</p>
-				<ul>
-					<li>Strategic Planning</li>
-					<li>Technology Selection</li>
-					<li>Implementation Support</li>
-				</ul>
-			</a>
-		</div>
+						<a href="/ai-audit" class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+							Learn More About AI Audit
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+							</svg>
+						</a>
+					</div>
+					
+					<div class="lg:w-1/2">
+						<div class="bg-gradient-to-br from-blue-100 to-blue-200 p-8 rounded-2xl">
+							<div class="text-center">
+								<div class="text-4xl mb-4">🔍</div>
+								<h3 class="text-2xl font-bold text-gray-800 mb-4">Typical Results</h3>
+								<div class="grid grid-cols-2 gap-6">
+									<div class="text-center">
+										<div class="text-3xl font-bold text-blue-600">10+</div>
+										<div class="text-sm text-gray-600">Hours Saved Weekly</div>
+									</div>
+									<div class="text-center">
+										<div class="text-3xl font-bold text-blue-600">30%</div>
+										<div class="text-sm text-gray-600">Increased Capacity</div>
+									</div>
+									<div class="text-center">
+										<div class="text-3xl font-bold text-blue-600">50%</div>
+										<div class="text-sm text-gray-600">Faster Onboarding</div>
+									</div>
+									<div class="text-center">
+										<div class="text-3xl font-bold text-blue-600">90%</div>
+										<div class="text-sm text-gray-600">More Consistent</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SEO Accelerator Section -->
+		<section class="py-16 bg-gray-50">
+			<div class="container mx-auto px-6 max-w-6xl">
+				<div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+					<div class="lg:w-1/2">
+						<div class="inline-block bg-green-100 text-green-800 text-sm font-bold py-1 px-3 rounded-full mb-4">
+							GROWTH
+						</div>
+						<h2 class="text-3xl font-bold text-gray-800 mb-6">SEO Accelerator</h2>
+						<p class="text-lg text-gray-600 mb-6">
+							Supercharge your search engine rankings with our data-driven SEO strategies. We combine cutting-edge techniques with proven methodologies to deliver measurable improvements in your search visibility and organic traffic.
+						</p>
+						
+						<div class="space-y-4 mb-8">
+							<div class="flex items-start">
+								<svg class="h-6 w-6 text-green-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span><strong>Semantic SEO Approach</strong> — Target hundreds of related keywords with single pieces of content</span>
+							</div>
+							<div class="flex items-start">
+								<svg class="h-6 w-6 text-green-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span><strong>AI-Powered Keyword Research</strong> and semantic topic clusters</span>
+							</div>
+							<div class="flex items-start">
+								<svg class="h-6 w-6 text-green-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span><strong>Technical SEO Implementation</strong> and site speed optimization</span>
+							</div>
+						</div>
+
+						<div class="bg-green-50 p-6 rounded-lg mb-8">
+							<h3 class="text-xl font-bold text-gray-800 mb-4">Our 7-Step Process:</h3>
+							<div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-gray-700">
+								<div>1. Comprehensive website audit</div>
+								<div>2. Competitor research & positioning</div>
+								<div>3. AI-powered keyword research</div>
+								<div>4. On-page optimization</div>
+								<div>5. Technical SEO implementation</div>
+								<div>6. Authority building campaign</div>
+								<div>7. Performance tracking & optimization</div>
+							</div>
+						</div>
+
+						<a href="/seo-accelerator" class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+							Explore SEO Accelerator
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+							</svg>
+						</a>
+					</div>
+					
+					<div class="lg:w-1/2">
+						<div class="bg-gradient-to-br from-green-100 to-green-200 p-8 rounded-2xl">
+							<div class="text-center">
+								<div class="text-4xl mb-4">🚀</div>
+								<h3 class="text-2xl font-bold text-gray-800 mb-4">Average Results</h3>
+								<div class="grid grid-cols-2 gap-6">
+									<div class="text-center">
+										<div class="text-3xl font-bold text-green-600">215%</div>
+										<div class="text-sm text-gray-600">Increase in Ranking Keywords</div>
+									</div>
+									<div class="text-center">
+										<div class="text-3xl font-bold text-green-600">78%</div>
+										<div class="text-sm text-gray-600">Growth in Organic Traffic</div>
+									</div>
+									<div class="text-center">
+										<div class="text-3xl font-bold text-green-600">24%</div>
+										<div class="text-sm text-gray-600">Improvement in Lead Generation</div>
+									</div>
+									<div class="text-center">
+										<div class="text-3xl font-bold text-green-600">3-6</div>
+										<div class="text-sm text-gray-600">Months to See Results</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Operations Accelerator Section -->
+		<section class="py-16 bg-white">
+			<div class="container mx-auto px-6 max-w-6xl">
+				<div class="flex flex-col lg:flex-row items-center gap-12">
+					<div class="lg:w-1/2">
+						<div class="inline-block bg-orange-100 text-orange-800 text-sm font-bold py-1 px-3 rounded-full mb-4">
+							SYSTEMS
+						</div>
+						<h2 class="text-3xl font-bold text-gray-800 mb-6">Operations Accelerator</h2>
+						<p class="text-lg text-gray-600 mb-6">
+							Build streamlined systems that scale your business. Turn operational chaos into strategic advantage with customized workflows, automations, and AI-powered systems designed specifically for growing businesses.
+						</p>
+						
+						<div class="space-y-4 mb-8">
+							<div class="flex items-start">
+								<svg class="h-6 w-6 text-orange-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span><strong>4-Phase Methodology</strong> — Diagnose, Design, Implement, Optimize</span>
+							</div>
+							<div class="flex items-start">
+								<svg class="h-6 w-6 text-orange-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span><strong>4 Core Systems</strong> — Client Management, Project Delivery, Team Operations, Business Development</span>
+							</div>
+							<div class="flex items-start">
+								<svg class="h-6 w-6 text-orange-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span><strong>AI Integration</strong> for repetitive tasks and workflow automation</span>
+							</div>
+						</div>
+
+						<div class="bg-orange-50 p-6 rounded-lg mb-8">
+							<h3 class="text-xl font-bold text-gray-800 mb-4">What We Build:</h3>
+							<ul class="space-y-2 text-gray-700">
+								<li>• Standardized client onboarding process</li>
+								<li>• Project workflow templates & quality control</li>
+								<li>• Team decision framework & communication protocols</li>
+								<li>• Sales process automation & capacity planning</li>
+							</ul>
+						</div>
+
+						<a href="/operational-buildout" class="inline-flex items-center bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+							Transform Your Operations
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+							</svg>
+						</a>
+					</div>
+					
+					<div class="lg:w-1/2">
+						<div class="bg-gradient-to-br from-orange-100 to-orange-200 p-8 rounded-2xl">
+							<div class="text-center">
+								<div class="text-4xl mb-4">⚙️</div>
+								<h3 class="text-2xl font-bold text-gray-800 mb-4">Transformation Results</h3>
+								<div class="grid grid-cols-2 gap-6">
+									<div class="text-center">
+										<div class="text-3xl font-bold text-orange-600">70%</div>
+										<div class="text-sm text-gray-600">Fewer Internal Questions</div>
+									</div>
+									<div class="text-center">
+										<div class="text-3xl font-bold text-orange-600">10+</div>
+										<div class="text-sm text-gray-600">Hours Saved Weekly</div>
+									</div>
+									<div class="text-center">
+										<div class="text-3xl font-bold text-orange-600">30%</div>
+										<div class="text-sm text-gray-600">Faster Client Onboarding</div>
+									</div>
+									<div class="text-center">
+										<div class="text-3xl font-bold text-orange-600">25%</div>
+										<div class="text-sm text-gray-600">Reduced Scope Creep</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- AI Automation Accelerator Section -->
+		<section class="py-16 bg-gray-100">
+			<div class="container mx-auto px-6 max-w-6xl">
+				<div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+					<div class="lg:w-1/2">
+						<div class="inline-block bg-teal-100 text-teal-800 text-sm font-bold py-1 px-3 rounded-full mb-4">
+							AUTOMATION
+						</div>
+						<h2 class="text-3xl font-bold text-gray-800 mb-6">AI Automation Accelerator</h2>
+						<p class="text-lg text-gray-600 mb-6">
+							Reclaim your time and scale smarter. Stop drowning in manual tasks. We implement intelligent AI automations to handle repetitive work, boost efficiency, and free up your team for high-impact activities.
+						</p>
+						
+						<div class="space-y-4 mb-8">
+							<div class="flex items-start">
+								<svg class="h-6 w-6 text-teal-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span><strong>4-Phase Journey</strong> — Discover, Design, Deploy, Drive</span>
+							</div>
+							<div class="flex items-start">
+								<svg class="h-6 w-6 text-teal-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span><strong>Smart Automations</strong> — Email management, data entry, reporting, customer support</span>
+							</div>
+							<div class="flex items-start">
+								<svg class="h-6 w-6 text-teal-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+								</svg>
+								<span><strong>Custom Integration</strong> with your existing tech stack and workflows</span>
+							</div>
+						</div>
+
+						<div class="bg-teal-50 p-6 rounded-lg mb-8">
+							<h3 class="text-xl font-bold text-gray-800 mb-4">Common Automations:</h3>
+							<div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-gray-700">
+								<div>• AI Email Assistant</div>
+								<div>• Smart Data Entry</div>
+								<div>• Automated Reporting</div>
+								<div>• AI Support Agents</div>
+								<div>• Content Creation Engine</div>
+								<div>• Smart Task Coordination</div>
+							</div>
+						</div>
+
+						<a href="/ai-automation-accelerator" class="inline-flex items-center bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+							Automate Your Business
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+							</svg>
+						</a>
+					</div>
+					
+					<div class="lg:w-1/2">
+						<div class="bg-gradient-to-br from-teal-100 to-teal-200 p-8 rounded-2xl">
+							<div class="text-center">
+								<div class="text-4xl mb-4">🤖</div>
+								<h3 class="text-2xl font-bold text-gray-800 mb-4">Automation Impact</h3>
+								<div class="grid grid-cols-2 gap-6">
+									<div class="text-center">
+										<div class="text-3xl font-bold text-teal-600">15+</div>
+										<div class="text-sm text-gray-600">Hours Saved Weekly</div>
+									</div>
+									<div class="text-center">
+										<div class="text-3xl font-bold text-teal-600">40%</div>
+										<div class="text-sm text-gray-600">Reduction in Errors</div>
+									</div>
+									<div class="text-center">
+										<div class="text-3xl font-bold text-teal-600">2X</div>
+										<div class="text-sm text-gray-600">Faster Process Completion</div>
+									</div>
+									<div class="text-center">
+										<div class="text-3xl font-bold text-teal-600">24/7</div>
+										<div class="text-sm text-gray-600">Productivity Boost</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+			<div class="container mx-auto px-6 max-w-4xl text-center">
+				<h2 class="text-3xl md:text-4xl font-bold mb-6">
+					Ready to Transform Your Business with AI?
+				</h2>
+				<p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+					Start with a free consultation to identify the best AI opportunities for your business. We'll show you exactly how to implement systems that scale.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="/contact" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-lg hover:bg-blue-50 transition duration-300">
+						Schedule Free Consultation
+					</a>
+					<a href="/ai-audit" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-blue-700 transition duration-300">
+						Start with AI Audit
+					</a>
+				</div>
+			</div>
+		</section>
+
 	</div>
-	<section
-  class="relative tracking-tight leading-7 text-slate-200"
-  style="scroll-margin-top: 72px;"
->
-  <div
-    class="absolute leading-7 pointer-events-none"
-    aria-hidden="true"
-    style="inset: 0px; z-index: -1;"
-  >
-    <div class="absolute text-slate-200" style="inset: 0px;"></div>
-  </div>
-  <div
-    class="relative py-12 px-4 mx-auto max-w-7xl leading-7 lg:py-20 md:px-6 md:py-16"
-    data-animated="true"
-    style="transition-delay: 0ms; animation-delay: 0ms;"
-  >
-    <div class="mb-8 max-w-3xl text-center md:mx-auto md:mb-12">
-      <h2
-        class="m-0 font-sans text-3xl font-bold tracking-tighter leading-9 md:text-4xl md:leading-10"
-        style="scroll-margin-top: 80px;"
-      >
-        Explore our diverse templates
-      </h2>
-      <p class="mx-0 mt-4 mb-0 text-xl text-slate-100">
-        Discover our selection below to streamline and elevate your projects.
-      </p>
-    </div>
-    <div class="grid gap-4 lg:grid-cols-3 sm:grid-cols-2 sm:gap-y-8 md:gap-6">
-      <div
-        class="flex relative flex-col p-6 rounded-lg border border-white border-solid delay-100 bg-slate-900"
-        data-animated="true"
-        style="transition-delay: 100ms; animation-delay: 100ms;"
-      >
-        <svg
-          class="block mb-6 w-12 h-12 text-blue-600 align-middle"
-          data-icon="tabler:school"
-          height="1em"
-          width="1em"
-        >
-          <symbol id="ai:tabler:school" viewBox="0 0 24 24" class="">
-            <g
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class=""
-            >
-              <path d="M22 9L12 5L2 9l10 4zv6" class=""></path>
-              <path d="M6 10.6V16a6 3 0 0 0 12 0v-5.4" class=""></path>
-            </g>
-          </symbol>
-          <use href="#ai:tabler:school" class=""></use>
-        </svg>
-        <div class="text-xl font-bold text-slate-200">Educational</div>
-        <p class="mx-0 mt-2 mb-0 text-slate-100">
-          By harmonizing instructional design and visual appeal, templates
-          streamline content creation for varied materials, expediting
-          development and cultivating engaging educational spaces.
-        </p>
-      </div>
-      <div
-        class="flex relative flex-col p-6 rounded-lg border border-white border-solid delay-200 bg-slate-900"
-        data-animated="true"
-        style="transition-delay: 200ms; animation-delay: 200ms;"
-      >
-        <svg
-          class="block mb-6 w-12 h-12 text-blue-600 align-middle"
-          data-icon="tabler:home-star"
-          height="1em"
-          width="1em"
-        >
-          <symbol id="ai:tabler:home-star" viewBox="0 0 24 24" class="">
-            <g
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class=""
-            >
-              <path
-                d="M19.258 10.258L12 3l-9 9h2v7a2 2 0 0 0 2 2h4"
-                class=""
-              ></path>
-              <path
-                d="M9 21v-6a2 2 0 0 1 2-2h1.5m5.3 7.817l-2.172 1.138a.392.392 0 0 1-.568-.41l.415-2.411l-1.757-1.707a.389.389 0 0 1 .217-.665l2.428-.352l1.086-2.193a.392.392 0 0 1 .702 0l1.086 2.193l2.428.352a.39.39 0 0 1 .217.665l-1.757 1.707l.414 2.41a.39.39 0 0 1-.567.411z"
-                class=""
-              ></path>
-            </g>
-          </symbol>
-          <use href="#ai:tabler:home-star" class=""></use>
-        </svg>
-        <div class="text-xl font-bold text-slate-200">Interior Design</div>
-        <p class="mx-0 mt-2 mb-0 text-slate-100">
-          Crafting functional, visually appealing spaces for residential and
-          commercial use. Templates emphasize layout, colors, and furniture
-          setups, offering a versatile toolkit for your design vision.
-        </p>
-      </div>
-      <div
-        class="flex relative flex-col p-6 rounded-lg border border-white border-solid delay-300 bg-slate-900"
-        data-animated="true"
-        style="transition-delay: 300ms; animation-delay: 300ms;"
-      >
-        <svg
-          class="block mb-6 w-12 h-12 text-blue-600 align-middle"
-          data-icon="tabler:photo"
-          height="1em"
-          width="1em"
-        >
-          <symbol id="ai:tabler:photo" viewBox="0 0 24 24" class="">
-            <g
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class=""
-            >
-              <path
-                d="M15 8h.01M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"
-                class=""
-              ></path>
-              <path d="m3 16l5-5c.928-.893 2.072-.893 3 0l5 5" class=""></path>
-              <path d="m14 14l1-1c.928-.893 2.072-.893 3 0l3 3" class=""></path>
-            </g>
-          </symbol>
-          <use href="#ai:tabler:photo" class=""></use>
-        </svg>
-        <div class="text-xl font-bold text-slate-200">Photography</div>
-        <p class="mx-0 mt-2 mb-0 text-slate-100">
-          Empowering photographers, our templates facilitate captivating
-          storytelling. With a keen focus on layout, galleries, and typography,
-          they cater to both professionals and enthusiasts.
-        </p>
-      </div>
-      <div
-        class="flex relative flex-col p-6 rounded-lg border border-white border-solid bg-slate-900"
-        data-animated="true"
-        style="transition-delay: 0ms; animation-delay: 0ms;"
-      >
-        <svg
-          class="block mb-6 w-12 h-12 text-blue-600 align-middle"
-          data-icon="tabler:shopping-cart"
-          height="1em"
-          width="1em"
-        >
-          <symbol id="ai:tabler:shopping-cart" viewBox="0 0 24 24" class="">
-            <g
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class=""
-            >
-              <path
-                d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0-4 0m11 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"
-                class=""
-              ></path>
-              <path d="M17 17H6V3H4" class=""></path>
-              <path d="m6 5l14 1l-1 7H6" class=""></path>
-            </g>
-          </symbol>
-          <use href="#ai:tabler:shopping-cart" class=""></use>
-        </svg>
-        <div class="text-xl font-bold text-slate-200">E-commerce</div>
-        <p class="mx-0 mt-2 mb-0 text-slate-100">
-          Developing engaging online stores, our E-commerce templates ensure a
-          dynamic presence to effectively showcase products. Ideal for startups
-          or revamps.
-        </p>
-      </div>
-      <div
-        class="flex relative flex-col p-6 rounded-lg border border-white border-solid delay-100 bg-slate-900"
-        data-animated="true"
-        style="transition-delay: 100ms; animation-delay: 100ms;"
-      >
-        <svg
-          class="block mb-6 w-12 h-12 text-blue-600 align-middle"
-          data-icon="tabler:article"
-          height="1em"
-          width="1em"
-        >
-          <symbol id="ai:tabler:article" viewBox="0 0 24 24" class="">
-            <path
-              d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm4 2h10M7 12h10M7 16h10"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class=""
-            ></path>
-          </symbol>
-          <use href="#ai:tabler:article" class=""></use>
-        </svg>
-        <div class="text-xl font-bold text-slate-200">Blog</div>
-        <p class="mx-0 mt-2 mb-0 text-slate-100">
-          With attention to typography, these templates empower effective
-          content presentation for writers at any stage, ensuring visually
-          engaging and user-friendly blogs.
-        </p>
-      </div>
-      <div
-        class="flex relative flex-col p-6 rounded-lg border border-white border-solid delay-200 bg-slate-900"
-        data-animated="true"
-        style="transition-delay: 200ms; animation-delay: 200ms;"
-      >
-        <svg
-          class="block mb-6 w-12 h-12 text-blue-600 align-middle"
-          data-icon="tabler:building-store"
-          height="1em"
-          width="1em"
-        >
-          <symbol id="ai:tabler:building-store" viewBox="0 0 24 24" class="">
-            <path
-              d="M3 21h18M3 7v1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7H3l2-4h14l2 4M5 21V10.85M19 21V10.85M9 21v-4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class=""
-            ></path>
-          </symbol>
-          <use href="#ai:tabler:building-store" class=""></use>
-        </svg>
-        <div class="text-xl font-bold text-slate-200">Business</div>
-        <p class="mx-0 mt-2 mb-0 text-slate-100">
-          Providing polished options for effective visual communication, these
-          templates empower both startups and established companies for a
-          professional brand presence.
-        </p>
-      </div>
-      <div
-        class="flex relative flex-col p-6 rounded-lg border border-white border-solid bg-slate-900"
-        data-animated="true"
-        style="transition-delay: 0ms; animation-delay: 0ms;"
-      >
-        <svg
-          class="block mb-6 w-12 h-12 text-blue-600 align-middle"
-          data-icon="tabler:arrow-big-up-lines"
-          height="1em"
-          width="1em"
-        >
-          <symbol
-            id="ai:tabler:arrow-big-up-lines"
-            viewBox="0 0 24 24"
-            class=""
-          >
-            <path
-              d="M9 12H5.414a1 1 0 0 1-.707-1.707l6.586-6.586a1 1 0 0 1 1.414 0l6.586 6.586A1 1 0 0 1 18.586 12H15v3H9zm0 9h6m-6-3h6"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class=""
-            ></path>
-          </symbol>
-          <use href="#ai:tabler:arrow-big-up-lines" class=""></use>
-        </svg>
-        <div class="text-xl font-bold text-slate-200">Branding</div>
-        <p class="mx-0 mt-2 mb-0 text-slate-100">
-          Offering pre-designed elements for a consistent brand identity,
-          including logos and marketing materials. Ideal for new ventures or
-          revamps.
-        </p>
-      </div>
-      <div
-        class="flex relative flex-col p-6 rounded-lg border border-white border-solid delay-100 bg-slate-900"
-        data-animated="true"
-        style="transition-delay: 100ms; animation-delay: 100ms;"
-      >
-        <svg
-          class="block mb-6 w-12 h-12 text-blue-600 align-middle"
-          data-icon="tabler:vaccine"
-          height="1em"
-          width="1em"
-        >
-          <symbol id="ai:tabler:vaccine" viewBox="0 0 24 24" class="">
-            <path
-              d="m17 3l4 4m-2-2l-4.5 4.5m-3-3l6 6m-1-1L10 18H6v-4l6.5-6.5m-5 5L9 14m1.5-4.5L12 11M3 21l3-3"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class=""
-            ></path>
-          </symbol>
-          <use href="#ai:tabler:vaccine" class=""></use>
-        </svg>
-        <div class="text-xl font-bold text-slate-200">Medical</div>
-        <p class="mx-0 mt-2 mb-0 text-slate-100">
-          From presentations to patient forms, these tools enhance communication
-          effectiveness for healthcare professionals. Ideal for medical
-          practices and research pursuits.
-        </p>
-      </div>
-      <div
-        class="flex relative flex-col p-6 rounded-lg border border-white border-solid delay-200 bg-slate-900"
-        data-animated="true"
-        style="transition-delay: 200ms; animation-delay: 200ms;"
-      >
-        <svg
-          class="block mb-6 w-12 h-12 text-blue-600 align-middle"
-          data-icon="tabler:tie"
-          height="1em"
-          width="1em"
-        >
-          <symbol id="ai:tabler:tie" viewBox="0 0 24 24" class="">
-            <g
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class=""
-            >
-              <path
-                d="m12 22l4-4l-2.5-11l.993-2.649A1 1 0 0 0 13.557 3h-3.114a1 1 0 0 0-.936 1.351L10.5 7L8 18z"
-                class=""
-              ></path>
-              <path d="M10.5 7h3l5 5.5" class=""></path>
-            </g>
-          </symbol>
-          <use href="#ai:tabler:tie" class=""></use>
-        </svg>
-        <div class="text-xl font-bold text-slate-200">Fashion Design</div>
-        <p class="mx-0 mt-2 mb-0 text-slate-100">
-          With attention to detail, customization, and contemporary design, they
-          empower designers to showcase ideas cohesively. Ideal for all levels
-          of designers.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
 </Layout>
 
 <style>
-	.services-container {
-		margin: auto;
-		padding: 1rem;
-		width: 1400px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 2em;
-	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
-	}
-	.services-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 2rem;
-		padding: 1rem;
-	}
-	.service-card {
-		background: #23262d;
-		padding: 2rem;
-		border-radius: 8px;
-		transition: transform 0.2s, box-shadow 0.2s;
-		text-align: center;
-		text-decoration: none;
-		color: inherit;
-		display: block;
-	}
-	.service-card:hover {
-		transform: translateY(-5px);
-		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-	}
-	.icon {
-		font-size: 3rem;
-		margin: 1rem 0;
-	}
-	h3 {
-		color: rgb(var(--accent-light));
-		margin: 0;
-		font-size: 1.5rem;
-	}
-	ul {
-		list-style-type: none;
-		padding: 0;
-		margin-top: 1rem;
-	}
-	li {
-		margin: 0.5rem 0;
-		color: #ccc;
-	}
-	p {
-		color: #ccc;
-		margin: 1rem 0;
 	}
 </style>
