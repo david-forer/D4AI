@@ -279,6 +279,17 @@ import Layout from '../layouts/Layout.astro';
         padding: 15px;
       }
     }
+
+    /* Footer alignment for sidebar layout */
+    :global(footer) {
+      margin-left: 280px;
+    }
+
+    @media (max-width: 1024px) {
+      :global(footer) {
+        margin-left: 0;
+      }
+    }
   </style>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -851,7 +862,7 @@ import Layout from '../layouts/Layout.astro';
                   <p class="text-gray-700 text-sm mb-4">
                     A tech startup founder initially handled all product development, marketing, and sales. Successful transition involved hiring experienced department heads, clearly defining their mandates, and stepping back to focus on overarching strategy.
                   </p>
-                  <div class="flex items-center text-xs text-teal-600">
+                  <div class="flex items-center text-sm text-blue-600">
                     <i class="fas fa-chart-line mr-2"></i>
                     <span>300% growth in 18 months post-intervention</span>
                   </div>
@@ -862,7 +873,7 @@ import Layout from '../layouts/Layout.astro';
                   <p class="text-gray-700 text-sm mb-4">
                     Founder recognized growth ceiling and severe burnout. Deliberate phased approach starting with clear vision articulation, followed by strategic hiring and development of strong leadership team.
                   </p>
-                  <div class="flex items-center text-xs text-teal-600">
+                  <div class="flex items-center text-sm text-blue-600">
                     <i class="fas fa-users mr-2"></i>
                     <span>Team autonomy increased by 85%</span>
                   </div>
@@ -876,8 +887,8 @@ import Layout from '../layouts/Layout.astro';
 
               <div class="space-y-6">
                 <div class="flex items-start">
-                  <div class="bg-teal-100 p-3 rounded-full mr-4">
-                    <i class="fas fa-lightbulb text-teal-600"></i>
+                  <div class="bg-blue-300 p-3 rounded-full mr-4">
+                    <i class="fas fa-lightbulb text-blue-600"></i>
                   </div>
                   <div>
                     <h4 class="font-semibold text-gray-900 mb-2">Early Recognition is Paramount</h4>
@@ -888,8 +899,8 @@ import Layout from '../layouts/Layout.astro';
                 </div>
 
                 <div class="flex items-start">
-                  <div class="bg-teal-100 p-3 rounded-full mr-4">
-                    <i class="fas fa-user-graduate text-teal-600"></i>
+                  <div class="bg-blue-300 p-3 rounded-full mr-4">
+                    <i class="fas fa-user-graduate text-blue-600"></i>
                   </div>
                   <div>
                     <h4 class="font-semibold text-gray-900 mb-2">Investing in People is Non-Negotiable</h4>
@@ -900,8 +911,8 @@ import Layout from '../layouts/Layout.astro';
                 </div>
 
                 <div class="flex items-start">
-                  <div class="bg-teal-100 p-3 rounded-full mr-4">
-                    <i class="fas fa-cogs text-teal-600"></i>
+                  <div class="bg-blue-300 p-3 rounded-full mr-4">
+                    <i class="fas fa-cogs text-blue-600"></i>
                   </div>
                   <div>
                     <h4 class="font-semibold text-gray-900 mb-2">Systemize and Document Processes</h4>
@@ -912,8 +923,8 @@ import Layout from '../layouts/Layout.astro';
                 </div>
 
                 <div class="flex items-start">
-                  <div class="bg-teal-100 p-3 rounded-full mr-4">
-                    <i class="fas fa-handshake text-teal-600"></i>
+                  <div class="bg-blue-300 p-3 rounded-full mr-4">
+                    <i class="fas fa-handshake text-blue-600"></i>
                   </div>
                   <div>
                     <h4 class="font-semibold text-gray-900 mb-2">Effective Delegation is an Art</h4>
@@ -924,8 +935,8 @@ import Layout from '../layouts/Layout.astro';
                 </div>
 
                 <div class="flex items-start">
-                  <div class="bg-teal-100 p-3 rounded-full mr-4">
-                    <i class="fas fa-rocket text-teal-600"></i>
+                  <div class="bg-blue-300 p-3 rounded-full mr-4">
+                    <i class="fas fa-rocket text-blue-600"></i>
                   </div>
                   <div>
                     <h4 class="font-semibold text-gray-900 mb-2">Founder's Role Must Evolve</h4>
@@ -950,8 +961,8 @@ import Layout from '../layouts/Layout.astro';
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             <!-- Operational Audits -->
             <div class="bg-white p-8 rounded-lg shadow-sm">
-              <div class="bg-teal-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <i class="fas fa-search text-teal-600 text-xl"></i>
+              <div class="bg-blue-300 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                <i class="fas fa-search text-blue-600 text-xl"></i>
               </div>
               <h3 class="font-canela text-xl font-light text-gray-900 mb-4">Operational Audits</h3>
               <p class="text-gray-700 text-sm mb-4">
@@ -967,8 +978,8 @@ import Layout from '../layouts/Layout.astro';
 
             <!-- Coaching and Advisory -->
             <div class="bg-white p-8 rounded-lg shadow-sm">
-              <div class="bg-teal-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <i class="fas fa-user-tie text-teal-600 text-xl"></i>
+              <div class="bg-blue-300 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                <i class="fas fa-user-tie text-blue-600 text-xl"></i>
               </div>
               <h3 class="font-canela text-xl font-light text-gray-900 mb-4">Coaching & Advisory</h3>
               <p class="text-gray-700 text-sm mb-4">
@@ -984,8 +995,8 @@ import Layout from '../layouts/Layout.astro';
 
             <!-- Performance Monitoring -->
             <div class="bg-white p-8 rounded-lg shadow-sm">
-              <div class="bg-teal-100 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <i class="fas fa-chart-bar text-teal-600 text-xl"></i>
+              <div class="bg-blue-300 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                <i class="fas fa-chart-bar text-blue-600 text-xl"></i>
               </div>
               <h3 class="font-canela text-xl font-light text-gray-900 mb-4">Performance Monitoring</h3>
               <p class="text-gray-700 text-sm mb-4">
@@ -1107,41 +1118,172 @@ import Layout from '../layouts/Layout.astro';
 
             <!-- Key Success Metrics -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              <div class="text-center p-6 bg-teal-50 rounded-lg">
-                <div class="text-3xl font-bold text-teal-600 mb-2">85%</div>
-                <div class="text-sm text-gray-700">Reduction in founder operational workload</div>
+              <div class="text-center p-6 bg-blue-200 rounded-lg">
+                <div class="text-3xl font-bold text-blue-700 mb-2">85%</div>
+                <div class="text-md text-gray-700">Reduction in founder operational workload</div>
               </div>
-              <div class="text-center p-6 bg-teal-50 rounded-lg">
-                <div class="text-3xl font-bold text-teal-600 mb-2">3x</div>
+              <div class="text-center p-6 bg-blue-200 rounded-lg">
+                <div class="text-3xl font-bold text-blue-700 mb-2">3x</div>
                 <div class="text-sm text-gray-700">Increase in team decision-making speed</div>
               </div>
-              <div class="text-center p-6 bg-teal-50 rounded-lg">
-                <div class="text-3xl font-bold text-teal-600 mb-2">2.5x</div>
+              <div class="text-center p-6 bg-blue-200 rounded-lg">
+                <div class="text-3xl font-bold text-blue-700 mb-2">2.5x</div>
                 <div class="text-sm text-gray-700">Acceleration in business growth rate</div>
               </div>
             </div>
 
-            <!-- Call to Action -->
-            <div class="bg-teal-600 text-white p-8 rounded-lg">
-              <h3 class="font-canela text-2xl font-light mb-4">Ready to Transform Your Business?</h3>
-              <p class="text-teal-100 mb-6">
-                If you recognize these founder bottleneck patterns in your business, it's time to take action. The transition from founder-led to team-based operations is challenging but essential for sustainable growth.
-              </p>
-              <div class="flex flex-col sm:flex-row flex-wrap gap-4">
-                <div class="flex items-center text-sm">
-                  <i class="fas fa-check-circle mr-2"></i>
-                  <span>Comprehensive diagnostic assessment</span>
-                </div>
-                <div class="flex items-center text-sm">
-                  <i class="fas fa-check-circle mr-2"></i>
-                  <span>Customized intervention strategy</span>
-                </div>
-                <div class="flex items-center text-sm">
-                  <i class="fas fa-check-circle mr-2"></i>
-                  <span>Ongoing support and monitoring</span>
-                </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="py-16 md:py-24 bg-gradient-to-br from-blue-500 to-blue-700 text-white">
+        <div class="max-w-6xl mx-auto px-8">
+          <div class="text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Transform Your Business?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8">
+              If you recognize these founder bottleneck patterns in your business, it's time to take action. The transition from founder-led to team-based operations is challenging but essential for sustainable growth.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center flex-wrap gap-6 mb-10">
+              <div class="flex items-center text-lg">
+                <i class="fas fa-check-circle mr-3 text-blue-300"></i>
+                <span>Comprehensive diagnostic assessment</span>
+              </div>
+              <div class="flex items-center text-lg">
+                <i class="fas fa-check-circle mr-3 text-blue-300"></i>
+                <span>Customized intervention strategy</span>
+              </div>
+              <div class="flex items-center text-lg">
+                <i class="fas fa-check-circle mr-3 text-blue-300"></i>
+                <span>Ongoing support and monitoring</span>
               </div>
             </div>
+            <a href="/contact" class="inline-block bg-white hover:bg-gray-100 text-blue-700 font-semibold px-8 py-4 rounded-xl transition duration-200 text-lg">
+              Get Your Diagnostic Assessment
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <script>
+      // Initialize Mermaid
+      if (typeof window !== 'undefined' && (window as any).mermaid) {
+        (window as any).mermaid.initialize({
+          startOnLoad: true,
+          theme: 'base',
+          themeVariables: {
+            primaryColor: '#f0fdfa',
+            primaryTextColor: '#1f2937',
+            primaryBorderColor: '#0f766e',
+            lineColor: '#0f766e',
+            secondaryColor: '#e0f2fe',
+            tertiaryColor: '#fef3c7',
+            background: '#ffffff',
+            mainBkg: '#f0fdfa',
+            secondaryBkg: '#e0f2fe',
+            tertiaryBkg: '#fef3c7',
+            nodeBorder: '#0f766e',
+            clusterBkg: '#f9fafb',
+            clusterBorder: '#d1d5db',
+            defaultLinkColor: '#0f766e',
+            titleColor: '#1f2937',
+            edgeLabelBackground: '#ffffff',
+            nodeTextColor: '#1f2937'
+          },
+          flowchart: {
+            useMaxWidth: false,
+            htmlLabels: true,
+            curve: 'basis',
+            padding: 20
+          },
+          timeline: {
+            useMaxWidth: false,
+            padding: 20
+          },
+          gantt: {
+            useMaxWidth: false
+          }
+        });
+      }
+
+      // Mobile TOC Toggle
+      const tocToggle = document.getElementById('toc-toggle');
+      const toc = document.getElementById('toc');
+      
+      if (tocToggle && toc) {
+        tocToggle.addEventListener('click', () => {
+          toc.classList.toggle('open');
+        });
+      }
+
+      // Smooth scrolling for TOC links
+      document.querySelectorAll('.toc-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href')?.substring(1);
+          const targetElement = targetId ? document.getElementById(targetId) : null;
+          
+          if (targetElement) {
+            const offsetTop = targetElement.offsetTop - 20;
+            window.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth'
+            });
+          }
+          
+          // Close mobile TOC
+          if (window.innerWidth <= 1024 && toc) {
+            toc.classList.remove('open');
+          }
+        });
+      });
+
+      // Active TOC link highlighting
+      const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -80% 0px',
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            document.querySelectorAll('.toc-link').forEach(link => {
+              link.classList.remove('active');
+            });
+            const activeLink = document.querySelector(`[href="#${id}"]`);
+            if (activeLink) {
+              activeLink.classList.add('active');
+            }
+          }
+        });
+      }, observerOptions);
+
+      // Observe all sections
+      document.querySelectorAll('section[id]').forEach(section => {
+        observer.observe(section);
+      });
+
+      // Close mobile TOC when clicking outside
+      document.addEventListener('click', (e) => {
+        const target = e.target as Node;
+        if (window.innerWidth <= 1024 && 
+            toc && tocToggle &&
+            !toc.contains(target) && 
+            !tocToggle.contains(target) &&
+            toc.classList.contains('open')) {
+          toc.classList.remove('open');
+        }
+      });
+    </script>
+  </body>
+</Layout>
           </div>
         </div>
       </section>
