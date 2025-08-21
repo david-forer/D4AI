@@ -4,9 +4,23 @@ import Footer from '../components/Footer.astro';
 interface Props {
 	title: string;
 	description?: string;
+	image?: string;
+	type?: "website" | "article";
+  datePublished?: string;  // ISO for articles
+  dateModified?: string;   // ISO for articles
+  authorName?: string;     // for articles
 }
 
-const { title, description = "AI Operations with David Forer" } = Astro.props;
+const siteUrl = "https://davidjforer.com";
+const siteName = "David J Forer | AI Operations Consultant";
+const defaultImage = "/images/ai-automations.png";
+const twitterHandle = "@davidjforer"; // remove tag below if not used
+
+const { 
+	title, 
+	description = "AI Operations with David Forer",
+	image = "/images/ai-automation.png"
+} = Astro.props;
 ---
 
 <!doctype html>
