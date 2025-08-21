@@ -1,0 +1,33 @@
+---
+const siteConfig = {
+  siteName: "My Website",
+  siteUrl: "https://example.com",
+  defaultTitle: "My Website",
+  defaultDescription: "This is my awesome Astro site.",
+  defaultImage: "/images/social-default.png",
+  twitterHandle: "@mytwitter",
+};
+
+const {
+  title = siteConfig.defaultTitle,
+  description = siteConfig.defaultDescription,
+  image = siteConfig.defaultImage,
+  type = "website",
+} = Astro.props;
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={`${siteConfig.siteUrl}${Astro.url.pathname}`} />
+
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={image} />
+<meta property="og:type" content={type} />
+<meta property="og:url" content={`${siteConfig.siteUrl}${Astro.url.pathname}`} />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={image} />
+<meta name="twitter:site" content={siteConfig.twitterHandle} />
