@@ -1,0 +1,78 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="404 | Page Not Found"
+  description="The page you’re looking for doesn’t exist. Try the homepage or one of the helpful links."
+  image="/images/social-default.png"
+>
+  <!-- Blue hero band (divs only), tall enough to feel intentional -->
+  <div class="bg-gradient-to-r from-blue-600 to-blue-800">
+    <div class="mx-auto max-w-5xl px-6 py-24">
+      <div class="flex flex-col items-center text-center">
+        <div class="mb-6 inline-flex items-center justify-center rounded-xl bg-white/10 px-12 py-6 text-white text-xl">
+          <span class="opacity-90">Error</span>
+          <span class="mx-2 opacity-40">/</span>
+          <span class="font-semibold">404</span>
+        </div>
+        <h1 class="text-6xl md:text-5xl font-bold text-white">
+          Wrong turn. Right consultant.
+        </h1>
+        <p class="mt-12 text-white/90 max-w-6xl text-3xl">
+          If your ops feel like this link, we should talk.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="max-w-4xl mx-auto px-6 py-12">
+    <div>
+        <!-- inside your 404.astro -->
+<img
+  src="/images/404.png"
+  alt="Consultant at a chaotic crossroads. Wrong turn. Right consultant."
+  class="mx-auto h-auto w-full max-w-[420px] object-contain drop-shadow-xl"
+  loading="lazy"
+  decoding="async"
+/>
+</div>
+    <div class="grid gap-8 md:grid-cols-2">
+      
+      <div>
+        <h2 class="text-2xl font-semibold mb-3">Try these</h2>
+        <ul class="space-y-2 text-blue-700">
+          <li><a class="underline hover:no-underline" href="/">Go to the homepage</a></li>
+          <li><a class="underline hover:no-underline" href="/privacy-policy">Privacy Policy</a></li>
+          <li><a class="underline hover:no-underline" href="/terms-of-service">Terms of Service</a></li>
+          <!-- Add/adjust links you actually have -->
+          <!-- <li><a class="underline hover:no-underline" href="/ai-audit">AI Audit Services</a></li> -->
+          <!-- <li><a class="underline hover:no-underline" href="/contact">Contact</a></li> -->
+        </ul>
+      </div>
+
+      <div class="rounded-xl border border-gray-200 p-5 bg-white">
+        <h3 class="text-lg font-semibold">Still stuck?</h3>
+        <p class="mt-2 text-gray-700">
+          Email us and we’ll point you to the right place.
+        </p>
+        <a
+          href="mailto:contact@davidjforer.com?subject=404%20help"
+          class="mt-4 inline-flex items-center justify-center rounded-lg bg-blue-600 px-5 py-3 font-medium text-white hover:bg-blue-700"
+        >
+          Email support
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-12">
+      <a
+        href="/"
+        class="inline-flex items-center justify-center rounded-lg border border-blue-600 px-5 py-3 font-medium text-blue-600 hover:bg-blue-50"
+      >
+        ← Back to Home
+      </a>
+    </div>
+  </div>
+</Layout>
