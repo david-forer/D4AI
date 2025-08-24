@@ -5,15 +5,13 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  // Your canonical, preferred URL (no www)
   site: 'https://davidjforer.com',
+  trailingSlash: 'never',
 
   integrations: [
-    tailwind(),  // TailwindCSS
-    mdx(),       // MDX support
-    sitemap(),   // Auto-generate /sitemap.xml at build
+    tailwind(),
+    mdx(),
+    sitemap(),               // sitemap.xml built at deploy
   ],
-
-  // Optional: uncomment if you want URLs without trailing slash
-  // trailingSlash: 'never', // 'always' | 'ignore' | 'never'
 });
+

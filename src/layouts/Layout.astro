@@ -9,6 +9,8 @@ interface Props {
   datePublished?: string;  // ISO for articles
   dateModified?: string;   // ISO for articles
   authorName?: string;     // for articles
+	publisherName?: string;  // for articles
+	noindex?: boolean;
 }
 
 const siteUrl = "https://davidjforer.com";
@@ -19,8 +21,16 @@ const twitterHandle = "@davidjforer"; // remove tag below if not used
 const { 
 	title, 
 	description = "AI Operations with David Forer",
-	image = "/images/ai-automation.png"
+	image = "/images/ai-automation.png",
+	authorName = 'David J Forer',
+  publisherName = 'David J Forer',
+	noindex = false,
 } = Astro.props;
+
+const origin = 'https://davidjforer.com';
+const canonical = new URL(Astro.url.pathname, origin).href;
+// keep using your existing {title} and {description} props
+const robots = noindex ? 'noindex,nofollow' : 'index,follow';
 ---
 
 <!doctype html>
@@ -40,6 +50,13 @@ const {
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<meta name="description" content={description} />
+
+		<link rel="canonical" href={canonical} />
+		<meta name="robots" content={robots} />
+		<meta name="author" content={authorName} />
+		<meta name="publisher" content={publisherName} />
+
+	
 		<!-- Calendly Inline Popup Widget -->
 		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 		<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
@@ -56,6 +73,10 @@ const {
         tjs.parentNode.insertBefore(js, tjs);
     }(document, 'script', 'ti-js'));
 </script>
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
                         
 	</head>
 	<body>
