@@ -4,9 +4,26 @@ import Navigation from '../components/Navigation.astro';
 interface Props {
   title: string;
   description?: string;
+  pubDate?: string | Date;
+  tags?: string[]; 
+  heroImage?: string;
 }
 
-const { title, description = "AI Operations with David Forer" } = Astro.props;
+const {
+  title,
+  description = "AI Operations with David Forer",
+  pubDate,
+  tags = [],
+  heroImage,
+} = Astro.props;
+
+const formattedDate = pubDate
+  ? new Date(pubDate).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    })
+  : null;
 ---
 
 <!doctype html>
@@ -23,14 +40,43 @@ const { title, description = "AI Operations with David Forer" } = Astro.props;
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   </head>
-  <body>
+
+  <body class="bg-white text-gray-900 antialiased">
     <Navigation />
 
-    <main>
-      <div class="content-wrapper max-w-3xl mx-auto px-4 py-8">
-        <article class="prose prose-blue lg:prose-lg dark:prose-invert">
-          <slot />
-        </article>
+    <main class="w-full">
+      <div class="content-wrapper max-w-5xl mx-auto text-2xl leading-relaxed px-4 py-10">
+        <!-- Header block sits outside prose to keep utility control -->
+        <header class="not-prose mb-8">
+          <h1 class="text-3xl md:text-4xl font-bold tracking-tight">{title}</h1>
+          {formattedDate && (
+            <p class="mt-2 text-sm text-gray-500">{formattedDate}</p>
+          )}
+          {tags.length > 0 && (
+            <div class="mt-3 flex flex-wrap gap-2">
+              {tags.map((tag) => (
+                <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+        </header>
+
+     {heroImage && (
+  <img
+    src={heroImage}
+    alt={title}
+    class="w-full rounded-xl mb-6 object-cover"
+  />
+)}
+
+        <!-- MDX content gets beautiful defaults via typography -->
+       <article class="max-w-5xl mx-auto px-4 py-8 space-y-6 text-gray-900 leading-relaxed">
+  <slot />
+</article>
+
+
       </div>
     </main>
   </body>
@@ -38,6 +84,7 @@ const { title, description = "AI Operations with David Forer" } = Astro.props;
 
 <style is:global>
   @import '../styles/global.css';
+
   :root {
     --accent: 136, 58, 234;
     --accent-light: 224, 204, 250;
@@ -59,56 +106,19 @@ const { title, description = "AI Operations with David Forer" } = Astro.props;
     min-height: 100vh;
   }
 
-  /* Override prose styles for navigation */
-  nav a {
-    text-decoration: none !important;
-    color: inherit !important;
-  }
-
-  nav button {
-    text-decoration: none !important;
-    color: inherit !important;
-  }
-
-  /* Ensure navigation buttons maintain their styling */
-  nav .bg-blue-600 {
-    background-color: #2563eb !important;
-    color: white !important;
-  }
-
-  /* Fix for logo size in navigation */
-  nav img {
-    height: 48px !important;
-    width: auto !important;
-    max-width: 200px !important;
-    box-shadow: none !important;
-    filter: none !important;
-  }
-
-  /* Remove any shadows added by prose */
-  nav {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
-  }
+  /* Keep nav styling immune to prose */
+  nav a, nav button { text-decoration: none !important; color: inherit !important; }
+  nav .bg-blue-600 { background-color: #2563eb !important; color: white !important; }
+  nav img { height: 48px !important; width: auto !important; max-width: 200px !important; box-shadow: none !important; filter: none !important; }
+  nav { box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px 0 rgba(0,0,0,0.06) !important; }
 
   code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+                 Bitstream Vera Sans Mono, Courier New, monospace;
   }
+  
+.content-wrapper h1 { @apply text-4xl font-bold; }
+.content-wrapper h2 { @apply text-3xl font-semibold; }
+.content-wrapper h3 { @apply text-2xl font-semibold; }
 
-  .content-wrapper {
-    margin: 0 auto;
-    padding: 0 auto;
-  }
-
-  main {
-    margin: auto;
-    width: 100%;
-  }
 </style>
