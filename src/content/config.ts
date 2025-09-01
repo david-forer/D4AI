@@ -12,6 +12,7 @@ export const collections = {
       updatedDate: z.date().optional(),
       heroImage: z.string().optional(),
       tags: z.array(z.string()).optional(),
+      image: z.string().optional(),
     }),
   }),
 };
