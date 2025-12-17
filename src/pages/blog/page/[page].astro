@@ -1,25 +1,39 @@
 ---
 import { getCollection } from 'astro:content';
-import Layout from '../../layouts/Layout.astro';
-import SimpleContainer from '../../components/SimpleContainer.astro';
+import Layout from '../../../layouts/Layout.astro';
+import SimpleContainer from '../../../components/SimpleContainer.astro';
 
 // Posts per page
 const POSTS_PER_PAGE = 9;
 
-// Get all blog posts
-const allPosts = await getCollection('blog');
+export async function getStaticPaths() {
+  const postsPerPage = 9;
+  const allPosts = await getCollection('blog');
+  const sortedPosts = allPosts.sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  );
+  
+  const totalPages = Math.ceil(sortedPosts.length / postsPerPage);
+  
+  // Generate paths for page 2 onwards (page 1 is handled by index.astro)
+  const paths = [];
+  for (let i = 2; i <= totalPages; i++) {
+    paths.push({
+      params: { page: String(i) },
+      props: {
+        page: i,
+        posts: sortedPosts.slice((i - 1) * postsPerPage, i * postsPerPage),
+        totalPosts: sortedPosts.length,
+        totalPages: totalPages
+      }
+    });
+  }
+  
+  return paths;
+}
 
-// Sort posts by publication date (newest first)
-const sortedPosts = allPosts.sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
-
-// Pagination logic - Page 1
-const currentPage = 1;
-const totalPages = Math.ceil(sortedPosts.length / POSTS_PER_PAGE);
-const startIndex = 0;
-const endIndex = POSTS_PER_PAGE;
-const paginatedPosts = sortedPosts.slice(startIndex, endIndex);
+const { page, posts, totalPosts, totalPages } = Astro.props;
+const currentPage = page;
 
 // Default image for posts without a hero image
 const defaultPostImage = "/images/ai operations logo.png";
@@ -35,9 +49,13 @@ const categories = [
 
 // Generate page numbers for pagination
 const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
+
+// Calculate showing range
+const startItem = (currentPage - 1) * POSTS_PER_PAGE + 1;
+const endItem = Math.min(currentPage * POSTS_PER_PAGE, totalPosts);
 ---
 
-<Layout title="Blog | D4AI">
+<Layout title={`Blog - Page ${currentPage} | D4AI`}>
   <main>
     <!-- Hero Section -->
     <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20">
@@ -55,32 +73,23 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
       </div>
     </section>
 
-    <!-- Blog Introduction Section -->
+    <!-- Category Navigation -->
     <SimpleContainer>
-      <div class="py-12 text-center max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold text-gray-900 mb-6">Welcome to the AI Operations Blog</h2>
-        <p class="text-lg text-gray-700 mb-8">
-          Our blog is dedicated to helping businesses leverage AI, optimize operations, and improve SEO strategies.
-          We share practical insights, case studies, and step-by-step guides that you can implement right away.
-          Whether you're looking to streamline your workflows, enhance your search visibility, or integrate AI
-          into your business processes, you'll find valuable resources here.
-        </p>
-      </div>
-      
-      <!-- Category Navigation -->
-      <div class="border-t border-b border-gray-200 py-4 mb-12">
-        <div class="flex flex-wrap justify-center gap-4 md:gap-8">
-          <a href="/blog" class="px-4 py-2 rounded-md transition-colors bg-blue-100 text-blue-800">
-            All Posts
-          </a>
-          {categories.map(cat => (
-            <a
-              href={`/blog/category/${cat.slug}`}
-              class="px-4 py-2 rounded-md transition-colors text-blue-700 hover:text-blue-900 hover:bg-blue-50"
-            >
-              {cat.name}
+      <div class="py-8">
+        <div class="border-t border-b border-gray-200 py-4">
+          <div class="flex flex-wrap justify-center gap-4 md:gap-8">
+            <a href="/blog" class="px-4 py-2 rounded-md transition-colors text-blue-700 hover:text-blue-900 hover:bg-blue-50">
+              All Posts
             </a>
-          ))}
+            {categories.map(cat => (
+              <a
+                href={`/blog/category/${cat.slug}`}
+                class="px-4 py-2 rounded-md transition-colors text-blue-700 hover:text-blue-900 hover:bg-blue-50"
+              >
+                {cat.name}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </SimpleContainer>
@@ -89,15 +98,15 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
     <SimpleContainer>
       <div class="pb-8">
         <div class="flex justify-between items-center mb-8">
-          <h2 class="text-2xl font-bold text-gray-900">Latest Articles</h2>
+          <h2 class="text-2xl font-bold text-gray-900">All Articles</h2>
           <p class="text-gray-600 text-sm">
-            Showing {paginatedPosts.length} of {sortedPosts.length} posts
+            Showing {startItem}-{endItem} of {totalPosts} posts
           </p>
         </div>
         
-        {paginatedPosts.length > 0 ? (
+        {posts.length > 0 ? (
           <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {paginatedPosts.map((post) => (
+            {posts.map((post) => (
               <div class="group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-100">
                 <div class="relative aspect-[16/9] overflow-hidden bg-blue-100">
                   <img
@@ -155,58 +164,60 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
           </div>
         ) : (
           <div class="text-center py-12">
-            <p class="text-gray-600">No blog posts found. Check back soon!</p>
+            <p class="text-gray-600">No blog posts found on this page.</p>
           </div>
         )}
       </div>
 
       <!-- Pagination -->
-      {totalPages > 1 && (
-        <nav class="pb-16" aria-label="Blog pagination">
-          <div class="flex justify-center items-center gap-2">
-            <!-- Previous Button (disabled on page 1) -->
-            <span class="px-4 py-2 rounded-md text-gray-400 bg-gray-100 cursor-not-allowed">
+      <nav class="pb-16" aria-label="Blog pagination">
+        <div class="flex justify-center items-center gap-2">
+          <!-- Previous Button -->
+          {currentPage > 1 && (
+            <a
+              href={currentPage === 2 ? '/blog' : `/blog/page/${currentPage - 1}`}
+              class="px-4 py-2 rounded-md text-blue-600 hover:bg-blue-50 transition-colors"
+            >
               ← Previous
-            </span>
-            
-            <!-- Page Numbers -->
-            <div class="flex gap-1">
-              {pageNumbers.map((pageNum) => (
-                pageNum === 1 ? (
-                  <span class="px-4 py-2 rounded-md bg-blue-600 text-white font-medium">
-                    {pageNum}
-                  </span>
-                ) : (
-                  <a
-                    href={`/blog/page/${pageNum}`}
-                    class="px-4 py-2 rounded-md text-blue-600 hover:bg-blue-50 transition-colors"
-                  >
-                    {pageNum}
-                  </a>
-                )
-              ))}
-            </div>
-            
-            <!-- Next Button -->
-            {totalPages > 1 ? (
-              <a
-                href="/blog/page/2"
-                class="px-4 py-2 rounded-md text-blue-600 hover:bg-blue-50 transition-colors"
-              >
-                Next →
-              </a>
-            ) : (
-              <span class="px-4 py-2 rounded-md text-gray-400 bg-gray-100 cursor-not-allowed">
-                Next →
-              </span>
-            )}
+            </a>
+          )}
+          
+          <!-- Page Numbers -->
+          <div class="flex gap-1">
+            {pageNumbers.map((pageNum) => {
+              const isCurrentPage = pageNum === currentPage;
+              const href = pageNum === 1 ? '/blog' : `/blog/page/${pageNum}`;
+              
+              return isCurrentPage ? (
+                <span class="px-4 py-2 rounded-md bg-blue-600 text-white font-medium">
+                  {pageNum}
+                </span>
+              ) : (
+                <a
+                  href={href}
+                  class="px-4 py-2 rounded-md text-blue-600 hover:bg-blue-50 transition-colors"
+                >
+                  {pageNum}
+                </a>
+              );
+            })}
           </div>
           
-          <p class="text-center text-gray-500 text-sm mt-4">
-            Page {currentPage} of {totalPages}
-          </p>
-        </nav>
-      )}
+          <!-- Next Button -->
+          {currentPage < totalPages && (
+            <a
+              href={`/blog/page/${currentPage + 1}`}
+              class="px-4 py-2 rounded-md text-blue-600 hover:bg-blue-50 transition-colors"
+            >
+              Next →
+            </a>
+          )}
+        </div>
+        
+        <p class="text-center text-gray-500 text-sm mt-4">
+          Page {currentPage} of {totalPages}
+        </p>
+      </nav>
     </SimpleContainer>
   </main>
 </Layout>
