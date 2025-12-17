@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "The Anatomy of a Broken Workflow (And How to Automate It Right)"
-description: "Learn how to assess your business's AI readiness and build a strategic foundation for successful AI adoption."
+title: "The Anatomy of a Broken Workflow and How to Automate It"
+description: "A practical framework for identifying broken business workflows, understanding their hidden costs, and automating them the right way. Learn how to simplify processes before automation to improve reliability, scalability, and team morale."
 pubDate: 2025-12-09T00:00:00Z
-tags: ["ai", "operations", "business"]
+tags: ["automation", "operations"]
 heroImage: "/images/blog/broken-workflow.png"
 ---
 

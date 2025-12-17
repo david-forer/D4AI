@@ -11,6 +11,7 @@ export async function getStaticPaths() {
     { params: { category: 'operations' } },
     { params: { category: 'automation' } },
     { params: { category: 'business' } },
+    { params: { category: 'training' } },
   ];
 }
 
@@ -46,7 +47,8 @@ const categories = [
   { name: "SEO Strategy", slug: "seo" },
   { name: "Operations", slug: "operations" },
   { name: "Automation", slug: "automation" },
-  { name: "Business Growth", slug: "business" }
+  { name: "Business Growth", slug: "business" },
+  { name: "Training", slug: "training" },
 ];
 
 // Get the current category name

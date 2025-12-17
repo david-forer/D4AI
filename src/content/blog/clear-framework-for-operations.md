@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Why AI Ops Is Breaking Without Clarity"
-description: "Learn how to assess your business's AI readiness and build a strategic foundation for successful AI adoption."
+title: "CLEAR: An Operating Framework for AI-Enabled Operations"
+description: "An operational framework that prepares businesses for AI by making workflows explicit, owned, and machine-legible before automation."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
 heroImage: "/images/blog/clear-framework.png"

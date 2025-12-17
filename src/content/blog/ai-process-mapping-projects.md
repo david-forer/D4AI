@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "How AI Supercharges Process Mapping (Without Breaking It)"
-description: "Learn how to assess your business's AI readiness and build a strategic foundation for successful AI adoption."
+title: "Process Mapping Before AI Automation"
+description: "An approach to using AI to accelerate process mapping so teams can spot bottlenecks, decision points, and handoff friction before automating. Includes how to draft maps, validate reality with the team, and convert maps into SOPs, templates, and safe automation candidates."
 pubDate: 2025-12-09T00:00:00Z
-tags: ["ai", "operations", "business"]
+tags: ["AI integration", "operations", "automation"]
 heroImage: "/images/blog/systemizing-processes.png"
 ---
 

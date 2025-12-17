@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "From Chaos to Control: Systemizing Business Processes in 30 Days"
-description: "Learn how to assess your business's AI readiness and build a strategic foundation for successful AI adoption."
+title: "Systemize Core Business Processes in 30 Days"
+description: "A four-week sprint plan to document, simplify, and standardize three to five high-impact operational processes using lightweight tools and basic automation. "
 pubDate: 2025-12-09T00:00:00Z
-tags: ["operations", "business"]
+tags: ["operations", "business growth"]
 heroImage: "/images/blog/operational clarity.png"
 ---
 

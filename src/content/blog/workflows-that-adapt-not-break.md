@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Inside the System: Designing Workflows That Adapt, Not Break"
-description: "Learn how to assess your business's AI readiness and build a strategic foundation for successful AI adoption."
+title: "How to Design Workflows That Adapt Instead of Breaking"
+description: "Describes why brittle workflows fail and outlines practical design principles for building resilient, adaptable processes that handle change gracefully."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
 heroImage: "/images/blog/false-reliance.png"

@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "What Does a Fully Automated Back Office Actually Look Like?"
-description: "Learn how to assess your business's AI readiness and build a strategic foundation for successful AI adoption."
+title: "What a Fully Automated Back Office Actually Looks Like"
+description: "A hands-on explanation of how small businesses can automate finance, HR, and IT operations to eliminate routine work while keeping human judgment where it matters."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
 heroImage: "/images/blog/automated-back-office.png"
