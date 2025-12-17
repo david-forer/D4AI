@@ -3,6 +3,9 @@ import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import SimpleContainer from '../../components/SimpleContainer.astro';
 
+// Posts per page
+const POSTS_PER_PAGE = 9;
+
 // Get all blog posts
 const allPosts = await getCollection('blog');
 
@@ -11,8 +14,12 @@ const sortedPosts = allPosts.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
-// Get the latest 6 posts for display
-const latestPosts = sortedPosts.slice(0, 6);
+// Pagination logic - Page 1
+const currentPage = 1;
+const totalPages = Math.ceil(sortedPosts.length / POSTS_PER_PAGE);
+const startIndex = 0;
+const endIndex = POSTS_PER_PAGE;
+const paginatedPosts = sortedPosts.slice(startIndex, endIndex);
 
 // Default image for posts without a hero image
 const defaultPostImage = "/images/ai operations logo.png";
@@ -25,6 +32,9 @@ const categories = [
   { name: "Automation", slug: "automation" },
   { name: "Business Growth", slug: "business" }
 ];
+
+// Generate page numbers for pagination
+const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 ---
 
 <Layout title="Blog | D4AI">
@@ -77,12 +87,17 @@ const categories = [
     
     <!-- Blog Posts Section -->
     <SimpleContainer>
-      <div class="pb-16">
-        <h2 class="text-2xl font-bold mb-8 text-gray-900">Latest Articles</h2>
+      <div class="pb-8">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-2xl font-bold text-gray-900">Latest Articles</h2>
+          <p class="text-gray-600 text-sm">
+            Showing {paginatedPosts.length} of {sortedPosts.length} posts
+          </p>
+        </div>
         
-        {latestPosts.length > 0 ? (
+        {paginatedPosts.length > 0 ? (
           <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {latestPosts.map((post) => (
+            {paginatedPosts.map((post) => (
               <div class="group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-100">
                 <div class="relative aspect-[16/9] overflow-hidden bg-blue-100">
                   <img
@@ -144,6 +159,54 @@ const categories = [
           </div>
         )}
       </div>
+
+      <!-- Pagination -->
+      {totalPages > 1 && (
+        <nav class="pb-16" aria-label="Blog pagination">
+          <div class="flex justify-center items-center gap-2">
+            <!-- Previous Button (disabled on page 1) -->
+            <span class="px-4 py-2 rounded-md text-gray-400 bg-gray-100 cursor-not-allowed">
+              ← Previous
+            </span>
+            
+            <!-- Page Numbers -->
+            <div class="flex gap-1">
+              {pageNumbers.map((pageNum) => (
+                pageNum === 1 ? (
+                  <span class="px-4 py-2 rounded-md bg-blue-600 text-white font-medium">
+                    {pageNum}
+                  </span>
+                ) : (
+                  <a
+                    href={`/blog/page/${pageNum}`}
+                    class="px-4 py-2 rounded-md text-blue-600 hover:bg-blue-50 transition-colors"
+                  >
+                    {pageNum}
+                  </a>
+                )
+              ))}
+            </div>
+            
+            <!-- Next Button -->
+            {totalPages > 1 ? (
+              <a
+                href="/blog/page/2"
+                class="px-4 py-2 rounded-md text-blue-600 hover:bg-blue-50 transition-colors"
+              >
+                Next →
+              </a>
+            ) : (
+              <span class="px-4 py-2 rounded-md text-gray-400 bg-gray-100 cursor-not-allowed">
+                Next →
+              </span>
+            )}
+          </div>
+          
+          <p class="text-center text-gray-500 text-sm mt-4">
+            Page {currentPage} of {totalPages}
+          </p>
+        </nav>
+      )}
     </SimpleContainer>
   </main>
 </Layout>
