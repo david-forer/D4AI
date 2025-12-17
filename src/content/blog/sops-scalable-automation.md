@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "SOPs Aren't Boring — They're Scalable Automation in Disguise"
-description: "Learn how to assess your business's AI readiness and build a strategic foundation for successful AI adoption."
+title: "SOPs Aren't Boring -They're the Foundation of Automation"
+description: "Explains how well-written SOPs translate human workflows into explicit logic that automation can reliably execute."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
 heroImage: "/images/blog/wild-workflows.png"

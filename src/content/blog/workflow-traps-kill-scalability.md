@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "The 3 Workflow Traps That Kill Scalability"
-description: "Learn how to assess your business's AI readiness and build a strategic foundation for successful AI adoption."
+description: "Explains the hero, spaghetti, and custom code workflow traps that quietly limit growth in small businesses, and how to design operations that scale beyond early success."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
 heroImage: "/images/blog/workflow-traps.png"

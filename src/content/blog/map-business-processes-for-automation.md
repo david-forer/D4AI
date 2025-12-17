@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: " How to Map Business Processes That Are Ready for Automation"
-description: "Learn how to assess your business's AI readiness and build a strategic foundation for successful AI adoption."
+title: "Process Mapping: The Foundation of Successful Automation"
+description: "A pragmatic guide to mapping real workflows so businesses can identify automation-ready processes and avoid automating confusion."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
 heroImage: "/images/blog/business-processes.png"

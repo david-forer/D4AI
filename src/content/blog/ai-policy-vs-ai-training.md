@@ -4,7 +4,7 @@ title: "AI Policy vs. AI Training: Why Both Matter (And How to Connect Them)"
 description: "Bridge the gap between AI policy documents and actual employee behavior. Learn to translate legal requirements into practical training that changes how people work."
 pubDate: 2025-12-17T00:00:00Z
 tags: ["ai", "training", "operations"]
-heroImage: "/images/blog/clear-framework.png"
+heroImage: "/images/blog/ai-training-vs-ai-policy.png"
 ---
 
 ## AI Policy vs. AI Training: Why Both Matter (And How to Connect Them)

@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: "Dashboards, SOPs, and the Myth of Operational Clarity"
-description: "Learn how to assess your business's AI readiness and build a strategic foundation for successful AI adoption."
+title: "Why Dashboards and SOPs Fail Without Operational Clarity"
+description: "An analysis of why dashboards and SOPs often create the illusion of control without improving execution, and how aligning metrics with real workflows closes the measurement-action gap."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
 heroImage: "/images/blog/blind-spot.png"
