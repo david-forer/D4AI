@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogLayout.astro
 title: "Google Profile SEO: The Complete Local Restaurant Marketing Guide"
 description: "Master local SEO for your restaurant with actionable Google Business Profile strategies, review management tactics, and geo-targeting techniques that actually fill tables."
 pubDate: 2025-06-12T00:00:00Z
