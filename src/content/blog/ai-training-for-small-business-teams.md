@@ -1,10 +1,10 @@
 ---
+layout: ../../layouts/BlogLayout.astro
 title: "AI Training for Small Business Teams: Workshops and Systems Upgrades"
 description: "Practical AI training changes the game for small teams. Learn how hands-on workshops and operational upgrades turn AI tools into productivity multipliers for your business."
-pubDate: 2025-11-09T00:00:00+00:00
-tags: [ai-training, small-business, team-productivity, ai-workshops, business-automation]
+pubDate: 2025-11-09T00:00:00Z
+tags: ["ai-training", "small-business", "team-productivity", "ai-workshops", "business-automation"]
 heroImage: "/images/blog/ai-driven-pro.png"
-
 ---
 
 ## AI tools are everywhere. Training is nowhere

@@ -1,4 +1,5 @@
 User-agent: *
-Disallow:
+Allow: /
+
 
 Sitemap: https://davidjforer.com/sitemap-index.xml
