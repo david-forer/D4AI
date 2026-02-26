@@ -30,7 +30,9 @@ const categories = [
   { name: "SEO Strategy", slug: "seo" },
   { name: "Operations", slug: "operations" },
   { name: "Automation", slug: "automation" },
-  { name: "Business Growth", slug: "business" }
+  { name: "Business Growth", slug: "business" },
+  {name: "AI Readiness", slug: "ai-readiness" },
+  {name: "AI Audit", slug: "ai-audit" }
 ];
 
 // Generate page numbers for pagination
@@ -57,7 +59,7 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 
     <!-- Blog Introduction Section -->
     <SimpleContainer>
-      <div class="py-12 text-center max-w-4xl mx-auto">
+      <!--<div class="py-12 text-center max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-gray-900 mb-6">Welcome to the AI Operations Blog</h2>
         <p class="text-lg text-gray-700 mb-8">
           Our blog is dedicated to helping businesses leverage AI, optimize operations, and improve SEO strategies.
@@ -65,7 +67,7 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
           Whether you're looking to streamline your workflows, enhance your search visibility, or integrate AI
           into your business processes, you'll find valuable resources here.
         </p>
-      </div>
+      </div>-->
       
       <!-- Category Navigation -->
       <div class="border-t border-b border-gray-200 py-4 mb-12">
@@ -89,7 +91,7 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
     <SimpleContainer>
       <div class="pb-8">
         <div class="flex justify-between items-center mb-8">
-          <h2 class="text-2xl font-bold text-gray-900">Latest Articles</h2>
+          <h2 class="text-2xl font-bold text-gray-900">Latest AI Operations Articles</h2>
           <p class="text-gray-600 text-sm">
             Showing {paginatedPosts.length} of {sortedPosts.length} posts
           </p>
