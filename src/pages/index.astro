@@ -1,10 +1,6 @@
 ---
 // src/pages/index.astro - Homepage for AI SEO Operations
 import Layout from '../layouts/Layout.astro';
-import Features from '../components/Features.astro';
-import Container from '../components/Container.astro';
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
 import Hero from '../components/Hero.astro';
 import ModalLeadMagnet from "../components/ModalLeadMagnet.astro";
 
@@ -28,28 +24,28 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
             </p>
             
             <div class="grid md:grid-cols-2 gap-8 mb-12">
-              <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-teal-600">
+              <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-600">
                 <h3 class="font-bold text-xl mb-3 text-gray-800">Everyone is wearing too many hats</h3>
                 <p class="text-gray-600">
                   Your team juggles multiple roles, leading to burnout and missed deadlines instead of focused execution.
                 </p>
               </div>
               
-              <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-700">
+              <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500">
                 <h3 class="font-bold text-xl mb-3 text-gray-800">Simple tasks take too long</h3>
                 <p class="text-gray-600">
                   Basic operations that should take minutes consume hours due to manual processes and constant context switching.
                 </p>
               </div>
             
-              <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-slate-600">
+              <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-400">
                 <h3 class="font-bold text-xl mb-3 text-gray-800">You're drowning in disconnected tools</h3>
                 <p class="text-gray-600">
                   You've invested in software to solve problems, but now spend more time managing disconnected apps than running your business.
                 </p>
               </div>
              
-              <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-400">
+              <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-300">
                 <h3 class="font-bold text-xl mb-3 text-gray-800">AI feels like a problem, not a solution</h3>
                 <p class="text-gray-600">
                   You know AI could help, but without a clear system, it's just another complex tool gathering digital dust.
@@ -64,6 +60,30 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
           </div>
         </div>
       </section>
+      <!-- Stats Bar -->
+      <section class="bg-blue-600 py-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-white text-center">
+            <div>
+              <p class="text-3xl md:text-4xl font-extrabold">10+</p>
+              <p class="text-blue-100 text-sm mt-1">Hours saved per week</p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-4xl font-extrabold">50+</p>
+              <p class="text-blue-100 text-sm mt-1">Businesses systemized</p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-4xl font-extrabold">$1M+</p>
+              <p class="text-blue-100 text-sm mt-1">Revenue threshold served</p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-4xl font-extrabold">90</p>
+              <p class="text-blue-100 text-sm mt-1">Days to measurable ROI</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Is this you section? -->
 
       <section class="bg-gradient-to-b from-blue-600 to-blue-700 py-16">
@@ -80,7 +100,7 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
             <!-- Item 1 -->
             <div class="flex sm:w-full md:w-1/2 lg:border-r md:border-r sm:border-r-0 border-blue-400 pb-10 lg:pt-6">
               <div class="flex flex-shrink-0 mr-5 text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
@@ -93,7 +113,7 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
             <!-- Item 2 -->
             <div class="flex sm:w-full md:w-1/2 lg:pb-10 lg:pt-6">
               <div class="flex flex-shrink-0 sm:ml-0 md:ml-10 lg:ml-10 mr-5 text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                 </svg>
               </div>
@@ -106,7 +126,7 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
             <!-- Item 3 -->
             <div class="flex sm:w-full md:w-1/2 lg:border-t md:border-t sm:border-t-0 lg:border-r md:border-r sm:border-r-0 border-blue-400 pt-10 lg:pb-20">
               <div class="flex flex-shrink-0 mr-5 text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                 </svg>
               </div>
@@ -119,7 +139,7 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
             <!-- Item 4 -->
             <div class="flex sm:w-full md:w-1/2 lg:border-t md:border-t sm:border-t-0 border-blue-400 pt-10 lg:pb-20">
               <div class="flex flex-shrink-0 sm:ml-0 md:ml-10 lg:ml-10 mr-5 text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
@@ -137,10 +157,76 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
         </div>
       </section>
 
+      <!-- Testimonials Section -->
+      <section class="py-16 md:py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-4xl mx-auto text-center mb-12">
+            <p class="uppercase text-sm tracking-wider font-medium text-blue-600 mb-3">What Experts Say</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Insights from founders, investors, and AI leaders</h2>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Testimonial 1 -->
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex flex-col">
+              <div class="flex mb-4" aria-label="5 out of 5 stars">
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <blockquote class="text-gray-700 leading-relaxed flex-1">
+                "We all hear about how AI will transform enterprises, but the real magic is in small businesses: one person with the right automation can look like a team of ten."
+              </blockquote>
+              <div class="mt-6 pt-4 border-t border-gray-100">
+                <p class="font-semibold text-gray-800">Jason Calacanis</p>
+                <p class="text-sm text-gray-500">Founder, Angel Investor</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex flex-col">
+              <div class="flex mb-4" aria-label="5 out of 5 stars">
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <blockquote class="text-gray-700 leading-relaxed flex-1">
+                "AI isn’t just a tool, it’s leverage. If you’re not using AI to move quicker and make smarter decisions, you’re at a disadvantage. The most successful entrepreneur will understand how to properly use AI."
+              </blockquote>
+              <div class="mt-6 pt-4 border-t border-gray-100">
+                <p class="font-semibold text-gray-800">Mark Cuban</p>
+                <p class="text-sm text-gray-500">Investor & Entrepreneur</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex flex-col">
+              <div class="flex mb-4" aria-label="5 out of 5 stars">
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <blockquote class="text-gray-700 leading-relaxed flex-1">
+                "The best way to get value from AI is to pick a concrete, repetitive task, automate the first 80%, and keep humans in the loop for judgment and refinement."
+              </blockquote>
+              <div class="mt-6 pt-4 border-t border-gray-100">
+                <p class="font-semibold text-gray-800">Dario Amodei</p>
+                <p class="text-sm text-gray-500">CEO, Anthropic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Solution/Framework Introduction Section -->
       
      
-      <section class="py-12 md:py-24 bg-gray-100">
+      <section class="py-16 md:py-24 bg-gray-100">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
           <div class="max-w-5xl mx-auto text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gray-800">
@@ -167,7 +253,7 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
               
               <!-- Image Block -->
               <div class="md:w-5/12 max-w-sm">
-                <img class="rounded-md border-none h-20 w-20 object-cover" src="/images/ai operations-audit.png" alt="Operations Audit Process">
+                <img class="rounded-md border-none h-32 w-32 object-cover" loading="lazy" src="/images/ai operations-audit.png" alt="Operations Audit Process">
               </div>
             </div>
           
@@ -181,7 +267,7 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
               
               <!-- Image Block -->
               <div class="md:w-5/12 max-w-sm">
-                <img class="rounded-md border-none h-20 w-20 object-cover" src="/images/ai operations map.png" alt="Implementation Roadmap">
+                <img class="rounded-md border-none h-32 w-32 object-cover" loading="lazy" src="/images/ai operations map.png" alt="Implementation Roadmap">
               </div>
             </div>
       
@@ -195,7 +281,7 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
               
               <!-- Image Block -->
               <div class="md:w-5/12 max-w-sm">
-                <img class="rounded-md border-none h-20 w-20 object-cover" src="/images/ai optimize build.png" alt="System Integration">
+                <img class="rounded-md border-none h-32 w-32 object-cover" loading="lazy" src="/images/ai optimize build.png" alt="System Integration">
               </div>
             </div>
           
@@ -209,7 +295,7 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
               
               <!-- Image Block -->
               <div class="md:w-5/12 max-w-sm">
-                <img class="rounded-md border-none h-20 w-20 object-cover" src="/images/ai optimize empower.png" alt="Team Training">
+                <img class="rounded-md border-none h-32 w-32 object-cover" loading="lazy" src="/images/ai optimize empower.png" alt="Team Training">
               </div>
             </div>
       
@@ -223,7 +309,7 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
               
               <!-- Image Block -->
               <div class="md:w-5/12 max-w-sm">
-                <img class="rounded-md border-none h-20 w-20 object-cover" src="/images/ai operations optimize.png" alt="Continuous Optimization">
+                <img class="rounded-md border-none h-32 w-32 object-cover" loading="lazy" src="/images/ai operations optimize.png" alt="Continuous Optimization">
               </div>
             </div>
           </div>
@@ -314,19 +400,19 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
                 
                 <ul class="mb-8 space-y-4">
                   <li class="flex items-start">
-                    <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
                     <span><strong>Save 10+ hours/week</strong> by automating your SEO workflow</span>
                   </li>
                   <li class="flex items-start">
-                    <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
                     <span><strong>No coding needed</strong> - beginner-friendly n8n templates included</span>
                   </li>
                   <li class="flex items-start">
-                    <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
                     <span><strong>Boost results</strong> by integrating AI directly into content, audit, and link workflows</span>
@@ -336,7 +422,7 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
                                
                 <button
   data-formbricks-open="cmb58d1pc001qoj016qyr3jh5"
-  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition duration-200"
+  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition duration-200 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none"
   data-open-modal="modal-ai-seo"
 >
   Get the Free Guide Now
@@ -361,7 +447,7 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
 <section class="py-16 md:py-24 bg-white">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="max-w-4xl mx-auto text-center mb-16">
-      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-gray-800">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gray-800">
         AI Operations Solutions for Growth-Focused Businesses
       </h2>
       <p class="text-lg text-gray-700 mb-10">
@@ -371,10 +457,10 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
     
     <div class="grid gap-8 mx-auto mt-12 lg:grid-cols-3 sm:grid-cols-2 md:gap-y-12 text-gray-700">
       <!-- Service 1 -->
-      <div class="leading-7">
+      <div class="leading-7 p-4 rounded-lg hover:shadow-lg transition-shadow duration-200 cursor-pointer">
         <div class="flex flex-row max-w-full sm:max-w-md">
           <div class="flex justify-center">
-            <svg class="block flex-shrink-0 mt-1 mr-3 w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg class="block flex-shrink-0 mt-1 mr-3 w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
             </svg>
           </div>
@@ -390,10 +476,10 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
       </div>
       
       <!-- Service 2 -->
-      <div class="leading-7">
+      <div class="leading-7 p-4 rounded-lg hover:shadow-lg transition-shadow duration-200 cursor-pointer">
         <div class="flex flex-row max-w-full sm:max-w-md">
           <div class="flex justify-center">
-            <svg class="block flex-shrink-0 mt-1 mr-3 w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg class="block flex-shrink-0 mt-1 mr-3 w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
             </svg>
           </div>
@@ -409,10 +495,10 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
       </div>
       
       <!-- Service 3 -->
-      <div class="leading-7">
+      <div class="leading-7 p-4 rounded-lg hover:shadow-lg transition-shadow duration-200 cursor-pointer">
         <div class="flex flex-row max-w-full sm:max-w-md">
           <div class="flex justify-center">
-            <svg class="block flex-shrink-0 mt-1 mr-3 w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg class="block flex-shrink-0 mt-1 mr-3 w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
           </div>
@@ -428,10 +514,10 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
       </div>
       
       <!-- Service 4 -->
-      <div class="leading-7">
+      <div class="leading-7 p-4 rounded-lg hover:shadow-lg transition-shadow duration-200 cursor-pointer">
         <div class="flex flex-row max-w-full sm:max-w-md">
           <div class="flex justify-center">
-            <svg class="block flex-shrink-0 mt-1 mr-3 w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg class="block flex-shrink-0 mt-1 mr-3 w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
             </svg>
           </div>
@@ -447,10 +533,10 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
       </div>
       
       <!-- Service 5 -->
-      <div class="leading-7">
+      <div class="leading-7 p-4 rounded-lg hover:shadow-lg transition-shadow duration-200 cursor-pointer">
         <div class="flex flex-row max-w-full sm:max-w-md">
           <div class="flex justify-center">
-            <svg class="block flex-shrink-0 mt-1 mr-3 w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg class="block flex-shrink-0 mt-1 mr-3 w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
             </svg>
           </div>
@@ -466,10 +552,10 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
       </div>
       
       <!-- Service 6 -->
-      <div class="leading-7">
+      <div class="leading-7 p-4 rounded-lg hover:shadow-lg transition-shadow duration-200 cursor-pointer">
         <div class="flex flex-row max-w-full sm:max-w-md">
           <div class="flex justify-center">
-            <svg class="block flex-shrink-0 mt-1 mr-3 w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg class="block flex-shrink-0 mt-1 mr-3 w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
             </svg>
           </div>
@@ -488,7 +574,7 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
     <div class="text-center mt-12">
       <a href="/services" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition duration-150">
         Explore Our Services
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
         </svg>
       </a>
@@ -497,25 +583,24 @@ description = "AI and SEO Operations, stop running a chaotic business and get AI
 </section>
 
       <!-- Final CTA Section -->
-      <section class="py-8 md:py-24 bg-gradient-to-br from-blue-900 to-indigo-900 text-white">
+      <section class="py-16 md:py-24 bg-gradient-to-br from-blue-900 to-indigo-900 text-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
           <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-3xl md:text-3xl font-bold mb-6">
               Learn How to Rank in a World Run by AI
             </h2>
-            <p class="text-xl text-blue-100 mb-10">
-              Google’s new AI Overviews are changing how search works.
+            <p class="text-xl text-blue-100 mb-10 leading-relaxed">
+              Google's new AI Overviews are changing how search works.
 This free guide shows you how to adapt with Generative Engine Optimization (GEO) —
 a smarter, faster way to stay visible, relevant, and ranked in 2025 and beyond.
 Showing up in AI Search is the next big frontier for SEO, and this playbook is your roadmap to success.
             </p>
             <button
-  class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-xl transition duration-200"
+  class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-xl transition duration-200 focus:ring-2 focus:ring-orange-400 focus:ring-offset-2 focus:outline-none"
   data-open-modal="modal-geo-playbook"
 >
   Download the GEO Playbook
 </button>
-            </a>
           </div>
         </div>
       </section>
@@ -524,8 +609,8 @@ Showing up in AI Search is the next big frontier for SEO, and this playbook is y
   
     
     <!-- Simple back to top button -->
-    <button id="back-to-top" class="fixed bottom-6 right-6 bg-blue-600 text-white p-2 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <button id="back-to-top" aria-label="Back to top" class="fixed bottom-6 right-6 bg-blue-600 text-white p-2 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
       </svg>
     </button>
