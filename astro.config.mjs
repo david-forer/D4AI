@@ -11,7 +11,16 @@ export default defineConfig({
   integrations: [
     tailwind(),
     mdx(),
-    sitemap(),               // sitemap.xml built at deploy
+    sitemap({
+      // Exclude noindex/utility pages from sitemap
+      filter: (page) =>
+        !page.includes('/thank-you') &&
+        !page.includes('/thankyou') &&
+        !page.includes('/ob-buildout') &&
+        !page.includes('/fb-help') &&
+        !page.includes('/html') &&
+        !page.includes('/blog/category/'),
+    }),
   ],
 });
 
