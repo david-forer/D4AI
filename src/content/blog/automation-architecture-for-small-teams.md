@@ -4,7 +4,8 @@ title: "Automation Architecture for Small Teams: Why Building Without a Blueprin
 description: "Work entering from six channels, priorities shifting daily, and no single source of truth. Learn how growing service firms build intake and workflow systems that actually scale."
 pubDate: 2026-02-14T00:00:00Z
 tags: ["operations", "small-business", "automation"]
-heroImage: "/images/blog/automation-foundation-first.png"
+heroImage: "/images/blog/automation-foundation-first.webp"
+articleType: "pillar"
 ---
 
 # Automation Architecture for Small Teams: Why Building Without a Blueprint Costs More Than It Saves

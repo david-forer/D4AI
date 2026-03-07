@@ -4,7 +4,7 @@ title: "Process Mapping: The Foundation of Successful Automation"
 description: "A pragmatic guide to mapping real workflows so businesses can identify automation-ready processes and avoid automating confusion."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
-heroImage: "/images/blog/business-processes.png"
+heroImage: "/images/blog/business-processes.webp"
 ---
 
 
@@ -129,3 +129,10 @@ Walk through the four steps. Define the scope. Talk to the people who do the wor
 Then evaluate it against the automation-readiness criteria. If it scores well, you have found your first automation project. If it does not, you have still created valuable documentation that will help you manage and improve the process manually.
 
 Either way, you have built a capability your business needs. The next process will be easier to map. The one after that easier still. Over time, you develop a clear picture of how your entire operation works, which puts you in a much stronger position to improve it.
+
+
+---
+
+*Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [SOPs Are the Foundation of Automation](/blog/sops-scalable-automation)*
+
+If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

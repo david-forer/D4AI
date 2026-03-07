@@ -4,7 +4,7 @@ title: "What a Fully Automated Back Office Actually Looks Like"
 description: "A hands-on explanation of how small businesses can automate finance, HR, and IT operations to eliminate routine work while keeping human judgment where it matters."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
-heroImage: "/images/blog/automated-back-office.png"
+heroImage: "/images/blog/automated-back-office.webp"
 ---
 
 
@@ -121,3 +121,10 @@ Data becomes more valuable. When processes run through systems rather than throu
 Your team becomes more strategic. The people who used to spend time on administrative tasks now spend time on improvement, analysis, and decisions. Their work creates more value because they are working on higher-leverage activities.
 
 This is not about replacing people with machines. It is about elevating what people do. A business with a fully automated back office is not one without a back office. It is one where the back office operates at a fundamentally higher level.
+
+
+---
+
+*Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [Automation as Business Philosophy](/blog/automation-as-philosophy)*
+
+If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

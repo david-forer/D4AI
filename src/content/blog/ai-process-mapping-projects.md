@@ -4,7 +4,7 @@ title: "Process Mapping Before AI Automation"
 description: "An approach to using AI to accelerate process mapping so teams can spot bottlenecks, decision points, and handoff friction before automating. Includes how to draft maps, validate reality with the team, and convert maps into SOPs, templates, and safe automation candidates."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["AI integration", "operations", "automation"]
-heroImage: "/images/blog/systemizing-processes.png"
+heroImage: "/images/blog/systemizing-processes.webp"
 ---
 
 
@@ -225,3 +225,10 @@ AI just helps them get there faster.
 If you are running a small business and you are considering AI adoption, start here. Map your core processes first. Understand what is actually happening. Use AI to accelerate the mapping, refine the analysis, and turn the map into action.
 
 But do not skip the map. That is where the leverage actually is.
+
+
+---
+
+*Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [Process Mapping: The Foundation of Successful Automation](/blog/map-business-processes-for-automation)*
+
+If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

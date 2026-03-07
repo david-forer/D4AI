@@ -5,7 +5,7 @@ description: "Learn how an AI readiness audit works for 5–20 person businesses
 pubDate: 2026-01-04T00:00:00Z
 tags:
   [ "ai", "ai-readiness", "ai-audit", "operations" ]
-heroImage: "/images/blog/accelerated-ideas.png"
+heroImage: "/images/blog/accelerated-ideas.webp"
 ---
 
 
@@ -145,3 +145,10 @@ Inconsistent output, unclear ownership, duplicated effort, and decisions made wi
 AI can be a multiplier or a liability. The difference is rarely the technology.
 
 If you want clarity on how AI is shaping your business today and what to fix before it scales, an AI readiness audit is the fastest way to get there. Booking a call is not a commitment to change. It is a commitment to see clearly.
+
+
+---
+
+*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) · [Systemize Core Business Processes in 30 Days](/blog/chaos-to-control-30-days)*
+
+An [AI readiness audit](/ai-readiness-and-ai-audits) will show you exactly where your business stands before you start building.

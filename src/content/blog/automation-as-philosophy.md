@@ -4,7 +4,7 @@ title: "Automation as Business Philosophy: A Guide for Founders"
 description: "Every automated decision reveals your priorities. Automation is not a tactic. It is a worldview that shapes how your business operates and what you encode into systems."
 pubDate: 2025-12-19T00:00:00Z
 tags: ["automation", "operations", "business", "ai"]
-heroImage: "/images/blog/automation-philosophy.png"
+heroImage: "/images/blog/automation-philosophy.webp"
 ---
 
 # Automation as Business Philosophy: A Guide for Founders
@@ -154,3 +154,10 @@ If you need to help your team internalize this philosophy, [AI Training](https:/
 Automation is not a tactic. It is a philosophy. The decisions you encode today shape how the business operates tomorrow.
 
 Make those decisions intentionally.
+
+
+---
+
+*Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [How to Identify High-Leverage Automation Opportunities](/blog/framework-high-leverage-automation)*
+
+If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

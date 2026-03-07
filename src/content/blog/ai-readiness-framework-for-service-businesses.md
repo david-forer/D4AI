@@ -1,10 +1,11 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: "AI Readiness Framework for Service Businesses: Why Most Firms Get It Wrong Before They Even Start"
-description: "Most service firms think they're AI ready. They're not. Learn the five-dimension readiness model that separates tool adoption from structural readiness — and why it determines your ROI."
+description: "Most service firms think they're AI ready. They're not. Learn the five-dimension readiness model that separates tool adoption from structural readiness, and why it determines your ROI."
 pubDate: 2026-02-23T00:00:00Z
 tags: ["operations", "ai", "automation"]
-heroImage: "/images/blog/ai-readiness-is-structural.png"
+heroImage: "/images/blog/ai-readiness-is-structural.webp"
+articleType: "pillar"
 ---
 
 

@@ -4,7 +4,7 @@ title: "Workflow Debt: The Invisible Drag on Your Business Ops"
 description: "Spells out how invisible workflow debt accumulates through manual work, shadow processes, hand-offs, and outdated tools, and how it quietly constrains growth."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
-heroImage: "/images/blog/workflow-debt.png"
+heroImage: "/images/blog/workflow-debt.webp"
 ---
 
 
@@ -127,3 +127,10 @@ For a business without a dedicated operations manager, this attention must be bu
 The payoff justifies the effort. Workflow debt is the silent drag that keeps good businesses from becoming great ones. Addressing it systematically removes that drag and unleashes growth potential that was always there, just buried under accumulated operational friction.
 
 Start by quantifying your debt. Pick the highest-interest item. Pay it down. Then move to the next one. The journey of a thousand miles begins with a single step, and the journey to operational excellence begins with recognizing the debt you carry and committing to reduce it.
+
+
+---
+
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) · [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams)*
+
+If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

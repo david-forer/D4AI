@@ -4,7 +4,7 @@ title: "The Anatomy of a Broken Workflow and How to Automate It"
 description: "A practical framework for identifying broken business workflows, understanding their hidden costs, and automating them the right way. Learn how to simplify processes before automation to improve reliability, scalability, and team morale."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["automation", "operations"]
-heroImage: "/images/blog/broken-workflow.png"
+heroImage: "/images/blog/broken-workflow.webp"
 ---
 
 
@@ -93,3 +93,10 @@ This shift does not happen overnight, and it does not happen by accident. It req
 Start with the process that causes the most pain. Map it out. Simplify it. Automate what remains. Then move on to the next one. Each workflow you fix reduces the drag on your business and frees up capacity for growth.
 
 The goal is not perfection. The goal is progress. One broken workflow fixed is one less thing quietly draining your time, money, and energy.
+
+
+---
+
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) · [Do Not Start With Tools. Start With Bottlenecks](/blog/start-with-bottlenecks)*
+
+If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

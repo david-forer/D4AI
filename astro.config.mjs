@@ -19,7 +19,9 @@ export default defineConfig({
         !page.includes('/ob-buildout') &&
         !page.includes('/fb-help') &&
         !page.includes('/html') &&
-        !page.includes('/blog/category/'),
+        !page.includes('/blog/category/') &&
+        !page.includes('/content') &&
+        !page.includes('/blog/page/'),
     }),
   ],
 });

@@ -4,7 +4,7 @@ title: "Rebuild the Business. Not Just the Workflow"
 description: "Optimizing workflows while structure decays creates local efficiency and global failure. Rebuilding the business means redesigning decision-making, ownership, and information flow."
 pubDate: 2025-12-19T00:00:00Z
 tags: ["operations", "business", "systems-thinking", "strategy"]
-heroImage: "/images/blog/rebuild-the-business.png"
+heroImage: "/images/blog/rebuild-the-business.webp"
 ---
 
 # Rebuild the Business. Not Just the Workflow
@@ -134,3 +134,10 @@ If you need a framework for thinking through these changes, [Fix the Chaos](http
 If you need help applying this approach to your business, [AI Training](https://davidjforer.com/ai-training-for-small-business-teams) can help your team internalize systemic thinking as a shared capability.
 
 Do not just fix workflows. Rebuild the business. The workflows will get better as a result, and the improvements will actually stick.
+
+
+---
+
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) · [Why Systemic Thinking Beats Growth Hacking](/blog/systemic-thinking-vs-growth-hacking)*
+
+If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

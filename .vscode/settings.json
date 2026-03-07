@@ -1,3 +1,19 @@
 {
-  "claudeCodeChat.permissions.yoloMode": false
+  "claudeCodeChat.permissions.yoloMode": false,
+
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+
+    "ai-operations-for-small-businesses.md": "why-small-businesses-break-at-1m-revenue.md, signs-your-business-needs-ai-operations.md, how-founders-can-run-operations-without-an-ops-manager.md, operational-bottlenecks-that-kill-small-business-growth.md, why-manual-processes-are-destroying-your-scaling-ability.md, the-hidden-cost-of-operational-chaos.md, how-ai-helps-founders-replace-manual-operations.md, founder-burnout-and-the-operations-problem.md, how-to-automate-your-business-operations-with-ai.md, ai-systems-that-run-your-business.md, ai-automation-stack-for-small-businesses.md, ai-workflow-automation-for-small-businesses.md, ai-operations-dashboard-for-founders.md, best-ai-tools-for-business-operations.md, scaling-a-business-with-ai-instead-of-hiring.md, hiring-more-people-doesnt-fix-operations.md, founder-ops-trap.md",
+
+    "ai-readiness-framework-for-service-businesses.md": "ai-readiness-audit-founder-led-teams.md, ai-audit-for-small-teams.md, ai-readiness-audit-guide.md, chaos-to-control-30-days.md, common-ai-mistakes.md, ai-policy-vs-ai-training.md, shadow-ai.md, future-of-work-requires-ai.md, nontechnical-ai-upskilling.md, corporate-ai-prompting-playbook.md, prompting-output-skills.md, self-healing-prompt.mdx, ai-training-for-small-business-teams.md, enterprise-training-for-ai.md, ai-ethics-both-sides.md, operational-excellence-with-ai.md",
+
+    "automation-architecture-for-small-teams.md": "automation-as-philosophy.md, automation-failed-skipped-audit.md, automation-strategic-decision.md, framework-high-leverage-automation.md, map-business-processes-for-automation.md, sops-scalable-automation.md, ai-process-mapping-projects.md, fully-automated-back-office.md, AI-automations-the-complete-guide.md, when-not-to-automate.md, your-first-business-automation.md, automation-roi-business-case.md, ai-agents-vs-automations.md",
+
+    "ai-enabled-seo-operations.md": "leveraging-ai-for-seo.md, modern-seo-source-context.mdx, seo-strategy-2026.md, schema-markup-seo-guide.md, Google-Profile-SEO.md, entity-mapping-article.md, AI-Growth-Accelerator.md, seo-content-brief-for-ai-writing.md, internal-linking-seo-system.md, seo-for-ai-search.md, seo-content-audit-small-business.md",
+
+    "Intake-and-Workflow-Systems-for-Growing-Firms.md": "workflow-debt-invisible-drag.md, workflow-traps-kill-scalability.md, workflows-that-adapt-not-break.md, anatomy-of-broken-workflow.md, clear-framework-for-operations.md, start-with-bottlenecks.md, rebuild-the-business.md, systemic-thinking-vs-growth-hacking.md, systems-thinking-startups.md, standardization-of-operations.md, dashboards-sops-operational-clarity.md, customer-support-using-ai.md"
+
+  }
 }
