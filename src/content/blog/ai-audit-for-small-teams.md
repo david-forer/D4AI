@@ -4,7 +4,7 @@ title: "What an AI Readiness Audit Looks Like for a 10-Person Business"
 description: "Learn what an AI readiness audit actually reviews for small businesses and how it helps founder-led teams scale AI without creating hidden operational risk."
 pubDate: 2026-01-03T00:00:00Z
 tags: ["ai", "ai-readiness", "operations", "small-business", "automation"]
-heroImage: "/images/blog/ai-readiness-audit.png"
+heroImage: "/images/blog/ai-readiness-audit.webp"
 ---
 
 # What an AI Readiness Audit Looks Like for a 10-Person Business
@@ -137,3 +137,10 @@ An AI readiness audit gives founders visibility before problems compound. It rep
 
 If you want to scale AI without creating hidden risk, the next step is simple.  
 **Book an AI readiness audit call** to map your workflows, surface risks, and decide what to do next with clarity.
+
+
+---
+
+*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) · [10 Mistakes Employees Make When Using AI](/blog/common-ai-mistakes)*
+
+An [AI readiness audit](/ai-readiness-and-ai-audits) will show you exactly where your business stands before you start building.

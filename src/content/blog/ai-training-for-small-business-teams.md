@@ -4,7 +4,8 @@ title: "AI Training for Small Business Teams: Workshops and Systems Upgrades"
 description: "Practical AI training changes the game for small teams. Learn how hands-on workshops and operational upgrades turn AI tools into productivity multipliers for your business."
 pubDate: 2025-11-09T00:00:00Z
 tags: ["ai-training", "small-business", "team-productivity", "ai-workshops", "business-automation"]
-heroImage: "/images/blog/ai-driven-pro.png"
+heroImage: "/images/blog/ai-driven-pro.webp"
+articleType: "cluster"
 ---
 
 ## AI tools are everywhere. Training is nowhere
@@ -254,3 +255,9 @@ Small businesses actually have an advantage here. You can implement faster than 
 The limiting factor is usually the owner. If you are the only person in your business using AI tools, you are both the bottleneck and the solution. Training your team spreads capability that currently concentrates in you. It frees your time for work only you can do. It builds an organization that operates intelligently whether you are in the room or not.
 
 The technology is ready. The question is whether your team is ready to use it.
+
+---
+
+*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) � [AI Ethics: Both Sides of the Debate](/blog/ai-ethics-both-sides)*
+
+Looking to build AI fluency across your team? [Explore AI training for small business teams](/ai-training-for-small-business-teams).

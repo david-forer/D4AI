@@ -4,7 +4,7 @@ title: "CLEAR: An Operating Framework for AI-Enabled Operations"
 description: "An operational framework that prepares businesses for AI by making workflows explicit, owned, and machine-legible before automation."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
-heroImage: "/images/blog/clear-framework.png"
+heroImage: "/images/blog/clear-framework.webp"
 ---
 
 The explosion of AI tools inside businesses has outpaced operational maturity. Most teams are experimenting with AI in isolation, not as systems. The result is faster confusion, silent failures, and inconsistent outputs.
@@ -114,3 +114,10 @@ AI multiplies clarity or chaos. CLEAR determines which one you get.
 The fastest way to waste money on AI is to automate first and think later. The systems that work are the ones built on solid operational foundations.
 
 If AI feels harder than it should, the problem is rarely the tool. It is the system around it.
+
+
+---
+
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) · [Do Not Start With Tools. Start With Bottlenecks](/blog/start-with-bottlenecks)*
+
+If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

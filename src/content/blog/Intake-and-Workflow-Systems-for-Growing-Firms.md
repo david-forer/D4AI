@@ -4,7 +4,8 @@ title: "Intake and Workflow Systems for Growing Firms: How to Stop Work From Fal
 description: "Work entering from six channels, priorities shifting daily, and no single source of truth. Learn how growing service firms build intake and workflow systems that actually scale."
 pubDate: 2026-02-03T00:00:00Z
 tags: ["operations", "small-business", "automation"]
-heroImage: "/images/blog/operational-chaos.png"
+heroImage: "/images/blog/operational-chaos.webp"
+articleType: "pillar"
 ---
 
 

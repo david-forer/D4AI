@@ -4,7 +4,7 @@ title: "How to Identify High-Leverage Automation Opportunities"
 description: "A practical framework for prioritizing automation by evaluating impact and feasibility, helping businesses focus on high-return opportunities instead of low-value quick wins."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
-heroImage: "/images/blog/strategic-automation.png"
+heroImage: "/images/blog/strategic-automation.webp"
 ---
 
 
@@ -159,3 +159,10 @@ This compounding effect makes prioritization critically important. Starting with
 Over a year, the difference between good prioritization and poor prioritization is substantial. Over several years, it becomes dramatic.
 
 The businesses that gain the most from automation are not the ones with the biggest budgets or the most technical expertise. They are the ones that consistently identify and pursue the highest-leverage opportunities. This framework gives you the structure to do exactly that.
+
+
+---
+
+*Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [Automation Is Not a Tool. It Is a Strategic Decision](/blog/automation-strategic-decision)*
+
+If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

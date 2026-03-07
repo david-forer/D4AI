@@ -4,7 +4,7 @@ title: "SOPs Aren't Boring -They're the Foundation of Automation"
 description: "Explains how well-written SOPs translate human workflows into explicit logic that automation can reliably execute."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
-heroImage: "/images/blog/wild-workflows.png"
+heroImage: "/images/blog/wild-workflows.webp"
 ---
 
 
@@ -145,3 +145,10 @@ Repeat with the next process. Then the next. Over time, you build a library of S
 The work feels unglamorous. But it is some of the highest-leverage work you can do for your operational future. Every hour invested in clear documentation saves many hours in execution, training, troubleshooting, and automation development.
 
 SOPs are not boring. They are leverage in disguise.
+
+
+---
+
+*Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [Why Dashboards and SOPs Fail Without Operational Clarity](/blog/dashboards-sops-operational-clarity)*
+
+If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

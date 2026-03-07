@@ -3,7 +3,7 @@ title: "AI Growth Accelerator: Transform Your Content Strategy in 90 Days"
 description: "A practical 90-day framework for small business owners to leverage AI strategically for content creation, audience building, and lead generation."
 pubDate: 2025-06-15T00:00:00Z
 tags: ["ai", "content-strategy", "small-business", "lead-generation"]
-heroImage: "/images/blog/accelerated-growth.png"
+heroImage: "/images/blog/accelerated-growth.webp"
 ---
 
 ## AI Growth Accelerator: Transform Your Content Strategy in 90 Days
@@ -220,3 +220,10 @@ The question isn't whether this approach works. The question is whether you're r
 Your audience is out there. They have problems you can solve. They're searching for answers you have.
 
 The only question left is: when do you start showing up?
+
+
+---
+
+*Related reading: [AI Enabled SEO Operations](/blog/ai-enabled-seo-operations) · [Leveraging AI for SEO: A Practical Guide](/blog/leveraging-ai-for-seo)*
+
+If you want to combine operational efficiency with content scale, [custom AI operations consulting](/custom-consulting) covers the full strategy.

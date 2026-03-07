@@ -4,8 +4,9 @@ title: "AI Enabled SEO Operations: The 6 Layers of SEO Success"
 description: "AI doesn't make SEO easier. It makes a well-designed SEO system more productive. Learn the six-layer framework that turns search into a repeatable production system."
 pubDate: 2026-02-07T00:00:00+01:00
 tags: [seo, topical-authority, semantic-seo]
-heroImage: "/images/blog/assymetrical-seo-system.png"
+heroImage: "/images/blog/assymetrical-seo-system.webp"
 draft: false
+articleType: "pillar"
 ---
 
 

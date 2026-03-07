@@ -4,7 +4,7 @@ title: "The 3 Workflow Traps That Kill Scalability"
 description: "Explains the hero, spaghetti, and custom code workflow traps that quietly limit growth in small businesses, and how to design operations that scale beyond early success."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
-heroImage: "/images/blog/workflow-traps.png"
+heroImage: "/images/blog/workflow-traps.webp"
 ---
 
 
@@ -113,3 +113,10 @@ Fix incrementally. You cannot rebuild everything at once. Pick the highest-impac
 Design new workflows with scalability in mind. When you are about to solve a problem with a quick fix, ask whether that fix will still work at twice your current volume. If not, invest the extra effort to do it right.
 
 The businesses that scale successfully are not lucky. They are deliberate. They recognize the traps, avoid the ones they can, and systematically eliminate the ones they inherit. That discipline, applied consistently over time, is what separates businesses that grow from businesses that get stuck.
+
+
+---
+
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) · [How to Design Workflows That Adapt Instead of Breaking](/blog/workflows-that-adapt-not-break)*
+
+If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.
