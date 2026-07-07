@@ -1,5 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import diagramFlow from '../diagrams/founder-diagnostic-flow.svg?raw';
+import diagramTimeline from '../diagrams/founder-mitigation-timeline.svg?raw';
+import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
 ---
 
 <Layout title="Founder Bottlenecks in Small Businesses – Diagnostic Framework for Owner-Dependent Operations – Strategies and Case Studies for Delegating and Scaling – David J Forer" description="Diagnose the founder bottlenecks slowing your small business: a practical framework, the key constraint areas, and strategies to get the owner out of daily operations.">
@@ -296,7 +299,6 @@ import Layout from '../layouts/Layout.astro';
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Canela:wght@300;400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
 
   <body class="font-inter bg-gray-50 overflow-x-hidden">
     <!-- Fixed Table of Contents -->
@@ -615,20 +617,7 @@ import Layout from '../layouts/Layout.astro';
                   <i class="fas fa-expand"></i>
                 </button>
               </div>
-              <div class="mermaid">
-                flowchart TD
-                A["Initial Assessment"] --> B["Founder Workload Analysis"]
-                B --> C["Organizational Structure Review"]
-                C --> D["Process & Systems Audit"]
-                D --> E["Financial Performance Analysis"]
-                E --> F["Bottleneck Identification"]
-                F --> G["Intervention Strategy"]
-                G --> H["Implementation & Monitoring"]
-
-                style A fill:#f0fdfa,stroke:#0f766e,stroke-width:2px
-                style F fill:#fef3c7,stroke:#d97706,stroke-width:2px
-                style H fill:#e0f2fe,stroke:#0369a1,stroke-width:2px
-              </div>
+              <div class="mermaid" role="img" aria-label="Diagnostic process flow from initial assessment through workload analysis, structure review, process audit, and financial analysis to bottleneck identification, intervention strategy, and implementation" set:html={diagramFlow}></div>
             </div>
           </div>
 
@@ -815,30 +804,7 @@ import Layout from '../layouts/Layout.astro';
                   <i class="fas fa-expand"></i>
                 </button>
               </div>
-              <div class="mermaid">
-                timeline
-                title "Founder Bottleneck Mitigation Timeline"
-
-                Phase 1 : "Assessment & Diagnosis"
-                : "Founder workload analysis"
-                : "Organizational structure review"
-                : "Process mapping"
-
-                Phase 2 : "Immediate Interventions"
-                : "Quick-win process improvements"
-                : "Initial delegation framework"
-                : "Team empowerment initiatives"
-
-                Phase 3 : "System Implementation"
-                : "Document key processes"
-                : "Technology investment"
-                : "Quality control systems"
-
-                Phase 4 : "Strategic Transformation"
-                : "Leadership development"
-                : "Cultural change"
-                : "Continuous improvement"
-              </div>
+              <div class="mermaid" role="img" aria-label="Founder bottleneck mitigation timeline across four phases: assessment and diagnosis, immediate interventions, system implementation, and strategic transformation" set:html={diagramTimeline}></div>
             </div>
           </div>
         </div>
@@ -1038,22 +1004,7 @@ import Layout from '../layouts/Layout.astro';
                   <i class="fas fa-expand"></i>
                 </button>
               </div>
-              <div class="mermaid">
-                flowchart LR
-                A["Data Source"] --> B["Data Loading"]
-                B --> C["Data Preprocessing"]
-                C --> D["Data Aggregation"]
-                D --> E["Data Validation"]
-                E --> F["Visualization"]
-                F --> G["Reporting"]
-
-                H["Founder Involvement"] -.-> C
-                H -.-> D
-                H -.-> F
-
-                style H fill:#fef3c7,stroke:#d97706,stroke-width:2px
-                style E fill:#f0fdfa,stroke:#0f766e,stroke-width:2px
-              </div>
+              <div class="mermaid" role="img" aria-label="Data pipeline from source through loading, preprocessing, aggregation, and validation to visualization and reporting, with founder involvement required at three stages" set:html={diagramPipeline}></div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
