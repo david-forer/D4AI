@@ -1,9 +1,9 @@
-﻿---
+---
 title: "AI for HR and People Operations: Building Scalable People Systems in Small Businesses"
 description: "In most small businesses, HR is whoever has the most time. Here's how to design AI-powered people operations that make hiring, onboarding, and performance management consistent and scalable."
 pubDate: 2026-03-19T00:00:00Z
 tags: ["ai", "operations", "hr", "business", "ai-for-business"]
-heroImage: "/images/blog/scaling-business-ai-instead-of-hiring.webp"
+heroImage: "/images/blog/ai-for-hr-and-people-operations.webp"
 articleType: "cluster"
 ---
 

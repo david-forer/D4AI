@@ -3,7 +3,7 @@ title: "The Corporate Prompting Playbook: Training Every Team to Use AI Safely"
 description: "Build a centralized prompting playbook for your organization. Learn the CPCO framework, department-specific templates, and how to create a shared prompt library that scales."
 pubDate: 2025-12-17T00:00:00Z
 tags: ["ai", "training", "operations"]
-heroImage: "/images/blog/business-processes.webp"
+heroImage: "/images/blog/corporate-ai-prompting-playbook.webp"
 articleType: "cluster"
 ---
 

@@ -1,10 +1,10 @@
-﻿---
+---
 layout: ../../layouts/BlogLayout.astro
 title: "Systemize Core Business Processes in 30 Days"
 description: "A four-week sprint plan to document, simplify, and standardize three to five high-impact operational processes using lightweight tools and basic automation. "
 pubDate: 2025-12-09T00:00:00Z
 tags: ["operations", "business growth", "ai-readiness"]
-heroImage: "/images/blog/operational clarity.webp"
+heroImage: "/images/blog/chaos-to-control-30-days.webp"
 articleType: "cluster"
 ---
 

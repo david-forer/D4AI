@@ -1,10 +1,10 @@
-﻿---
+---
 layout: ../../layouts/BlogLayout.astro
 title: "10 Mistakes Employees Make When Using AI (And How Training Fixes Them)"
 description: "Avoid the most common AI usage mistakes: pasting confidential data, blind copy-pasting, using AI for high-emotion tasks, and more. Learn the training fixes that prevent each error."
 pubDate: 2025-12-17T00:00:00Z
 tags: ["ai", "training", "operations", "ai-readiness"]
-heroImage: "/images/blog/workflow-traps.webp"
+heroImage: "/images/blog/common-ai-mistakes.webp"
 articleType: "cluster"
 ---
 

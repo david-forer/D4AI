@@ -3,7 +3,7 @@ title: "How to Identify High-Leverage Automation Opportunities"
 description: "A practical framework for prioritizing automation by evaluating impact and feasibility, helping businesses focus on high-return opportunities instead of low-value quick wins."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
-heroImage: "/images/blog/strategic-automation.webp"
+heroImage: "/images/blog/framework-high-leverage-automation.webp"
 articleType: "cluster"
 ---
 

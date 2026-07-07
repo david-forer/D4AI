@@ -1,9 +1,9 @@
-﻿---
+---
 title: "AI for Marketing Operations: Running Marketing as a System"
 description: "Most small businesses treat marketing as a series of one-off tasks. Here's how to design AI-powered marketing operations that produce compounding results instead of recurring effort."
 pubDate: 2026-03-19T00:00:00Z
 tags: ["ai", "operations", "marketing", "business", "ai-for-business"]
-heroImage: "/images/blog/strategic-decision.webp"
+heroImage: "/images/blog/ai-for-marketing-operations.webp"
 articleType: "cluster"
 ---
 
