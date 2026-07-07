@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "AI Automations: The Complete Guide to Intelligent Automation in Business"
 description: "Learn how AI automation works, explore the leading tools, and discover how to implement intelligent automation effectively in your business."
 pubDate: 2025-05-12T00:00:00Z
@@ -7,6 +6,8 @@ tags: ["ai", "automation", "business"]
 heroImage: "/images/blog/adaptive-intelligence.webp"
 articleType: "cluster"
 ---
+
+## Understand how modern AI automation actually works before choosing a single tool
 
 Automation has been reshaping business operations for decades. What has changed is how intelligent that automation has become. Modern AI automation does not just follow scripts. It learns, adapts, and handles complexity that would have required human judgment just a few years ago.
 

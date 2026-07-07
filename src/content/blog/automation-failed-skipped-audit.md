@@ -1,13 +1,13 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "The Real Reason Your Automation Failed. You Skipped the Audit"
 description: "Automation fails before it starts. Bad inputs, undefined ownership, and unclear success criteria doom projects from day one. An audit prevents the failures no one talks about."
 pubDate: 2025-12-19T00:00:00Z
 tags: ["automation", "operations", "business", "ai-audit"]
 heroImage: "/images/blog/real-reason-automation-failed.webp"
+articleType: "cluster"
 ---
 
-# The Real Reason Your Automation Failed. You Skipped the Audit
+## The Problem Was Not the Software: It Was What You Built Before You Started Building
 
 Most automation projects fail quietly.
 

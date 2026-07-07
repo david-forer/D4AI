@@ -1,12 +1,13 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "Entity Mapping: A Practical Framework for Modern SEO"
 description: "A step-by-step guide to using entity mapping to improve search visibility by helping engines understand context, relationships, and topical authority beyond keywords."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
 heroImage: "/images/blog/entity-mapping.webp"
+articleType: "cluster"
 ---
 
+## Keywords tell search engines what you said. Entities tell them what you mean.
 
 Search engines have evolved far beyond matching keywords. Google and other major platforms now process information the way humans do, by understanding relationships between people, places, organizations, and concepts. This shift makes entity mapping a fundamental part of modern SEO strategy.
 

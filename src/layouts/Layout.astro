@@ -57,12 +57,17 @@ const robots = noindex ? 'noindex,nofollow' : 'index,follow';
 		<meta name="publisher" content={publisherName} />
 
 	
-		<!-- Calendly Inline Popup Widget -->
-		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-		<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+		<!-- Preconnect to critical 3rd-party origins -->
+		<link rel="preconnect" href="https://bricks.davidjforer.com" crossorigin />
+		<link rel="preconnect" href="https://assets.calendly.com" crossorigin />
+
+		<!-- Calendly CSS: non-blocking load -->
+		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" media="print" onload="this.media='all'" />
+		<noscript><link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" /></noscript>
+		<script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
 		<!-- TruConversion for davidjforer.com -->
-<script type="text/javascript">
+		<script is:inline type="text/javascript">
     var _tip = _tip || [];
     (function(d,s,id){
         var js, tjs = d.getElementsByTagName(s)[0];
@@ -72,15 +77,7 @@ const robots = noindex ? 'noindex,nofollow' : 'index,follow';
         js.src = d.location.protocol + '//app.truconversion.com/ti-js/37589/7faf4.js';
         tjs.parentNode.insertBefore(js, tjs);
     }(document, 'script', 'ti-js'));
-</script>
-
-<script>
-var clickRankAi = document.createElement("script");
-clickRankAi.src = "https://js.clickrank.ai/seo/255a29b0-67c0-43a9-b7f4-0ba9e967559c/script?" + new Date().getTime();
-clickRankAi.async = true;
-document.head.appendChild(clickRankAi);
-</script>
-
+		</script>
 
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

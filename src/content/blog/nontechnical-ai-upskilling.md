@@ -1,13 +1,13 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "AI Upskilling for Non-Technical Teams: A Practical Guide"
 description: "Train non-technical employees on AI without requiring Python or coding skills. A practical curriculum from basics to workflow automation, overcoming resistance, and measuring ROI."
 pubDate: 2025-12-17T00:00:00Z
 tags: ["ai", "training", "operations"]
 heroImage: "/images/blog/intelligent-automation.webp"
+articleType: "cluster"
 ---
 
-# AI Upskilling for Non-Technical Teams: A Practical Guide
+## Your Team Does Not Need Python: The Skills Gap Is Conceptual, Not Technical
 
 Your HR coordinator just asked if she needs to learn Python to use AI tools effectively. Your office manager thinks AI is only for people who understand machine learning. Your accountant believes you need a computer science degree to write prompts that actually work.
 

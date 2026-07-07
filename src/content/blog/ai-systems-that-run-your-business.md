@@ -1,12 +1,13 @@
----
-layout: ../../layouts/BlogLayout.astro
+﻿---
 title: "AI Systems That Run Your Business (What That Actually Means)"
 description: "AI does not run your business. But it can own the execution layer of specific, well-defined operational domains. Here is what that looks like and how to build it."
 pubDate: 2026-03-04T00:00:00Z
-tags: ["ai", "operations", "automation"]
+tags: ["ai", "operations", "automation", "ai-operations"]
 heroImage: "/images/blog/ai-systems-run-your-business.webp"
 articleType: "cluster"
 ---
+
+## Precise beats ambitious: own the execution layer, keep humans in the governance layer
 
 AI does not run your business.
 

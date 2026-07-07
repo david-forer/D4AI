@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "SEO for AI Search: How to Show Up in ChatGPT, Perplexity, and Google AI Overviews"
 description: "AI search tools pull answers from a different set of signals than traditional search. Here is what changes, what stays the same, and how to position your content to appear in AI-generated results."
 pubDate: 2026-03-04T00:00:00+01:00
@@ -9,7 +8,7 @@ draft: false
 articleType: "cluster"
 ---
 
-# SEO for AI Search: How to Show Up in ChatGPT, Perplexity, and Google AI Overviews
+## Search Has a New Surface Area: Here Is What Changes and What Stays the Same
 
 Search behavior is changing. A growing portion of information queries are now answered directly by AI tools rather than by a list of links. Users ask ChatGPT a question and get a synthesized answer. They use Perplexity to research a topic and receive a cited summary. They type a query into Google and find a generated response above all organic results.
 

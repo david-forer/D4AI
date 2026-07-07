@@ -1,12 +1,13 @@
----
-layout: ../../layouts/BlogLayout.astro
+﻿---
 title: "Why Small Businesses Break at $1M Revenue (And What's Actually Causing It)"
 description: "Most founders treat $1M in revenue as an arrival point. It isn't. It's a stress test that exposes every operational shortcut you took to get there."
 pubDate: 2026-03-04T00:00:00Z
-tags: ["operations", "ai", "business"]
+tags: ["operations", "ai", "business", "ai-operations"]
 heroImage: "/images/blog/why-small-businesses-break-1m.webp"
 articleType: "cluster"
 ---
+
+## $1M is not a milestone: it is when every operational shortcut you took starts collecting.
 
 Most founders treat $1M in revenue as an arrival point.
 

@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "How to Run an SEO Content Audit for a Small Business Website"
 description: "A content audit identifies which pages are earning their place, which can be improved, which should be merged, and which are actively hurting your authority. Here is how to run one without a team of analysts."
 pubDate: 2026-03-04T00:00:00+01:00
@@ -9,7 +8,7 @@ draft: false
 articleType: "cluster"
 ---
 
-# How to Run an SEO Content Audit for a Small Business Website
+## Fixing What You Already Have Usually Beats Publishing More: Here Is the Process
 
 Most SEO programs reach a point where publishing more content produces diminishing returns. New articles go live, rankings barely move, and the program starts to feel like it is running on a treadmill. The instinct is to publish more or optimize harder. The actual problem is usually different.
 

@@ -1,12 +1,14 @@
----
+﻿---
 layout: ../../layouts/BlogLayout.astro
 title: "Systemize Core Business Processes in 30 Days"
 description: "A four-week sprint plan to document, simplify, and standardize three to five high-impact operational processes using lightweight tools and basic automation. "
 pubDate: 2025-12-09T00:00:00Z
-tags: ["operations", "business growth"]
+tags: ["operations", "business growth", "ai-readiness"]
 heroImage: "/images/blog/operational clarity.webp"
+articleType: "cluster"
 ---
 
+## Three to five documented processes in 30 days: a sprint that actually delivers control
 
 You do not need a year-long transformation project to bring order to your operations. You do not need any enterprise software or a dedicated operations team. You need focus, discipline, thirty days, and someone who understands these systems.
 
@@ -179,6 +181,6 @@ That cultural shift is the real prize. The thirty-day sprint is just how you unl
 
 ---
 
-*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) · [Workflow Debt: The Invisible Drag on Your Business Ops](/blog/workflow-debt-invisible-drag)*
+*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) Â· [Workflow Debt: The Invisible Drag on Your Business Ops](/blog/workflow-debt-invisible-drag)*
 
 If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

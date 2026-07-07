@@ -1,12 +1,14 @@
----
+﻿---
 layout: ../../layouts/BlogLayout.astro
 title: "AI Readiness Audit for Small Businesses"
 description: "A practical guide to assessing data, systems, culture, skills, and governance so AI investments align with business goals. Learn how an AI readiness audit helps prioritize high-ROI use cases and avoid tool-first adoption."
 pubDate: 2025-12-09T00:00:00Z
-tags: ["ai", "operations", "business"]
+tags: ["ai", "operations", "business", "ai-readiness"]
 heroImage: "/images/blog/backwards-ai-audit.webp"
 articleType: "cluster"
 ---
+
+## Start with your business, not the tools, and you avoid expensive dead ends
 
 Most businesses approach AI backwards. They start with the technology, pick a tool that sounds promising, and then try to figure out where it fits. A few months later, the subscription sits unused and the team is more skeptical than before.
 

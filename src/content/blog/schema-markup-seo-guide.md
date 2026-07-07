@@ -1,11 +1,13 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "The Best Schema Markup Types for SEO: A Complete Guide"
 description: "Learn which schema markup types deliver measurable SEO impact and how to implement them effectively."
 pubDate: 2025-12-13T00:00:00Z
 tags: ["seo", "technical", "business"]
 heroImage: "/images/blog/schema-markup.webp"
+articleType: "cluster"
 ---
+
+## The right schema types give you more real estate in search results with less effort than most SEO work.
 
 Schema markup remains one of the most underutilized tools in technical SEO. Most sites either skip it entirely or implement it inconsistently, leaving rankings and click-through rates on the table.
 

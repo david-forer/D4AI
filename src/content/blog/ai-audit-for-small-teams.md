@@ -1,13 +1,13 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "What an AI Readiness Audit Looks Like for a 10-Person Business"
 description: "Learn what an AI readiness audit actually reviews for small businesses and how it helps founder-led teams scale AI without creating hidden operational risk."
 pubDate: 2026-01-03T00:00:00Z
 tags: ["ai", "ai-readiness", "operations", "small-business", "automation"]
 heroImage: "/images/blog/ai-readiness-audit.webp"
+articleType: "cluster"
 ---
 
-# What an AI Readiness Audit Looks Like for a 10-Person Business
+## Most Small Teams Are Using AI, But Very Few Are Using It Right
 
 Most founders think they are “doing AI” because their team uses a few tools. Chatbots for writing. Automations for tasks. Prompts saved in random docs. It feels productive. It feels modern. It is often neither.
 

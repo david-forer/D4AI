@@ -1,14 +1,14 @@
----
+﻿---
 layout: ../../layouts/BlogLayout.astro
 title: "Achieving Operational Excellence with AI"
 description: "Discover how AI can transform your business operations, eliminate bottlenecks, and create scalable systems."
 pubDate: 2025-05-16T00:00:00Z
-tags: ["operations", "ai", "business"]
+tags: ["operations", "ai", "business", "ai-readiness"]
 heroImage: "/images/blog/ai-operations.webp"
 articleType: "cluster"
 ---
 
-## Achieving Operational Excellence with AI
+## Tribal knowledge and manual tasks are not a people problem. They are a systems problem AI can fix.
 
 In today's competitive business landscape, operational excellence is no longer optional. It's essential for survival and growth. Artificial intelligence offers powerful tools to streamline processes, eliminate bottlenecks, and create scalable systems that grow with your business. This report explores how AI can transform operations, drawing on current trends and best practices to provide a comprehensive guide for businesses seeking to leverage AI for enhanced efficiency and strategic advantage.
 
@@ -98,6 +98,6 @@ Achieving operational excellence in the modern era is intrinsically linked to th
 
 ---
 
-*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) � [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) � [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams)*
+*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) ï¿½ [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) ï¿½ [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams)*
 
 Ready to build operational excellence across your business? [Explore AI operations consulting](/custom-consulting).

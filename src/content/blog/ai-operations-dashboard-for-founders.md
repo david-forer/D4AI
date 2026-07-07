@@ -1,12 +1,14 @@
----
+﻿---
 layout: ../../layouts/BlogLayout.astro
 title: "AI Operations Dashboard for Founders (What to Build and Why Most Get It Wrong)"
 description: "Most founders have reports, not dashboards. The difference is not cosmetic. Here is what a real operations dashboard shows, how to build one, and where AI changes what is possible."
 pubDate: 2026-03-04T00:00:00Z
-tags: ["operations", "ai", "business"]
+tags: ["operations", "ai", "business", "ai-operations"]
 heroImage: "/images/blog/ai-operations-dashboard-founders.webp"
 articleType: "cluster"
 ---
+
+## Five panels that surface what needs your attention today, without anyone building the report
 
 Most founders do not have an operations dashboard. They have reports.
 

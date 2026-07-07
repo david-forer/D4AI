@@ -1,12 +1,13 @@
----
-layout: ../../layouts/BlogLayout.astro
+﻿---
 title: "Scaling a Business with AI Instead of Hiring (How to Know When Each Is the Right Move)"
 description: "Hiring is not the only path to capacity. AI operations creates a third option most founders have not fully mapped. Here is how to decide which one the situation actually calls for."
 pubDate: 2026-03-04T00:00:00Z
-tags: ["ai", "operations", "business"]
+tags: ["ai", "operations", "business", "ai-operations"]
 heroImage: "/images/blog/scaling-business-ai-instead-of-hiring.webp"
 articleType: "cluster"
 ---
+
+## Before you open a job req, figure out whether you have a judgment problem or an execution problem.
 
 Hiring is not the only path to capacity. Most founders act like it is.
 

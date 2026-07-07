@@ -4,9 +4,10 @@ description: "A practical 90-day framework for small business owners to leverage
 pubDate: 2025-06-15T00:00:00Z
 tags: ["ai", "content-strategy", "small-business", "lead-generation"]
 heroImage: "/images/blog/accelerated-growth.webp"
+articleType: "cluster"
 ---
 
-## AI Growth Accelerator: Transform Your Content Strategy in 90 Days
+## Publishing More Will Not Save You: What Actually Builds an Audience in 90 Days
 
 Your website's sitting there like a digital ghost town while your competitors are pulling ahead, and honestly? It's keeping you up at night.
 

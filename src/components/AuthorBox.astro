@@ -1,0 +1,125 @@
+---
+// No props needed — David is the only author, values are hardcoded here
+const author = {
+  name: "David Forer",
+  title: "AI Operations Consultant",
+  bio: "I help founder-led businesses turn chaotic workflows into AI-powered operations that drive growth without adding headcount.",
+  photo: "/images/david-j-forer-li.jpeg",
+  linkedin: "https://www.linkedin.com/in/davidforer/",
+  aboutUrl: "/about",
+};
+---
+
+<div class="author-box">
+  <img
+    src={author.photo}
+    alt={`Photo of ${author.name}`}
+    class="author-photo"
+    width="64"
+    height="64"
+    onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+  />
+  <!-- Fallback avatar shown if photo is missing -->
+  <div class="author-avatar-fallback" style="display:none" aria-hidden="true">
+    DF
+  </div>
+
+  <div class="author-info">
+    <div class="author-meta">
+      <a href={author.aboutUrl} class="author-name">{author.name}</a>
+      <span class="author-title">{author.title}</span>
+    </div>
+    <p class="author-bio">{author.bio}</p>
+    <a href={author.linkedin} target="_blank" rel="noopener noreferrer" class="author-linkedin">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+      </svg>
+      Connect on LinkedIn
+    </a>
+  </div>
+</div>
+
+<style>
+  .author-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    border-top: 2px solid #bfdbfe;
+    padding-top: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .author-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #bfdbfe;
+  }
+
+  .author-avatar-fallback {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #1d4ed8;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .author-meta {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .author-name {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #1d4ed8;
+    text-decoration: none;
+  }
+
+  .author-name:hover {
+    text-decoration: underline;
+  }
+
+  .author-title {
+    font-size: 0.8rem;
+    color: #6b7280;
+  }
+
+  .author-bio {
+    font-size: 0.875rem;
+    color: #374151;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .author-linkedin {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #2563eb;
+    text-decoration: none;
+    margin-top: 0.15rem;
+  }
+
+  .author-linkedin:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+  }
+</style>

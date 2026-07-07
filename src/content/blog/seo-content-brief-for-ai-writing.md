@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "How to Write an SEO Content Brief That Actually Guides AI-Assisted Writing"
 description: "Most AI-generated content is generic because the brief was generic. Learn how to build a content brief that gives AI the structure it needs to produce usable first drafts."
 pubDate: 2026-03-04T00:00:00+01:00
@@ -9,7 +8,7 @@ draft: false
 articleType: "cluster"
 ---
 
-# How to Write an SEO Content Brief That Actually Guides AI-Assisted Writing
+## Generic Output Starts With a Generic Brief: This Is How to Fix It
 
 There is a common frustration with AI writing tools: the output sounds like it was written by someone who read a lot of articles on the topic but has never actually done the work. That quality problem almost always starts before the AI generates a single word.
 

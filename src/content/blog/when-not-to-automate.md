@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "When Not to Automate: The Processes That Should Stay Human"
 description: "Not every business process should be automated. Knowing which work to keep human is just as important as knowing what to hand off to a system. Here is the diagnostic that separates good automation decisions from expensive ones."
 pubDate: 2026-03-07T00:00:00+01:00
@@ -9,7 +8,7 @@ draft: false
 articleType: "cluster"
 ---
 
-# When Not to Automate: The Processes That Should Stay Human
+## Knowing What to Keep Human Is Just as Important as Knowing What to Hand Off
 
 There is a version of the automation conversation that treats every manual process as a problem waiting to be solved. If it is repetitive, automate it. If it takes time, automate it. If a tool exists for it, automate it.
 

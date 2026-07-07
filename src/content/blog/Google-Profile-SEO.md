@@ -5,9 +5,10 @@ description: "Master local SEO for your restaurant with actionable Google Busine
 pubDate: 2025-06-12T00:00:00Z
 tags: ["seo", "local-seo", "small-business", "google-business-profile", "restaurant-marketing"]
 heroImage: "/images/blog/modern-seo-imperative.jpeg"
+articleType: "cluster"
 ---
 
-## Google Profile SEO: The Complete Local Restaurant Marketing Guide
+## Most restaurants lose half their potential customers before anyone ever walks through the door.
 
 Your restaurant could be serving the best food in town, but if nobody can find you online, you might as well be invisible.
 
