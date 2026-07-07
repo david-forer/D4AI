@@ -11,6 +11,7 @@ interface Props {
   authorName?: string;     // for articles
 	publisherName?: string;  // for articles
 	noindex?: boolean;
+	robots?: string;         // explicit robots override, e.g. "noindex,follow"
 }
 
 const siteUrl = "https://davidjforer.com";
@@ -25,12 +26,13 @@ const {
 	authorName = 'David J Forer',
   publisherName = 'David J Forer',
 	noindex = false,
+	robots: robotsOverride,
 } = Astro.props;
 
 const origin = 'https://davidjforer.com';
 const canonical = new URL(Astro.url.pathname, origin).href;
 // keep using your existing {title} and {description} props
-const robots = noindex ? 'noindex,nofollow' : 'index,follow';
+const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow');
 ---
 
 <!doctype html>
