@@ -223,6 +223,6 @@ Hybrid integration platforms help manage this complexity by providing consistent
 
 ---
 
-*Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) � [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms)*
+*Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) � [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms)*
 
 Ready to build a complete automation system for your business? [Explore AI operations and automation consulting](/custom-consulting).

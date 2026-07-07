@@ -1,4 +1,4 @@
-﻿---
+---
 layout: ../../layouts/BlogLayout.astro
 title: "Why Dashboards and SOPs Fail Without Operational Clarity"
 description: "An analysis of why dashboards and SOPs often create the illusion of control without improving execution, and how aligning metrics with real workflows closes the measurement-action gap."
@@ -123,6 +123,6 @@ That is operational clarity. Everything else is theater.
 
 ---
 
-*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) Â· [SOPs Are the Foundation of Automation](/blog/sops-scalable-automation)*
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) Â· [SOPs Are the Foundation of Automation](/blog/sops-scalable-automation)*
 
 If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

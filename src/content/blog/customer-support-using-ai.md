@@ -1,4 +1,4 @@
-﻿---
+---
 layout: ../../layouts/BlogLayout.astro
 title: "LLM Training for Customer Support Teams: What Actually Works"
 description: "Transform your support team with AI training that improves efficiency and quality. Learn how to shift from answering to editing, calibrate tone, audit accuracy, and measure impact on CSAT and AHT."
@@ -491,6 +491,6 @@ Train your support team on AI augmentation. Give them the skills to edit rather 
 
 ---
 
-*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) Â· [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses)*
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) Â· [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses)*
 
 If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

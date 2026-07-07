@@ -1,4 +1,4 @@
-﻿---
+---
 layout: ../../layouts/BlogLayout.astro
 title: "How Systems Thinking Saves Startups From Scaling Into Chaos"
 description: "Growth amplifies weaknesses. What works at 5 people breaks at 12. Systems thinking is not a buzzword. It is a survival skill for startups that want to scale without collapsing."
@@ -127,6 +127,6 @@ The earlier you start, the easier it is. The longer you wait, the more expensive
 
 ---
 
-*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) Â· [Why Systemic Thinking Beats Growth Hacking](/blog/systemic-thinking-vs-growth-hacking)*
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) Â· [Why Systemic Thinking Beats Growth Hacking](/blog/systemic-thinking-vs-growth-hacking)*
 
 If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

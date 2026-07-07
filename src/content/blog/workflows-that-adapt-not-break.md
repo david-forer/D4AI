@@ -1,4 +1,4 @@
-﻿---
+---
 layout: ../../layouts/BlogLayout.astro
 title: "How to Design Workflows That Adapt Instead of Breaking"
 description: "Describes why brittle workflows fail and outlines practical design principles for building resilient, adaptable processes that handle change gracefully."
@@ -145,6 +145,6 @@ Design your workflows to adapt, and you are designing a business that adapts. In
 
 ---
 
-*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) Â· [The Anatomy of a Broken Workflow and How to Automate It](/blog/anatomy-of-broken-workflow)*
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) Â· [The Anatomy of a Broken Workflow and How to Automate It](/blog/anatomy-of-broken-workflow)*
 
 If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.
