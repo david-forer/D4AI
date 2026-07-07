@@ -1,9 +1,9 @@
-﻿---
+---
 title: "AI for Sales Operations: Building a Pipeline That Runs on Systems"
 description: "Most small business sales runs on follow-up that never happens and pipeline data nobody trusts. Here's how to build AI-powered sales operations that close the gaps."
 pubDate: 2026-03-19T00:00:00Z
 tags: ["ai", "operations", "sales", "business", "ai-for-business"]
-heroImage: "/images/blog/accelerated-growth.webp"
+heroImage: "/images/blog/ai-for-sales-operations.webp"
 articleType: "cluster"
 ---
 

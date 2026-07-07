@@ -4,7 +4,7 @@ title: "LLM Training for Customer Support Teams: What Actually Works"
 description: "Transform your support team with AI training that improves efficiency and quality. Learn how to shift from answering to editing, calibrate tone, audit accuracy, and measure impact on CSAT and AHT."
 pubDate: 2025-12-17T00:00:00Z
 tags: ["ai", "training", "customer-support", "workflow-systems"]
-heroImage: "/images/blog/ai-driven-pro.webp"
+heroImage: "/images/blog/customer-support-using-ai.webp"
 articleType: "cluster"
 ---
 

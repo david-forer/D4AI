@@ -1,9 +1,9 @@
-﻿---
+---
 title: "AI for Business Intelligence: Turning Operational Data Into Decisions"
 description: "Most small business founders make consequential decisions from incomplete or delayed data. Here's how to build an AI-powered business intelligence layer that makes the right information available without effort."
 pubDate: 2026-03-19T00:00:00Z
 tags: ["ai", "operations", "business-intelligence", "business", "ai-for-business"]
-heroImage: "/images/blog/ai-operations-dashboard-founders.webp"
+heroImage: "/images/blog/ai-for-business-intelligence-small-business.webp"
 articleType: "cluster"
 ---
 

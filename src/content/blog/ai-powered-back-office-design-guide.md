@@ -4,7 +4,7 @@ seoTitle: "AI-Powered Back Office Design for Small Businesses – How to Connect
 description: "Building AI into individual business functions only gets you so far. Here is how to design an integrated back office where the functions work together and AI actually compounds."
 pubDate: 2026-03-19T00:00:00Z
 tags: ["ai", "operations", "business", "automation"]
-heroImage: "/images/blog/automated-back-office.webp"
+heroImage: "/images/blog/ai-powered-back-office-design-guide.webp"
 articleType: "pillar"
 ---
 

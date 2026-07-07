@@ -1,9 +1,9 @@
-﻿---
+---
 title: "AI for Customer Support Operations: Building the System Behind the Service"
 description: "Most small business customer support is reactive and manual. Here's how to design the operational architecture that makes support reliable, scalable, and measurable — with or without a dedicated support team."
 pubDate: 2026-03-19T00:00:00Z
 tags: ["ai", "operations", "customer-support", "business", "ai-for-business"]
-heroImage: "/images/blog/intelligent-automation.webp"
+heroImage: "/images/blog/ai-for-customer-support-operations.webp"
 articleType: "cluster"
 ---
 

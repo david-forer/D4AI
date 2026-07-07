@@ -1,9 +1,9 @@
-﻿---
+---
 title: "AI for Project Management: Running Delivery Operations Without the Status Meeting Tax"
 description: "Status meetings exist because visibility requires manual effort. Here's how to design AI-powered project operations that give you real-time delivery insight without the overhead."
 pubDate: 2026-03-19T00:00:00Z
 tags: ["ai", "operations", "project-management", "business", "ai-for-business"]
-heroImage: "/images/blog/adaptive-intelligence.webp"
+heroImage: "/images/blog/ai-for-project-management-operations.webp"
 articleType: "cluster"
 ---
 

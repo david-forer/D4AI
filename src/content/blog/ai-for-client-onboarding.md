@@ -3,7 +3,7 @@ title: "AI for Client Onboarding: Designing the Experience That Sets Every Engag
 description: "Inconsistent client onboarding is one of the most common and most preventable sources of early churn in service businesses. Here's how to design a system that delivers a great experience every time."
 pubDate: 2026-03-19T00:00:00Z
 tags: ["ai", "operations", "client-onboarding", "business", "ai-for-business"]
-heroImage: "/images/blog/automation-foundation-first.webp"
+heroImage: "/images/blog/ai-for-client-onboarding.webp"
 articleType: "cluster"
 ---
 
