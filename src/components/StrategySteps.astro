@@ -1,0 +1,271 @@
+---
+// src/components/StrategySteps.astro
+// Usage: import StrategySteps from '../components/StrategySteps.astro';
+// Then: <StrategySteps />
+---
+
+<div class="stm-wrapper">
+  <p class="stm-eyebrow">↺ strategic thinking method — 7-step cycle</p>
+  <div class="stm-snav" id="stm-sn"></div>
+  <div class="stm-detail" id="stm-dc"></div>
+</div>
+
+<style is:global>
+  .stm-wrapper {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+  }
+
+  .stm-eyebrow {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #888780;
+    margin: 0 0 1.25rem;
+  }
+
+  /* Step nav */
+  .stm-snav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    margin-bottom: 1.25rem;
+    gap: 0;
+  }
+
+  .stm-sp {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1.5px solid #d3d1c7;
+    background: #f1efe8;
+    color: #888780;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+  }
+  .stm-sp:hover { border-color: #7F77DD; color: #7F77DD; }
+  .stm-sp.active { background: #534AB7; border-color: #534AB7; color: white; }
+  .stm-sp.visited { border-color: #AFA9EC; color: #534AB7; }
+
+  .stm-conn { flex: 1; height: 1px; background: #d3d1c7; }
+  .stm-conn.done { background: #AFA9EC; }
+
+  /* Detail card */
+  .stm-detail {
+    border: 0.5px solid #d3d1c7;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #ffffff;
+  }
+
+  .stm-dhdr {
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    border-bottom: 0.5px solid #d3d1c7;
+    background: #EEEDFE;
+  }
+
+  .stm-dnum {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #534AB7;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .stm-dtitle {
+    font-size: 15px;
+    font-weight: 500;
+    color: #3C3489;
+    flex: 1;
+    margin: 0;
+  }
+
+  .stm-dfw {
+    font-size: 11px;
+    color: #534AB7;
+    background: white;
+    border: 0.5px solid #AFA9EC;
+    padding: 3px 10px;
+    border-radius: 99px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .stm-dbody { padding: 16px 18px; }
+
+  .stm-ddesc {
+    font-size: 14px;
+    color: #5f5e5a;
+    line-height: 1.65;
+    margin: 0 0 12px;
+  }
+
+  .stm-prow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .stm-phase {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    background: #f1efe8;
+    border: 0.5px solid #d3d1c7;
+    color: #5f5e5a;
+  }
+
+  .stm-parr { font-size: 11px; color: #b4b2a9; }
+
+  .stm-dfoot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 18px;
+    border-top: 0.5px solid #d3d1c7;
+  }
+
+  .stm-dnav {
+    font-size: 12px;
+    color: #888780;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.12s;
+    font-family: inherit;
+  }
+  .stm-dnav:hover { color: #1a1a18; background: #f1efe8; }
+  .stm-dnav:disabled { opacity: 0.3; cursor: default; }
+
+  .stm-dcnt { font-size: 12px; color: #888780; }
+
+  /* Dark mode */
+  @media (prefers-color-scheme: dark) {
+    .stm-sp { background: #2c2c2a; border-color: #444441; color: #888780; }
+    .stm-sp.visited { border-color: #534AB7; color: #AFA9EC; }
+    .stm-conn { background: #444441; }
+    .stm-conn.done { background: #534AB7; }
+    .stm-detail { background: #2c2c2a; border-color: #444441; }
+    .stm-dhdr { background: #26215C; border-color: #534AB7; }
+    .stm-dtitle { color: #CECBF6; }
+    .stm-dfw { background: #3C3489; color: #CECBF6; border-color: #534AB7; }
+    .stm-ddesc { color: #b4b2a9; }
+    .stm-phase { background: #1c1c1a; border-color: #444441; color: #b4b2a9; }
+    .stm-dfoot { border-color: #444441; }
+    .stm-dhdr { border-color: #444441; }
+    .stm-dnav:hover { color: #e0ddd4; background: #444441; }
+  }
+</style>
+
+<script is:inline>
+(function () {
+  const STEPS = [
+    {
+      title: "Define the problem",
+      fw: "SCQ framework",
+      desc: "Gain collective agreement on the specific challenge before rushing to solutions. The SCQ framework — Situation, Complication, Question — establishes current context, surfaces the core tension, and frames the strategy's primary goal.",
+      phases: null
+    },
+    {
+      title: "Deconstruct the problem",
+      fw: "Logic trees + MECE",
+      desc: "Break complex problems into manageable component parts using driver trees or issue trees. The MECE principle (Mutually Exclusive, Collectively Exhaustive) ensures components don't overlap and nothing is missed.",
+      phases: null
+    },
+    {
+      title: "Perform analysis",
+      fw: "Five Whys + data analysis",
+      desc: "Conduct investigative work on each component — quantitative methods like financial and data analysis, and qualitative techniques like the Five Whys to trace problems back to their root causes.",
+      phases: null
+    },
+    {
+      title: "Create insights",
+      fw: "Pattern triangulation",
+      desc: "Answer the 'so what?' question. Collect inputs, connect the dots by triangulating patterns across different data formats, and synthesize findings into a clear, often visualized, perspective.",
+      phases: null
+    },
+    {
+      title: "Communicate your ideas",
+      fw: "Minto Pyramid",
+      desc: "Organize insights into a persuasive strategic story using answer-first, top-down communication. The governing thought is stated upfront, then supported by clear arguments backed by evidence.",
+      phases: null
+    },
+    {
+      title: "Make decisions",
+      fw: "Evaluation criteria model",
+      desc: "When multiple options exist, use the evaluation criteria model to shortlist viable paths and rate each against specific criteria — cost, speed to market, scalability — to identify a clear winner.",
+      phases: null
+    },
+    {
+      title: "Execute the strategy",
+      fw: "5-phase path",
+      desc: "Shift from design to action through five sequential phases to fully implement the strategy.",
+      phases: ["Design", "Mobilize", "Build", "Launch", "Scale"]
+    }
+  ];
+
+  let cur = 0;
+
+  function render() {
+    const nav = document.getElementById('stm-sn');
+    if (!nav) return;
+
+    nav.innerHTML = STEPS.map((s, i) => {
+      const cls = i === cur ? 'active' : (i < cur ? 'visited' : '');
+      return (i > 0 ? `<div class="stm-conn${i <= cur ? ' done' : ''}"></div>` : '')
+        + `<div class="stm-sp ${cls}" onclick="stmGo(${i})" title="${s.title}">${i + 1}</div>`;
+    }).join('');
+
+    const s = STEPS[cur];
+    const isLast = cur === STEPS.length - 1;
+    document.getElementById('stm-dc').innerHTML = `
+      <div class="stm-dhdr">
+        <div class="stm-dnum">${cur + 1}</div>
+        <p class="stm-dtitle">${s.title}</p>
+        <div class="stm-dfw">${s.fw}</div>
+      </div>
+      <div class="stm-dbody">
+        <p class="stm-ddesc">${s.desc}</p>
+        ${s.phases ? `<div class="stm-prow">${s.phases.map((p, i) =>
+          `${i > 0 ? '<span class="stm-parr">→</span>' : ''}<div class="stm-phase">${p}</div>`
+        ).join('')}</div>` : ''}
+      </div>
+      <div class="stm-dfoot">
+        <button class="stm-dnav" onclick="stmGo(${cur - 1})" ${cur === 0 ? 'disabled' : ''}>← previous</button>
+        <span class="stm-dcnt">step ${cur + 1} of ${STEPS.length}</span>
+        <button class="stm-dnav" onclick="stmGo(${isLast ? 0 : cur + 1})">${isLast ? '↺ restart' : 'next →'}</button>
+      </div>`;
+  }
+
+  window.stmGo = function(i) {
+    cur = ((i % STEPS.length) + STEPS.length) % STEPS.length;
+    render();
+  };
+
+  render();
+})();
+</script>

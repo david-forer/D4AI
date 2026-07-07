@@ -1,13 +1,13 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "Why Your Team's Prompting Skills Are Causing Output Problems (And How to Fix It)"
 description: "Fix the root cause of poor AI outputs: bad prompts. Diagnose common problems like robotic tone, hallucinations, and lost context, then implement quality assurance processes."
 pubDate: 2025-12-17T00:00:00Z
 tags: ["ai", "training", "operations"]
 heroImage: "/images/blog/operational clarity.webp"
+articleType: "cluster"
 ---
 
-## Why Your Team's Prompting Skills Are Causing Output Problems (And How to Fix It)
+## The AI Is Not the Problem: Bad Prompts Produce Bad Output Every Time
 
 Your marketing team complains that ChatGPT produces generic, unusable content. Your support team says Claude's responses are too formal. Your sales team insists AI-generated emails sound robotic. Everyone concludes "AI just doesn't work for us."
 

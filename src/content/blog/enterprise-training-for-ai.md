@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "From Chaos to Coherence: Building an Enterprise AI Training Program"
 description: "Build systematic AI training that transforms fragmented adoption into enterprise capability. Assess AI maturity, design phased rollouts, and create lasting organizational change."
 pubDate: 2025-12-17T00:00:00Z
@@ -8,7 +7,7 @@ heroImage: "/images/blog/strategic-automation.webp"
 articleType: "cluster"
 ---
 
-## From Chaos to Coherence: Building an Enterprise AI Training Program
+## Declarations Do Not Build Competency: What a Real AI Training Program Looks Like
 
 Your CEO announced the company is "going all-in on AI." Your department heads nodded enthusiastically in the meeting. Then everyone went back to their desks and continued doing exactly what they were doing before.
 

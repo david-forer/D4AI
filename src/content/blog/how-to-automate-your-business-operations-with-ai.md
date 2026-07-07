@@ -1,12 +1,13 @@
----
-layout: ../../layouts/BlogLayout.astro
+﻿---
 title: "How to Automate Your Business Operations with AI (Without Building Something That Breaks)"
 description: "Most founders automate tasks. The ones who scale automate systems. Here is the sequence that makes AI automation compound instead of collapse."
 pubDate: 2026-03-04T00:00:00Z
-tags: ["operations", "ai", "automation"]
+tags: ["operations", "ai", "automation", "ai-operations"]
 heroImage: "/images/blog/how-to-automate-business-operations-ai.webp"
 articleType: "cluster"
 ---
+
+## Task automation saves minutes. Operational automation creates the leverage that compounds.
 
 Most founders automate tasks. The ones who scale automate systems.
 

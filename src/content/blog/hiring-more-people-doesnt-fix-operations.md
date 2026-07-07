@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "Why Hiring More People Does Not Fix an Operations Problem"
 description: "Adding headcount to a broken process does not fix the process. It scales it. Here is how to diagnose whether your growth problem is a capacity issue or a systems issue before you hire."
 pubDate: 2026-03-07T00:00:00+01:00
@@ -9,7 +8,7 @@ draft: false
 articleType: "cluster"
 ---
 
-# Why Hiring More People Does Not Fix an Operations Problem
+## Adding Headcount to a Broken Process Just Scales the Breakage
 
 When a business starts to strain under its own growth, the instinct is to hire. Work is piling up, the team is stretched, deadlines are slipping, the obvious answer is more people. In many cases, that instinct is wrong.
 

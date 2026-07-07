@@ -1,12 +1,13 @@
----
-layout: ../../layouts/BlogLayout.astro
+﻿---
 title: "AI Workflow Automation for Small Businesses (A Practical Framework)"
 description: "You do not automate a business. You automate workflows. Here is how to identify, design, and automate the workflows that will actually compound your operational capacity."
 pubDate: 2026-03-04T00:00:00Z
-tags: ["automation", "ai", "operations"]
+tags: ["automation", "ai", "operations", "ai-operations"]
 heroImage: "/images/blog/ai-workflow-automation-small-business.webp"
 articleType: "cluster"
 ---
+
+## Define the workflow on paper before touching a tool, or you automate the chaos
 
 You do not automate a business. You automate workflows.
 

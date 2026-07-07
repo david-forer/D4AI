@@ -3,12 +3,12 @@ layout: ../../layouts/BlogLayout.astro
 title: "Why Manual Processes Are Destroying Your Scaling Ability"
 description: "Manual processes do not just slow you down: they create a ceiling on what your business can become. Here is how to identify the ones that are actively limiting your growth."
 pubDate: 2026-03-04T00:00:00Z
-tags: ["operations", "automation", "scaling", "small-business"]
+tags: ["operations", "automation", "scaling", "small-business", "ai-operations"]
 heroImage: "/images/blog/manual-processes-destroy-scaling.webp"
 articleType: "cluster"
 ---
 
-# Why Manual Processes Are Destroying Your Scaling Ability
+## 20 to 40 percent of your team's time is going to work that should not exist.
 
 Every manual process in your business scales linearly. You get one more unit of output for every one more unit of input: one more hour, one more person, one more repetition of the same task.
 

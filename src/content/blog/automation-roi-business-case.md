@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "How to Calculate Automation ROI and Build the Business Case"
 description: "Most automation decisions are made on gut feel. Here is a practical framework for calculating the real cost of manual work, estimating the value of automating it, and prioritizing which processes to build first."
 pubDate: 2026-03-07T00:00:00+01:00
@@ -9,7 +8,7 @@ draft: false
 articleType: "cluster"
 ---
 
-# How to Calculate Automation ROI and Build the Business Case
+## Gut Feel Is Not a Framework: Here Is How to Run the Numbers Before You Build
 
 Most decisions about whether to automate a process are made informally. Someone recognizes that a task takes too long, a tool gets recommended, and an automation gets built, or does not, based on a rough sense of whether it seems worth it.
 

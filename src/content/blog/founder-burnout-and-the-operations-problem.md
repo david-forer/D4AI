@@ -3,12 +3,12 @@ layout: ../../layouts/BlogLayout.astro
 title: "Founder Burnout and the Operations Problem"
 description: "Most founder burnout is not a mindset problem. It is an operations problem. The cure is structural, not personal. Here is what that distinction means in practice."
 pubDate: 2026-03-04T00:00:00Z
-tags: ["founders", "burnout", "operations", "small-business"]
+tags: ["founders", "burnout", "operations", "small-business", "ai-operations"]
 heroImage: "/images/blog/founder-burnout-operations-problem.webp"
 articleType: "cluster"
 ---
 
-# Founder Burnout and the Operations Problem
+## Burnout is not a mindset problem. It is what happens when the business structure never scaled.
 
 The burnout conversation in founder circles tends to focus on mindset. Rest more. Set boundaries. Practice gratitude. Delegate better. Protect your calendar.
 

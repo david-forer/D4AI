@@ -1,13 +1,14 @@
----
+﻿---
 layout: ../../layouts/BlogLayout.astro
 title: "Don't Start With Tools. Start With Bottlenecks"
 description: "More tools feel productive but rarely solve root problems. Bottlenecks reveal where systems fail. Start there, and the right tools become obvious."
 pubDate: 2025-12-19T00:00:00Z
-tags: ["operations", "business", "systems-thinking", "tools"]
+tags: ["operations", "business", "systems-thinking", "tools", "workflow-systems"]
 heroImage: "/images/blog/start-with-bottlenecks.webp"
+articleType: "cluster"
 ---
 
-# Don't Start With Tools. Start With Bottlenecks
+## The right tool is obvious once you know where your system is actually breaking.
 
 There is always another tool.
 
@@ -134,6 +135,6 @@ Do not start with tools. Start with bottlenecks. The tools will make more sense 
 
 ---
 
-*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) · [Rebuild the Business. Not Just the Workflow](/blog/rebuild-the-business)*
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) Â· [Rebuild the Business. Not Just the Workflow](/blog/rebuild-the-business)*
 
 If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

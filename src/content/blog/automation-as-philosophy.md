@@ -1,13 +1,13 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "Automation as Business Philosophy: A Guide for Founders"
 description: "Every automated decision reveals your priorities. Automation is not a tactic. It is a worldview that shapes how your business operates and what you encode into systems."
 pubDate: 2025-12-19T00:00:00Z
 tags: ["automation", "operations", "business", "ai"]
 heroImage: "/images/blog/automation-philosophy.webp"
+articleType: "cluster"
 ---
 
-# Automation as Business Philosophy: A Guide for Founders
+## Every Process You Automate Is a Decision About What Your Business Values
 
 Automation is not neutral.
 

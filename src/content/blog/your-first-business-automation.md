@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "How to Build Your First Business Automation Without Breaking Your Operations"
 description: "The first automation a business builds sets the tone for everything that follows. Start with the wrong process and you create complexity without results. Here is how to choose the right one and build it so it actually holds."
 pubDate: 2026-03-07T00:00:00+01:00
@@ -9,7 +8,7 @@ draft: false
 articleType: "cluster"
 ---
 
-# How to Build Your First Business Automation Without Breaking Your Operations
+## The First Automation Sets the Tone for Everything That Follows: Choose It Carefully
 
 Most businesses that struggle with automation do not struggle because the technology is too complex. They struggle because they started in the wrong place.
 

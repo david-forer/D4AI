@@ -1,11 +1,14 @@
----
+﻿---
 layout: ../../layouts/BlogLayout.astro
 title: "CLEAR: An Operating Framework for AI-Enabled Operations"
 description: "An operational framework that prepares businesses for AI by making workflows explicit, owned, and machine-legible before automation."
 pubDate: 2025-12-09T00:00:00Z
-tags: ["ai", "operations", "business"]
+tags: ["ai", "operations", "business", "workflow-systems"]
 heroImage: "/images/blog/clear-framework.webp"
+articleType: "cluster"
 ---
+
+## AI fails when operations are unclear: this framework fixes the layer between humans and machines
 
 The explosion of AI tools inside businesses has outpaced operational maturity. Most teams are experimenting with AI in isolation, not as systems. The result is faster confusion, silent failures, and inconsistent outputs.
 
@@ -118,6 +121,6 @@ If AI feels harder than it should, the problem is rarely the tool. It is the sys
 
 ---
 
-*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) · [Do Not Start With Tools. Start With Bottlenecks](/blog/start-with-bottlenecks)*
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) Â· [Do Not Start With Tools. Start With Bottlenecks](/blog/start-with-bottlenecks)*
 
 If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

@@ -1,12 +1,13 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "Process Mapping: The Foundation of Successful Automation"
 description: "A pragmatic guide to mapping real workflows so businesses can identify automation-ready processes and avoid automating confusion."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai", "operations", "business"]
 heroImage: "/images/blog/business-processes.webp"
+articleType: "cluster"
 ---
 
+## Automation built on an undocumented process will fail. Mapping fixes that before you build.
 
 You cannot automate what you do not understand. This sounds obvious, but it trips up business owners constantly. They invest in automation tools, hire consultants, or spend weekends trying to connect their software together, only to discover that the process itself was never clearly defined.
 

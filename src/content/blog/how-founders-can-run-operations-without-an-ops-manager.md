@@ -1,5 +1,4 @@
-﻿---
-layout: ../../layouts/BlogLayout.astro
+---
 title: "How Founders Can Run Operations Without an Ops Manager"
 description: "Most small businesses cannot afford a dedicated ops manager. Here is how to build the systems that do the same work, without the hire."
 pubDate: 2026-03-04T00:00:00Z
@@ -8,7 +7,7 @@ heroImage: "/images/blog/founders-run-operations-without-ops-manager.webp"
 articleType: "cluster"
 ---
 
-# How Founders Can Run Operations Without an Ops Manager
+## Most Operations Work Does Not Need a Person: It Needs a System
 
 The conventional wisdom says that once your business reaches a certain size, you hire an operations manager. They own the workflows, manage the coordination, handle the follow-up, and make sure nothing falls through the cracks. You get your time back.
 
@@ -83,7 +82,7 @@ You do not need an enterprise platform. For a team of five to twenty-five people
 
 **A structured intake system**: A form or defined process for how new work enters the system. Every request gets routed, assigned, and tracked from the moment it comes in: not after someone notices it is sitting in an inbox.
 
-**An automation layer**: A tool like n8n or Make connecting your systems so that when something changes in one place, the appropriate things happen in the others. New client signed → onboarding task created. Project marked complete → invoice triggered. These connections compound over time.
+**An automation layer**: A tool like n8n or Make connecting your systems so that when something changes in one place, the appropriate things happen in the others. New client signed ? onboarding task created. Project marked complete ? invoice triggered. These connections compound over time.
 
 **A live ops dashboard**: One view that shows what is overdue, what is at risk, and what needs a decision today. Not a report you build weekly: a view that is always current.
 
@@ -136,4 +135,4 @@ If you are not sure where your operation stands, an [AI operations audit](/ai-re
 
 ---
 
-*Related reading: [Signs Your Business Needs AI Operations](/blog/signs-your-business-needs-ai-operations) · [AI Operations for Small Businesses: The Complete Guide](/blog/ai-operations-for-small-businesses)*
+*Related reading: [Signs Your Business Needs AI Operations](/blog/signs-your-business-needs-ai-operations) � [AI Operations for Small Businesses: The Complete Guide](/blog/ai-operations-for-small-businesses)*

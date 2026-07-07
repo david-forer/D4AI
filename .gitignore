@@ -23,3 +23,6 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 .claude/
+
+# business strategy never lives in this public repo
+wargames/

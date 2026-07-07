@@ -1,13 +1,15 @@
----
+﻿---
 layout: ../../layouts/BlogLayout.astro
 title: "What an AI Readiness Audit Looks Like for Small, Founder-Led Teams"
-description: "Learn how an AI readiness audit works for 5–20 person businesses already using AI, and how it helps founders reduce risk without slowing down."
+description: "Learn how an AI readiness audit works for 5â€“20 person businesses already using AI, and how it helps founders reduce risk without slowing down."
 pubDate: 2026-01-04T00:00:00Z
 tags:
   [ "ai", "ai-readiness", "ai-audit", "operations" ]
 heroImage: "/images/blog/accelerated-ideas.webp"
+articleType: "cluster"
 ---
 
+## Speed without structure creates risk your team won't see until it's too late
 
 ## Most founders already use AI
 
@@ -149,6 +151,6 @@ If you want clarity on how AI is shaping your business today and what to fix bef
 
 ---
 
-*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) · [Systemize Core Business Processes in 30 Days](/blog/chaos-to-control-30-days)*
+*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) Â· [Systemize Core Business Processes in 30 Days](/blog/chaos-to-control-30-days)*
 
 An [AI readiness audit](/ai-readiness-and-ai-audits) will show you exactly where your business stands before you start building.

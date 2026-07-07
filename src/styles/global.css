@@ -9,3 +9,7 @@
   h2 { @apply text-3xl md:text-4xl font-semibold leading-snug; }
   h3 { @apply text-2xl md:text-3xl font-semibold; }
 };
+/* Fix blog post gap - target first heading regardless of MDX wrapper depth */
+.prose > *:first-child { margin-top: 0 !important; }
+.prose > *:first-child > *:first-child { margin-top: 0 !important; }
+.prose h2:first-of-type { margin-top: 0 !important; }

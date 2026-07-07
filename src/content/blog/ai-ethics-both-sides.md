@@ -1,12 +1,14 @@
----
+﻿---
 title: "The Double-Edged Sword: AI's Growing Role in Business Operations"
 description: "AI is transforming business operations, but success requires mature governance. Learn how to balance AI's productivity gains with ethical risks, workforce impact, and operational control."
 pubDate: 2025-12-09T00:00:00+00:00
-tags: [ai, operations]
+tags: [ai, operations, "ai-readiness"]
 heroImage: "/images/blog/ai-ethics.webp"
 draft: false
 articleType: "cluster"
 ---
+
+## AI amplifies whatever is already true about your organization, good or bad
 
 AI has fully crossed the line from "interesting experiment" to "core operational engine." It is inside workflows, decision-making layers, customer experience, hiring systems, analytics pipelines, and increasingly, the places where a business exposes real risk.
 
@@ -133,4 +135,4 @@ The real question is not "Should we use AI?" but "Are we mature enough to use AI
 
 ---
 
-*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) � [Shadow AI: What It Is and Why It Matters](/blog/shadow-ai)*
+*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) ï¿½ [Shadow AI: What It Is and Why It Matters](/blog/shadow-ai)*

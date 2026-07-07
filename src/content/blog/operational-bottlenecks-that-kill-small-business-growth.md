@@ -3,12 +3,12 @@ layout: ../../layouts/BlogLayout.astro
 title: "Operational Bottlenecks That Kill Small Business Growth"
 description: "Growth stalls often get blamed on sales or marketing. The real cause is usually operational. Here is how to find and fix the bottlenecks that are capping your business."
 pubDate: 2026-03-04T00:00:00Z
-tags: ["operations", "small-business", "growth", "bottlenecks"]
+tags: ["operations", "small-business", "growth", "bottlenecks", "ai-operations"]
 heroImage: "/images/blog/operational-bottlenecks-kill-growth.webp"
 articleType: "cluster"
 ---
 
-# Operational Bottlenecks That Kill Small Business Growth
+## The stall between $1M and $5M is rarely a sales problem. It is almost always operational.
 
 Most businesses that stall between $1M and $5M are not stalling because of a sales problem. The pipeline is often healthy. The offer is sound. The team is working hard. But revenue is not moving, or it is moving and the margins are shrinking, or the team is exhausted and nobody can figure out why.
 
