@@ -1,4 +1,4 @@
-﻿---
+---
 layout: ../../layouts/BlogLayout.astro
 title: "Workflow Debt: The Invisible Drag on Your Business Ops"
 description: "Spells out how invisible workflow debt accumulates through manual work, shadow processes, hand-offs, and outdated tools, and how it quietly constrains growth."
@@ -133,6 +133,6 @@ Start by quantifying your debt. Pick the highest-interest item. Pay it down. The
 
 ---
 
-*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) Â· [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams)*
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) Â· [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams)*
 
 If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

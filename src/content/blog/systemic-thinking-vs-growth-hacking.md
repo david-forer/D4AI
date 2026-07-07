@@ -1,4 +1,4 @@
-﻿---
+---
 layout: ../../layouts/BlogLayout.astro
 title: "Why Systemic Thinking Beats Growth Hacking (Especially After $1M ARR)"
 description: "Growth hacking has an expiration date. After $1M ARR, complexity changes the game. Systemic thinking replaces hustle with throughput and stability with velocity."
@@ -143,6 +143,6 @@ The earlier you make the shift, the smoother the transition. The longer you wait
 
 ---
 
-*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) Â· [How Smart Companies Standardize LLM Use Across Departments](/blog/standardization-of-operations)*
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) Â· [How Smart Companies Standardize LLM Use Across Departments](/blog/standardization-of-operations)*
 
 If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

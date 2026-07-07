@@ -1,4 +1,4 @@
-﻿---
+---
 layout: ../../layouts/BlogLayout.astro
 title: "CLEAR: An Operating Framework for AI-Enabled Operations"
 description: "An operational framework that prepares businesses for AI by making workflows explicit, owned, and machine-legible before automation."
@@ -121,6 +121,6 @@ If AI feels harder than it should, the problem is rarely the tool. It is the sys
 
 ---
 
-*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) Â· [Do Not Start With Tools. Start With Bottlenecks](/blog/start-with-bottlenecks)*
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) Â· [Do Not Start With Tools. Start With Bottlenecks](/blog/start-with-bottlenecks)*
 
 If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

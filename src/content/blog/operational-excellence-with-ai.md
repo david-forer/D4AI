@@ -1,4 +1,4 @@
-﻿---
+---
 layout: ../../layouts/BlogLayout.astro
 title: "Achieving Operational Excellence with AI"
 description: "Discover how AI can transform your business operations, eliminate bottlenecks, and create scalable systems."
@@ -98,6 +98,6 @@ Achieving operational excellence in the modern era is intrinsically linked to th
 
 ---
 
-*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) ï¿½ [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) ï¿½ [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams)*
+*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) ï¿½ [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) ï¿½ [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams)*
 
 Ready to build operational excellence across your business? [Explore AI operations consulting](/custom-consulting).

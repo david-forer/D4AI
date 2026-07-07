@@ -1,4 +1,4 @@
-﻿---
+---
 layout: ../../layouts/BlogLayout.astro
 title: "Rebuild the Business. Not Just the Workflow"
 description: "Optimizing workflows while structure decays creates local efficiency and global failure. Rebuilding the business means redesigning decision-making, ownership, and information flow."
@@ -139,6 +139,6 @@ Do not just fix workflows. Rebuild the business. The workflows will get better a
 
 ---
 
-*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/Intake-and-Workflow-Systems-for-Growing-Firms) Â· [Why Systemic Thinking Beats Growth Hacking](/blog/systemic-thinking-vs-growth-hacking)*
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) Â· [Why Systemic Thinking Beats Growth Hacking](/blog/systemic-thinking-vs-growth-hacking)*
 
 If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.
