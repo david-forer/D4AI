@@ -26,3 +26,10 @@ pnpm-debug.log*
 
 # business strategy never lives in this public repo
 wargames/
+CLAUDE.md
+D4AI-Pillar-Build-SOP.md
+AMPLIFY-System.md
+SEO-WORK-LOG.md
+inject-links.ps1
+docs/
+.planning/
