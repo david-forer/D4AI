@@ -20,7 +20,7 @@ export default defineConfig({
         !page.includes('/fb-help') &&
         !page.includes('/html') &&
         !page.includes('/blog/category/') &&
-        !page.includes('/content') &&
+        !/\/content\/?$/.test(page) &&
         !page.includes('/blog/page/'),
     }),
   ],

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "AI Workflow Automation for Small Businesses (A Practical Framework)"
 description: "You do not automate a business. You automate workflows. Here is how to identify, design, and automate the workflows that will actually compound your operational capacity."
 pubDate: 2026-03-04T00:00:00Z

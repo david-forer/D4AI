@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "Why Systemic Thinking Beats Growth Hacking (Especially After $1M ARR)"
 description: "Growth hacking has an expiration date. After $1M ARR, complexity changes the game. Systemic thinking replaces hustle with throughput and stability with velocity."
 pubDate: 2025-12-19T00:00:00Z

@@ -1,5 +1,4 @@
-﻿---
-layout: ../../layouts/BlogLayout.astro
+---
 title: "Why Manual Processes Are Destroying Your Scaling Ability"
 description: "Manual processes do not just slow you down: they create a ceiling on what your business can become. Here is how to identify the ones that are actively limiting your growth."
 pubDate: 2026-03-04T00:00:00Z

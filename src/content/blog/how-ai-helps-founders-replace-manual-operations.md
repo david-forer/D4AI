@@ -1,5 +1,4 @@
-﻿---
-layout: ../../layouts/BlogLayout.astro
+---
 title: "How AI Helps Founders Replace Manual Operations"
 description: "AI does not automate chaos. It systematizes work that has already been mapped. Here is what AI can realistically replace in your operations, and what it cannot."
 pubDate: 2026-03-04T00:00:00Z

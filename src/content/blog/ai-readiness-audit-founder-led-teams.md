@@ -1,5 +1,4 @@
-﻿---
-layout: ../../layouts/BlogLayout.astro
+---
 title: "What an AI Readiness Audit Looks Like for Small, Founder-Led Teams"
 description: "Learn how an AI readiness audit works for 5â€“20 person businesses already using AI, and how it helps founders reduce risk without slowing down."
 pubDate: 2026-01-04T00:00:00Z

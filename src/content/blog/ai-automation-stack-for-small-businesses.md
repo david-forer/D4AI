@@ -1,4 +1,4 @@
-﻿---
+---
 title: "AI Automation Stack for Small Businesses (Architecture Over Tool Selection)"
 description: "An automation stack is not a collection of tools. It is a layered architecture where data flows predictably and each layer supports the one above it. Here is how to build one."
 pubDate: 2026-03-04T00:00:00Z

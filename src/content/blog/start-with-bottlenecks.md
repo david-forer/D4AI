@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "Don't Start With Tools. Start With Bottlenecks"
 description: "More tools feel productive but rarely solve root problems. Bottlenecks reveal where systems fail. Start there, and the right tools become obvious."
 pubDate: 2025-12-19T00:00:00Z

@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "AI Strategy for Small Businesses: A Practical Framework for Getting Real Results"
 seoTitle: "AI Strategy for Small Businesses – A Practical Framework for Getting Real Results Without a Technical Team – Build an AI Implementation Plan Aligned to Your Business Goals – Forersight"
 description: "Most small businesses approach AI by buying tools before having a strategy. Here is how to build an AI strategy for your small business that produces real results without a technical team."

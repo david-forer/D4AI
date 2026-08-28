@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "Achieving Operational Excellence with AI"
 description: "Discover how AI can transform your business operations, eliminate bottlenecks, and create scalable systems."
 pubDate: 2025-05-16T00:00:00Z

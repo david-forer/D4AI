@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Scaling a Business with AI Instead of Hiring (How to Know When Each Is the Right Move)"
 description: "Hiring is not the only path to capacity. AI operations creates a third option most founders have not fully mapped. Here is how to decide which one the situation actually calls for."
 pubDate: 2026-03-04T00:00:00Z

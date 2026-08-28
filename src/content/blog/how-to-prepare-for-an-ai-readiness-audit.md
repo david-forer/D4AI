@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "How to Prepare Your Business Before an AI Readiness Audit"
 description: "You don't need to clean up your systems or prep documentation before an AI readiness audit. But a small amount of focus beforehand means you get considerably more out of it."
 pubDate: 2026-03-15T00:00:00Z

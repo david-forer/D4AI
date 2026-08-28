@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogLayout.astro
 title: "Why Dashboards and SOPs Fail Without Operational Clarity"
 description: "An analysis of why dashboards and SOPs often create the illusion of control without improving execution, and how aligning metrics with real workflows closes the measurement-action gap."
 pubDate: 2025-12-09T00:00:00Z

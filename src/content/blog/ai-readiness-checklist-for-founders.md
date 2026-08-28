@@ -1,5 +1,4 @@
-﻿---
-layout: ../../layouts/BlogLayout.astro
+---
 title: "AI Readiness Checklist: 20 Questions Every Founder Should Answer Before Investing in AI"
 description: "Before committing budget or time to AI tools and implementation, answer these 20 questions honestly. The gaps you find tell you exactly where to focus first."
 pubDate: 2026-03-15T00:00:00Z
