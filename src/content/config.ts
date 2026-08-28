@@ -17,4 +17,18 @@ export const collections = {
       seoTitle: z.string().optional(),
     }),
   }),
+  'builds': defineCollection({
+    schema: z.object({
+      title: z.string(),
+      description: z.string(),
+      pubDate: z.date(),
+      buildType: z.enum(['app', 'skill', 'agent']),
+      status: z.enum(['live', 'in-progress', 'archived']).default('live'),
+      heroImage: z.string().optional(),
+      videoUrl: z.string().optional(),
+      githubUrl: z.string().optional(),
+      stack: z.array(z.string()).optional(),
+      featured: z.boolean().default(false),
+    }),
+  }),
 };
