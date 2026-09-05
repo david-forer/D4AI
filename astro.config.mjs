@@ -8,6 +8,11 @@ export default defineConfig({
   site: 'https://davidjforer.com',
   trailingSlash: 'never',
 
+  // Dev/preview server port comes from the environment when assigned (falls back to Astro's 4321)
+  server: ({ command }) => ({
+    port: process.env.PORT ? Number(process.env.PORT) : 4321,
+  }),
+
   integrations: [
     tailwind(),
     mdx(),
