@@ -52,7 +52,8 @@ export default defineConfig({
         !page.includes('/html') &&
         !page.includes('/blog/category/') &&
         !/\/content\/?$/.test(page) &&
-        !page.includes('/blog/page/'),
+        !page.includes('/blog/page/') &&
+        !page.includes('/seo-ai-resources'),
       serialize: (item) => {
         const pathname = new URL(item.url).pathname.replace(/\/$/, '');
         const lastmod = lastmodMap.get(pathname);

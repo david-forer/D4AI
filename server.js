@@ -1,6 +1,11 @@
-const express = require('express');
-const path = require('path');
+import express from 'express';
+import path from 'node:path';
+import fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
+const DIST = path.join(__dirname, 'dist');
 
 // Redirect trailing slashes to clean URLs (matches Astro trailingSlash: 'never')
 app.use((req, res, next) => {
@@ -59,8 +64,21 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.static('dist'));
-app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, 'dist', '404.html'));
+// Serve static files. redirect:false stops express from 301ing /about -> /about/
+// (which would loop with the trailing-slash middleware above).
+app.use(express.static(DIST, { redirect: false }));
+
+// Astro builds pages as /about/index.html; serve that for clean URLs like /about
+app.use((req, res, next) => {
+  if (req.method !== 'GET' && req.method !== 'HEAD') return next();
+  const file = path.join(DIST, req.path, 'index.html');
+  if (file.startsWith(DIST) && fs.existsSync(file)) return res.sendFile(file);
+  next();
 });
-app.listen(3000);
+
+app.use((req, res) => {
+  res.status(404).sendFile(path.join(DIST, '404.html'));
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log('serving dist on port ' + PORT));

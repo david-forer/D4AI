@@ -10,4 +10,6 @@ cmds = ["npm install"]
 [phases.build]
 cmds = ["npm run build"]
 
-# No [phases.start] section
+[start]
+cmd = "npm start"
+
