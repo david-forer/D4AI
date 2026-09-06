@@ -1,0 +1,22 @@
+name: Site check
+
+on:
+  schedule:
+    - cron: '0 6 * * *'      # every day at 06:00 UTC
+  push:
+    branches: [main]         # after every deploy
+  workflow_dispatch:         # manual "Run workflow" button in GitHub
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Wait for Coolify deploy to finish (push only)
+        if: github.event_name == 'push'
+        run: sleep 300
+      - name: Check live site
+        run: node scripts/site-check.mjs

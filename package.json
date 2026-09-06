@@ -8,7 +8,8 @@
     "start": "node server.js",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "node scripts/site-check.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.9",
