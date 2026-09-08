@@ -196,12 +196,14 @@ const defaultPostImage = "/images/ai operations logo.webp";
 
       {filteredPosts.length > 0 ? (
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {filteredPosts.map((post) => (
+          {filteredPosts.map((post, i) => (
             <div class="group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-100 bg-white">
               <div class="relative aspect-[16/9] overflow-hidden bg-blue-100">
                 <img
                   src={post.data.heroImage || defaultPostImage}
                   alt={post.data.title}
+                  loading={i === 0 ? "eager" : "lazy"}
+                  decoding="async"
                   class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -216,7 +218,7 @@ const defaultPostImage = "/images/ai operations logo.webp";
                 </p>
                 <p class="text-gray-600 line-clamp-3 mb-4 text-sm leading-relaxed">{post.data.description}</p>
                 <a href={`/blog/${post.slug}`} class="inline-block text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline">
-                  Read More
+                  Read More<span class="sr-only"> about {post.data.title}</span>
                 </a>
               </div>
             </div>
