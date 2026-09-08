@@ -21,7 +21,7 @@ Enterprise BI involves complex data infrastructure, dedicated teams, and analyti
 
 At small business scale, business intelligence means three things: knowing where the business is right now, knowing where it is heading over the next thirty to ninety days, and knowing what needs attention today.
 
-The founder who can answer those three questions from current data — without spending an hour assembling it — makes meaningfully better decisions than one who cannot. Faster decisions. More confident decisions. Fewer decisions that get deferred because the information to support them is not available.
+The founder who can answer those three questions from current data, without spending an hour assembling it, makes meaningfully better decisions than one who cannot. Faster decisions. More confident decisions. Fewer decisions that get deferred because the information to support them is not available.
 
 The goal of AI business intelligence at this scale is not analytical sophistication. It is operational clarity.
 
@@ -45,7 +45,7 @@ Tools like Make, n8n, or native integrations between platforms handle this conne
 
 Connected data can be synthesised and surfaced by AI in ways that go beyond what a dashboard of individual metrics provides.
 
-Pattern recognition across time periods — revenue trends, project delivery velocity, pipeline health over rolling quarters — surfaces insights that are not visible from any single metric. Anomaly detection identifies when something is outside the normal range and needs attention, rather than requiring someone to spot it by reading through a report. Correlation analysis can surface relationships between operational variables — the connection between proposal turnaround time and close rate, or between early project warning signs and final client satisfaction — that inform process decisions.
+Pattern recognition across time periods (revenue trends, project delivery velocity, pipeline health over rolling quarters) surfaces insights that are not visible from any single metric. Anomaly detection identifies when something is outside the normal range and needs attention, rather than requiring someone to spot it by reading through a report. Correlation analysis can surface relationships between operational variables (the connection between proposal turnaround time and close rate, or between early project warning signs and final client satisfaction) that inform process decisions.
 
 ## The Metrics That Actually Matter
 
@@ -55,7 +55,7 @@ Revenue and margin by client, project, and service line. These are the metrics t
 
 Pipeline coverage and deal velocity. How much pipeline do you have relative to target, and how fast is it moving? These are leading indicators of revenue performance, visible before the revenue itself lands.
 
-Delivery capacity — committed hours versus available hours — tells you whether you can take on new work without over-extending the team. This is the metric that prevents the common service business failure mode of selling more than you can deliver.
+Delivery capacity, committed hours versus available hours, tells you whether you can take on new work without over-extending the team. This is the metric that prevents the common service business failure mode of selling more than you can deliver.
 
 Cash position and AR aging. Current cash and the trajectory of incoming payment. These are the financial health metrics that need real-time visibility rather than monthly reporting.
 
@@ -63,7 +63,7 @@ Metrics worth stopping tracking: social media follower counts, website traffic w
 
 ## Automated Reporting vs. On-Demand Analysis
 
-Automated reporting covers the regular operational picture — the weekly cash position update, the Monday morning pipeline summary, the monthly P&L and margin report. These generate from connected data without anyone producing them. They land in the founder's inbox or on the operational dashboard at a defined cadence.
+Automated reporting covers the regular operational picture: the weekly cash position update, the Monday morning pipeline summary, the monthly P&L and margin report. These generate from connected data without anyone producing them. They land in the founder's inbox or on the operational dashboard at a defined cadence.
 
 The value of automated reporting is not just efficiency. It is regularity. The report that requires manual production gets skipped when someone is busy. The report that generates automatically is there every week regardless of what else is happening.
 
@@ -73,7 +73,7 @@ On-demand analysis is the capability to ask a specific question and get an answe
 
 The information advantage of real-time BI is only realised if it actually changes how decisions get made. That requires building the decision cadences to use it.
 
-A weekly operational review using current dashboard data takes thirty minutes rather than an hour — because the first thirty minutes of assembling data is eliminated. The meeting is about decisions, not information transfer.
+A weekly operational review using current dashboard data takes thirty minutes rather than an hour, because the first thirty minutes of assembling data is eliminated. The meeting is about decisions, not information transfer.
 
 A monthly business review built on automatically generated financial and operational reports surfaces the questions that matter for the coming month rather than explaining what happened last month.
 
@@ -83,11 +83,11 @@ The operational intelligence only changes decisions if the decision-making caden
 
 ## The Starting Point
 
-Before any BI layer, the data needs to be clean, current, and connected. The AI readiness audit typically surfaces the specific gaps — which systems are not integrated, where data inconsistency lives, what is being tracked manually that should be automated.
+Before any BI layer, the data needs to be clean, current, and connected. The AI readiness audit typically surfaces the specific gaps: which systems are not integrated, where data inconsistency lives, what is being tracked manually that should be automated.
 
 The single most valuable starting point for most small businesses is automated financial reporting. A weekly or monthly report that generates from the accounting system without manual production changes financial visibility immediately and with relatively low implementation complexity.
 
-The second priority is pipeline reporting — automated pipeline summaries from the CRM, delivered at a regular cadence, without someone pulling and formatting the data each week.
+The second priority is pipeline reporting (automated pipeline summaries from the CRM, delivered at a regular cadence, without someone pulling and formatting the data each week).
 
 Both of these create the habit and the infrastructure of data-driven decision making that the broader BI layer builds on.
 

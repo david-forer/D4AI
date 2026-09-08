@@ -48,25 +48,25 @@ Same tools available. Completely different outcomes, because one approach starte
 
 The [step-by-step process for building an AI strategy](/blog/how-to-build-an-ai-strategy-small-business) goes deeper than this overview, but the core logic is the same across every small business context. Four steps. In order.
 
-### Step 1 -- Define the Business Constraint You Are Actually Solving For
+### Step 1: Define the Business Constraint You Are Actually Solving For
 
 Before any AI conversation, name the specific operational or commercial constraint that limits your business right now. Not "we need to be more efficient." Something specific: we cannot take on more than eight clients at current capacity, we lose deals because proposals take four days to produce, we spend twenty hours a month on reporting that does not drive any decisions.
 
 The constraint defines the AI brief. An **AI implementation plan** built around a real constraint has a measurable target and a natural stopping point. One built around general efficiency improvement has neither.
 
-### Step 2 -- Map the Processes That Touch That Constraint
+### Step 2: Map the Processes That Touch That Constraint
 
-Once the constraint is named, map the actual workflow around it. Not how it should work in theory -- how it works today, with all the manual steps, informal handoffs, and human judgment calls included.
+Once the constraint is named, map the actual workflow around it. Not how it should work in theory. How it works today, with all the manual steps, informal handoffs, and human judgment calls included.
 
 This mapping usually reveals two things. First, the constraint is almost always downstream of a process problem that predates AI entirely. Second, there are usually two or three specific steps in the workflow where AI could make a material difference, and many more where it would add noise rather than value.
 
-### Step 3 -- Match AI Capability to Process Gap
+### Step 3: Match AI Capability to Process Gap
 
 Not every process gap is an AI problem. Some are documentation problems. Some are training problems. Some are sequencing problems that no amount of AI will fix because the underlying workflow design is broken.
 
 The matching step asks: is the bottleneck at this process step a problem of speed, consistency, judgment, or scale? AI helps most with speed and consistency. It helps moderately with scale, depending on the nature of the work. It does not replace human judgment in high-stakes, relationship-dependent decisions, and trying to make it do so creates risk rather than efficiency.
 
-### Step 4 -- Sequence Implementation by Return and Risk
+### Step 4: Sequence Implementation by Return and Risk
 
 Not every AI initiative should be implemented at the same time. Early wins matter for organizational confidence and practical learning. High-risk, high-complexity implementations belong later, after the team has built the habits and infrastructure that make them reliable.
 
@@ -114,7 +114,7 @@ Understanding [the most common AI strategy mistakes](/blog/ai-strategy-mistakes-
 
 **Automating broken processes.** A workflow that requires constant manual intervention to produce acceptable results does not become reliable when you add AI to it. It becomes faster at producing unreliable results. Fix the process first.
 
-**Treating AI adoption as a one-time project.** AI capabilities are changing quickly. A strategy built entirely around a specific tool's current feature set has a short shelf life. The durable part of an AI strategy is the framework for deciding where AI belongs -- not the specific tools chosen to fill those roles today.
+**Treating AI adoption as a one-time project.** AI capabilities are changing quickly. A strategy built entirely around a specific tool's current feature set has a short shelf life. The durable part of an AI strategy is the framework for deciding where AI belongs, not the specific tools chosen to fill those roles today.
 
 **Skipping the change management work.** A founder who decides on an AI strategy and hands it to the team without context, training, or feedback loops will see shallow adoption and quiet workarounds. The team needs to understand why the change is happening, what they are expected to do differently, and how their concerns will be heard.
 
@@ -152,7 +152,7 @@ Review cadence matters as much as metric selection. A monthly review of AI strat
 
 A strategy without a timeline stays theoretical. The [AI roadmap for small business](/blog/ai-roadmap-small-business) guide covers this in full, but the core principle is straightforward: sequence your implementation across ninety-day periods, with each period building on the previous one rather than starting fresh.
 
-The first period focuses on readiness and quick wins -- closing the data and process gaps that block reliable AI use, and automating one or two high-friction workflows to build confidence and demonstrate return. The second period expands on what worked. The third adds the more complex, integrated layers.
+The first period focuses on readiness and quick wins: closing the data and process gaps that block reliable AI use, and automating one or two high-friction workflows to build confidence and demonstrate return. The second period expands on what worked. The third adds the more complex, integrated layers.
 
 This sequence prevents the most common implementation failure: trying to build everything at once, encountering friction, and abandoning the effort before any of it has had time to compound.
 
@@ -162,7 +162,7 @@ This sequence prevents the most common implementation failure: trying to build e
 
 An AI strategy for a small business does not need to be elaborate. It needs to be honest about where the real operational constraints are and deliberate about which AI capabilities can address them.
 
-The practical starting point is a structured assessment of current operations: where time is spent, where errors accumulate, where growth is limited by process rather than demand. That assessment usually reveals two or three high-priority areas where AI could make a material difference. [A guide to where most small businesses should actually start](/blog/where-to-start-with-ai-small-business) cuts through the noise on this -- the answer is almost never where founders initially assume.
+The practical starting point is a structured assessment of current operations: where time is spent, where errors accumulate, where growth is limited by process rather than demand. That assessment usually reveals two or three high-priority areas where AI could make a material difference. [A guide to where most small businesses should actually start](/blog/where-to-start-with-ai-small-business) cuts through the noise on this. The answer is almost never where founders initially assume.
 
 Building an initial strategy around those specific areas, measuring the results, and expanding from there is a more reliable path than trying to build a comprehensive AI infrastructure from scratch.
 
