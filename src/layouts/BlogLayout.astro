@@ -32,7 +32,7 @@ const formattedDate = pubDate
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -107,7 +107,8 @@ const formattedDate = pubDate
   }
 
   html, body {
-    font-family: system-ui, sans-serif;
+    /* font-family intentionally omitted: it comes from Tailwind
+       theme.fontFamily.sans via preflight. See tailwind.config.js. */
     background: #ffffff;
     background-size: cover;
     background-repeat: no-repeat;

@@ -1,6 +1,9 @@
 ---
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
+// Site-wide typeface, self-hosted. Loaded once here so every page that uses
+// Layout inherits it. Do not add font-family declarations anywhere else.
+import '@fontsource-variable/inter';
 interface Props {
 	title: string;
 	description?: string;
@@ -47,7 +50,7 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 			gtag('config', 'G-8TFRGRQPZ1');
 		</script>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
@@ -65,7 +68,6 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 
 		<!-- Calendly CSS: non-blocking load -->
 		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" media="print" onload="this.media='all'" />
-		<noscript><link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" /></noscript>
 		<script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
 		<!-- TruConversion for davidjforer.com -->
@@ -110,7 +112,8 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 		);
 	}
 	html, body {
-		font-family: system-ui, sans-serif;
+		/* font-family intentionally omitted: it comes from Tailwind
+		   theme.fontFamily.sans via preflight. See tailwind.config.js. */
 		background: #ffffff;
 		background-size: cover;
 		background-repeat: no-repeat;
