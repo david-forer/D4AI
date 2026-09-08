@@ -50,7 +50,7 @@ This works until the volume increases. At $1M, the same informal systems are han
 
 The business does not break because the team stopped working hard. It breaks because the infrastructure was built for a smaller version of the company.
 
-Five things [consistently collapse at this stage](/blog/why-small-businesses-break-at-1m-revenue): the founder bottleneck, undocumented processes under volume pressure, tool sprawl without integration, tribal knowledge dependencies, and financial visibility gaps. Each one is fixable. But fixing them requires treating the business as a system, not a collection of people trying hard.
+Five things [consistently collapse at this stage](/blog/why-small-businesses-break-at-1m-revenue): the [founder bottleneck](/founder-bottlenecks), undocumented processes under volume pressure, tool sprawl without integration, tribal knowledge dependencies, and financial visibility gaps. Each one is fixable. But fixing them requires treating the business as a system, not a collection of people trying hard.
 
 ## The Difference Between AI Automation and AI Operations
 

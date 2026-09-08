@@ -13,6 +13,8 @@ Most businesses that stall between $1M and $5M are not stalling because of a sal
 
 The answer is almost always operational. And the bottlenecks causing the stall are almost never the obvious ones.
 
+The most common one is the [founder bottleneck](/founder-bottlenecks), where every meaningful decision routes back through the owner and the business can only move as fast as one person's calendar.
+
 ---
 
 ## Why Operational Bottlenecks Are Hard to See

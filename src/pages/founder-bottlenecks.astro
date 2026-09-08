@@ -1,11 +1,72 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import diagramFlow from '../diagrams/founder-diagnostic-flow.svg?raw';
-import diagramTimeline from '../diagrams/founder-mitigation-timeline.svg?raw';
-import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
+
+const pageUrl = 'https://davidjforer.com/founder-bottlenecks';
+const datePublished = '2026-07-07';
+const dateModified = '2026-09-08';
+
+// FAQ entries map to the query groups this page already ranks for in Search
+// Console. Answers are condensed from the matching on-page sections.
+const faqs = [
+  {
+    q: 'What is the founder bottleneck?',
+    a: 'The founder bottleneck is the point where a business can only move as fast as its owner. Decisions, approvals and undocumented judgment calls all route back through one person, so growth is capped by that person’s available hours rather than by demand, capital or team size.',
+  },
+  {
+    q: 'What is a founder decision bottleneck?',
+    a: 'A founder decision bottleneck forms when the number of choices needing the owner’s input grows faster than their available hours. The tell is queue time rather than decision quality. If the team waits two days for a routine answer, the business is running at the founder’s latency instead of its own. The fix is fewer decisions reaching the founder at all, through written spending thresholds, a named owner for each decision type, and a default of proceed unless told otherwise on anything reversible.',
+  },
+  {
+    q: 'What is the CEO bottleneck in a small business?',
+    a: 'The CEO bottleneck is the same constraint seen from the org chart. In a company of five to twenty people with no operations lead, the CEO holds three jobs at once: setting direction, running delivery, and acting as the escalation path for anything that does not fit an existing process. It bites hardest between one and five million in revenue, because below that one person can genuinely hold it all and above that there is usually a COO.',
+  },
+  {
+    q: 'What is an owner bottleneck?',
+    a: 'An owner bottleneck exists when the business cannot run without the owner present. The test is taking two consecutive weeks off with your phone off and watching what breaks. It is not a character flaw or a time management problem. It is a documentation gap with a person standing in it, and the parts that stall are the parts living in the owner’s head rather than in a system.',
+  },
+  {
+    q: 'How do you diagnose a founder bottleneck?',
+    a: 'Measure queue time on routine decisions, list which processes exist only in the owner’s head, and run the two-week absence test. Those three checks separate a genuine capacity problem from a systems problem. Adding headcount fixes the first and makes the second worse.',
+  },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      '@id': `${pageUrl}#article`,
+      headline: 'The Founder Bottleneck: Why Your Business Stalls Without You',
+      description:
+        'Diagnose the founder bottleneck slowing your business: four constraint areas, a diagnostic framework, and how to get the owner out of daily operations.',
+      mainEntityOfPage: pageUrl,
+      url: pageUrl,
+      datePublished,
+      dateModified,
+      author: { '@type': 'Person', name: 'David J Forer', url: 'https://davidjforer.com/about' },
+      publisher: { '@type': 'Person', name: 'David J Forer', url: 'https://davidjforer.com' },
+      about: 'Founder bottlenecks in owner-dependent small businesses',
+      audience: {
+        '@type': 'Audience',
+        audienceType: 'Founders of service businesses between $1M and $5M in revenue with 5 to 20 staff',
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${pageUrl}#faq`,
+      mainEntity: faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
+  ],
+};
 ---
 
-<Layout title="Founder Bottlenecks in Small Businesses – Diagnostic Framework for Owner-Dependent Operations – Strategies and Case Studies for Delegating and Scaling – David J Forer" description="Diagnose the founder bottlenecks slowing your small business: a practical framework, the key constraint areas, and strategies to get the owner out of daily operations.">
+<Layout title="The Founder Bottleneck: Why Your Business Stalls Without You | Diagnostic Framework for Owner-Dependent Operations, the Founder Decision Bottleneck, the CEO Bottleneck in a Small Business, and How to Get the Owner Out of Daily Delivery – Forersight" description="Diagnose the founder bottleneck slowing your business: four constraint areas, a diagnostic framework, and how to get the owner out of daily operations.">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
+
   <style>
     :root {
       --primary: #1e40af;
@@ -14,9 +75,6 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
       --neutral: #374151;
       --base: #f9fafb;
     }
-    
-    .font-canela { font-family: 'Canela', serif; }
-    .font-inter { font-family: 'Inter', sans-serif; }
     
     .hero-gradient {
       background: linear-gradient(135deg, rgba(30, 64, 175, 0.95) 0%, rgba(59, 130, 246, 0.85) 100%);
@@ -86,161 +144,179 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
       overflow: hidden;
     }
     
-    .mermaid-container {
-      display: flex;
-      justify-content: center;
-      min-height: 300px;
-      max-height: 800px;
-      background: #ffffff;
-      border: 2px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 30px;
-      margin: 30px 0;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    /* Numbered vertical stepper. Replaces the old Mermaid flow SVG so the
+       content is real, indexable, responsive text instead of a fixed-width image. */
+    .diagram-steps {
+      list-style: none;
+      margin: 2.5rem 0 2.5rem 1rem;
+      padding: 0;
+      border-left: 2px solid #dbeafe;
+    }
+
+    .diagram-steps li {
       position: relative;
-      overflow: hidden;
+      padding: 0 0 2rem 2.5rem;
     }
 
-    .mermaid-container .mermaid {
-      width: 100%;
-      max-width: 100%;
-      height: 100%;
-      cursor: grab;
-      transition: transform 0.3s ease;
-      transform-origin: center center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      touch-action: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
+    .diagram-steps li:last-child {
+      padding-bottom: 0;
     }
 
-    .mermaid-container .mermaid svg {
-      max-width: 100%;
-      height: 100%;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .mermaid-container .mermaid:active {
-      cursor: grabbing;
-    }
-
-    .mermaid-container.zoomed .mermaid {
-      height: 100%;
-      width: 100%;
-      cursor: grab;
-    }
-
-    .mermaid-controls {
+    .diagram-step-num {
       position: absolute;
-      top: 15px;
-      right: 15px;
-      display: flex;
-      gap: 10px;
-      z-index: 20;
-      background: rgba(255, 255, 255, 0.95);
-      padding: 8px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .mermaid-control-btn {
-      background: #ffffff;
-      border: 1px solid #d1d5db;
-      border-radius: 6px;
-      padding: 10px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      color: #374151;
-      font-size: 14px;
-      min-width: 36px;
-      height: 36px;
-      text-align: center;
+      left: -1.0625rem;
+      top: 0;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 9999px;
+      background: var(--primary);
+      color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 0.875rem;
+      font-weight: 600;
     }
 
-    .mermaid-control-btn:hover {
-      background: #f8fafc;
-      border-color: #3b82f6;
-      color: #3b82f6;
-      transform: translateY(-1px);
+    .diagram-steps h4 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #111827;
+      margin: 0.25rem 0 0.375rem;
     }
 
-    .mermaid-control-btn:active {
-      transform: scale(0.95);
+    .diagram-steps p {
+      color: #4b5563;
+      margin: 0;
+      line-height: 1.6;
     }
-    
-    .mermaid .node rect,
-    .mermaid .node circle,
-    .mermaid .node ellipse,
-    .mermaid .node polygon {
-      stroke: var(--primary) !important;
-      stroke-width: 2px !important;
+
+    .diagram-steps li.is-finding .diagram-step-num {
+      background: var(--accent);
+      box-shadow: 0 0 0 4px var(--secondary);
     }
-    
-    .mermaid .node:nth-child(4n+1) rect,
-    .mermaid .node:nth-child(4n+1) circle,
-    .mermaid .node:nth-child(4n+1) ellipse,
-    .mermaid .node:nth-child(4n+1) polygon {
-      fill: #f0fdfa !important;
-      stroke: var(--primary) !important;
+
+    .go-deeper {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      columns: 2;
+      column-gap: 2.5rem;
     }
-    
-    .mermaid .node:nth-child(4n+2) rect,
-    .mermaid .node:nth-child(4n+2) circle,
-    .mermaid .node:nth-child(4n+2) ellipse,
-    .mermaid .node:nth-child(4n+2) polygon {
-      fill: #e0f2fe !important;
-      stroke: #0369a1 !important;
+
+    .go-deeper li {
+      break-inside: avoid;
+      margin-bottom: 0.625rem;
     }
-    
-    .mermaid .node:nth-child(4n+3) rect,
-    .mermaid .node:nth-child(4n+3) circle,
-    .mermaid .node:nth-child(4n+3) ellipse,
-    .mermaid .node:nth-child(4n+3) polygon {
-      fill: #fef3c7 !important;
-      stroke: #d97706 !important;
+
+    .go-deeper a {
+      color: var(--primary);
+      text-decoration: none;
+      border-bottom: 1px solid #dbeafe;
+      transition: border-color 0.2s ease;
     }
-    
-    .mermaid .node:nth-child(4n+4) rect,
-    .mermaid .node:nth-child(4n+4) circle,
-    .mermaid .node:nth-child(4n+4) ellipse,
-    .mermaid .node:nth-child(4n+4) polygon {
-      fill: #f3e8ff !important;
-      stroke: #7c3aed !important;
+
+    .go-deeper a:hover {
+      border-bottom-color: var(--primary);
     }
-    
-    .mermaid .node .label,
-    .mermaid .nodeLabel {
-      color: #1f2937 !important;
-      font-weight: 600 !important;
-      font-size: 14px !important;
-      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8) !important;
+
+    @media (max-width: 640px) {
+      .go-deeper { columns: 1; }
     }
-    
-    .mermaid .edgePath .path {
-      stroke: var(--primary) !important;
-      stroke-width: 2px !important;
+
+    /* Four-phase timeline. Replaces the old Mermaid timeline SVG. */
+    .diagram-phases {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.25rem;
+      margin: 2.5rem 0;
+      list-style: none;
+      padding: 0;
     }
-    
-    .mermaid .arrowheadPath {
-      fill: var(--primary) !important;
-      stroke: var(--primary) !important;
+
+    .diagram-phases > li {
+      border: 1px solid #e5e7eb;
+      border-top: 3px solid var(--accent);
+      border-radius: 12px;
+      padding: 1.5rem;
+      background: #ffffff;
     }
-    
-    .mermaid .edgeLabel {
-      background-color: white !important;
-      color: var(--neutral) !important;
-      font-weight: 500 !important;
-      border: 1px solid #d1d5db !important;
-      border-radius: 4px !important;
-      padding: 2px 6px !important;
+
+    .diagram-phase-label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .diagram-phases h4 {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      color: #111827;
+      margin: 0 0 0.875rem;
+    }
+
+    .diagram-phases ul {
+      list-style: disc;
+      margin: 0;
+      padding-left: 1.125rem;
+      color: #4b5563;
+    }
+
+    .diagram-phases ul li {
+      margin-bottom: 0.4rem;
+      line-height: 1.5;
+    }
+
+    /* Linear pipeline. Replaces the 1512px-wide Mermaid SVG that was being
+       clipped by the page's overflow-x-hidden. */
+    .diagram-pipeline {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.75rem;
+      margin: 2.5rem 0;
+      list-style: none;
+      padding: 0;
+      counter-reset: pipe;
+    }
+
+    .diagram-pipeline li {
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 1rem;
+      background: var(--base);
+    }
+
+    .diagram-pipeline li.needs-founder {
+      border-color: var(--accent);
+      background: var(--secondary);
+    }
+
+    .diagram-pipeline h4 {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: #111827;
+      margin: 0 0 0.25rem;
+    }
+
+    .diagram-pipeline p {
+      font-size: 0.8125rem;
+      color: #6b7280;
+      margin: 0;
+      line-height: 1.45;
+    }
+
+    .diagram-pipeline .flag {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--primary);
     }
 
     @media (max-width: 1024px) {
@@ -257,14 +333,6 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
         margin-left: 0;
       }
 
-      .mermaid-control-btn:not(.reset-zoom) {
-        display: none;
-      }
-      .mermaid-controls {
-        top: auto;
-        bottom: 15px;
-        right: 15px;
-      }
     }
 
     @media (max-width: 768px) {
@@ -277,9 +345,6 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
       }
       .hero-gradient p {
         font-size: 1rem;
-      }
-      .mermaid-container {
-        padding: 15px;
       }
     }
 
@@ -295,19 +360,23 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
     }
   </style>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Canela:wght@300;400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- FontAwesome loaded non-blocking. The 49 icons on this page are decorative,
+       so a late paint is preferable to blocking first render on a CDN round trip. -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
-  <body class="font-inter bg-gray-50 overflow-x-hidden">
+  <div class="bg-gray-50 overflow-x-hidden">
     <!-- Fixed Table of Contents -->
     <nav class="toc-fixed" id="toc">
       <div class="mb-8">
-        <h3 class="font-canela text-lg font-bold text-gray-900 mb-4">Contents</h3>
+        <h3 class="text-lg font-bold text-gray-900 mb-4">Contents</h3>
         <div class="space-y-1">
           <a href="#hero" class="toc-link text-sm">Executive Summary</a>
           <a href="#understanding" class="toc-link text-sm">Understanding Founder Bottlenecks</a>
+          <a href="#decision-bottleneck" class="toc-link text-sm pl-6">Founder Decision Bottleneck</a>
+          <a href="#ceo-bottleneck" class="toc-link text-sm pl-6">CEO Bottleneck</a>
+          <a href="#owner-bottleneck" class="toc-link text-sm pl-6">Owner Bottleneck</a>
           <a href="#key-areas" class="toc-link text-sm">Key Areas of Constraint</a>
           <a href="#diagnostic" class="toc-link text-sm">Diagnostic Framework</a>
           <a href="#strategies" class="toc-link text-sm">Mitigation Strategies</a>
@@ -338,7 +407,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
     </button>
 
     <!-- Main Content -->
-    <main class="main-content">
+    <div class="main-content">
       <!-- Hero Section -->
       <section id="hero" class="py-16 bg-blue-600">
         <!-- Hero Content -->
@@ -346,14 +415,22 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <!-- Main Title & Subtitle -->
             <div class="lg:col-span-7">
-              <h1 class="font-canela text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-tight mb-6">
-                <em class="block text-2xl sm:text-3xl lg:text-4xl font-normal opacity-90 mb-2">Diagnosing</em>
-                Founder Bottlenecks
-                <span class="block text-xl sm:text-2xl lg:text-3xl font-normal opacity-80 mt-2">in Small Businesses</span>
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-tight mb-6">
+                The Founder Bottleneck
+                <span class="block text-xl sm:text-2xl lg:text-3xl font-normal opacity-80 mt-3">Why your business stalls without you, and how to fix it</span>
               </h1>
               <p class="text-base sm:text-xl text-white/90 mb-8 leading-relaxed max-w-full">
-                A strategic operations consultant's approach to identifying and overcoming the constraints that prevent scalable growth
+                A diagnostic framework for small businesses stuck in owner-dependent operations, built for founders running five to twenty people without an operations lead.
               </p>
+              <p class="text-sm text-white/70">
+                By <a href="/about" class="underline hover:text-white">David J Forer</a>
+                <span class="mx-2">·</span>
+                Updated <time datetime={dateModified}>{new Date(dateModified).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time>
+              </p>
+              <a href="/founder-bottleneck-test" class="inline-flex items-center mt-6 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-medium px-6 py-3 rounded-lg transition duration-200">
+                Not sure if this is you? Take the six-sign test
+                <span class="ml-2">&rarr;</span>
+              </a>
             </div>
 
             <!-- Key Metrics Grid -->
@@ -385,7 +462,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
       <section id="understanding" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-8">
           <div class="mb-16">
-            <h2 class="font-canela text-4xl font-light text-gray-900 mb-8">Understanding Founder Bottlenecks</h2>
+            <h2 class="text-4xl font-light text-gray-900 mb-8">Understanding Founder Bottlenecks</h2>
 
             <div class="prose prose-lg max-w-none">
               <p class="text-xl text-gray-700 leading-relaxed mb-8">
@@ -393,7 +470,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
               </p>
 
               <div class="insight-highlight p-8 rounded-lg mb-12">
-                <h3 class="font-canela text-2xl font-light text-gray-900 mb-4">The Bottleneck Paradox</h3>
+                <h3 class="text-2xl font-light text-gray-900 mb-4">The Bottleneck Paradox</h3>
                 <p class="text-gray-700 leading-relaxed">
                   Founders who are deeply passionate and heavily invested in their businesses often struggle to transition from hands-on "doers" to strategic leaders. As the business grows, demands on the founder's time increase exponentially. Without parallel development of systems, processes, and empowered teams, the founder becomes a central point through which too much information and too many decisions must flow.
                 </p>
@@ -404,7 +481,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
           <!-- Symptoms and Impact -->
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">Common Symptoms</h3>
+              <h3 class="text-2xl font-light text-gray-900 mb-6">Common Symptoms</h3>
               <ul class="space-y-4">
                 <li class="flex items-start">
                   <i class="fas fa-clock text-teal-600 mr-3 mt-1"></i>
@@ -434,7 +511,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
             </div>
 
             <div>
-              <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">Business Impact</h3>
+              <h3 class="text-2xl font-light text-gray-900 mb-6">Business Impact</h3>
               <ul class="space-y-4">
                 <li class="flex items-start">
                   <i class="fas fa-chart-line-down text-red-500 mr-3 mt-1"></i>
@@ -463,6 +540,76 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
               </ul>
             </div>
           </div>
+
+          <!-- Named forms of the bottleneck -->
+          <div class="section-divider"></div>
+
+          <div id="decision-bottleneck" class="scroll-mt-8">
+            <h2 class="text-3xl lg:text-4xl font-light text-gray-900 mb-6">The Founder Decision Bottleneck</h2>
+            <div class="prose prose-lg max-w-none text-gray-700">
+              <p>The first bottleneck to appear is almost always decisions rather than work.</p>
+              <p>
+                A founder decision bottleneck forms when the number of choices that need your input grows faster than
+                your available hours. Pricing exceptions, hiring calls, scope changes, vendor picks, refund approvals.
+                Each one is small. Together they eat the calendar.
+              </p>
+              <p>
+                The tell is queue time, not decision quality. Ask your team how long they wait between raising something
+                and hearing back. If the honest answer is two days on routine items, the business is running at your
+                latency instead of its own.
+              </p>
+              <p>
+                The fix is not faster decisions. It is fewer decisions reaching you at all. That means written spending
+                thresholds, a named owner for each decision type, and a default of proceed unless told otherwise on
+                anything reversible.
+              </p>
+            </div>
+          </div>
+
+          <div class="section-divider"></div>
+
+          <div id="ceo-bottleneck" class="scroll-mt-8">
+            <h2 class="text-3xl lg:text-4xl font-light text-gray-900 mb-6">The CEO Bottleneck in a Small Business</h2>
+            <div class="prose prose-lg max-w-none text-gray-700">
+              <p>
+                The CEO bottleneck is the same constraint seen from the org chart. In a company of five to twenty people
+                with no operations lead, the CEO holds three jobs at once: setting direction, running delivery, and
+                acting as the escalation path for everything that does not fit an existing process.
+              </p>
+              <p>
+                This is why it bites hardest between one and five million in revenue. Below that, one person can
+                genuinely hold it all. Above that, there is usually a COO or an operations manager. In between, the role
+                is overloaded and nobody has been hired to take the load off.
+              </p>
+              <p>
+                Two moves change it. Separate the work only the CEO can do, meaning direction, key relationships and
+                capital, from the work that has simply never been handed over. Then hand the second pile to a person or
+                a system, and stop reviewing it.
+              </p>
+            </div>
+          </div>
+
+          <div class="section-divider"></div>
+
+          <div id="owner-bottleneck" class="scroll-mt-8">
+            <h2 class="text-3xl lg:text-4xl font-light text-gray-900 mb-6">Owner Bottleneck: When the Business Cannot Run Without You</h2>
+            <div class="prose prose-lg max-w-none text-gray-700">
+              <p>
+                There is a simple test for an owner bottleneck. Take two consecutive weeks off with your phone off, and
+                watch what breaks.
+              </p>
+              <p>
+                Most founders will not run that test, which is itself the finding. The parts of the business that would
+                stall are the parts living in your head rather than in a system. Usually that means client onboarding,
+                quoting, quality checks, and anything involving a judgment call nobody has written down.
+              </p>
+              <p>
+                An owner bottleneck is not a character flaw or a time management problem. It is a documentation gap with
+                a person standing in it. The work is moving what you know out of your head and into checklists,
+                thresholds and tools a competent employee can follow without asking you first.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -471,7 +618,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
       <!-- Key Areas of Constraint -->
       <section id="key-areas" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-8">
-          <h2 class="font-canela text-4xl font-light text-gray-900 mb-12">Key Areas of Founder-Led Operational Constraints</h2>
+          <h2 class="text-4xl font-light text-gray-900 mb-12">Key Areas of Founder-Led Operational Constraints</h2>
 
           <p class="text-lg text-gray-700 mb-12 max-w-4xl">
             Founder-led operational constraints typically manifest in several core areas of the business. Understanding these areas is the first step toward diagnosing and addressing bottlenecks.
@@ -480,7 +627,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
           <!-- Constraint Areas Table -->
           <div class="data-viz-container mb-12">
             <div class="p-8">
-              <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">Areas of Operational Constraint</h3>
+              <h3 class="text-2xl font-light text-gray-900 mb-6">Areas of Operational Constraint</h3>
               <div class="overflow-x-auto">
                 <table class="w-full">
                   <thead>
@@ -498,7 +645,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
                     </tr>
                     <tr class="border-b border-gray-100 hover:bg-gray-50">
                       <td class="py-4 px-6 font-semibold text-teal-700">Strategic Planning & Execution</td>
-                      <td class="py-4 px-6 text-gray-700">Lack of clear, communicated strategy; founder's vision not translated into actionable plans.</td>
+                      <td class="py-4 px-6 text-gray-700">Lack of clear, communicated strategy. The founder's vision is not translated into actionable plans.</td>
                       <td class="py-4 px-6 text-gray-600">Ad-hoc initiatives, misaligned team efforts, missed opportunities, constant firefighting.</td>
                     </tr>
                     <tr class="border-b border-gray-100 hover:bg-gray-50">
@@ -508,7 +655,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
                     </tr>
                     <tr class="border-b border-gray-100 hover:bg-gray-50">
                       <td class="py-4 px-6 font-semibold text-teal-700">Systems & Process Implementation</td>
-                      <td class="py-4 px-6 text-gray-700">Reliance on informal, founder-dependent processes; lack of documented, scalable systems.</td>
+                      <td class="py-4 px-6 text-gray-700">Reliance on informal, founder-dependent processes. No documented, scalable systems.</td>
                       <td class="py-4 px-6 text-gray-600">Inconsistent outputs, training difficulties, operational fragility, inability to scale.</td>
                     </tr>
                   </tbody>
@@ -520,7 +667,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
           <!-- Detailed Analysis -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="insight-highlight p-8 rounded-lg">
-              <h4 class="font-canela text-xl font-light text-gray-900 mb-4">
+              <h4 class="text-xl font-light text-gray-900 mb-4">
                 <i class="fas fa-gavel text-teal-600 mr-3"></i>
                 Decision-Making Bottlenecks
               </h4>
@@ -533,7 +680,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
             </div>
 
             <div class="insight-highlight p-8 rounded-lg">
-              <h4 class="font-canela text-xl font-light text-gray-900 mb-4">
+              <h4 class="text-xl font-light text-gray-900 mb-4">
                 <i class="fas fa-chess text-teal-600 mr-3"></i>
                 Strategic Planning Challenges
               </h4>
@@ -553,7 +700,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
       <!-- Diagnostic Framework -->
       <section id="diagnostic" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-8">
-          <h2 class="font-canela text-4xl font-light text-gray-900 mb-12">Diagnostic Framework for Founder Bottlenecks</h2>
+          <h2 class="text-4xl font-light text-gray-900 mb-12">Diagnostic Framework for Founder Bottlenecks</h2>
 
           <p class="text-lg text-gray-700 mb-12 max-w-4xl">
             A systematic diagnostic framework is essential for identifying and understanding the nature and extent of founder bottlenecks within a small business. This framework involves assessing several interconnected aspects of the business.
@@ -562,7 +709,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
           <!-- Diagnostic Framework Table -->
           <div class="data-viz-container mb-12">
             <div class="p-8">
-              <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">Comprehensive Diagnostic Framework</h3>
+              <h3 class="text-2xl font-light text-gray-900 mb-6">Comprehensive Diagnostic Framework</h3>
               <div class="overflow-x-auto">
                 <table class="w-full">
                   <thead>
@@ -601,30 +748,55 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
 
           <!-- Diagnostic Process Flow -->
           <div class="mb-12">
-            <h3 class="font-canela text-2xl font-light text-gray-900 mb-8">Diagnostic Process Flow</h3>
-            <div class="mermaid-container">
-              <div class="mermaid-controls">
-                <button class="mermaid-control-btn zoom-in" title="Zoom In">
-                  <i class="fas fa-search-plus"></i>
-                </button>
-                <button class="mermaid-control-btn zoom-out" title="Zoom Out">
-                  <i class="fas fa-search-minus"></i>
-                </button>
-                <button class="mermaid-control-btn reset-zoom" title="Reset">
-                  <i class="fas fa-expand-arrows-alt"></i>
-                </button>
-                <button class="mermaid-control-btn fullscreen" title="Fullscreen">
-                  <i class="fas fa-expand"></i>
-                </button>
-              </div>
-              <div class="mermaid" role="img" aria-label="Diagnostic process flow from initial assessment through workload analysis, structure review, process audit, and financial analysis to bottleneck identification, intervention strategy, and implementation" set:html={diagramFlow}></div>
-            </div>
+            <h3 class="text-2xl font-light text-gray-900 mb-8">Diagnostic Process Flow</h3>
+            <ol class="diagram-steps">
+              <li>
+                <span class="diagram-step-num">1</span>
+                <h4>Initial Assessment</h4>
+                <p>Establish what the business actually does, who does it, and where the owner sits in each flow.</p>
+              </li>
+              <li>
+                <span class="diagram-step-num">2</span>
+                <h4>Founder Workload Analysis</h4>
+                <p>Two weeks of the owner's calendar and inbox, sorted into direction, delivery and escalation.</p>
+              </li>
+              <li>
+                <span class="diagram-step-num">3</span>
+                <h4>Organizational Structure Review</h4>
+                <p>Who holds which decisions on paper, and who actually holds them in practice.</p>
+              </li>
+              <li>
+                <span class="diagram-step-num">4</span>
+                <h4>Process and Systems Audit</h4>
+                <p>Which recurring work is documented, which lives in someone's head, and where handoffs stall.</p>
+              </li>
+              <li>
+                <span class="diagram-step-num">5</span>
+                <h4>Financial Performance Analysis</h4>
+                <p>Where margin leaks against the constraint, and what the queue time is costing per month.</p>
+              </li>
+              <li class="is-finding">
+                <span class="diagram-step-num">6</span>
+                <h4>Bottleneck Identification</h4>
+                <p>Name the binding constraint. A capacity problem and a systems problem need opposite responses.</p>
+              </li>
+              <li>
+                <span class="diagram-step-num">7</span>
+                <h4>Intervention Strategy</h4>
+                <p>Decision thresholds, named owners, and the documentation that has to exist before handoff works.</p>
+              </li>
+              <li>
+                <span class="diagram-step-num">8</span>
+                <h4>Implementation and Monitoring</h4>
+                <p>Ship the changes, then track queue time to confirm the constraint actually moved.</p>
+              </li>
+            </ol>
           </div>
 
           <!-- Assessment Methods -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="space-y-6">
-              <h4 class="font-canela text-xl font-light text-gray-900">Assessment Techniques</h4>
+              <h4 class="text-xl font-light text-gray-900">Assessment Techniques</h4>
 
               <div class="bg-gray-50 p-6 rounded-lg">
                 <h5 class="font-semibold text-gray-900 mb-3">
@@ -658,7 +830,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
             </div>
 
             <div class="space-y-6">
-              <h4 class="font-canela text-xl font-light text-gray-900">Key Indicators</h4>
+              <h4 class="text-xl font-light text-gray-900">Key Indicators</h4>
 
               <div class="insight-highlight p-6 rounded-lg">
                 <h5 class="font-semibold text-gray-900 mb-3">Quantitative Evidence</h5>
@@ -684,12 +856,30 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
         </div>
       </section>
 
+      <!-- Mid-page CTA: the reader has just been handed the framework and
+           wants to know how to apply it to themselves. -->
+      <section class="py-12">
+        <div class="max-w-4xl mx-auto px-8">
+          <div class="rounded-xl bg-blue-50 border border-blue-200 p-8 md:flex md:items-center md:justify-between md:gap-8">
+            <div class="mb-6 md:mb-0">
+              <h2 class="text-2xl font-light text-gray-900 mb-2">Run it on yourself first</h2>
+              <p class="text-gray-700 leading-relaxed">
+                Six signs in the order they actually appear, each with a check you can run this week. Free, no email required.
+              </p>
+            </div>
+            <a href="/founder-bottleneck-test" class="inline-block whitespace-nowrap bg-blue-700 hover:bg-blue-800 text-white font-semibold px-7 py-3.5 rounded-lg transition duration-200">
+              Take the test
+            </a>
+          </div>
+        </div>
+      </section>
+
       <div class="section-divider"></div>
 
       <!-- Strategies Section -->
       <section id="strategies" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-8">
-          <h2 class="font-canela text-4xl font-light text-gray-900 mb-12">Strategies for Mitigating Founder Bottlenecks</h2>
+          <h2 class="text-4xl font-light text-gray-900 mb-12">Strategies for Mitigating Founder Bottlenecks</h2>
 
           <p class="text-lg text-gray-700 mb-12 max-w-4xl">
             Once founder bottlenecks have been identified and diagnosed, the next step is to implement strategies to mitigate them. This involves a combination of empowering people, improving processes, and shifting the founder's focus.
@@ -698,7 +888,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
           <!-- Strategies Table -->
           <div class="data-viz-container mb-12">
             <div class="p-8">
-              <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">Comprehensive Mitigation Strategies</h3>
+              <h3 class="text-2xl font-light text-gray-900 mb-6">Comprehensive Mitigation Strategies</h3>
               <div class="overflow-x-auto">
                 <table class="w-full">
                   <thead>
@@ -711,22 +901,22 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
                   <tbody>
                     <tr class="border-b border-gray-100 hover:bg-gray-50">
                       <td class="py-4 px-6 font-semibold text-teal-700">Empowering Leadership & Building Effective Teams</td>
-                      <td class="py-4 px-6 text-gray-700">Clarify roles & responsibilities; delegate authority with accountability; invest in leadership development & training.</td>
+                      <td class="py-4 px-6 text-gray-700">Clarify roles and responsibilities, delegate authority with accountability, and invest in leadership development and training.</td>
                       <td class="py-4 px-6 text-gray-600">Increased team autonomy, faster decision-making, improved morale, stronger leadership pipeline.</td>
                     </tr>
                     <tr class="border-b border-gray-100 hover:bg-gray-50">
                       <td class="py-4 px-6 font-semibold text-teal-700">Implementing Scalable Systems & Processes</td>
-                      <td class="py-4 px-6 text-gray-700">Document key processes; automate repetitive tasks; invest in appropriate technology; establish quality control measures.</td>
-                      <td class="py-4 px-6 text-gray-600">Improved efficiency, consistency, and quality; reduced operational fragility; enhanced ability to scale.</td>
+                      <td class="py-4 px-6 text-gray-700">Document key processes, automate repetitive tasks, invest in appropriate technology, and establish quality control measures.</td>
+                      <td class="py-4 px-6 text-gray-600">Improved efficiency, consistency and quality. Less operational fragility and a real ability to scale.</td>
                     </tr>
                     <tr class="border-b border-gray-100 hover:bg-gray-50">
                       <td class="py-4 px-6 font-semibold text-teal-700">Enhancing Strategic Focus & Delegation</td>
-                      <td class="py-4 px-6 text-gray-700">Founder shifts focus to high-impact strategic activities; establishes clear delegation frameworks; implements regular strategic reviews.</td>
-                      <td class="py-4 px-6 text-gray-600">Founder focuses on growth and innovation; reduced founder workload on low-value tasks; better strategic alignment.</td>
+                      <td class="py-4 px-6 text-gray-700">Founder shifts focus to high-impact strategic activities, establishes clear delegation frameworks, and runs regular strategic reviews.</td>
+                      <td class="py-4 px-6 text-gray-600">Founder focuses on growth and innovation. Less founder workload on low-value tasks and better strategic alignment.</td>
                     </tr>
                     <tr class="border-b border-gray-100 hover:bg-gray-50">
                       <td class="py-4 px-6 font-semibold text-teal-700">Fostering a Culture of Continuous Improvement</td>
-                      <td class="py-4 px-6 text-gray-700">Implement feedback mechanisms; encourage experimentation and learning; regularly review and refine processes and strategies.</td>
+                      <td class="py-4 px-6 text-gray-700">Implement feedback mechanisms, encourage experimentation and learning, and regularly review and refine processes and strategies.</td>
                       <td class="py-4 px-6 text-gray-600">Increased adaptability, ongoing optimization of operations, proactive problem-solving, sustained growth.</td>
                     </tr>
                   </tbody>
@@ -738,7 +928,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
           <!-- Strategy Details -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div class="insight-highlight p-8 rounded-lg">
-              <h4 class="font-canela text-xl font-light text-gray-900 mb-4">
+              <h4 class="text-xl font-light text-gray-900 mb-4">
                 <i class="fas fa-users-cog text-teal-600 mr-3"></i>
                 Empowering Leadership
               </h4>
@@ -762,7 +952,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
             </div>
 
             <div class="insight-highlight p-8 rounded-lg">
-              <h4 class="font-canela text-xl font-light text-gray-900 mb-4">
+              <h4 class="text-xl font-light text-gray-900 mb-4">
                 <i class="fas fa-cogs text-teal-600 mr-3"></i>
                 Scalable Systems Implementation
               </h4>
@@ -788,24 +978,45 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
 
           <!-- Implementation Timeline -->
           <div class="bg-white p-8 rounded-lg shadow-sm">
-            <h4 class="font-canela text-2xl font-light text-gray-900 mb-6">Implementation Timeline</h4>
-            <div class="mermaid-container">
-              <div class="mermaid-controls">
-                <button class="mermaid-control-btn zoom-in" title="Zoom In">
-                  <i class="fas fa-search-plus"></i>
-                </button>
-                <button class="mermaid-control-btn zoom-out" title="Zoom Out">
-                  <i class="fas fa-search-minus"></i>
-                </button>
-                <button class="mermaid-control-btn reset-zoom" title="Reset">
-                  <i class="fas fa-expand-arrows-alt"></i>
-                </button>
-                <button class="mermaid-control-btn fullscreen" title="Fullscreen">
-                  <i class="fas fa-expand"></i>
-                </button>
-              </div>
-              <div class="mermaid" role="img" aria-label="Founder bottleneck mitigation timeline across four phases: assessment and diagnosis, immediate interventions, system implementation, and strategic transformation" set:html={diagramTimeline}></div>
-            </div>
+            <h4 class="text-2xl font-light text-gray-900 mb-6">Implementation Timeline</h4>
+            <ol class="diagram-phases">
+              <li>
+                <span class="diagram-phase-label">Phase 1</span>
+                <h4>Assessment and Diagnosis</h4>
+                <ul>
+                  <li>Founder workload analysis</li>
+                  <li>Organizational structure review</li>
+                  <li>Process mapping</li>
+                </ul>
+              </li>
+              <li>
+                <span class="diagram-phase-label">Phase 2</span>
+                <h4>Immediate Interventions</h4>
+                <ul>
+                  <li>Quick-win process improvements</li>
+                  <li>Initial delegation framework</li>
+                  <li>Team empowerment initiatives</li>
+                </ul>
+              </li>
+              <li>
+                <span class="diagram-phase-label">Phase 3</span>
+                <h4>System Implementation</h4>
+                <ul>
+                  <li>Document key processes</li>
+                  <li>Technology investment</li>
+                  <li>Quality control systems</li>
+                </ul>
+              </li>
+              <li>
+                <span class="diagram-phase-label">Phase 4</span>
+                <h4>Strategic Transformation</h4>
+                <ul>
+                  <li>Leadership development</li>
+                  <li>Cultural change</li>
+                  <li>Continuous improvement</li>
+                </ul>
+              </li>
+            </ol>
           </div>
         </div>
       </section>
@@ -815,12 +1026,12 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
       <!-- Case Studies -->
       <section id="case-studies" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-8">
-          <h2 class="font-canela text-4xl font-light text-gray-900 mb-12">Case Studies and Best Practices</h2>
+          <h2 class="text-4xl font-light text-gray-900 mb-12">Case Studies and Best Practices</h2>
 
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <!-- Success Stories -->
             <div>
-              <h3 class="font-canela text-2xl font-light text-gray-900 mb-8">Successful Transitions</h3>
+              <h3 class="text-2xl font-light text-gray-900 mb-8">Successful Transitions</h3>
 
               <div class="space-y-8">
                 <div class="bg-gray-50 p-6 rounded-lg">
@@ -849,7 +1060,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
 
             <!-- Lessons Learned -->
             <div>
-              <h3 class="font-canela text-2xl font-light text-gray-900 mb-8">Key Lessons Learned</h3>
+              <h3 class="text-2xl font-light text-gray-900 mb-8">Key Lessons Learned</h3>
 
               <div class="space-y-6">
                 <div class="flex items-start">
@@ -922,7 +1133,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
       <!-- Tools and Methodologies -->
       <section id="tools" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-8">
-          <h2 class="font-canela text-4xl font-light text-gray-900 mb-12">Tools and Methodologies for Diagnosis and Intervention</h2>
+          <h2 class="text-4xl font-light text-gray-900 mb-12">Tools and Methodologies for Diagnosis and Intervention</h2>
 
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             <!-- Operational Audits -->
@@ -930,7 +1141,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
               <div class="bg-blue-300 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 <i class="fas fa-search text-blue-600 text-xl"></i>
               </div>
-              <h3 class="font-canela text-xl font-light text-gray-900 mb-4">Operational Audits</h3>
+              <h3 class="text-xl font-light text-gray-900 mb-4">Operational Audits</h3>
               <p class="text-gray-700 text-sm mb-4">
                 Detailed analysis of business processes, data handling, and reporting mechanisms to identify inefficiencies and potential bottlenecks.
               </p>
@@ -947,7 +1158,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
               <div class="bg-blue-300 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 <i class="fas fa-user-tie text-blue-600 text-xl"></i>
               </div>
-              <h3 class="font-canela text-xl font-light text-gray-900 mb-4">Coaching & Advisory</h3>
+              <h3 class="text-xl font-light text-gray-900 mb-4">Coaching & Advisory</h3>
               <p class="text-gray-700 text-sm mb-4">
                 External consultants provide objective perspective, challenge assumptions, and offer tailored strategies for founder development.
               </p>
@@ -964,7 +1175,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
               <div class="bg-blue-300 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 <i class="fas fa-chart-bar text-blue-600 text-xl"></i>
               </div>
-              <h3 class="font-canela text-xl font-light text-gray-900 mb-4">Performance Monitoring</h3>
+              <h3 class="text-xl font-light text-gray-900 mb-4">Performance Monitoring</h3>
               <p class="text-gray-700 text-sm mb-4">
                 Implementing robust monitoring systems and feedback loops to ensure interventions are effective and bottlenecks don't re-emerge.
               </p>
@@ -979,7 +1190,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
 
           <!-- Technical Implementation Example -->
           <div class="bg-white p-8 rounded-lg shadow-sm">
-            <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">Technical Implementation Case Study</h3>
+            <h3 class="text-2xl font-light text-gray-900 mb-6">Technical Implementation Case Study</h3>
 
             <div class="insight-highlight p-6 rounded-lg mb-6">
               <h4 class="font-semibold text-gray-900 mb-3">Data Analysis Bottleneck Example</h4>
@@ -989,23 +1200,39 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
             </div>
 
             <!-- Data Flow Diagram -->
-            <div class="mermaid-container">
-              <div class="mermaid-controls">
-                <button class="mermaid-control-btn zoom-in" title="Zoom In">
-                  <i class="fas fa-search-plus"></i>
-                </button>
-                <button class="mermaid-control-btn zoom-out" title="Zoom Out">
-                  <i class="fas fa-search-minus"></i>
-                </button>
-                <button class="mermaid-control-btn reset-zoom" title="Reset">
-                  <i class="fas fa-expand-arrows-alt"></i>
-                </button>
-                <button class="mermaid-control-btn fullscreen" title="Fullscreen">
-                  <i class="fas fa-expand"></i>
-                </button>
-              </div>
-              <div class="mermaid" role="img" aria-label="Data pipeline from source through loading, preprocessing, aggregation, and validation to visualization and reporting, with founder involvement required at three stages" set:html={diagramPipeline}></div>
-            </div>
+            <ol class="diagram-pipeline">
+              <li>
+                <h4>Data Source</h4>
+                <p>Operational systems, time tracking and finance records.</p>
+              </li>
+              <li>
+                <h4>Data Loading</h4>
+                <p>Automated pull on a fixed schedule.</p>
+              </li>
+              <li class="needs-founder">
+                <h4>Data Preprocessing</h4>
+                <p>Cleaning and categorising work items.</p>
+                <span class="flag">Founder input required</span>
+              </li>
+              <li class="needs-founder">
+                <h4>Data Aggregation</h4>
+                <p>Rolling up by process, owner and queue time.</p>
+                <span class="flag">Founder input required</span>
+              </li>
+              <li>
+                <h4>Data Validation</h4>
+                <p>Checks against known throughput before anything is trusted.</p>
+              </li>
+              <li class="needs-founder">
+                <h4>Visualization</h4>
+                <p>Deciding which constraints get surfaced and how.</p>
+                <span class="flag">Founder input required</span>
+              </li>
+              <li>
+                <h4>Reporting</h4>
+                <p>Distributed to the team without the owner in the loop.</p>
+              </li>
+            </ol>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
               <div>
@@ -1036,7 +1263,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
       <!-- Conclusion -->
       <section id="conclusion" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-8">
-          <h2 class="font-canela text-4xl font-light text-gray-900 mb-12">Enabling Sustainable Growth Beyond the Founder</h2>
+          <h2 class="text-4xl font-light text-gray-900 mb-12">Enabling Sustainable Growth Beyond the Founder</h2>
 
           <div class="prose prose-lg max-w-none">
             <p class="text-xl text-gray-700 leading-relaxed mb-8">
@@ -1044,7 +1271,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
             </p>
 
             <div class="insight-highlight p-8 rounded-lg mb-12">
-              <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">The Consultant's Role</h3>
+              <h3 class="text-2xl font-light text-gray-900 mb-6">The Consultant's Role</h3>
               <p class="text-gray-700 leading-relaxed mb-4">
                 The strategic operations consultant's role is to diagnose these founder-led constraints with empathy and precision, and then to guide the founder and the business through the necessary transformations. This involves:
               </p>
@@ -1061,7 +1288,7 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
             </div>
 
             <div class="bg-gray-50 p-8 rounded-lg mb-12">
-              <h3 class="font-canela text-2xl font-light text-gray-900 mb-6">The Ultimate Goal</h3>
+              <h3 class="text-2xl font-light text-gray-900 mb-6">The Ultimate Goal</h3>
               <p class="text-gray-700 leading-relaxed">
                 <strong>Ultimately, the goal is to create an organization that is not solely dependent on the founder's daily involvement</strong>, thereby enabling sustainable growth, fostering innovation, and building a resilient business that can thrive well into the future, even beyond the founder's direct operational control. This transition is not just an operational shift but a profound evolution in leadership and organizational culture, paving the way for a legacy of enduring success.
               </p>
@@ -1083,8 +1310,22 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
               </div>
             </div>
 
-            
           </div>
+        </div>
+      </section>
+
+      <!-- Go Deeper: internal links out to the related cluster -->
+      <section class="py-12 bg-white border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-8">
+          <h2 class="text-2xl font-light text-gray-900 mb-6">Go Deeper</h2>
+          <ul class="go-deeper">
+            <li><a href="/blog/operational-bottlenecks-that-kill-small-business-growth">Operational Bottlenecks That Kill Small Business Growth</a></li>
+            <li><a href="/blog/hiring-more-people-doesnt-fix-operations">Hiring More People Does Not Fix Operations</a></li>
+            <li><a href="/blog/founder-burnout-and-the-operations-problem">Founder Burnout and the Operations Problem</a></li>
+            <li><a href="/blog/start-with-bottlenecks">Do Not Start With Tools. Start With Bottlenecks</a></li>
+            <li><a href="/blog/ai-operations-for-small-businesses">AI Operations for Small Businesses</a></li>
+            <li><a href="/ai-readiness-and-ai-audits">What an AI Readiness Audit Covers</a></li>
+          </ul>
         </div>
       </section>
 
@@ -1112,55 +1353,20 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
                 <span>Ongoing support and monitoring</span>
               </div>
             </div>
-            <a href="/contact" class="inline-block bg-white hover:bg-gray-100 text-blue-700 font-semibold px-8 py-4 rounded-xl transition duration-200 text-lg">
-              Get Your Diagnostic Assessment
-            </a>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+              <a href="https://calendly.com/david-j-forer/30min" target="_blank" rel="noopener" class="inline-block bg-white hover:bg-gray-100 text-blue-700 font-semibold px-8 py-4 rounded-xl transition duration-200 text-lg">
+                Book a 30 minute call
+              </a>
+              <a href="/founder-bottleneck-test" class="inline-block border border-white/50 hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-xl transition duration-200 text-lg">
+                Take the six-sign test first
+              </a>
+            </div>
           </div>
         </div>
       </section>
-    </main>
-
+    </div>
 
     <script>
-      // Initialize Mermaid
-      if (typeof window !== 'undefined' && (window as any).mermaid) {
-        (window as any).mermaid.initialize({
-          startOnLoad: true,
-          theme: 'base',
-          themeVariables: {
-            primaryColor: '#f0fdfa',
-            primaryTextColor: '#1f2937',
-            primaryBorderColor: '#0f766e',
-            lineColor: '#0f766e',
-            secondaryColor: '#e0f2fe',
-            tertiaryColor: '#fef3c7',
-            background: '#ffffff',
-            mainBkg: '#f0fdfa',
-            secondaryBkg: '#e0f2fe',
-            tertiaryBkg: '#fef3c7',
-            nodeBorder: '#0f766e',
-            clusterBkg: '#f9fafb',
-            clusterBorder: '#d1d5db',
-            defaultLinkColor: '#0f766e',
-            titleColor: '#1f2937',
-            edgeLabelBackground: '#ffffff',
-            nodeTextColor: '#1f2937'
-          },
-          flowchart: {
-            useMaxWidth: false,
-            htmlLabels: true,
-            curve: 'basis',
-            padding: 20
-          },
-          timeline: {
-            useMaxWidth: false,
-            padding: 20
-          },
-          gantt: {
-            useMaxWidth: false
-          }
-        });
-      }
 
       // Mobile TOC Toggle
       const tocToggle = document.getElementById('toc-toggle');
@@ -1233,124 +1439,5 @@ import diagramPipeline from '../diagrams/founder-data-pipeline.svg?raw';
         }
       });
     </script>
-  </body>
-</Layout>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script>
-      // Initialize Mermaid
-      if (typeof window !== 'undefined' && (window as any).mermaid) {
-        (window as any).mermaid.initialize({
-          startOnLoad: true,
-          theme: 'base',
-          themeVariables: {
-            primaryColor: '#f0fdfa',
-            primaryTextColor: '#1f2937',
-            primaryBorderColor: '#0f766e',
-            lineColor: '#0f766e',
-            secondaryColor: '#e0f2fe',
-            tertiaryColor: '#fef3c7',
-            background: '#ffffff',
-            mainBkg: '#f0fdfa',
-            secondaryBkg: '#e0f2fe',
-            tertiaryBkg: '#fef3c7',
-            nodeBorder: '#0f766e',
-            clusterBkg: '#f9fafb',
-            clusterBorder: '#d1d5db',
-            defaultLinkColor: '#0f766e',
-            titleColor: '#1f2937',
-            edgeLabelBackground: '#ffffff',
-            nodeTextColor: '#1f2937'
-          },
-          flowchart: {
-            useMaxWidth: false,
-            htmlLabels: true,
-            curve: 'basis',
-            padding: 20
-          },
-          timeline: {
-            useMaxWidth: false,
-            padding: 20
-          },
-          gantt: {
-            useMaxWidth: false
-          }
-        });
-      }
-
-      // Mobile TOC Toggle
-      const tocToggle = document.getElementById('toc-toggle');
-      const toc = document.getElementById('toc');
-      
-      if (tocToggle && toc) {
-        tocToggle.addEventListener('click', () => {
-          toc.classList.toggle('open');
-        });
-      }
-
-      // Smooth scrolling for TOC links
-      document.querySelectorAll('.toc-link').forEach(link => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          const targetId = link.getAttribute('href')?.substring(1);
-          const targetElement = targetId ? document.getElementById(targetId) : null;
-          
-          if (targetElement) {
-            const offsetTop = targetElement.offsetTop - 20;
-            window.scrollTo({
-              top: offsetTop,
-              behavior: 'smooth'
-            });
-          }
-          
-          // Close mobile TOC
-          if (window.innerWidth <= 1024 && toc) {
-            toc.classList.remove('open');
-          }
-        });
-      });
-
-      // Active TOC link highlighting
-      const observerOptions = {
-        root: null,
-        rootMargin: '-20% 0px -80% 0px',
-        threshold: 0
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const id = entry.target.id;
-            document.querySelectorAll('.toc-link').forEach(link => {
-              link.classList.remove('active');
-            });
-            const activeLink = document.querySelector(`[href="#${id}"]`);
-            if (activeLink) {
-              activeLink.classList.add('active');
-            }
-          }
-        });
-      }, observerOptions);
-
-      // Observe all sections
-      document.querySelectorAll('section[id]').forEach(section => {
-        observer.observe(section);
-      });
-
-      // Close mobile TOC when clicking outside
-      document.addEventListener('click', (e) => {
-        const target = e.target as Node;
-        if (window.innerWidth <= 1024 && 
-            toc && tocToggle &&
-            !toc.contains(target) && 
-            !tocToggle.contains(target) &&
-            toc.classList.contains('open')) {
-          toc.classList.remove('open');
-        }
-      });
-    </script>
-  </body>
+  </div>
 </Layout>

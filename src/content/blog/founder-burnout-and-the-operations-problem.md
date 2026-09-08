@@ -75,7 +75,7 @@ Recurring fires are a signal that a process gap exists. Fixing the fire each tim
 
 The shift from firefighting to systems building is the single most important operational change a burned-out founder can make. Every recurring fire that gets replaced by a functioning process removes a future drain on attention and energy.
 
-The [Operational Bottlenecks That Kill Small Business Growth](/blog/operational-bottlenecks-that-kill-small-business-growth) framework is a useful starting point for identifying which recurring fires are bottlenecks in disguise.
+The [Operational Bottlenecks That Kill Small Business Growth](/blog/operational-bottlenecks-that-kill-small-business-growth) framework is a useful starting point for identifying which recurring fires are bottlenecks in disguise. If most of them trace back to you personally, start with the [founder bottleneck](/founder-bottlenecks) diagnostic instead.
 
 ---
 

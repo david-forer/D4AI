@@ -110,7 +110,7 @@ This is where AI really shines. AI is excellent at pattern recognition across la
 
 ### People Layer
 
-AI can help you identify overload on specific roles. If the same person appears in twelve different steps, that is a bottleneck waiting to happen. If handoffs ping-pong between too many people, that creates delays and errors.
+AI can help you identify overload on specific roles. If the same person appears in twelve different steps, that is a bottleneck waiting to happen. When that person is the owner, you are looking at the [founder bottleneck](/founder-bottlenecks) rather than a process design problem. If handoffs ping-pong between too many people, that creates delays and errors.
 
 AI can flag excessive handoffs, surface single points of failure, and suggest where roles might be consolidated or clarified.
 

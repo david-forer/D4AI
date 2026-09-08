@@ -1,0 +1,333 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const pageUrl = 'https://davidjforer.com/founder-bottleneck-test';
+const datePublished = '2026-09-08';
+const dateModified = '2026-09-08';
+const calendly = 'https://calendly.com/david-j-forer/30min';
+
+// Ordered earliest to latest. The ordering is the point: most founders only
+// recognise signs 5 and 6, by which time the cheap fixes have expired.
+const signs = [
+  {
+    n: 1,
+    stage: 'Earliest',
+    title: 'Your team stops deciding without you',
+    tell: 'Not because they cannot. Because they worked out that bringing it to you is safer than getting it wrong.',
+    check: 'Ask three people what the last decision was that they made without checking with you first. If they have to think hard, you have your answer.',
+  },
+  {
+    n: 2,
+    stage: 'Early',
+    title: 'Queue time creeps up on routine work',
+    tell: 'Not the hard calls. The ordinary ones. A discount approval, a scope question, a supplier choice.',
+    check: 'Ask your team how long they typically wait between raising something routine and hearing back. More than one working day means the business is running at your latency rather than its own.',
+  },
+  {
+    n: 3,
+    stage: 'Building',
+    title: 'Everyone reports to you and nobody reports to each other',
+    tell: 'A hub and spoke company. Information reaches you and stops, because you are the only person who sees the whole picture.',
+    check: 'Draw who talks to whom in a normal week without you in the room. If most of the lines cross your desk, the structure is the constraint.',
+  },
+  {
+    n: 4,
+    stage: 'Building',
+    title: 'You are the escalation path for anything unusual',
+    tell: 'Every exception routes to you, because no exception has ever been written down. Your team is not avoiding responsibility. They have no criteria.',
+    check: 'Count the interruptions in one week that were genuinely novel versus ones you have handled before in some form. The repeats are documentation you never wrote.',
+  },
+  {
+    n: 5,
+    stage: 'Late',
+    title: 'Your best person leaves',
+    tell: 'Top talent goes first, and the reason is structural. The people most able to decide are the ones most frustrated by not being allowed to.',
+    check: 'Look at your last two resignations. If either of them had been asking for more ownership in the six months before they left, that was the signal.',
+  },
+  {
+    n: 6,
+    stage: 'Latest',
+    title: 'Revenue is capped by your calendar',
+    tell: 'Growth now tracks your availability rather than demand. More marketing produces more work you personally cannot absorb.',
+    check: 'Take two consecutive weeks off with your phone off and list what would break. Most founders will not run this test, and refusing to run it is itself the finding.',
+  },
+];
+
+const types = [
+  {
+    name: 'Decision bottleneck',
+    when: 'You recognised signs 1 and 2 most strongly.',
+    move: 'Write spending thresholds, name an owner for each recurring decision type, and set a default of proceed unless told otherwise on anything reversible.',
+  },
+  {
+    name: 'CEO bottleneck',
+    when: 'You recognised signs 3 and 4 most strongly.',
+    move: 'Separate the work only you can do, meaning direction, key relationships and capital, from the work that has simply never been handed over. Then hand the second pile over and stop reviewing it.',
+  },
+  {
+    name: 'Owner bottleneck',
+    when: 'You recognised signs 5 and 6 most strongly.',
+    move: 'Move what you know out of your head and into checklists, thresholds and tools a competent employee can follow without asking. Start with client onboarding and quoting.',
+  },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article',
+      '@id': `${pageUrl}#article`,
+      headline: 'The Founder Bottleneck Test: Six Signs, in the Order They Appear',
+      description:
+        'A self-diagnosis for founders. Six signs you have become the bottleneck in your own business, ordered from earliest to latest, with a check you can run this week.',
+      mainEntityOfPage: pageUrl,
+      url: pageUrl,
+      datePublished,
+      dateModified,
+      author: { '@type': 'Person', name: 'David J Forer', url: 'https://davidjforer.com/about' },
+      publisher: { '@type': 'Person', name: 'David J Forer', url: 'https://davidjforer.com' },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${pageUrl}#faq`,
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What is the first sign that a founder has become the bottleneck?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'The first sign is that the team stops making decisions without the founder. Not because they lack the ability, but because they have learned that bringing everything to the founder is safer than deciding and being wrong. It appears well before the founder feels overloaded, which is why it is usually missed.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How do I know if I am the bottleneck in my own business?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Run three checks. Ask your team the last decision they made without checking with you. Measure how long they wait for an answer on routine items, where more than one working day is a problem. Then take two consecutive weeks off with your phone off and list what breaks. Refusing to run the third test is itself a result.',
+          },
+        },
+      ],
+    },
+  ],
+};
+---
+
+<Layout
+  title="The Founder Bottleneck Test: Six Signs, in Order | A Free Self-Diagnosis for Owner-Dependent Businesses, What the Earliest Warning Sign Actually Is, How to Check Each One This Week, and the First Move for Each Type – Forersight"
+  description="A free self-diagnosis for founders. Six signs you have become the bottleneck in your own business, ordered earliest to latest, each with a check you can run this week."
+>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
+
+  <div class="bg-white">
+    <!-- Hero -->
+    <section class="bg-gradient-to-br from-blue-700 to-blue-900 text-white">
+      <div class="max-w-3xl mx-auto px-6 py-20">
+        <p class="text-blue-200 text-sm font-semibold uppercase tracking-wider mb-4">Free self-diagnosis. No email required.</p>
+        <h1 class="text-4xl md:text-5xl font-light leading-tight mb-6">
+          The Founder Bottleneck Test
+          <span class="block text-xl md:text-2xl opacity-80 mt-3">Six signs, in the order they actually appear</span>
+        </h1>
+        <p class="text-lg text-blue-50 leading-relaxed mb-4">
+          Most lists of bottleneck symptoms are unordered, which makes them useless. By the time you recognise the
+          famous ones, the cheap fixes have expired.
+        </p>
+        <p class="text-lg text-blue-50 leading-relaxed">
+          These six are sequenced from earliest to latest. Read down until one stops feeling hypothetical. That is
+          roughly where your business is.
+        </p>
+      </div>
+    </section>
+
+    <!-- Framing -->
+    <section class="max-w-3xl mx-auto px-6 py-14">
+      <p class="text-lg text-gray-700 leading-relaxed mb-5">
+        First, the part that most of this advice gets wrong. Being in everything was the correct decision once. In a
+        company of three people, a founder who reviews every quote and answers every difficult client email is not
+        micromanaging. They are doing the job properly, and the tight feedback loop is a genuine advantage.
+      </p>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        Nothing about that behaviour changed. The company grew around it. So the question is not whether you have been
+        doing something wrong. It is whether the thing that worked at three people is still working at fifteen.
+      </p>
+    </section>
+
+    <!-- The six signs -->
+    <section class="max-w-3xl mx-auto px-6 pb-8">
+      <ol class="signs">
+        {signs.map((s) => (
+          <li>
+            <div class="sign-head">
+              <span class="sign-num">{s.n}</span>
+              <span class="sign-stage">{s.stage}</span>
+            </div>
+            <h2>{s.title}</h2>
+            <p class="sign-tell">{s.tell}</p>
+            <p class="sign-check"><strong>Check it this week:</strong> {s.check}</p>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <!-- Mid-page CTA -->
+    <section class="max-w-3xl mx-auto px-6 py-10">
+      <div class="rounded-xl bg-blue-50 border border-blue-200 p-8">
+        <h2 class="text-2xl font-light text-gray-900 mb-3">Recognised three or more?</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Then it is worth thirty minutes to work out which kind you have and what the first move is. No pitch, no
+          deck. If the answer is that you can fix it yourself, I will tell you that.
+        </p>
+        <a href={calendly} target="_blank" rel="noopener" class="inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-7 py-3.5 rounded-lg transition duration-200">
+          Book a 30 minute call
+        </a>
+      </div>
+    </section>
+
+    <!-- Which type -->
+    <section class="max-w-3xl mx-auto px-6 py-10">
+      <h2 class="text-3xl font-light text-gray-900 mb-4">Which one do you have?</h2>
+      <p class="text-lg text-gray-700 leading-relaxed mb-8">
+        The three types need opposite responses, which is why a generic answer does not help. Match whichever signs
+        you recognised most strongly.
+      </p>
+      <div class="space-y-6">
+        {types.map((t) => (
+          <div class="border-l-4 border-blue-500 pl-6 py-1">
+            <h3 class="text-xl font-semibold text-gray-900 mb-1">{t.name}</h3>
+            <p class="text-sm text-gray-500 mb-3">{t.when}</p>
+            <p class="text-gray-700 leading-relaxed">{t.move}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- The one that is not a bottleneck -->
+    <section class="max-w-3xl mx-auto px-6 py-10">
+      <h2 class="text-3xl font-light text-gray-900 mb-4">When it is not a bottleneck</h2>
+      <p class="text-lg text-gray-700 leading-relaxed mb-5">
+        Worth ruling out before you change anything. If your team is genuinely at capacity, the process works and
+        there simply is not enough of it, then you have a capacity problem and hiring fixes it.
+      </p>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        The two look identical from the outside and need opposite responses. Adding people to a systems problem makes
+        the queue longer, not shorter. That distinction is the whole reason to run the checks rather than guess.
+      </p>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="bg-gray-50 border-t border-gray-200">
+      <div class="max-w-3xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-light text-gray-900 mb-4">Go further</h2>
+        <p class="text-lg text-gray-700 leading-relaxed mb-8">
+          The full diagnostic framework, the four constraint areas, and what a structured intervention looks like are
+          covered in <a href="/founder-bottlenecks" class="text-blue-700 underline">the founder bottleneck guide</a>.
+          If you would rather talk it through, the call is free and thirty minutes.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href={calendly} target="_blank" rel="noopener" class="inline-block text-center bg-blue-700 hover:bg-blue-800 text-white font-semibold px-7 py-3.5 rounded-lg transition duration-200">
+            Book a 30 minute call
+          </a>
+          <a href="/founder-bottlenecks" class="inline-block text-center bg-white border border-gray-300 hover:border-blue-500 text-gray-800 font-semibold px-7 py-3.5 rounded-lg transition duration-200">
+            Read the full guide
+          </a>
+        </div>
+        <p class="text-sm text-gray-500 mt-8">
+          By <a href="/about" class="underline">David J Forer</a>
+          <span class="mx-2">·</span>
+          Updated <time datetime={dateModified}>September 8, 2026</time>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    .signs {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      counter-reset: sign;
+    }
+
+    .signs > li {
+      padding: 2rem 0;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .signs > li:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .sign-head {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .sign-num {
+      width: 1.75rem;
+      height: 1.75rem;
+      border-radius: 9999px;
+      background: #1d4ed8;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    .sign-stage {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #6b7280;
+    }
+
+    .signs h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #111827;
+      margin: 0 0 0.75rem;
+      line-height: 1.3;
+    }
+
+    .sign-tell {
+      font-size: 1.0625rem;
+      color: #374151;
+      line-height: 1.7;
+      margin: 0 0 1rem;
+    }
+
+    .sign-check {
+      font-size: 1rem;
+      color: #4b5563;
+      line-height: 1.7;
+      margin: 0;
+      background: #f9fafb;
+      border-left: 3px solid #93c5fd;
+      padding: 0.875rem 1.125rem;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .sign-check strong {
+      color: #1d4ed8;
+      font-weight: 600;
+    }
+
+    /* Print as a clean one-pager. */
+    @media print {
+      :global(nav), :global(footer), .sign-stage { display: none !important; }
+      :global(body) { background: #ffffff !important; }
+      .signs > li { padding: 0.9rem 0; break-inside: avoid; }
+      .signs h2 { font-size: 1.05rem; }
+      .sign-tell, .sign-check { font-size: 0.85rem; line-height: 1.45; }
+      .sign-check { background: none; border-left: 2px solid #999; }
+      section { padding: 0.5rem 0 !important; }
+      a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.7rem; }
+    }
+  </style>
+</Layout>

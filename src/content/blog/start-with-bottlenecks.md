@@ -19,6 +19,8 @@ But tool accumulation rarely solves the underlying problem. It just creates more
 
 The businesses that actually improve their operations do not start with tools. They start with bottlenecks.
 
+In a company under twenty people, that bottleneck is usually the owner. The [founder bottleneck](/founder-bottlenecks) is its own diagnostic problem, and it is worth ruling out before you go looking at software.
+
 ## Tool Accumulation Fatigue
 
 Most businesses accumulate tools faster than they can integrate them.

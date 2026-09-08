@@ -34,7 +34,7 @@ There is a useful diagnostic question to ask before any significant hire: if we 
 
 If the bottleneck is genuinely capacity (there is simply more demand than the current team can physically complete), doubling the team would largely solve it. The process works. There just is not enough of it.
 
-If the bottleneck is a systems problem, doubling the volume makes everything worse. More work flowing through a broken handoff creates more broken handoffs. More tasks entering an undefined workflow creates more chaos. More decisions routing through the founder because there is no system for anyone else to make them creates a founder who is even further underwater.
+If the bottleneck is a systems problem, doubling the volume makes everything worse. More work flowing through a broken handoff creates more broken handoffs. More tasks entering an undefined workflow creates more chaos. More decisions routing through the founder because there is no system for anyone else to make them creates a founder who is even further underwater. That is the [founder bottleneck](/founder-bottlenecks), and hiring into it makes the queue longer rather than shorter.
 
 Most growing small businesses that feel the pressure to hire are in the second category. The work is not outpacing capacity. The work is outpacing the structure available to manage it.
 
