@@ -51,9 +51,14 @@ const redirects = {
   '/blog/category/operations':                      '/blog',
   '/blog/category/ai':                              '/blog',
 
-  // Old content/resource pages
-  '/small-business-seo-videos':                     '/free-resources',
-  '/seo-ai-resources':                              '/free-resources',
+  // Old content/resource pages. Everything in this family now lands on
+  // /resources, which is the only one of the four that ranks (position 2.5).
+  // /free-resources and /seo-ai-resources were theme carry-overs advertising
+  // downloads and priced products that never existed, so they are retired
+  // rather than left to compete with /resources for the same intent.
+  '/small-business-seo-videos':                     '/resources',
+  '/seo-ai-resources':                              '/resources',
+  '/free-resources':                                '/resources',
   '/guides-templates':                              '/resources',
   '/resources/checklist':                           '/resources',
 };
