@@ -48,7 +48,12 @@ await expectRedirect('/about/', '/about');
 await expectRedirect('/blog/ai-agents-vs-chatbots/', '/blog/ai-agents-vs-chatbots');
 await expectRedirect('/about-me', '/about');
 await expectRedirect('/local-seo-system', '/seo-accelerator');
-await expectRedirect('/seo-ai-resources', '/free-resources');
+// The whole resources family folds into /resources. /free-resources and
+// /seo-ai-resources were retired, so these must resolve in one hop rather than
+// chaining through a page that no longer exists.
+await expectRedirect('/seo-ai-resources', '/resources');
+await expectRedirect('/free-resources', '/resources');
+await expectRedirect('/small-business-seo-videos', '/resources');
 await expectRedirect('/blog/category/automation', '/blog');
 
 // 3. Core pages and files
