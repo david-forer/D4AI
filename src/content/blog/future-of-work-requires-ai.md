@@ -2,7 +2,7 @@
 title: "The Future of Work Requires AI Literacy: Here's How to Start"
 description: "AI literacy is becoming a job requirement. Learn what it means, build it systematically with the 3 pillars framework, and integrate it into onboarding for lasting competitive advantage."
 pubDate: 2025-12-17T00:00:00Z
-tags: ["ai", "training", "operations", "ai-readiness"]
+tags: ["ai-readiness"]
 heroImage: "/images/blog/future-of-work-requires-ai.webp"
 articleType: "cluster"
 ---

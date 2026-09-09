@@ -2,7 +2,7 @@
 title: "AI for Financial Operations: From Manual Reporting to an Automated Finance Function"
 description: "Financial operations in most small businesses is a monthly scramble. Here's how to design an AI-powered finance layer that gives you real-time visibility, automated reporting, and better decisions."
 pubDate: 2026-03-19T00:00:00Z
-tags: ["ai", "operations", "finance", "business", "ai-for-business"]
+tags: ["business-functions"]
 heroImage: "/images/blog/ai-for-financial-operations.webp"
 articleType: "cluster"
 ---

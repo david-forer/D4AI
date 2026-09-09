@@ -2,7 +2,7 @@
 title: "AI Strategy Mistakes That Cost Small Businesses Time and Money"
 description: "The most common AI strategy mistakes small businesses make, why smart founders fall into them, and how to avoid the patterns that produce expensive dead ends."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai strategy", "ai mistakes", "small business", "ai implementation", "operations"]
+tags: ["ai-strategy"]
 heroImage: "/images/blog/ai-strategy-mistakes-small-business.webp"
 articleType: "cluster"
 ---

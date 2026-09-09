@@ -2,7 +2,7 @@
 title: "Upskilling vs. Hiring for AI Capability: The Real Cost Comparison for Small Businesses"
 description: "When your team lacks AI capability, the instinct is often to hire someone who has it. The math usually does not support that decision. Here is how to think through the build-vs-buy question for AI skills in a small business."
 pubDate: 2026-03-07T00:00:00Z
-tags: ["ai-training", "team-adoption", "small-business", "operations"]
+tags: ["ai-training"]
 heroImage: "/images/blog/upskilling-vs-hiring-ai.webp"
 articleType: "cluster"
 ---

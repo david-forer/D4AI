@@ -2,7 +2,7 @@
 title: "Automation Isn't a Tool. It's a Strategic Decision"
 description: "Most businesses treat automation as software. That mindset creates fragility. Automation is a strategic decision that changes how your business operates."
 pubDate: 2025-12-19T00:00:00Z
-tags: ["automation", "operations", "business", "strategy"]
+tags: ["automation"]
 heroImage: "/images/blog/strategic-decision.webp"
 articleType: "cluster"
 ---

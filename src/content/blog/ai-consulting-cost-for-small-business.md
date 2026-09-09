@@ -2,7 +2,7 @@
 title: "AI Consulting Cost for Small Business: What to Expect"
 description: "Understand what AI consulting actually costs for small businesses, what drives those costs, and how to evaluate whether the investment makes sense."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai consulting", "cost", "pricing", "small business", "ROI"]
+tags: ["hiring-an-ai-consultant"]
 heroImage: "/images/blog/ai-consulting-cost-for-small-business.webp"
 articleType: "cluster"
 ---

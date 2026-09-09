@@ -2,7 +2,7 @@
 title: "How to Budget for AI Training in a Small Business"
 description: "Most small businesses either overspend on the wrong things or underspend on what actually drives adoption. Here is how to think about AI training investment and where to allocate it for the highest return."
 pubDate: 2026-03-07T00:00:00Z
-tags: ["ai-training", "team-adoption", "small-business", "operations"]
+tags: ["ai-training"]
 heroImage: "/images/blog/ai-training-budget-small-business.webp"
 articleType: "cluster"
 ---

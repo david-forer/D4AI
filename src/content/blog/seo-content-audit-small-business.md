@@ -2,7 +2,7 @@
 title: "How to Run an SEO Content Audit for a Small Business Website"
 description: "A content audit identifies which pages are earning their place, which can be improved, which should be merged, and which are actively hurting your authority. Here is how to run one without a team of analysts."
 pubDate: 2026-03-04T00:00:00+01:00
-tags: [seo, content-audit, content-strategy, topical-authority]
+tags: ["seo"]
 heroImage: "/images/blog/seo-content-audit.webp"
 draft: false
 articleType: "cluster"

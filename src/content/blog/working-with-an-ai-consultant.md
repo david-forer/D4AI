@@ -3,7 +3,7 @@ title: "Working with an AI Consultant: The Complete Guide for Small Business Fou
 seoTitle: "Working With an AI Consultant – What a Real Engagement Looks Like and What Results Are Realistic for Small Businesses – Cost, Timing, and How to Choose the Right Fit – Forersight"
 description: "What an AI consulting engagement actually involves, what it costs, what results are realistic, and how to know whether now is the right time for your business."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai-consulting", "ai-operations", "small-business", "operations"]
+tags: ["hiring-an-ai-consultant"]
 heroImage: "/images/blog/working-with-an-ai-consultant.webp"
 articleType: "pillar"
 ---

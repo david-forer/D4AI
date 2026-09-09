@@ -3,7 +3,7 @@ title: "AI Strategy for Small Businesses: A Practical Framework for Getting Real
 seoTitle: "AI Strategy for Small Businesses – A Practical Framework for Getting Real Results Without a Technical Team – Build an AI Implementation Plan Aligned to Your Business Goals – Forersight"
 description: "Most small businesses approach AI by buying tools before having a strategy. Here is how to build an AI strategy for your small business that produces real results without a technical team."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai", "strategy", "small-business", "operations"]
+tags: ["ai-strategy"]
 heroImage: "/images/blog/ai-strategy-for-small-businesses.webp"
 articleType: "pillar"
 ---

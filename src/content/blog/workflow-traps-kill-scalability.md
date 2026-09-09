@@ -2,7 +2,7 @@
 title: "The 3 Workflow Traps That Kill Scalability"
 description: "Explains the hero, spaghetti, and custom code workflow traps that quietly limit growth in small businesses, and how to design operations that scale beyond early success."
 pubDate: 2025-12-09T00:00:00Z
-tags: ["ai", "operations", "business", "workflow-systems"]
+tags: ["workflow-systems"]
 heroImage: "/images/blog/workflow-traps.webp"
 articleType: "cluster"
 ---

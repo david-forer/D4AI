@@ -2,7 +2,7 @@
 title: "How to Calculate Automation ROI and Build the Business Case"
 description: "Most automation decisions are made on gut feel. Here is a practical framework for calculating the real cost of manual work, estimating the value of automating it, and prioritizing which processes to build first."
 pubDate: 2026-03-07T00:00:00+01:00
-tags: [automation, operations, roi, small-business, ai-operations]
+tags: ["automation"]
 heroImage: "/images/blog/automation-roi-business-case.webp"
 draft: false
 articleType: "cluster"

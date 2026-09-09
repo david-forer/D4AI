@@ -2,7 +2,7 @@
 title: "Free vs. Paid AI Tools for Small Business: What You Actually Need"
 description: "Free tiers are designed to get you in the door. Here is an honest breakdown of where free AI tools are genuinely sufficient and where the paid upgrade actually pays for itself."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai", "tools", "budget", "small-business", "operations"]
+tags: ["ai-tools"]
 heroImage: "/images/blog/free-vs-paid-ai-tools.webp"
 articleType: "cluster"
 ---

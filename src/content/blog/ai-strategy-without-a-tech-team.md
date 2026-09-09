@@ -2,7 +2,7 @@
 title: "How to Build an AI Strategy Without a Tech Team"
 description: "AI strategy does not require a CTO, a developer, or a dedicated IT function. Here is what it actually takes for founders without a technical background."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai strategy", "small business", "non-technical founders", "ai implementation", "operations"]
+tags: ["ai-strategy"]
 heroImage: "/images/blog/ai-strategy-without-a-tech-team.webp"
 articleType: "cluster"
 ---

@@ -2,7 +2,7 @@
 title: "Workflow Debt: The Invisible Drag on Your Business Ops"
 description: "Spells out how invisible workflow debt accumulates through manual work, shadow processes, hand-offs, and outdated tools, and how it quietly constrains growth."
 pubDate: 2025-12-09T00:00:00Z
-tags: ["ai", "operations", "business", "workflow-systems"]
+tags: ["workflow-systems"]
 heroImage: "/images/blog/workflow-debt.webp"
 articleType: "cluster"
 ---

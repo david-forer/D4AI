@@ -3,7 +3,8 @@ title: "AI Governance for Small Businesses: How to Use AI Safely Without a Compl
 seoTitle: "AI Governance for Small Businesses – How to Manage AI Policy, Risk, Data Security and Shadow AI Without a Compliance Department – A Practical Framework for Founder-Led Firms – Forersight"
 description: "Most small businesses adopt AI with no rules around data, tools, or review. Here is a practical governance framework that manages AI risk and security without a compliance team."
 pubDate: 2026-07-12T00:00:00Z
-tags: ["ai-governance", "ai-policy", "security", "risk", "small-business"]
+tags: ["ai-readiness"]
+pillar: "ai-governance-for-small-businesses"
 heroImage: "/images/blog/ai-governance-for-small-businesses.webp"
 articleType: "pillar"
 ---

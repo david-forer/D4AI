@@ -2,7 +2,7 @@
 title: "How to Design Workflows That Adapt Instead of Breaking"
 description: "Describes why brittle workflows fail and outlines practical design principles for building resilient, adaptable processes that handle change gracefully."
 pubDate: 2025-12-09T00:00:00Z
-tags: ["ai", "operations", "business", "workflow-systems"]
+tags: ["workflow-systems"]
 heroImage: "/images/blog/false-reliance.webp"
 articleType: "cluster"
 ---

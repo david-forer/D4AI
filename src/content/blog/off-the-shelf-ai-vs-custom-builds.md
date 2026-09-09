@@ -2,7 +2,7 @@
 title: "Off-the-Shelf AI vs. Custom Builds: How to Make the Right Call for Your Business"
 description: "Custom AI sounds impressive. For most small businesses, it is the wrong choice. Here is how to think through the build vs. buy decision without getting distracted by what is technically possible."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai", "custom-ai", "build-vs-buy", "small-business", "tech-strategy"]
+tags: ["ai-tools"]
 heroImage: "/images/blog/off-shelf-vs-custom-ai.webp"
 articleType: "cluster"
 ---

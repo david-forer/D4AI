@@ -2,7 +2,7 @@
 title: "The Lean AI Tech Stack: What Growing Small Businesses Actually Need"
 description: "More tools do not mean better operations. Here is what a right-sized AI tech stack actually looks like at different stages of small business growth, and the principles that keep it from getting unwieldy."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai", "tech-stack", "operations", "small-business", "growth"]
+tags: ["ai-tools"]
 heroImage: "/images/blog/lean-ai-stack.webp"
 articleType: "cluster"
 ---

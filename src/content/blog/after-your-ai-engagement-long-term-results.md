@@ -2,7 +2,7 @@
 title: "After Your AI Engagement: Long-Term Results and What Comes Next"
 description: "What happens after your AI consultant leaves, how to sustain the systems you built, and when to bring outside help back in."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai consulting", "ai implementation", "long-term ROI", "automation", "small business"]
+tags: ["hiring-an-ai-consultant"]
 heroImage: "/images/blog/after-your-ai-engagement-long-term-results.webp"
 articleType: "cluster"
 ---

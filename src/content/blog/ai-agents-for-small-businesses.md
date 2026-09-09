@@ -3,7 +3,8 @@ title: "AI Agents for Small Businesses: What They Actually Are and Where They Ea
 seoTitle: "AI Agents for Small Businesses – What AI Agents Actually Are, How They Differ From Automations and Chatbots, and Where They Deliver Real Results for Founder-Led Firms – Forersight"
 description: "AI agents are hyped and misunderstood. Here is what an AI agent actually is, how it differs from automation, where it earns its place in a small business, and how to deploy one safely."
 pubDate: 2026-07-12T00:00:00Z
-tags: ["ai-agents", "automation", "operations", "small-business"]
+tags: ["ai-tools"]
+pillar: "ai-agents-for-small-businesses"
 heroImage: "/images/blog/ai-agents-for-small-businesses.webp"
 articleType: "pillar"
 ---

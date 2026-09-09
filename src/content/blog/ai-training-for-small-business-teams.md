@@ -2,7 +2,7 @@
 title: "AI Training for Small Business Teams: Workshops and Systems Upgrades"
 description: "Practical AI training changes the game for small teams. Learn how hands-on workshops and operational upgrades turn AI tools into productivity multipliers for your business."
 pubDate: 2025-11-09T00:00:00Z
-tags: ["ai-training", "small-business", "team-productivity", "ai-workshops", "business-automation"]
+tags: ["ai-training"]
 heroImage: "/images/blog/ai-training-for-small-business-teams.webp"
 articleType: "cluster"
 ---

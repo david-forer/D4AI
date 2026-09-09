@@ -3,7 +3,8 @@ title: "When to Use an AI Agent: 4 Thresholds a Workflow Must Clear"
 seoTitle: "When to Use an AI Agent – The 4 Thresholds a Single Workflow Has to Clear Before an Agent Earns Its Cost, the Jobs That Qualify in a Firm of 5 to 115 People, and the Near Misses That Waste Six Months – Forersight"
 description: "When to use an AI agent is a workflow question. Here are the 4 thresholds a single job has to clear before an agent earns what it costs to run and monitor."
 pubDate: 2026-09-04T00:00:00Z
-tags: ["ai-agents", "automation", "operations", "small-business"]
+tags: ["ai-tools"]
+pillar: "ai-agents-for-small-businesses"
 heroImage: "/images/blog/when-to-use-an-ai-agent.webp"
 articleType: "cluster"
 ---

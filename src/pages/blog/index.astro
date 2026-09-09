@@ -1,6 +1,7 @@
 ﻿---
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import { HUBS } from "../../lib/hubs";
 import SimpleContainer from '../../components/SimpleContainer.astro';
 
 // Posts per page
@@ -25,15 +26,9 @@ const paginatedPosts = sortedPosts.slice(startIndex, endIndex);
 const defaultPostImage = "/images/ai operations logo.webp";
 
 // Define categories for the navigation
-const categories = [
-  { name: "AI Operations", slug: "ai-operations" },
-  { name: "Workflow Systems", slug: "workflow-systems" },
-  { name: "AI Automation", slug: "automation" },
-  { name: "AI Training", slug: "ai-training" },
-  { name: "AI Readiness", slug: "ai-readiness" },
-  { name: "SEO + AI", slug: "seo" },
-  { name: "AI for Business", slug: "ai-for-business" },
-];
+// Nav chips come from src/lib/hubs.ts so this list can never drift from the
+// hub pages it links to.
+const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
 
 // Generate page numbers for pagination
 const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);

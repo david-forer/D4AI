@@ -9,7 +9,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "check": "node scripts/site-check.mjs"
+    "check": "node scripts/site-check.mjs",
+    "nest": "node scripts/generate-nesting.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.9",

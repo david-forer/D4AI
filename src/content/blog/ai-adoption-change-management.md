@@ -2,7 +2,7 @@
 title: "The Change Management Checklist for AI Adoption in Small Businesses"
 description: "AI adoption is a behavior change initiative, not a technology deployment. Managing it with the discipline of change management produces outcomes that technology rollouts alone cannot. Here is the complete checklist."
 pubDate: 2026-03-07T00:00:00Z
-tags: ["ai-training", "team-adoption", "small-business", "operations"]
+tags: ["ai-training"]
 heroImage: "/images/blog/ai-adoption-change-management.webp"
 articleType: "cluster"
 ---

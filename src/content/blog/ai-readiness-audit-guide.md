@@ -2,7 +2,7 @@
 title: "AI Readiness Audit for Small Businesses"
 description: "A practical guide to assessing data, systems, culture, skills, and governance so AI investments align with business goals. Learn how an AI readiness audit helps prioritize high-ROI use cases and avoid tool-first adoption."
 pubDate: 2025-12-09T00:00:00Z
-tags: ["ai", "operations", "business", "ai-readiness"]
+tags: ["ai-readiness"]
 heroImage: "/images/blog/backwards-ai-audit.webp"
 articleType: "cluster"
 ---

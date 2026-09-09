@@ -2,7 +2,7 @@
 title: "Why AI Adoption Fails in Small Businesses (The Real Reasons)"
 description: "Most small business AI implementations underdeliver or collapse entirely. The causes are consistent and preventable. Understanding why AI adoption fails is the first step to making sure yours does not."
 pubDate: 2026-03-07T00:00:00Z
-tags: ["ai-training", "team-adoption", "small-business", "operations"]
+tags: ["ai-training"]
 heroImage: "/images/blog/why-ai-adoption-fails.webp"
 articleType: "cluster"
 ---

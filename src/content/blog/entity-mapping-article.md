@@ -2,7 +2,7 @@
 title: "Entity Mapping: A Practical Framework for Modern SEO"
 description: "A step-by-step guide to using entity mapping to improve search visibility by helping engines understand context, relationships, and topical authority beyond keywords."
 pubDate: 2025-12-09T00:00:00Z
-tags: ["ai", "operations", "business"]
+tags: ["seo"]
 heroImage: "/images/blog/entity-mapping.webp"
 articleType: "cluster"
 ---

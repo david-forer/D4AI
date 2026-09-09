@@ -2,7 +2,7 @@
 title: "How to Measure AI Training Success in a Small Business"
 description: "If you cannot measure whether your AI training is working, you cannot improve it or justify continuing it. Here is a practical framework for tracking the metrics that actually tell you something useful."
 pubDate: 2026-03-07T00:00:00Z
-tags: ["ai-training", "team-adoption", "small-business", "operations"]
+tags: ["ai-training"]
 heroImage: "/images/blog/ai-training-performance-metrics.webp"
 articleType: "cluster"
 ---

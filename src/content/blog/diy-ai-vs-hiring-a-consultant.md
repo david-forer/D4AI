@@ -2,7 +2,7 @@
 title: "DIY AI vs. Hiring a Consultant: How to Decide"
 description: "Should you build AI systems yourself or bring in a consultant? This guide walks through where DIY works, where it breaks down, and how to make the call."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai consulting", "diy ai", "automation", "small business", "build vs buy"]
+tags: ["hiring-an-ai-consultant"]
 heroImage: "/images/blog/diy-ai-vs-hiring-a-consultant.webp"
 articleType: "cluster"
 ---

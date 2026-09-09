@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import { HUBS } from "../../lib/hubs";
 import SimpleContainer from '../../components/SimpleContainer.astro';
 import Seo from '../../components/Seo.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
@@ -61,15 +62,8 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString('en-US', {
 });
 
 // Define categories for the navigation
-const categories = [
-  { name: "AI Operations", slug: "ai-operations" },
-  { name: "Workflow Systems", slug: "workflow-systems" },
-  { name: "AI Automation", slug: "automation" },
-  { name: "AI Training", slug: "ai-training" },
-  { name: "AI Readiness", slug: "ai-readiness" },
-  { name: "SEO + AI", slug: "seo" },
-  { name: "AI for Business", slug: "ai-for-business" },
-];
+// Hub chip on the post. Source of truth is src/lib/hubs.ts.
+const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
 ---
 
 <Fragment>

@@ -2,7 +2,7 @@
 title: "How to Build an AI Tech Stack for a Small Business"
 description: "Building an AI tech stack is not about picking the best tools. It is about designing a system that matches how your business actually operates. Here is how to do it in the right order."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai", "tech-stack", "operations", "automation", "small-business"]
+tags: ["ai-tools"]
 heroImage: "/images/blog/build-ai-tech-stack.webp"
 articleType: "cluster"
 ---

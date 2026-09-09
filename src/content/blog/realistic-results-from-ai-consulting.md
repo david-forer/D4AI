@@ -2,7 +2,7 @@
 title: "Realistic Results from AI Consulting for Small Businesses"
 description: "What AI consulting actually delivers for small businesses, how long it takes, and how to measure whether it is working."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai consulting", "ROI", "results", "small business", "ai implementation"]
+tags: ["hiring-an-ai-consultant"]
 heroImage: "/images/blog/realistic-results-from-ai-consulting.webp"
 articleType: "cluster"
 ---

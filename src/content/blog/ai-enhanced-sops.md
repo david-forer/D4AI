@@ -2,7 +2,7 @@
 title: "How to Build AI-Enhanced SOPs for Your Small Business Team"
 description: "Standard operating procedures are the infrastructure of operational consistency. When AI is embedded in the SOP itself, adoption becomes structural rather than optional. Here is how to build them."
 pubDate: 2026-03-07T00:00:00Z
-tags: ["ai-training", "team-adoption", "small-business", "operations"]
+tags: ["ai-training"]
 heroImage: "/images/blog/ai-enhanced-sops.webp"
 articleType: "cluster"
 ---

@@ -2,7 +2,7 @@
 title: "AI Automations: The Complete Guide to Intelligent Automation in Business"
 description: "Learn how AI automation works, explore the leading tools, and discover how to implement intelligent automation effectively in your business."
 pubDate: 2025-05-12T00:00:00Z
-tags: ["ai", "automation", "business"]
+tags: ["automation"]
 heroImage: "/images/blog/adaptive-intelligence.webp"
 articleType: "cluster"
 ---

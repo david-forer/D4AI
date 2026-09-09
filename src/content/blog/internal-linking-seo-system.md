@@ -2,7 +2,7 @@
 title: "Internal Linking as an SEO System: How Small Teams Build Topical Authority Through Site Architecture"
 description: "Internal linking is not a technical checkbox. It is the operational system that determines how authority flows through your site and whether your cluster strategy actually works."
 pubDate: 2026-03-04T00:00:00+01:00
-tags: [seo, internal-linking, topical-authority, content-strategy]
+tags: ["seo"]
 heroImage: "/images/blog/internal-linking-system.webp"
 draft: false
 articleType: "cluster"

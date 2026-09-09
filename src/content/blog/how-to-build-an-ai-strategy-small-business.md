@@ -2,7 +2,7 @@
 title: "How to Build an AI Strategy for Your Small Business"
 description: "A practical, step-by-step framework for building an AI strategy that connects technology investments to real operational outcomes. No technical background required."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai strategy", "small business", "ai planning", "operations"]
+tags: ["ai-strategy"]
 heroImage: "/images/blog/how-to-build-an-ai-strategy-small-business.webp"
 articleType: "cluster"
 ---

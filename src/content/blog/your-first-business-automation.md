@@ -2,7 +2,7 @@
 title: "How to Build Your First Business Automation Without Breaking Your Operations"
 description: "The first automation a business builds sets the tone for everything that follows. Start with the wrong process and you create complexity without results. Here is how to choose the right one and build it so it actually holds."
 pubDate: 2026-03-07T00:00:00+01:00
-tags: [automation, operations, small-business, ai-operations]
+tags: ["automation"]
 heroImage: "/images/blog/your-first-business-automation.webp"
 draft: false
 articleType: "cluster"

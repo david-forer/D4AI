@@ -2,7 +2,7 @@
 title: "Process Mapping: The Foundation of Successful Automation"
 description: "A pragmatic guide to mapping real workflows so businesses can identify automation-ready processes and avoid automating confusion."
 pubDate: 2025-12-09T00:00:00Z
-tags: ["ai", "operations", "business"]
+tags: ["automation"]
 heroImage: "/images/blog/business-processes.webp"
 articleType: "cluster"
 ---

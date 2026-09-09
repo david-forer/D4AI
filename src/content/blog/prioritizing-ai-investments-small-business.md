@@ -2,7 +2,7 @@
 title: "How to Prioritize AI Investments on a Small Business Budget"
 description: "A practical framework for deciding which AI investments to make first when budget and team capacity are limited."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai strategy", "ai investments", "small business", "budget", "prioritization"]
+tags: ["ai-strategy"]
 heroImage: "/images/blog/prioritizing-ai-investments-small-business.webp"
 articleType: "cluster"
 ---

@@ -2,7 +2,7 @@
 title: "AI Upskilling for Non-Technical Teams: A Practical Guide"
 description: "Train non-technical employees on AI without requiring Python or coding skills. A practical curriculum from basics to workflow automation, overcoming resistance, and measuring ROI."
 pubDate: 2025-12-17T00:00:00Z
-tags: ["ai", "training", "operations"]
+tags: ["ai-training"]
 heroImage: "/images/blog/intelligent-automation.webp"
 articleType: "cluster"
 ---

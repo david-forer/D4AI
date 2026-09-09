@@ -57,6 +57,11 @@ const redirects = {
   '/seo-news':                                      '/blog',
   '/category/small-business-seo':                  '/blog',
   '/blog/category/business':                        '/blog',
+
+  // Hub renamed. "AI for Business" described the whole site rather than
+  // dividing it. What actually separates those posts is the department, so the
+  // hub is now business-functions, "AI by Business Function".
+  '/blog/category/ai-for-business':                 '/blog/category/business-functions',
   '/blog/category/operations':                      '/blog',
   '/blog/category/ai':                              '/blog',
 

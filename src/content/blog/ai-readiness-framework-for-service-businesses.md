@@ -3,7 +3,7 @@ title: "AI Readiness Framework for Service Businesses: Why Most Firms Get It Wro
 seoTitle: "AI Readiness Framework for Service Businesses – Five Dimensions That Determine Whether Your AI Investment Will Deliver or Fall Apart – Assess and Score Your Operational Readiness – Forersight"
 description: "Most service firms think they're AI ready. They're not. Learn the five-dimension readiness model that separates tool adoption from structural readiness, and why it determines your ROI."
 pubDate: 2026-02-23T00:00:00Z
-tags: ["operations", "ai", "automation"]
+tags: ["ai-readiness"]
 heroImage: "/images/blog/ai-readiness-is-structural.webp"
 articleType: "pillar"
 ---

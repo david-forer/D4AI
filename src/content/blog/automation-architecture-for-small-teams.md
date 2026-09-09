@@ -3,7 +3,7 @@ title: "Automation Architecture for Small Teams: Why Building Without a Blueprin
 seoTitle: "Automation Architecture for Small Teams – Why Building Without a Blueprint Costs More Than It Saves – Design the Foundation First and Let the ROI Compound – Forersight"
 description: "Most small firms don't have an automation problem. They have an architecture problem. Learn how to build automation the right way for teams between five and twenty-five people."
 pubDate: 2026-02-14T00:00:00Z
-tags: ["operations", "small-business", "automation"]
+tags: ["automation"]
 heroImage: "/images/blog/automation-foundation-first.webp"
 articleType: "pillar"
 ---

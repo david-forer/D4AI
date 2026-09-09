@@ -2,7 +2,7 @@
 title: "Are You Ready to Hire an AI Consultant? How to Honestly Assess Where You Stand"
 description: "Not every business is at the right stage for an AI consulting engagement. Here is a clear framework for assessing your readiness before you commit time and budget."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai-consulting", "ai-readiness", "small-business", "operations"]
+tags: ["hiring-an-ai-consultant"]
 heroImage: "/images/blog/are-you-ready-to-hire-an-ai-consultant.webp"
 articleType: "cluster"
 ---

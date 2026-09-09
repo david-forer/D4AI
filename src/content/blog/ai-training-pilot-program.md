@@ -2,7 +2,7 @@
 title: "How to Run an AI Training Pilot Program in a Small Business"
 description: "A structured AI training pilot gives you evidence before you scale. Here is how to design, run, and evaluate a pilot program that actually tells you something useful about what your team needs."
 pubDate: 2026-03-07T00:00:00Z
-tags: ["ai-training", "team-adoption", "small-business", "operations"]
+tags: ["ai-training"]
 heroImage: "/images/blog/ai-training-pilot-program.webp"
 articleType: "cluster"
 ---

@@ -3,7 +3,8 @@ title: "AI Agents vs Chatbots: One Answers, One Finishes the Job"
 seoTitle: "AI Agents vs Chatbots – The Difference Between a System That Answers Questions and One That Completes Work, How to Tell Which One a Job Needs, and What Each Costs a Small Business – Forersight"
 description: "AI agents vs chatbots: a chatbot answers a person, an agent finishes a job. Here is how to tell which one a task in your business needs, and what each costs."
 pubDate: 2026-07-27T00:00:00Z
-tags: ["ai-agents", "chatbots", "operations", "small-business"]
+tags: ["ai-tools"]
+pillar: "ai-agents-for-small-businesses"
 heroImage: "/images/blog/ai-agents-vs-chatbots.webp"
 articleType: "cluster"
 ---

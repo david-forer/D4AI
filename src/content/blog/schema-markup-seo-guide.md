@@ -2,7 +2,7 @@
 title: "The Best Schema Markup Types for SEO: A Complete Guide"
 description: "Learn which schema markup types deliver measurable SEO impact and how to implement them effectively."
 pubDate: 2025-12-13T00:00:00Z
-tags: ["seo", "technical", "business"]
+tags: ["seo"]
 heroImage: "/images/blog/schema-markup.webp"
 articleType: "cluster"
 ---

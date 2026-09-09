@@ -2,7 +2,7 @@
 title: "Using AI Strategy to Prepare Your Business for Scale"
 description: "How AI strategy supports growth at different revenue stages, what to build before you need it, and how to avoid the operational ceiling that stops most small businesses."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai strategy", "business growth", "scaling", "small business", "ai operations"]
+tags: ["ai-strategy"]
 heroImage: "/images/blog/ai-strategy-for-growth.webp"
 articleType: "cluster"
 ---

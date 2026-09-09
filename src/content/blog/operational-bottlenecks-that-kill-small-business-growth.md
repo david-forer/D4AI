@@ -2,7 +2,7 @@
 title: "Operational Bottlenecks That Kill Small Business Growth"
 description: "Growth stalls often get blamed on sales or marketing. The real cause is usually operational. Here is how to find and fix the bottlenecks that are capping your business."
 pubDate: 2026-03-04T00:00:00Z
-tags: ["operations", "small-business", "growth", "bottlenecks", "ai-operations"]
+tags: ["ai-operations"]
 heroImage: "/images/blog/operational-bottlenecks-kill-growth.webp"
 articleType: "cluster"
 ---

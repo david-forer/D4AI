@@ -2,7 +2,7 @@
 title: "The Founder Ops Trap: Why You Became the Operations Manager and How to Get Out"
 description: "Most founders never planned to run operations. They ended up there by default. Understanding why the trap forms is the first step to building a business that does not depend on you for everything."
 pubDate: 2026-03-07T00:00:00+01:00
-tags: [operations, founder, small-business, ai-operations, scaling]
+tags: ["ai-operations"]
 heroImage: "/images/blog/founder-ops-trap.webp"
 draft: false
 articleType: "cluster"

@@ -2,7 +2,7 @@
 title: "AI Strategy vs. AI Tactics: Why Most Small Businesses Get This Wrong"
 description: "Understand the difference between AI strategy and AI tactics, why confusing them costs you time and money, and how to shift from tactical to strategic thinking."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai strategy", "ai tactics", "small business", "ai operations", "planning"]
+tags: ["ai-strategy"]
 heroImage: "/images/blog/ai-strategy-vs-ai-tactics.webp"
 articleType: "cluster"
 ---

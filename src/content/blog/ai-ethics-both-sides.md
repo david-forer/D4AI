@@ -2,7 +2,8 @@
 title: "The Double-Edged Sword: AI's Growing Role in Business Operations"
 description: "AI is transforming business operations, but success requires mature governance. Learn how to balance AI's productivity gains with ethical risks, workforce impact, and operational control."
 pubDate: 2025-12-09T00:00:00+00:00
-tags: [ai, operations, "ai-readiness"]
+tags: ["ai-readiness"]
+pillar: "ai-governance-for-small-businesses"
 heroImage: "/images/blog/ai-ethics.webp"
 draft: false
 articleType: "cluster"

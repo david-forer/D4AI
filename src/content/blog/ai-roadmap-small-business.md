@@ -2,7 +2,7 @@
 title: "How to Create an AI Roadmap for Your Small Business"
 description: "What an AI roadmap is, how to build one that actually reflects your business priorities, and how to use it to make consistent progress without getting distracted."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai roadmap", "ai strategy", "small business", "planning", "ai implementation"]
+tags: ["ai-strategy"]
 heroImage: "/images/blog/ai-roadmap-small-business.webp"
 articleType: "cluster"
 ---

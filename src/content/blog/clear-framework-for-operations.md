@@ -2,7 +2,7 @@
 title: "CLEAR: An Operating Framework for AI-Enabled Operations"
 description: "An operational framework that prepares businesses for AI by making workflows explicit, owned, and machine-legible before automation."
 pubDate: 2025-12-09T00:00:00Z
-tags: ["ai", "operations", "business", "workflow-systems"]
+tags: ["workflow-systems"]
 heroImage: "/images/blog/clear-framework.webp"
 articleType: "cluster"
 ---

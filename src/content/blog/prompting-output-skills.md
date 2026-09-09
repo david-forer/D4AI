@@ -2,7 +2,7 @@
 title: "Why Your Team's Prompting Skills Are Causing Output Problems (And How to Fix It)"
 description: "Fix the root cause of poor AI outputs: bad prompts. Diagnose common problems like robotic tone, hallucinations, and lost context, then implement quality assurance processes."
 pubDate: 2025-12-17T00:00:00Z
-tags: ["ai", "training", "operations"]
+tags: ["ai-training"]
 heroImage: "/images/blog/prompting-output-skills.webp"
 articleType: "cluster"
 ---

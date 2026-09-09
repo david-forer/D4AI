@@ -2,7 +2,7 @@
 title: "The Hidden Cost of Operational Chaos"
 description: "Operational chaos has a dollar cost most founders never calculate. Here is how to measure what the friction in your business is actually costing you."
 pubDate: 2026-03-04T00:00:00Z
-tags: ["operations", "small-business", "cost", "efficiency", "ai-operations"]
+tags: ["ai-operations"]
 heroImage: "/images/blog/hidden-cost-operational-chaos.webp"
 articleType: "cluster"
 ---

@@ -2,7 +2,7 @@
 title: "Rebuild the Business. Not Just the Workflow"
 description: "Optimizing workflows while structure decays creates local efficiency and global failure. Rebuilding the business means redesigning decision-making, ownership, and information flow."
 pubDate: 2025-12-19T00:00:00Z
-tags: ["operations", "business", "systems-thinking", "strategy", "workflow-systems"]
+tags: ["workflow-systems"]
 heroImage: "/images/blog/rebuild-the-business.webp"
 articleType: "cluster"
 ---

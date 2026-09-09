@@ -2,7 +2,7 @@
 title: "From Chaos to Coherence: Building an Enterprise AI Training Program"
 description: "Build systematic AI training that transforms fragmented adoption into enterprise capability. Assess AI maturity, design phased rollouts, and create lasting organizational change."
 pubDate: 2025-12-17T00:00:00Z
-tags: ["ai", "training", "operations"]
+tags: ["ai-training"]
 heroImage: "/images/blog/strategic-automation.webp"
 articleType: "cluster"
 ---

@@ -2,7 +2,7 @@
 title: "The Most Common AI Readiness Gaps We Find in Small Businesses"
 description: "After assessing dozens of small businesses, the same operational gaps appear every time. Here's what they are, why they're predictable, and what to do about them before investing in AI."
 pubDate: 2026-03-15T00:00:00Z
-tags: ["ai", "operations", "audit", "business", "ai-readiness"]
+tags: ["ai-readiness"]
 heroImage: "/images/blog/common-ai-readiness-gaps-small-businesses.webp"
 articleType: "cluster"
 ---

@@ -2,7 +2,7 @@
 title: "How to Audit Your Current Tech Stack for AI Readiness"
 description: "Before you add AI to your operations, you need to know what you are actually working with. This is how to audit your current tech stack and identify exactly what needs to change."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai", "tech-stack", "audit", "operations", "small-business"]
+tags: ["ai-tools"]
 heroImage: "/images/blog/tech-stack-audit.webp"
 articleType: "cluster"
 ---

@@ -3,7 +3,7 @@ title: "AI Operations for Small Businesses: The Complete Guide"
 seoTitle: "AI Operations for Small Businesses – Build the Operational Foundation That Makes AI Actually Compound – Scale Your Capacity Without Constant Hiring – The Five-Layer AI Ops Stack – Forersight"
 description: "What AI operations actually means for founders, why businesses break without it, and how to build the operational infrastructure that lets AI compound your capacity instead of adding to your chaos."
 pubDate: 2026-03-04T00:00:00Z
-tags: ["operations", "ai", "automation", "business"]
+tags: ["ai-operations"]
 heroImage: "/images/blog/ai-operations-for-small-businesses.webp"
 articleType: "pillar"
 ---

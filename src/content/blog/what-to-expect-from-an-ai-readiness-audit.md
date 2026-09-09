@@ -2,7 +2,7 @@
 title: "What to Expect From an AI Readiness Audit: A Transparent Walkthrough"
 description: "Most founders delay their AI readiness audit because they don't know what it involves. Here's exactly what happens, what gets assessed, and what you get at the end."
 pubDate: 2026-03-15T00:00:00Z
-tags: ["ai", "operations", "audit", "business", "ai-readiness"]
+tags: ["ai-readiness"]
 heroImage: "/images/blog/future-ready-audit.webp"
 articleType: "cluster"
 ---

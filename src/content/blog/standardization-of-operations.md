@@ -2,7 +2,7 @@
 title: "How Smart Companies Standardize LLM Use Across Departments"
 description: "Transform fragmented AI adoption into a coherent operating system. Learn to standardize tools, create SOPs, build governance, and establish consistent AI practices across your organization."
 pubDate: 2025-12-17T00:00:00Z
-tags: ["ai", "operations", "training", "workflow-systems"]
+tags: ["workflow-systems"]
 heroImage: "/images/blog/scalable automation.webp"
 articleType: "cluster"
 ---

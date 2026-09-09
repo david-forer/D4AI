@@ -2,7 +2,7 @@
 title: "When Not to Automate: The Processes That Should Stay Human"
 description: "Not every business process should be automated. Knowing which work to keep human is just as important as knowing what to hand off to a system. Here is the diagnostic that separates good automation decisions from expensive ones."
 pubDate: 2026-03-07T00:00:00+01:00
-tags: [automation, operations, small-business, ai-operations]
+tags: ["automation"]
 heroImage: "/images/blog/when-not-to-automate.webp"
 draft: false
 articleType: "cluster"

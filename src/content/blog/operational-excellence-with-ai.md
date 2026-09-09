@@ -2,7 +2,7 @@
 title: "Achieving Operational Excellence with AI"
 description: "Discover how AI can transform your business operations, eliminate bottlenecks, and create scalable systems."
 pubDate: 2025-05-16T00:00:00Z
-tags: ["operations", "ai", "business", "ai-readiness"]
+tags: ["ai-readiness"]
 heroImage: "/images/blog/ai-operations.webp"
 articleType: "cluster"
 ---

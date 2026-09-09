@@ -2,7 +2,7 @@
 title: "How to Run an AI Training Gap Analysis for Your Small Business Team"
 description: "Before you design any AI training, you need to know where your team actually stands. A training gap analysis tells you which skills are missing, which roles need the most support, and where to start. Here is how to run one in a small business."
 pubDate: 2026-03-07T00:00:00Z
-tags: ["ai-training", "team-adoption", "small-business", "operations"]
+tags: ["ai-training"]
 heroImage: "/images/blog/ai-training-gap-analysis.webp"
 articleType: "cluster"
 ---

@@ -2,7 +2,7 @@
 title: "How to Build an AI Skills Matrix for Your Small Business Team"
 description: "A skills matrix tells you who on your team can do what with AI, where the gaps are, and what training to prioritize. Here is how to build one that is actually useful for a small business."
 pubDate: 2026-03-07T00:00:00Z
-tags: ["ai-training", "team-adoption", "small-business", "operations"]
+tags: ["ai-training"]
 heroImage: "/images/blog/ai-skills-matrix-small-business.webp"
 articleType: "cluster"
 ---

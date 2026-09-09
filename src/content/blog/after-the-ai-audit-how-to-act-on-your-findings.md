@@ -2,7 +2,7 @@
 title: "After the AI Audit: How to Act on Your AI Readiness Assessment"
 description: "An audit without action is just an expensive document. Here's how to turn your AI readiness findings into a sequenced roadmap you'll actually follow."
 pubDate: 2026-03-15T00:00:00Z
-tags: ["ai", "operations", "audit", "business", "ai-readiness"]
+tags: ["ai-readiness"]
 heroImage: "/images/blog/ai-driven-pro.webp"
 articleType: "cluster"
 ---

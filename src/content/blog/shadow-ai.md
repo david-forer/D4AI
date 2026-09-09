@@ -2,7 +2,8 @@
 title: "Shadow AI is Already in Your Company: Here's How to Fix It with Proper LLM Training"
 description: "Learn how to identify unauthorized AI usage, understand why prohibition fails, and build a training curriculum that transforms Shadow AI from a liability into a competitive advantage."
 pubDate: 2025-12-17T00:00:00Z
-tags: ["ai", "operations", "training", "ai-readiness"]
+tags: ["ai-readiness"]
+pillar: "ai-governance-for-small-businesses"
 heroImage: "/images/blog/blind-spot.webp"
 articleType: "cluster"
 ---

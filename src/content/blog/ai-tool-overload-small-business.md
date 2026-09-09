@@ -2,7 +2,7 @@
 title: "AI Tool Overload: Why Adding More Tools Is Making Your Operations Worse"
 description: "Most small businesses have more AI tools than they can use effectively. Here is how to identify the problem, cut what is not working, and prevent it from happening again."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai", "tools", "operations", "small-business", "productivity"]
+tags: ["ai-tools"]
 heroImage: "/images/blog/ai-tool-overload.webp"
 articleType: "cluster"
 ---

@@ -2,7 +2,7 @@
 title: "How Systems Thinking Saves Startups From Scaling Into Chaos"
 description: "Growth amplifies weaknesses. What works at 5 people breaks at 12. Systems thinking is not a buzzword. It is a survival skill for startups that want to scale without collapsing."
 pubDate: 2025-12-19T00:00:00Z
-tags: ["business", "systems-thinking", "startups", "operations", "workflow-systems"]
+tags: ["workflow-systems"]
 heroImage: "/images/blog/systems-thinking-saves-startups.webp"
 articleType: "cluster"
 ---

@@ -2,7 +2,7 @@
 title: "How to Write an SEO Content Brief That Actually Guides AI-Assisted Writing"
 description: "Most AI-generated content is generic because the brief was generic. Learn how to build a content brief that gives AI the structure it needs to produce usable first drafts."
 pubDate: 2026-03-04T00:00:00+01:00
-tags: [seo, content-strategy, ai-writing, topical-authority]
+tags: ["seo"]
 heroImage: "/images/blog/seo-content-brief.webp"
 draft: false
 articleType: "cluster"

@@ -2,7 +2,7 @@
 title: "How to Choose the Right AI Consultant for Your Small Business"
 description: "The wrong AI consultant costs more than no consultant. Here is a clear framework for evaluating candidates, identifying red flags, and making a confident decision."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai-consulting", "ai-operations", "small-business", "hiring"]
+tags: ["hiring-an-ai-consultant"]
 heroImage: "/images/blog/how-to-choose-ai-consultant.webp"
 articleType: "cluster"
 ---

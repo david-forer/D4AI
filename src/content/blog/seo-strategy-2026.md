@@ -2,7 +2,7 @@
 title: "SEO Strategy for 2026: What's Working Now"
 description: "Stay ahead of the curve with these effective SEO strategies that are driving results in 2026."
 pubDate: 2025-05-15T00:00:00Z
-tags: ["seo", "business", "automation"]
+tags: ["seo"]
 heroImage: "/images/blog/seo-strategies-that-work-2025.webp"
 articleType: "cluster"
 ---

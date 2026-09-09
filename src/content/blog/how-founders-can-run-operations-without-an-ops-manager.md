@@ -2,7 +2,7 @@
 title: "How Founders Can Run Operations Without an Ops Manager"
 description: "Most small businesses cannot afford a dedicated ops manager. Here is how to build the systems that do the same work, without the hire."
 pubDate: 2026-03-04T00:00:00Z
-tags: ["operations", "small-business", "founders", "ai-operations"]
+tags: ["ai-operations"]
 heroImage: "/images/blog/founders-run-operations-without-ops-manager.webp"
 articleType: "cluster"
 ---

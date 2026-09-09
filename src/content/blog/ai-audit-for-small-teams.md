@@ -2,7 +2,7 @@
 title: "What an AI Readiness Audit Looks Like for a 10-Person Business"
 description: "Learn what an AI readiness audit actually reviews for small businesses and how it helps founder-led teams scale AI without creating hidden operational risk."
 pubDate: 2026-01-03T00:00:00Z
-tags: ["ai", "ai-readiness", "operations", "small-business", "automation"]
+tags: ["ai-readiness"]
 heroImage: "/images/blog/ai-readiness-audit.webp"
 articleType: "cluster"
 ---

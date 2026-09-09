@@ -2,7 +2,7 @@
 title: "The Anatomy of a Broken Workflow and How to Automate It"
 description: "A practical framework for identifying broken business workflows, understanding their hidden costs, and automating them the right way. Learn how to simplify processes before automation to improve reliability, scalability, and team morale."
 pubDate: 2025-12-09T00:00:00Z
-tags: ["automation", "operations", "workflow-systems"]
+tags: ["workflow-systems"]
 heroImage: "/images/blog/broken-workflow.webp"
 articleType: "cluster"
 ---

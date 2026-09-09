@@ -2,7 +2,7 @@
 title: "How to Measure Whether Your AI Strategy Is Actually Working"
 description: "A practical measurement framework for small businesses: what to track, when to measure, and how to use data to improve your AI strategy over time."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai strategy", "measuring ai", "ai ROI", "small business", "operations"]
+tags: ["ai-strategy"]
 heroImage: "/images/blog/measuring-ai-strategy-results.webp"
 articleType: "cluster"
 ---

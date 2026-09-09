@@ -2,7 +2,7 @@
 title: "SEO for AI Search: How to Show Up in ChatGPT, Perplexity, and Google AI Overviews"
 description: "AI search tools pull answers from a different set of signals than traditional search. Here is what changes, what stays the same, and how to position your content to appear in AI-generated results."
 pubDate: 2026-03-04T00:00:00+01:00
-tags: [seo, ai-search, aeo, geo, generative-engine-optimization, google-ai-overviews]
+tags: ["seo"]
 heroImage: "/images/blog/seo-for-ai-search.webp"
 draft: false
 articleType: "cluster"

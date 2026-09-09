@@ -2,7 +2,7 @@
 title: "Leveraging AI for SEO: A Practical Guide"
 description: "A practical guide to AI in SEO: current landscape, NLP and ML fundamentals, tools, phased implementation, KPIs and ROI, a case study, challenges, and future trends."
 pubDate: 2025-05-17T00:00:00Z
-tags: ["seo", "ai", "automation", "generative-engine-optimization" ]
+tags: ["seo"]
 heroImage: "/images/blog/ai for seo.webp"
 articleType: "cluster"
 ---

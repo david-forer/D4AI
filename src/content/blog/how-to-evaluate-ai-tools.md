@@ -2,7 +2,7 @@
 title: "How to Evaluate AI Tools Before You Commit to Anything"
 description: "AI tool demos are designed to impress. Here is a five-question evaluation framework that tells you whether a tool will actually work in your operations before you pay for it."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai", "tools", "evaluation", "small-business", "operations"]
+tags: ["ai-tools"]
 heroImage: "/images/blog/ai-tool-evaluation.webp"
 articleType: "cluster"
 ---

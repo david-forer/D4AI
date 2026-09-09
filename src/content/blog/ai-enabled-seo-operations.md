@@ -3,7 +3,7 @@ title: "AI Enabled SEO Operations: The 6 Layers of SEO Success"
 seoTitle: "AI-Enabled SEO Operations – The Six-Layer System That Turns Search Into a Repeatable Production Engine – How Small Teams Build Topical Authority That Compounds Over Time – Forersight"
 description: "AI doesn't make SEO easier. It makes a well-designed SEO system more productive. Learn the six-layer framework that turns search into a repeatable production system."
 pubDate: 2026-02-07T00:00:00+01:00
-tags: [seo, topical-authority, semantic-seo]
+tags: ["seo"]
 heroImage: "/images/blog/assymetrical-seo-system.webp"
 draft: false
 articleType: "pillar"

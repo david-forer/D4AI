@@ -2,7 +2,7 @@
 title: "What to Expect in the First 90 Days of an AI Consulting Engagement"
 description: "The first 90 days of an AI consulting engagement set the foundation for everything that follows. Here is a week-by-week picture of what actually happens and what to watch for."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai-consulting", "ai-operations", "small-business", "operations"]
+tags: ["hiring-an-ai-consultant"]
 heroImage: "/images/blog/first-90-days-ai-engagement.webp"
 articleType: "cluster"
 ---

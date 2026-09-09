@@ -2,7 +2,7 @@
 title: "Questions to Ask Before Hiring an AI Consultant"
 description: "The right questions separate capable AI consultants from expensive experiments. Use this guide to vet any consultant before you commit."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai consulting", "hiring", "due diligence", "small business"]
+tags: ["hiring-an-ai-consultant"]
 heroImage: "/images/blog/questions-to-ask-before-hiring-an-ai-consultant.webp"
 articleType: "cluster"
 ---

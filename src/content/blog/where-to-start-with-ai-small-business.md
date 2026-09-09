@@ -2,7 +2,7 @@
 title: "Where to Start with AI When Everything Feels Overwhelming"
 description: "A practical framework for small business founders who know they want to use AI but do not know which problem to tackle first."
 pubDate: 2026-03-21T00:00:00Z
-tags: ["ai strategy", "small business", "getting started with ai", "ai automation", "operations"]
+tags: ["ai-strategy"]
 heroImage: "/images/blog/where-to-start-with-ai-small-business.webp"
 articleType: "cluster"
 ---
