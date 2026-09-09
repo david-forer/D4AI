@@ -54,7 +54,12 @@ await expectRedirect('/local-seo-system', '/seo-accelerator');
 await expectRedirect('/seo-ai-resources', '/resources');
 await expectRedirect('/free-resources', '/resources');
 await expectRedirect('/small-business-seo-videos', '/resources');
-await expectRedirect('/blog/category/automation', '/blog');
+// Retired posts. The redirect map is an exact case-sensitive lookup on
+// req.path, so both casings are registered and both are checked.
+await expectRedirect('/blog/google-profile-seo', '/blog/ai-enabled-seo-operations');
+await expectRedirect('/blog/AI-Growth-Accelerator', '/blog/ai-enabled-seo-operations');
+// Category hubs that have no Astro route still fold back to /blog.
+await expectRedirect('/blog/category/operations', '/blog');
 
 // 3. Core pages and files
 console.log('\nCore pages');
@@ -77,12 +82,33 @@ if (urls.length > 100) ok(`sitemap has ${urls.length} URLs`); else fail(`sitemap
 if (lastmods > 100) ok(`sitemap has ${lastmods} lastmod tags`); else fail(`sitemap has only ${lastmods} lastmod tags, expected one per blog post`);
 if (urls.some(u => u.endsWith('/'))) fail('sitemap contains trailing-slash URLs'); else ok('no trailing-slash URLs in sitemap');
 
-// 5. Every sitemap URL: must be 200, self-canonical, not noindex
-console.log('\nEvery sitemap URL (200, one self-referencing canonical, no noindex)');
+// 5. Every sitemap URL: must be 200, self-canonical, not noindex, clean encoding.
+//
+// The encoding half exists because on 2026-09-08 an em dash removal pass did not
+// remove some em dashes, it corrupted them, and 71 mojibake characters sat live
+// across 34 files for a day. Grepping the source for the em dash character found
+// nothing, because the character was no longer an em dash. Only the rendered page
+// tells the truth, so the check runs here, against production, and costs no extra
+// requests because the loop already has the HTML.
+const ENCODING_DEFECTS = [
+  ['em dash',        /—/g],
+  ['U+FFFD',         /�/g],
+  ['mojibake C2 B7', /Â·/g],
+  ['mojibake E2 80', /â€/g],
+];
+console.log('\nEvery sitemap URL (200, one self-referencing canonical, no noindex, clean encoding)');
 let bad = 0;
+let dirty = 0;
 for (const u of urls) {
   const path = u.replace(SITE, '') || '/';
   const r = await head(path);
+  const found = ENCODING_DEFECTS
+    .map(([name, re]) => [name, (r.text.match(re) || []).length])
+    .filter(([, n]) => n > 0);
+  if (found.length) {
+    dirty++;
+    fail(`${path}: ${found.map(([name, n]) => `${n} x ${name}`).join(', ')}`);
+  }
   const canon = [...r.text.matchAll(/<link[^>]+rel=["']canonical["'][^>]*href=["']([^"']+)["']/gi)].map(m => m[1]);
   const noindex = /<meta[^>]+name=["']robots["'][^>]+noindex/i.test(r.text);
   const problems = [];
@@ -93,6 +119,7 @@ for (const u of urls) {
   if (problems.length) { bad++; fail(`${path}: ${problems.join(', ')}`); }
 }
 if (bad === 0) ok(`all ${urls.length} sitemap URLs are 200, self-canonical, indexable`);
+if (dirty === 0) ok(`all ${urls.length} sitemap URLs are free of em dashes and mojibake`);
 
 console.log(`\n${passes} passed, ${failures} failed\n`);
 process.exit(failures ? 1 : 0);
