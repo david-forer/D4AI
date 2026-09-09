@@ -61,6 +61,24 @@ await expectRedirect('/blog/AI-Growth-Accelerator', '/blog/ai-enabled-seo-operat
 // Category hubs that have no Astro route still fold back to /blog.
 await expectRedirect('/blog/category/operations', '/blog');
 
+// 2.5 The Formbricks host that every lead form on the site depends on.
+//
+// The forms are cross-origin iframe embeds pointing at bricks.davidjforer.com,
+// so nothing on davidjforer.com reveals whether they work. If that container is
+// down the modals open empty, visitors cannot submit, and the site itself looks
+// completely healthy. It died silently once and was only noticed by accident.
+//
+// A dead form host is a lost-lead problem, so it fails the run and emails.
+const FORM_HOST = process.env.FORM_HOST_URL || 'https://bricks.davidjforer.com';
+console.log('\nForm host (lead capture)');
+try {
+  const res = await fetch(FORM_HOST + '/health', { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(20000) });
+  if (res.status === 200) ok(`${FORM_HOST}/health -> 200, lead forms can load`);
+  else fail(`${FORM_HOST}/health -> ${res.status}. Every lead form on the site is an iframe from this host, so they are broken. Restart the Formbricks container in Coolify.`);
+} catch (e) {
+  fail(`${FORM_HOST}/health unreachable (${e.name === 'TimeoutError' ? 'timed out' : e.message}). The container is almost certainly down. Restart it in Coolify. Traefik answers while the app is dead, so HTTP 404 and an HTTPS hang are the usual signature.`);
+}
+
 // 3. Core pages and files
 console.log('\nCore pages');
 await expectStatus('/', 200, 'text/html');
