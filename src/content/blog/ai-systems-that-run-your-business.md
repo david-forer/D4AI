@@ -1,6 +1,7 @@
 ---
 title: "AI Systems That Run Your Business (What That Actually Means)"
-description: "AI does not run your business. But it can own the execution layer of specific, well-defined operational domains. Here is what that looks like and how to build it."
+seoTitle: "AI Systems for Business | Run It Without You | David J Forer"
+description: "AI will not run your business. It can own the execution layer of a few well-defined operations. What that looks like, and how to build one."
 pubDate: 2026-03-04T00:00:00Z
 tags: ["ai-operations"]
 heroImage: "/images/blog/ai-systems-run-your-business.webp"

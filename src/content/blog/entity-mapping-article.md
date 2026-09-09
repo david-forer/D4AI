@@ -1,6 +1,7 @@
 ---
 title: "Entity Mapping: A Practical Framework for Modern SEO"
-description: "A step-by-step guide to using entity mapping to improve search visibility by helping engines understand context, relationships, and topical authority beyond keywords."
+seoTitle: "Entity Mapping | Build Topical Authority | David J Forer"
+description: "How entity mapping helps search engines understand context and relationships, so you build topical authority instead of chasing single keywords."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["seo"]
 heroImage: "/images/blog/entity-mapping.webp"

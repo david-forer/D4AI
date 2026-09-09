@@ -1,6 +1,7 @@
 ---
 title: "AI Upskilling for Non-Technical Teams: A Practical Guide"
-description: "Train non-technical employees on AI without requiring Python or coding skills. A practical curriculum from basics to workflow automation, overcoming resistance, and measuring ROI."
+seoTitle: "AI Upskilling | Get Your Team Fluent | David J Forer"
+description: "A curriculum for training non-technical staff on AI without Python, from first principles to workflow automation, including how to handle resistance."
 pubDate: 2025-12-17T00:00:00Z
 tags: ["ai-training"]
 heroImage: "/images/blog/intelligent-automation.webp"

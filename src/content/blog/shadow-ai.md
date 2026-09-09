@@ -1,6 +1,7 @@
 ---
 title: "Shadow AI is Already in Your Company: Here's How to Fix It with Proper LLM Training"
-description: "Learn how to identify unauthorized AI usage, understand why prohibition fails, and build a training curriculum that transforms Shadow AI from a liability into a competitive advantage."
+seoTitle: "Shadow AI | Find the Tools Nobody Approved | David J Forer"
+description: "Your team is already using AI you never approved. Why banning it fails, how to find what is in use, and how to bring it under something you govern."
 pubDate: 2025-12-17T00:00:00Z
 tags: ["ai-readiness"]
 pillar: "ai-governance-for-small-businesses"

@@ -1,6 +1,7 @@
 ---
 title: "Systemize Core Business Processes in 30 Days"
-description: "A four-week sprint plan to document, simplify, and standardize three to five high-impact operational processes using lightweight tools and basic automation. "
+seoTitle: "Systemize Business Processes | 30-Day Plan | David J Forer"
+description: "A four-week plan to document, simplify and standardize three to five of your highest-impact processes, using tools you already pay for."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["ai-readiness"]
 heroImage: "/images/blog/chaos-to-control-30-days.webp"

@@ -1,6 +1,7 @@
 ---
 title: "From Chaos to Coherence: Building an Enterprise AI Training Program"
-description: "Build systematic AI training that transforms fragmented adoption into enterprise capability. Assess AI maturity, design phased rollouts, and create lasting organizational change."
+seoTitle: "Enterprise AI Training | Make It Stick | David J Forer"
+description: "How to turn scattered AI adoption into a real capability, by assessing where your teams actually are and rolling out in phases instead of at once."
 pubDate: 2025-12-17T00:00:00Z
 tags: ["ai-training"]
 heroImage: "/images/blog/strategic-automation.webp"

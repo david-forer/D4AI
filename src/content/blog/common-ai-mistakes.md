@@ -1,6 +1,7 @@
 ---
 title: "10 Mistakes Employees Make When Using AI (And How Training Fixes Them)"
-description: "Avoid the most common AI usage mistakes: pasting confidential data, blind copy-pasting, using AI for high-emotion tasks, and more. Learn the training fixes that prevent each error."
+seoTitle: "Common AI Mistakes | 10 Your Team Makes | David J Forer"
+description: "The ten things people actually get wrong with AI at work, from pasting client data into a chatbot to shipping output nobody checked, and the fix for each."
 pubDate: 2025-12-17T00:00:00Z
 tags: ["ai-readiness"]
 heroImage: "/images/blog/common-ai-mistakes.webp"

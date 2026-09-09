@@ -1,6 +1,7 @@
 ---
 title: "LLM Training for Customer Support Teams: What Actually Works"
-description: "Transform your support team with AI training that improves efficiency and quality. Learn how to shift from answering to editing, calibrate tone, audit accuracy, and measure impact on CSAT and AHT."
+seoTitle: "AI for Customer Support | Cut Ticket Time | David J Forer"
+description: "How to train a support team to edit AI output instead of writing from scratch, calibrate tone, audit accuracy, and track CSAT and AHT."
 pubDate: 2025-12-17T00:00:00Z
 tags: ["workflow-systems"]
 heroImage: "/images/blog/customer-support-using-ai.webp"

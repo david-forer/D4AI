@@ -1,6 +1,7 @@
 ---
 title: "The Anatomy of a Broken Workflow and How to Automate It"
-description: "A practical framework for identifying broken business workflows, understanding their hidden costs, and automating them the right way. Learn how to simplify processes before automation to improve reliability, scalability, and team morale."
+seoTitle: "Broken Workflow | Spot It Before Automating | David J Forer"
+description: "How to spot a broken workflow, what it costs while it runs, and why simplifying it before you automate is what makes the automation hold."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["workflow-systems"]
 heroImage: "/images/blog/broken-workflow.webp"

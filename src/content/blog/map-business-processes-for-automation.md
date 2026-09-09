@@ -1,5 +1,6 @@
 ---
 title: "Process Mapping: The Foundation of Successful Automation"
+seoTitle: "Process Mapping | Know What to Automate | David J Forer"
 description: "A pragmatic guide to mapping real workflows so businesses can identify automation-ready processes and avoid automating confusion."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["automation"]

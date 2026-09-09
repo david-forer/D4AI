@@ -1,6 +1,7 @@
 ---
 title: "Why Systemic Thinking Beats Growth Hacking (Especially After $1M ARR)"
-description: "Growth hacking has an expiration date. After $1M ARR, complexity changes the game. Systemic thinking replaces hustle with throughput and stability with velocity."
+seoTitle: "Systems Thinking | Why It Beats Growth Hacks | David J Forer"
+description: "Growth hacking has an expiration date. After $1M ARR complexity changes the game, and throughput matters more than another clever tactic."
 pubDate: 2025-12-19T00:00:00Z
 tags: ["workflow-systems"]
 heroImage: "/images/blog/systemic-thinking-vs-growth-hacking.webp"

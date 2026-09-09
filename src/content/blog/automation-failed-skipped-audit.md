@@ -1,6 +1,7 @@
 ---
 title: "The Real Reason Your Automation Failed. You Skipped the Audit"
-description: "Automation fails before it starts. Bad inputs, undefined ownership, and unclear success criteria doom projects from day one. An audit prevents the failures no one talks about."
+seoTitle: "Why Automation Fails | Audit Before Building | David J Forer"
+description: "Most automation fails before anyone builds a workflow. Bad inputs, no owner, no definition of done. An audit catches all three while it is cheap."
 pubDate: 2025-12-19T00:00:00Z
 tags: ["automation"]
 heroImage: "/images/blog/real-reason-automation-failed.webp"

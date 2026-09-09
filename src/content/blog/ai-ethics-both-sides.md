@@ -1,6 +1,7 @@
 ---
 title: "The Double-Edged Sword: AI's Growing Role in Business Operations"
-description: "AI is transforming business operations, but success requires mature governance. Learn how to balance AI's productivity gains with ethical risks, workforce impact, and operational control."
+seoTitle: "AI Ethics in Business | Both Sides, Honestly | David J Forer"
+description: "The honest case for and against AI in business operations, covering productivity gains, workforce impact, and the governance you need first."
 pubDate: 2025-12-09T00:00:00+00:00
 tags: ["ai-readiness"]
 pillar: "ai-governance-for-small-businesses"

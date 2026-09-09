@@ -1,6 +1,7 @@
 ---
 title: "What a Fully Automated Back Office Actually Looks Like"
-description: "A hands-on explanation of how small businesses can automate finance, HR, and IT operations to eliminate routine work while keeping human judgment where it matters."
+seoTitle: "Automated Back Office | What It Looks Like | David J Forer"
+description: "How a small business automates finance, HR and IT operations to remove routine work, while keeping human judgment on the decisions that need it."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["automation"]
 heroImage: "/images/blog/automated-back-office.webp"

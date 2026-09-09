@@ -1,5 +1,6 @@
 ---
 title: "What an AI Readiness Audit Looks Like for Small, Founder-Led Teams"
+seoTitle: "AI Readiness Audit | For Founder-Led Teams | David J Forer"
 description: "Learn how an AI readiness audit works for 5 to 20 person businesses already using AI, and how it helps founders reduce risk without slowing down."
 pubDate: 2026-01-04T00:00:00Z
 tags: ["ai-readiness"]

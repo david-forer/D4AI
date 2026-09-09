@@ -1,6 +1,7 @@
 ---
 title: "Workflow Debt: The Invisible Drag on Your Business Ops"
-description: "Spells out how invisible workflow debt accumulates through manual work, shadow processes, hand-offs, and outdated tools, and how it quietly constrains growth."
+seoTitle: "Workflow Debt | Find What Slows Your Team | David J Forer"
+description: "Workflow debt builds through manual steps, shadow processes and hand-offs nobody owns. How to see it, and what it is already costing you."
 pubDate: 2025-12-09T00:00:00Z
 tags: ["workflow-systems"]
 heroImage: "/images/blog/workflow-debt.webp"
