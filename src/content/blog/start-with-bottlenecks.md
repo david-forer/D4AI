@@ -136,6 +136,6 @@ Do not start with tools. Start with bottlenecks. The tools will make more sense 
 
 ---
 
-*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) Â· [Rebuild the Business. Not Just the Workflow](/blog/rebuild-the-business)*
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) | [Rebuild the Business. Not Just the Workflow](/blog/rebuild-the-business)*
 
 If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

@@ -9,7 +9,7 @@ articleType: "cluster"
 
 ## Why the Wrong Consultant Costs More Than No Consultant
 
-A bad AI consulting engagement does not look like a dramatic failure. It looks like a slow, expensive disappointment. Months pass, money gets spent, some things get built, and at the end of it the business is not in a meaningfully better position than it was at the start. Sometimes it is in a worse one � with systems that sort-of-work requiring ongoing maintenance, team habits that are now built around a flawed implementation, and a founder who is more sceptical of AI consulting than they were before.
+A bad AI consulting engagement does not look like a dramatic failure. It looks like a slow, expensive disappointment. Months pass, money gets spent, some things get built, and at the end of it the business is not in a meaningfully better position than it was at the start. Sometimes it is in a worse one, with systems that sort-of-work requiring ongoing maintenance, team habits that are now built around a flawed implementation, and a founder who is more sceptical of AI consulting than they were before.
 
 The cost of a poor-fit engagement is real and often underestimated when the selection decision is being made. Getting the evaluation right is not bureaucratic due diligence. It is the work that determines whether the investment produces results.
 
@@ -17,7 +17,7 @@ The cost of a poor-fit engagement is real and often underestimated when the sele
 
 ## The Credentials That Matter vs. the Ones That Do Not
 
-The AI consulting space has no standardised credentialing. Anyone can call themselves an AI consultant, and many people do. This means credentials function as signals rather than guarantees � some are meaningful and some are noise.
+The AI consulting space has no standardised credentialing. Anyone can call themselves an AI consultant, and many people do. This means credentials function as signals rather than guarantees. Some are meaningful and some are noise.
 
 **What matters:** a clear portfolio of work with businesses at a comparable scale and operational complexity. Not case studies described in the abstract, but specific examples of what was built, what problem it addressed, and what the business looks like now relative to before. The ability to describe their process for a typical engagement in specific terms. A clear answer to the question of what you will own at the end and who will maintain it.
 
@@ -71,13 +71,13 @@ These patterns are reliable indicators of a poor-fit engagement.
 
 **Vague scope with confident pricing.** A fixed-price quote produced before meaningful discovery has happened is either based on guessing or on a standardised scope that will be applied to your situation regardless of fit. Neither is good.
 
-**No plan for your independence.** If the conversation about what you will own at the end produces a vague or evasive answer, the engagement may be designed � intentionally or not � to create ongoing dependency rather than client capability.
+**No plan for your independence.** If the conversation about what you will own at the end produces a vague or evasive answer, the engagement may be designed, intentionally or not, to create ongoing dependency rather than client capability.
 
 **Tool vendor relationships that affect recommendations.** A consultant who receives referral fees or reseller revenue from specific tools has a financial interest in recommending those tools that is separate from your operational needs. Ask directly whether they have financial relationships with any vendors they might recommend.
 
 **Only enterprise case studies.** If the consultant's track record is entirely in large organisations and they are positioning themselves for small business work, the burden of proof is on them to explain why the skills transfer. Marketing materials that feature logos from large companies and conversations that reference how things work "at scale" are not promising signals for a fifteen-person service firm.
 
-**Dismissiveness about adoption and change management.** Consultants who treat training and team adoption as afterthoughts � things that happen after the real work is done � consistently produce low-adoption implementations. The technical build and the human adoption work are equally important. A good consultant knows this and says so.
+**Dismissiveness about adoption and change management.** Consultants who treat training and team adoption as afterthoughts, things that happen after the real work is done, consistently produce low-adoption implementations. The technical build and the human adoption work are equally important. A good consultant knows this and says so.
 
 ---
 

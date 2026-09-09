@@ -11,7 +11,7 @@ articleType: "cluster"
 
 The most common reason founders hesitate before reaching out to an AI consultant is a version of the same story: we need to get our operations cleaned up first, and then we will be ready. The logic sounds reasonable. The premise is usually wrong.
 
-Most businesses that benefit significantly from AI consulting do not have clean operations when they start. Messy operations are often exactly why they are calling. The workflows are inconsistent. The data is scattered. The tools do not talk to each other. A consultant who only works with businesses that already have their house in order is not doing operational consulting � they are doing optimisation work.
+Most businesses that benefit significantly from AI consulting do not have clean operations when they start. Messy operations are often exactly why they are calling. The workflows are inconsistent. The data is scattered. The tools do not talk to each other. A consultant who only works with businesses that already have their house in order is not doing operational consulting. They are doing optimisation work.
 
 Readiness is not about having tidy operations. It is about having the specific conditions that allow an engagement to produce real results. Those conditions are more particular than most founders expect, and more achievable than they worry.
 
@@ -25,7 +25,7 @@ There are four things that genuinely determine whether a business is ready for a
 
 This does not need to be a fully mapped process. It can be as straightforward as "our client onboarding takes three people three hours every time and half of them still feel disorganised when they start" or "I spend every Sunday evening manually building the weekly report that I need for Monday." Specific and felt is what matters.
 
-**An internal owner who will engage throughout.** An AI consulting engagement is a collaboration, not a service delivery. The consultant needs consistent access to someone who understands how the business operates at a workflow level � the founder in most small businesses, or a senior operations person in larger ones.
+**An internal owner who will engage throughout.** An AI consulting engagement is a collaboration, not a service delivery. The consultant needs consistent access to someone who understands how the business operates at a workflow level: the founder in most small businesses, or a senior operations person in larger ones.
 
 This person needs to be genuinely available, not available in principle but unreachable in practice. A few reliable hours per week is enough. Intermittent access extends timelines, increases costs, and produces systems that reflect what the consultant assumed rather than what the business actually needs.
 
@@ -45,11 +45,11 @@ These are the patterns that reliably indicate a business is in a good position t
 
 **You can name the workflows.** You do not need a comprehensive process map. You need to be able to name the two or three specific things that consume the most manual time or produce the most operational friction. That specificity is what makes scoping meaningful.
 
-**You have already tried tools on your own and hit a wall.** Many founders reach this point after spending months exploring automation tools, building some basic workflows, and discovering that the gap between what the tool can technically do and what the business actually needs is larger than they expected. This is not a failure. It is a reliable signal that the problem requires more than access to tools � it requires operational design.
+**You have already tried tools on your own and hit a wall.** Many founders reach this point after spending months exploring automation tools, building some basic workflows, and discovering that the gap between what the tool can technically do and what the business actually needs is larger than they expected. This is not a failure. It is a reliable signal that the problem requires more than access to tools. It requires operational design.
 
-**Reliability matters more than flexibility right now.** Early-stage businesses often benefit from staying flexible and handling things informally. At a certain point � usually somewhere between $500,000 and $2 million in revenue � the cost of that flexibility becomes higher than the cost of systematising. When consistent, repeatable execution matters more than the ability to adapt on the fly, that is a readiness signal.
+**Reliability matters more than flexibility right now.** Early-stage businesses often benefit from staying flexible and handling things informally. At a certain point, usually somewhere between $500,000 and $2 million in revenue, the cost of that flexibility becomes higher than the cost of systematising. When consistent, repeatable execution matters more than the ability to adapt on the fly, that is a readiness signal.
 
-**You have a growth goal your current operations cannot support.** You want to take on more clients, expand a service offering, or grow the team � and you recognise that the operational infrastructure is not ready for it. AI consulting that addresses the operational constraint is directly in service of a business goal. That alignment makes the ROI calculation clear.
+**You have a growth goal your current operations cannot support.** You want to take on more clients, expand a service offering, or grow the team, and you recognise that the operational infrastructure is not ready for it. AI consulting that addresses the operational constraint is directly in service of a business goal. That alignment makes the ROI calculation clear.
 
 **You can name the person internally who would own the systems.** Before reaching out, be able to answer: who on our team would be accountable for these systems after the engagement ends? If the answer is clear, the conditions for sustained results are in place.
 

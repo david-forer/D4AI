@@ -13,9 +13,9 @@ Most AI investments underperform not because the tools are wrong but because the
 
 The founders who get the most from AI are not necessarily the ones who move fastest. They are the ones who understand their operational starting point clearly enough to deploy AI where it will actually compound rather than just add complexity.
 
-These 20 questions are a structured way to assess that starting point. Answer them honestly, not aspirationally. The gaps you find are not failures â€” they are the most valuable output of this exercise.
+These 20 questions are a structured way to assess that starting point. Answer them honestly, not aspirationally. The gaps you find are not failures. They are the most valuable output of this exercise.
 
-## Data and Systems (Questions 1â€“5)
+## Data and Systems (Questions 1 to 5)
 
 **1. Do you have one authoritative source for customer or client data?**
 
@@ -37,7 +37,7 @@ Duplicate records, outdated contact information, project statuses that don't mat
 
 This is a practical test of how accessible and organized your operational data actually is. If the answer is no, information architecture is a readiness gap.
 
-## Workflows and Processes (Questions 6â€“10)
+## Workflows and Processes (Questions 6 to 10)
 
 **6. Are your most critical workflows documented somewhere outside people's heads?**
 
@@ -59,7 +59,7 @@ Errors have consistent sources. They tend to cluster around undocumented process
 
 Or do things float? When work moves between people or departments without a clear handoff, context gets lost, things fall through the cracks, and the failure is hard to trace. Clear handoffs are the foundation of reliable automation.
 
-## Team Readiness (Questions 11â€“14)
+## Team Readiness (Questions 11 to 14)
 
 **11. Has your team received any structured training on the AI tools you currently use?**
 
@@ -77,7 +77,7 @@ Shadow AI use is common in small businesses. People find tools that help them wo
 
 Not necessarily a dedicated role, but a named person who is responsible for evaluating tools, setting standards, and ensuring consistent adoption. Without ownership, AI capability stays scattered.
 
-## Leadership and Decision-Making (Questions 15â€“17)
+## Leadership and Decision-Making (Questions 15 to 17)
 
 **15. Can your team make routine operational decisions without your approval?**
 
@@ -91,7 +91,7 @@ When something unusual comes up, does the team have guidance on how to handle it
 
 Finance, client delivery, sales, team management. When ownership is diffuse or assumed rather than explicit, accountability gaps appear and AI implementations lose their sponsor during the hard parts.
 
-## Strategic Clarity (Questions 18â€“20)
+## Strategic Clarity (Questions 18 to 20)
 
 **18. Can you name the three operational problems you most need AI to help solve?**
 
@@ -103,7 +103,7 @@ AI is genuinely useful. It is also genuinely limited, particularly when the oper
 
 **20. Have you identified what success would look like 12 months after implementing AI?**
 
-Not in abstract terms â€” fewer hours wasted, better systems, more capacity. In specific terms: hours recovered per week, error rates reduced, revenue capacity increased, specific workflows that no longer require manual intervention. Measurable definitions of success make it possible to evaluate whether you're on track.
+Not in abstract terms: fewer hours wasted, better systems, more capacity. In specific terms: hours recovered per week, error rates reduced, revenue capacity increased, specific workflows that no longer require manual intervention. Measurable definitions of success make it possible to evaluate whether you're on track.
 
 ## How to Read Your Results
 

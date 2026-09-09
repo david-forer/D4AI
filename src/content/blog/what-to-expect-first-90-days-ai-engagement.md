@@ -13,7 +13,7 @@ In any operational change project, the first decisions compound. The workflows c
 
 The first 90 days of an AI consulting engagement are not just the starting phase. They are the foundation phase. What gets built on top of them either reinforces and extends that foundation, or struggles against the gaps in it.
 
-Understanding what should happen in this window � and what signals indicate that something is off � helps founders stay engaged in the right way at the right moments, rather than checking in when the timeline has already been compromised.
+Understanding what should happen in this window, and what signals indicate that something is off, helps founders stay engaged in the right way at the right moments, rather than checking in when the timeline has already been compromised.
 
 ---
 
@@ -37,7 +37,7 @@ The second two-week block translates the discovery findings into a specific impl
 
 **Scoping conversations** happen during this phase, not before. Scope that is defined before discovery is scope defined without the information needed to define it well. A consultant who provides a fixed scope quote before spending meaningful time understanding the business is guessing, not scoping.
 
-**What you should have at the end of this phase:** A specific, agreed-upon implementation plan for the first build phase. Clear sequencing � which workflows get built first and why. An honest assessment of any data cleanup or tool configuration that needs to happen before the build can proceed. Timeline expectations that account for the actual complexity of what is being built.
+**What you should have at the end of this phase:** A specific, agreed-upon implementation plan for the first build phase. Clear sequencing: which workflows get built first and why. An honest assessment of any data cleanup or tool configuration that needs to happen before the build can proceed. Timeline expectations that account for the actual complexity of what is being built.
 
 ---
 
@@ -49,7 +49,7 @@ The third phase is active construction. The designs produced in the previous pha
 
 **What active client involvement looks like:** Testing workflows with real data and real edge cases, not just demo data. Providing feedback on outputs that are close but not quite right. Flagging the exceptions and special cases that were not covered in the design conversations. The consultants who produce the best implementations are the ones who maintain active client feedback loops throughout the build, not the ones who disappear for four weeks and emerge with a finished product.
 
-**What to watch for:** Build phases that run significantly over the original timeline are often signalling one of a few things � scope expansion that was not formally acknowledged, data quality issues that were not surfaced in discovery, or access issues that are slowing the work. Each of these has a solution, but identifying the cause matters for managing the engagement and the relationship.
+**What to watch for:** Build phases that run significantly over the original timeline are often signalling one of a few things: scope expansion that was not formally acknowledged, data quality issues that were not surfaced in discovery, or access issues that are slowing the work. Each of these has a solution, but identifying the cause matters for managing the engagement and the relationship.
 
 ---
 
@@ -57,7 +57,7 @@ The third phase is active construction. The designs produced in the previous pha
 
 The fourth phase is where the work transitions from the consultant's hands to the client team's. The systems are built and running. The job now is making them stick.
 
-**What stabilisation looks like in practice:** The team is using the new workflows in real operation, with the consultant still available for questions, adjustments, and edge cases that the build phase did not anticipate. Issues that emerge during real use � and they always emerge � get addressed during this phase rather than after the engagement closes.
+**What stabilisation looks like in practice:** The team is using the new workflows in real operation, with the consultant still available for questions, adjustments, and edge cases that the build phase did not anticipate. Issues that emerge during real use, and they always emerge, get addressed during this phase rather than after the engagement closes.
 
 **Team training happens here, not in a single session.** Effective training is built around the specific workflows that changed for each role, delivered close to the time when those people are actually using the new systems. A two-hour general product walkthrough delivered in week two and then not revisited is not the same thing as supported adoption during actual use.
 
@@ -75,9 +75,9 @@ Most engagement timeline extensions come from one of four sources. Knowing them 
 
 **Data quality issues discovered late.** Discovery should surface data problems, but sometimes the full extent of the issue is not visible until the build phase tries to use the data in practice. When the CRM has inconsistent records, the project management tool has no standard naming conventions, or the data your team has been entering for two years turns out to be structured differently than the automation assumes, the build has to pause for cleanup.
 
-**Scope expansion without formal acknowledgement.** "While we are in here, could we also..." is one of the most reliable ways to extend a timeline. Additions to scope are legitimate, but they need to be treated as scope changes � with updated timelines, revised budgets, and explicit agreement � not as informal extras that get absorbed into the existing engagement.
+**Scope expansion without formal acknowledgement.** "While we are in here, could we also..." is one of the most reliable ways to extend a timeline. Additions to scope are legitimate, but they need to be treated as scope changes, with updated timelines, revised budgets, and explicit agreement, not as informal extras that get absorbed into the existing engagement.
 
-**Tool access and permission issues.** Waiting for IT to provision access, chasing down API credentials, or discovering that a tool your team uses does not have the integration capability that was assumed � these are avoidable delays when addressed early and painful when discovered during the build.
+**Tool access and permission issues.** Waiting for IT to provision access, chasing down API credentials, or discovering that a tool your team uses does not have the integration capability that was assumed. These are avoidable delays when addressed early and painful when discovered during the build.
 
 ---
 
@@ -99,7 +99,7 @@ The end of the 90-day window is not necessarily the end of the engagement, but i
 
 ## What Comes After
 
-The 90-day engagement window is the foundation. What you build on top of it � more workflows, deeper integration, expanded AI capability � is determined by what that foundation supports.
+The 90-day engagement window is the foundation. What you build on top of it, more workflows, deeper integration, expanded AI capability, is determined by what that foundation supports.
 
 Businesses that treat the initial engagement as a one-time installation often find that the systems drift over time. The business changes, the workflows evolve, and the automated systems that were built for the old version of operations become less relevant without being updated. The businesses that treat the initial engagement as a starting point, with a regular review cadence and a plan for ongoing extension, are the ones where the investment compounds.
 

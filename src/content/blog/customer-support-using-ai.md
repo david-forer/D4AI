@@ -490,6 +490,6 @@ Train your support team on AI augmentation. Give them the skills to edit rather 
 
 ---
 
-*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) Â· [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses)*
+*Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) | [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses)*
 
 If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

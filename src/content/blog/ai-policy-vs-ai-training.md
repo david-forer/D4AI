@@ -523,6 +523,6 @@ Your policy documents what's required. Your training makes it actually happen. C
 
 ---
 
-*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) Â· [Shadow AI is Already in Your Company](/blog/shadow-ai)*
+*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) | [Shadow AI is Already in Your Company](/blog/shadow-ai)*
 
 If your team needs to build these capabilities, [AI training for small business teams](/ai-training-for-small-business-teams) provides the practical framework.

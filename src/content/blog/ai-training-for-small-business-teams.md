@@ -257,6 +257,6 @@ The technology is ready. The question is whether your team is ready to use it.
 
 ---
 
-*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) � [AI Ethics: Both Sides of the Debate](/blog/ai-ethics-both-sides)*
+*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) | [AI Ethics: Both Sides of the Debate](/blog/ai-ethics-both-sides)*
 
 Looking to build AI fluency across your team? [Explore AI training for small business teams](/ai-training-for-small-business-teams).

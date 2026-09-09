@@ -11,7 +11,7 @@ articleType: "cluster"
 
 After working through AI readiness assessments with founder-led businesses, a pattern becomes clear very quickly. The gaps that block meaningful AI adoption are not random. They are structural, and they appear in almost every business at a similar stage of growth.
 
-That's not a criticism of how these businesses are run. These gaps are the natural byproduct of a company that grew fast on the strength of its people rather than its systems. They are predictable, which means they are also fixable â€” once you can see them clearly.
+That's not a criticism of how these businesses are run. These gaps are the natural byproduct of a company that grew fast on the strength of its people rather than its systems. They are predictable, which means they are also fixable once you can see them clearly.
 
 Here are the six gaps that show up most consistently, and what they actually mean for your AI plans.
 

@@ -579,6 +579,6 @@ Training is an infinite game, not a finite one. The goal isn't to "finish traini
 
 ---
 
-*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) � [AI Training for Small Business Teams](/blog/ai-training-for-small-business-teams)*
+*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) | [AI Training for Small Business Teams](/blog/ai-training-for-small-business-teams)*
 
 Ready to bring structured AI training to your organization? [Explore AI training programs](/ai-training-for-small-business-teams).

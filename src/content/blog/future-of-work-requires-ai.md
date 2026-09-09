@@ -494,6 +494,6 @@ Build it intentionally. The future is already here.
 
 ---
 
-*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) Â· [AI Upskilling for Non-Technical Teams](/blog/nontechnical-ai-upskilling)*
+*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) | [AI Upskilling for Non-Technical Teams](/blog/nontechnical-ai-upskilling)*
 
 If your team needs to build these capabilities, [AI training for small business teams](/ai-training-for-small-business-teams) provides the practical framework.

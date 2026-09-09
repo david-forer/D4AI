@@ -13,7 +13,7 @@ Search for "AI consultant" and you will find people who build machine learning m
 
 For small business founders evaluating whether to hire one, this ambiguity is a practical problem. You are trying to understand what you would actually be getting, whether it matches what you actually need, and whether the person in front of you can deliver it. Generic descriptions do not help with any of those questions.
 
-This article describes what an AI consultant does in the context that matters for a business with five to fifty people � the operational design and implementation work that changes how a business runs, not the research, strategy, or enterprise transformation kind.
+This article describes what an AI consultant does in the context that matters for a business with five to fifty people: the operational design and implementation work that changes how a business runs, not the research, strategy, or enterprise transformation kind.
 
 ---
 
@@ -25,7 +25,7 @@ This is not the version of operations that lives in the founder's head, or the i
 
 **The discovery phase typically runs two to four weeks** and involves conversations with the founder, key team members, and sometimes clients. The consultant reviews the existing tool stack, maps the primary workflows, and identifies where friction accumulates. Good discovery work is the difference between an engagement that addresses the highest-value problems and one that builds impressive-sounding things that do not move the needle.
 
-The output of this phase is a prioritised roadmap � a specific list of workflows ranked by value, implementation complexity, and readiness. This is not a strategy deck. It is an actionable plan with clear sequencing. A vague vision document at the end of discovery is a red flag.
+The output of this phase is a prioritised roadmap, a specific list of workflows ranked by value, implementation complexity, and readiness. This is not a strategy deck. It is an actionable plan with clear sequencing. A vague vision document at the end of discovery is a red flag.
 
 ---
 
@@ -33,7 +33,7 @@ The output of this phase is a prioritised roadmap � a specific list of workflo
 
 Once the highest-value opportunities are identified, the consultant designs how AI fits into each specific workflow. This is the most intellectually demanding part of the engagement and the step that most separates experienced consultants from inexperienced ones.
 
-Good workflow design means defining every element of a workflow before anything gets built. What triggers the workflow? What data does it need, and where does that data come from? What does it produce, and where does the output go? What happens when an exception occurs � an input that is outside the expected range, a system that is temporarily unavailable, a case that the automation was not designed to handle?
+Good workflow design means defining every element of a workflow before anything gets built. What triggers the workflow? What data does it need, and where does that data come from? What does it produce, and where does the output go? What happens when an exception occurs, an input that is outside the expected range, a system that is temporarily unavailable, a case that the automation was not designed to handle?
 
 **Every decision point in the workflow needs an answer.** Who approves what? What should require human review before the system acts? Where is the tolerance for error low enough that human oversight is mandatory? These are not afterthoughts. They are the design decisions that determine whether the system performs well or fails in the specific ways that matter most.
 
@@ -43,9 +43,9 @@ The time investment in design pays forward into implementation. Workflows that a
 
 ## Implementation: What Actually Gets Built
 
-Implementation is what most people picture when they think about AI consulting � the actual building of systems. In a small business context, this looks different from what most founders expect.
+Implementation is what most people picture when they think about AI consulting, the actual building of systems. In a small business context, this looks different from what most founders expect.
 
-An AI consultant working with a small business is not building custom software applications. They are not writing machine learning models from scratch. They are using the mature, well-supported tools that already exist � automation platforms like Zapier, Make, or n8n; AI models accessible through APIs; CRM and project management tools with integration capabilities � and connecting them into operational systems that perform specific jobs reliably.
+An AI consultant working with a small business is not building custom software applications. They are not writing machine learning models from scratch. They are using the mature, well-supported tools that already exist: automation platforms like Zapier, Make, or n8n, AI models accessible through APIs, CRM and project management tools with integration capabilities. Then they connect those into operational systems that perform specific jobs reliably.
 
 **The most common implementation categories in a small business engagement are:**
 
@@ -65,9 +65,9 @@ The build phase typically runs four to eight weeks for a focused engagement, wit
 
 A system your team does not use correctly delivers no value. This is the part of an AI consulting engagement that gets underestimated most consistently, by both consultants and clients.
 
-The technical implementation is the easier half. Getting a team to change how they work � to route requests through a new intake form instead of sending a direct message, to use a new tool for a task they have handled manually for years, to trust an automated system for something they previously controlled � is the harder half.
+The technical implementation is the easier half. Getting a team to change how they work, to route requests through a new intake form instead of sending a direct message, to use a new tool for a task they have handled manually for years, to trust an automated system for something they previously controlled, is the harder half.
 
-**Good adoption work includes several components.** Documentation written for the actual users, not for a technical audience. Hands-on training built around the specific workflows that changed, not general product walkthroughs. A supported early period where the consultant is still available when the team encounters edge cases or questions in real operation. And clear expectations set with the founder about what a normal adoption curve looks like � performance dips before it improves, and that is not a failure signal.
+**Good adoption work includes several components.** Documentation written for the actual users, not for a technical audience. Hands-on training built around the specific workflows that changed, not general product walkthroughs. A supported early period where the consultant is still available when the team encounters edge cases or questions in real operation. And clear expectations set with the founder about what a normal adoption curve looks like. Performance dips before it improves, and that is not a failure signal.
 
 The consultant who treats adoption as someone else's problem is delivering a partial engagement. Training and change management are part of the job.
 
@@ -75,7 +75,7 @@ The consultant who treats adoption as someone else's problem is delivering a par
 
 ## The Handoff: How a Good Engagement Ends
 
-Every well-structured AI consulting engagement ends with the client team owning what was built � understanding it well enough to operate it, troubleshoot basic issues, and eventually extend it.
+Every well-structured AI consulting engagement ends with the client team owning what was built, understanding it well enough to operate it, troubleshoot basic issues, and eventually extend it.
 
 This means the engagement closes with several specific deliverables in hand. **Complete documentation** of every automated workflow: what it does, what triggers it, what it produces, how to identify when it is not working, and how to fix the most common issues. **Training** that has been delivered to the relevant team members and confirmed through actual use. **A named internal owner** for the systems who is accountable for their ongoing health.
 
@@ -99,7 +99,7 @@ An AI consultant is not a **decision-maker for your business**. They can show yo
 
 ## How to Know If What You Need Matches What They Do
 
-The work described in this article is operational AI consulting � the kind that changes how a business runs at the workflow level. It is the right fit when you have specific manual processes consuming significant team time, integration gaps between your primary tools, or reporting and communication workflows that depend on someone's consistent attention to function reliably.
+The work described in this article is operational AI consulting, the kind that changes how a business runs at the workflow level. It is the right fit when you have specific manual processes consuming significant team time, integration gaps between your primary tools, or reporting and communication workflows that depend on someone's consistent attention to function reliably.
 
 It is less suited to businesses that do not yet have a clear operational problem to solve, that are in the middle of significant structural change, or that need strategic AI vision rather than hands-on implementation.
 

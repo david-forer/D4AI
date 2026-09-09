@@ -53,9 +53,9 @@ These questions don't have perfect answers, and you don't need to prepare a form
 
 There's a short list of practical information that makes the assessment faster and more thorough. None of this requires significant work, and most founders can pull it together in under an hour.
 
-A list of the software tools your team currently uses. Don't filter this â€” include everything, even the tools you're not sure are still being used. The full picture of your tech stack is relevant to understanding your integration landscape.
+A list of the software tools your team currently uses. Don't filter this. Include everything, even the tools you're not sure are still being used. The full picture of your tech stack is relevant to understanding your integration landscape.
 
-A rough description of your main recurring workflows. Client onboarding, project delivery, invoicing, internal reporting â€” whatever the core operational processes are. These don't need to be documented in detail. A one-line description of each is sufficient to guide the workflow mapping conversation.
+A rough description of your main recurring workflows. Client onboarding, project delivery, invoicing, internal reporting, or whatever the core operational processes are. These don't need to be documented in detail. A one-line description of each is sufficient to guide the workflow mapping conversation.
 
 An honest sense of where things most often go wrong. Where do errors happen? Where do things fall through the cracks? Where does the team come to you with problems that seem like they should have been handled without your involvement?
 

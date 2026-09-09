@@ -1,6 +1,6 @@
 ---
 title: "How to Prepare for an AI Consultant Before the Engagement Starts"
-description: "What to gather, document, and decide before your AI consultant begins work � and why preparation is the biggest factor in how fast results arrive."
+description: "What to gather, document, and decide before your AI consultant begins work, and why preparation is the biggest factor in how fast results arrive."
 pubDate: 2026-03-21T00:00:00Z
 tags: ["ai consulting", "preparation", "ai implementation", "small business", "workflow"]
 heroImage: "/images/blog/how-to-prepare-for-an-ai-consultant.webp"

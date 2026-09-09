@@ -135,4 +135,4 @@ If you are not sure where your operation stands, an [AI operations audit](/ai-re
 
 ---
 
-*Related reading: [Signs Your Business Needs AI Operations](/blog/signs-your-business-needs-ai-operations) � [AI Operations for Small Businesses: The Complete Guide](/blog/ai-operations-for-small-businesses)*
+*Related reading: [Signs Your Business Needs AI Operations](/blog/signs-your-business-needs-ai-operations) | [AI Operations for Small Businesses: The Complete Guide](/blog/ai-operations-for-small-businesses)*

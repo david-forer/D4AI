@@ -1,6 +1,6 @@
 ---
 title: "Aligning Your AI Strategy with Your Business Goals"
-description: "How to connect AI investments to the specific outcomes that matter most for your business � and why most businesses get this alignment wrong."
+description: "How to connect AI investments to the specific outcomes that matter most for your business, and why most businesses get this alignment wrong."
 pubDate: 2026-03-21T00:00:00Z
 tags: ["ai strategy", "business goals", "small business", "ai planning", "alignment"]
 heroImage: "/images/blog/aligning-ai-strategy-with-business-goals.webp"

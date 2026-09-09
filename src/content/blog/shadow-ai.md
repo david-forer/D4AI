@@ -227,6 +227,6 @@ Ready to audit your organization's current AI usage and build a comprehensive tr
 
 ---
 
-*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) Â· [AI Policy vs. AI Training: Why Both Matter](/blog/ai-policy-vs-ai-training)*
+*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) | [AI Policy vs. AI Training: Why Both Matter](/blog/ai-policy-vs-ai-training)*
 
 If you need a structured approach to AI policy and skills together, [AI training for small business teams](/ai-training-for-small-business-teams) covers governance and adoption in one program.
