@@ -50,7 +50,6 @@ export default defineConfig({
         !page.includes('/ob-buildout') &&
         !page.includes('/fb-help') &&
         !page.includes('/html') &&
-        !page.includes('/blog/category/') &&
         !/\/content\/?$/.test(page) &&
         !page.includes('/blog/page/') &&
         !page.includes('/seo-ai-resources'),

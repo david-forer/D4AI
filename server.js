@@ -43,10 +43,19 @@ const redirects = {
   // Old local SEO service page → closest current equivalent
   '/local-seo-system':                              '/seo-accelerator',
 
-  // Old blog/category pages
+  // Retired blog posts. Source is preserved in _retired/ (gitignored).
+  // See _retired/README.md for the reason each one came out.
+  '/blog/google-profile-seo':                       '/blog/ai-enabled-seo-operations',
+  '/blog/Google-Profile-SEO':                       '/blog/ai-enabled-seo-operations',
+  '/blog/ai-growth-accelerator':                    '/blog/ai-enabled-seo-operations',
+  '/blog/AI-Growth-Accelerator':                    '/blog/ai-enabled-seo-operations',
+
+  // Old blog/category pages. Only the ones with no matching Astro route belong
+  // here. '/blog/category/automation' was removed because it IS a live hub in
+  // src/pages/blog/category/[category].astro, and this rule was 301ing the
+  // "AI Automation" link on /blog straight back to /blog.
   '/seo-news':                                      '/blog',
   '/category/small-business-seo':                  '/blog',
-  '/blog/category/automation':                      '/blog',
   '/blog/category/business':                        '/blog',
   '/blog/category/operations':                      '/blog',
   '/blog/category/ai':                              '/blog',

@@ -36,3 +36,8 @@ docs/
 
 # content dashboard scratch
 .dashboard-comments.json
+
+# retired blog posts. Pulled out of src/content/blog so they stop building and
+# stop competing, but kept on disk so nothing is lost and anything can come back.
+# Never git add -f this folder. See _retired/README.md for what is in here and why.
+_retired/
