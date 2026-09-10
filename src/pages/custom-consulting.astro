@@ -1,117 +1,107 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import StrategySteps from '../components/StrategySteps.astro';
 ---
 
-<Layout title="Custom Consulting with David Forer | Services"
-description="Explore how David Forer's Custom Consulting service can help your business implement tailored AI solutions, optimize operations, and drive growth.">
-	<div class="mx-auto px-4 py-12 max-w-7xl text-white">
-		<h1 class="text-5xl font-bold text-center mb-12">Custom <span class="text-gradient">Consulting</span></h1>
-		
-		<div class="bg-slate-800 rounded-lg p-8 shadow-lg">
-			<div class="mb-8 text-center">
-				<img src="/images/ai operations optimize.webp" alt="Custom Consulting" class="max-w-full h-auto rounded-lg shadow-md mx-auto">
-			</div>
-			
-			<div class="max-w-4xl mx-auto">
-				<h2 class="text-3xl font-bold text-center text-blue-500 mb-6">Tailored AI Solutions for Your Unique Challenges</h2>
-				<p class="text-xl text-slate-200 mb-8">
-					Our Custom Consulting service provides specialized expertise to address your organization's specific AI and technology needs. We work closely with your team to develop strategic solutions that drive innovation and competitive advantage.
-				</p>
-				
-				<h3 class="text-2xl font-bold text-blue-500 mt-10 mb-4">Areas of Expertise:</h3>
-				<ul class="space-y-2 mb-8">
-					<li class="flex items-center">
-						<span class="text-blue-500 mr-2">→</span>
-						<span>AI Strategy Development</span>
-					</li>
-					<li class="flex items-center">
-						<span class="text-blue-500 mr-2">→</span>
-						<span>Technology Selection and Implementation</span>
-					</li>
-					<li class="flex items-center">
-						<span class="text-blue-500 mr-2">→</span>
-						<span>Data Strategy and Management</span>
-					</li>
-					<li class="flex items-center">
-						<span class="text-blue-500 mr-2">→</span>
-						<span>Process Optimization and Automation</span>
-					</li>
-					<li class="flex items-center">
-						<span class="text-blue-500 mr-2">→</span>
-						<span>AI Governance and Ethics</span>
-					</li>
-					<li class="flex items-center">
-						<span class="text-blue-500 mr-2">→</span>
-						<span>Change Management and Adoption</span>
-					</li>
-				</ul>
-				
-				<h3 class="text-2xl font-bold text-blue-500 mt-10 mb-6">Our Consulting Approach:</h3>
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
-						<div class="text-4xl mb-4">🔍</div>
-						<h4 class="text-xl font-bold text-blue-500 mb-2">Discovery</h4>
-						<p class="text-slate-200">We begin by thoroughly understanding your business, challenges, goals, and existing technology landscape.</p>
-					</div>
-					
-					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
-						<div class="text-4xl mb-4">📋</div>
-						<h4 class="text-xl font-bold text-blue-500 mb-2">Strategy</h4>
-						<p class="text-slate-200">We develop a customized roadmap that aligns AI initiatives with your business objectives and priorities.</p>
-					</div>
-					
-					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
-						<div class="text-4xl mb-4">🛠️</div>
-						<h4 class="text-xl font-bold text-blue-500 mb-2">Implementation</h4>
-						<p class="text-slate-200">Our experts work alongside your team to execute the strategy, providing guidance and hands-on support.</p>
-					</div>
-					
-					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
-						<div class="text-4xl mb-4">📈</div>
-						<h4 class="text-xl font-bold text-blue-500 mb-2">Optimization</h4>
-						<p class="text-slate-200">We continuously measure results, refine approaches, and identify new opportunities for improvement.</p>
-					</div>
-				</div>
-				
-				<h3 class="text-2xl font-bold text-blue-500 mt-10 mb-6">Why Choose Our Custom Consulting:</h3>
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
-						<div class="text-4xl mb-4">👥</div>
-						<h4 class="text-xl font-bold text-blue-500 mb-2">Expert Team</h4>
-						<p class="text-slate-200">Access to seasoned professionals with deep expertise in AI, data science, and business transformation.</p>
-					</div>
-					
-					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
-						<div class="text-4xl mb-4">🎯</div>
-						<h4 class="text-xl font-bold text-blue-500 mb-2">Tailored Solutions</h4>
-						<p class="text-slate-200">Customized approaches that address your specific challenges rather than one-size-fits-all solutions.</p>
-					</div>
-					
-					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
-						<div class="text-4xl mb-4">💡</div>
-						<h4 class="text-xl font-bold text-blue-500 mb-2">Knowledge Transfer</h4>
-						<p class="text-slate-200">We empower your team with the skills and knowledge to maintain and evolve solutions independently.</p>
-					</div>
-				</div>
-				
-				<div class="bg-indigo-900 bg-opacity-30 p-8 rounded-lg text-center mt-12">
-					<h3 class="text-2xl font-bold text-blue-500 mb-4">Ready for expert guidance?</h3>
-					<p class="text-xl text-slate-200 mb-6">Schedule a consultation to discuss your unique challenges and how we can help.</p>
-					<a href="/contact" class="inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700 transition-colors">Book a Consultation</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<StrategySteps />
-</Layout>
+<Layout title="Custom Consulting for Founder-Led Operations | David J Forer"
+description="Scoped operations and AI work for founder-led businesses that does not fit a standard audit tier. Every engagement starts with an audit.">
+	<main class="mx-auto w-full text-black text-xl leading-relaxed">
 
-<style>
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-</style>
+		<!-- Hero -->
+		<section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20 w-full">
+			<div class="container mx-auto px-6 max-w-5xl text-center">
+				<h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Custom consulting</h1>
+				<p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto">Some problems do not fit a package. This is where that work goes, and it still starts the same way everything else does.</p>
+				<a href="/ai-readiness-and-ai-audits" class="inline-block bg-white text-blue-600 font-semibold py-4 px-8 rounded-lg text-lg hover:bg-blue-50 transition duration-300">Start with an audit</a>
+			</div>
+		</section>
+
+		<!-- What this is -->
+		<section class="py-16 px-6">
+			<div class="container mx-auto max-w-4xl">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">What this actually covers</h2>
+				<div class="text-lg text-gray-700 leading-relaxed space-y-6">
+					<p>Most of my work is a process audit followed by a build. That covers the majority of what founder-led businesses need, and it is priced and scoped before anything starts.</p>
+
+					<p>Then there is the other kind. A 14-person insurance brokerage that already documented its renewals process two years ago and cannot get anyone to follow the doc. A design studio moving off one project tool onto another where the real problem is that intake was never defined, so both tools hold the same mess in different shapes. A founder who has quietly become the only person who knows how quoting works, and has 3 months before a key hire starts.</p>
+
+					<p>Work like that gets scoped from what I find, not from a page like this one.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Who -->
+		<section class="py-16 px-6 bg-gray-50">
+			<div class="container mx-auto max-w-4xl">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Who I work with</h2>
+				<div class="text-lg text-gray-700 leading-relaxed space-y-6">
+					<p>Founder-led service businesses. Usually 5 to 20 people, somewhere between $1M and $5M in revenue, with no dedicated operations lead. Revenue is fine. The founder is the constraint.</p>
+
+					<p>That last part matters more than the revenue number. If every real decision still routes through one person, adding tools or headcount tends to move the bottleneck rather than remove it. That is the pattern I know best and the one I am most useful on.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- How it starts -->
+		<section class="py-16 px-6">
+			<div class="container mx-auto max-w-4xl">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">How it starts</h2>
+				<div class="text-lg text-gray-700 leading-relaxed space-y-6">
+					<p>With an audit. Always.</p>
+
+					<p>I do not quote custom work off a discovery call, because a discovery call tells me what a founder believes is broken, and that is rarely the whole picture. The audit extracts how the work actually moves today: what comes in, what gets decided, what gets handed off, and where it stalls. Scope comes out of that, in writing, with a fixed price before anything gets built.</p>
+
+					<p>If the audit shows the problem fits one of the standard engagements, I will say so and you get the cheaper path.</p>
+
+					<div class="mt-10">
+						<a href="/ai-readiness-and-ai-audits" class="inline-block bg-blue-600 text-white font-semibold py-4 px-8 rounded-lg text-lg hover:bg-blue-700 transition duration-300">See how the audit works</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Boundaries -->
+		<section class="py-16 px-6 bg-gray-50">
+			<div class="container mx-auto max-w-4xl">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">What I turn down</h2>
+				<div class="text-lg text-gray-700 leading-relaxed space-y-6">
+					<p>Worth knowing before you book a call.</p>
+
+					<ul class="list-disc list-inside space-y-3 ml-4">
+						<li>Open-ended monthly retainers. Engagements are fixed scope with a defined end.</li>
+						<li>Staff augmentation. I am one person and I am not a substitute for a hire you need to make.</li>
+						<li>Training a model on your data. There is almost always a cheaper answer, and it usually starts with fixing the process feeding it.</li>
+						<li>Anything where the answer is already decided and the work is to justify it.</li>
+					</ul>
+
+					<p>Saying that up front saves us both a call.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- NDA note -->
+		<section class="py-16 px-6 bg-blue-600 text-white">
+			<div class="container mx-auto max-w-4xl text-center">
+				<h2 class="text-3xl md:text-4xl font-bold mb-8">Why there are no client names here</h2>
+				<div class="text-lg leading-relaxed space-y-6">
+					<p>Client work runs under NDA. That covers the process maps, the systems, and usually the fact of the engagement itself, so you will not find logos or named case studies on this site. Operations work touches how a business actually makes money and who it depends on. Founders are right to want that kept quiet, and I would rather have their trust than a testimonial slider.</p>
+
+					<p>What I can point you at is the thinking. The method comes from years of audits and operational work, most recently at Spyglass Ops. The writing is public and there is a lot of it.</p>
+
+					<div class="mt-10">
+						<a href="/blog" class="inline-block bg-white text-blue-600 font-semibold py-4 px-8 rounded-lg text-lg hover:bg-blue-50 transition duration-300">Read the work</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section class="py-16 px-6">
+			<div class="container mx-auto max-w-4xl text-center">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">If this sounds like your situation</h2>
+				<p class="text-lg text-gray-700 leading-relaxed mb-10">Book 30 minutes. I will tell you whether an audit is worth your money before you spend any of it.</p>
+				<a href="https://calendly.com/david-j-forer/30min" class="inline-block bg-blue-600 text-white font-semibold py-4 px-8 rounded-lg text-lg hover:bg-blue-700 transition duration-300">Book a call</a>
+			</div>
+		</section>
+
+	</main>
+</Layout>
