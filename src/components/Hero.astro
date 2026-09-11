@@ -26,29 +26,63 @@ import ModalLeadMagnet from "../components/ModalLeadMagnet.astro";
           </div>
       </div>
       <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <!-- Click to load the player.
+             The Vimeo iframe used to load on every page view. It is only shown
+             at lg and up, so it was a desktop-only cost: Vimeo's player ships
+             deprecated unload listeners and sets two third-party cookies
+             (vuid, __cf_bm), both of which fail Best Practices, and neither is
+             fixable from here because they live in Vimeo's own bundle. Nothing
+             from Vimeo is requested until someone clicks. dnt=1 is Vimeo's
+             do-not-track flag, which suppresses their session cookie even
+             after the player loads. -->
         <div class="relative w-full max-w-3xl pb-[66.66%] h-0 overflow-hidden">
-  <iframe
-    class="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
-    src="https://player.vimeo.com/video/1104600587?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-    title="Homepage Intro Video – Are You Stuck?"
-    aria-label="Intro video explaining how David helps small business owners fix their operations, marketing, and AI usage"
-    frameborder="0"
-    loading="lazy"
-    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-  ></iframe>
-</div>
-
-         <!-- <img src="../images/seo-7-steps.webp" alt="AI Operations Template" class="max-h-full">-->
-      </div>                
+          <button
+            type="button"
+            id="hero-video-play"
+            data-video="https://player.vimeo.com/video/1104600587?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1&amp;autoplay=1"
+            class="group absolute top-0 left-0 w-full h-full rounded-xl shadow-lg overflow-hidden bg-gradient-to-br from-blue-800 to-blue-950 cursor-pointer focus:outline-none focus:ring-4 focus:ring-orange-400"
+          >
+            <span class="absolute inset-0 flex flex-col items-center justify-center gap-3">
+              <span class="flex h-16 w-16 items-center justify-center rounded-full bg-orange-500 shadow-xl transition-transform duration-200 group-hover:scale-110">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="ml-1 h-7 w-7 text-white" aria-hidden="true">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </span>
+              <span class="text-base font-semibold text-white">Are You Stuck?</span>
+              <span class="text-xs uppercase tracking-[0.18em] text-blue-200">Watch the 90 second intro</span>
+            </span>
+            <span class="sr-only">Play the intro video explaining how David helps small business owners fix their operations, marketing, and AI usage</span>
+          </button>
+        </div>
+      </div>
   </div>
 
- <ModalLeadMagnet 
+ <ModalLeadMagnet
   showModalId="ai-audit-modal"
   formTitle="Download the AI Audit Template"
   formDescription="Get the SOP & delivery guide I use with real clients to assess AI readiness."
   formSrc="https://bricks.davidjforer.com/s/cmb4zuznm0015oj0155cmsz7x"
 />
+
+<script>
+  // Swap the poster button for the real player on click. autoplay=1 is on the
+  // data-video URL so the click that loads it also starts it, which keeps the
+  // interaction to a single click.
+  document.addEventListener("DOMContentLoaded", () => {
+    const button = document.getElementById("hero-video-play");
+    if (!button) return;
+    button.addEventListener("click", () => {
+      const frame = document.createElement("iframe");
+      frame.src = button.getAttribute("data-video");
+      frame.className = "absolute top-0 left-0 w-full h-full rounded-xl shadow-lg";
+      frame.title = "Homepage intro video, Are You Stuck?";
+      frame.setAttribute("frameborder", "0");
+      frame.setAttribute("allow", "autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share");
+      frame.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+      button.replaceWith(frame);
+    });
+  });
+</script>
 </section>
 
   <!-- Hero Section -->

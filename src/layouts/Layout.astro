@@ -41,17 +41,67 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 <!doctype html>
 <html lang="en">
 	<head>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8TFRGRQPZ1"></script>
+		<!-- Analytics, loaded after the LCP window rather than in the head.
+		     gtag.js is 173KB and TruConversion pulls more behind it. Loading both
+		     eagerly cost 2.1 seconds of mobile LCP: 4.1s with them, 2.0s without,
+		     measured on the live page. They are 176KB of a 258KB page.
+
+		     The gtag stub and dataLayer queue stay here, so any gtag() call made
+		     before the real script arrives is buffered and sent once it loads.
+		     A visitor who stays past the trigger is counted normally. A visitor
+		     who leaves before it fires is not counted at all, which is the
+		     deliberate trade. Trigger is first interaction, or 3s idle. -->
 		<script is:inline>
 			window.dataLayer = window.dataLayer || [];
+			window._tip = window._tip || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 			gtag('config', 'G-8TFRGRQPZ1');
+
+			(function () {
+				var loaded = false;
+				var triggers = ['scroll', 'pointerdown', 'keydown', 'touchstart'];
+
+				function add(src, id) {
+					var s = document.createElement('script');
+					s.async = true;
+					if (id) s.id = id;
+					s.src = src;
+					document.head.appendChild(s);
+				}
+
+				function load() {
+					if (loaded) return;
+					loaded = true;
+					triggers.forEach(function (t) { window.removeEventListener(t, load); });
+					add('https://www.googletagmanager.com/gtag/js?id=G-8TFRGRQPZ1');
+					if (!document.getElementById('ti-js')) {
+						add('https://app.truconversion.com/ti-js/37589/7faf4.js', 'ti-js');
+					}
+				}
+
+				// Real interaction loads immediately, because that is intent.
+				triggers.forEach(function (t) {
+					window.addEventListener(t, load, { passive: true, once: true });
+				});
+
+				// The automatic path waits for load first. Arming requestIdleCallback
+				// straight away would let it fire before the largest paint on a fast
+				// connection, which is the exact thing this is meant to prevent.
+				function arm() {
+					if ('requestIdleCallback' in window) requestIdleCallback(load, { timeout: 2000 });
+					else setTimeout(load, 2000);
+				}
+
+				if (document.readyState === 'complete') arm();
+				else window.addEventListener('load', arm, { once: true });
+			})();
 		</script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<!-- No favicon.svg line here. There is no favicon.svg in public/, so it
+		     404ed on every page of the site and logged a console error. The .ico
+		     and the two PNGs below cover every browser. -->
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<meta name="description" content={description} />
@@ -70,18 +120,8 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" media="print" onload="this.media='all'" />
 		<script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
-		<!-- TruConversion for davidjforer.com -->
-		<script is:inline type="text/javascript">
-    var _tip = _tip || [];
-    (function(d,s,id){
-        var js, tjs = d.getElementsByTagName(s)[0];
-        if(d.getElementById(id)) { return; }
-        js = d.createElement(s); js.id = id;
-        js.async = true;
-        js.src = d.location.protocol + '//app.truconversion.com/ti-js/37589/7faf4.js';
-        tjs.parentNode.insertBefore(js, tjs);
-    }(document, 'script', 'ti-js'));
-		</script>
+		<!-- TruConversion is loaded by the gated analytics loader above, together
+		     with gtag. Do not add an eager script tag for it here again. -->
 
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
