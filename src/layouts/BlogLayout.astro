@@ -38,9 +38,13 @@ const formattedDate = pubDate
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
 
-    <!-- Calendly Inline Popup Widget -->
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <!-- Calendly was loaded here too, and nothing on a blog post used it.
+         No blog page or blog post calls initPopupWidget or renders a
+         calendly-inline-widget. The stylesheet was not even using the
+         media="print" trick, so it was a render-blocking request to a
+         third-party domain on all 175 blog URLs for a widget that does not
+         exist on any of them. If a blog post ever needs a booking popup, copy
+         the on-demand loader from Hero.astro rather than reinstating this. -->
   </head>
 
   <body class="bg-white text-gray-900 antialiased">

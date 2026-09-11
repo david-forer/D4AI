@@ -12,7 +12,8 @@ import ModalLeadMagnet from "../components/ModalLeadMagnet.astro";
           <p class="max-w-2xl mb-6 font-light text-blue-100 lg:mb-8 md:text-lg lg:text-xl">Build an AI-Powered Operating System -- You've hit $1M in revenue. Your team is maxed out. It's time to install the systems that scale without you.</p>
           <div class="flex flex-wrap gap-4">
             <button
-              onclick="if (window.Calendly) Calendly.initPopupWidget({ url: 'https://calendly.com/david-j-forer/30min' }); return false;"
+              type="button"
+              data-calendly="https://calendly.com/david-j-forer/30min"
               class="cursor-pointer bg-orange-500 text-white px-6 py-3 rounded-xl hover:bg-orange-600 transition duration-200 focus:ring-2 focus:ring-orange-400 focus:ring-offset-2 focus:outline-none"
             >
               Book a Strategy Call
@@ -65,10 +66,64 @@ import ModalLeadMagnet from "../components/ModalLeadMagnet.astro";
 />
 
 <script>
-  // Swap the poster button for the real player on click. autoplay=1 is on the
-  // data-video URL so the click that loads it also starts it, which keeps the
-  // interaction to a single click.
+  // Calendly, loaded on demand.
+  //
+  // It used to load site-wide for the benefit of this one button. The old
+  // handler was `if (window.Calendly) Calendly.initPopupWidget(...)`, which
+  // silently did nothing when the script had not arrived yet, so a fast
+  // clicker got a dead button on the primary booking CTA.
+  //
+  // Now: hovering or focusing the button starts the download, so by the time
+  // anyone clicks it is usually ready. A click waits for the load. If the
+  // script fails outright the button navigates straight to Calendly, which
+  // means the booking path can no longer end in nothing happening.
   document.addEventListener("DOMContentLoaded", () => {
+    const bookButton = document.querySelector("[data-calendly]");
+    if (bookButton) {
+      let pending = null;
+
+      const loadCalendly = () => {
+        if (window.Calendly) return Promise.resolve();
+        if (pending) return pending;
+        pending = new Promise((resolve, reject) => {
+          const css = document.createElement("link");
+          css.rel = "stylesheet";
+          css.href = "https://assets.calendly.com/assets/external/widget.css";
+          document.head.appendChild(css);
+
+          const js = document.createElement("script");
+          js.src = "https://assets.calendly.com/assets/external/widget.js";
+          js.async = true;
+          js.onload = resolve;
+          js.onerror = reject;
+          document.head.appendChild(js);
+        });
+        return pending;
+      };
+
+      ["pointerenter", "focus", "touchstart"].forEach((event) => {
+        bookButton.addEventListener(event, loadCalendly, { passive: true, once: true });
+      });
+
+      bookButton.addEventListener("click", () => {
+        const url = bookButton.getAttribute("data-calendly");
+        const label = bookButton.textContent;
+        bookButton.textContent = "Opening...";
+        loadCalendly()
+          .then(() => {
+            bookButton.textContent = label;
+            if (window.Calendly) window.Calendly.initPopupWidget({ url });
+            else window.location.href = url;
+          })
+          .catch(() => {
+            window.location.href = url;
+          });
+      });
+    }
+
+    // Swap the poster button for the real player on click. autoplay=1 is on the
+    // data-video URL so the click that loads it also starts it, which keeps the
+    // interaction to a single click.
     const button = document.getElementById("hero-video-play");
     if (!button) return;
     button.addEventListener("click", () => {

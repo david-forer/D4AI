@@ -90,7 +90,14 @@ description="Contact David Forer for AI operations, SEO strategy, or how I can h
 				</div>
 				
 				<div class="mx-auto max-w-3xl bg-white rounded-lg shadow-sm overflow-hidden">
-					<!-- Calendly inline widget begin -->
+					<!-- Calendly inline widget begin.
+					     This page keeps its own copy of both the stylesheet and the
+					     script. Calendly used to be loaded site-wide from Layout.astro
+					     and this embed quietly relied on that stylesheet. The site-wide
+					     load is gone, so the CSS has to be declared here or the widget
+					     renders unstyled. The booking calendar is the whole point of
+					     this page, so loading it eagerly here is correct. -->
+					<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 					<div class="calendly-inline-widget" data-url="https://calendly.com/david-j-forer/30min?hide_gdpr_banner=1&hide_event_type_details=1" style="min-width:320px;height:750px;"></div>
 					<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 					<!-- Calendly inline widget end -->
