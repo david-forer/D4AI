@@ -6,13 +6,19 @@
 <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
-      <!-- Logo -->
+      <!-- Wordmark.
+           This was a 48KB WebP of the words "David J Forer / AI Operations".
+           It is now the words themselves: no request, no decode, no layout
+           wait, and the brand name is real text on every page. Inter is
+           already self-hosted, so it renders identically to the old image.
+           #2e78de is sampled from that image. -->
       <div class="flex-shrink-0 flex items-center">
-        <!-- The image is the only content of this link, so its alt names the
-             destination rather than the picture. This link appears on every
-             page, so it is the site's most repeated anchor text. -->
-        <a href="/" class="flex items-center" aria-label="David J Forer, home">
-          <img class="h-12 w-auto" src="/images/ai operations logo.webp" alt="David J Forer, AI operations consultant" width="216" height="48" />
+        <a href="/" class="group flex items-center gap-2.5">
+          <span class="block h-9 w-1.5 shrink-0 rounded-full bg-[#2e78de] transition-transform duration-200 group-hover:scale-y-110"></span>
+          <span class="flex flex-col leading-none">
+            <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-[#2e78de]">David J Forer</span>
+            <span class="mt-1 text-[0.62rem] sm:text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-slate-500">AI Operations</span>
+          </span>
         </a>
       </div>
       

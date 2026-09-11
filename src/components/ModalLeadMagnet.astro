@@ -19,11 +19,17 @@ const { showModalId, formTitle, formDescription, formSrc } = Astro.props;
   <p class="text-sm text-gray-600">{formDescription}</p>
 </div>
 
-    <!-- Form embed -->
+    <!-- Form embed.
+         The src is held in data-src, not src. A hidden parent does not stop an
+         iframe from loading, so a real src here booted the whole Formbricks
+         Next.js app on page load for a form nobody had opened. Three of these
+         on the homepage cost about 3.9s of script execution. The src is
+         assigned the first time the modal opens. -->
     <div class="relative h-[500px] overflow-hidden rounded-lg">
       <iframe
-        src={formSrc}
+        data-src={formSrc}
         class="absolute top-0 left-0 w-full h-full border-0"
+        loading="lazy"
         allowtransparency="true"
       ></iframe>
     </div>
@@ -38,7 +44,14 @@ const { showModalId, formTitle, formDescription, formSrc } = Astro.props;
       const targetId = button.getAttribute("data-open-modal");
       button.addEventListener("click", () => {
         const modal = document.getElementById(targetId);
-        if (modal) modal.classList.remove("hidden");
+        if (!modal) return;
+        // Load the form on first open, then leave it alone.
+        const frame = modal.querySelector("iframe[data-src]");
+        if (frame) {
+          frame.src = frame.getAttribute("data-src");
+          frame.removeAttribute("data-src");
+        }
+        modal.classList.remove("hidden");
       });
     });
   });

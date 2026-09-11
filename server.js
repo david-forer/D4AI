@@ -1,4 +1,5 @@
 import express from 'express';
+import compression from 'compression';
 import path from 'node:path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -6,6 +7,12 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 const DIST = path.join(__dirname, 'dist');
+
+// Gzip text responses. Nothing was compressed before this: the homepage went
+// out as 57KB of plain HTML and the stylesheet as 9KB, both on the critical
+// path. Images and fonts are already compressed formats, so compression skips
+// them on its own via the default filter.
+app.use(compression());
 
 // Redirect trailing slashes to clean URLs (matches Astro trailingSlash: 'never')
 app.use((req, res, next) => {
