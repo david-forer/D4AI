@@ -1,5 +1,44 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import LeadForm from '../components/LeadForm.astro';
+
+// Formbricks survey: https://bricks.davidjforer.com/s/cmayiuvf4000eoj01699d8ivo
+// Element ids read off that survey's public page and verified in the dashboard
+// with a test submission. Only ids from blocks[].elements[] are real question
+// ids. Block ids look identical and silently swallow values on a 200.
+const CONTACT_SURVEY = 'cmayiuvf4000eoj01699d8ivo';
+const CONTACT_FIELDS = [
+  {
+    name: 'contact',
+    questionId: 'vxs2tmtbi52fq5snqgx83gp2',
+    label: 'Let me Know Who You Are',
+    type: 'contactInfo',
+    // Order is positional in Formbricks. Do not reorder.
+    parts: [
+      { name: 'firstName', label: 'First Name', required: true },
+      { name: 'lastName', label: 'Last Name', required: true },
+      { name: 'email', label: 'Email', type: 'email', required: true },
+      { name: 'phone', label: 'Phone', type: 'tel', required: true },
+      { name: 'company', label: 'Company', required: true },
+    ],
+  },
+  {
+    name: 'help_with',
+    questionId: 'zu9rzc9vv4sakenz7aly6ftd',
+    label: 'I need help with?',
+    type: 'checkboxes',
+    required: true,
+    options: ['AI Integration', 'Operations', 'SEO', 'All of the Above'],
+  },
+  {
+    name: 'detail',
+    questionId: 'g62r1w2ry5i3tqsf5anwmlaf',
+    label: 'If you feel like explaining it, please do',
+    type: 'textarea',
+    required: false,
+    rows: 4,
+  },
+];
 ---
 
 <Layout title="Contact | AI SEO Operations"
@@ -66,15 +105,19 @@ description="Contact David Forer for AI operations, SEO strategy, or how I can h
 					</div>
 				</div>
 				
-				<!-- Contact Form -->
-				<div class="relative w-full h-[800px] bg-white rounded-lg overflow-hidden">
-					<iframe
-						src="https://bricks.davidjforer.com/s/cmayiuvf4000eoj01699d8ivo"
-						frameborder="0"
-						class="absolute inset-0 w-full h-full"
-						loading="lazy"
-						title="Contact Form">
-					</iframe>
+				<!-- Contact Form.
+				     Was an 800px Formbricks iframe. Replaced 2026-09-12 with the
+				     native LeadForm, which posts to the same survey through the
+				     client API. Same responses, same alerting, no cross-origin
+				     iframe and no Formbricks styling. -->
+				<div class="w-full bg-white rounded-lg shadow-lg p-8">
+					<LeadForm
+						surveyId={CONTACT_SURVEY}
+						fields={CONTACT_FIELDS}
+						buttonText="Send Message"
+						successHeading="Thanks, that came through."
+						successBody="I read these myself and I typically respond within 1 to 2 business days."
+					/>
 				</div>
 			</div>
 		</section>
