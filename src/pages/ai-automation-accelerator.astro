@@ -1,5 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import LeadForm from '../components/LeadForm.astro';
+
+// Formbricks survey: https://bricks.davidjforer.com/s/cmtyic55i002gpf01a6b33kkj
+//
+// questionId values read off that survey's public page. If the survey's
+// questions are edited, re-read them, because Formbricks keys a response by
+// question id and a stale id sends the answer nowhere.
+//
+// TRAP: this Formbricks version nests fields under `blocks[].elements[]` and
+// leaves the top-level `questions` array EMPTY. Block ids sit right next to
+// element ids and look identical. `dmbx8trvm79d6r1cw4wzne85` is Block 1, not a
+// question, and posting to it returns HTTP 200 while the answer lands nowhere
+// visible. Only ids from `elements` are real. A 200 is not proof of anything.
+const AUDIT_SURVEY = 'cmtyic55i002gpf01a6b33kkj';
+const AUDIT_FIELDS = [
+  { name: 'name', questionId: 'qoge5rr5efpixjlcbfds12i3', label: 'Your Name', type: 'text', required: true },
+  { name: 'email', questionId: 'fwqopw2kzhjoljidfgymlfgx', label: 'Email Address', type: 'email', required: true },
+  { name: 'website', questionId: 'vpo3sx989uxpw2ys218wfdog', label: 'Website URL (Optional)', type: 'url', required: false },
+  { name: 'biggest_challenge', questionId: 'egzuz1tpi0uktnh87ndcdqyr', label: "What's your biggest time-wasting task?", type: 'textarea', required: true, rows: 3 },
+];
 ---
 
 <Layout title="AI Automation Accelerator | Services"
@@ -403,31 +423,14 @@ description="AI Automation can scale your business without headcount. We impleme
             <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Schedule your free AI Automation Audit. We'll identify your top 3 automation opportunities and show you the potential ROI.</p>
 
             <div class="bg-white p-8 rounded-lg shadow-lg max-w-lg mx-auto">
-                <h3 class="text-2xl font-bold text-blue-700 mb-6">Book Your Free Automation Audit</h3>
-
-                <form class="space-y-4">
-                    <div>
-                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2 text-left">Your Name</label>
-                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-800">
-                    </div>
-
-                    <div>
-                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2 text-left">Email Address</label>
-                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-800">
-                    </div>
-
-                    <div>
-                        <label for="website" class="block text-gray-700 text-sm font-bold mb-2 text-left">Website URL (Optional)</label>
-                        <input type="url" id="website" name="website" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-800">
-                    </div>
-
-                    <div>
-                        <label for="biggest-challenge" class="block text-gray-700 text-sm font-bold mb-2 text-left">What's your biggest time-wasting task?</label>
-                        <textarea id="biggest-challenge" name="biggest_challenge" rows="3" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-800"></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full bg-teal-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-600 transition duration-300">Claim My Free Audit</button>
-                </form>
+                <LeadForm
+                    surveyId={AUDIT_SURVEY}
+                    fields={AUDIT_FIELDS}
+                    heading="Book Your Free Automation Audit"
+                    buttonText="Claim My Free Audit"
+                    successHeading="Got it."
+                    successBody="Your details are in. I read these myself and I will email you a link to book the audit call shortly."
+                />
 
                 <p class="text-gray-500 text-sm mt-4">Or contact us directly at <a href="mailto:david@davidjforer.com" class="text-blue-600 font-bold">david@davidjforer.com</a></p>
             </div>

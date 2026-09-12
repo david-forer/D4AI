@@ -1,0 +1,187 @@
+---
+/**
+ * Lead form that posts straight into self-hosted Formbricks.
+ *
+ * Why this exists: the hand-rolled form on /ai-automation-accelerator had no
+ * action and no handler from 2025-04-30 onward, so it GET-submitted to its own
+ * URL. The page reloaded, the fields went blank, and it looked like a success.
+ * Sixteen months of submissions went into the access log and nowhere else.
+ *
+ * The markup below is the original design. Only the plumbing is new.
+ *
+ * Formbricks keys a response by QUESTION ID, not by field name. The ids are
+ * random cuids generated when you build the survey, so every field needs its
+ * questionId filled in from the live survey before the form can submit. Read
+ * them off the public survey page: view-source on
+ * https://bricks.davidjforer.com/s/<surveyId> and match each "id" to its
+ * "headline". If a questionId is missing the form refuses to submit rather than
+ * pretending, which is the whole point of this rewrite.
+ */
+export interface LeadFormField {
+  /** Input name and id. Also the label's `for`. */
+  name: string;
+  /** Formbricks question id this field's value is stored against. */
+  questionId: string;
+  label: string;
+  type?: "text" | "email" | "url" | "tel" | "textarea";
+  required?: boolean;
+  rows?: number;
+}
+
+interface Props {
+  /** Formbricks survey id. The `/s/<id>` segment of the survey URL. */
+  surveyId: string;
+  fields: LeadFormField[];
+  heading?: string;
+  buttonText?: string;
+  /** Shown in place of the form once Formbricks has accepted the response. */
+  successHeading?: string;
+  successBody?: string;
+  /** Formbricks host. Override only for local testing. */
+  host?: string;
+  /** Formbricks environment id. */
+  environmentId?: string;
+}
+
+const {
+  surveyId,
+  fields,
+  heading,
+  buttonText = "Send",
+  successHeading = "Got it.",
+  successBody = "Your details are in. I read these myself and I will email you a booking link shortly.",
+  host = "https://bricks.davidjforer.com",
+  environmentId = "cmaydut280009oj01uzsj9v36",
+} = Astro.props;
+
+const endpoint = `${host}/api/v1/client/${environmentId}/responses`;
+
+// Fail loudly at build time rather than shipping another form that swallows
+// leads. A blank questionId is the one mistake that reproduces the old bug.
+const unmapped = fields.filter((f) => !f.questionId);
+if (unmapped.length > 0) {
+  throw new Error(
+    `LeadForm (survey ${surveyId}): no Formbricks questionId for ${unmapped
+      .map((f) => f.name)
+      .join(", ")}. Fill these in from the live survey before shipping, or the form will discard submissions.`,
+  );
+}
+
+const fieldMap = Object.fromEntries(fields.map((f) => [f.name, f.questionId]));
+const formId = `leadform-${surveyId}`;
+---
+
+<div data-leadform={formId} data-endpoint={endpoint} data-survey={surveyId} data-fields={JSON.stringify(fieldMap)}>
+  {heading && <h3 class="text-2xl font-bold text-blue-700 mb-6">{heading}</h3>}
+
+  <form class="space-y-4" data-leadform-form novalidate={false}>
+    {
+      fields.map((f) => (
+        <div>
+          <label for={f.name} class="block text-gray-700 text-sm font-bold mb-2 text-left">
+            {f.label}
+          </label>
+          {f.type === "textarea" ? (
+            <textarea
+              id={f.name}
+              name={f.name}
+              rows={f.rows ?? 3}
+              required={f.required ?? false}
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-800"
+            />
+          ) : (
+            <input
+              type={f.type ?? "text"}
+              id={f.name}
+              name={f.name}
+              required={f.required ?? false}
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-gray-800"
+            />
+          )}
+        </div>
+      ))
+    }
+
+    <button
+      type="submit"
+      data-leadform-submit
+      class="w-full bg-teal-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-600 transition duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
+      >{buttonText}</button
+    >
+
+    <p
+      data-leadform-error
+      class="hidden text-sm text-red-600 text-left"
+      role="alert"
+      aria-live="polite"
+    >
+      That did not send. Please email <a href="mailto:david@davidjforer.com" class="underline">david@davidjforer.com</a> and I will pick it up from there.
+    </p>
+  </form>
+
+  <div data-leadform-success class="hidden text-center" role="status" aria-live="polite">
+    <h3 class="text-2xl font-bold text-blue-700 mb-3">{successHeading}</h3>
+    <p class="text-gray-700">{successBody}</p>
+  </div>
+</div>
+
+<script>
+  // One handler covers every LeadForm on the page.
+  document.querySelectorAll("[data-leadform]").forEach((root) => {
+    const form = root.querySelector("[data-leadform-form]");
+    const button = root.querySelector("[data-leadform-submit]");
+    const errorEl = root.querySelector("[data-leadform-error]");
+    const successEl = root.querySelector("[data-leadform-success]");
+    if (!form || !button) return;
+
+    const endpoint = root.getAttribute("data-endpoint");
+    const surveyId = root.getAttribute("data-survey");
+    const fieldMap = JSON.parse(root.getAttribute("data-fields") || "{}");
+    const originalLabel = button.textContent;
+
+    form.addEventListener("submit", async (event) => {
+      // Nothing below works without this. The old form's entire bug was that
+      // the default action ran: a GET to the page's own URL.
+      event.preventDefault();
+
+      if (typeof form.reportValidity === "function" && !form.reportValidity()) return;
+
+      errorEl?.classList.add("hidden");
+      button.disabled = true;
+      button.textContent = "Sending...";
+
+      // Formbricks wants { [questionId]: value }, so translate field names.
+      const entries = new FormData(form);
+      const data = {};
+      for (const [name, questionId] of Object.entries(fieldMap)) {
+        const value = entries.get(name);
+        if (typeof value === "string" && value.trim() !== "") data[questionId] = value.trim();
+      }
+
+      try {
+        const res = await fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            surveyId,
+            finished: true,
+            data,
+            meta: { url: window.location.href, source: "LeadForm" },
+          }),
+        });
+
+        // Only a real 2xx counts. Anything else keeps the visitor's text on
+        // screen so they can copy it, instead of clearing it into the void.
+        if (!res.ok) throw new Error(`Formbricks returned ${res.status}`);
+
+        form.classList.add("hidden");
+        successEl?.classList.remove("hidden");
+      } catch (err) {
+        console.error("[LeadForm] submission failed", err);
+        button.disabled = false;
+        button.textContent = originalLabel;
+        errorEl?.classList.remove("hidden");
+      }
+    });
+  });
+</script>
