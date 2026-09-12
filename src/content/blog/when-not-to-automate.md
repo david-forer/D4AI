@@ -58,7 +58,7 @@ Before automating any process, it is worth asking: what percentage of instances 
 
 ## The Automation Boundary Test
 
-A useful way to find the right boundary is to map the process in detail and mark every step where the outcome depends on information that is not fully captured in a system, or where two reasonable people might reach different conclusions about what to do next.
+A useful way to find the right boundary is to [map the process](/blog/ai-process-mapping-projects) in detail and mark every step where the outcome depends on information that is not fully captured in a system, or where two reasonable people might reach different conclusions about what to do next.
 
 Those marks are where the human layer belongs. Everything between them, the predictable sequences of defined actions, the information retrieval and formatting, the notifications and updates, is the automation layer.
 

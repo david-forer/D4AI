@@ -62,7 +62,7 @@ Recording decisions turns your operations into a training ground. Every choice f
 
 Traditional frameworks assume humans hold context. AI requires context to be explicit, structured, and durable.
 
-CLEAR does not replace Lean, process mapping, or documentation. It operationalizes them for AI execution and automation. Think of CLEAR as the translation layer between human operations and machine systems.
+CLEAR does not replace Lean, [process mapping](/blog/ai-process-mapping-projects), or documentation. It operationalizes them for AI execution and automation. Think of CLEAR as the translation layer between human operations and machine systems.
 
 Lean tells you to eliminate waste. CLEAR tells you how to define waste in a way machines can recognize it. Process mapping gives you a flowchart. CLEAR gives you machine-readable logic.
 

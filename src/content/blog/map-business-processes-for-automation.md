@@ -14,7 +14,7 @@ You cannot automate what you do not understand. This sounds obvious, but it trip
 
 The result is usually frustration and wasted effort. Automation built on a fuzzy understanding of your actual workflow will disappoint you. It will miss steps, fail to handle exceptions, or automate the wrong things entirely.
 
-Process mapping is the foundation that makes successful automation possible. Done well, it reveals which processes are ready for automation, which need to be fixed first, and which should be left alone entirely.
+[Process mapping](/blog/ai-process-mapping-projects) is the foundation that makes successful automation possible. Done well, it reveals which processes are ready for automation, which need to be fixed first, and which should be left alone entirely.
 
 ## Why Mapping Matters More Than You Think
 
