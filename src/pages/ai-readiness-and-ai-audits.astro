@@ -50,9 +50,9 @@ const phases = [
 // and inventing one here would put a number in front of Google that appears
 // nowhere on the page.
 //
-// No Review or AggregateRating either. The two testimonials on this page are
-// anonymous and unverified, and marking up reviews that cannot be attributed
-// to a real client breaches Google's structured data policy.
+// No Review or AggregateRating either. The two anonymous testimonials this page
+// used to carry were removed on 2026-09-13 and replaced with sourced statistics,
+// so there is nothing on the page that a Review type could honestly describe.
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -428,33 +428,40 @@ image="/images/ai-audit.webp"
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- Where the numbers come from -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-6 max-w-5xl">
-            <h2 class="text-3xl font-bold text-blue-700 mb-12 text-center">What Clients Are Saying</h2>
-            
+            <h2 class="text-3xl font-bold text-blue-700 mb-4 text-center">Where AI Readiness Numbers Come From</h2>
+            <p class="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">Four numbers worth knowing before you buy any assessment, this one included.</p>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-blue-700">
-                    <p class="italic text-gray-600 mb-6">"The AI Audit opened our eyes to automation opportunities we never considered. We've implemented just two of the recommendations so far and already saved 8 hours per week on client reporting tasks."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center text-blue-700 font-bold mr-4">MK</div>
-                        <div>
-                            <p class="font-bold text-gray-800">Marketing Agency Owner</p>
-                            <p class="text-sm text-gray-500">12 employees, $1.2M revenue</p>
-                        </div>
-                    </div>
+                    <p class="text-4xl font-bold text-blue-700 mb-3">13%</p>
+                    <p class="text-gray-700 mb-4">of companies are rated fully ready for AI in Cisco's AI Readiness Index. All 8,039 leaders surveyed work at companies with 500 or more employees, and the figure has moved 14, 13, 13 across three years.</p>
+                    <p class="text-sm text-gray-500">Cisco AI Readiness Index, 2023 to 2025</p>
                 </div>
-                
+
                 <div class="bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-blue-700">
-                    <p class="italic text-gray-600 mb-6">"I was skeptical about AI, but the audit showed us practical ways to use it that made sense for our business. The implementation roadmap made it easy to start small and build momentum."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center text-blue-700 font-bold mr-4">JS</div>
-                        <div>
-                            <p class="font-bold text-gray-800">E-commerce Business Owner</p>
-                            <p class="text-sm text-gray-500">7 employees, $950K revenue</p>
-                        </div>
-                    </div>
+                    <p class="text-4xl font-bold text-blue-700 mb-3">$500M</p>
+                    <p class="text-gray-700 mb-4">is where Deloitte's definition of a smaller firm begins, and it runs to $5 billion. McKinsey weights its results by national GDP, and 38 percent of its respondents work at companies above $1 billion. The benchmarks a 12-person business gets compared against contain no business its size.</p>
+                    <p class="text-sm text-gray-500">Deloitte Insights 2025, McKinsey State of AI 2025</p>
                 </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-blue-700">
+                    <p class="text-4xl font-bold text-blue-700 mb-3">79%</p>
+                    <p class="text-gray-700 mb-4">of 8,000 firms rated their own management practices above average. When double-blind interviewers scored the same firms, the two sets of scores showed no correlation. Self-scoring is the input to almost every readiness number on the market.</p>
+                    <p class="text-sm text-gray-500">Bloom, Sadun and Van Reenen, World Management Survey</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-blue-700">
+                    <p class="text-4xl font-bold text-blue-700 mb-3">0 of 13</p>
+                    <p class="text-gray-700 mb-4">free AI readiness scorecards from Microsoft, Google, AWS, HubSpot, IBM, EY and SAP produce a written process document. They run 8 to 45 questions, and every one of them ends at a product recommendation or a sales call.</p>
+                    <p class="text-sm text-gray-500">Catalogued September 2026</p>
+                </div>
+            </div>
+
+            <div class="mt-12 max-w-3xl mx-auto">
+                <p class="text-lg text-gray-700">Ask two questions about any AI assessment before you pay for it. Who checks the answer, and what does it leave behind. A 12-person company has no regulator and no procurement office reading the result, so the report itself is the whole product. This one leaves process maps of the workflows it examines, a baseline measured before anything changes so you can tell later whether it worked, 3 to 6 opportunities grounded in those same workflows, and a review call to walk through them.</p>
             </div>
         </div>
     </section>
