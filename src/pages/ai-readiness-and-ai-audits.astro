@@ -1,5 +1,129 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const pageUrl = 'https://davidjforer.com/ai-readiness-and-ai-audits';
+
+// Bump when the page content materially changes. A dateModified that never
+// moves is worse than none.
+const dateModified = '2026-09-12';
+
+// Mirrors the visible FAQ section verbatim. Google requires the marked-up
+// answer to match what a visitor actually reads, so edit both or neither.
+const faqs = [
+  {
+    q: 'How long does the AI Audit take?',
+    a: 'The complete audit process takes approximately 5-7 days from kickoff to final delivery, including interviews, analysis, and report creation.',
+  },
+  {
+    q: 'Do I need technical knowledge about AI?',
+    a: 'No technical knowledge is required. We explain everything in business terms and provide guidance on implementation regardless of your technical background.',
+  },
+  {
+    q: 'Will this disrupt our current operations?',
+    a: 'The audit process is designed to be minimally disruptive, requiring only 1-2 hours of your time for interviews. Implementation follows a phased approach you control.',
+  },
+  {
+    q: 'Is my business too small for AI?',
+    a: 'Not at all. Our AI Audit is specifically designed for small businesses around $1M in revenue who want to scale without adding headcount.',
+  },
+  {
+    q: "What if we've never used AI before?",
+    a: 'That is often the best starting point. The audit will identify the best entry points for AI in your business and provide a step-by-step implementation plan to get started.',
+  },
+  {
+    q: 'Do you help with implementation?',
+    a: 'Yes. We provide implementation planning as part of the audit, and we offer additional implementation services if you need hands-on assistance.',
+  },
+];
+
+// The five delivery phases, taken from the visible "Our AI Readiness Audit
+// Process" section.
+const phases = [
+  'Preparation and Context',
+  'Interviews and Discovery',
+  'Readiness Analysis',
+  'Findings and Synthesis',
+  'Delivery and Next-Step Planning',
+];
+
+// No `offers` block. The audit price is decided internally but not published,
+// and inventing one here would put a number in front of Google that appears
+// nowhere on the page.
+//
+// No Review or AggregateRating either. The two testimonials on this page are
+// anonymous and unverified, and marking up reviews that cannot be attributed
+// to a real client breaches Google's structured data policy.
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': `${pageUrl}#webpage`,
+      url: pageUrl,
+      name: 'AI Readiness & AI Audits for Small Businesses',
+      description:
+        'A practical assessment that shows where AI fits, where it does not, and what to do next. Built for small businesses ready to adopt AI deliberately, not reactively.',
+      dateModified,
+      inLanguage: 'en-US',
+      isPartOf: { '@type': 'WebSite', name: 'David J Forer', url: 'https://davidjforer.com' },
+      primaryImageOfPage: 'https://davidjforer.com/images/ai-audit.webp',
+      mainEntity: { '@id': `${pageUrl}#service` },
+    },
+    {
+      '@type': 'Service',
+      '@id': `${pageUrl}#service`,
+      name: 'AI Readiness Audit',
+      serviceType: 'AI readiness assessment',
+      url: pageUrl,
+      description:
+        'A structured assessment of how ready a small business is to adopt AI, covering systems, workflows, data, documentation and team readiness, ending in a prioritised plan.',
+      provider: {
+        '@type': 'Person',
+        '@id': 'https://davidjforer.com#david-j-forer',
+        name: 'David J Forer',
+        url: 'https://davidjforer.com',
+        jobTitle: 'AI Operations Consultant',
+      },
+      areaServed: { '@type': 'Country', name: 'United States' },
+      audience: {
+        '@type': 'BusinessAudience',
+        audienceType:
+          'Founder-led service businesses between $1M and $5M in revenue with 5 to 20 staff and no operations lead',
+      },
+      // ItemList, not OfferCatalog. These are delivery phases, not things
+      // anyone buys separately, and OfferCatalog would imply otherwise.
+      subjectOf: {
+        '@type': 'ItemList',
+        '@id': `${pageUrl}#process`,
+        name: 'AI Readiness Audit process',
+        numberOfItems: phases.length,
+        itemListOrder: 'https://schema.org/ItemListOrderAscending',
+        itemListElement: phases.map((name, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name,
+        })),
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${pageUrl}#faq`,
+      mainEntity: faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${pageUrl}#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://davidjforer.com' },
+        { '@type': 'ListItem', position: 2, name: 'AI Readiness & AI Audits', item: pageUrl },
+      ],
+    },
+  ],
+};
 ---
 
 <Layout 
@@ -7,6 +131,7 @@ title="AI Readiness & AI Audits for Small Businesses | Strategic Assessment"
 description="A practical assessment that shows where AI fits, where it does not, and what to do next. Built for small businesses ready to adopt AI deliberately, not reactively."
 image="/images/ai-audit.webp"
 >
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
 
 	<body class="bg-white text-gray-800 font-sans">
     <!-- Hero Section -->
