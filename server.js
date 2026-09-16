@@ -154,6 +154,18 @@ app.use((req, res, next) => {
   next();
 });
 
+// Astro builds the agent info endpoint as /api/v1/agent-info.json. Serve the
+// same bytes at the extensionless path too, because that is the form that gets
+// written down in third-party AEO guidance and it costs nothing to honour.
+app.get('/api/v1/agent-info', (req, res, next) => {
+  const file = path.join(DIST, 'api', 'v1', 'agent-info.json');
+  if (!fs.existsSync(file)) return next();
+  res.setHeader('Content-Type', 'application/json; charset=utf-8');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Cache-Control', `public, max-age=${WEEK}`);
+  return res.sendFile(file);
+});
+
 app.use((req, res) => {
   res.setHeader('Cache-Control', HTML_CACHE);
   res.status(404).sendFile(path.join(DIST, '404.html'));

@@ -52,7 +52,10 @@ export default defineConfig({
         !page.includes('/html') &&
         !/\/content\/?$/.test(page) &&
         !page.includes('/blog/page/') &&
-        !page.includes('/seo-ai-resources'),
+        !page.includes('/seo-ai-resources') &&
+        // The agent-info endpoint is JSON, not a page. Crawlers reach it from
+        // the link rel="alternate" in Layout.astro and from llms.txt.
+        !page.includes('/api/'),
       serialize: (item) => {
         const pathname = new URL(item.url).pathname.replace(/\/$/, '');
         const lastmod = lastmodMap.get(pathname);

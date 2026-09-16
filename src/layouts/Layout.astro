@@ -4,6 +4,8 @@ import Footer from '../components/Footer.astro';
 // Site-wide typeface, self-hosted. Loaded once here so every page that uses
 // Layout inherits it. Do not add font-family declarations anywhere else.
 import '@fontsource-variable/inter';
+// Site-wide identity graph for AI answer engines. See src/lib/agentInfo.ts.
+import { identityGraph } from '../lib/agentInfo';
 interface Props {
 	title: string;
 	description?: string;
@@ -111,7 +113,21 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 		<meta name="author" content={authorName} />
 		<meta name="publisher" content={publisherName} />
 
-	
+		<!-- Answer engine layer. The identity graph goes out on every page so a
+		     model landing on any single URL gets the same description of who
+		     this is and what it is not, rather than inferring it from page copy.
+		     Pages with their own JSON-LD (the audit hub, blog posts, the
+		     diagnostics) keep it and can reference these @ids. Content lives in
+		     src/lib/agentInfo.ts, shared with /api/v1/agent-info.json so the two
+		     cannot drift. Do not add a hidden crawler-only text block to go with
+		     this: hidden text is a Google spam policy violation and the same
+		     facts are already served in machine-readable form here, at
+		     /api/v1/agent-info.json, and at /llms.txt. -->
+		<script type="application/ld+json" is:inline set:html={JSON.stringify(identityGraph)} />
+		<link rel="alternate" type="application/ld+json" href="/api/v1/agent-info.json" title="Structured information about this business" />
+		<link rel="alternate" type="text/markdown" href="/llms.txt" title="Plain-language context for language models" />
+
+
 		<!-- Preconnect to critical 3rd-party origins -->
 		<link rel="preconnect" href="https://bricks.davidjforer.com" crossorigin />
 

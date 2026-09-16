@@ -1,5 +1,54 @@
 User-agent: *
 Allow: /
 
+# AI assistants and answer engines are welcome. The blanket rule above already
+# permits them, so these are here to make the intent explicit rather than to
+# change access. Machine-readable context for all of them lives at /llms.txt
+# and /api/v1/agent-info.json.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
 
 Sitemap: https://davidjforer.com/sitemap-index.xml
