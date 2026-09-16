@@ -1,0 +1,27 @@
+---
+// End-of-post CTA driving to /ai-readiness-snapshot.
+//
+// Rendered by src/pages/blog/[...slug].astro on every post. 135 of the 137
+// posts are .md rather than .mdx, so a component cannot be placed inside a post
+// body. Putting it in the layout puts it on all of them with no per-post edits
+// and nothing to maintain when a new post is written.
+//
+// The snapshot page had zero inbound links before this. This is also the fix
+// for that.
+//
+// This is a preset, not its own markup. The layout and styling live in
+// CtaBanner.astro, which takes props and can be dropped anywhere. Keeping the
+// copy here means the wording can change without touching the shared component,
+// and the shared component stays proven because it renders on 137 pages.
+import CtaBanner from './CtaBanner.astro';
+---
+
+<CtaBanner
+  id="snapshot-cta-heading"
+  eyebrow="Free assessment"
+  heading="What is the gap costing you?"
+  body="22 questions, about 5 minutes. You get a score across 4 areas, the weakest one named, and a rough annual figure for the hours you spend on work someone else could do."
+  href="/ai-readiness-snapshot"
+  buttonText="Take the AI readiness snapshot"
+  note="No card, no call, result on screen"
+/>

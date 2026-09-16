@@ -6,6 +6,7 @@ import SimpleContainer from '../../components/SimpleContainer.astro';
 import Seo from '../../components/Seo.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
 import AuthorBox from '../../components/AuthorBox.astro';
+import SnapshotCta from '../../components/SnapshotCta.astro';
 import { getImageSize } from '../../lib/imageSize.js';
 
 // Generate static paths for all blog posts
@@ -163,6 +164,7 @@ const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
             <div class="prose prose-lg max-w-none">
               <Content />
             </div>
+            <SnapshotCta />
             <AuthorBox />
           </article>
         </div>

@@ -1,12 +1,89 @@
-<!-- ✅ CTA Banner -->
-<!-- Save as components/CtaBanner.astro -->
-<section class="bg-blue-600 text-white py-8 px-6 rounded-xl text-center my-12">
-  <h2 class="text-2xl font-bold mb-2">Enjoying the insights?</h2>
-  <p class="mb-4">Subscribe to get the latest AI + SEO ops strategies straight to your inbox.</p>
-  <a
-    href="/newsletter"
-    class="inline-block bg-white text-blue-600 font-semibold py-2 px-4 rounded hover:bg-gray-100"
-  >
-    Join the Newsletter
-  </a>
-</section>
+---
+// Reusable call to action block. Drop it on any page or into any layout.
+//
+// Was a hardcoded blue box pointing at /newsletter, a page that does not exist
+// and returns 404. It was added in fe2e221 and never rendered anywhere. Rebuilt
+// 2026-09-16 as a component that takes props, so a CTA can be placed without
+// writing new markup each time.
+//
+// Usage:
+//   <CtaBanner
+//     eyebrow="Free assessment"
+//     heading="What is the gap costing you?"
+//     body="22 questions, about 5 minutes."
+//     href="/ai-readiness-snapshot"
+//     buttonText="Take the AI readiness snapshot"
+//     note="No card, no call, result on screen"
+//   />
+//
+// `variant` controls the look:
+//   quiet  light grey card, left aligned. Sits inside article copy without
+//          shouting. This is the default and what the blog posts use.
+//   solid  filled brand colour, centred. For the end of a landing page where
+//          the CTA is the point rather than an aside.
+//
+// Always carries `not-prose` so blog prose styles cannot restyle it.
+
+interface Props {
+  heading: string;
+  body: string;
+  href: string;
+  buttonText: string;
+  eyebrow?: string;
+  note?: string;
+  variant?: 'quiet' | 'solid';
+  id?: string;
+}
+
+const {
+  heading,
+  body,
+  href,
+  buttonText,
+  eyebrow,
+  note,
+  variant = 'quiet',
+  id = 'cta-heading',
+} = Astro.props;
+
+const solid = variant === 'solid';
+
+const wrap = solid
+  ? 'not-prose my-12 rounded-2xl bg-[color:var(--primary)] p-6 sm:p-8 text-center'
+  : 'not-prose my-12 rounded-2xl border border-gray-200 bg-gray-50 p-6 sm:p-8';
+
+const eyebrowClass = solid
+  ? 'mb-3 text-sm font-semibold uppercase tracking-wide text-white/80'
+  : 'mb-3 text-sm font-semibold uppercase tracking-wide text-[color:var(--primary)]';
+
+const headingClass = solid
+  ? 'mb-3 text-2xl font-bold text-white'
+  : 'mb-3 text-2xl font-bold text-gray-900';
+
+const bodyClass = solid
+  ? 'mb-6 text-lg leading-relaxed text-white/90'
+  : 'mb-6 text-lg leading-relaxed text-gray-700';
+
+const actions = solid
+  ? 'flex flex-wrap items-center justify-center gap-4'
+  : 'flex flex-wrap items-center gap-4';
+
+const button = solid
+  ? 'inline-block rounded-xl bg-white px-6 py-3 font-semibold text-[color:var(--primary)] transition hover:bg-gray-100'
+  : 'inline-block rounded-xl bg-[color:var(--primary)] px-6 py-3 font-semibold text-white transition hover:bg-[color:var(--primary-hover)]';
+
+const noteClass = solid ? 'text-sm text-white/80' : 'text-sm text-gray-500';
+---
+
+<aside class={wrap} aria-labelledby={id}>
+  {eyebrow && <p class={eyebrowClass}>{eyebrow}</p>}
+
+  <h2 id={id} class={headingClass}>{heading}</h2>
+
+  <p class={bodyClass}>{body}</p>
+
+  <div class={actions}>
+    <a href={href} class={button}>{buttonText}</a>
+    {note && <span class={noteClass}>{note}</span>}
+  </div>
+</aside>
