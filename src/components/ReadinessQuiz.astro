@@ -1,0 +1,796 @@
+---
+/**
+ * AI Readiness Snapshot, interactive quiz.
+ *
+ * Why it is built this way:
+ *
+ * - Questions are rendered server-side from `src/lib/readinessQuiz.js` so the
+ *   copy is in the HTML for crawlers and the page is useful before hydration.
+ *   JavaScript only handles stepping, scoring, and the result.
+ *
+ * - No framework. The site has no React, Vue or Svelte integration and a quiz
+ *   does not justify adding one. Plain module script, bundled by Astro.
+ *
+ * - Email is captured AFTER the last question, not before the first. Gating a
+ *   result the visitor has already earned converts better than gating a quiz
+ *   they have not started, and an abandoned quiz produces no orphan email with
+ *   no score attached to it.
+ *
+ * - LEAD CAPTURE IS NOT WIRED YET. `FORMBRICKS` below is deliberately null.
+ *   The quiz runs end to end without it and the result still displays, so this
+ *   page is fully testable today. Turning capture on means creating the survey
+ *   and pasting real ELEMENT ids in. Read the trap comment in LeadForm.astro
+ *   first: block ids look identical to element ids, return HTTP 200, and
+ *   silently discard the value. A 200 proves nothing. Submit one test and read
+ *   every field in the dashboard afterwards.
+ */
+import { QUESTIONS, CATEGORIES } from '../lib/readinessQuiz.js';
+
+const scored = QUESTIONS.filter((q) => q.category).length;
+
+/**
+ * Button styles are spelled out rather than using the `btn-primary` helper.
+ * That class does not exist in the compiled CSS: `src/styles/global.css`
+ * imports `utilities/buttons.css` AFTER the `@tailwind` directives, and CSS
+ * drops any `@import` that is not at the top of the file. Nothing on the site
+ * used `btn-*` before this quiz, so the breakage was never visible. Fixing the
+ * import order is a global cascade change and belongs in its own commit, not
+ * as a side effect of adding a page.
+ */
+const BTN =
+  'inline-block bg-[color:var(--primary)] hover:bg-[color:var(--primary-hover)] text-white font-semibold px-6 py-3 rounded-xl transition disabled:opacity-60 disabled:cursor-not-allowed';
+const BTN_OUTLINE =
+  'inline-block border border-[color:var(--secondary)] text-[color:var(--secondary)] hover:bg-[color:var(--secondary)] hover:text-white font-semibold px-6 py-3 rounded-xl transition disabled:opacity-60 disabled:cursor-not-allowed';
+---
+
+<section
+  id="quiz"
+  class="scroll-mt-24"
+  data-quiz
+  data-total={QUESTIONS.length}
+  data-scored={scored}
+>
+  <noscript>
+    <div class="max-w-2xl mx-auto bg-amber-50 border border-amber-200 rounded-xl p-6 text-gray-800">
+      <p class="font-bold mb-2">This assessment needs JavaScript to score your answers.</p>
+      <p>
+        The questions are all below if you want to read them, and you are welcome to work through
+        them on paper. If you would rather just talk it through, the
+        <a href="/contact" class="text-blue-700 underline">contact page</a> is the faster route.
+      </p>
+    </div>
+  </noscript>
+
+  <div data-quiz-app class="hidden">
+    <!-- Progress -->
+    <div class="max-w-2xl mx-auto mb-8">
+      <div class="flex items-baseline justify-between mb-2">
+        <span class="text-sm font-medium text-gray-500" data-progress-label>Question 1</span>
+        <span class="text-sm text-gray-400" data-progress-remaining></span>
+      </div>
+      <div class="h-1.5 w-full bg-gray-200 rounded-full overflow-hidden">
+        <div
+          class="h-full bg-[color:var(--primary)] rounded-full transition-all duration-300 ease-out"
+          style="width:0%"
+          data-progress-bar
+        >
+        </div>
+      </div>
+    </div>
+
+    <!-- Steps -->
+    <form data-quiz-form class="max-w-2xl mx-auto" novalidate>
+      {
+        QUESTIONS.map((q, i) => (
+          <div
+            class="hidden"
+            data-step={i}
+            data-qid={q.id}
+            data-qtype={q.type}
+            role="group"
+            aria-labelledby={`qlabel-${q.id}`}
+          >
+            <button
+              type="button"
+              data-back
+              class="text-sm text-gray-500 hover:text-gray-800 mb-6 inline-flex items-center gap-1 transition"
+            >
+              <span aria-hidden="true">&larr;</span> Back
+            </button>
+
+            {q.helper && <p class="text-sm text-gray-500 mb-3">{q.helper}</p>}
+
+            <div
+              id={`qlabel-${q.id}`}
+              data-qlabel
+              tabindex="-1"
+              class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 leading-snug outline-none"
+            >
+              {q.question}
+            </div>
+
+            {q.type === 'single' && (
+              <div class="space-y-3" role="radiogroup" aria-label={q.question}>
+                {q.options.map((o) => (
+                  <label class="flex items-start gap-3 p-4 border border-gray-300 rounded-xl cursor-pointer hover:border-[color:var(--primary)] hover:bg-orange-50/40 transition has-[:checked]:border-[color:var(--primary)] has-[:checked]:bg-orange-50">
+                    <input
+                      type="radio"
+                      name={q.id}
+                      value={o.value}
+                      class="mt-1 h-4 w-4 shrink-0 accent-[color:var(--primary)]"
+                    />
+                    <span class="text-gray-800">{o.label}</span>
+                  </label>
+                ))}
+              </div>
+            )}
+
+            {q.type === 'multi' && (
+              <div class="space-y-3">
+                {q.options.map((o) => (
+                  <label class="flex items-start gap-3 p-4 border border-gray-300 rounded-xl cursor-pointer hover:border-[color:var(--primary)] hover:bg-orange-50/40 transition has-[:checked]:border-[color:var(--primary)] has-[:checked]:bg-orange-50">
+                    <input
+                      type="checkbox"
+                      name={q.id}
+                      value={o.value}
+                      data-exclusive={o.exclusive ? '1' : '0'}
+                      class="mt-1 h-4 w-4 shrink-0 rounded accent-[color:var(--primary)]"
+                    />
+                    <span class="text-gray-800">{o.label}</span>
+                  </label>
+                ))}
+              </div>
+            )}
+
+            {q.type === 'number' && (
+              <div class="flex items-center gap-3">
+                <input
+                  type="number"
+                  name={q.id}
+                  min={q.min}
+                  max={q.max}
+                  inputmode="numeric"
+                  class="w-40 px-4 py-3 border border-gray-300 rounded-xl text-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-[color:var(--primary)] focus:border-transparent"
+                />
+                {q.suffix && <span class="text-gray-500">{q.suffix}</span>}
+              </div>
+            )}
+
+            <p data-step-error class="hidden text-sm text-red-600 mt-3" role="alert" aria-live="polite">
+              Pick an answer to carry on.
+            </p>
+
+            <div class="mt-8">
+              <button type="button" data-next class={BTN}>
+                {i === QUESTIONS.length - 1 ? 'See my result' : 'Next'}
+              </button>
+            </div>
+          </div>
+        ))
+      }
+
+      <!-- Email gate -->
+      <div class="hidden" data-step="gate" role="group" aria-labelledby="qlabel-gate">
+        <button
+          type="button"
+          data-back
+          class="text-sm text-gray-500 hover:text-gray-800 mb-6 inline-flex items-center gap-1 transition"
+        >
+          <span aria-hidden="true">&larr;</span> Back
+        </button>
+
+        <div
+          id="qlabel-gate"
+          data-qlabel
+          tabindex="-1"
+          class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 leading-snug outline-none"
+        >
+          Your snapshot is ready.
+        </div>
+        <p class="text-gray-600 mb-6">
+          Tell me where to send it and I will show you the result on this page as well. No sequence
+          you cannot leave, and I read the replies myself.
+        </p>
+
+        <div class="space-y-4">
+          <div>
+            <label for="q-name" class="block text-sm font-bold text-gray-700 mb-2">First name</label>
+            <input
+              type="text"
+              id="q-name"
+              name="firstName"
+              autocomplete="given-name"
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-[color:var(--primary)] focus:border-transparent"
+            />
+          </div>
+          <div>
+            <label for="q-email" class="block text-sm font-bold text-gray-700 mb-2">Email</label>
+            <input
+              type="email"
+              id="q-email"
+              name="email"
+              autocomplete="email"
+              class="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-[color:var(--primary)] focus:border-transparent"
+            />
+          </div>
+
+          {/* Honeypot. OPEN 2 in the work log names this as the first move on
+              form spam, and it doubles as the diagnostic for whether a bot
+              renders the page or posts to the API directly. */}
+          <div class="absolute left-[-9999px]" aria-hidden="true">
+            <label for="q-company-url">Company website</label>
+            <input type="text" id="q-company-url" name="companyUrl" tabindex="-1" autocomplete="off" />
+          </div>
+        </div>
+
+        <p data-gate-error class="hidden text-sm text-red-600 mt-3" role="alert" aria-live="polite"></p>
+
+        <div class="mt-8">
+          <button type="button" data-reveal class={BTN}>Show my result</button>
+        </div>
+        <p class="text-xs text-gray-400 mt-4">
+          Your answers stay between us. See the
+          <a href="/privacy-policy" class="underline hover:text-gray-600">privacy policy</a>.
+        </p>
+      </div>
+    </form>
+
+    <!-- Result -->
+    <div data-result class="hidden" tabindex="-1">
+      <div class="max-w-3xl mx-auto">
+        <p class="text-sm font-semibold uppercase tracking-wide text-[color:var(--primary)] mb-3">
+          Your AI Readiness Snapshot
+        </p>
+        <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-3" data-r-archetype></h2>
+        <p class="text-xl text-gray-600 mb-8" data-r-line></p>
+
+        <div class="flex flex-wrap items-center gap-6 mb-10 p-6 bg-gray-50 rounded-2xl">
+          <div>
+            <div class="text-5xl font-bold text-gray-900" data-r-percent></div>
+            <div class="text-sm text-gray-500">overall readiness</div>
+          </div>
+          <div class="h-12 w-px bg-gray-300 hidden sm:block"></div>
+          <div class="text-gray-700 max-w-md" data-r-weakest></div>
+        </div>
+
+        <p
+          data-r-capped
+          class="hidden text-gray-700 bg-amber-50 border border-amber-200 rounded-xl p-5 mb-10 leading-relaxed"
+        >
+        </p>
+
+        <div class="prose-none text-lg text-gray-700 leading-relaxed space-y-4 mb-10">
+          <p data-r-body></p>
+        </div>
+
+        <!-- Cost -->
+        <div
+          data-r-cost-wrap
+          class="hidden border-2 border-[color:var(--primary)] rounded-2xl p-6 sm:p-8 mb-10 bg-orange-50/50"
+        >
+          <h3 class="text-sm font-semibold uppercase tracking-wide text-[color:var(--primary)] mb-3">
+            What this is costing you
+          </h3>
+          <p class="text-4xl sm:text-5xl font-bold text-gray-900 mb-2" data-r-cost-range></p>
+          <p class="text-gray-600 mb-6">a year, on a conservative estimate</p>
+          <div class="space-y-2 text-sm text-gray-700 border-t border-orange-200 pt-5" data-r-cost-math></div>
+          <p class="text-xs text-gray-500 mt-5 leading-relaxed" data-r-cost-caveat></p>
+        </div>
+
+        <!-- Categories -->
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">How each area scored</h3>
+        <div class="grid sm:grid-cols-2 gap-4 mb-10" data-r-cards></div>
+
+        <!-- First move -->
+        <div class="bg-gray-900 text-white rounded-2xl p-6 sm:p-8 mb-10">
+          <h3 class="text-sm font-semibold uppercase tracking-wide text-gray-400 mb-3">
+            Your first move
+          </h3>
+          <p class="text-xl leading-relaxed" data-r-move></p>
+        </div>
+
+        <!-- Offer -->
+        <div class="border border-gray-300 rounded-2xl p-6 sm:p-8 mb-10">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2" data-r-tier-name></h3>
+          <p class="text-lg font-semibold text-[color:var(--primary)] mb-4" data-r-tier-shape></p>
+          <p class="text-gray-700 leading-relaxed mb-6" data-r-tier-pitch></p>
+          <a href="/ai-readiness-and-ai-audits" class={BTN} data-r-tier-link>
+            See what the audit covers
+          </a>
+        </div>
+
+        <!-- Voice of customer -->
+        <div class="border-t border-gray-200 pt-8">
+          <label for="q-wish" class="block text-lg font-bold text-gray-900 mb-2">
+            One last thing, if you have a minute
+          </label>
+          <p class="text-gray-600 mb-4">
+            If you could hand one part of running this business to something that never forgets and
+            never gets sick, what would it be? Optional, and genuinely useful.
+          </p>
+          <textarea
+            id="q-wish"
+            name="wish"
+            rows="3"
+            maxlength="1000"
+            class="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-900 focus:outline-none focus:ring-2 focus:ring-[color:var(--primary)] focus:border-transparent"
+          ></textarea>
+          <div class="mt-4 flex items-center gap-4">
+            <button type="button" data-wish-send class={BTN_OUTLINE}>Send it</button>
+            <span data-wish-status class="text-sm text-gray-500" role="status" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <p class="text-xs text-gray-400 mt-10">
+          This is a self-assessment, so it is only as good as the answers. The paid audit measures
+          the same things from evidence rather than recall.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import {
+    QUESTIONS,
+    score,
+    estimateCost,
+    formatMoney,
+    recommendTier,
+  } from '../lib/readinessQuiz.js';
+
+  /**
+   * Formbricks wiring. Null until a survey exists.
+   *
+   * To turn capture on: create the survey, open its public page, read the ids
+   * from blocks[].elements[] (NOT block ids), and fill this in. Then submit one
+   * real test and confirm every field landed in the dashboard. A 200 response
+   * does not mean the value was stored.
+   */
+  // Survey: https://bricks.davidjforer.com/s/cmu454xu90032pf01b9koj11o
+  // Element ids read off that survey's published page on 2026-09-16, from
+  // blocks[].elements[]. The block id is lg12c5ftxbldnf6rsa7dhzto and is NOT
+  // usable: block ids look identical to element ids and silently swallow
+  // values on a 200.
+  const FORMBRICKS = {
+    host: 'https://bricks.davidjforer.com',
+    environmentId: 'cmaydut280009oj01uzsj9v36',
+    surveyId: 'cmu454xu90032pf01b9koj11o',
+    fields: {
+      contact: 'cxsrd0d3h46zbyqn96zijiyk',
+      result: 'ol0uu4u7kx235npgi7c3m02c',
+      wish: 'un7mzkfw5uow74xpxf4g1wbv',
+    },
+  };
+
+  const root = document.querySelector('[data-quiz]');
+  if (root) {
+    const app = root.querySelector('[data-quiz-app]');
+    const form = root.querySelector('[data-quiz-form]');
+    const resultEl = root.querySelector('[data-result]');
+    const bar = root.querySelector('[data-progress-bar]');
+    const label = root.querySelector('[data-progress-label]');
+    const remaining = root.querySelector('[data-progress-remaining]');
+    const progressWrap = bar.closest('.max-w-2xl');
+
+    const steps = Array.from(form.querySelectorAll('[data-step]'));
+    const gate = form.querySelector('[data-step="gate"]');
+    const STORAGE = 'd4ai-readiness-v1';
+
+    // JS is present, so reveal the app.
+    app.classList.remove('hidden');
+
+    let index = 0;
+    const answers = {};
+
+    // Held from the gate so the wish box can post with contact details attached.
+    // The wish is a separate Formbricks response, and without this it arrives as
+    // an orphan row with nothing to reply to.
+    let captured = null;
+
+    /* ---------------- persistence ---------------- */
+
+    function save() {
+      try {
+        sessionStorage.setItem(STORAGE, JSON.stringify({ index, answers }));
+      } catch (e) {
+        /* private mode, not worth surfacing */
+      }
+    }
+
+    function restore() {
+      try {
+        const raw = sessionStorage.getItem(STORAGE);
+        if (!raw) return;
+        const data = JSON.parse(raw);
+        Object.assign(answers, data.answers || {});
+        for (const [key, val] of Object.entries(answers)) {
+          const inputs = form.querySelectorAll(`[name="${CSS.escape(key)}"]`);
+          inputs.forEach((el) => {
+            if (el.type === 'radio') el.checked = el.value === val;
+            else if (el.type === 'checkbox') el.checked = Array.isArray(val) && val.includes(el.value);
+            else el.value = val;
+          });
+        }
+        index = Math.min(Number(data.index) || 0, steps.length - 1);
+      } catch (e) {
+        /* corrupt state, start fresh */
+      }
+    }
+
+    /* ---------------- stepping ---------------- */
+
+    function show(i, { focus = true } = {}) {
+      steps.forEach((s) => s.classList.add('hidden'));
+      const step = steps[i];
+      if (!step) return;
+      step.classList.remove('hidden');
+      index = i;
+
+      const isGate = step === gate;
+      const qNum = isGate ? QUESTIONS.length : i + 1;
+      const pct = Math.round((qNum / (QUESTIONS.length + 1)) * 100);
+      bar.style.width = pct + '%';
+      label.textContent = isGate ? 'Last step' : `Question ${qNum} of ${QUESTIONS.length}`;
+      remaining.textContent = isGate
+        ? ''
+        : qNum <= 3
+          ? 'About five minutes'
+          : `${QUESTIONS.length - qNum} to go`;
+
+      // The first step has nothing to go back to.
+      const back = step.querySelector('[data-back]');
+      if (back) back.classList.toggle('invisible', i === 0);
+
+      if (focus) {
+        const heading = step.querySelector('[data-qlabel]');
+        if (heading) heading.focus({ preventScroll: true });
+        step.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      save();
+    }
+
+    function readStep(step) {
+      const qid = step.dataset.qid;
+      const type = step.dataset.qtype;
+      if (!qid) return null;
+      if (type === 'multi') {
+        return Array.from(step.querySelectorAll('input:checked')).map((el) => el.value);
+      }
+      if (type === 'number') {
+        const el = step.querySelector('input[type="number"]');
+        return el.value.trim();
+      }
+      const el = step.querySelector('input:checked');
+      return el ? el.value : '';
+    }
+
+    function validate(step) {
+      const type = step.dataset.qtype;
+      const err = step.querySelector('[data-step-error]');
+      const val = readStep(step);
+      let ok = true;
+      let msg = 'Pick an answer to carry on.';
+
+      if (type === 'multi') {
+        ok = true; // multi-selects are genuinely optional
+      } else if (type === 'number') {
+        const input = step.querySelector('input[type="number"]');
+        const n = Number(val);
+        if (val === '' || Number.isNaN(n)) {
+          ok = false;
+          msg = 'Give it a rough number. A guess is fine.';
+        } else if (n < Number(input.min) || n > Number(input.max)) {
+          ok = false;
+          msg = `That should be between ${input.min} and ${input.max}.`;
+        }
+      } else {
+        ok = val !== '';
+      }
+
+      if (err) {
+        err.textContent = msg;
+        err.classList.toggle('hidden', ok);
+      }
+      return ok;
+    }
+
+    function commit(step) {
+      const qid = step.dataset.qid;
+      if (qid) answers[qid] = readStep(step);
+      save();
+    }
+
+    function advance(step) {
+      if (!validate(step)) return;
+      commit(step);
+      show(Math.min(index + 1, steps.length - 1));
+    }
+
+    steps.forEach((step, i) => {
+      const next = step.querySelector('[data-next]');
+      if (next) next.addEventListener('click', () => advance(step));
+
+      const back = step.querySelector('[data-back]');
+      if (back) back.addEventListener('click', () => show(Math.max(i - 1, 0)));
+
+      // Single-select auto-advances. Over twenty questions that removes twenty
+      // clicks, and the Back button covers the misclick case.
+      if (step.dataset.qtype === 'single') {
+        step.querySelectorAll('input[type="radio"]').forEach((input) => {
+          input.addEventListener('change', () => {
+            const err = step.querySelector('[data-step-error]');
+            if (err) err.classList.add('hidden');
+            setTimeout(() => advance(step), 180);
+          });
+        });
+      }
+
+      // Exclusive checkbox options clear the rest, and vice versa.
+      if (step.dataset.qtype === 'multi') {
+        const boxes = Array.from(step.querySelectorAll('input[type="checkbox"]'));
+        boxes.forEach((box) => {
+          box.addEventListener('change', () => {
+            if (box.dataset.exclusive === '1' && box.checked) {
+              boxes.forEach((b) => {
+                if (b !== box) b.checked = false;
+              });
+            } else if (box.checked) {
+              boxes.forEach((b) => {
+                if (b.dataset.exclusive === '1') b.checked = false;
+              });
+            }
+          });
+        });
+      }
+
+      // Enter should move on rather than submit the form.
+      step.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          if (step === gate) reveal();
+          else advance(step);
+        }
+      });
+    });
+
+    form.addEventListener('submit', (e) => e.preventDefault());
+
+    /* ---------------- result ---------------- */
+
+    function renderCards(result) {
+      const wrap = root.querySelector('[data-r-cards]');
+      const tone = {
+        Strong: 'bg-emerald-500',
+        Workable: 'bg-[color:var(--primary)]',
+        Fragile: 'bg-amber-500',
+        'At risk': 'bg-red-500',
+      };
+      wrap.innerHTML = '';
+      result.categories.forEach((c) => {
+        const card = document.createElement('div');
+        card.className = 'border border-gray-200 rounded-2xl p-6';
+        card.innerHTML = `
+          <div class="flex items-baseline justify-between mb-1">
+            <h4 class="font-bold text-gray-900">${c.name}</h4>
+            <span class="text-2xl font-bold text-gray-900">${c.percent}%</span>
+          </div>
+          <p class="text-sm font-medium text-gray-500 mb-4">${c.band}</p>
+          <div class="h-1.5 w-full bg-gray-200 rounded-full overflow-hidden mb-4">
+            <div class="h-full rounded-full ${tone[c.band] || 'bg-gray-400'}" style="width:${c.percent}%"></div>
+          </div>
+          <p class="text-sm text-gray-600 leading-relaxed">${c.blurb}</p>
+        `;
+        wrap.appendChild(card);
+      });
+    }
+
+    function renderCost(cost) {
+      const wrap = root.querySelector('[data-r-cost-wrap]');
+      if (!cost.hasSignal || cost.total <= 0) return;
+      wrap.classList.remove('hidden');
+
+      root.querySelector('[data-r-cost-range]').textContent =
+        `${formatMoney(cost.low)} to ${formatMoney(cost.high)}`;
+
+      const lines = [];
+      if (cost.founderCost > 0) {
+        lines.push(
+          `<div class="flex justify-between gap-4"><span>Your time on work someone else could do. ${cost.founderHours} hours a week at ${formatMoney(cost.founderRate)} an hour, across ${cost.workingWeeks} working weeks.</span><strong class="whitespace-nowrap">${formatMoney(cost.founderCost)}</strong></div>`,
+        );
+      }
+      if (cost.reworkCost > 0) {
+        lines.push(
+          `<div class="flex justify-between gap-4"><span>Team time lost to rework and interruptions. About ${cost.reworkHours} hours per person per week across ${cost.teamSize} ${cost.teamSize === 1 ? 'person' : 'people'} at ${formatMoney(cost.teamRate)} an hour.</span><strong class="whitespace-nowrap">${formatMoney(cost.reworkCost)}</strong></div>`,
+        );
+      }
+      root.querySelector('[data-r-cost-math]').innerHTML = lines.join('');
+
+      const caveats = [
+        `Your hourly value is estimated at 2.5 times the team rate, floored at $100, because the alternative use of a founder hour is selling or building rather than clearing the queue.`,
+      ];
+      if (cost.rateAssumed) {
+        caveats.push(`You did not give a rate, so this uses ${formatMoney(cost.teamRate)} an hour.`);
+      }
+      caveats.push(
+        `These are estimates built from what you just told me, shown as a range for that reason. The audit measures the same things from evidence and usually finds the real number is higher.`,
+      );
+      root.querySelector('[data-r-cost-caveat]').textContent = caveats.join(' ');
+    }
+
+    function reveal() {
+      const nameEl = gate.querySelector('[name="firstName"]');
+      const emailEl = gate.querySelector('[name="email"]');
+      const honey = gate.querySelector('[name="companyUrl"]');
+      const err = gate.querySelector('[data-gate-error]');
+
+      const name = nameEl.value.trim();
+      const email = emailEl.value.trim();
+
+      if (!name || !email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        err.textContent = 'A first name and a working email, and the result is yours.';
+        err.classList.remove('hidden');
+        return;
+      }
+      err.classList.add('hidden');
+
+      const result = score(answers);
+      const cost = estimateCost(answers);
+      const tier = recommendTier(result, answers);
+
+      // Honeypot filled means a bot. Show the result anyway so a false positive
+      // costs a human nothing, and just skip the capture.
+      const isBot = Boolean(honey && honey.value);
+      if (!isBot) {
+        captured = { name, email };
+        submitLead({ name, email, result, cost, tier });
+      }
+
+      root.querySelector('[data-r-archetype]').textContent = result.archetype.name;
+      root.querySelector('[data-r-line]').textContent = result.archetype.line;
+      root.querySelector('[data-r-percent]').textContent = result.percent + '%';
+      root.querySelector('[data-r-body]').textContent = result.archetype.body;
+      root.querySelector('[data-r-move]').textContent = result.archetype.move;
+      root.querySelector('[data-r-weakest]').innerHTML =
+        `Your weakest area is <strong>${result.weakest.name}</strong> at ${result.weakest.percent}%, and that is where the next move belongs.`;
+
+      const capped = root.querySelector('[data-r-capped]');
+      if (result.cappedBy) {
+        capped.textContent = `Your answers averaged out to ${result.rawPercent}%, and this result is deliberately lower. The reason is that ${result.cappedBy}. An average would let a single answer like that disappear behind a good score, which would be flattering and useless.`;
+        capped.classList.remove('hidden');
+      } else {
+        capped.classList.add('hidden');
+      }
+
+      root.querySelector('[data-r-tier-name]').textContent = tier.name;
+      root.querySelector('[data-r-tier-shape]').textContent = tier.shape;
+      root.querySelector('[data-r-tier-pitch]').textContent = tier.pitch;
+      root.querySelector('[data-r-tier-link]').setAttribute('href', tier.href);
+
+      renderCards(result);
+      renderCost(cost);
+
+      form.classList.add('hidden');
+      progressWrap.classList.add('hidden');
+      resultEl.classList.remove('hidden');
+      resultEl.focus({ preventScroll: true });
+      resultEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      try {
+        sessionStorage.removeItem(STORAGE);
+      } catch (e) {
+        /* nothing to clean up */
+      }
+
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'quiz_complete', {
+          archetype: result.archetype.key,
+          score: result.percent,
+          tier: tier.key,
+        });
+      }
+    }
+
+    root.querySelector('[data-reveal]').addEventListener('click', reveal);
+
+    /* ---------------- capture ---------------- */
+
+    function postToFormbricks(data) {
+      if (!FORMBRICKS) {
+        console.warn(
+          '[readiness-quiz] Lead capture is not wired. Set FORMBRICKS in ReadinessQuiz.astro with real element ids.',
+          data,
+        );
+        return Promise.resolve(false);
+      }
+      const endpoint = `${FORMBRICKS.host}/api/v1/client/${FORMBRICKS.environmentId}/responses`;
+      return fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ surveyId: FORMBRICKS.surveyId, finished: true, data }),
+      })
+        .then((r) => r.ok)
+        .catch(() => false);
+    }
+
+    /**
+     * Formbricks contactInfo takes a fixed five-part positional array:
+     * [firstName, lastName, email, phone, company]. Do not reorder.
+     *
+     * The gate asks for a first name, so most of the time lastName is empty.
+     * Someone who types their full name anyway gets it split on the first
+     * space. A single word leaves lastName empty, which is correct rather
+     * than guessed. Phone and company are never asked for.
+     */
+    function contactParts(name, email) {
+      const firstSpace = name.indexOf(' ');
+      const firstName = firstSpace === -1 ? name : name.slice(0, firstSpace);
+      const lastName = firstSpace === -1 ? '' : name.slice(firstSpace + 1).trim();
+      return [firstName, lastName, email, '', ''];
+    }
+
+    function submitLead({ name, email, result, cost, tier }) {
+      const summary = [
+        `Archetype: ${result.archetype.name} (${result.percent}%)`,
+        ...result.categories.map((c) => `${c.name}: ${c.percent}%`),
+        `Weakest: ${result.weakest.name}`,
+        `Estimated annual cost: ${formatMoney(cost.low)} to ${formatMoney(cost.high)}`,
+        `Recommended: ${tier.name} (${tier.shape})`,
+        '',
+        'Answers:',
+        ...QUESTIONS.map((q) => {
+          const a = answers[q.id];
+          const text = Array.isArray(a) ? a.join(', ') : a;
+          return `${q.question} -> ${text || '(skipped)'}`;
+        }),
+      ].join('\n');
+
+      if (!FORMBRICKS) {
+        postToFormbricks({ name, email, summary });
+        return;
+      }
+
+      postToFormbricks({
+        [FORMBRICKS.fields.contact]: contactParts(name, email),
+        [FORMBRICKS.fields.result]: summary,
+      });
+    }
+
+    const wishBtn = root.querySelector('[data-wish-send]');
+    wishBtn.addEventListener('click', () => {
+      const ta = root.querySelector('[name="wish"]');
+      const status = root.querySelector('[data-wish-status]');
+      const text = ta.value.trim();
+      if (!text) {
+        status.textContent = 'Nothing to send yet.';
+        return;
+      }
+      wishBtn.disabled = true;
+      status.textContent = 'Sending.';
+      // Send the contact block along so this lands as an attributable response
+      // rather than an orphan row. `captured` is null if the honeypot fired or
+      // if the gate was somehow bypassed, in which case the wish still posts.
+      let payload;
+      if (!FORMBRICKS) {
+        payload = { wish: text };
+      } else if (captured) {
+        payload = {
+          [FORMBRICKS.fields.contact]: contactParts(captured.name, captured.email),
+          [FORMBRICKS.fields.wish]: text,
+        };
+      } else {
+        payload = { [FORMBRICKS.fields.wish]: text };
+      }
+      postToFormbricks(payload).then((ok) => {
+        status.textContent = ok
+          ? 'Got it. Thank you, that is genuinely useful.'
+          : 'Noted locally. Capture is not switched on yet.';
+      });
+    });
+
+    /* ---------------- boot ---------------- */
+
+    restore();
+    show(index, { focus: false });
+  }
+</script>
