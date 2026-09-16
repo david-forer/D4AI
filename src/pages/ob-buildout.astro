@@ -1,5 +1,50 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import LeadForm from '../components/LeadForm.astro';
+
+// Was an 800px myformflow.io iframe. Replaced 2026-09-16 with the native
+// LeadForm because myformflow submissions never reached David's inbox. This
+// posts to the SAME survey as /contact, which is already in the map in the
+// Pipedream `format_lead` step, so alerting works with no dashboard changes.
+//
+// All three "Get Started" buttons on /operational-buildout point here, so this
+// is a live conversion path and not a spare page.
+//
+// Element ids are the contact survey's, read off blocks[].elements[]. Block ids
+// look identical and silently swallow values on a 200.
+const CONTACT_SURVEY = 'cmayiuvf4000eoj01699d8ivo';
+const CONTACT_FIELDS = [
+  {
+    name: 'contact',
+    questionId: 'vxs2tmtbi52fq5snqgx83gp2',
+    label: 'Let me know who you are',
+    type: 'contactInfo',
+    // Order is positional in Formbricks. Do not reorder.
+    parts: [
+      { name: 'firstName', label: 'First Name', required: true },
+      { name: 'lastName', label: 'Last Name', required: true },
+      { name: 'email', label: 'Email', type: 'email', required: true },
+      { name: 'phone', label: 'Phone', type: 'tel', required: true },
+      { name: 'company', label: 'Company', required: true },
+    ],
+  },
+  {
+    name: 'help_with',
+    questionId: 'zu9rzc9vv4sakenz7aly6ftd',
+    label: 'What do you need built?',
+    type: 'checkboxes',
+    required: true,
+    options: ['AI Integration', 'Operations', 'SEO', 'All of the Above'],
+  },
+  {
+    name: 'detail',
+    questionId: 'g62r1w2ry5i3tqsf5anwmlaf',
+    label: 'Where does the work get stuck today?',
+    type: 'textarea',
+    required: false,
+    rows: 5,
+  },
+];
 ---
 
 <Layout title="Operational Buildout - D4AI" noindex={true}>
@@ -16,17 +61,14 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- Form section -->
   <section class="max-w-3xl mx-auto px-6 py-8">
-
-  <div class="bg-white overflow-hidden">
-    <iframe 
-      src="https://myformflow.io/david-j-forer/operational-buildout" 
-      style="width:100%; height:800px; border: none;"
-      loading="lazy"
-    ></iframe>
-  </div>
-
-    <p class="mt-8 text-center text-gray-500 text-sm">
-      If the form doesn't load, you can <a href="https://myformflow.io/david-j-forer/operational-buildout" target="_blank" class="text-blue-600 underline">open it directly here</a>.
-    </p>
+    <div class="w-full bg-white rounded-lg shadow-lg p-8">
+      <LeadForm
+        surveyId={CONTACT_SURVEY}
+        fields={CONTACT_FIELDS}
+        buttonText="Send This Over"
+        successHeading="Thanks, that came through."
+        successBody="I read these myself and I typically respond within 1 to 2 business days."
+      />
+    </div>
   </section>
 </Layout>
