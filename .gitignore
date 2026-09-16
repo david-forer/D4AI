@@ -41,3 +41,5 @@ docs/
 # stop competing, but kept on disk so nothing is lost and anything can come back.
 # Never git add -f this folder. See _retired/README.md for what is in here and why.
 _retired/
+
+skills-lock.json

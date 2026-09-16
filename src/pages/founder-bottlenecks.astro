@@ -38,7 +38,7 @@ const schema = {
       '@id': `${pageUrl}#article`,
       headline: 'The Founder Bottleneck: Why Your Business Stalls Without You',
       description:
-        'Diagnose the founder bottleneck slowing your business: four constraint areas, a diagnostic framework, and how to get the owner out of daily operations.',
+        'Diagnose the founder dependency slowing your business: four constraint areas, a diagnostic framework, and how to get the owner out of daily operations.',
       mainEntityOfPage: pageUrl,
       url: pageUrl,
       datePublished,
@@ -64,7 +64,7 @@ const schema = {
 };
 ---
 
-<Layout title="The Founder Bottleneck: Why Growth Stops at You | Diagnostic Framework for Owner-Dependent Operations, the Founder Decision Bottleneck, the CEO Bottleneck in a Small Business, and How to Get the Owner Out of Daily Delivery - Forersight" description="Diagnose the founder bottleneck slowing your business: four constraint areas, a diagnostic framework, and how to get the owner out of daily operations.">
+<Layout title="The Founder Bottleneck: Why Growth Stops at You | Diagnostic Framework for Owner-Dependent Operations, the Founder Decision Bottleneck, the CEO Bottleneck in a Small Business, and How to Get the Owner Out of Daily Delivery - Forersight" description="Diagnose the founder dependency slowing your business: four constraint areas, a diagnostic framework, and how to get the owner out of daily operations.">
   <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
 
   <style>
@@ -178,7 +178,7 @@ const schema = {
       font-weight: 600;
     }
 
-    .diagram-steps h4 {
+    .diagram-steps .dg-title {
       font-size: 1.125rem;
       font-weight: 600;
       color: #111827;
@@ -252,7 +252,7 @@ const schema = {
       margin-bottom: 0.5rem;
     }
 
-    .diagram-phases h4 {
+    .diagram-phases .dg-title {
       font-size: 1.0625rem;
       font-weight: 600;
       color: #111827;
@@ -295,7 +295,7 @@ const schema = {
       background: var(--secondary);
     }
 
-    .diagram-pipeline h4 {
+    .diagram-pipeline .dg-title {
       font-size: 0.9375rem;
       font-weight: 600;
       color: #111827;
@@ -387,7 +387,7 @@ const schema = {
       </div>
 
       <div class="border-t pt-4">
-        <h4 class="font-semibold text-sm text-gray-700 mb-2">Key Insights</h4>
+        <div class="font-semibold text-sm text-gray-700 mb-2">Key Insights</div>
         <div class="space-y-2 text-xs text-gray-600">
           <div class="p-2 bg-teal-50 rounded">
             <i class="fas fa-chart-line mr-2 text-teal-600"></i>
@@ -662,10 +662,10 @@ const schema = {
           <!-- Detailed Analysis -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="insight-highlight p-8 rounded-lg">
-              <h4 class="text-xl font-light text-gray-900 mb-4">
+              <div class="text-xl font-light text-gray-900 mb-4">
                 <i class="fas fa-gavel text-teal-600 mr-3"></i>
                 Decision-Making Bottlenecks
-              </h4>
+              </div>
               <p class="text-gray-700 leading-relaxed mb-4">
                 Founders often possess deep knowledge and strong ownership, making it difficult to entrust critical decisions to others. This leads to centralized decision-making where all significant choices must go through the founder.
               </p>
@@ -675,10 +675,10 @@ const schema = {
             </div>
 
             <div class="insight-highlight p-8 rounded-lg">
-              <h4 class="text-xl font-light text-gray-900 mb-4">
+              <div class="text-xl font-light text-gray-900 mb-4">
                 <i class="fas fa-chess text-teal-600 mr-3"></i>
                 Strategic Planning Challenges
-              </h4>
+              </div>
               <p class="text-gray-700 leading-relaxed mb-4">
                 While founders are often visionaries, translating vision into coherent, executable strategy can be challenging. Absence of documented strategic plans results in misaligned efforts and reactive approaches.
               </p>
@@ -695,7 +695,7 @@ const schema = {
       <!-- Diagnostic Framework -->
       <section id="diagnostic" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-8">
-          <h2 class="text-4xl font-light text-gray-900 mb-12">Diagnostic Framework for Founder Bottlenecks</h2>
+          <h2 class="text-4xl font-light text-gray-900 mb-12">How to Diagnose It</h2>
 
           <p class="text-lg text-gray-700 mb-12 max-w-4xl">
             A systematic diagnostic framework is essential for identifying and understanding the nature and extent of founder bottlenecks within a small business. This framework involves assessing several interconnected aspects of the business.
@@ -747,42 +747,42 @@ const schema = {
             <ol class="diagram-steps">
               <li>
                 <span class="diagram-step-num">1</span>
-                <h4>Initial Assessment</h4>
+                <div class="dg-title">Initial Assessment</div>
                 <p>Establish what the business actually does, who does it, and where the owner sits in each flow.</p>
               </li>
               <li>
                 <span class="diagram-step-num">2</span>
-                <h4>Founder Workload Analysis</h4>
+                <div class="dg-title">Founder Workload Analysis</div>
                 <p>Two weeks of the owner's calendar and inbox, sorted into direction, delivery and escalation.</p>
               </li>
               <li>
                 <span class="diagram-step-num">3</span>
-                <h4>Organizational Structure Review</h4>
+                <div class="dg-title">Organizational Structure Review</div>
                 <p>Who holds which decisions on paper, and who actually holds them in practice.</p>
               </li>
               <li>
                 <span class="diagram-step-num">4</span>
-                <h4>Process and Systems Audit</h4>
+                <div class="dg-title">Process and Systems Audit</div>
                 <p>Which recurring work is documented, which lives in someone's head, and where handoffs stall.</p>
               </li>
               <li>
                 <span class="diagram-step-num">5</span>
-                <h4>Financial Performance Analysis</h4>
+                <div class="dg-title">Financial Performance Analysis</div>
                 <p>Where margin leaks against the constraint, and what the queue time is costing per month.</p>
               </li>
               <li class="is-finding">
                 <span class="diagram-step-num">6</span>
-                <h4>Bottleneck Identification</h4>
+                <div class="dg-title">Bottleneck Identification</div>
                 <p>Name the binding constraint. A capacity problem and a systems problem need opposite responses.</p>
               </li>
               <li>
                 <span class="diagram-step-num">7</span>
-                <h4>Intervention Strategy</h4>
+                <div class="dg-title">Intervention Strategy</div>
                 <p>Decision thresholds, named owners, and the documentation that has to exist before handoff works.</p>
               </li>
               <li>
                 <span class="diagram-step-num">8</span>
-                <h4>Implementation and Monitoring</h4>
+                <div class="dg-title">Implementation and Monitoring</div>
                 <p>Ship the changes, then track queue time to confirm the constraint actually moved.</p>
               </li>
             </ol>
@@ -791,33 +791,33 @@ const schema = {
           <!-- Assessment Methods -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="space-y-6">
-              <h4 class="text-xl font-light text-gray-900">Assessment Techniques</h4>
+              <div class="text-xl font-light text-gray-900">Assessment Techniques</div>
 
               <div class="bg-gray-50 p-6 rounded-lg">
-                <h5 class="font-semibold text-gray-900 mb-3">
+                <div class="font-semibold text-gray-900 mb-3">
                   <i class="fas fa-stopwatch text-teal-600 mr-2"></i>
                   Time Tracking Analysis
-                </h5>
+                </div>
                 <p class="text-gray-700 text-sm">
                   Objective assessment of how the founder spends their time, identifying tasks that consume disproportionate amounts of time but could be handled by others.
                 </p>
               </div>
 
               <div class="bg-gray-50 p-6 rounded-lg">
-                <h5 class="font-semibold text-gray-900 mb-3">
+                <div class="font-semibold text-gray-900 mb-3">
                   <i class="fas fa-sitemap text-teal-600 mr-2"></i>
                   Organizational Structure Review
-                </h5>
+                </div>
                 <p class="text-gray-700 text-sm">
                   Examining whether roles and responsibilities are clearly defined and if the current structure supports efficient workflow and decision-making.
                 </p>
               </div>
 
               <div class="bg-gray-50 p-6 rounded-lg">
-                <h5 class="font-semibold text-gray-900 mb-3">
+                <div class="font-semibold text-gray-900 mb-3">
                   <i class="fas fa-chart-bar text-teal-600 mr-2"></i>
                   Process Mapping
-                </h5>
+                </div>
                 <p class="text-gray-700 text-sm">
                   Mapping core business processes to identify redundancies, inefficiencies, and areas of high friction.
                 </p>
@@ -825,10 +825,10 @@ const schema = {
             </div>
 
             <div class="space-y-6">
-              <h4 class="text-xl font-light text-gray-900">Key Indicators</h4>
+              <div class="text-xl font-light text-gray-900">Key Indicators</div>
 
               <div class="insight-highlight p-6 rounded-lg">
-                <h5 class="font-semibold text-gray-900 mb-3">Quantitative Evidence</h5>
+                <div class="font-semibold text-gray-900 mb-3">Quantitative Evidence</div>
                 <ul class="space-y-2 text-sm text-gray-700">
                   <li>• Stagnating growth despite market opportunities</li>
                   <li>• High operational costs in specific areas</li>
@@ -838,7 +838,7 @@ const schema = {
               </div>
 
               <div class="insight-highlight p-6 rounded-lg">
-                <h5 class="font-semibold text-gray-900 mb-3">Qualitative Signals</h5>
+                <div class="font-semibold text-gray-900 mb-3">Qualitative Signals</div>
                 <ul class="space-y-2 text-sm text-gray-700">
                   <li>• Founder feeling constantly overwhelmed</li>
                   <li>• Team frustration with approval processes</li>
@@ -874,7 +874,7 @@ const schema = {
       <!-- Strategies Section -->
       <section id="strategies" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-8">
-          <h2 class="text-4xl font-light text-gray-900 mb-12">Strategies for Mitigating Founder Bottlenecks</h2>
+          <h2 class="text-4xl font-light text-gray-900 mb-12">How to Fix It</h2>
 
           <p class="text-lg text-gray-700 mb-12 max-w-4xl">
             Once founder bottlenecks have been identified and diagnosed, the next step is to implement strategies to mitigate them. This involves a combination of empowering people, improving processes, and shifting the founder's focus.
@@ -923,10 +923,10 @@ const schema = {
           <!-- Strategy Details -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div class="insight-highlight p-8 rounded-lg">
-              <h4 class="text-xl font-light text-gray-900 mb-4">
+              <div class="text-xl font-light text-gray-900 mb-4">
                 <i class="fas fa-users-cog text-teal-600 mr-3"></i>
                 Empowering Leadership
-              </h4>
+              </div>
               <p class="text-gray-700 leading-relaxed mb-4">
                 A cornerstone of mitigating founder bottlenecks is empowering leadership within the team and building an effective, autonomous workforce. This begins with clearly defining roles, responsibilities, and decision-making authority.
               </p>
@@ -947,10 +947,10 @@ const schema = {
             </div>
 
             <div class="insight-highlight p-8 rounded-lg">
-              <h4 class="text-xl font-light text-gray-900 mb-4">
+              <div class="text-xl font-light text-gray-900 mb-4">
                 <i class="fas fa-cogs text-teal-600 mr-3"></i>
                 Scalable Systems Implementation
-              </h4>
+              </div>
               <p class="text-gray-700 leading-relaxed mb-4">
                 To reduce the founder's operational load and improve efficiency, businesses must implement scalable systems and processes. The goal is to create systems that can run effectively without constant intervention.
               </p>
@@ -973,11 +973,11 @@ const schema = {
 
           <!-- Implementation Timeline -->
           <div class="bg-white p-8 rounded-lg shadow-sm">
-            <h4 class="text-2xl font-light text-gray-900 mb-6">Implementation Timeline</h4>
+            <div class="text-2xl font-light text-gray-900 mb-6">Implementation Timeline</div>
             <ol class="diagram-phases">
               <li>
                 <span class="diagram-phase-label">Phase 1</span>
-                <h4>Assessment and Diagnosis</h4>
+                <div class="dg-title">Assessment and Diagnosis</div>
                 <ul>
                   <li>Founder workload analysis</li>
                   <li>Organizational structure review</li>
@@ -986,7 +986,7 @@ const schema = {
               </li>
               <li>
                 <span class="diagram-phase-label">Phase 2</span>
-                <h4>Immediate Interventions</h4>
+                <div class="dg-title">Immediate Interventions</div>
                 <ul>
                   <li>Quick-win process improvements</li>
                   <li>Initial delegation framework</li>
@@ -995,7 +995,7 @@ const schema = {
               </li>
               <li>
                 <span class="diagram-phase-label">Phase 3</span>
-                <h4>System Implementation</h4>
+                <div class="dg-title">System Implementation</div>
                 <ul>
                   <li>Document key processes</li>
                   <li>Technology investment</li>
@@ -1004,7 +1004,7 @@ const schema = {
               </li>
               <li>
                 <span class="diagram-phase-label">Phase 4</span>
-                <h4>Strategic Transformation</h4>
+                <div class="dg-title">Strategic Transformation</div>
                 <ul>
                   <li>Leadership development</li>
                   <li>Cultural change</li>
@@ -1030,7 +1030,7 @@ const schema = {
 
               <div class="space-y-8">
                 <div class="bg-gray-50 p-6 rounded-lg">
-                  <h4 class="font-semibold text-gray-900 mb-3">Tech Startup Transformation</h4>
+                  <div class="font-semibold text-gray-900 mb-3">Tech Startup Transformation</div>
                   <p class="text-gray-700 text-sm mb-4">
                     A tech startup founder initially handled all product development, marketing, and sales. Successful transition involved hiring experienced department heads, clearly defining their mandates, and stepping back to focus on overarching strategy.
                   </p>
@@ -1041,7 +1041,7 @@ const schema = {
                 </div>
 
                 <div class="bg-gray-50 p-6 rounded-lg">
-                  <h4 class="font-semibold text-gray-900 mb-3">Manufacturing Business Scaling</h4>
+                  <div class="font-semibold text-gray-900 mb-3">Manufacturing Business Scaling</div>
                   <p class="text-gray-700 text-sm mb-4">
                     Founder recognized growth ceiling and severe burnout. Deliberate phased approach starting with clear vision articulation, followed by strategic hiring and development of strong leadership team.
                   </p>
@@ -1063,7 +1063,7 @@ const schema = {
                     <i class="fas fa-lightbulb text-blue-600"></i>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-gray-900 mb-2">Early Recognition is Paramount</h4>
+                    <div class="font-semibold text-gray-900 mb-2">Early Recognition is Paramount</div>
                     <p class="text-gray-700 text-sm">
                       Denial or resistance to change can prolong pain and hinder growth. Founders must acknowledge bottleneck issues early.
                     </p>
@@ -1075,7 +1075,7 @@ const schema = {
                     <i class="fas fa-user-graduate text-blue-600"></i>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-gray-900 mb-2">Investing in People is Non-Negotiable</h4>
+                    <div class="font-semibold text-gray-900 mb-2">Investing in People is Non-Negotiable</div>
                     <p class="text-gray-700 text-sm">
                       Hiring the right talent, particularly in leadership roles, and investing in their development and empowerment.
                     </p>
@@ -1087,7 +1087,7 @@ const schema = {
                     <i class="fas fa-cogs text-blue-600"></i>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-gray-900 mb-2">Systemize and Document Processes</h4>
+                    <div class="font-semibold text-gray-900 mb-2">Systemize and Document Processes</div>
                     <p class="text-gray-700 text-sm">
                       Crucial for scalability and consistency, reducing the founder's need to be the "human glue" holding everything together.
                     </p>
@@ -1099,7 +1099,7 @@ const schema = {
                     <i class="fas fa-handshake text-blue-600"></i>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-gray-900 mb-2">Effective Delegation is an Art</h4>
+                    <div class="font-semibold text-gray-900 mb-2">Effective Delegation is an Art</div>
                     <p class="text-gray-700 text-sm">
                       Not just about offloading tasks but empowering others with clear expectations and support.
                     </p>
@@ -1111,7 +1111,7 @@ const schema = {
                     <i class="fas fa-rocket text-blue-600"></i>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-gray-900 mb-2">Founder's Role Must Evolve</h4>
+                    <div class="font-semibold text-gray-900 mb-2">Founder's Role Must Evolve</div>
                     <p class="text-gray-700 text-sm">
                       Transition from chief "doer" to chief strategist, culture keeper, and visionary leader.
                     </p>
@@ -1188,7 +1188,7 @@ const schema = {
             <h3 class="text-2xl font-light text-gray-900 mb-6">Technical Implementation Case Study</h3>
 
             <div class="insight-highlight p-6 rounded-lg mb-6">
-              <h4 class="font-semibold text-gray-900 mb-3">Data Analysis Bottleneck Example</h4>
+              <div class="font-semibold text-gray-900 mb-3">Data Analysis Bottleneck Example</div>
               <p class="text-gray-700 text-sm leading-relaxed">
                 A founder's involvement in technical data analysis tasks created significant bottlenecks. The process of translating an R script to Python revealed several operational issues: logical errors in data aggregation, resource dependencies on external URLs, extensive debugging time, and lack of standardized error handling.
               </p>
@@ -1197,41 +1197,41 @@ const schema = {
             <!-- Data Flow Diagram -->
             <ol class="diagram-pipeline">
               <li>
-                <h4>Data Source</h4>
+                <div class="dg-title">Data Source</div>
                 <p>Operational systems, time tracking and finance records.</p>
               </li>
               <li>
-                <h4>Data Loading</h4>
+                <div class="dg-title">Data Loading</div>
                 <p>Automated pull on a fixed schedule.</p>
               </li>
               <li class="needs-founder">
-                <h4>Data Preprocessing</h4>
+                <div class="dg-title">Data Preprocessing</div>
                 <p>Cleaning and categorising work items.</p>
                 <span class="flag">Founder input required</span>
               </li>
               <li class="needs-founder">
-                <h4>Data Aggregation</h4>
+                <div class="dg-title">Data Aggregation</div>
                 <p>Rolling up by process, owner and queue time.</p>
                 <span class="flag">Founder input required</span>
               </li>
               <li>
-                <h4>Data Validation</h4>
+                <div class="dg-title">Data Validation</div>
                 <p>Checks against known throughput before anything is trusted.</p>
               </li>
               <li class="needs-founder">
-                <h4>Visualization</h4>
+                <div class="dg-title">Visualization</div>
                 <p>Deciding which constraints get surfaced and how.</p>
                 <span class="flag">Founder input required</span>
               </li>
               <li>
-                <h4>Reporting</h4>
+                <div class="dg-title">Reporting</div>
                 <p>Distributed to the team without the owner in the loop.</p>
               </li>
             </ol>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
               <div>
-                <h5 class="font-semibold text-gray-900 mb-3">Identified Issues</h5>
+                <div class="font-semibold text-gray-900 mb-3">Identified Issues</div>
                 <ul class="space-y-2 text-sm text-gray-700">
                   <li>• Logical errors in aggregation logic</li>
                   <li>• External resource dependencies</li>
@@ -1240,7 +1240,7 @@ const schema = {
                 </ul>
               </div>
               <div>
-                <h5 class="font-semibold text-gray-900 mb-3">Recommended Solutions</h5>
+                <div class="font-semibold text-gray-900 mb-3">Recommended Solutions</div>
                 <ul class="space-y-2 text-sm text-gray-700">
                   <li>• Standardized reporting templates</li>
                   <li>• Automated data validation checks</li>
