@@ -328,135 +328,57 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-    <!-- Pricing Section -->
-     <!-- 
-    <section class="py-16 bg-white">
+    <!-- Pricing. Replaced a commented-out Starter/Growth/Scale block on 2026-09-17.
+         The monthly is fixed-scope execution of the audit roadmap with a named
+         deliverable, not a retainer. Do not change a number here without changing
+         it in the private offer file first. -->
+    <section id="pricing" class="py-16 bg-white">
         <div class="container mx-auto px-6 max-w-5xl">
-            <h2 class="text-3xl font-bold text-blue-700 mb-12 text-center">Investment in Your Organic Growth</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 border border-gray-200">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-bold text-gray-800">Starter</h3>
-                        <div class="text-blue-700 text-3xl font-bold mt-2">Scoped after audit</div>
-                        <p class="text-gray-500 mt-1">fixed price, no retainer</p>
-                    </div>
-                    
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span>Technical SEO audit</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span>Keyword research & mapping</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span>On-page optimization (5 pages)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span>Technical implementation plan</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span>30-day support</span>
-                        </li>
+            <h2 class="text-3xl font-bold text-blue-700 mb-4 text-center">What this costs</h2>
+            <p class="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">
+                The audit comes first and stands on its own. What happens after it is your call.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 flex flex-col">
+                    <p class="uppercase text-xs tracking-wider font-medium text-blue-600 mb-3">Step one</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">SEO Audit</h3>
+                    <p class="text-4xl font-extrabold text-blue-700 mb-1">$2,500</p>
+                    <p class="text-sm text-gray-500 mb-6">One time. Roughly 50 pages.</p>
+                    <ul class="text-gray-700 space-y-3 flex-1">
+                        <li class="flex items-start"><span class="text-blue-700 mr-3">&#10003;</span><span>Technical audit, semantic keyword research and a content gap analysis</span></li>
+                        <li class="flex items-start"><span class="text-blue-700 mr-3">&#10003;</span><span>Every finding written as a specific action, ordered by what it is worth</span></li>
+                        <li class="flex items-start"><span class="text-blue-700 mr-3">&#10003;</span><span>Yours to keep, and yours to hand to any agency you like</span></li>
                     </ul>
-                    
-                    <div class="text-center">
-                        <a href="/ai-readiness-and-ai-audits#pricing" class="inline-block bg-blue-700 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-800 transition duration-300">Get Started</a>
-                    </div>
                 </div>
-                
-                <div class="bg-blue-700 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform -translate-y-4 border-2 border-blue-600 relative">
-                    <div class="absolute top-0 right-0 bg-yellow-400 text-blue-800 text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">MOST POPULAR</div>
-                    
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-bold text-white">Professional</h3>
-                        <div class="text-white text-3xl font-bold mt-2">Scoped after audit</div>
-                        <p class="text-blue-200 mt-1">fixed price, no retainer</p>
-                    </div>
-                    
-                    <ul class="space-y-3 mb-8 text-white">
-                        <li class="flex items-start">
-                            <span class="text-yellow-400 mr-2">✓</span>
-                            <span>All Starter features</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-yellow-400 mr-2">✓</span>
-                            <span>On-page optimization (15 pages)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-yellow-400 mr-2">✓</span>
-                            <span>Content strategy & calendar</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-yellow-400 mr-2">✓</span>
-                            <span>Competitive analysis</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-yellow-400 mr-2">✓</span>
-                            <span>Technical implementation support</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-yellow-400 mr-2">✓</span>
-                            <span>60-day support</span>
-                        </li>
+
+                <div class="bg-white rounded-xl p-8 border-2 border-blue-600 shadow-md flex flex-col">
+                    <p class="uppercase text-xs tracking-wider font-medium text-blue-600 mb-3">Optional, step two</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Execution</h3>
+                    <p class="text-4xl font-extrabold text-blue-700 mb-1">$997<span class="text-lg font-semibold text-gray-600"> per month</span></p>
+                    <p class="text-sm text-gray-500 mb-6">Three month minimum. Cancel after that with 30 days notice.</p>
+                    <ul class="text-gray-700 space-y-3 flex-1">
+                        <li class="flex items-start"><span class="text-blue-700 mr-3">&#10003;</span><span>I work the audit roadmap in priority order and you see what shipped</span></li>
+                        <li class="flex items-start"><span class="text-blue-700 mr-3">&#10003;</span><span>Named deliverables each month, agreed in advance, not an open bucket of hours</span></li>
+                        <li class="flex items-start"><span class="text-blue-700 mr-3">&#10003;</span><span>Monthly report against the findings, so you can see what moved and what did not</span></li>
                     </ul>
-                    
-                    <div class="text-center">
-                        <a href="/ai-readiness-and-ai-audits#pricing" class="inline-block bg-white text-blue-700 font-bold py-2 px-6 rounded-lg hover:bg-blue-50 transition duration-300">Get Started</a>
-                    </div>
-                </div>
-                
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 border border-gray-200">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-bold text-gray-800">Enterprise</h3>
-                        <div class="text-blue-700 text-3xl font-bold mt-2">Scoped after audit</div>
-                        <p class="text-gray-500 mt-1">fixed price, no retainer</p>
-                    </div>
-                    
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span>All Professional features</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span>On-page optimization (30 pages)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span>2 semantic content pieces</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span>Link building campaign</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span>Schema markup implementation</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-500 mr-2">✓</span>
-                            <span>90-day support</span>
-                        </li>
-                    </ul>
-                    
-                    <div class="text-center">
-                        <a href="/ai-readiness-and-ai-audits#pricing" class="inline-block bg-blue-700 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-800 transition duration-300">Get Started</a>
-                    </div>
                 </div>
             </div>
-            
-            <div class="text-center mt-8">
-                <p class="text-gray-600">Need a customized solution? <a href="/ai-readiness-and-ai-audits#pricing" class="text-blue-700 font-bold">Contact us</a> for a tailored package.</p>
+
+            <div class="max-w-4xl mx-auto mt-8 bg-blue-50 border border-blue-100 rounded-xl p-6">
+                <p class="text-gray-700">
+                    You are not obliged to take step two. Plenty of businesses take the audit, hand it to
+                    the agency they already use, and get more out of that relationship than they were before.
+                    That is a fine outcome and it is why the audit is priced to stand alone.
+                </p>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="https://calendly.com/david-j-forer/30min" class="bg-blue-700 text-white font-bold py-4 px-10 rounded-lg shadow-lg hover:bg-blue-800 transition duration-300 inline-block">Book a 30 minute call</a>
+                <p class="text-sm text-gray-600 mt-4">If search visibility is not actually what is holding you back, I will tell you that instead.</p>
             </div>
         </div>
     </section>
--->
 
 <!-- CTA Section -->
 <section class="bg-blue-800 w-full py-6 px-4 sm:px-6 lg:px-12">
