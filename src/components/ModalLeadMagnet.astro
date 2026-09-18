@@ -1,57 +1,123 @@
 ---
-const { showModalId, formTitle, formDescription, formSrc } = Astro.props;
+/**
+ * Modal lead magnet. Native form, not an embed.
+ *
+ * Changed 2026-09-18: this was a 500px Formbricks iframe. It was the last
+ * third-party form embed on the site. Same survey, same two fields, posted
+ * directly by LeadForm now, and it can be styled to match every other form.
+ *
+ * The old lazy-src trick is gone with it. That existed because a hidden parent
+ * does not stop an iframe loading, so a real `src` booted the whole Formbricks
+ * Next.js app on page load for a form nobody had opened. A native form has
+ * nothing to boot, so the problem it solved no longer exists.
+ *
+ * Reasoning lives in frontmatter, not in `<!-- -->`. Astro ships HTML comments
+ * to the built page and this renders on the homepage.
+ */
+import LeadForm from './LeadForm.astro';
+import type { LeadFormField } from './LeadForm.astro';
+
+interface Props {
+  showModalId: string;
+  formTitle: string;
+  formDescription?: string;
+  surveyId: string;
+  fields: LeadFormField[];
+  buttonText?: string;
+  successHeading?: string;
+  successBody?: string;
+  successHref?: string;
+  successLinkText?: string;
+}
+
+const {
+  showModalId,
+  formTitle,
+  formDescription,
+  surveyId,
+  fields,
+  buttonText = 'Send it over',
+  successHeading = 'Got it.',
+  successBody = 'Your details are in. I read these myself and I will come back to you shortly.',
+  successHref,
+  successLinkText,
+} = Astro.props;
 ---
 
-<div id={showModalId} class="fixed inset-0 z-50 bg-black bg-opacity-60 hidden flex justify-center items-center">
-  <div class="relative bg-white rounded-2xl shadow-xl w-full max-w-2xl p-6 mx-4">
-    <!-- Close button -->
+<div
+  id={showModalId}
+  class="fixed inset-0 z-50 bg-black bg-opacity-60 hidden justify-center items-center"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby={`${showModalId}-title`}
+>
+  <div class="relative bg-white rounded-2xl shadow-xl w-full max-w-lg p-8 mx-4 max-h-[90vh] overflow-y-auto">
     <button
+      type="button"
       aria-label="Close"
-      onclick={`document.getElementById('${showModalId}').classList.add('hidden')`}
-      class="absolute top-3 right-3 text-gray-400 hover:text-gray-800 text-2xl"
+      data-close-modal={showModalId}
+      class="absolute top-3 right-4 text-gray-400 hover:text-gray-800 text-3xl leading-none"
     >
       &times;
     </button>
 
-    <!-- Modal heading -->
-   <div class="text-center mb-6">
-  <h2 class="text-2xl font-bold mb-2">{formTitle}</h2>
-  <p class="text-sm text-gray-600">{formDescription}</p>
-</div>
-
-    <!-- Form embed.
-         The src is held in data-src, not src. A hidden parent does not stop an
-         iframe from loading, so a real src here booted the whole Formbricks
-         Next.js app on page load for a form nobody had opened. Three of these
-         on the homepage cost about 3.9s of script execution. The src is
-         assigned the first time the modal opens. -->
-    <div class="relative h-[500px] overflow-hidden rounded-lg">
-      <iframe
-        data-src={formSrc}
-        class="absolute top-0 left-0 w-full h-full border-0"
-        loading="lazy"
-        allowtransparency="true"
-      ></iframe>
+    <div class="text-center mb-6">
+      <h2 id={`${showModalId}-title`} class="text-2xl font-bold text-gray-800 mb-2">{formTitle}</h2>
+      {formDescription && <p class="text-sm text-gray-600">{formDescription}</p>}
     </div>
+
+    <LeadForm
+      surveyId={surveyId}
+      fields={fields}
+      buttonText={buttonText}
+      successHeading={successHeading}
+      successBody={successBody}
+      successHref={successHref}
+      successLinkText={successLinkText}
+    />
   </div>
 </div>
 
-<!-- Toggle logic for buttons anywhere on page -->
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    const openButtons = document.querySelectorAll("[data-open-modal]");
-    openButtons.forEach(button => {
-      const targetId = button.getAttribute("data-open-modal");
+    const show = (modal: HTMLElement) => {
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      modal.querySelector<HTMLInputElement>("input, textarea")?.focus();
+    };
+    const hide = (modal: HTMLElement) => {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    };
+
+    document.querySelectorAll<HTMLElement>("[data-open-modal]").forEach((button) => {
       button.addEventListener("click", () => {
-        const modal = document.getElementById(targetId);
-        if (!modal) return;
-        // Load the form on first open, then leave it alone.
-        const frame = modal.querySelector("iframe[data-src]");
-        if (frame) {
-          frame.src = frame.getAttribute("data-src");
-          frame.removeAttribute("data-src");
-        }
-        modal.classList.remove("hidden");
+        const modal = document.getElementById(button.getAttribute("data-open-modal") || "");
+        if (modal) show(modal);
+      });
+    });
+
+    document.querySelectorAll<HTMLElement>("[data-close-modal]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const modal = document.getElementById(button.getAttribute("data-close-modal") || "");
+        if (modal) hide(modal);
+      });
+    });
+
+    // Click the backdrop to close. The inner card stops the event, so a click
+    // on the form itself does not dismiss a half-filled modal.
+    document.querySelectorAll<HTMLElement>("[role=dialog]").forEach((modal) => {
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal) hide(modal);
+      });
+    });
+
+    // Escape closes whichever modal is open. The old iframe version trapped
+    // people with nothing but the small x in the corner.
+    document.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape") return;
+      document.querySelectorAll<HTMLElement>("[role=dialog]").forEach((modal) => {
+        if (!modal.classList.contains("hidden")) hide(modal);
       });
     });
   });

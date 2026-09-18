@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import FormSection from '../components/FormSection.astro';
+import { AI_AUDIT_SURVEY, AI_AUDIT_FIELDS } from '../lib/leadForms';
 ---
 
 <Layout 
@@ -420,29 +422,17 @@ image="/images/ai-training.webp"
             </div>
         </div>
     </section>
-    <!-- Final CTA Section -->
-    <section class="bg-blue-700 w-full py-12 px-4 sm:px-6 lg:px-12">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4 text-white">
-                Build AI Capability Across Your Team
-            </h2>
-            <p class="text-white text-lg mb-4 max-w-2xl mx-auto">
-                AI adoption does not fail because of tools. It fails because teams are not aligned.
-            </p>
-            <p class="text-white text-lg mb-8 max-w-2xl mx-auto">
-                If you want your team to use AI confidently, consistently, and responsibly, this training is designed to help.
-            </p>
-        </div>
-
-        <div class="relative w-full h-[50vh] max-w-4xl mx-auto rounded-xl overflow-hidden">
-            <iframe 
-                src="https://bricks.davidjforer.com/s/cmb8iecta0047oj01702lyzkz"
-                class="absolute top-0 left-0 w-full h-full border-0 bg-blue-700"
-                loading="lazy"
-                allowtransparency="true"
-            ></iframe>
-        </div>
-    </section>
+    <!-- Formbricks iframe replaced with the shared native FormSection on
+         2026-09-18. Same survey as /ai-readiness-and-ai-audits, fields imported
+         from src/lib/leadForms.ts so the two cannot drift apart. -->
+    <FormSection
+        id="contact"
+        heading="Build AI capability across your team"
+        blurb="AI adoption fails on alignment rather than tools. If you want your team using AI consistently and knowing where the limits are, this training is built for that."
+        surveyId={AI_AUDIT_SURVEY}
+        fields={AI_AUDIT_FIELDS}
+        buttonText="Talk about training"
+    />
 
 </body>
 </Layout>

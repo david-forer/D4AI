@@ -1,8 +1,13 @@
 ---
 import ModalLeadMagnet from "../components/ModalLeadMagnet.astro";
+import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
 
-
-
+// The modal was a Formbricks iframe until 2026-09-18. It is now a native
+// LeadForm, which made it the last third-party form embed on the site.
+//
+// The modal promises a checklist that arrives by reply rather than an instant
+// download, because that is what actually happens today. To hand over a file on
+// submit instead, pass successHref and successLinkText and the button appears.
 ---
 
 <section class="bg-gradient-to-r from-blue-700 to-blue-900 text-white">
@@ -22,7 +27,7 @@ import ModalLeadMagnet from "../components/ModalLeadMagnet.astro";
               data-open-modal="ai-audit-modal"
               class="cursor-pointer bg-white/10 border border-white/30 text-white px-6 py-3 rounded-xl hover:bg-white/20 transition duration-200 focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:outline-none"
             >
-              Get AI Audit Template
+              Get the readiness checklist
             </button>
           </div>
       </div>
@@ -68,11 +73,15 @@ import ModalLeadMagnet from "../components/ModalLeadMagnet.astro";
       </div>
   </div>
 
- <ModalLeadMagnet
+<ModalLeadMagnet
   showModalId="ai-audit-modal"
-  formTitle="Download the AI Audit Template"
-  formDescription="Get the SOP & delivery guide I use with real clients to assess AI readiness."
-  formSrc="https://bricks.davidjforer.com/s/cmb4zuznm0015oj0155cmsz7x"
+  formTitle="Get the AI readiness checklist"
+  formDescription="The questions I work through before recommending a single tool. Two fields, no call."
+  surveyId={GIVEAWAY_SURVEY}
+  fields={GIVEAWAY_FIELDS}
+  buttonText="Send it over"
+  successHeading="Got it."
+  successBody="Your details are in. I send this out personally, so give me a day."
 />
 
 <style>
