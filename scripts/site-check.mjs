@@ -132,13 +132,25 @@ const PRIVATE_LEAKS = [
   ['numbered private dir', /\b\d{2}_[A-Z][A-Z0-9_]{2,}\b/g],
   ['underscore-caps dir',  /[\\/]_[A-Z]{3,}\b/g],
 ];
-console.log('\nEvery sitemap URL (200, one self-referencing canonical, no noindex, clean encoding, no private notes)');
+console.log('\nEvery sitemap URL (200, one self-referencing canonical, no noindex, clean encoding, no private notes, nothing after </body>)');
 let bad = 0;
 let dirty = 0;
 let leaking = 0;
+let orphaned = 0;
 for (const u of urls) {
   const path = u.replace(SITE, '') || '/';
   const r = await head(path);
+  // Content rendered after </body> escaped the layout. It still paints, below
+  // the footer, so it looks like a styling mistake rather than a broken page.
+  // Caught on 2026-09-18 when the homepage giveaway form rendered under the
+  // footer. Source tag balance was clean and the build was green, so nothing
+  // else would have flagged it.
+  const afterBody = r.text.split(/<\/body>/i)[1] || '';
+  const escapedTag = afterBody.match(/<(section|main|article|form|h[1-6]|nav|header|footer)\b[^>]*>/i);
+  if (escapedTag) {
+    orphaned++;
+    fail(`${path}: ${escapedTag[0].slice(0, 60)} renders AFTER </body>, so it paints below the footer. Move it inside the page's wrapper element.`);
+  }
   const found = ENCODING_DEFECTS
     .map(([name, re]) => [name, (r.text.match(re) || []).length])
     .filter(([, n]) => n > 0);
@@ -165,6 +177,7 @@ for (const u of urls) {
 if (bad === 0) ok(`all ${urls.length} sitemap URLs are 200, self-canonical, indexable`);
 if (dirty === 0) ok(`all ${urls.length} sitemap URLs are free of em dashes and mojibake`);
 if (leaking === 0) ok(`all ${urls.length} sitemap URLs are free of private paths and filenames`);
+if (orphaned === 0) ok(`all ${urls.length} sitemap URLs render every section inside <body>`);
 
 console.log(`\n${passes} passed, ${failures} failed\n`);
 process.exit(failures ? 1 : 0);
