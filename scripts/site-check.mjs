@@ -114,9 +114,28 @@ const ENCODING_DEFECTS = [
   ['mojibake C2 B7', /Â·/g],
   ['mojibake E2 80', /â€/g],
 ];
-console.log('\nEvery sitemap URL (200, one self-referencing canonical, no noindex, clean encoding)');
+
+// The leak half exists because of 2026-09-18. An HTML comment on
+// /operational-buildout named a private knowledge-base path and restated the
+// internal price ladder, including a tier the visible page does not show. It
+// sat in live HTML for seventeen hours and was only noticed because the same
+// comment happened to carry a NUL byte that tripped the U+FFFD check above.
+// A clean leak would have shipped silently, so it gets its own assertion.
+// scripts/source-check.mjs is the matching guard on the repo side, and catches
+// the two of those four comments that the build strips before rendering.
+// Structural, so this file names no private directory or filename of its own.
+// An earlier draft enumerated them, which published the thing it was guarding
+// in a public repo. See scripts/source-check.mjs for the same pattern set and
+// the optional gitignored .private-patterns override.
+const PRIVATE_LEAKS = [
+  ['Windows drive path',   /[A-Za-z]:\\[\w.]/g],
+  ['numbered private dir', /\b\d{2}_[A-Z][A-Z0-9_]{2,}\b/g],
+  ['underscore-caps dir',  /[\\/]_[A-Z]{3,}\b/g],
+];
+console.log('\nEvery sitemap URL (200, one self-referencing canonical, no noindex, clean encoding, no private notes)');
 let bad = 0;
 let dirty = 0;
+let leaking = 0;
 for (const u of urls) {
   const path = u.replace(SITE, '') || '/';
   const r = await head(path);
@@ -126,6 +145,13 @@ for (const u of urls) {
   if (found.length) {
     dirty++;
     fail(`${path}: ${found.map(([name, n]) => `${n} x ${name}`).join(', ')}`);
+  }
+  const leaks = PRIVATE_LEAKS
+    .map(([name, re]) => [name, [...new Set(r.text.match(re) || [])]])
+    .filter(([, hits]) => hits.length > 0);
+  if (leaks.length) {
+    leaking++;
+    fail(`${path}: PRIVATE NOTE IN PUBLIC HTML: ${leaks.map(([name, hits]) => `${name} ${hits.map((h) => `"${h}"`).join(' ')}`).join(', ')}`);
   }
   const canon = [...r.text.matchAll(/<link[^>]+rel=["']canonical["'][^>]*href=["']([^"']+)["']/gi)].map(m => m[1]);
   const noindex = /<meta[^>]+name=["']robots["'][^>]+noindex/i.test(r.text);
@@ -138,6 +164,7 @@ for (const u of urls) {
 }
 if (bad === 0) ok(`all ${urls.length} sitemap URLs are 200, self-canonical, indexable`);
 if (dirty === 0) ok(`all ${urls.length} sitemap URLs are free of em dashes and mojibake`);
+if (leaking === 0) ok(`all ${urls.length} sitemap URLs are free of private paths and filenames`);
 
 console.log(`\n${passes} passed, ${failures} failed\n`);
 process.exit(failures ? 1 : 0);
