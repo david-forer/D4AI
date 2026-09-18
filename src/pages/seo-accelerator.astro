@@ -1,100 +1,149 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import FormSection from '../components/FormSection.astro';
+import { SEO_SURVEY, SEO_FIELDS } from '../lib/leadForms';
+
+const pageUrl = 'https://davidjforer.com/seo-accelerator';
+
+// Form fields and the Formbricks element ids live in src/lib/leadForms.ts.
+// Chrome comes from FormSection, so every form on the site matches.
+
+// The FAQ block below is the single source for both the visible section and the
+// FAQPage schema. Edit here, never in the markup, or the two drift apart.
+// Questions 1 to 3 were added 2026-09-18 from the live SERP for "seo
+// accelerator": the term is split between agency services, training courses and
+// indexing software, and Google's own AI Overview closes by asking the searcher
+// which one they mean. Nothing on page one answers that and then sells.
+const faqs = [
+  {
+    q: 'What is an SEO accelerator?',
+    a: 'An SEO accelerator is a fixed-scope engagement that compresses the first phase of search work. The audit, the keyword map and the priority order arrive up front, so execution runs against a list that already exists rather than discovering that list one month at a time. The same name also gets used for training courses and for indexing software, which is why search results for the term look so mixed.',
+  },
+  {
+    q: 'Is an SEO accelerator a service, a course, or software?',
+    a: 'All three use the name. Agencies sell it as a fixed-scope project or a monthly execution program. Training companies sell it as a course covering keyword research, technical auditing and client acquisition. Software companies sell it as a tool for instant indexing, crawl budget control or static snapshots. This page is the first kind: a paid audit, then optional execution against the roadmap that audit produces.',
+  },
+  {
+    q: 'How is this different from an SEO retainer?',
+    a: 'A retainer buys hours and finds the work as it goes. This starts with a $2,500 audit that writes every finding as a specific action, ordered by what it is worth. If you take the $997 a month execution step, the deliverables are named and agreed before the month starts. Plenty of businesses take the audit, hand it to the agency they already use, and stop there.',
+  },
+  {
+    q: 'What does an SEO accelerator cost?',
+    a: 'Fixed-scope audits from independent consultants run roughly $2,000 to $5,000 depending on site size. Monthly execution sits anywhere from $500 to $10,000 and up. This one is $2,500 for an audit of roughly 50 pages, then $997 a month for execution with a 6 month minimum. Free training courses exist if you want to learn the work instead of buying it.',
+  },
+  {
+    q: 'How long before I see results?',
+    a: 'Initial ranking movement usually shows between weeks 4 and 8. Traffic change that means anything takes 3 to 6 months, which is why the execution step carries a 6 month minimum. Anyone promising faster is selling ads with an SEO label on them.',
+  },
+  {
+    q: 'What makes semantic SEO different?',
+    a: 'Semantic SEO covers a subject completely rather than chasing one phrase at a time, so a single page can rank for dozens of related searches. Search engines now match meaning and entity relationships, so covering a subject properly reaches more queries than repeating a keyword.',
+  },
+  {
+    q: 'Do you guarantee rankings?',
+    a: 'No. Nobody controls Google’s index, and a provider who guarantees a position is either buying it with ads or lying to you. What I guarantee is the method, the priority order, and a monthly report showing what moved and what did not.',
+  },
+  {
+    q: 'What does implementation involve?',
+    a: 'I handle the audit, the analysis and the roadmap. Implementation is your call. I can make the changes directly, or hand your team written instructions and review the result.',
+  },
+  {
+    q: 'Is this suitable for my industry?',
+    a: 'It works across most service businesses. If your niche needs a different approach, I will say so before you pay anything. The initial assessment exists for that reason.',
+  },
+  {
+    q: 'What ongoing support do you provide?',
+    a: 'The execution step includes monthly performance monitoring, a report written against the audit findings, and the next month’s deliverables agreed in advance. The audit on its own is one-time work with no ongoing commitment attached to it.',
+  },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebPage',
+      '@id': `${pageUrl}#webpage`,
+      url: pageUrl,
+      name: 'SEO Accelerator',
+      description:
+        'A fixed-scope SEO engagement for small businesses: a $2,500 audit of roughly 50 pages, then optional monthly execution against the roadmap it produces.',
+      about: 'SEO accelerator programs for small businesses',
+      audience: {
+        '@type': 'Audience',
+        audienceType:
+          'Founders of service businesses between $1M and $5M in revenue with 5 to 20 staff',
+      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${pageUrl}#breadcrumbs`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://davidjforer.com' },
+        { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://davidjforer.com/services' },
+        { '@type': 'ListItem', position: 3, name: 'SEO Accelerator', item: pageUrl },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': `${pageUrl}#service`,
+      name: 'SEO Accelerator',
+      serviceType: 'Search engine optimization audit and execution',
+      description:
+        'A fixed-scope SEO audit covering technical analysis, semantic keyword research and a content gap analysis, with optional monthly execution against the resulting roadmap.',
+      provider: { '@type': 'Person', name: 'David J Forer', url: 'https://davidjforer.com' },
+      areaServed: { '@type': 'Country', name: 'United States' },
+      offers: [
+        {
+          '@type': 'Offer',
+          name: 'SEO Audit',
+          description: 'One-time audit of roughly 50 pages. Technical audit, semantic keyword research and a content gap analysis.',
+          price: '2500',
+          priceCurrency: 'USD',
+          url: `${pageUrl}#pricing`,
+          availability: 'https://schema.org/InStock',
+        },
+        {
+          '@type': 'Offer',
+          name: 'Execution',
+          description: 'Monthly execution against the audit roadmap with named deliverables agreed in advance. Six month minimum.',
+          price: '997',
+          priceCurrency: 'USD',
+          url: `${pageUrl}#pricing`,
+          availability: 'https://schema.org/InStock',
+          eligibleDuration: { '@type': 'QuantitativeValue', value: 6, unitCode: 'MON' },
+        },
+      ],
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': `${pageUrl}#faq`,
+      mainEntity: faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
+  ],
+};
 ---
 
-<Layout title="SEO Accelerator – Semantic SEO and Technical Optimization for Small Businesses – A Seven-Step Process for Search Visibility – David J Forer" description="A data-driven SEO program for small businesses: semantic keyword research, technical optimization, and a seven-step process that grows organic traffic.">
-<!-- 	<div class="mx-auto px-4 py-12 max-w-7xl text-white">
-		<h1 class="text-5xl font-bold text-center mb-12">SEO <span class="text-gradient">Accelerator</span></h1>
-		
-		<div class="bg-slate-800 rounded-lg p-8 shadow-lg">
-			<div class="mb-8 text-center">
-				<img src="/images/seo-7-steps.webp" alt="SEO Accelerator" class="max-w-full h-auto rounded-lg shadow-md mx-auto">
-			</div>
-			
-			<div class="max-w-4xl mx-auto">
-				<h2 class="text-3xl font-bold text-center text-blue-500 mb-6">Supercharge Your Search Engine Visibility</h2>
-				<p class="text-xl text-slate-200 mb-8">
-					Our SEO Accelerator service is designed to rapidly improve your website's search engine rankings and drive targeted organic traffic to your business. We combine cutting-edge AI technology with proven SEO strategies to deliver measurable results.
-				</p>
-				
-				<h3 class="text-2xl font-bold text-blue-500 mt-10 mb-4">Our 7-Step SEO Acceleration Process:</h3>
-				<ul class="space-y-2 mb-8">
-					<li class="flex items-center">
-						<span class="text-blue-500 mr-2">1.</span>
-						<span>Comprehensive website audit and technical SEO analysis</span>
-					</li>
-					<li class="flex items-center">
-						<span class="text-blue-500 mr-2">2.</span>
-						<span>Competitor research and market positioning</span>
-					</li>
-					<li class="flex items-center">
-						<span class="text-blue-500 mr-2">3.</span>
-						<span>AI-powered keyword research and opportunity identification</span>
-					</li>
-					<li class="flex items-center">
-						<span class="text-blue-500 mr-2">4.</span>
-						<span>On-page optimization and content enhancement</span>
-					</li>
-					<li class="flex items-center">
-						<span class="text-blue-500 mr-2">5.</span>
-						<span>Technical SEO implementation and site speed optimization</span>
-					</li>
-					<li class="flex items-center">
-						<span class="text-blue-500 mr-2">6.</span>
-						<span>Authority building and off-page optimization</span>
-					</li>
-					<li class="flex items-center">
-						<span class="text-blue-500 mr-2">7.</span>
-						<span>Performance tracking and continuous improvement</span>
-					</li>
-				</ul>
-				
-				<h3 class="text-2xl font-bold text-blue-500 mt-10 mb-6">Why Choose Our SEO Accelerator:</h3>
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
-						<div class="text-4xl mb-4">🚀</div>
-						<h4 class="text-xl font-bold text-blue-500 mb-2">Rapid Results</h4>
-						<p class="text-slate-200">Our accelerated approach delivers faster improvements in rankings and traffic compared to traditional SEO methods.</p>
-					</div>
-					
-					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
-						<div class="text-4xl mb-4">🤖</div>
-						<h4 class="text-xl font-bold text-blue-500 mb-2">AI-Powered Insights</h4>
-						<p class="text-slate-200">Leverage advanced machine learning algorithms to identify the most valuable optimization opportunities.</p>
-					</div>
-					
-					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
-						<div class="text-4xl mb-4">📊</div>
-						<h4 class="text-xl font-bold text-blue-500 mb-2">Data-Driven Strategy</h4>
-						<p class="text-slate-200">Every recommendation is backed by comprehensive data analysis and industry best practices.</p>
-					</div>
-					
-					<div class="bg-slate-900 p-6 rounded-lg border border-white border-solid hover:translate-y-[-5px] transition-transform">
-						<div class="text-4xl mb-4">💼</div>
-						<h4 class="text-xl font-bold text-blue-500 mb-2">Business-Focused</h4>
-						<p class="text-slate-200">We focus on driving qualified traffic that converts into leads and customers, not just vanity metrics.</p>
-					</div>
-				</div>
-				
-				<div class="bg-indigo-900 bg-opacity-30 p-8 rounded-lg text-center mt-12">
-					<h3 class="text-2xl font-bold text-blue-500 mb-4">Ready to dominate search rankings?</h3>
-					<p class="text-xl text-slate-200 mb-6">Get started with our SEO Accelerator service and watch your organic traffic soar.</p>
-					<a href="/contact" class="inline-block px-8 py-3 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700 transition-colors">Boost Your SEO Today</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	-->
-	<body class="bg-white text-gray-800 font-sans">
-    
+<!-- Title shortened from 139 chars on 2026-09-18, David's call. This URL is NOT a
+     valid arm of the long-title A/B test: Google was rewriting the long title to
+     "SEO Accelerator - AI SEO Operations" (35 chars), so the treatment was never
+     served. Band across the 10 pages ranking for "seo accelerator" is 43 to 63
+     chars, median 57.5. The long-title test stands on every other page. -->
+<Layout title="SEO Accelerator: What It Is and What One Costs | David J Forer" description="What an SEO accelerator is, the 3 forms it gets sold in, and what a fixed-scope $2,500 audit of roughly 50 pages covers.">
+<script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
+<div class="bg-white text-gray-800 font-sans">
+
     <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20">
         <div class="container mx-auto px-6 max-w-7xl">
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-2/5 mb-10 md:mb-0">
                     <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">SEO Accelerator</h1>
-                    <h2 class="text-xl md:text-2xl text-blue-100 mb-6">Supercharge Your Search Engine Rankings</h2>
-                    <p class="text-white text-lg mb-8">Leverage advanced strategies and AI-powered techniques to rapidly improve your website's visibility and drive targeted organic traffic to your business.</p>
-                    <a href="/ai-readiness-and-ai-audits#pricing" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-50 transition duration-300">See how SEO fits an audit</a>
+                    <h2 class="text-xl md:text-2xl text-blue-100 mb-6">A fixed-scope SEO engagement for small businesses</h2>
+                    <p class="text-white text-lg mb-8">The audit comes first: roughly 50 pages, every finding written as a specific action, ordered by what it is worth. Execution afterwards is optional, and the audit is yours to keep either way.</p>
+                    <a href="#pricing" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-50 transition duration-300">See what it costs</a>
                 </div>
                 <div class="md:w-3/5 flex justify-center">
                     <div class="bg-white bg-opacity-20 backdrop-blur-sm p-4 rounded-xl shadow-xl">
@@ -106,30 +155,44 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
   
+    <!-- Definitional section, added 2026-09-18. The live SERP for "seo accelerator"
+         is split between agency services (acceleratorseo, jakala, seospace),
+         training courses (logeix, moz, learningseo) and indexing software. Google's
+         AI Overview for the term ends by asking the searcher which one they want,
+         which means no page on page one owns the definition and then sells. The
+         page previously opened straight into the pitch. -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-6 max-w-5xl">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-blue-700 mb-4">Dominate Search Results with Data-Driven Strategies</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our SEO Accelerator service combines cutting-edge techniques with proven strategies to deliver measurable improvements in your search visibility and organic traffic.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-t-4 border-blue-600">
-                    <div class="text-blue-700 text-3xl mb-4">🔍</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Comprehensive Analysis</h3>
-                    <p class="text-gray-600">We conduct a thorough assessment of your website's current SEO performance to identify opportunities and roadblocks to higher rankings.</p>
+            <h2 class="text-3xl font-bold text-blue-700 mb-6">What an SEO accelerator is</h2>
+
+            <p class="text-lg text-gray-700 mb-4">An SEO accelerator is a fixed-scope engagement that compresses the first phase of search work. The audit, the keyword map and the priority order arrive up front, so execution runs against a list that already exists rather than discovering that list one month at a time.</p>
+
+            <p class="text-lg text-gray-700 mb-10">Three different products sell under the name, which is why the search results for it look so mixed.</p>
+
+            <div class="space-y-8">
+                <div class="border-l-4 border-blue-600 pl-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">As an agency service</h3>
+                    <p class="text-gray-600">A fixed-scope project, or a monthly program, that clears technical errors, rewrites on-page content and produces a growth roadmap. Priced per project or per month.</p>
                 </div>
-                
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-t-4 border-blue-600">
-                    <div class="text-blue-700 text-3xl mb-4">🚀</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Rapid Implementation</h3>
-                    <p class="text-gray-600">Our accelerated approach focuses on high-impact changes that can quickly improve your search engine rankings and drive more traffic.</p>
+
+                <div class="border-l-4 border-blue-600 pl-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">As a training program</h3>
+                    <p class="text-gray-600">A course or bootcamp covering keyword research, technical auditing, AI-assisted content and client acquisition. Several of the ones ranking for this term are free. The buyer here wants to do the work themselves.</p>
                 </div>
-                
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 border-t-4 border-blue-600">
-                    <div class="text-blue-700 text-3xl mb-4">📈</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Measurable Results</h3>
-                    <p class="text-gray-600">We track key performance metrics to show you exactly how our SEO strategies are improving your visibility and driving business growth.</p>
+
+                <div class="border-l-4 border-blue-600 pl-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">As software</h3>
+                    <p class="text-gray-600">Tools for instant indexing, crawl budget control, or serving static snapshots to search bots. These solve one narrow technical problem and do nothing about content, relevance or authority.</p>
+                </div>
+
+                <div class="border-l-4 border-blue-600 pl-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Which one this is</h3>
+                    <p class="text-gray-600">The first kind. A $2,500 audit of roughly 50 pages, then optional monthly execution against the roadmap that audit produces. No course, no software license, no open-ended retainer.</p>
+                </div>
+
+                <div class="border-l-4 border-blue-600 pl-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">What accelerates, and what does not</h3>
+                    <p class="text-gray-600">Discovery compresses well. A technical audit that an agency spreads across 3 months is about a week of work when it is the only thing being done, and the same is true of keyword research and a content gap analysis. Authority does not compress. Links, citations and the age of a domain move on their own schedule, and no accelerator changes that. A provider selling speed on authority is selling ads.</p>
                 </div>
             </div>
         </div>
@@ -137,7 +200,7 @@ import Layout from '../layouts/Layout.astro';
 
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-6 max-w-5xl">
-            <h2 class="text-3xl font-bold text-blue-700 mb-16 text-center">Our 7-Step SEO Acceleration Process</h2>
+            <h2 class="text-3xl font-bold text-blue-700 mb-16 text-center">The 7 steps, in order</h2>
             
             <div class="space-y-12">
                 <div class="flex flex-col md:flex-row gap-8 items-center">
@@ -145,8 +208,8 @@ import Layout from '../layouts/Layout.astro';
                         <div class="w-20 h-20 bg-blue-700 rounded-full flex items-center justify-center text-white text-2xl font-bold">1</div>
                     </div>
                     <div class="md:w-3/4">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Comprehensive Website Audit</h3>
-                        <p class="text-gray-600 mb-4">We perform a thorough technical SEO analysis to identify issues affecting your search performance, including site structure, loading speed, mobile optimization, and crawlability.</p>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Technical site audit</h3>
+                        <p class="text-gray-600 mb-4">I run a technical analysis to identify issues affecting your search performance, including site structure, loading speed, mobile optimization, and crawlability.</p>
                         <div class="bg-white p-4 rounded-lg border border-gray-200">
                             <p class="text-sm text-gray-500"><strong>Deliverable:</strong> Detailed technical audit report with prioritized issues</p>
                         </div>
@@ -158,8 +221,8 @@ import Layout from '../layouts/Layout.astro';
                         <div class="w-20 h-20 bg-blue-700 rounded-full flex items-center justify-center text-white text-2xl font-bold">2</div>
                     </div>
                     <div class="md:w-3/4">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Competitor Research & Market Positioning</h3>
-                        <p class="text-gray-600 mb-4">We analyze your top competitors to identify their successful strategies, content gaps you can fill, and opportunities to differentiate your business in search results.</p>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Competitor research and positioning</h3>
+                        <p class="text-gray-600 mb-4">I work through your top competitors to identify their successful strategies, content gaps you can fill, and opportunities to differentiate your business in search results.</p>
                         <div class="bg-white p-4 rounded-lg border border-gray-200">
                             <p class="text-sm text-gray-500"><strong>Deliverable:</strong> Competitive analysis report with strategic recommendations</p>
                         </div>
@@ -171,7 +234,7 @@ import Layout from '../layouts/Layout.astro';
                         <div class="w-20 h-20 bg-blue-700 rounded-full flex items-center justify-center text-white text-2xl font-bold">3</div>
                     </div>
                     <div class="md:w-3/4">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-2">AI-Powered Keyword Research</h3>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Semantic keyword research</h3>
                         <p class="text-gray-600 mb-4">Using advanced AI tools, we identify high-opportunity keywords and semantic topic clusters that align with user intent and have the potential to drive qualified traffic to your site.</p>
                         <div class="bg-white p-4 rounded-lg border border-gray-200">
                             <p class="text-sm text-gray-500"><strong>Deliverable:</strong> Strategic keyword map with semantic topic clusters</p>
@@ -184,8 +247,8 @@ import Layout from '../layouts/Layout.astro';
                         <div class="w-20 h-20 bg-blue-700 rounded-full flex items-center justify-center text-white text-2xl font-bold">4</div>
                     </div>
                     <div class="md:w-3/4">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-2">On-Page Optimization & Content Enhancement</h3>
-                        <p class="text-gray-600 mb-4">We optimize your existing content and develop a strategic content plan that addresses user questions, incorporates semantic relevance, and positions you as an authoritative source.</p>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">On-page work and content</h3>
+                        <p class="text-gray-600 mb-4">I rewrite the pages worth rewriting and map the content plan that addresses user questions, incorporates semantic relevance, and positions you as an authoritative source.</p>
                         <div class="bg-white p-4 rounded-lg border border-gray-200">
                             <p class="text-sm text-gray-500"><strong>Deliverable:</strong> On-page optimization report and content strategy</p>
                         </div>
@@ -197,8 +260,8 @@ import Layout from '../layouts/Layout.astro';
                         <div class="w-20 h-20 bg-blue-700 rounded-full flex items-center justify-center text-white text-2xl font-bold">5</div>
                     </div>
                     <div class="md:w-3/4">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Technical SEO Implementation</h3>
-                        <p class="text-gray-600 mb-4">We implement critical technical improvements to your site, addressing issues with site speed, mobile responsiveness, schema markup, and other technical factors that affect rankings.</p>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Technical implementation</h3>
+                        <p class="text-gray-600 mb-4">I make the technical fixes that are actually costing you, addressing issues with site speed, mobile responsiveness, schema markup, and other technical factors that affect rankings.</p>
                         <div class="bg-white p-4 rounded-lg border border-gray-200">
                             <p class="text-sm text-gray-500"><strong>Deliverable:</strong> Technical implementation report with performance metrics</p>
                         </div>
@@ -210,8 +273,8 @@ import Layout from '../layouts/Layout.astro';
                         <div class="w-20 h-20 bg-blue-700 rounded-full flex items-center justify-center text-white text-2xl font-bold">6</div>
                     </div>
                     <div class="md:w-3/4">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Authority Building & Off-Page Optimization</h3>
-                        <p class="text-gray-600 mb-4">We develop strategies to increase your site's authority through high-quality backlinks, digital PR campaigns, and strategic partnerships that signal your site's credibility to search engines.</p>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Authority and off-page work</h3>
+                        <p class="text-gray-600 mb-4">I plan the work that raises your site's authority through high-quality backlinks, digital PR campaigns, and strategic partnerships that signal your site's credibility to search engines.</p>
                         <div class="bg-white p-4 rounded-lg border border-gray-200">
                             <p class="text-sm text-gray-500"><strong>Deliverable:</strong> Authority building plan with target opportunities</p>
                         </div>
@@ -223,8 +286,8 @@ import Layout from '../layouts/Layout.astro';
                         <div class="w-20 h-20 bg-blue-700 rounded-full flex items-center justify-center text-white text-2xl font-bold">7</div>
                     </div>
                     <div class="md:w-3/4">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Performance Tracking & Continuous Improvement</h3>
-                        <p class="text-gray-600 mb-4">We implement comprehensive tracking and reporting systems to monitor your SEO performance, making data-driven adjustments to continuously improve your results.</p>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Tracking and what changes next</h3>
+                        <p class="text-gray-600 mb-4">Tracking is set up so the reporting answers one question: did the thing we shipped move anything. What did not move gets dropped from the roadmap rather than repeated.</p>
                         <div class="bg-white p-4 rounded-lg border border-gray-200">
                             <p class="text-sm text-gray-500"><strong>Deliverable:</strong> Regular performance reports and optimization recommendations</p>
                         </div>
@@ -234,99 +297,17 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-   
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6 max-w-5xl">
-            <h2 class="text-3xl font-bold text-blue-700 mb-16 text-center">Why Choose Our SEO Accelerator Service</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Strategic Advantages</h3>
-                    
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <span class="text-blue-700 mr-3 mt-1">✓</span>
-                            <span><strong class="text-gray-800">Semantic SEO Approach</strong>: Target hundreds of related keywords with single pieces of content</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-700 mr-3 mt-1">✓</span>
-                            <span><strong class="text-gray-800">Content-Driven Strategy</strong>: Focus on comprehensive topic coverage that both users and search engines value</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-700 mr-3 mt-1">✓</span>
-                            <span><strong class="text-gray-800">Topic Authority Development</strong>: Build topical authority in your industry through strategic content clusters</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-700 mr-3 mt-1">✓</span>
-                            <span><strong class="text-gray-800">Internal Linking Framework</strong>: Implement advanced internal linking strategies to boost relevance signals</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Business Impact</h3>
-                    
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <span class="text-blue-700 mr-3 mt-1">✓</span>
-                            <span><strong class="text-gray-800">Faster Results</strong>: See ranking improvements in months, not years, with our accelerated approach</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-700 mr-3 mt-1">✓</span>
-                            <span><strong class="text-gray-800">Higher Quality Traffic</strong>: Attract visitors with higher purchase intent and conversion potential</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-700 mr-3 mt-1">✓</span>
-                            <span><strong class="text-gray-800">Competitive Differentiation</strong>: Stand out in crowded search results with strategic positioning</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-700 mr-3 mt-1">✓</span>
-                            <span><strong class="text-gray-800">Sustainable Growth</strong>: Build long-term organic traffic assets that continue to perform</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- The "Why Choose Our SEO Accelerator Service" two-column block was cut on
+         2026-09-18. Eight bullets of template copy (Semantic SEO Approach,
+         Sustainable Growth and so on) that repeated the 7 steps and the new
+         definitional section. The page was already above the p75 band on heading
+         and paragraph count against the 10 ranking pages, so this was the cheapest
+         thing to lose. -->
 
-    <!-- FAQ Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6 max-w-5xl">
-            <h2 class="text-3xl font-bold text-blue-700 mb-12 text-center">Frequently Asked Questions</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
-                <div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">How long before I see results?</h3>
-                    <p class="text-gray-600">While SEO is a long-term strategy, our accelerated approach typically shows initial ranking improvements within 4-8 weeks, with significant traffic increases by month 3-6.</p>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">What makes semantic SEO different?</h3>
-                    <p class="text-gray-600">Semantic SEO focuses on comprehensive topic coverage rather than individual keywords, allowing a single piece of content to rank for dozens or even hundreds of related search terms.</p>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Do you guarantee rankings?</h3>
-                    <p class="text-gray-600">While no ethical SEO provider can guarantee specific rankings, we do guarantee our methodology and commitment to improving your search visibility through proven strategies.</p>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">What does implementation involve?</h3>
-                    <p class="text-gray-600">We handle the strategy, analysis, and recommendations. Depending on your preference, we can implement changes directly or provide detailed guidance for your team to implement.</p>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Is this suitable for my industry?</h3>
-                    <p class="text-gray-600">Our SEO Accelerator is effective across most industries, but we'll be honest if we believe your specific niche requires a different approach. We perform an initial assessment before committing.</p>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">What ongoing support do you provide?</h3>
-                    <p class="text-gray-600">Our service includes regular performance monitoring, reporting, and ongoing optimization recommendations. We partner with you for continued success, not just initial improvements.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Page order set by David 2026-09-18: explain, price, form, questions,
+         related reading. The FAQ used to sit here, above pricing. It now runs
+         after the form so the questions answer objections at the point someone
+         has already seen the price and the form. -->
 
     <!-- Pricing. Replaced a commented-out Starter/Growth/Scale block on 2026-09-17.
          The monthly is fixed-scope execution of the audit roadmap with a named
@@ -380,39 +361,41 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 
-<!-- CTA Section -->
-<section class="bg-blue-800 w-full py-6 px-4 sm:px-6 lg:px-12">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold mb-2 text-center text-white">
-      Want an SEO Expert to Review Your Site?
-    </h2>
-    <p class="text-center text-white mb-6 max-w-2xl mx-auto leading-relaxed">
-      We’ll tell you exactly what’s holding your site back and give you a simple, prioritized list of how to fix it, all explained in plain English.
-      <br /><br />
-      No fluff. No upsell. Just helpful advice.
-    </p>
-  </div>
+    <!-- The Formbricks iframe embed of survey cmb8jgo1v004hoj01a5mb7gm9 was
+         removed on 2026-09-18 and replaced with a native LeadForm posting to the
+         same survey. The iframe was a 50vh scroll box on a third-party origin,
+         it could not be styled, and it loaded a whole second app to collect 3
+         fields. -->
+    <FormSection
+        id="contact"
+        heading="Want a second opinion on your site?"
+        blurb="Tell me the URL and what you are trying to move. I will tell you what is holding the site back and what I would do about it first. If search visibility is not your actual constraint, I will say that instead."
+        surveyId={SEO_SURVEY}
+        fields={SEO_FIELDS}
+    />
 
-  <div class="flex justify-center">
-    <div class="relative w-full h-[50vh] max-w-2xl rounded-xl overflow-hidden">
-      <iframe 
-        src="https://bricks.davidjforer.com/s/cmb8jgo1v004hoj01a5mb7gm9"
-        class="absolute top-0 left-0 w-full h-full border-0 bg-blue-800"
-        loading="lazy"
-        allowtransparency="true"
-      ></iframe>
-    </div>
-  </div>
-</section>
+    <!-- FAQ. Moved below the form on 2026-09-18, David's ordering. Renders from
+         the same `faqs` array that feeds the FAQPage schema. -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-bold text-blue-700 mb-12 text-center">Common questions</h2>
 
-
-
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+                {faqs.map((faq) => (
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">{faq.q}</h3>
+                        <p class="text-gray-600">{faq.a}</p>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </section>
 
 
     <!-- Additional Resources Section -->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-6 max-w-5xl">
-            <h2 class="text-3xl font-bold text-blue-700 mb-12 text-center">SEO Resources & Insights</h2>
+            <h2 class="text-3xl font-bold text-blue-700 mb-12 text-center">Related reading</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
@@ -444,7 +427,7 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
  
-</body>
+</div>
 </Layout>
 
 <style>

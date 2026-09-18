@@ -1,0 +1,69 @@
+---
+/**
+ * The one form section used everywhere on the site.
+ *
+ * Why this exists: as of 2026-09-18 the site had four different-looking ways to
+ * ask for a lead. Three Formbricks iframes (a 50vh scroll box on a third-party
+ * origin that could not be styled), a hand-rolled LeadMagnet whose submit
+ * handler had its fetch commented out, and one native LeadForm. David's call:
+ * one native form, same chrome on every page, field sets free to differ.
+ *
+ * So the chrome lives HERE, not in the pages. A page passes a heading, a blurb
+ * and its field list. It does not pass colours, padding or width. That is the
+ * whole point: matching by construction rather than by copy-paste.
+ *
+ * The form body is LeadForm, which posts straight to Formbricks. See that file
+ * for the questionId traps, especially the positional contactInfo array.
+ */
+import LeadForm from './LeadForm.astro';
+import type { LeadFormField } from './LeadForm.astro';
+
+interface Props {
+  /** Anchor id, so in-page CTAs can point at the form. */
+  id?: string;
+  heading: string;
+  /** Short paragraph under the heading. Keep it to 2 sentences. */
+  blurb?: string;
+  surveyId: string;
+  fields: LeadFormField[];
+  buttonText?: string;
+  successHeading?: string;
+  successBody?: string;
+  /** Optional file handed over on success, for a gated giveaway. */
+  successHref?: string;
+  successLinkText?: string;
+}
+
+const {
+  id = 'contact',
+  heading,
+  blurb,
+  surveyId,
+  fields,
+  buttonText = 'Send it over',
+  successHeading = 'Got it.',
+  successBody = 'Your details are in. I read these myself and I will come back to you shortly.',
+  successHref,
+  successLinkText,
+} = Astro.props;
+---
+
+<section id={id} class="bg-blue-800 w-full py-16 px-4 sm:px-6 lg:px-12">
+  <div class="max-w-2xl mx-auto">
+    <h2 class="text-3xl font-bold mb-3 text-center text-white">{heading}</h2>
+
+    {blurb && <p class="text-center text-blue-100 mb-8 leading-relaxed">{blurb}</p>}
+
+    <div class="bg-white rounded-xl p-8 shadow-lg">
+      <LeadForm
+        surveyId={surveyId}
+        fields={fields}
+        buttonText={buttonText}
+        successHeading={successHeading}
+        successBody={successBody}
+        successHref={successHref}
+        successLinkText={successLinkText}
+      />
+    </div>
+  </div>
+</section>
