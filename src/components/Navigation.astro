@@ -1,6 +1,18 @@
 ---
 // NavBar.astro - Navigation component using Tailwind CSS
 // This component includes mobile responsiveness and vertically centered items
+//
+// NOTE ON COMMENTS IN THIS FILE: Astro ships `<!-- -->` comments to the built
+// HTML, and this component renders on all 195 pages. Reasoning goes HERE, in
+// frontmatter, which is compiled away. Verified 2026-09-18 by grepping dist.
+//
+// CTA button, changed 2026-09-18 (David's call):
+// Was "AI SEO Checklists" pointing at /playbooks-checklists. Two problems. The
+// label promised SEO checklists while the page delivers ai-playbooks.zip, which
+// is AI operations playbooks with nothing SEO about it. And it spent the only
+// button visible on every page on a free download. Now it books a call.
+// /playbooks-checklists is still reachable from the Resources dropdown, where
+// it was already linked a second time.
 ---
 
 <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
@@ -103,10 +115,9 @@
           <a href="/contact" class="inline-flex items-center px-1 py-2 text-md font-medium text-gray-800 hover:text-blue-600 transition duration-150">Contact</a>
         </div>
         
-        <!-- CTA Button -->
         <div class="h-16 flex items-center">
-          <a href="/playbooks-checklists" class="ml-4 px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150">
-            AI SEO Checklists
+          <a href="https://calendly.com/david-j-forer/30min" class="ml-4 px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150">
+            Book a call
           </a>
         </div>
       </div>
@@ -194,8 +205,8 @@
       
       <!-- Mobile CTA -->
       <div class="px-4 py-3">
-        <a href="/playbooks-checklists" class="block w-full px-4 py-2 text-center text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-          AI SEO Checklists
+        <a href="https://calendly.com/david-j-forer/30min" class="block w-full px-4 py-2 text-center text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+          Book a call
         </a>
       </div>
     </div>

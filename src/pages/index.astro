@@ -5,6 +5,8 @@
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import ModalLeadMagnet from "../components/ModalLeadMagnet.astro";
+import FormSection from '../components/FormSection.astro';
+import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
 import { getCollection } from 'astro:content';
 
 // Proof section. This replaced a "What Experts Say" block on 2026-09-17 that
@@ -421,8 +423,16 @@ description="AI operations consulting for founder-led businesses doing $1M to $5
     </script>
   </div>
 
-  
-
-
-
+  <FormSection
+    id="giveaway"
+    heading="Before you go, take the systems guide"
+    blurb="Fix First, Scale Smart. The 10 systems a growing business needs before adding AI to any of them, and the order to build them in. No cost, no call required."
+    surveyId={GIVEAWAY_SURVEY}
+    fields={GIVEAWAY_FIELDS}
+    buttonText="Send me the guide"
+    successHeading="It is yours."
+    successBody="The guide is below. Grab it now, the link is on this page rather than in an email."
+    successHref="/downloads/fix-first-scale-smart.pdf"
+    successLinkText="Download Fix First, Scale Smart"
+  />
 </Layout>
