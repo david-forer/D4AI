@@ -11,13 +11,13 @@ image="/images/ops-accelerator.webp">
     {/* Hero Section - With diagonal clip and orange accent color */}
     <section class="bg-gradient-to-br from-blue-600 to-blue-800 clip-diagonal py-20 relative overflow-hidden">
         {/* Background patterns */}
-        <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
             <div class="absolute top-20 left-20 w-40 h-40 rounded-full bg-orange-500"></div>
             <div class="absolute bottom-20 right-20 w-60 h-60 rounded-full bg-blue-300"></div>
             <div class="absolute top-1/2 left-1/3 w-20 h-20 rounded-full bg-yellow-300"></div>
         </div>
         
-        <div class="container mx-auto px-6 max-w-6xl">
+        <div class="container mx-auto px-6 max-w-6xl relative z-10">
             <div class="text-center">
                 <div>
                     <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 whitespace-nowrap">Operations Accelerator</h1>
