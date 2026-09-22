@@ -1,6 +1,7 @@
 ---
 title: "LinkedIn OS"
 description: "A content system that plans my LinkedIn calendar, writes posts in my voice, and generates the images to go with them."
+seoTitle: "LinkedIn OS | Plan, Write and Image Posts | Forersight"
 pubDate: 2026-07-15T00:00:00Z
 buildType: "agent"
 status: "live"

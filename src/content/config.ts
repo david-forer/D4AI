@@ -43,6 +43,10 @@ export const collections = {
     schema: z.object({
       title: z.string(),
       description: z.string(),
+      // Search title, written to the Target Keyword | Benefit | Brand formula.
+      // The on-page title stays short and human. Falls back to the title when
+      // absent, so an entry without one still renders.
+      seoTitle: z.string().optional(),
       pubDate: z.date(),
       buildType: z.enum(['app', 'skill', 'agent']),
       status: z.enum(['live', 'in-progress', 'archived']).default('live'),

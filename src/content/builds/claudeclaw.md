@@ -1,6 +1,7 @@
 ---
 title: "ClaudeClaw"
 description: "A Telegram bot that gives me a full Claude Code session from my phone. I text it, it runs real work on my machine."
+seoTitle: "ClaudeClaw | Run Claude Code From Your Phone | Forersight"
 pubDate: 2026-07-12T00:00:00Z
 buildType: "agent"
 status: "live"

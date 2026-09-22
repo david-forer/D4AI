@@ -1,6 +1,7 @@
 ---
 title: "Content Dashboard"
 description: "A local web app for reviewing AI-generated content. Point it at a folder, see everything as a grid, leave comments that Claude actions."
+seoTitle: "Content Dashboard | Review AI Drafts Fast | Forersight"
 pubDate: 2026-07-10T00:00:00Z
 buildType: "app"
 status: "live"

@@ -1,6 +1,7 @@
 ---
 title: "Universal Scraper"
 description: "A research agent that turns a plain question into structured data pulled from the web, with a hard cap on cost."
+seoTitle: "Universal Scraper | Web Research, Cost Capped | Forersight"
 pubDate: 2026-07-18T00:00:00Z
 buildType: "agent"
 status: "live"

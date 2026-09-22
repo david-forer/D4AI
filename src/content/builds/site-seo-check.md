@@ -1,6 +1,7 @@
 ---
 title: "Site SEO Check"
 description: "A weekly health check for this site. Crawls everything, compares against last week, and writes a delta report."
+seoTitle: "Site SEO Check | Catch Regressions Weekly | Forersight"
 pubDate: 2026-07-16T00:00:00Z
 buildType: "skill"
 status: "live"

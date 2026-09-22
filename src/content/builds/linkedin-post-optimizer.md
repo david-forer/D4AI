@@ -1,6 +1,7 @@
 ---
 title: "LinkedIn Post Optimizer"
 description: "A skill that turns a rough draft into a paste-ready LinkedIn post with the hook placed before the truncation line."
+seoTitle: "LinkedIn Post Optimizer | Hook Above the Fold | Forersight"
 pubDate: 2026-07-08T00:00:00Z
 buildType: "skill"
 status: "live"

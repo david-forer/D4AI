@@ -39,7 +39,7 @@ const videoUrl = entry.data.videoUrl || '';
 const embedUrl = videoUrl ? toEmbedUrl(videoUrl) : null;
 ---
 
-<Layout title={`${entry.data.title} | Built by David J Forer`} description={entry.data.description}>
+<Layout title={entry.data.seoTitle || `${entry.data.title} | Forersight`} description={entry.data.description}>
   {/* Header */}
   <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-16">
     <div class="container mx-auto px-6 max-w-4xl">
