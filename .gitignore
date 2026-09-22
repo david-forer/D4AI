@@ -47,3 +47,6 @@ skills-lock.json
 # Local-only exact private name patterns for scripts/source-check.mjs.
 # Never commit this file, it exists so the names stay out of the public repo.
 .private-patterns
+
+# graphify knowledge-graph output, regenerated on demand
+graphify-out/
