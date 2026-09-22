@@ -37,7 +37,7 @@ The stakes are not abstract. Client data flows through these tools. Your reputat
 
 ## The Real Risks (And Which Ones Actually Apply to You)
 
-Governance conversations tend to drift toward worst-case scenarios that do not match the reality of a small firm. Here are the risks that genuinely apply at your stage, in rough order of how often they cause real damage.
+Governance conversations tend to drift toward worst-case scenarios that do not match the reality of a small firm. Here are the risks that genuinely apply at your stage, in rough order of how often they cause real damage. It is worth holding [both sides of the argument](/blog/ai-ethics-both-sides) while you read them, because the same capability that creates these risks is the one doing the useful work.
 
 **Data exposure through everyday tool use.** This is the big one. It is not a hacker. It is a well-meaning account manager at a 14-person recruitment agency pasting a candidate's full CV, salary history, and personal details into a consumer AI tool to rewrite a summary. That data has now left your control, and depending on the tool's terms, it may be retained or used for training. The person was trying to do good work faster. The exposure was invisible to them.
 

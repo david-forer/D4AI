@@ -66,7 +66,7 @@ Most firms need twelve to eighteen months of intentional work to get from Level 
 
 Workflows are built as reusable components. Adding a new automation does not mean starting from scratch. Governance is in place, meaning there are clear standards for how automations are built, documented, and maintained. ROI is measurable because baselines were established before implementation.
 
-This is the target state for a firm that wants automation to function as a genuine operational advantage rather than a maintenance burden.
+This is the target state for a firm that wants automation to function as a genuine operational advantage rather than a maintenance burden. [What a fully automated back office actually looks like](/blog/fully-automated-back-office) is the concrete version of this level, and it is less dramatic than the phrase suggests.
 
 ---
 
@@ -100,7 +100,7 @@ Map these [workflows in their current state](/blog/map-business-processes-for-au
 
 ### Identify High-Leverage Automation Zones
 
-Not all automation is equally valuable. In a small firm with limited bandwidth for implementation and maintenance, sequencing matters a great deal.
+Not all automation is equally valuable. In a small firm with limited bandwidth for implementation and maintenance, sequencing matters a great deal. [Identifying the high-leverage opportunities](/blog/framework-high-leverage-automation) is its own piece of work, and doing it badly is how firms end up automating the loudest process rather than the costliest one.
 
 **Intake automation** is almost always the [highest-leverage starting point](/blog/your-first-business-automation). When a new lead comes in, a new client signs, or a new project kicks off, a predictable sequence of tasks needs to happen. This sequence is usually documented nowhere and executed inconsistently. Automating intake creates immediate, visible value.
 

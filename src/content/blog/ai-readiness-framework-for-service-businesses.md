@@ -15,7 +15,7 @@ Most service firms think they are ready for AI. They have the tools. They have t
 
 And then the pilot fails. Or it works in isolation but never scales. Or it creates three new problems for every one it solves.
 
-The issue is not the technology. The issue is that readiness for AI is a structural problem, not a technical one. And most firms skip the part where they figure out if they are actually ready.
+The issue is not the technology. The issue is that readiness for AI is a structural problem, not a technical one. And most firms skip the part where they figure out if they are actually ready. That skipped step has a name and a method: [an AI readiness audit](/blog/ai-readiness-audit-guide) reads your data, systems, skills and governance so you know which use cases to fund first.
 
 This article walks through a five-dimension model for assessing AI readiness in service businesses, how to score your current state honestly, and what a realistic path forward looks like. If you are running a firm between five and twenty-five people, this framework was built for your situation.
 
@@ -83,7 +83,7 @@ The core issue is that many processes in founder-led service firms are variable 
 
 Some of that variability is legitimate and should be preserved. The problem is when it is not documented, it is impossible to tell the difference between meaningful variation and inconsistency born from unclear expectations.
 
-Before you automate anything, map it. Document the current state honestly, including the places where different people handle the same step differently. That mapping process will reveal whether you have a true process or a collection of habits.
+Before you automate anything, map it. Document the current state honestly, including the places where different people handle the same step differently. That mapping process will reveal whether you have a true process or a collection of habits. If you want a structured way through it, [systemizing three to five core processes in thirty days](/blog/chaos-to-control-30-days) is the version of this work that uses tools you already pay for.
 
 It will also reveal something useful: which parts of the process are genuinely fixed and which parts require judgment. The fixed parts are your automation candidates. The judgment-intensive parts are where AI can assist rather than replace.
 
@@ -106,6 +106,8 @@ Shadow AI is the practice of team members using AI tools informally, outside any
 Prompt inconsistency is the other major issue. Different team members prompting the same tool differently produce wildly different outputs. Without shared prompting standards, AI becomes a source of unpredictability rather than consistency.
 
 Output validation is the discipline of treating AI outputs as drafts that require human review before they are used or sent. Firms that skip this step accumulate errors quietly over time. The cost surfaces later, usually in a client relationship.
+
+Discipline in all three areas is what separates a firm that has AI tools from one that has [operational excellence with AI](/blog/operational-excellence-with-ai), where the bottlenecks are actually eliminated rather than relocated. The underlying capability is [AI literacy](/blog/future-of-work-requires-ai), which is becoming a job requirement rather than a differentiator and has to be built deliberately.
 
 Evaluating your firm's AI usage discipline means honestly assessing how much of your current AI activity is visible, governed, and consistently executed versus ad hoc and invisible.
 
@@ -149,7 +151,7 @@ Before building anything new, stabilize what exists.
 
 **Week 2: Integration audit.** Document every tool in your stack and every manual handoff between them. Identify the three highest-frequency, highest-cost handoffs. These are your priority integration candidates.
 
-**Week 3: Risk and governance setup.** Conduct an honest inventory of current AI tool usage across your team. Establish basic policies around approved tools, data handling, and output review. Assign ownership for AI operations even if that is an informal designation for now.
+**Week 3: Risk and governance setup.** Conduct an honest inventory of current AI tool usage across your team. Establish basic policies around approved tools, data handling, and output review. Assign ownership for AI operations even if that is an informal designation for now. The policies are easier to write once you know [the ten things employees actually get wrong with AI at work](/blog/common-ai-mistakes), because most of them are habits rather than knowledge gaps.
 
 **Week 4: Controlled pilot launch.** Select one process that scored well on both data structure and process clarity. Build a limited pilot using that process. Define what success looks like before you start. Review outputs daily during the pilot period. [What to expect from an AI readiness audit](/blog/what-to-expect-from-an-ai-readiness-audit) sets realistic expectations for what this month actually produces.
 

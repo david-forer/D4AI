@@ -64,6 +64,8 @@ Entity mapping takes keyword research a step further. Search engines increasingl
 
 Competitor structure analysis is about understanding how the strongest content in your space is organized, not what it says. What cluster structures are your competitors using? Which pillar topics are well-covered and which are underserved? Where does their content go thin? These structural gaps are your opportunity map.
 
+Research now has to account for a second audience. [SEO for AI search](/blog/seo-for-ai-search) covers how the same work carries into ChatGPT, Perplexity and Google AI Overviews, where being cited is a different target from ranking and the two do not always move together.
+
 ### The Planning Layer
 
 Research without a planning layer produces a backlog that never becomes a calendar.

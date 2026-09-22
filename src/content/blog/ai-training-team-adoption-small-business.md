@@ -92,11 +92,11 @@ The output of the assessment phase is a [training gap analysis](/blog/ai-trainin
 
 ### Phase 2: Train
 
-Training in a small business context is not a corporate curriculum. It is targeted skill development tied directly to the specific tools and workflows the team uses every day.
+Training in a small business context is not a corporate curriculum. It is targeted skill development tied directly to the specific tools and workflows the team uses every day. [AI training for small business teams](/blog/ai-training-for-small-business-teams) covers what has to change around the session for any of it to stick, because a workshop on its own never does it.
 
-The most effective format is small-group sessions focused on real work. A thirty-minute session where a team member works through their actual client communication process using AI produces more adoption than a two-hour general AI overview. Specificity is the difference between training that changes behavior and training that gets forgotten.
+The most effective format is small-group sessions focused on real work. A thirty-minute session where a team member works through their actual client communication process using AI produces more adoption than a two-hour general AI overview. Specificity is the difference between training that changes behavior and training that gets forgotten. For staff who will never touch code, [AI upskilling for non-technical teams](/blog/nontechnical-ai-upskilling) sets out a curriculum that starts at first principles and still ends at workflow automation.
 
-Training should cover four things: the approved tools, the data handling requirements, the prompting standards for their specific role, and the quality review expectations. Everything else is secondary at this stage.
+Training should cover four things: the approved tools, the data handling requirements, the prompting standards for their specific role, and the quality review expectations. Everything else is secondary at this stage. Those prompting standards are worth writing down once and reusing, which is what a [corporate prompting playbook](/blog/corporate-ai-prompting-playbook) is for, and when the output comes back robotic or invented the cause is almost always [a prompting skills problem rather than a tool problem](/blog/prompting-output-skills).
 
 ### Phase 3: Implement
 
@@ -122,7 +122,7 @@ Understanding the failure patterns is as important as understanding the framewor
 
 **Ignoring the emotional dimension.** Teams that feel threatened by AI, confused about expectations, or embarrassed about their skill gaps will not adopt. Most AI adoption programs are designed as technical training programs. They do not address the fear, uncertainty, or resistance that governs actual behavior change. [AI adoption change management](/blog/ai-adoption-change-management) is its own discipline, and treating it as an afterthought is one of the most consistent failure patterns.
 
-**Over-automating too quickly.** The enthusiasm of early AI wins can lead to rapid expansion across too many workflows simultaneously. The team gets overwhelmed. Quality degrades. The conclusion drawn is that AI creates problems, not that the rollout was poorly managed.
+**Over-automating too quickly.** The enthusiasm of early AI wins can lead to rapid expansion across too many workflows simultaneously. The team gets overwhelmed. Quality degrades. The conclusion drawn is that AI creates problems, not that the rollout was poorly managed. Rolling out [in phases rather than all at once](/blog/enterprise-training-for-ai), starting from an honest assessment of where each team actually is, is the correction.
 
 **No internal champion.** Every successful AI adoption effort has one person inside the business who owns it. Not the founder who mandated it. An internal team member who is accountable for standards, available to help, and tracking results. Without this person, adoption is nobody's job.
 

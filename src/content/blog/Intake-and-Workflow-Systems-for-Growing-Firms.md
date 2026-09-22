@@ -85,6 +85,8 @@ Assignment is also where timelines get set. Not aspirational timelines based on 
 
 Execution is where the work gets done. The workflow system's job at this stage is to provide visibility into progress without creating overhead. This means status updates should be built into the process, not added on top of it. If checking a task off or moving it to the next stage is part of doing the work, it happens naturally. If it requires a separate action, it will be inconsistent.
 
+Real work rarely runs the happy path, so the design question is how the stage behaves when something unusual arrives. [Workflows that adapt instead of breaking](/blog/workflows-that-adapt-not-break) handle the exception as a defined branch rather than a stall that waits for the founder.
+
 ### Stage 6: Review
 
 Review is the quality gate before work is considered complete. Who reviews it, against what criteria, and within what timeframe should be defined for each major work type. Skipping review to move faster is a reliable way to produce output that requires rework, which costs more time than the review would have.
