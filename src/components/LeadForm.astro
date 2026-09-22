@@ -139,16 +139,24 @@ const labelClass = "block text-gray-700 text-sm font-bold mb-2 text-left";
             <fieldset>
               <legend class={labelClass}>{f.label}</legend>
               <div class="space-y-3">
-                {f.parts!.map((p) => (
-                  <input
-                    type={p.type ?? "text"}
-                    name={`${f.name}.${p.name}`}
-                    aria-label={p.label}
-                    placeholder={p.label}
-                    required={p.required ?? false}
-                    class={inputClass}
-                  />
-                ))}
+                {f.parts!.map((p) =>
+                  p.type === "hidden" ? (
+                    /* A hidden part exists only to hold its slot in the
+                       positional contactInfo array. placeholder, aria-label,
+                       required and a visible class are all invalid on
+                       type="hidden" and the validator rejects them. */
+                    <input type="hidden" name={`${f.name}.${p.name}`} value="" />
+                  ) : (
+                    <input
+                      type={p.type ?? "text"}
+                      name={`${f.name}.${p.name}`}
+                      aria-label={p.label}
+                      placeholder={p.label}
+                      required={p.required ?? false}
+                      class={inputClass}
+                    />
+                  ),
+                )}
               </div>
             </fieldset>
           ) : f.type === "checkboxes" ? (
