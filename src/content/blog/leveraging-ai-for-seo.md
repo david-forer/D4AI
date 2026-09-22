@@ -4,7 +4,7 @@ seoTitle: "AI for SEO | Where It Helps, Where It Hurts | David J Forer"
 description: "Where AI genuinely helps SEO, where it quietly damages it, and how to phase it in without risking the rankings you already have."
 pubDate: 2025-05-17T00:00:00Z
 tags: ["seo"]
-heroImage: "/images/blog/ai for seo.webp"
+heroImage: "/images/blog/ai-for-seo.webp"
 articleType: "cluster"
 ---
 
