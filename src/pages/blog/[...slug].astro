@@ -3,7 +3,6 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import { HUBS } from "../../lib/hubs";
 import SimpleContainer from '../../components/SimpleContainer.astro';
-import Seo from '../../components/Seo.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
 import AuthorBox from '../../components/AuthorBox.astro';
 import SnapshotCta from '../../components/SnapshotCta.astro';
@@ -78,13 +77,7 @@ const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
       last error" on 137 blog pages because of it. A script is valid flow
       content inside the body and Google reads JSON-LD from either position. */}
   <script is:inline type="application/ld+json" set:html={jsonLd} />
-  <Seo
-    title={entry.data.seoTitle || entry.data.title}
-    description={entry.data.description}
-    image={entry.data.heroImage || entry.data.image || "/images/ai-automation.webp"}
-    type="article"
-  />
-  <main>
+  <div>
     <!-- Hero Section -->
     <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-12">
       <div class="container mx-auto px-6 max-w-5xl">
@@ -171,7 +164,7 @@ const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
         </div>
       </div>
     </SimpleContainer>
-  </main>
+  </div>
 </Layout>
 
 <style is:global>

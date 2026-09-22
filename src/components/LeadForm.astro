@@ -52,6 +52,14 @@ export interface LeadFormField {
 
 interface Props {
   surveyId: string;
+  /**
+   * Short prefix for this form's field ids, unique among the forms on one page.
+   * Ids must be unique per DOCUMENT, and the homepage renders two LeadForms
+   * against the same survey, so the surveyId alone cannot distinguish them.
+   * Without this, both labels point at the first form's inputs and clicking a
+   * label on the second form focuses the wrong field.
+   */
+  formId?: string;
   fields: LeadFormField[];
   heading?: string;
   buttonText?: string;
@@ -70,6 +78,7 @@ interface Props {
 
 const {
   surveyId,
+  formId = "lf",
   fields,
   heading,
   buttonText = "Send",
@@ -82,6 +91,10 @@ const {
 } = Astro.props;
 
 const endpoint = `${host}/api/v1/client/${environmentId}/responses`;
+
+// The `name` attribute is deliberately untouched here. Formbricks keys the
+// payload on it, so only the id and its matching label `for` are scoped.
+const fieldId = (n: string) => `${formId}-${n}`;
 
 // Fail loudly at build time rather than shipping another form that swallows
 // leads. This catches a BLANK questionId. It cannot catch a WRONG one, because
@@ -160,11 +173,11 @@ const labelClass = "block text-gray-700 text-sm font-bold mb-2 text-left";
             </fieldset>
           ) : f.type === "textarea" ? (
             <>
-              <label for={f.name} class={labelClass}>
+              <label for={fieldId(f.name)} class={labelClass}>
                 {f.label}
               </label>
               <textarea
-                id={f.name}
+                id={fieldId(f.name)}
                 name={f.name}
                 rows={f.rows ?? 3}
                 required={f.required ?? false}
@@ -173,12 +186,12 @@ const labelClass = "block text-gray-700 text-sm font-bold mb-2 text-left";
             </>
           ) : (
             <>
-              <label for={f.name} class={labelClass}>
+              <label for={fieldId(f.name)} class={labelClass}>
                 {f.label}
               </label>
               <input
                 type={f.type ?? "text"}
-                id={f.name}
+                id={fieldId(f.name)}
                 name={f.name}
                 required={f.required ?? false}
                 class={inputClass}

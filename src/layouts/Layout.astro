@@ -24,10 +24,11 @@ const siteName = "David J Forer | AI Operations Consultant";
 const defaultImage = "/images/ai-automation.webp";
 const twitterHandle = "@davidjforer"; // remove tag below if not used
 
-const { 
-	title, 
+const {
+	title,
 	description = "AI Operations with David Forer",
 	image = "/images/ai-automation.webp",
+	type = "website",
 	authorName = 'David J Forer',
   publisherName = 'David J Forer',
 	noindex = false,
@@ -36,6 +37,8 @@ const {
 
 const origin = 'https://davidjforer.com';
 const canonical = new URL(Astro.url.pathname, origin).href;
+// Open Graph needs an absolute image URL. Pages pass a site-relative path.
+const ogImage = new URL(image, origin).href;
 // keep using your existing {title} and {description} props
 const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow');
 ---
@@ -116,6 +119,25 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 		<meta name="robots" content={robots} />
 		<meta name="author" content={authorName} />
 		<meta name="publisher" content={publisherName} />
+
+		{/* Open Graph and Twitter cards. They belong in head because that is the
+		    only place social crawlers reliably read them. They used to come from
+		    a Seo component passed through Layout's body slot, which put them
+		    below the head on blog posts and gave every other page none at all.
+		    LinkedIn is the primary share channel, so a missing og:image here is
+		    a blank preview on the thing that drives the traffic. This is an
+		    Astro comment, not an HTML one, so it does not ship to the page. */}
+		<meta property="og:site_name" content={siteName} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={ogImage} />
+		<meta property="og:type" content={type} />
+		<meta property="og:url" content={canonical} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImage} />
+		<meta name="twitter:site" content={twitterHandle} />
 
 		<!-- Answer engine layer. The identity graph goes out on every page so a
 		     model landing on any single URL gets the same description of who
