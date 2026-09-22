@@ -67,17 +67,18 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString('en-US', {
 const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
 ---
 
-<Fragment>
-  <script is:inline type="application/ld+json" set:html={jsonLd} />
-</Fragment>
-
 <Layout
   title={entry.data.seoTitle || entry.data.title}
   description={entry.data.description}
   image={entry.data.heroImage || entry.data.image}
   type="article"
 >
-  <Seo 
+  {/* This was outside Layout, which put it before <html> and made the whole
+      document unparseable. The W3C validator reported "Cannot recover after
+      last error" on 137 blog pages because of it. A script is valid flow
+      content inside the body and Google reads JSON-LD from either position. */}
+  <script is:inline type="application/ld+json" set:html={jsonLd} />
+  <Seo
     title={entry.data.seoTitle || entry.data.title}
     description={entry.data.description}
     image={entry.data.heroImage || entry.data.image || "/images/ai-automation.webp"}

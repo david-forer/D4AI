@@ -43,6 +43,11 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 <!doctype html>
 <html lang="en">
 	<head>
+		<meta charset="UTF-8" />
+		<!-- charset above stays the first child of head. The spec requires it in
+		     the first 1024 bytes and the analytics comment and stub below are big
+		     enough to push it past that, which the W3C validator flagged on 54
+		     pages. Anything added here goes after it, never before. -->
 		<!-- Analytics, loaded after the LCP window rather than in the head.
 		     gtag.js is 173KB and TruConversion pulls more behind it. Loading both
 		     eagerly cost 2.1 seconds of mobile LCP: 4.1s with them, 2.0s without,
@@ -99,7 +104,6 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 				else window.addEventListener('load', arm, { once: true });
 			})();
 		</script>
-		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!-- No favicon.svg line here. There is no favicon.svg in public/, so it
 		     404ed on every page of the site and logged a console error. The .ico
