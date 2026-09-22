@@ -137,7 +137,13 @@ image="/images/seo-accelerator.webp">
 <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
 <div class="bg-white text-gray-800 font-sans">
 
-    <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20">
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20 relative overflow-hidden">
+        {/* Background texture. Angled bars, a rising motif, wide capsules rather than blocks. Decorative only. */}
+        <div class="absolute inset-0 opacity-10" aria-hidden="true">
+            <div class="absolute top-24 left-12 w-64 h-10 rounded-full -rotate-12 bg-emerald-200"></div>
+            <div class="absolute bottom-16 right-16 w-80 h-12 rounded-full rotate-6 bg-lime-200"></div>
+            <div class="absolute top-1/2 left-1/2 w-40 h-8 rounded-full -rotate-6 bg-teal-100"></div>
+        </div>
         <div class="container mx-auto px-6 max-w-6xl">
             <div class="text-center">
                 <div>
