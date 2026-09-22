@@ -32,7 +32,7 @@ import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
           </div>
       </div>
       <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-        <!-- Click to load the player.
+        {/* Click to load the player.
              The Vimeo iframe used to load on every page view. It is only shown
              at lg and up, so it was a desktop-only cost: Vimeo's player ships
              deprecated unload listeners and sets two third-party cookies
@@ -40,10 +40,10 @@ import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
              fixable from here because they live in Vimeo's own bundle. Nothing
              from Vimeo is requested until someone clicks. dnt=1 is Vimeo's
              do-not-track flag, which suppresses their session cookie even
-             after the player loads. -->
-        <!-- pb-[56.25%] is 16:9, matching the source video. It was 66.66% (3:2),
+             after the player loads. */}
+        {/* pb-[56.25%] is 16:9, matching the source video. It was 66.66% (3:2),
              which nothing noticed while the facade was an empty gradient but
-             would letterbox or crop the poster frame. -->
+             would letterbox or crop the poster frame. */}
         <div class="relative w-full max-w-3xl pb-[56.25%] h-0 overflow-hidden">
           <button
             type="button"
@@ -51,11 +51,11 @@ import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
             data-video="https://player.vimeo.com/video/1104600587?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;dnt=1&amp;autoplay=1"
             class="hero-poster group absolute top-0 left-0 w-full h-full rounded-xl shadow-lg overflow-hidden bg-blue-900 cursor-pointer focus:outline-none focus:ring-4 focus:ring-orange-400"
           >
-            <!-- The scrim does two jobs. The poster is a bright frame against a
+            {/* The scrim does two jobs. The poster is a bright frame against a
                  white wall, so white text needs it to stay readable, and the
                  blue tint keeps the facade inside the hero's palette instead of
                  sitting on it as a photo. It lightens on hover so the frame
-                 reads as clickable. -->
+                 reads as clickable. */}
             <span class="absolute inset-0 bg-blue-950/40 transition-colors duration-200 group-hover:bg-blue-950/25"></span>
             <span class="absolute inset-0 bg-gradient-to-t from-blue-950/80 via-blue-950/10 to-blue-950/25"></span>
             <span class="absolute inset-0 flex flex-col items-center justify-center gap-3">
@@ -180,5 +180,5 @@ import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
 </script>
 </section>
 
-  <!-- Hero Section -->
+  {/* Hero Section */}
     

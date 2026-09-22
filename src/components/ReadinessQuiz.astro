@@ -62,7 +62,7 @@ const BTN_OUTLINE =
   </noscript>
 
   <div data-quiz-app class="hidden">
-    <!-- Progress -->
+    {/* Progress */}
     <div class="max-w-2xl mx-auto mb-8">
       <div class="flex items-baseline justify-between mb-2">
         <span class="text-sm font-medium text-gray-500" data-progress-label>Question 1</span>
@@ -78,7 +78,7 @@ const BTN_OUTLINE =
       </div>
     </div>
 
-    <!-- Steps -->
+    {/* Steps */}
     <form data-quiz-form class="max-w-2xl mx-auto" novalidate>
       {
         QUESTIONS.map((q, i) => (
@@ -169,7 +169,7 @@ const BTN_OUTLINE =
         ))
       }
 
-      <!-- Email gate -->
+      {/* Email gate */}
       <div class="hidden" data-step="gate" role="group" aria-labelledby="qlabel-gate">
         <button
           type="button"
@@ -235,7 +235,7 @@ const BTN_OUTLINE =
       </div>
     </form>
 
-    <!-- Result -->
+    {/* Result */}
     <div data-result class="hidden" tabindex="-1">
       <div class="max-w-3xl mx-auto">
         <p class="text-sm font-semibold uppercase tracking-wide text-[color:var(--primary)] mb-3">
@@ -263,7 +263,7 @@ const BTN_OUTLINE =
           <p data-r-body></p>
         </div>
 
-        <!-- Cost -->
+        {/* Cost */}
         <div
           data-r-cost-wrap
           class="hidden border-2 border-[color:var(--primary)] rounded-2xl p-6 sm:p-8 mb-10 bg-orange-50/50"
@@ -277,11 +277,11 @@ const BTN_OUTLINE =
           <p class="text-xs text-gray-500 mt-5 leading-relaxed" data-r-cost-caveat></p>
         </div>
 
-        <!-- Categories -->
+        {/* Categories */}
         <h3 class="text-2xl font-bold text-gray-900 mb-6">How each area scored</h3>
         <div class="grid sm:grid-cols-2 gap-4 mb-10" data-r-cards></div>
 
-        <!-- First move -->
+        {/* First move */}
         <div class="bg-gray-900 text-white rounded-2xl p-6 sm:p-8 mb-10">
           <h3 class="text-sm font-semibold uppercase tracking-wide text-gray-400 mb-3">
             Your first move
@@ -289,7 +289,7 @@ const BTN_OUTLINE =
           <p class="text-xl leading-relaxed" data-r-move></p>
         </div>
 
-        <!-- Offer -->
+        {/* Offer */}
         <div class="border border-gray-300 rounded-2xl p-6 sm:p-8 mb-10">
           <h3 class="text-2xl font-bold text-gray-900 mb-2" data-r-tier-name></h3>
           <p class="text-lg font-semibold text-[color:var(--primary)] mb-4" data-r-tier-shape></p>
@@ -299,7 +299,7 @@ const BTN_OUTLINE =
           </a>
         </div>
 
-        <!-- Voice of customer -->
+        {/* Voice of customer */}
         <div class="border-t border-gray-200 pt-8">
           <label for="q-wish" class="block text-lg font-bold text-gray-900 mb-2">
             One last thing, if you have a minute

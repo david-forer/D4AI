@@ -54,7 +54,7 @@ const endItem = Math.min(currentPage * POSTS_PER_PAGE, totalPosts);
 
 <Layout title={`AI Operations Blog – Page ${currentPage} – Automation, SEO, and Business Systems Articles for Small Businesses – David J Forer`} description={`Page ${currentPage} of the AI operations blog: articles on automation, SEO, and business systems for founder-led small businesses.`} robots="noindex,follow">
   <div>
-    <!-- Hero Section -->
+    {/* Hero Section */}
     <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20">
       <div class="container mx-auto px-6 max-w-5xl">
         <div class="flex flex-col justify-center">
@@ -70,7 +70,7 @@ const endItem = Math.min(currentPage * POSTS_PER_PAGE, totalPosts);
       </div>
     </section>
 
-    <!-- Category Navigation -->
+    {/* Category Navigation */}
     <SimpleContainer>
       <div class="py-8">
         <div class="border-t border-b border-gray-200 py-4">
@@ -91,7 +91,7 @@ const endItem = Math.min(currentPage * POSTS_PER_PAGE, totalPosts);
       </div>
     </SimpleContainer>
     
-    <!-- Blog Posts Section -->
+    {/* Blog Posts Section */}
     <SimpleContainer>
       <div class="pb-8">
         <div class="flex justify-between items-center mb-8">
@@ -168,10 +168,10 @@ const endItem = Math.min(currentPage * POSTS_PER_PAGE, totalPosts);
         )}
       </div>
 
-      <!-- Pagination -->
+      {/* Pagination */}
       <nav class="pb-16" aria-label="Blog pagination">
         <div class="flex justify-center items-center gap-2">
-          <!-- Previous Button -->
+          {/* Previous Button */}
           {currentPage > 1 && (
             <a
               href={currentPage === 2 ? '/blog' : `/blog/page/${currentPage - 1}`}
@@ -181,7 +181,7 @@ const endItem = Math.min(currentPage * POSTS_PER_PAGE, totalPosts);
             </a>
           )}
           
-          <!-- Page Numbers -->
+          {/* Page Numbers */}
           <div class="flex gap-1">
             {pageNumbers.map((pageNum) => {
               const isCurrentPage = pageNum === currentPage;
@@ -202,7 +202,7 @@ const endItem = Math.min(currentPage * POSTS_PER_PAGE, totalPosts);
             })}
           </div>
           
-          <!-- Next Button -->
+          {/* Next Button */}
           {currentPage < totalPages && (
             <a
               href={`/blog/page/${currentPage + 1}`}

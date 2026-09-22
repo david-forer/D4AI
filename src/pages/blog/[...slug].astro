@@ -78,7 +78,7 @@ const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
       content inside the body and Google reads JSON-LD from either position. */}
   <script is:inline type="application/ld+json" set:html={jsonLd} />
   <div>
-    <!-- Hero Section -->
+    {/* Hero Section */}
     <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-12">
       <div class="container mx-auto px-6 max-w-5xl">
         <div class="flex flex-col justify-center">
@@ -146,14 +146,14 @@ const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
       <div class="pb-12 max-w-6xl mx-auto">
 
         <div class="lg:grid lg:grid-cols-[240px_1fr] lg:gap-12">
-          <!-- TOC: sticky sidebar on desktop, inline box on mobile -->
+          {/* TOC: sticky sidebar on desktop, inline box on mobile */}
           <aside class="mb-8 lg:mb-0">
             <div class="lg:sticky lg:top-8">
               <TableOfContents headings={headings} />
             </div>
           </aside>
 
-          <!-- Article content -->
+          {/* Article content */}
           <article>
             <div class="prose prose-lg max-w-none">
               <Content />

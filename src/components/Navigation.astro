@@ -18,12 +18,12 @@
 <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
-      <!-- Wordmark.
+      {/* Wordmark.
            This was a 48KB WebP of the words "David J Forer / AI Operations".
            It is now the words themselves: no request, no decode, no layout
            wait, and the brand name is real text on every page. Inter is
            already self-hosted, so it renders identically to the old image.
-           #2e78de is sampled from that image. -->
+           #2e78de is sampled from that image. */}
       <div class="flex-shrink-0 flex items-center">
         <a href="/" class="group flex items-center gap-2.5">
           <span class="block h-9 w-1.5 shrink-0 rounded-full bg-[#2e78de] transition-transform duration-200 group-hover:scale-y-110"></span>
@@ -34,15 +34,15 @@
         </a>
       </div>
       
-      <!-- Desktop Navigation -->
+      {/* Desktop Navigation */}
       <div class="hidden md:ml-6 md:flex md:items-center md:space-x-6">
         
-        <!-- Fix the Chaos - First item -->
+        {/* Fix the Chaos - First item */}
         <div class="relative group h-16 flex items-center">
           <a href="/fix-the-chaos" class="inline-flex items-center px-1 py-2 text-md font-medium text-gray-800 hover:text-blue-600 transition duration-150">Fix the Chaos</a>
         </div>
         
-        <!-- Services Dropdown -->
+        {/* Services Dropdown */}
         <div class="relative group h-16 flex items-center">
           <button class="inline-flex items-center px-1 py-2 text-md font-medium text-gray-800 hover:text-blue-600 transition duration-150">
             Services
@@ -62,7 +62,7 @@
         </div>
         
                
-        <!-- Resources Dropdown -->
+        {/* Resources Dropdown */}
         <div class="relative group h-16 flex items-center">
           <button class="inline-flex items-center px-1 py-2 text-md font-medium text-gray-800 hover:text-blue-600 transition duration-150">
             Resources
@@ -80,7 +80,7 @@
           </div>
         </div>
         
-        <!-- 
+        {/* 
         <div class="relative group h-16 flex items-center">
           <button class="inline-flex items-center px-1 py-2 text-md font-medium text-gray-800 hover:text-blue-600 transition duration-150">
             Training
@@ -96,9 +96,9 @@
               <a href="/training/certification" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Certification</a>
             </div>
           </div>
-        </div> -->
+        </div> */}
         
-        <!-- Standard menu items -->
+        {/* Standard menu items */}
         <div class="relative group h-16 flex items-center">
           <a href="/about" class="inline-flex items-center px-1 py-2 text-md font-medium text-gray-800 hover:text-blue-600 transition duration-150">About</a>
         </div>
@@ -122,15 +122,15 @@
         </div>
       </div>
       
-      <!-- Mobile menu button -->
+      {/* Mobile menu button */}
       <div class="flex items-center md:hidden">
         <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
-          <!-- Heroicon name: menu -->
+          {/* Heroicon name: menu */}
           <svg id="menu-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
-          <!-- Heroicon name: x -->
+          {/* Heroicon name: x */}
           <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
@@ -139,14 +139,14 @@
     </div>
   </div>
   
-  <!-- Mobile menu, toggle classes based on menu state -->
+  {/* Mobile menu, toggle classes based on menu state */}
   <div id="mobile-menu" class="hidden md:hidden">
     <div class="pt-2 pb-3 space-y-1">
       
-      <!-- Fix the Chaos - First item -->
+      {/* Fix the Chaos - First item */}
       <a href="/fix-the-chaos" class="block px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Fix the Chaos</a>
       
-      <!-- Services -->
+      {/* Services */}
       <div class="mobile-dropdown">
         <button class="mobile-dropdown-button w-full flex justify-between items-center px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
           <span>Services</span>
@@ -165,7 +165,7 @@
       </div>
       
             
-      <!-- Resources -->
+      {/* Resources */}
       <div class="mobile-dropdown">
         <button class="mobile-dropdown-button w-full flex justify-between items-center px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
           <span>Resources</span>
@@ -181,7 +181,7 @@
         </div>
       </div>
       
-      <!-- 
+      {/* 
       <div class="mobile-dropdown">
         <button class="mobile-dropdown-button w-full flex justify-between items-center px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
           <span>Training</span>
@@ -195,15 +195,15 @@
           <a href="/training/tutorials" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Tutorials</a>
           <a href="/training/certification" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Certification</a>
         </div>
-      </div>  -->
+      </div>  */}
       
-      <!-- Standard menu items -->
+      {/* Standard menu items */}
       <a href="/about" class="block px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">About</a>
       <a href="/blog" class="block px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Blog</a>
       <a href="/built" class="block px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Built</a>
       <a href="/contact" class="block px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Contact</a>
       
-      <!-- Mobile CTA -->
+      {/* Mobile CTA */}
       <div class="px-4 py-3">
         <a href="https://calendly.com/david-j-forer/30min" class="block w-full px-4 py-2 text-center text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
           Book a call
@@ -213,7 +213,7 @@
   </div>
 </nav>
 
-<!-- Add space after the fixed navbar to prevent content from being hidden -->
+{/* Add space after the fixed navbar to prevent content from being hidden */}
 <div class="h-16"></div>
 
 <script>

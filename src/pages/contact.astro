@@ -44,7 +44,7 @@ const CONTACT_FIELDS = [
 <Layout title="Contact | AI SEO Operations"
 description="Contact David Forer for AI operations, SEO strategy, or how I can help your business scale. I'd love to hear from you.">
 	<div>
-		<!-- Blue Header Section -->
+		{/* Blue Header Section */}
 		<section class="bg-gradient-to-r from-blue-600 to-blue-800 py-16">
 			<div class="container mx-auto px-6 max-w-5xl">
 				<div class="text-center">
@@ -56,10 +56,10 @@ description="Contact David Forer for AI operations, SEO strategy, or how I can h
 			</div>
 		</section>
 
-		<!-- Contact Form Section -->
+		{/* Contact Form Section */}
 		<section class="max-w-5xl mx-auto px-4 py-16">
 			<div class="grid md:grid-cols-2 gap-12">
-				<!-- Contact Information -->
+				{/* Contact Information */}
 				<div class="flex flex-col justify-center">
 					<h2 class="text-3xl font-bold mb-6 text-gray-800">Let's Connect</h2>
 					<p class="text-lg text-gray-600 mb-8">
@@ -105,11 +105,11 @@ description="Contact David Forer for AI operations, SEO strategy, or how I can h
 					</div>
 				</div>
 				
-				<!-- Contact Form.
+				{/* Contact Form.
 				     Was an 800px Formbricks iframe. Replaced 2026-09-12 with the
 				     native LeadForm, which posts to the same survey through the
 				     client API. Same responses, same alerting, no cross-origin
-				     iframe and no Formbricks styling. -->
+				     iframe and no Formbricks styling. */}
 				<div class="w-full bg-white rounded-lg shadow-lg p-8">
 					<LeadForm
 						surveyId={CONTACT_SURVEY}
@@ -122,7 +122,7 @@ description="Contact David Forer for AI operations, SEO strategy, or how I can h
 			</div>
 		</section>
 
-		<!-- Calendar Booking Section -->
+		{/* Calendar Booking Section */}
 		<section class="py-16 bg-white">
 			<div class="max-w-5xl mx-auto px-4">
 				<div class="text-center mb-10">
@@ -133,22 +133,22 @@ description="Contact David Forer for AI operations, SEO strategy, or how I can h
 				</div>
 				
 				<div class="mx-auto max-w-3xl bg-white rounded-lg shadow-sm overflow-hidden">
-					<!-- Calendly inline widget begin.
+					{/* Calendly inline widget begin.
 					     This page keeps its own copy of both the stylesheet and the
 					     script. Calendly used to be loaded site-wide from Layout.astro
 					     and this embed quietly relied on that stylesheet. The site-wide
 					     load is gone, so the CSS has to be declared here or the widget
 					     renders unstyled. The booking calendar is the whole point of
-					     this page, so loading it eagerly here is correct. -->
+					     this page, so loading it eagerly here is correct. */}
 					<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 					<div class="calendly-inline-widget" data-url="https://calendly.com/david-j-forer/30min?hide_gdpr_banner=1&hide_event_type_details=1" style="min-width:320px;height:750px;"></div>
 					<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-					<!-- Calendly inline widget end -->
+					{/* Calendly inline widget end */}
 				</div>
 			</div>
 		</section>
 
-		<!-- Additional Resources Section -->
+		{/* Additional Resources Section */}
 		<section class="bg-gray-50 py-16">
 			<div class="max-w-5xl mx-auto px-4 text-center">
 				<h2 class="text-3xl font-bold mb-6 text-gray-800">Explore More Resources</h2>

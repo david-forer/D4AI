@@ -360,14 +360,14 @@ const schema = {
     }
   </style>
 
-  <!-- FontAwesome loaded non-blocking. The 49 icons on this page are decorative,
-       so a late paint is preferable to blocking first render on a CDN round trip. -->
+  {/* FontAwesome loaded non-blocking. The 49 icons on this page are decorative,
+       so a late paint is preferable to blocking first render on a CDN round trip. */}
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
   <div class="bg-gray-50 overflow-x-hidden">
-    <!-- Fixed Table of Contents -->
+    {/* Fixed Table of Contents */}
     <nav class="toc-fixed" id="toc">
       <div class="mb-8">
         <h3 class="text-lg font-bold text-gray-900 mb-4">Contents</h3>
@@ -401,19 +401,19 @@ const schema = {
       </div>
     </nav>
 
-    <!-- Mobile TOC Toggle -->
+    {/* Mobile TOC Toggle */}
     <button class="lg:hidden fixed top-4 left-4 z-50 bg-white p-2 rounded shadow-lg" id="toc-toggle">
       <i class="fas fa-bars text-gray-700"></i>
     </button>
 
-    <!-- Main Content -->
+    {/* Main Content */}
     <div class="main-content">
-      <!-- Hero Section -->
+      {/* Hero Section */}
       <section id="hero" class="py-16 bg-blue-600">
-        <!-- Hero Content -->
+        {/* Hero Content */}
         <div class="max-w-6xl mx-auto px-8">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <!-- Main Title & Subtitle -->
+            {/* Main Title & Subtitle */}
             <div class="lg:col-span-7">
               <h1 class="text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-tight mb-6">
                 The Founder Bottleneck
@@ -428,7 +428,7 @@ const schema = {
               </a>
             </div>
 
-            <!-- Key Metrics Grid -->
+            {/* Key Metrics Grid */}
             <div class="lg:col-span-5">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 border border-white/20">
@@ -453,7 +453,7 @@ const schema = {
         </div>
       </section>
 
-      <!-- Understanding Founder Bottlenecks -->
+      {/* Understanding Founder Bottlenecks */}
       <section id="understanding" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-8">
           <div class="mb-16">
@@ -473,7 +473,7 @@ const schema = {
             </div>
           </div>
 
-          <!-- Symptoms and Impact -->
+          {/* Symptoms and Impact */}
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <h3 class="text-2xl font-light text-gray-900 mb-6">Common Symptoms</h3>
@@ -536,7 +536,7 @@ const schema = {
             </div>
           </div>
 
-          <!-- Named forms of the bottleneck -->
+          {/* Named forms of the bottleneck */}
           <div class="section-divider"></div>
 
           <div id="decision-bottleneck" class="scroll-mt-8">
@@ -610,7 +610,7 @@ const schema = {
 
       <div class="section-divider"></div>
 
-      <!-- Key Areas of Constraint -->
+      {/* Key Areas of Constraint */}
       <section id="key-areas" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-8">
           <h2 class="text-4xl font-light text-gray-900 mb-12">Key Areas of Founder-Led Operational Constraints</h2>
@@ -619,7 +619,7 @@ const schema = {
             Founder-led operational constraints typically manifest in several core areas of the business. Understanding these areas is the first step toward diagnosing and addressing bottlenecks.
           </p>
 
-          <!-- Constraint Areas Table -->
+          {/* Constraint Areas Table */}
           <div class="data-viz-container mb-12">
             <div class="p-8">
               <h3 class="text-2xl font-light text-gray-900 mb-6">Areas of Operational Constraint</h3>
@@ -659,7 +659,7 @@ const schema = {
             </div>
           </div>
 
-          <!-- Detailed Analysis -->
+          {/* Detailed Analysis */}
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="insight-highlight p-8 rounded-lg">
               <div class="text-xl font-light text-gray-900 mb-4">
@@ -692,7 +692,7 @@ const schema = {
 
       <div class="section-divider"></div>
 
-      <!-- Diagnostic Framework -->
+      {/* Diagnostic Framework */}
       <section id="diagnostic" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-8">
           <h2 class="text-4xl font-light text-gray-900 mb-12">How to Diagnose It</h2>
@@ -701,7 +701,7 @@ const schema = {
             A systematic diagnostic framework is essential for identifying and understanding the nature and extent of founder bottlenecks within a small business. This framework involves assessing several interconnected aspects of the business.
           </p>
 
-          <!-- Diagnostic Framework Table -->
+          {/* Diagnostic Framework Table */}
           <div class="data-viz-container mb-12">
             <div class="p-8">
               <h3 class="text-2xl font-light text-gray-900 mb-6">Comprehensive Diagnostic Framework</h3>
@@ -741,7 +741,7 @@ const schema = {
             </div>
           </div>
 
-          <!-- Diagnostic Process Flow -->
+          {/* Diagnostic Process Flow */}
           <div class="mb-12">
             <h3 class="text-2xl font-light text-gray-900 mb-8">Diagnostic Process Flow</h3>
             <ol class="diagram-steps">
@@ -788,7 +788,7 @@ const schema = {
             </ol>
           </div>
 
-          <!-- Assessment Methods -->
+          {/* Assessment Methods */}
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="space-y-6">
               <div class="text-xl font-light text-gray-900">Assessment Techniques</div>
@@ -851,8 +851,8 @@ const schema = {
         </div>
       </section>
 
-      <!-- Mid-page CTA: the reader has just been handed the framework and
-           wants to know how to apply it to themselves. -->
+      {/* Mid-page CTA: the reader has just been handed the framework and
+           wants to know how to apply it to themselves. */}
       <section class="py-12">
         <div class="max-w-4xl mx-auto px-8">
           <div class="rounded-xl bg-blue-50 border border-blue-200 p-8 md:flex md:items-center md:justify-between md:gap-8">
@@ -871,7 +871,7 @@ const schema = {
 
       <div class="section-divider"></div>
 
-      <!-- Strategies Section -->
+      {/* Strategies Section */}
       <section id="strategies" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-8">
           <h2 class="text-4xl font-light text-gray-900 mb-12">How to Fix It</h2>
@@ -880,7 +880,7 @@ const schema = {
             Once founder bottlenecks have been identified and diagnosed, the next step is to implement strategies to mitigate them. This involves a combination of empowering people, improving processes, and shifting the founder's focus.
           </p>
 
-          <!-- Strategies Table -->
+          {/* Strategies Table */}
           <div class="data-viz-container mb-12">
             <div class="p-8">
               <h3 class="text-2xl font-light text-gray-900 mb-6">Comprehensive Mitigation Strategies</h3>
@@ -920,7 +920,7 @@ const schema = {
             </div>
           </div>
 
-          <!-- Strategy Details -->
+          {/* Strategy Details */}
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div class="insight-highlight p-8 rounded-lg">
               <div class="text-xl font-light text-gray-900 mb-4">
@@ -971,7 +971,7 @@ const schema = {
             </div>
           </div>
 
-          <!-- Implementation Timeline -->
+          {/* Implementation Timeline */}
           <div class="bg-white p-8 rounded-lg shadow-sm">
             <div class="text-2xl font-light text-gray-900 mb-6">Implementation Timeline</div>
             <ol class="diagram-phases">
@@ -1018,13 +1018,13 @@ const schema = {
 
       <div class="section-divider"></div>
 
-      <!-- Case Studies -->
+      {/* Case Studies */}
       <section id="case-studies" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-8">
           <h2 class="text-4xl font-light text-gray-900 mb-12">Case Studies and Best Practices</h2>
 
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <!-- Success Stories -->
+            {/* Success Stories */}
             <div>
               <h3 class="text-2xl font-light text-gray-900 mb-8">Successful Transitions</h3>
 
@@ -1053,7 +1053,7 @@ const schema = {
               </div>
             </div>
 
-            <!-- Lessons Learned -->
+            {/* Lessons Learned */}
             <div>
               <h3 class="text-2xl font-light text-gray-900 mb-8">Key Lessons Learned</h3>
 
@@ -1125,13 +1125,13 @@ const schema = {
 
       <div class="section-divider"></div>
 
-      <!-- Tools and Methodologies -->
+      {/* Tools and Methodologies */}
       <section id="tools" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-8">
           <h2 class="text-4xl font-light text-gray-900 mb-12">Tools and Methodologies for Diagnosis and Intervention</h2>
 
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-            <!-- Operational Audits -->
+            {/* Operational Audits */}
             <div class="bg-white p-8 rounded-lg shadow-sm">
               <div class="bg-blue-300 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 <i class="fas fa-search text-blue-600 text-xl"></i>
@@ -1148,7 +1148,7 @@ const schema = {
               </ul>
             </div>
 
-            <!-- Coaching and Advisory -->
+            {/* Coaching and Advisory */}
             <div class="bg-white p-8 rounded-lg shadow-sm">
               <div class="bg-blue-300 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 <i class="fas fa-user-tie text-blue-600 text-xl"></i>
@@ -1165,7 +1165,7 @@ const schema = {
               </ul>
             </div>
 
-            <!-- Performance Monitoring -->
+            {/* Performance Monitoring */}
             <div class="bg-white p-8 rounded-lg shadow-sm">
               <div class="bg-blue-300 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 <i class="fas fa-chart-bar text-blue-600 text-xl"></i>
@@ -1183,7 +1183,7 @@ const schema = {
             </div>
           </div>
 
-          <!-- Technical Implementation Example -->
+          {/* Technical Implementation Example */}
           <div class="bg-white p-8 rounded-lg shadow-sm">
             <h3 class="text-2xl font-light text-gray-900 mb-6">Technical Implementation Case Study</h3>
 
@@ -1194,7 +1194,7 @@ const schema = {
               </p>
             </div>
 
-            <!-- Data Flow Diagram -->
+            {/* Data Flow Diagram */}
             <ol class="diagram-pipeline">
               <li>
                 <div class="dg-title">Data Source</div>
@@ -1255,7 +1255,7 @@ const schema = {
 
       <div class="section-divider"></div>
 
-      <!-- Conclusion -->
+      {/* Conclusion */}
       <section id="conclusion" class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-8">
           <h2 class="text-4xl font-light text-gray-900 mb-12">Enabling Sustainable Growth Beyond the Founder</h2>
@@ -1289,7 +1289,7 @@ const schema = {
               </p>
             </div>
 
-            <!-- Key Success Metrics -->
+            {/* Key Success Metrics */}
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               <div class="text-center p-6 bg-blue-200 rounded-lg">
                 <div class="text-3xl font-bold text-blue-700 mb-2">85%</div>
@@ -1309,7 +1309,7 @@ const schema = {
         </div>
       </section>
 
-      <!-- Go Deeper: internal links out to the related cluster -->
+      {/* Go Deeper: internal links out to the related cluster */}
       <section class="py-12 bg-white border-t border-gray-100">
         <div class="max-w-4xl mx-auto px-8">
           <h2 class="text-2xl font-light text-gray-900 mb-6">Go Deeper</h2>
@@ -1324,7 +1324,7 @@ const schema = {
         </div>
       </section>
 
-      <!-- Call to Action Section -->
+      {/* Call to Action Section */}
       <section class="py-16 md:py-24 bg-gradient-to-br from-blue-500 to-blue-700 text-white">
         <div class="max-w-6xl mx-auto px-8">
           <div class="text-center">

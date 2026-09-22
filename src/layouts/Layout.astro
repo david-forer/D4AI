@@ -47,11 +47,11 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<!-- charset above stays the first child of head. The spec requires it in
+		{/* charset above stays the first child of head. The spec requires it in
 		     the first 1024 bytes and the analytics comment and stub below are big
 		     enough to push it past that, which the W3C validator flagged on 54
-		     pages. Anything added here goes after it, never before. -->
-		<!-- Analytics, loaded after the LCP window rather than in the head.
+		     pages. Anything added here goes after it, never before. */}
+		{/* Analytics, loaded after the LCP window rather than in the head.
 		     gtag.js is 173KB and TruConversion pulls more behind it. Loading both
 		     eagerly cost 2.1 seconds of mobile LCP: 4.1s with them, 2.0s without,
 		     measured on the live page. They are 176KB of a 258KB page.
@@ -60,7 +60,7 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 		     before the real script arrives is buffered and sent once it loads.
 		     A visitor who stays past the trigger is counted normally. A visitor
 		     who leaves before it fires is not counted at all, which is the
-		     deliberate trade. Trigger is first interaction, or 3s idle. -->
+		     deliberate trade. Trigger is first interaction, or 3s idle. */}
 		<script is:inline>
 			window.dataLayer = window.dataLayer || [];
 			window._tip = window._tip || [];
@@ -108,9 +108,9 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 			})();
 		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!-- No favicon.svg line here. There is no favicon.svg in public/, so it
+		{/* No favicon.svg line here. There is no favicon.svg in public/, so it
 		     404ed on every page of the site and logged a console error. The .ico
-		     and the two PNGs below cover every browser. -->
+		     and the two PNGs below cover every browser. */}
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<meta name="description" content={description} />
@@ -139,7 +139,7 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 		<meta name="twitter:image" content={ogImage} />
 		<meta name="twitter:site" content={twitterHandle} />
 
-		<!-- Answer engine layer. The identity graph goes out on every page so a
+		{/* Answer engine layer. The identity graph goes out on every page so a
 		     model landing on any single URL gets the same description of who
 		     this is and what it is not, rather than inferring it from page copy.
 		     Pages with their own JSON-LD (the audit hub, blog posts, the
@@ -148,16 +148,16 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 		     cannot drift. Do not add a hidden crawler-only text block to go with
 		     this: hidden text is a Google spam policy violation and the same
 		     facts are already served in machine-readable form here, at
-		     /api/v1/agent-info.json, and at /llms.txt. -->
+		     /api/v1/agent-info.json, and at /llms.txt. */}
 		<script type="application/ld+json" is:inline set:html={JSON.stringify(identityGraph)} />
 		<link rel="alternate" type="application/ld+json" href="/api/v1/agent-info.json" title="Structured information about this business" />
 		<link rel="alternate" type="text/markdown" href="/llms.txt" title="Plain-language context for language models" />
 
 
-		<!-- Preconnect to critical 3rd-party origins -->
+		{/* Preconnect to critical 3rd-party origins */}
 		<link rel="preconnect" href="https://bricks.davidjforer.com" crossorigin />
 
-		<!-- No Calendly here.
+		{/* No Calendly here.
 		     It used to load site-wide, on every page, for the benefit of exactly
 		     one button: the popup CTA in Hero.astro. Every other booking link on
 		     the site is a plain anchor to calendly.com and needs no script at
@@ -165,10 +165,10 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 		     which loads its own copy on that page.
 		     Hero.astro now loads it on hover or click. That also removed the last
 		     third-party cookie (__cf_bm, set by Cloudflare on assets.calendly.com)
-		     from every page that does not need Calendly. -->
+		     from every page that does not need Calendly. */}
 
-		<!-- TruConversion is loaded by the gated analytics loader above, together
-		     with gtag. Do not add an eager script tag for it here again. -->
+		{/* TruConversion is loaded by the gated analytics loader above, together
+		     with gtag. Do not add an eager script tag for it here again. */}
 
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

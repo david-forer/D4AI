@@ -40,7 +40,7 @@ const embedUrl = videoUrl ? toEmbedUrl(videoUrl) : null;
 ---
 
 <Layout title={`${entry.data.title} | Built by David J Forer`} description={entry.data.description}>
-  <!-- Header -->
+  {/* Header */}
   <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-16">
     <div class="container mx-auto px-6 max-w-4xl">
       <a href="/built" class="text-blue-200 hover:text-white text-sm font-medium transition duration-150">
@@ -79,7 +79,7 @@ const embedUrl = videoUrl ? toEmbedUrl(videoUrl) : null;
     </div>
   </section>
 
-  <!-- Video -->
+  {/* Video */}
   {videoUrl && (
     <section class="py-12 bg-gray-100">
       <div class="container mx-auto px-6 max-w-4xl">
@@ -102,7 +102,7 @@ const embedUrl = videoUrl ? toEmbedUrl(videoUrl) : null;
     </section>
   )}
 
-  <!-- Body -->
+  {/* Body */}
   <section class="py-16 bg-white">
     <div class="container mx-auto px-6 max-w-4xl">
       <article class="prose prose-lg max-w-none">
@@ -111,7 +111,7 @@ const embedUrl = videoUrl ? toEmbedUrl(videoUrl) : null;
     </div>
   </section>
 
-  <!-- CTA -->
+  {/* CTA */}
   <section class="py-16 bg-gray-100">
     <div class="container mx-auto px-6 max-w-4xl text-center">
       <h2 class="text-2xl font-bold text-gray-800 mb-4">Curious what this could do for your business?</h2>

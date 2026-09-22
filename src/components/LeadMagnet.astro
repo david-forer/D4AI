@@ -56,11 +56,11 @@ const formId = `lead-magnet-form-${Math.random().toString(36).substring(2, 11)}`
 ---
 
 {variant === 'fullWidth' ? (
-  <!-- Full Width Variant -->
+  {/* Full Width Variant */}
   <div class={`w-full py-12 px-4 sm:px-6 lg:px-8 ${backgroundColor}`}>
     <div class="max-w-7xl mx-auto">
       <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
-        <!-- Content Section (5/12) -->
+        {/* Content Section (5/12) */}
         <div class="lg:col-span-5 text-center lg:text-left mb-8 lg:mb-0">
           <h3 class={`text-2xl sm:text-3xl font-bold ${textColor} mb-4`}>
             {title}
@@ -81,7 +81,7 @@ const formId = `lead-magnet-form-${Math.random().toString(36).substring(2, 11)}`
           )}
         </div>
         
-        <!-- Form Section (7/12) -->
+        {/* Form Section (7/12) */}
         <div class="lg:col-span-7">
           <div class="bg-white rounded-lg shadow-xl p-6 sm:p-8 max-w-3xl mx-auto">
             <form 
@@ -127,7 +127,7 @@ const formId = `lead-magnet-form-${Math.random().toString(36).substring(2, 11)}`
     </div>
   </div>
 ) : variant === 'card' ? (
-  <!-- Card Variant -->
+  {/* Card Variant */}
   <div class={`max-w-2xl mx-auto rounded-xl shadow-lg overflow-hidden ${backgroundColor}`}>
     <div class="md:flex">
       {imageUrl ? (
@@ -197,7 +197,7 @@ const formId = `lead-magnet-form-${Math.random().toString(36).substring(2, 11)}`
     </div>
   </div>
 ) : variant === 'sidebar' ? (
-  <!-- Sidebar Variant -->
+  {/* Sidebar Variant */}
   <div class={`w-full rounded-lg p-6 ${backgroundColor}`}>
     <div class="text-center mb-4">
       {imageUrl ? (
@@ -258,7 +258,7 @@ const formId = `lead-magnet-form-${Math.random().toString(36).substring(2, 11)}`
     </form>
   </div>
 ) : (
-  <!-- Inline Variant (Default) -->
+  {/* Inline Variant (Default) */}
   <div class={`max-w-4xl mx-auto py-8 px-4 sm:px-6 rounded-lg ${backgroundColor}`}>
     <div class="md:flex md:items-center">
       {imageUrl ? (
