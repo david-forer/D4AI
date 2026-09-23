@@ -2,10 +2,21 @@
 title: "How to Run an AI Training Gap Analysis for Your Small Business Team"
 description: "Before you design any AI training, you need to know where your team actually stands. A training gap analysis tells you which skills are missing, which roles need the most support, and where to start. Here is how to run one in a small business."
 pubDate: 2026-03-07T00:00:00Z
+updatedDate: 2026-09-23T00:00:00Z
 tags: ["ai-training"]
 heroImage: "/images/blog/ai-training-gap-analysis.webp"
 articleType: "cluster"
 ---
+
+An AI training gap analysis shows where each person on your team stands against where their role needs them to be. Run it before you design any training.
+
+## Key Takeaways
+
+- An AI training gap analysis measures the distance between each person's current AI skills and the proficiency their role requires, and produces a prioritized list of training needs.
+- Define the target state for each role first. Without it you can only describe current behavior, not a gap.
+- Assess current skills with a survey, a practical skills check using two or three real tasks, and direct observation. Self-assessment alone is unreliable.
+- Gaps fall into four types: knowledge, skill, motivation, and process. Each one closes a different way, and process gaps close with redesign rather than training.
+- Prioritize gaps by how often the task happens and how much time or quality is lost without AI, then run a lighter analysis every six months.
 
 ## Find out where each person actually stands before you design a single training session
 
@@ -71,6 +82,13 @@ Gaps fall into four categories, and understanding which type you are dealing wit
 
 **Process gaps** occur when AI skills exist but the workflow does not support them. The team member knows how to use AI for a task, but the process they follow does not include a step for it. These close with process redesign rather than training.
 
+| Gap type | What it looks like | How it closes |
+|---|---|---|
+| Knowledge | The person does not know what AI can do for their role or how to use the tools | Direct training and examples from the actual role |
+| Skill | Understands the concept but cannot execute consistently | Supervised practice and structured feedback |
+| Motivation | Has the skill but does not use it | Evidence, peer examples, and direct conversation about the concerns |
+| Process | Has the skill but the workflow has no step for it | Process redesign before or alongside training |
+
 ---
 
 ## Step 4: Prioritize by Business Impact
@@ -124,6 +142,28 @@ A training gap analysis is not the most exciting part of building AI capability 
 Businesses that skip this step invest in training that does not address the real gaps, experience low adoption because the training does not connect to actual work, and eventually conclude that AI training is not worth the investment. The problem was never the training itself. The problem was that the training was built on guesswork rather than evidence.
 
 Start with the analysis. Everything else gets easier when you know exactly where you are and where you need to go.
+
+## Frequently Asked Questions
+
+### What is an AI training gap analysis?
+
+It is a structured check of where each person's AI skills are today against what their role needs. It produces three things: a map of current AI literacy, a target level for each role, and a ranked list of training needs. It finds the gaps instead of assuming them.
+
+### How do you assess a team's current AI skills?
+
+Use a short survey for usage and confidence, then have each person do two or three real tasks with AI and review the results. Where you can, sit with someone for thirty minutes while they work. The practical check usually tells a different story than the survey.
+
+### Which AI skill gaps should a small business close first?
+
+The ones on tasks that happen often and cost the most time or quality. An operations manager spending eight hours a week on reporting that could take two beats an occasional social post every time. Don't make the team learn everything at once, pick the top gap and close it.
+
+### How often should you run an AI training gap analysis?
+
+Run a full one to set your baseline, then a lighter version every six months. The tools change fast enough that new gaps appear even on a well-trained team. Each round also shows whether the last round of training actually worked.
+
+### How do you get honest answers from staff?
+
+Tell them up front that the analysis supports their development and is not a performance review. If people think it will be used against them, they inflate their self-assessments and dodge the skills check. Say it plainly and mean it.
 
 ---
 

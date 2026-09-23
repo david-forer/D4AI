@@ -2,10 +2,21 @@
 title: "How to Create an AI Roadmap for Your Small Business"
 description: "What an AI roadmap is, how to build one that actually reflects your business priorities, and how to use it to make consistent progress without getting distracted."
 pubDate: 2026-03-21T00:00:00Z
+updatedDate: 2026-09-23T00:00:00Z
 tags: ["ai-strategy"]
 heroImage: "/images/blog/ai-roadmap-small-business.webp"
 articleType: "cluster"
 ---
+
+An AI roadmap tells a small business which problems to solve with AI and in what order. Here is how to build one in five steps and keep it useful.
+
+## Key Takeaways
+
+- An AI roadmap for a small business is a sequenced plan that answers two questions: which problems you are addressing with AI, and in what order.
+- Most roadmaps fail because they are built around tools instead of problems, try to do too much, or never get revisited.
+- A small business can typically execute two to four significant AI implementations per year.
+- Build it in five steps: list the problems, score each on impact and readiness, map dependencies, sequence by quarter, and define success criteria before each phase starts.
+- Plan twelve months ahead, in detail for the next ninety days and in outline for the rest, and review the roadmap every quarter.
 
 ## What a Roadmap Actually Is
 
@@ -50,6 +61,14 @@ Phase your roadmap in quarters. Each quarter should have one primary implementat
 ### Step 5: Define success criteria for each phase
 
 Before any implementation begins, define what success looks like. How will you know the system is working? What metric will you track? What is the baseline before you start? Success criteria set at the beginning of a phase make evaluation at the end of it meaningful.
+
+| Step | What you do | What it gives you |
+|---|---|---|
+| 1. List problems | Write down every time-consuming, error-prone, or capacity-limiting process | An unconstrained list to filter |
+| 2. Score | Rate each item high, medium, or low on impact and readiness | A sense of what matters and what is ready |
+| 3. Map dependencies | Note which items need others in place first | The order constraints |
+| 4. Sequence | Pick the highest-impact, highest-readiness item with no unmet dependencies, one primary item per quarter | A quarterly plan |
+| 5. Define success | Set the metric and baseline before each phase begins | A way to judge each phase |
 
 ---
 
@@ -100,6 +119,28 @@ The right time to formally review the roadmap is quarterly. At each review, look
 When something significant changes in the business, a major new client, a team change, a new product or service, revisit the roadmap outside the regular cycle. New business context sometimes changes which problems are most urgent.
 
 The goal is not to stick to the roadmap. The goal is to make consistent progress on the right problems. The roadmap is the tool that keeps you on track toward that goal, not the goal itself.
+
+## Frequently Asked Questions
+
+### What should an AI roadmap for a small business include?
+
+A short list of problems in priority order, and for each one the intended outcome, the proposed solution, an owner, and a realistic timeline. Add the metric and baseline you will judge it by. Tool names come last, if at all.
+
+### How many AI projects can a small business take on in a year?
+
+Typically two to four significant implementations, depending on complexity and team capacity. One primary project per quarter, with room for one supporting item, is a pace most small teams can keep. Pile on more and the team stops adopting any of it.
+
+### Where should an AI roadmap start?
+
+With the highest-impact, highest-readiness item that has no unmet dependencies. In most small businesses that means intake and data capture, because every downstream workflow relies on them. Get the foundation right and the later projects get easier.
+
+### How far ahead should an AI roadmap plan?
+
+Twelve months. Plan the next ninety days in detail and the rest of the year in outline. A three-year AI roadmap written today will be mostly out of date in eighteen months.
+
+### How is an AI roadmap different from an AI strategy?
+
+The strategy decides what matters and what you are not doing. The roadmap turns that into a sequence of projects by quarter, with owners and success criteria. If you do not have the strategy yet, write the one-page version first.
 
 ---
 

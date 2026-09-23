@@ -3,10 +3,22 @@ title: "Working with an AI Consultant: The Complete Guide for Small Business Fou
 seoTitle: "Working With an AI Consultant – What a Real Engagement Looks Like and What Results Are Realistic for Small Businesses – Cost, Timing, and How to Choose the Right Fit – Forersight"
 description: "What an AI consulting engagement actually involves, what it costs, what results are realistic, and how to know whether now is the right time for your business."
 pubDate: 2026-03-21T00:00:00Z
+updatedDate: 2026-09-23T00:00:00Z
 tags: ["hiring-an-ai-consultant"]
 heroImage: "/images/blog/working-with-an-ai-consultant.webp"
 articleType: "pillar"
 ---
+
+Working with an AI consultant is a real spend for a small business, so it pays to know what you are buying. This guide covers the work, the cost, and the timing.
+
+## Key Takeaways
+
+- An AI consultant for a small business does five things: discovery and operational mapping, workflow design, implementation, team training and adoption, and handoff.
+- A typical engagement runs in three phases over about fourteen weeks: discovery and audit, design and build, then adoption and handoff.
+- Discovery and audit engagements run $2,000 to $8,000, focused implementation projects $8,000 to $25,000, and comprehensive engagements $25,000 to $60,000 and up.
+- A focused engagement on one or two high-volume processes typically recovers five to fifteen hours per week across the team.
+- The timing is right when you can name the workflows eating team time, have hit a wall solving it with tools yourself, and have a named internal person to work alongside the consultant.
+- A good consultant starts with your problem rather than their tools, and ends the engagement with your team owning the systems.
 
 ## Why Most Small Businesses Are Not Getting What They Expected From AI
 
@@ -82,9 +94,9 @@ If you are not sure whether your business is at the right stage, [are you ready 
 
 Not every business is at the right stage for a consulting engagement, and starting before the timing is right wastes money on both sides.
 
-**The timing is right when** specific workflows are consuming disproportionate team time and you can name them; you have tried to address the problem with tools on your own and hit a wall; your team has enough bandwidth to absorb operational change without it derailing delivery; and a named internal person could serve as the primary collaborator throughout the project.
+**The timing is right when** specific workflows are consuming disproportionate team time and you can name them, you have tried to address the problem with tools on your own and hit a wall, your team has enough bandwidth to absorb operational change without it derailing delivery, and a named internal person could serve as the primary collaborator throughout the project.
 
-**The timing may be wrong when** you cannot describe a specific problem clearly; your team is currently at capacity and could not absorb new systems without performance suffering; the real issue is accountability or management structure rather than operational design; or you need the problem solved within the next two weeks.
+**The timing may be wrong when** you cannot describe a specific problem clearly, your team is currently at capacity and could not absorb new systems without performance suffering, the real issue is accountability or management structure rather than operational design, or you need the problem solved within the next two weeks.
 
 Readiness does not mean having clean operations. Most businesses that benefit most from AI consulting have messy operations. That is usually why they are calling. Readiness means having the conditions for an engagement to actually produce results.
 
@@ -101,6 +113,13 @@ AI consulting for small businesses falls into a few engagement types with differ
 **Comprehensive engagements** cover multiple departments or a significant rebuild of operational infrastructure. These run from $25,000 to $60,000 and up. They are appropriate when the operational gap is large enough that piecemeal addressing of individual workflows would take longer and cost more in aggregate.
 
 **Ongoing retainer arrangements** for sustained optimisation and extension of existing systems typically run $1,500 to $4,000 per month, depending on scope and hours required.
+
+| Engagement type | What it covers | Typical cost |
+|---|---|---|
+| Discovery and audit | A prioritised roadmap, no implementation | $2,000 to $8,000 |
+| Focused implementation | One or two workflows end to end, including design, build, training, and handoff | $8,000 to $25,000 |
+| Comprehensive | Multiple departments or a significant rebuild of operational infrastructure | $25,000 to $60,000 and up |
+| Ongoing retainer | Sustained optimisation and extension of existing systems | $1,500 to $4,000 per month |
 
 Price is determined by scope, integration complexity, the number of systems involved, and the amount of change management required. A more detailed breakdown of what drives the price in each engagement type is in [the AI consulting cost guide for small businesses](/blog/ai-consulting-cost-for-small-business).
 
@@ -133,6 +152,28 @@ Look for demonstrated experience with businesses at your scale and operational c
 Ask directly what you will own at the end of the engagement and who will maintain it. The answer should involve your internal team owning the systems, documented well enough to operate without the consultant. If the answer implies ongoing reliance, the incentives are misaligned. That is one of the 6 disqualifying [red flags when hiring an AI consultant](/blog/red-flags-when-hiring-an-ai-consultant).
 
 A detailed look at evaluation criteria is in [this guide to choosing an AI consultant](/blog/how-to-choose-an-ai-consultant), and the specific questions to ask before committing are in [this article on what to ask before hiring](/blog/questions-to-ask-before-hiring-an-ai-consultant).
+
+## Frequently Asked Questions
+
+### What does an AI consultant do for a small business?
+
+They map how work actually moves through the business, design where AI fits, build it, train the team, and hand it over. The design work is where most of the value sits. Tools added without a design tend to run without delivering much.
+
+### How much does it cost to hire an AI consultant?
+
+A discovery and audit engagement runs $2,000 to $8,000, and a focused build on one or two workflows runs $8,000 to $25,000. Judge it against the return. An engagement that recaptures thirty hours a month at $80 per hour pays for itself in about six months.
+
+### How long does working with an AI consultant take?
+
+Around fourteen weeks for a focused project, split into discovery, design and build, and adoption. The last phase is the one people want to skip, and it is the one that decides whether the system sticks. Don't cut it short.
+
+### What should I have in place before hiring an AI consultant?
+
+A problem you can name, an owner who can give a few reliable hours a week, and at least one process you can describe. If nobody can explain how a workflow is meant to run, write that down first. It costs a lot less to do it yourself than at consulting rates.
+
+### How do I know if working with an AI consultant is the right fit?
+
+Watch how the first conversation starts. A good one asks how your business runs before talking about what they build. Ask what you will own at the end, and walk away if the answer sounds like you will need them forever.
 
 ---
 
