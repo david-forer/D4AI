@@ -3,8 +3,7 @@ title: "The One-Page AI Acceptable Use Policy Template"
 seoTitle: "AI Acceptable Use Policy Template – The 6 Clauses a Small Business Actually Needs, Written Out in Full to Copy, and Why a One-Page Policy Beats the 40-Page Version Nobody Reads – Forersight"
 description: "An AI acceptable use policy template for small firms. 6 clauses, one page, written out in full to copy, and the rules that make people follow it."
 pubDate: 2026-09-23T00:00:00Z
-tags: ["ai-readiness"]
-pillar: "ai-governance-for-small-businesses"
+tags: ["ai-governance"]
 heroImage: "/images/blog/ai-acceptable-use-policy-template.webp"
 articleType: "cluster"
 ---

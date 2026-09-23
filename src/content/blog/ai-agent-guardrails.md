@@ -3,8 +3,7 @@ title: "AI Agent Guardrails: Write the Permission List First"
 seoTitle: "AI Agent Guardrails for Small Business – The 4 Limits Every Agent Needs Before It Runs, How to Write a Permission List a Non-Technical Founder Can Enforce, and the Guardrail Failures That Reach Clients – Forersight"
 description: "AI agent guardrails are a permission list, written before the agent runs. The 4 limits every agent needs, and how to enforce them without a dev team."
 pubDate: 2026-09-23T00:00:00Z
-tags: ["ai-tools"]
-pillar: "ai-agents-for-small-businesses"
+tags: ["ai-agents"]
 heroImage: "/images/blog/ai-agent-guardrails.webp"
 articleType: "cluster"
 ---

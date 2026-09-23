@@ -3,8 +3,7 @@ title: "AI Vendor and Model Risk Is Really Concentration Risk"
 seoTitle: "AI Vendor and Model Risk for Small Business – Why Concentration Is the Exposure That Actually Lands, What Happens When a Model Changes Underneath You, and the 5 Questions to Ask Before You Sign – Forersight"
 description: "AI vendor and model risk for a small firm is concentration risk. What happens when a vendor dies, raises prices, or changes the model underneath you."
 pubDate: 2026-09-23T00:00:00Z
-tags: ["ai-readiness"]
-pillar: "ai-governance-for-small-businesses"
+tags: ["ai-governance"]
 heroImage: "/images/blog/ai-vendor-and-model-risk.webp"
 articleType: "cluster"
 ---

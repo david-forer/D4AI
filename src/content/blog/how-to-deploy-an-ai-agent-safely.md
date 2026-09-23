@@ -3,8 +3,7 @@ title: "How to Deploy an AI Agent Safely: A 4-Week Sequence"
 seoTitle: "How to Deploy an AI Agent Safely – The 4-Week Rollout Sequence for a Small Firm, What to Test in Week 1, When to Let It Touch Real Work, and the Deployment Mistakes That Reach Clients – Forersight"
 description: "How to deploy an AI agent safely in a small firm: a 4-week sequence from shadow mode to live, what to check each week, and when to stop and roll back."
 pubDate: 2026-09-23T00:00:00Z
-tags: ["ai-tools"]
-pillar: "ai-agents-for-small-businesses"
+tags: ["ai-agents"]
 heroImage: "/images/blog/how-to-deploy-an-ai-agent-safely.webp"
 articleType: "cluster"
 ---

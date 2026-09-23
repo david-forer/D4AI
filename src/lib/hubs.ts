@@ -46,19 +46,36 @@ export const HUBS: Hub[] = [
   {
     slug: 'ai-readiness',
     name: 'AI Readiness',
-    h1: 'AI Readiness, Governance and Audit Resources',
-    description: 'Everything you need to assess, prepare for, and act on an AI readiness audit, plus the governance and risk work that follows.',
+    h1: 'AI Readiness and Audit Resources',
+    description: 'Everything you need to assess, prepare for, and act on an AI readiness audit, from self-assessment to acting on what it finds.',
     body: `Before investing in AI tools, automation systems, or training programs, it is worth understanding where your business actually stands. AI readiness is not primarily a technology question. It is a question of whether your processes, data quality, and team are in a position where AI can make a genuine difference.
 
 This category covers the full arc of AI readiness, from initial self-assessment through professional audit and into implementation planning. Articles here help you understand what readiness actually means in a small business context, what gaps most commonly hold businesses back from getting real value from AI, and how to move from assessment to action without getting stuck in analysis.
 
 Topics include what to expect from a professional AI readiness audit, how to prepare your operations before bringing in an outside assessment, common readiness gaps in founder-led teams, the difference between AI readiness and AI maturity, and how to act on your findings once an audit is complete.
 
-It also covers the governance work that readiness leads into: risk assessment, acceptable use policy, data security, and what to do about the AI your team is already using without telling you. Readiness tells you where the exposure is. Governance is what holds the line once you know.`,
+An audit shows you where the exposure is. The rules that come after it (use policy, risk assessment, data security) have their own section under AI Governance.`,
     serviceLink: '/ai-readiness-and-ai-audits',
     serviceLabel: 'View AI Readiness Services',
-    pillars: ['ai-readiness-framework-for-service-businesses.md', 'ai-governance-for-small-businesses.md'],
-    chooseWhen: 'Whether they are ready, audits, risk, governance, policy, data security',
+    pillars: ['ai-readiness-framework-for-service-businesses.md'],
+    chooseWhen: 'Whether they are ready, audits, assessments, acting on findings',
+  },
+  {
+    slug: 'ai-governance',
+    name: 'AI Governance',
+    h1: 'AI Governance for Small Businesses',
+    description: 'How to set AI rules, data limits and review steps in a small business without a compliance team, plus what to do about the AI your staff already use.',
+    body: `Most small businesses start using AI before anyone writes down a single rule for it. A bookkeeper pastes a client's payroll export into a free chatbot to reformat the columns. A project manager connects an AI note-taker to every client call because it came bundled with the video tool. Nobody decided either of those things.
+
+This category covers the governance work that makes AI safe to use at that size: which data can go into which tools, which tools are approved, who checks AI output before a client sees it, and what happens when something goes wrong. Each piece is written for a founder with no compliance officer, no IT department, and maybe one afternoon a month to spend on this.
+
+Topics include writing an acceptable use policy people will read, running a risk assessment on the tools you already pay for, handling client data under contracts you've already signed, finding the shadow AI your team uses without telling you, vendor and model risk, and the points where a human reviewer has to stay in the loop.
+
+Clear rules make a team faster with AI. Once people know what they can paste where, they stop guessing (and stop quietly avoiding the tools). For most firms under 20 people, the whole framework fits on 2 pages.`,
+    serviceLink: '/ai-readiness-and-ai-audits',
+    serviceLabel: 'Start With an AI Readiness Audit',
+    pillars: ['ai-governance-for-small-businesses.md'],
+    chooseWhen: 'Rules, risk, policy, data security, shadow AI, human review',
   },
   {
     slug: 'ai-operations',
@@ -98,18 +115,35 @@ The goal is a team that uses AI as a standard part of how they work, not a handf
     slug: 'ai-tools',
     name: 'AI Tools',
     h1: 'Choosing and Running an AI Tech Stack',
-    description: 'How to choose, compare, buy, replace and retire AI tools and agents without ending up with twelve subscriptions and no system.',
+    description: 'How to choose, compare, buy, replace and retire AI tools without ending up with twelve subscriptions and no system.',
     body: `Most small businesses do not have a tool shortage. They have eleven subscriptions, four of them forgotten, two of them doing the same job, and no clear answer to what would break if any of them were cancelled tomorrow. The problem is rarely finding a tool. It is deciding between them and then living with the decision.
 
 This category covers tool selection, stack design, and the decisions that surround them. The articles here treat buying software as an operational choice rather than a shopping exercise, which means they spend more time on evaluation criteria, switching costs, and what happens in month six than on feature comparisons that go stale in a quarter.
 
-Topics include how to evaluate an AI tool before committing, free versus paid tiers and where the line actually sits, off-the-shelf products versus custom builds, auditing a stack you inherited, switching tools without losing the work already built on the old one, and the difference between an AI agent, an automation, and a chatbot when a vendor calls all three the same thing.
+Topics include how to evaluate an AI tool before committing, free versus paid tiers and where the line actually sits, off-the-shelf products versus custom builds, auditing a stack you inherited, and switching tools without losing the work already built on the old one. Questions about AI agents in particular have their own section under AI Agents.
 
 The aim is a small stack you understand completely, rather than a large one you are quietly afraid to change.`,
     serviceLink: '/services',
     serviceLabel: 'View Services',
-    pillars: ['ai-tools-tech-stack-small-business.md', 'ai-agents-for-small-businesses.md'],
-    chooseWhen: 'Choosing, comparing, buying, switching tools and agents',
+    pillars: ['ai-tools-tech-stack-small-business.md'],
+    chooseWhen: 'Choosing, comparing, buying, switching tools',
+  },
+  {
+    slug: 'ai-agents',
+    name: 'AI Agents',
+    h1: 'AI Agents for Small Businesses',
+    description: 'What AI agents are, how they differ from automations and chatbots, where they pay off in a small business, and how to deploy one without losing control.',
+    body: `Every software vendor now calls its product an agent. The chatbot on a scheduling app, the rules engine inside a CRM, the email sequencer a sales rep set up three years ago. Founders hear the word every week and still can't say what one would do in a 12-person firm.
+
+An AI agent takes a goal, works out the steps, and carries them out across more than one tool. That makes it useful for high-volume work that changes from case to case, like triaging maintenance requests for a property management company or researching a lead before a discovery call. It also carries more risk than an automation that does the same thing every time.
+
+This category covers the practical questions: when an agent is the right choice and when a plain automation will do, specific use cases in support and lead qualification, building versus buying, the guardrails that stop an agent from emailing a client something nobody approved, and how to test one on real past cases before it touches live work.
+
+The order that tends to work is documented processes first, automation second, and agents last, one narrow job at a time. Most of the articles here are written with that order in mind.`,
+    serviceLink: '/ai-automation-accelerator',
+    serviceLabel: 'View Automation Services',
+    pillars: ['ai-agents-for-small-businesses.md'],
+    chooseWhen: 'Agents specifically: what they are, use cases, guardrails, build or buy',
   },
   {
     slug: 'automation',
@@ -228,21 +262,21 @@ export const HUB_BY_SLUG: Record<string, Hub> = Object.fromEntries(
 // Hubs and pillars are different things and were briefly conflated. Keeping
 // them separate is deliberate:
 //
-//   hub    = which page a post appears on. 10 of them. Exists for crawl depth,
+//   hub    = which page a post appears on. 12 of them. Exists for crawl depth,
 //            so it is sized for search (6 to 40 posts per hub) and set by the
 //            required `tags` field.
 //   pillar = which content cluster a post belongs to. 12 of them. Exists for
 //            how the work is organised and how the explorer nests, and is set
 //            by the optional `pillar` field.
 //
-// Two pillars currently share a hub because they are too small to carry one
-// alone: ai-governance folds into ai-readiness, ai-agents into ai-tools. Both
-// have planned posts written into the nesting map, and each earns its own hub
-// once those land. Folding a hub must never collapse a pillar.
+// Today every hub has exactly one pillar. ai-governance and ai-agents used to
+// share a hub with ai-readiness and ai-tools until they had enough posts, and
+// were split out on 2026-09-23. A new pillar too small for its own hub can
+// share one the same way. Folding a hub must never collapse a pillar.
 //
 // A post only needs an explicit `pillar` when it differs from the primary
-// pillar of its hub, which today means the governance and agents posts. Every
-// other post infers it, so there is nothing extra for a writer to remember.
+// pillar of its hub. Today that is no post. Every post infers it, so there is
+// nothing extra for a writer to remember.
 // ---------------------------------------------------------------------------
 
 export interface Pillar {

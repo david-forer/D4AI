@@ -3,8 +3,7 @@ title: "Your AI Risk Assessment Fits on One Spreadsheet Row"
 seoTitle: "AI Risk Assessment for Small Business – How to Score the Workflows Where AI Output Leaves the Building, Rank Your Real Exposure on 3 Numbers, and Finish the Whole Assessment in an Afternoon Without a Compliance Team – Forersight"
 description: "An AI risk assessment for a small business works when you score workflows rather than tools. Here is the 3-number method and how to run it in an afternoon."
 pubDate: 2026-09-08T00:00:00Z
-tags: ["ai-readiness"]
-pillar: "ai-governance-for-small-businesses"
+tags: ["ai-governance"]
 heroImage: "/images/blog/ai-risk-assessment-small-business.webp"
 articleType: "cluster"
 ---

@@ -11,10 +11,9 @@
 //   npm run nest -- --check   fail if it is stale, for CI
 //
 // Nesting follows PILLAR, not hub. The two are different on purpose. A hub is a
-// page and is sized for search, so ai-governance and ai-agents currently share
-// hubs with readiness and tools because they are too small to carry their own.
-// A pillar is a content cluster and is how the work is organised, so all 12
-// stay separate here. Folding a hub must never collapse a pillar.
+// page and is sized for search, so a pillar too small to carry its own hub can
+// share one. A pillar is a content cluster and is how the work is organised, so
+// pillars always stay separate here. Folding a hub must never collapse a pillar.
 //
 // A post nests under its explicit `pillar` when it has one, otherwise under the
 // primary pillar of its hub. Most posts have no `pillar` field and never need

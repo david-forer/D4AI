@@ -4,8 +4,7 @@ seoTitle: "AI Agents for Small Businesses – What AI Agents Actually Are, How T
 description: "AI agents are hyped and misunderstood. Here is what an AI agent actually is, how it differs from automation, where it earns its place in a small business, and how to deploy one safely."
 pubDate: 2026-07-12T00:00:00Z
 updatedDate: 2026-09-23T00:00:00Z
-tags: ["ai-tools"]
-pillar: "ai-agents-for-small-businesses"
+tags: ["ai-agents"]
 heroImage: "/images/blog/ai-agents-for-small-businesses.webp"
 articleType: "pillar"
 ---

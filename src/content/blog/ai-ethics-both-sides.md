@@ -3,8 +3,7 @@ title: "The Double-Edged Sword: AI's Growing Role in Business Operations"
 seoTitle: "AI Ethics in Business | Case For and Against | Forersight"
 description: "The honest case for and against AI in business operations, covering productivity gains, workforce impact, and the governance you need first."
 pubDate: 2025-12-09T00:00:00+00:00
-tags: ["ai-readiness"]
-pillar: "ai-governance-for-small-businesses"
+tags: ["ai-governance"]
 heroImage: "/images/blog/ai-ethics.webp"
 draft: false
 articleType: "cluster"

@@ -3,8 +3,7 @@ title: "AI Data Security for Small Business Starts With the Account Tier"
 seoTitle: "AI Data Security for Small Business – What Happens to Your Data Inside AI Tools, Why the Account Tier Is a Bigger Control Than the Policy, and the 3-Class Data Rule a Founder Can Roll Out This Week – Forersight"
 description: "AI data security for a small business is decided by which accounts your team uses and what data is allowed near them. Here is what to change this week."
 pubDate: 2026-09-01T00:00:00Z
-tags: ["ai-readiness"]
-pillar: "ai-governance-for-small-businesses"
+tags: ["ai-governance"]
 heroImage: "/images/blog/ai-data-security-small-business.webp"
 articleType: "cluster"
 ---

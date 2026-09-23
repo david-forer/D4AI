@@ -3,8 +3,7 @@ title: "AI Agents for Customer Support: Escalation Is the Product"
 seoTitle: "AI Agents for Customer Support – Why the Escalation Decision Is the Capability You Are Buying, the Ticket Volume That Justifies One, and How to Roll It Out Without Customers Noticing – Forersight"
 description: "AI agents for customer support live or die on the escalation decision. Here is the ticket volume that justifies one and how to roll it out safely."
 pubDate: 2026-09-23T00:00:00Z
-tags: ["ai-tools"]
-pillar: "ai-agents-for-small-businesses"
+tags: ["ai-agents"]
 heroImage: "/images/blog/ai-agents-for-customer-support.webp"
 articleType: "cluster"
 ---

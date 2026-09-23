@@ -28,9 +28,8 @@ export const collections = {
       // VSCode explorer nesting and nothing on the rendered site.
       //
       // Leave it off unless the post belongs to a pillar that is NOT the main
-      // pillar of its hub. Today that means only the ai-governance and ai-agents
-      // posts, because those two pillars share a hub with readiness and tools.
-      // Everything else infers its pillar from its tag, so there is nothing to
+      // pillar of its hub. Today every hub has one pillar, so no post needs it.
+      // Everything infers its pillar from its tag, so there is nothing to
       // remember in the normal case.
       pillar: z.enum(PILLAR_SLUGS).optional(),
 

@@ -2,8 +2,7 @@
 title: "AI Agents vs. Automations: What's the Difference and When to Use Each"
 description: "The terms AI agent and automation are often used interchangeably, but they describe meaningfully different things. Understanding the distinction helps you choose the right tool for each job and avoid building complexity where simplicity would serve better."
 pubDate: 2026-03-07T00:00:00+01:00
-tags: ["ai-tools"]
-pillar: "ai-agents-for-small-businesses"
+tags: ["ai-agents"]
 heroImage: "/images/blog/ai-agents-vs-automations.webp"
 draft: false
 articleType: "cluster"

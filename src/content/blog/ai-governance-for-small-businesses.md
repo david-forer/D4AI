@@ -4,8 +4,7 @@ seoTitle: "AI Governance for Small Businesses – How to Manage AI Policy, Risk,
 description: "Most small businesses adopt AI with no rules around data, tools, or review. Here is a practical governance framework that manages AI risk and security without a compliance team."
 pubDate: 2026-07-12T00:00:00Z
 updatedDate: 2026-09-23T00:00:00Z
-tags: ["ai-readiness"]
-pillar: "ai-governance-for-small-businesses"
+tags: ["ai-governance"]
 heroImage: "/images/blog/ai-governance-for-small-businesses.webp"
 articleType: "pillar"
 ---
