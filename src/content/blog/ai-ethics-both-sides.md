@@ -1,6 +1,6 @@
 ---
 title: "The Double-Edged Sword: AI's Growing Role in Business Operations"
-seoTitle: "AI Ethics in Business | Both Sides, Honestly | David J Forer"
+seoTitle: "AI Ethics in Business | Case For and Against | Forersight"
 description: "The honest case for and against AI in business operations, covering productivity gains, workforce impact, and the governance you need first."
 pubDate: 2025-12-09T00:00:00+00:00
 tags: ["ai-readiness"]
@@ -131,7 +131,7 @@ Not for bureaucracy, but for resilience.
 
 ## The Bottom Line
 
-AI is not just a tool. It is a structural shift in how companies operate. Businesses that adopt AI recklessly will accelerate mistakes. Businesses that adopt AI with clarity, stewardship, and discipline will earn trust and build systems that last.
+AI is not just a tool. It is a structural shift in how companies operate. Businesses that adopt AI recklessly will accelerate mistakes. Businesses that adopt AI with clarity, stewardship, and discipline will earn trust and build systems that last. For a service firm, that starts with [a short list of client promises you can actually keep](/blog/responsible-ai-service-firms).
 
 The real question is not "Should we use AI?" but "Are we mature enough to use AI well?"
 

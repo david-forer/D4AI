@@ -50,7 +50,7 @@ For cluster-based SEO, also keep pages that are not yet performing but are struc
 
 ### Improve
 
-Improve pages that have meaningful traffic or ranking positions but are underperforming relative to their potential. Signs that improvement is needed include: high impressions with low click-through rate (which often indicates a title or meta description problem), high traffic with high bounce rate (which often indicates a content-to-intent mismatch), or decent rankings with no conversion activity (which often indicates a call-to-action problem).
+Improve pages that have meaningful traffic or ranking positions but are underperforming relative to their potential. Signs that improvement is needed include: high impressions with low click-through rate (which often indicates a title or meta description problem), high traffic with high bounce rate (which often indicates a content-to-intent mismatch), or decent rankings with no conversion activity (which often indicates a call-to-action problem). For the high impressions and low click rate case, [why pages rank but get no clicks](/blog/why-pages-rank-but-get-no-clicks) walks through the diagnosis page by page.
 
 Improvement can mean rewriting sections, updating outdated information, strengthening internal links, improving the title and meta description, or adding depth where the topic warrants it.
 
@@ -104,6 +104,6 @@ The content you remove or consolidate makes room, in both a technical and a stra
 
 ---
 
-*Related reading: [AI Enabled SEO Operations: The 6 Layers of SEO Success](/blog/ai-enabled-seo-operations) · [SEO Strategy for 2026: What's Working Now](/blog/seo-strategy-2026)*
+*Related reading: [AI Enabled SEO Operations: The 6 Layers of SEO Success](/blog/ai-enabled-seo-operations) · [SEO Strategy for 2026: What's Working Now](/blog/seo-strategy-2026) · [How Many Blog Posts Before SEO Works](/blog/how-many-blog-posts-before-seo-works)*
 
 Ready to build a content system that scales without quality debt? [Explore the SEO Accelerator](/seo-accelerator).

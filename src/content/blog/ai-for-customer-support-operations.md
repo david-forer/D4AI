@@ -33,7 +33,7 @@ Support requests coming in from multiple channels (email, live chat, a contact f
 
 From a unified inbox, automatic categorisation sorts incoming requests by type, urgency, and client tier without manual reading of each one. A billing question routes differently from a technical issue from a long-term client with a service-level commitment. That routing logic should be defined and systematic, not dependent on whoever happens to read the inbox first.
 
-Urgency scoring flags genuinely time-sensitive requests so they surface immediately rather than sitting in a queue behind lower-priority items.
+Urgency scoring flags time-sensitive requests so they surface immediately rather than sitting in a queue behind lower-priority items.
 
 ### The Knowledge Layer
 
@@ -45,7 +45,7 @@ Maintenance is not a one-time task. It is a workflow. When something changes (a 
 
 ### Response Automation
 
-High-confidence auto-responses handle the genuinely routine requests where the answer is clear, consistent, and does not require human judgment. Password resets, standard status updates, policy information, FAQ-level questions, these can be resolved without a human in the loop.
+High-confidence auto-responses handle the truly routine requests where the answer is clear, consistent, and does not require human judgment. Password resets, standard status updates, policy information, FAQ-level questions, these can be resolved without a human in the loop.
 
 For everything more complex, AI drafts a response for human review and editing rather than sending autonomously. The agent edits and approves rather than writing from scratch. The quality of the draft depends on the knowledge layer underneath it.
 
@@ -55,7 +55,7 @@ The review threshold, what triggers a human before anything goes out, should be 
 
 Escalation patterns matter. When AI hands off to a human, when a frontline agent escalates to a senior person, when an issue gets flagged to the founder, these paths should be documented and systematic rather than ad-hoc.
 
-Defined escalation criteria by issue type, urgency, and client tier prevent both under-escalation (issues that needed attention not getting it) and over-escalation (everything coming to the same person because no one is clear on what they can handle).
+Defined escalation criteria by issue type, urgency, and client tier prevent both under-escalation (issues that needed attention not getting it) and over-escalation (everything coming to the same person because no one is clear on what they can handle). How to write those rules for an AI agent is covered in [AI agents for customer support](/blog/ai-agents-for-customer-support).
 
 Escalation data is also the most valuable input for improving the system over time. Patterns in what gets escalated tell you where the knowledge base is incomplete, where auto-responses are being misapplied, or where a policy needs to be clearer.
 
@@ -77,7 +77,7 @@ Defined service tiers if you have different client types. Not all clients warran
 
 ## What AI Cannot Own in Support
 
-Emotionally charged situations need a human. A client who is genuinely distressed, frustrated, or feeling unheard needs to interact with a person who can acknowledge that directly. AI-generated empathy in these situations tends to make things worse.
+Emotionally charged situations need a human. A client who is distressed, frustrated, or feeling unheard needs to interact with a person who can acknowledge that directly. AI-generated empathy in these situations tends to make things worse.
 
 Complex multi-party situations (disputes involving multiple stakeholders, issues that have compounded over time, anything with contractual implications) require human judgment throughout.
 

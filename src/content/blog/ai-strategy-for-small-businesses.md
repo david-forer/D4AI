@@ -62,7 +62,7 @@ This mapping usually reveals two things. First, the constraint is almost always 
 
 ### Step 3: Match AI Capability to Process Gap
 
-Not every process gap is an AI problem. Some are documentation problems. Some are training problems. Some are sequencing problems that no amount of AI will fix because the underlying workflow design is broken.
+Not every process gap is an AI problem. Some are documentation problems. Some are training problems. Some are sequencing problems that no amount of AI will fix because the underlying workflow design is broken. Knowing [when to say no to AI](/blog/when-to-say-no-to-ai) is part of this step, and a written no keeps the same idea from coming back next quarter.
 
 The matching step asks: is the bottleneck at this process step a problem of speed, consistency, judgment, or scale? AI helps most with speed and consistency. It helps moderately with scale, depending on the nature of the work. It does not replace human judgment in high-stakes, relationship-dependent decisions, and trying to make it do so creates risk rather than efficiency.
 
@@ -110,7 +110,7 @@ A strategy built on these three categories can be implemented without technical 
 
 Understanding [the most common AI strategy mistakes](/blog/ai-strategy-mistakes-small-business) before starting saves more time than almost any other preparation. The patterns repeat across businesses of every size and sector.
 
-**Starting with tools instead of outcomes.** The most expensive mistake is paying for AI tools that solve a problem you have not prioritized. Subscriptions accumulate, adoption stays shallow, and the ROI calculation is impossible to make because no target was set.
+**Starting with tools instead of outcomes.** The most expensive mistake is paying for AI tools that solve a problem you have not prioritized. Subscriptions accumulate, adoption stays shallow, and the ROI calculation is impossible to make because no target was set. [An AI budget for a small business](/blog/ai-budget-for-small-business) sets the year-one number and the quarterly gates that stop this drift.
 
 **Automating broken processes.** A workflow that requires constant manual intervention to produce acceptable results does not become reliable when you add AI to it. It becomes faster at producing unreliable results. Fix the process first.
 
@@ -150,7 +150,7 @@ Review cadence matters as much as metric selection. A monthly review of AI strat
 
 ## Building an AI Roadmap: From Strategy to Execution
 
-A strategy without a timeline stays theoretical. The [AI roadmap for small business](/blog/ai-roadmap-small-business) guide covers this in full, but the core principle is straightforward: sequence your implementation across ninety-day periods, with each period building on the previous one rather than starting fresh.
+A strategy without a timeline stays theoretical. The [AI roadmap for small business](/blog/ai-roadmap-small-business) guide covers this in full, but the core principle is simple: sequence your implementation across ninety-day periods, with each period building on the previous one rather than starting fresh.
 
 The first period focuses on readiness and quick wins: closing the data and process gaps that block reliable AI use, and automating one or two high-friction workflows to build confidence and demonstrate return. The second period expands on what worked. The third adds the more complex, integrated layers.
 
@@ -164,6 +164,6 @@ An AI strategy for a small business does not need to be elaborate. It needs to b
 
 The practical starting point is a structured assessment of current operations: where time is spent, where errors accumulate, where growth is limited by process rather than demand. That assessment usually reveals two or three high-priority areas where AI could make a material difference. [A guide to where most small businesses should actually start](/blog/where-to-start-with-ai-small-business) cuts through the noise on this. The answer is almost never where founders initially assume.
 
-Building an initial strategy around those specific areas, measuring the results, and expanding from there is a more reliable path than trying to build a comprehensive AI infrastructure from scratch.
+Building an initial strategy around those specific areas, measuring the results, and expanding from there is a more reliable path than trying to build a comprehensive AI infrastructure from scratch. To get the whole thing onto a single sheet you can pin above a desk, use [the one-page AI strategy](/blog/one-page-ai-strategy), which takes about 90 minutes to write.
 
 If you want an outside perspective on where your operations have the highest AI leverage, [schedule a call.](https://calendly.com/david-j-forer/30min)

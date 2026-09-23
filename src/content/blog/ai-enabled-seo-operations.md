@@ -90,7 +90,7 @@ Human refinement is where voice, expertise, and credibility enter the content. T
 
 On-page optimization is the layer that transforms good content into content that search engines can fully understand and evaluate.
 
-On-page standards cover the mechanical elements: title tag structure, meta description, header hierarchy, keyword placement, image optimization, and page speed considerations. These are table stakes and should be handled systematically through a checklist rather than case by case.
+On-page standards cover the mechanical elements: title tag structure, meta description, header hierarchy, keyword placement, image optimization, and page speed considerations. These are table stakes and should be handled systematically through a checklist rather than case by case. When a page ranks and still gets no clicks, the fix depends on which of 4 causes you have, and [why pages rank but get no clicks](/blog/why-pages-rank-but-get-no-clicks) shows how to tell them apart in Search Console.
 
 Schema structure tells search engines explicitly what kind of content they are looking at and what entities it contains. For service businesses, Article, FAQ, and HowTo schema are the most commonly applicable types. A [schema markup guide for SEO](/blog/schema-markup-seo-guide) covers the implementation specifics without requiring a developer for most page types. Implementing schema consistently is a high-return low-effort optimization that most small team SEO programs deprioritize because it is technical and not immediately visible in the content.
 
@@ -104,7 +104,7 @@ The metrics that matter most are not the ones that are easiest to report. Traffi
 
 Ranking velocity measures how quickly new content moves through ranking positions over time. A program where content consistently moves from position forty to position twelve to position six over a predictable time period is a program that is working. One where content sits at position forty indefinitely is not, regardless of the traffic numbers.
 
-Conversion mapping connects SEO performance to business outcomes. Which content is generating leads or inquiries? Which organic landing pages have the highest conversion rates? Which topics attract the wrong audience? Without conversion mapping, SEO optimization is disconnected from revenue impact.
+Conversion mapping connects SEO performance to business outcomes. Which content is generating leads or inquiries? Which organic landing pages have the highest conversion rates? Which topics attract the wrong audience? Without conversion mapping, SEO optimization is disconnected from revenue impact. [SEO reporting for founders](/blog/seo-reporting-for-founders) covers the 5 numbers worth reading each month, including how to track organic inquiries without attribution software.
 
 ---
 
@@ -164,7 +164,7 @@ The goal of this ninety days is not to build the entire system at once. It is to
 
 ## Common SEO System Breakdowns
 
-**Random posting** is the most common failure mode and the most recoverable. Publishing content without a cluster strategy, keyword brief, or defined search intent is essentially creating noise. It consumes production capacity without building topical authority.
+**Random posting** is the most common failure mode and the most recoverable. Publishing content without a cluster strategy, keyword brief, or defined search intent is essentially creating noise. It consumes production capacity without building topical authority. [How many blog posts before SEO works](/blog/how-many-blog-posts-before-seo-works) explains why coverage of one subject matters more than post count.
 
 **No internal links** creates a site full of content that search engines cannot navigate or evaluate in context. Every piece of content that goes live without being connected to the relevant cluster structure is a wasted asset.
 

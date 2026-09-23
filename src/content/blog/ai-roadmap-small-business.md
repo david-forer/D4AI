@@ -105,4 +105,4 @@ The goal is not to stick to the roadmap. The goal is to make consistent progress
 
 *Part of the [AI Strategy for Small Businesses](/blog/ai-strategy-for-small-businesses) series.*
 
-*Related reading: [How to Build an AI Strategy for Your Small Business](/blog/how-to-build-an-ai-strategy-small-business) | [Where to Start with AI When Everything Feels Overwhelming](/blog/where-to-start-with-ai-small-business) | [Prioritizing AI Investments on a Small Business Budget](/blog/prioritizing-ai-investments-small-business)*
+*Related reading: [How to Build an AI Strategy for Your Small Business](/blog/how-to-build-an-ai-strategy-small-business) | [Where to Start with AI When Everything Feels Overwhelming](/blog/where-to-start-with-ai-small-business) | [Prioritizing AI Investments on a Small Business Budget](/blog/prioritizing-ai-investments-small-business) | [The One-Page AI Strategy a Small Business Can Write Today](/blog/one-page-ai-strategy)*

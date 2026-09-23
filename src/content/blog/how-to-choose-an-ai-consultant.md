@@ -105,4 +105,4 @@ That kind of honest working relationship is not visible in a portfolio. It is vi
 
 *Part of the [Working with an AI Consultant](/blog/working-with-an-ai-consultant) series.*
 
-*Related reading: [Questions to Ask Before Hiring an AI Consultant](/blog/questions-to-ask-before-hiring-an-ai-consultant) | [What Does an AI Consultant Actually Do?](/blog/what-does-an-ai-consultant-do) | [Are You Ready to Hire an AI Consultant?](/blog/are-you-ready-to-hire-an-ai-consultant)*
+*Related reading: [Questions to Ask Before Hiring an AI Consultant](/blog/questions-to-ask-before-hiring-an-ai-consultant) | [What Does an AI Consultant Actually Do?](/blog/what-does-an-ai-consultant-do) | [Are You Ready to Hire an AI Consultant?](/blog/are-you-ready-to-hire-an-ai-consultant) | [Red Flags When Hiring an AI Consultant](/blog/red-flags-when-hiring-an-ai-consultant)*

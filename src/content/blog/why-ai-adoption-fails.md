@@ -11,7 +11,7 @@ articleType: "cluster"
 
 The statistics on AI adoption at the small business level are not encouraging. Tools get purchased in waves of enthusiasm and sit unused six months later. Pilots launch and quietly end without scaling. Founders invest in training that does not change behavior. The tools are better than they have ever been. The adoption record is not.
 
-Understanding why adoption fails, specifically and honestly, is more useful than another guide on which AI tools to use. Most small businesses do not have an AI tool problem. They have an adoption problem. The solutions are different.
+Understanding why adoption fails, specifically and plainly, is more useful than another guide on which AI tools to use. Most small businesses do not have an AI tool problem. They have an adoption problem. The solutions are different.
 
 ---
 
@@ -109,6 +109,6 @@ They are not. The adoption architecture is the harder problem. The businesses th
 
 ---
 
-*Related reading: [AI Team Adoption: Why Most Small Business Implementations Fail](/blog/ai-training-team-adoption-small-business) | [Barriers to AI Adoption in Small Business Teams](/blog/barriers-to-ai-adoption-small-business)*
+*Related reading: [AI Team Adoption: Why Most Small Business Implementations Fail](/blog/ai-training-team-adoption-small-business) | [Barriers to AI Adoption in Small Business Teams](/blog/barriers-to-ai-adoption-small-business) | [What to Do When an AI Project Fails](/blog/what-to-do-when-an-ai-project-fails)*
 
 Ready to build an adoption program that actually works? [Explore AI training for small business teams](/ai-training-for-small-business-teams).

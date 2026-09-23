@@ -22,7 +22,7 @@ The discipline of automation is not just about identifying what to hand off to a
 
 Automating the wrong processes creates problems that are often harder to diagnose than the original manual work. When a human makes a mistake in a manual process, the error is visible and contained. When an automated system makes the same mistake, it makes it at scale, consistently, until someone notices. By then, the impact has often compounded significantly.
 
-There is also a subtler cost. Automation that removes human judgment from a process where judgment is genuinely required does not just create errors. It creates a perception problem with clients and team members who can tell the difference between a thoughtful response and a templated one, even when the template is technically correct.
+There is also a subtler cost. Automation that removes human judgment from a process where judgment is actually required does not just create errors. It creates a perception problem with clients and team members who can tell the difference between a thoughtful response and a templated one, even when the template is technically correct.
 
 The goal of automation is to free human attention for the work that requires it. That only works if the automation boundary is drawn in the right place.
 
@@ -36,7 +36,7 @@ Decisions that require contextual reading, nuanced assessment, or weighing facto
 
 AI tools can assist with some of these. They can surface relevant information, generate drafts, or flag patterns worth considering. But the decision itself, including the responsibility for the outcome, needs to stay with a person.
 
-The test is straightforward: if someone examining the output could not determine from the process alone whether it was right or wrong, the process requires judgment. Keep it human.
+The test is simple: if someone examining the output could not determine from the process alone whether it was right or wrong, the process requires judgment. Keep it human.
 
 ### Relationship-Critical Touchpoints
 
@@ -78,11 +78,11 @@ The resolution is usually to pull the human back in at the right points rather t
 
 ## The Right Ratio for Most Small Service Businesses
 
-Most small service businesses have a core of genuinely automatable work. Appointment scheduling, intake forms, document collection, standard follow-up sequences, invoice generation, status notifications, and routine data entry are all strong automation candidates. They are high-frequency, well-defined, and low-judgment.
+Most small service businesses have a core of truly automatable work. Appointment scheduling, intake forms, document collection, standard follow-up sequences, invoice generation, status notifications, and routine data entry are all strong automation candidates. They are high-frequency, well-defined, and low-judgment.
 
 Around that core is a layer of work that benefits from automation support but requires human involvement. Proposal development, client onboarding conversations, project scoping, problem resolution, and relationship-building activities all sit here. Automation makes the humans faster. It does not replace the humans.
 
-At the edges is work that should remain entirely human. Strategic decisions, significant relationship moments, novel problems, and any situation where the right answer is genuinely unclear.
+At the edges is work that should remain entirely human. Strategic decisions, significant relationship moments, novel problems, and any situation where the right answer is unclear.
 
 Building the automation architecture with this structure in mind produces a system that is both efficient and resilient. The automation layer handles volume without errors. The human layer operates with more time, better information, and less friction. The result is a business that runs better than one that is either fully manual or automation-heavy without judgment about where the boundary belongs.
 
@@ -96,10 +96,10 @@ If the answer is that it removes rote, low-judgment work and frees attention for
 
 Automation discipline is not about being conservative with automation. It is about being precise. The businesses that get the most from automation are the ones that automate aggressively in the right areas and resist the pressure to automate in the wrong ones.
 
-The goal is a business where the systems handle everything they are genuinely better at, and the people handle everything that genuinely requires them. Getting that balance right is the actual work of building a scalable operation.
+The goal is a business where the systems handle everything they are better at, and the people handle everything that actually requires them. Getting that balance right is the actual work of building a scalable operation.
 
 ---
 
-*Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [The Framework for High-Leverage Automation](/blog/framework-high-leverage-automation)*
+*Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [The Framework for High-Leverage Automation](/blog/framework-high-leverage-automation) · [When to Say No to AI](/blog/when-to-say-no-to-ai)*
 
 Not sure where your automation boundary should be? [Explore AI operations consulting](/custom-consulting).

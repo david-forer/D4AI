@@ -13,7 +13,7 @@ Custom AI is appealing. The idea that your business could have an AI system buil
 
 The problem is that most small businesses that pursue custom AI builds significantly underestimate what they are taking on. The build cost is the smallest part of the total investment. Maintenance, iteration, talent dependency, and the opportunity cost of not using well-built off-the-shelf alternatives over the same period are usually far larger. For most businesses below a certain scale, the business case for custom does not hold up under scrutiny.
 
-This article gives you a clear framework for making this decision honestly, rather than based on what sounds most impressive in a leadership meeting.
+This article gives you a clear framework for making this decision on the facts, rather than based on what sounds most impressive in a leadership meeting.
 
 ---
 
@@ -51,7 +51,7 @@ Custom AI development gives you one thing that off-the-shelf cannot: a system bu
 
 When that specificity creates genuine competitive advantage, when the custom system enables something the business could not do with any available commercial product, and when the business has the internal capability to own the build long-term, custom can be justified.
 
-**Proprietary process automation.** If your business has a workflow that is genuinely unique and creates competitive advantage, and if encoding it in a system would reinforce that advantage in a way competitors could not easily replicate, that is a real use case for custom.
+**Proprietary process automation.** If your business has a workflow that is truly unique and creates competitive advantage, and if encoding it in a system would reinforce that advantage in a way competitors could not easily replicate, that is a real use case for custom.
 
 **Integration with proprietary data.** Businesses with large, proprietary data assets, long historical records, unique content libraries, or specialised knowledge bases can sometimes build AI systems that leverage those assets in ways no generic tool can match.
 
@@ -79,7 +79,7 @@ When you put these numbers alongside the subscription cost of an off-the-shelf a
 
 With all of that said, there are legitimate circumstances where custom is the right call. They are specific enough to name clearly.
 
-The process is genuinely unique and proprietary. Not "we do it differently" but "this process exists nowhere else and encoding it creates durable competitive advantage."
+The process is unique and proprietary. Not "we do it differently" but "this process exists nowhere else and encoding it creates durable competitive advantage."
 
 No commercial product comes within meaningful distance of solving the problem. Not "the commercial product requires some configuration" but "the commercial product fundamentally cannot handle this use case."
 
@@ -107,7 +107,7 @@ Between pure off-the-shelf and fully custom sits a range of hybrid options that 
 
 A business at $1 million to $5 million in revenue with a team of five to fifty people almost always has a better path forward with well-chosen, well-configured off-the-shelf tools than with custom development.
 
-The reasons are consistent. The available commercial tools are genuinely good. The total cost of custom is genuinely high. The internal capacity to own custom systems long-term is genuinely limited. And the opportunity cost of time spent building rather than operating is genuinely significant at this stage of growth.
+The reasons are consistent. The available commercial tools are good. The total cost of custom is high. The internal capacity to own custom systems long-term is limited. And the opportunity cost of time spent building rather than operating is significant at this stage of growth.
 
 The exception exists, and when the criteria are met, custom should be considered seriously. But the default position for most small businesses evaluating this question should be off-the-shelf, configured well, integrated properly, and maintained deliberately.
 
@@ -115,4 +115,4 @@ The exception exists, and when the criteria are met, custom should be considered
 
 *Part of the [AI Tools and Tech Stack for Small Businesses](/blog/ai-tools-tech-stack-small-business) series.*
 
-*Related reading: [AI Tools vs. No-Code Automation](/blog/ai-tools-vs-no-code-automation) | [How to Evaluate AI Tools Before You Commit](/blog/how-to-evaluate-ai-tools) | [Free vs. Paid AI Tools for Small Business](/blog/free-vs-paid-ai-tools-small-business)*
+*Related reading: [AI Tools vs. No-Code Automation](/blog/ai-tools-vs-no-code-automation) | [How to Evaluate AI Tools Before You Commit](/blog/how-to-evaluate-ai-tools) | [Free vs. Paid AI Tools for Small Business](/blog/free-vs-paid-ai-tools-small-business) | [Build vs Buy AI Agents](/blog/build-vs-buy-ai-agents)*

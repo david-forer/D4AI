@@ -11,7 +11,7 @@ articleType: "cluster"
 
 ## The short answer on AI data security for a small business
 
-2 decisions carry most of the risk. Which account your team is logged into, and which class of data is allowed near it. Most of what gets sold under the heading of AI data security is second order for a firm under 115 people.
+2 decisions carry most of the risk. Which account your team is logged into, and which class of data is allowed near it. Most of what gets sold under the heading of AI data security is second order for a firm under 20 people.
 
 Search this topic and you land on either a security vendor explaining data loss prevention tooling built for companies with an IT department, or a short post telling you not to paste sensitive information into ChatGPT. One is unbuyable at your size. The other leaves out the 2 things a founder needs to know: what counts as sensitive, and what to change on Monday.
 
@@ -51,7 +51,7 @@ There is a second benefit founders underrate. Company accounts mean you can see 
 
 Tier decides how the tool treats data. The second control decides what reaches the tool at all. This has to be simple enough to run in someone's head mid-task, because that is the only moment it gets used.
 
-3 classes is enough for almost every firm under 115 people.
+3 classes is enough for almost every firm under 20 people.
 
 **Open.** Material that is already public, or that you would not mind being public. Marketing copy, published content, general research questions, anything already on your own website. Goes anywhere, including free tools. No approval needed and no reason to slow anybody down.
 
@@ -89,7 +89,7 @@ The failure pattern here is ordinary, which is exactly what makes it hard to not
 
 A recruitment consultant pastes a candidate's full CV, salary history, and personal contact details into whatever tool is open, to rewrite the summary. A bookkeeper drops a client's management accounts in to get a plain-English explanation. An account manager feeds a signed contract in to draft a renewal email. Every one of those people is trying to do good work quickly. Every one of them has moved restricted data onto infrastructure the firm does not control, through an account the firm cannot see.
 
-The damage arrives later. It shows up when a client asks a direct question in a supplier review, or when a contract you signed 2 years ago turns out to name where their data may be processed, or when the person who used the personal account leaves and takes the login with them.
+The damage arrives later. It shows up when a client asks a direct question in a supplier review, or when a contract you signed 2 years ago turns out to name where their data may be processed, or when the person who used the personal account leaves and takes the login with them. What to read in those contracts before it gets that far is covered in [AI compliance and client data](/blog/ai-compliance-client-data).
 
 The cost is asymmetric for a small firm. A 2,000-person company absorbs one mishandled document. A 15-person consultancy whose entire product is trust does not have that cushion. The same asymmetry is why the unapproved tools problem covered in [shadow AI](/blog/shadow-ai) is worth solving early, before the more sophisticated controls.
 

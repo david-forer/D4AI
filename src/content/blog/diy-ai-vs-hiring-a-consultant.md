@@ -13,13 +13,13 @@ At some point, almost every business owner working with AI tools arrives at the 
 
 The answer depends on the work, your team, and how you value your time. There is no universal answer. Some founders build excellent systems on their own. Others spend months on fragile automations that their team ignores, then call a consultant to start over.
 
-The framework below is designed to help you assess your specific situation honestly before committing to either path.
+The framework below is designed to help you assess your specific situation clearly before committing to either path.
 
 ---
 
 ## What DIY AI Actually Requires
 
-No-code AI tools have made it genuinely possible for non-technical founders to build functional automations. Platforms like Zapier, Make, and others have lowered the barrier considerably. But there is still a real set of requirements for DIY to work.
+No-code AI tools have made it possible for non-technical founders to build functional automations. Platforms like Zapier, Make, and others have lowered the barrier considerably. But there is still a real set of requirements for DIY to work.
 
 **Your own time.** Building a workflow automation is not a thirty-minute task. A functional, tested, documented system for one business process might take fifteen to forty hours, depending on complexity. That time comes from somewhere, usually from your own schedule or the schedule of someone on your team.
 
@@ -111,4 +111,4 @@ A well-structured hybrid engagement leaves your team with a working system and t
 
 *Part of the [Working with an AI Consultant](/blog/working-with-an-ai-consultant) series.*
 
-*Related reading: [Are You Ready to Hire an AI Consultant?](/blog/are-you-ready-to-hire-an-ai-consultant) | [AI Consulting Cost for Small Business](/blog/ai-consulting-cost-for-small-business) | [How to Prepare for an AI Consultant](/blog/how-to-prepare-for-an-ai-consultant)*
+*Related reading: [Are You Ready to Hire an AI Consultant?](/blog/are-you-ready-to-hire-an-ai-consultant) | [AI Consulting Cost for Small Business](/blog/ai-consulting-cost-for-small-business) | [How to Prepare for an AI Consultant](/blog/how-to-prepare-for-an-ai-consultant) | [AI Consultant vs Agency](/blog/ai-consultant-vs-agency)*

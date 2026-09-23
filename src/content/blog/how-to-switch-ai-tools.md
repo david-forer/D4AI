@@ -13,7 +13,7 @@ The subscription price of an AI tool is easy to see. The cost of switching to a 
 
 Data migration. Integration rebuilds. Team retraining. The productivity dip while the new tool becomes familiar. The accumulated configuration in the old tool that needs to be recreated in the new one. Each of these has a real cost that organisations consistently underestimate when they decide to switch.
 
-None of this means you should stay on the wrong tool. But it does mean that switching decisions deserve the same rigor as initial adoption decisions, and that the migration process needs to be planned rather than improvised. This article covers how to make that decision honestly and execute the migration in a way that minimises the disruption.
+None of this means you should stay on the wrong tool. But it does mean that switching decisions deserve the same rigor as initial adoption decisions, and that the migration process needs to be planned rather than improvised. This article covers how to make that decision clearly and execute the migration in a way that minimises the disruption.
 
 ---
 
@@ -39,7 +39,7 @@ The new tool has features you might want someday. Switching now for capabilities
 
 **Sunk cost in the wrong direction:**
 
-Sometimes the honest answer is that the current tool was a poor choice and the migration cost is the price of that decision. When a tool is genuinely wrong for the operation and the cost of staying on it is higher than the cost of switching, switching is correct even if it is painful.
+Sometimes the honest answer is that the current tool was a poor choice and the migration cost is the price of that decision. When a tool is wrong for the operation and the cost of staying on it is higher than the cost of switching, switching is correct even if it is painful.
 
 ---
 
@@ -113,4 +113,4 @@ The evaluation framework in [this guide to evaluating AI tools](/blog/how-to-eva
 
 *Part of the [AI Tools and Tech Stack for Small Businesses](/blog/ai-tools-tech-stack-small-business) series.*
 
-*Related reading: [How to Evaluate AI Tools Before You Commit](/blog/how-to-evaluate-ai-tools) | [AI Tech Stack Audit](/blog/ai-tech-stack-audit) | [AI Tool Overload: Why More Tools Make Operations Worse](/blog/ai-tool-overload-small-business)*
+*Related reading: [How to Evaluate AI Tools Before You Commit](/blog/how-to-evaluate-ai-tools) | [AI Tech Stack Audit](/blog/ai-tech-stack-audit) | [AI Tool Overload: Why More Tools Make Operations Worse](/blog/ai-tool-overload-small-business) | [AI Vendor and Model Risk Is Really Concentration Risk](/blog/ai-vendor-and-model-risk)*

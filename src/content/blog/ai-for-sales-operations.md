@@ -65,7 +65,7 @@ A CRM your team actually uses consistently is the foundation everything else dep
 
 Defined sales stages with clear criteria are the second prerequisite. Not loose labels that mean different things to different people, but specific definitions: what makes a lead qualified, what moves it to proposal, what constitutes an active engagement. The automation can only route correctly if the stages are real.
 
-A documented qualification framework, what makes a prospect worth pursuing, gives the AI scoring layer something meaningful to work from. Without it, you're automating gut feel, which defeats the purpose.
+A documented qualification framework, what makes a prospect worth pursuing, gives the AI scoring layer something meaningful to work from. Without it, you're automating gut feel, which defeats the purpose. Building those criteria from your own won and lost deals is covered in [AI agents for lead qualification](/blog/ai-agents-for-lead-qualification).
 
 Cleaning this up before adding AI is not a detour. It's the work that makes everything else reliable.
 

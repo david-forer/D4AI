@@ -1,6 +1,6 @@
 ---
 title: "When to Use an AI Agent: 4 Thresholds a Workflow Must Clear"
-seoTitle: "When to Use an AI Agent – The 4 Thresholds a Single Workflow Has to Clear Before an Agent Earns Its Cost, the Jobs That Qualify in a Firm of 5 to 115 People, and the Near Misses That Waste Six Months – Forersight"
+seoTitle: "When to Use an AI Agent – The 4 Thresholds a Single Workflow Has to Clear Before an Agent Earns Its Cost, the Jobs That Qualify in a Firm of 5 to 20 People, and the Near Misses That Waste Six Months – Forersight"
 description: "When to use an AI agent is a workflow question. Here are the 4 thresholds a single job has to clear before an agent earns what it costs to run and monitor."
 pubDate: 2026-09-04T00:00:00Z
 tags: ["ai-tools"]
@@ -15,7 +15,7 @@ Deciding when to use an AI agent is a question about one specific workflow, and 
 
 A workflow that clears all 4 is worth an agent. A workflow that clears 3 usually costs more to run and supervise than it gives back, and the one it fails is almost always volume or reversibility.
 
-That framing matters because the common test in circulation is "does this work need judgment," and nearly every job in a service business needs some judgment. It qualifies everything, which qualifies nothing. The 4 thresholds are narrower on purpose. In a typical firm of 5 to 115 people, they leave 1 or 2 workflows standing. The wider question of what agents are and where they sit against other tools is covered in [AI agents for small businesses](/blog/ai-agents-for-small-businesses).
+That framing matters because the common test in circulation is "does this work need judgment," and nearly every job in a service business needs some judgment. It qualifies everything, which qualifies nothing. The 4 thresholds are narrower on purpose. In a typical firm of 5 to 20 people, they leave 1 or 2 workflows standing. The wider question of what agents are and where they sit against other tools is covered in [AI agents for small businesses](/blog/ai-agents-for-small-businesses).
 
 ---
 
@@ -23,7 +23,7 @@ That framing matters because the common test in circulation is "does this work n
 
 An agent costs money to build, money per run, and time to monitor. That last one gets left out of every business case and is the reason most small agent projects quietly stop being used.
 
-The working number is 20 instances a week, or 4 hours of staff time a week, whichever you can measure more honestly. Below that, a competent person handling it manually is cheaper than the build plus the ongoing checking, and will stay cheaper for longer than the project's payback assumption.
+The working number is 20 instances a week, or 4 hours of staff time a week, whichever you can measure more accurately. Below that, a competent person handling it manually is cheaper than the build plus the ongoing checking, and will stay cheaper for longer than the project's payback assumption.
 
 Count the real volume before anything else. Founders routinely estimate 40 inbound inquiries a week and find 11 when they actually count a month of them. An agent handling 11 cases a week saves perhaps 90 minutes and needs about the same amount of review time in its first quarter. The build was free entertainment.
 
@@ -49,7 +49,7 @@ Every agent action has a blast radius, and this threshold is about what happens 
 
 Sort the actions in the workflow into 3 groups. Reversible internal actions, like updating a record, creating a task, or adding a note. Reviewable external actions, where the agent drafts and a person approves before anything leaves the building. Irreversible actions, like sending a client message directly, moving money, filing something with a deadline, or deleting anything.
 
-An agent belongs in workflows made of the first 2 groups. It also belongs in workflows where an irreversible step exists but can be gated behind a human approval that takes under 10 seconds. A partner clicking approve on a drafted reply is a workable design. A partner reading a 4-paragraph agent rationale before every approval is not, and the approval becomes the new bottleneck within a fortnight.
+An agent belongs in workflows made of the first 2 groups. It also belongs in workflows where an irreversible step exists but can be gated behind a human approval that takes under 10 seconds. A partner clicking approve on a drafted reply is a workable design. A partner reading a 4-paragraph agent rationale before every approval is not, and the approval becomes the new bottleneck within a fortnight. How to keep an approval step real as volume grows is set out in [human in the loop AI review](/blog/human-in-the-loop-ai-review).
 
 Workflows where the valuable step is inherently irreversible and cannot be gated fail this threshold, and they fail it permanently rather than until the technology improves. Deciding what a system is allowed to do alone belongs on paper before the system exists, which is the position argued throughout [AI governance for small businesses](/blog/ai-governance-for-small-businesses).
 
@@ -67,7 +67,7 @@ This threshold is the one that fails quietly. The other 3 announce themselves in
 
 ---
 
-## Jobs that clear all 4 in a firm of 5 to 115 people
+## Jobs that clear all 4 in a firm of 5 to 20 people
 
 Three patterns come up repeatedly, and they share a shape.
 
@@ -113,7 +113,7 @@ Four steps, achievable inside a normal week without buying anything.
 
 **Wednesday, write the branches.** Take the survivors and write the if-then rules for each. Anything you finish in under 8 branches goes on the automation list and is probably a better project anyway.
 
-**Thursday, sort the actions.** For whatever is left, sort every action into reversible, reviewable, and irreversible, and check the data the agent would read. A workflow standing after Thursday is your agent candidate, and there is usually exactly 1.
+**Thursday, sort the actions.** For whatever is left, sort every action into reversible, reviewable, and irreversible, and check the data the agent would read. A workflow standing after Thursday is your agent candidate, and there is usually exactly 1. Turning that sorted list into written limits is covered in [AI agent guardrails](/blog/ai-agent-guardrails).
 
 ---
 
@@ -121,6 +121,6 @@ Four steps, achievable inside a normal week without buying anything.
 
 Knowing when to use an AI agent is a counting exercise before it is a technology decision. Volume, variation, reversibility, and data quality decide the answer, and they can all be checked in a week with a spreadsheet and 4 honest conversations.
 
-Run those checks and the field narrows fast. One workflow qualifies, you scope it tightly, you keep a person approving anything that leaves the building, and you review its decisions after the first 30 cases. That is a project a firm your size can finish and keep running.
+Run those checks and the field narrows fast. One workflow qualifies, you scope it tightly, you keep a person approving anything that leaves the building, and you review its decisions after the first 30 cases. That is a project a firm your size can finish and keep running. The 4-week rollout that gets it there is in [how to deploy an AI agent safely](/blog/how-to-deploy-an-ai-agent-safely).
 
 If you want a second opinion on whether a specific workflow in your business clears the 4 thresholds, you can [book a call](https://calendly.com/david-j-forer/30min) and we will count the volume and look at the actual data before naming a tool.

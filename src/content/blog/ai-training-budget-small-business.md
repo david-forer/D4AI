@@ -25,7 +25,7 @@ A complete AI training investment for a small business includes three components
 
 **Internal time costs.** The most significant budget line that most founders do not count explicitly. When team members spend time learning AI tools, practicing new workflows, and building prompting skills, that time has an opportunity cost. For a team of eight spending two hours per week on AI skill development for eight weeks, the internal time investment is roughly one hundred and thirty hours, which at average hourly costs represents a meaningful investment regardless of what the external training program costs.
 
-Budgeting for all three components together produces a more honest picture of the total investment and makes it easier to evaluate whether the expected return justifies it.
+Budgeting for all three components together produces a more honest picture of the total investment and makes it easier to evaluate whether the expected return justifies it. For the wider year-one number, including builds and the quarterly gates that release the money, see [what an AI budget for a small business should be](/blog/ai-budget-for-small-business).
 
 ---
 

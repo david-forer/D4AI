@@ -31,13 +31,13 @@ A 200-person company has an IT department that controls which tools get installe
 
 Governance for a small business is not about matching enterprise process. It is about closing the gap between what your team is already doing with AI and what your business can actually stand behind. Right now, for most firms, that gap is wide.
 
-The stakes are not abstract. Client data flows through these tools. Your reputation rides on the output. And in a service business, trust is the entire product. One mishandled confidential document does more damage to a fifteen-person consultancy than to a company of two thousand, because the fifteen-person firm has no brand cushion to absorb it.
+The stakes are not abstract. Client data flows through these tools. Your reputation rides on the output. And in a service business, trust is the entire product. One mishandled confidential document does more damage to a fifteen-person consultancy than to a company of two thousand, because the fifteen-person firm has no brand cushion to absorb it. In practice that means a short list of client promises you can keep, covered in [responsible AI for service firms](/blog/responsible-ai-service-firms).
 
 ---
 
 ## The Real Risks (And Which Ones Actually Apply to You)
 
-Governance conversations tend to drift toward worst-case scenarios that do not match the reality of a small firm. Here are the risks that genuinely apply at your stage, in rough order of how often they cause real damage. It is worth holding [both sides of the argument](/blog/ai-ethics-both-sides) while you read them, because the same capability that creates these risks is the one doing the useful work.
+Governance conversations tend to drift toward worst-case scenarios that do not match the reality of a small firm. Here are the risks that actually apply at your stage, in rough order of how often they cause real damage. It is worth holding [both sides of the argument](/blog/ai-ethics-both-sides) while you read them, because the same capability that creates these risks is the one doing the useful work.
 
 **Data exposure through everyday tool use.** This is the big one. It is not a hacker. It is a well-meaning account manager at a 14-person recruitment agency pasting a candidate's full CV, salary history, and personal details into a consumer AI tool to rewrite a summary. That data has now left your control, and depending on the tool's terms, it may be retained or used for training. The person was trying to do good work faster. The exposure was invisible to them.
 
@@ -47,9 +47,9 @@ Governance conversations tend to drift toward worst-case scenarios that do not m
 
 **Shadow AI sprawl.** This is the accumulation of unapproved tools across the team. Six people using six different AI products, each with its own data policy, none of them logged anywhere. You cannot govern what you cannot see, and shadow AI is the reason most small firms have no idea what their actual AI exposure is. We cover this pattern in depth in [the shadow AI problem](/blog/shadow-ai).
 
-**Vendor and model risk.** The tool your workflow depends on changes its pricing, its model, or its terms, or shuts down entirely. A firm that built a client reporting process on a single AI product with no fallback is one vendor decision away from a broken operation.
+**Vendor and model risk.** The tool your workflow depends on changes its pricing, its model, or its terms, or shuts down entirely. A firm that built a client reporting process on a single AI product with no fallback is one vendor decision away from a broken operation. How to price that dependency before you sign is set out in [AI vendor and model risk](/blog/ai-vendor-and-model-risk).
 
-**Regulatory and contractual exposure.** Depending on your industry and your clients, you may have contractual obligations about where data lives and how it is processed. A marketing agency handling data for a healthcare client, or a firm serving EU customers under data protection rules, can breach an agreement simply by routing that data through the wrong tool. Most small firms have never checked whether their AI use aligns with commitments they already signed.
+**Regulatory and contractual exposure.** Depending on your industry and your clients, you may have contractual obligations about where data lives and how it is processed. A marketing agency handling data for a healthcare client, or a firm serving EU customers under data protection rules, can breach an agreement simply by routing that data through the wrong tool. Most small firms have never checked whether their AI use aligns with commitments they already signed. The 4 clauses to read first are covered in [AI compliance and client data](/blog/ai-compliance-client-data).
 
 Not all of these will apply to you with equal weight. A solo-founder design studio has a different risk profile than a 40-person firm processing regulated client data. The point of governance is to decide, deliberately, which risks matter for your business and address those. Not to fear everything equally.
 
@@ -63,7 +63,7 @@ Governance for a small business comes down to six components. None of them requi
 
 Most AI policies fail because they are written to protect the company legally, not to guide the person doing the work. A dense three-page document gets skimmed once and ignored.
 
-What works is a single page that answers, in plain language, what your team can and cannot do. What data is never allowed in AI tools. Which tools are approved. When a human has to check the output. Who to ask when something is unclear. A 30-person creative agency does not need legal prose. It needs a designer to know, in the moment, whether pasting that client brief into a tool is fine or not.
+What works is a single page that answers, in plain language, what your team can and cannot do. What data is never allowed in AI tools. Which tools are approved. When a human has to check the output. Who to ask when something is unclear. A 30-person creative agency does not need legal prose. It needs a designer to know, in the moment, whether pasting that client brief into a tool is fine or not. A one-page version, written out clause by clause, is in [the AI acceptable use policy template](/blog/ai-acceptable-use-policy-template).
 
 The policy is different from training. Policy sets the boundaries. Training builds the skill to work well inside them. If you are treating these as the same thing, read [AI policy versus AI training](/blog/ai-policy-vs-ai-training), because conflating them is a common and costly mistake.
 
@@ -81,9 +81,9 @@ The point is not to say no to everything. It is to convert shadow AI into visibl
 
 ### 4. Human Review Checkpoints
 
-The rule here is straightforward. Any AI output that reaches a client, moves money, or makes a decision with consequences gets a human check before it goes out. This is not a lack of trust in the tools. It is an acknowledgment that AI fails quietly, and quiet failures are the ones that cause damage.
+The rule here is simple. Any AI output that reaches a client, moves money, or makes a decision with consequences gets a human check before it goes out. This is not a lack of trust in the tools. It is an acknowledgment that AI fails quietly, and quiet failures are the ones that cause damage.
 
-Design the checkpoint into the workflow, not as an afterthought. The person drafting an AI-assisted proposal for a prospective client knows a review step exists before it sends. The automation that generates invoices routes them to a human for approval above a certain value. Build the check into how the work moves, and it happens by default rather than by discipline.
+Design the checkpoint into the workflow, not as an afterthought. The person drafting an AI-assisted proposal for a prospective client knows a review step exists before it sends. The automation that generates invoices routes them to a human for approval above a certain value. Build the check into how the work moves, and it happens by default rather than by discipline. How to keep that check from turning into a rubber stamp is covered in [human in the loop AI review](/blog/human-in-the-loop-ai-review).
 
 ### 5. Access and Permissions
 

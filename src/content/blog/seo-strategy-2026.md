@@ -78,6 +78,6 @@ By focusing on these proven strategies, you can position your business for searc
 
 ---
 
-*Related reading: [AI Enabled SEO Operations](/blog/ai-enabled-seo-operations) · [Leveraging AI for SEO: A Practical Guide](/blog/leveraging-ai-for-seo)*
+*Related reading: [AI Enabled SEO Operations](/blog/ai-enabled-seo-operations) · [Leveraging AI for SEO: A Practical Guide](/blog/leveraging-ai-for-seo) · [SEO Reporting for Founders](/blog/seo-reporting-for-founders)*
 
 If you are ready to operationalize your SEO, the [SEO accelerator](/seo-accelerator) builds the operational layer.

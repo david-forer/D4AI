@@ -56,7 +56,7 @@ Build follows design. The implementation timeline depends on the complexity of t
 
 ### Phase 3: Adoption and Handoff (Weeks 10-14)
 
-The third phase is where engagements either stick or fall apart. The systems are running, but the team needs supported time with them before they become second nature. This phase involves active use with the consultant still available, iteration based on what the team encounters in real operation, and the gradual transfer of ownership from consultant to client.
+The third phase is where engagements either stick or fall apart. The systems are running, but the team needs supported time with them before they become second nature. This phase involves active use with the consultant still available, iteration based on what the team encounters in real operation, and the gradual transfer of ownership from consultant to client. If an engagement has already fallen apart, [what to do when an AI project fails](/blog/what-to-do-when-an-ai-project-fails) walks through the salvage, restart or stop decision.
 
 By the end of this phase, the systems should be stable, the team should know how to use and troubleshoot them, and the documentation should be thorough enough for someone new to learn from without the consultant present. For a realistic picture of what the first three months look like from the client side, [what to expect in the first 90 days of an AI engagement](/blog/what-to-expect-first-90-days-ai-engagement) covers the common friction points and how to navigate them.
 
@@ -128,9 +128,9 @@ A more detailed look at what outcomes are realistic across different engagement 
 
 The single most important signal is whether they start with your problem or their tools. A consultant who opens every conversation by describing what they build is telling you something. One who opens by asking how your business operates is showing you how they think.
 
-Look for demonstrated experience with businesses at your scale and operational complexity. Enterprise AI implementation and small business operational design are different disciplines. The skills that matter in each context are not the same, and past work in large organisations does not reliably transfer to a fifteen-person service firm.
+Look for demonstrated experience with businesses at your scale and operational complexity. Enterprise AI implementation and small business operational design are different disciplines. The skills that matter in each context are not the same, and past work in large organisations does not reliably transfer to a fifteen-person service firm. If you are still deciding what kind of provider to hire at all, [AI consultant vs agency](/blog/ai-consultant-vs-agency) compares the 4 options against how documented your processes are.
 
-Ask directly what you will own at the end of the engagement and who will maintain it. The answer should involve your internal team owning the systems, documented well enough to operate without the consultant. If the answer implies ongoing reliance, the incentives are misaligned.
+Ask directly what you will own at the end of the engagement and who will maintain it. The answer should involve your internal team owning the systems, documented well enough to operate without the consultant. If the answer implies ongoing reliance, the incentives are misaligned. That is one of the 6 disqualifying [red flags when hiring an AI consultant](/blog/red-flags-when-hiring-an-ai-consultant).
 
 A detailed look at evaluation criteria is in [this guide to choosing an AI consultant](/blog/how-to-choose-an-ai-consultant), and the specific questions to ask before committing are in [this article on what to ask before hiring](/blog/questions-to-ask-before-hiring-an-ai-consultant).
 

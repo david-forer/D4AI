@@ -17,7 +17,7 @@ Here is the plain version. An AI agent is a system that can take a goal, decide 
 
 A traditional automation follows a fixed path. When this happens, do that. A chatbot answers questions in a conversation. An agent is given an objective, like "process this incoming client inquiry," and works out the sequence itself: read the message, check the CRM, draft a response, flag anything unusual for a human. It makes decisions rather than following a script.
 
-This guide covers what agents genuinely are, where they earn their place in a firm running between five and fifty people, where they are not ready yet, and how to deploy one without creating a mess you have to clean up later.
+This guide covers what agents actually are, where they earn their place in a firm running between five and fifty people, where they are not ready yet, and how to deploy one without creating a mess you have to clean up later.
 
 ---
 
@@ -41,13 +41,13 @@ Agents are worth the added complexity in a specific set of situations: high-volu
 
 **Inbound inquiry triage and drafting.** A 30-person marketing agency receives dozens of inbound messages a week across a contact form, a shared inbox, and LinkedIn. Each one is a little different. An agent can read each inquiry, work out what it is about, check whether the sender is an existing client, draft an appropriate first response, and route it to the right person with a suggested reply ready to send. A human still approves. The agent removes the sorting and drafting load that used to eat a partner's mornings.
 
-**Lead qualification and research.** Before a sales call, someone usually spends twenty minutes pulling together background on the prospect. An agent can do that research across public sources, summarize what matters, and have a brief waiting before the call. The task varies every time, which is exactly why a fixed automation struggles and an agent fits.
+**Lead qualification and research.** Before a sales call, someone usually spends twenty minutes pulling together background on the prospect. An agent can do that research across public sources, summarize what matters, and have a brief waiting before the call. The task varies every time, which is exactly why a fixed automation struggles and an agent fits. What the agent should output, and why a bare score gets ignored, is covered in [AI agents for lead qualification](/blog/ai-agents-for-lead-qualification).
 
-**Tier-one customer support.** For a firm handling a steady stream of support requests, an agent can resolve the common, well-documented cases end to end and escalate the genuinely tricky ones to a person. The key is the escalation judgment, deciding when it is out of its depth, which is agent behavior, not automation.
+**Tier-one customer support.** For a firm handling a steady stream of support requests, an agent can resolve the common, well-documented cases end to end and escalate the tricky ones to a person. The key is the escalation judgment, deciding when it is out of its depth, which is agent behavior, not automation. The ticket volume that justifies one and a rollout customers do not notice are covered in [AI agents for customer support](/blog/ai-agents-for-customer-support).
 
 **Operations and coordination.** An agent can monitor a project management tool, notice when a milestone is overdue, check what is blocking it, draft a chase message to the responsible person, and update the status. This is the kind of connective coordination work that usually falls to a founder because there is no operations manager to hold it, a pattern we cover across [AI operations for small businesses](/blog/ai-operations-for-small-businesses).
 
-The common thread is judgment under variation. If the work is identical every time, build an automation. If it needs a human every single time, an agent will not help you. It is the middle ground, high volume, meaningful variation, judgment that can be bounded, where agents earn their cost.
+The common thread is judgment under variation. If the work is identical every time, build an automation. If it needs a human every single time, an agent will not help you. It is the middle ground, high volume, meaningful variation, judgment that can be bounded, where agents earn their cost. The 7 jobs that hold up in real firms, and the 4 that get sold and fail, are set out in [AI agent use cases for small business](/blog/ai-agent-use-cases-small-business).
 
 ---
 
@@ -73,9 +73,9 @@ Getting an agent into your business without creating new problems comes down to 
 
 **Keep a human in the loop where it counts.** For anything that reaches a client, moves money, or is hard to reverse, the agent proposes and a human approves. Over time, as you build confidence in a specific narrow task, you can widen what it does on its own. You earn autonomy through demonstrated reliability, not by granting it up front.
 
-**Define the guardrails explicitly.** Decide, in advance, what the agent can do alone, what it must ask about, and what it is never allowed to touch. These boundaries are the difference between a useful assistant and an unaccountable one.
+**Define the guardrails explicitly.** Decide, in advance, what the agent can do alone, what it must ask about, and what it is never allowed to touch. These boundaries are the difference between a useful assistant and an unaccountable one. How to write that permission list without a technical team is set out in [AI agent guardrails](/blog/ai-agent-guardrails).
 
-**Test it against real cases before it goes live.** Run the agent against a set of real past inquiries or tickets and check its decisions. You are looking for how it behaves at the edges, the unusual case, the ambiguous one, because that is where it will either escalate sensibly or act wrongly.
+**Test it against real cases before it goes live.** Run the agent against a set of real past inquiries or tickets and check its decisions. You are looking for how it behaves at the edges, the unusual case, the ambiguous one, because that is where it will either escalate sensibly or act wrongly. The week-by-week version of this is in [how to deploy an AI agent safely](/blog/how-to-deploy-an-ai-agent-safely).
 
 **Build it on a foundation that can support it.** An agent reasons from your data and acts through your tools. If those are connected and reliable, the agent has something to work with. If they are not, fix that first. The integrated systems that make agents viable are the subject of the [AI-powered back office design guide](/blog/ai-powered-back-office-design-guide).
 
@@ -83,7 +83,7 @@ Getting an agent into your business without creating new problems comes down to 
 
 ## Build, Buy, or Wait
 
-For most small firms, the honest answer today is a mix. A good deal of what gets marketed as an "AI agent" is a well-scoped automation with a friendly name, and buying or building that is often the right move now. True autonomous agents that act across your business with minimal supervision are advancing quickly, but deploying them well still demands the foundations most firms have not yet built.
+For most small firms, the honest answer today is a mix. A good deal of what gets marketed as an "AI agent" is a well-scoped automation with a friendly name, and buying or building that is often the right move now. True autonomous agents that act across your business with minimal supervision are advancing quickly, but deploying them well still demands the foundations most firms have not yet built. The one question that settles the sourcing choice is covered in [build vs buy AI agents](/blog/build-vs-buy-ai-agents).
 
 The sensible path is a sequence, not a leap. Get your operations documented and your systems connected. Add automation where the work is repetitive and rules-based. Then introduce agents into the specific high-variation workflows where their judgment earns its cost, one narrow job at a time, with a human watching until each one proves itself.
 
@@ -93,8 +93,8 @@ Firms that skip the first two steps and chase agents first do not get ahead. The
 
 ## The Bottom Line for Founders
 
-AI agents are real, and they are genuinely more capable than the automations that came before. They are also earlier, riskier, and more dependent on foundations than the hype admits. For a business running between five and fifty people, the right question is not "how do we get AI agents." It is "which specific job in our business needs judgment under variation, and is our foundation solid enough to let an agent do it safely."
+AI agents are real, and they are more capable than the automations that came before. They are also earlier, riskier, and more dependent on foundations than the hype admits. For a business running between five and fifty people, the right question is not "how do we get AI agents." It is "which specific job in our business needs judgment under variation, and is our foundation solid enough to let an agent do it safely."
 
-Answer that honestly and agents become a precise tool for a defined problem, rather than an expensive experiment chasing a trend.
+Answer that with real numbers and agents become a precise tool for a defined problem, rather than an expensive experiment chasing a trend.
 
 If you want to work out whether an agent is the right fit for a specific workflow in your business, or whether a simpler automation would serve you better, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at the actual work before recommending the tool.
