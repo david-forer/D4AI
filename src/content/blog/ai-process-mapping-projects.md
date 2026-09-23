@@ -10,7 +10,7 @@ articleType: "cluster"
 
 AI process mapping means using AI to draft, question, and analyze a map of how work really happens, then having the team check it. Do it before you automate anything.
 
-## Key Takeaways
+## The short version
 
 - Map a process before you automate it. Automating an unmapped process just runs the same problems faster.
 - AI speeds up the first draft by turning call transcripts, Slack threads, email chains, and task lists into a rough step sequence.
@@ -245,7 +245,7 @@ If you are running a small business and you are considering AI adoption, start h
 
 But do not skip the map. That is where the leverage actually is.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### What is AI process mapping?
 

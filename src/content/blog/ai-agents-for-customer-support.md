@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most pitches for AI agents for customer support sell answers. This page is for the founder who needs to know when the agent should stop answering and hand the ticket to a person.
 
-## Key Takeaways
+## The short version
 
 - The capability worth paying for in an AI support agent is the escalation decision, the agent knowing when to hand a ticket to a person before it replies.
 - A support agent is justified at roughly 50 tickets a week, with at least half falling into repeatable, documented cases.
@@ -136,7 +136,7 @@ Done that way it gives your support person their week back and your customers fa
 
 If you want a view on whether your ticket mix suits an agent yet, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at last month's real tickets before naming a tool.
 
-## Frequently Asked Questions
+## Questions founders ask
 
 ### Can an AI agent handle customer support for a small business?
 

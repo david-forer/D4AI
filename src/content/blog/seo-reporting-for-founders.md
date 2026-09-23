@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most SEO reports are built to show activity. A founder needs one built to support a decision, and it fits on 1 page.
 
-## Key Takeaways
+## What to know first
 
 - A useful SEO report for a founder is 1 page with 5 numbers: impressions, clicks, average position on 10 target pages, organic inquiries, and what shipped that month.
 - Domain authority, 200-keyword ranking tables, bounce rate, total site traffic, backlink counts, and time on page support no decision and can be cut from the report.
@@ -117,7 +117,7 @@ If you are about to hire someone to run this, the reporting format is worth agre
 
 Five numbers, 1 page, the same page every month, with a decision at the bottom. That is the whole format. It fits inside the [SEO operating system](/blog/ai-enabled-seo-operations) as its feedback loop, and a program without it is running on hope regardless of how thick the deck is.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### What should be in a monthly SEO report?
 

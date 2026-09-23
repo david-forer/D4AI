@@ -10,7 +10,7 @@ articleType: "cluster"
 
 An AI skills matrix shows who on your team can do what with AI, how well, and where training should go first. Here is how to build one for a small team.
 
-## Key Takeaways
+## Key takeaways
 
 - An AI skills matrix maps each team member's current proficiency, target proficiency, gap, and last assessment date across the AI skill areas their work needs.
 - A four-level scale is enough: no experience, basic awareness, functional use, and confident independent use.
@@ -132,7 +132,7 @@ It shows which team members are developing AI capability faster than others, mak
 
 The matrix is not the goal. The goal is a team that uses AI effectively as part of how work gets done. The matrix is the instrument that tells you where you are and what you need to do next.
 
-## Frequently Asked Questions
+## Common questions
 
 ### How do you start building an AI team skills matrix?
 

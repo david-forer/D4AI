@@ -10,7 +10,7 @@ articleType: "cluster"
 
 An AI training gap analysis shows where each person on your team stands against where their role needs them to be. Run it before you design any training.
 
-## Key Takeaways
+## The short answer
 
 - An AI training gap analysis measures the distance between each person's current AI skills and the proficiency their role requires, and produces a prioritized list of training needs.
 - Define the target state for each role first. Without it you can only describe current behavior, not a gap.
@@ -143,7 +143,7 @@ Businesses that skip this step invest in training that does not address the real
 
 Start with the analysis. Everything else gets easier when you know exactly where you are and where you need to go.
 
-## Frequently Asked Questions
+## Questions that come up often
 
 ### What is an AI training gap analysis?
 

@@ -11,7 +11,7 @@ articleType: "cluster"
 
 Vendors sell AI agents and chatbots under the same vocabulary. Here is the real difference, and how to tell which one a job in your business needs.
 
-## Key Takeaways
+## In brief
 
 - A chatbot responds to a person and ends the exchange with an answer. An AI agent takes a goal, uses tools like your inbox and CRM, and works until the job is done.
 - If the constraint is people not getting answers fast enough, a chatbot fixes it. If work sits in a queue waiting for someone to pick it up, only an agent moves it.
@@ -118,7 +118,7 @@ Most firms find one Job B, sometimes two. That is the honest yield, and it is en
 
 ---
 
-## Frequently Asked Questions
+## Questions that come up often
 
 ### What is the difference between an AI agent and a chatbot?
 

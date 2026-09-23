@@ -11,7 +11,7 @@ articleType: "cluster"
 
 When a small team stops using AI, "resistance to change" is rarely the real reason. The fix depends on which barrier you are actually facing.
 
-## Key Takeaways
+## Key takeaways
 
 - AI adoption barriers in small businesses fall into four groups: people, process, technical, and leadership. Each one needs a different fix.
 - Most people barriers are fear of looking less capable, distrust after a bad output, unclear expectations, or the slow early phase where AI feels like extra work.
@@ -120,7 +120,7 @@ Designating one person as the internal owner of AI adoption, with the mandate to
 
 This is the highest-leverage action available to a small business that wants to improve AI adoption. Not a new tool, not a more expensive training program, not a better vendor. An internal owner with clear accountability.
 
-## Frequently Asked Questions
+## Common questions
 
 ### What are the biggest barriers to AI adoption in a small business?
 

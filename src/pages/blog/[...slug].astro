@@ -247,4 +247,79 @@ const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
       margin-right: auto;
     }
   }
+
+  /* Summary box. The heading text rotates per post (geo-this/vary_headings.py),
+     so match every variant by the id Astro generates from it. Keep this list in
+     sync with SUMMARY in that script. The heading becomes a small label and the
+     list below it sits in the same box, so readers can tell it apart from the
+     article that follows. */
+  .prose h2:is(#key-takeaways, #the-short-version, #what-to-know-first, #the-short-answer, #in-brief) {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #1e40af;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-bottom: 0;
+    border-radius: 0.75rem 0.75rem 0 0;
+    padding: 1.1rem 1.5rem 0.4rem;
+    margin: 1.5rem 0 0 !important;
+  }
+
+  .prose h2:is(#key-takeaways, #the-short-version, #what-to-know-first, #the-short-answer, #in-brief) + ul {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-top: 0;
+    border-radius: 0 0 0.75rem 0.75rem;
+    margin: 0 0 2rem;
+    padding: 0.4rem 1.5rem 1rem 2.75rem;
+  }
+
+  /* Tables. No typography plugin is loaded, so markdown tables need real styles. */
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0 2rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    border: 1px solid #e5e7eb;
+  }
+
+  .prose thead th {
+    background: #1d4ed8;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    vertical-align: bottom;
+  }
+
+  .prose tbody td {
+    padding: 0.75rem 1rem;
+    border-top: 1px solid #e5e7eb;
+    vertical-align: top;
+  }
+
+  .prose tbody tr:nth-child(even) td {
+    background: #f9fafb;
+  }
+
+  .prose tbody td:first-child {
+    font-weight: 600;
+    color: #111827;
+  }
+
+  /* Narrow screens: let a wide table scroll sideways instead of crushing columns. */
+  @media (max-width: 767px) {
+    .prose table {
+      display: block;
+      overflow-x: auto;
+      white-space: normal;
+    }
+    .prose thead th,
+    .prose tbody td {
+      min-width: 9rem;
+    }
+  }
 </style>

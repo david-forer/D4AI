@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Rolling AI training out to the whole team at once is a bet. A short pilot turns it into a decision you can back with evidence.
 
-## Key Takeaways
+## In brief
 
 - An AI training pilot is a time-bounded test with a small group, on real work, with success metrics written down before it starts.
 - The right scope is one workflow, one role type, and two to four participants, run for four to six weeks.
@@ -139,7 +139,7 @@ The rollout is faster than the pilot because the variables are no longer unknown
 
 This is why organizations that run structured pilots before broad rollouts consistently see better adoption outcomes than those that skip straight to full-team training. The pilot is not overhead. It is the investment that makes everything that follows more efficient.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### What is an AI pilot program for a business?
 

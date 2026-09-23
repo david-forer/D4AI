@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most guardrail advice assumes an engineering team. This page is for the founder who has to decide what an agent may do before it runs.
 
-## Key Takeaways
+## Key takeaways
 
 - AI agent guardrails for a small business are 4 written limits: what the agent may touch, what it may do alone, what it does when unsure, and what gets recorded.
 - Every action an agent can take belongs in 1 of 3 groups: alone, with approval, or never.
@@ -142,7 +142,7 @@ Write them before the agent runs, because writing them afterwards means writing 
 
 If you want a second opinion on the permission list for an agent you are about to run, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at the actual actions before anything goes live.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### What are guardrails for AI agents?
 

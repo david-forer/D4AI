@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most growing businesses have a dashboard and a folder of SOPs, and still feel like they are guessing. The problem is that the two were never connected.
 
-## Key Takeaways
+## In brief
 
 - Dashboards and SOPs fail when they are built separately, by different people, for different purposes.
 - Dashboards mislead when vanity metrics dominate, lagging indicators crowd out leading ones, context is missing, and no number points to an action.
@@ -137,7 +137,7 @@ The goal is not to have more metrics or more documentation. The goal is to creat
 
 That is operational clarity. Everything else is theater.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### What should an SOP dashboard show?
 

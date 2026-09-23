@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most AI strategy advice is written for companies with a finance team. This page is for the founder who has 90 minutes and needs a decision.
 
-## Key Takeaways
+## In brief
 
 - A one-page AI strategy for a small business has 6 fields: the problem, this quarter's 1 system, what you are not doing, the budget, the owner, and the number that proves it worked.
 - A firm with 5 to 20 staff can run 1 AI project at a time, so 1 page is enough to describe the strategy.
@@ -120,7 +120,7 @@ Then rewrite the page. Same 6 fields, new quarter, and keep the old version in t
 
 The page is the top layer of a longer sequence, and the fuller version of the framework it compresses sits in [AI strategy for small businesses](/blog/ai-strategy-for-small-businesses). Once the page exists, the execution detail belongs in [an AI roadmap](/blog/ai-roadmap-small-business), and the page stays 1 page.
 
-## Frequently Asked Questions
+## Questions founders ask
 
 ### How long should an AI strategy be for a small business?
 

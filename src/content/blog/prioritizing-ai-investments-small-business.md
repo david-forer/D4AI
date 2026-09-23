@@ -10,7 +10,7 @@ articleType: "cluster"
 
 A small business can fund a few AI projects, not all of them. This is how to decide which one goes first.
 
-## Key Takeaways
+## The short version
 
 - Prioritize AI investments on three dimensions: impact, readiness, and cost. The best first project is high-impact, high-readiness, and low-cost.
 - Score each candidate from one to five on each dimension. A project that scores 4, 4, and 4 is a strong candidate to start now.
@@ -111,7 +111,7 @@ This is harder than it sounds because the impulse to do multiple things at once 
 
 One project, fully adopted, well-documented, and producing measurable results, is the prerequisite for the next one.
 
-## Frequently Asked Questions
+## Questions that come up often
 
 ### How do you prioritize AI investments in a small business?
 

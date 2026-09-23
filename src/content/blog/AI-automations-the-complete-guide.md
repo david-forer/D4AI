@@ -10,7 +10,7 @@ articleType: "cluster"
 
 AI automation is workflow automation that can read messy inputs and make judgment calls. This guide explains how it works, which tools fit which size of business, and how to implement it without wasting a quarter.
 
-## Key Takeaways
+## The short version
 
 - AI automation combines traditional workflow automation with artificial intelligence, so it can interpret unstructured data, make decisions based on patterns, and improve over time.
 - Traditional automation (RPA) suits repetitive tasks with consistent inputs. AI automation earns its cost when inputs vary or decisions need judgment.
@@ -240,7 +240,7 @@ Latency matters for time-sensitive processes. If an automated workflow depends o
 
 Hybrid integration platforms help manage this complexity by providing consistent connectivity across cloud and on-premise environments. These tools handle the technical details of synchronization while presenting a unified interface to automation builders.
 
-## Frequently Asked Questions
+## Common questions
 
 ### What is artificial intelligence automation?
 

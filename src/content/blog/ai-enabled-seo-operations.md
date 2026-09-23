@@ -12,7 +12,7 @@ articleType: "pillar"
 
 Most small team SEO programs stall within six months. AI-enabled SEO operations fix that with six layers that keep the program running, and this guide shows where AI fits in each.
 
-## Key Takeaways
+## Key takeaways
 
 - Most small team SEO programs fail because they never had a system, not because the strategy was wrong.
 - An SEO operating system has six layers: strategic, research, planning, production, optimization, and measurement. Skip one and the layers below it eventually break down.
@@ -206,7 +206,7 @@ If you are running SEO without a system right now, the path forward is not to ad
 
 The firms that treat SEO as operations, not marketing, are the ones whose programs are still running and still growing three years from now.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### Does AI make SEO easier for a small team?
 

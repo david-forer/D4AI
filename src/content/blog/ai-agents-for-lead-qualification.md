@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most lead scoring tools hand the sales team a number. This page is for the founder who wants an agent the team will still be using in month 3.
 
-## Key Takeaways
+## What to know first
 
 - AI agents for lead qualification get switched off when they output a score with no reasoning, because a salesperson cannot argue with a number, so they discount it.
 - The agent should produce 4 fields: what the lead appears to need, the evidence, what is missing, and a recommended next action.
@@ -134,7 +134,7 @@ Done that way, this is one of the safest agents to run, because nothing it produ
 
 If you want a view on whether your inbound flow has the volume and variation to justify one, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at last month's real leads first.
 
-## Frequently Asked Questions
+## Questions founders ask
 
 ### Can AI qualify leads for a small business?
 

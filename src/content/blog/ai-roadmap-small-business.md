@@ -10,7 +10,7 @@ articleType: "cluster"
 
 An AI roadmap tells a small business which problems to solve with AI and in what order. Here is how to build one in five steps and keep it useful.
 
-## Key Takeaways
+## The short version
 
 - An AI roadmap for a small business is a sequenced plan that answers two questions: which problems you are addressing with AI, and in what order.
 - Most roadmaps fail because they are built around tools instead of problems, try to do too much, or never get revisited.
@@ -120,7 +120,7 @@ When something significant changes in the business, a major new client, a team c
 
 The goal is not to stick to the roadmap. The goal is to make consistent progress on the right problems. The roadmap is the tool that keeps you on track toward that goal, not the goal itself.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### What should an AI roadmap for a small business include?
 

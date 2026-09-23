@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most firms add a human approval step to an AI system and assume the job is done. This page is about keeping that step real once the queue gets busy.
 
-## Key Takeaways
+## The short version
 
 - Human in the loop AI review survives only while approving an item is faster than doing the work, and past that point people approve without reading.
 - If a single AI approval takes a person more than about 10 seconds, the item is too large, the wrong thing is being shown, or the job should not be gated at all.
@@ -156,7 +156,7 @@ If you want a view on whether your approval step is a control or a queue, you ca
 
 ---
 
-## Frequently Asked Questions
+## Common questions
 
 ### What does human in the loop mean for AI in a small business?
 

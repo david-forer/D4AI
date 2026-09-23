@@ -11,7 +11,7 @@ articleType: "pillar"
 
 Most small firms that automate end up with more tools and the same problems. This guide covers how to design the architecture first so the automation pays back.
 
-## Key Takeaways
+## In brief
 
 - Most small service firms do not have an automation problem. They have an architecture problem, and it decides whether automation compounds in value or turns into technical debt.
 - Automation maturity runs across five levels, from manual chaos to modular automation architecture, and most firms with ten to twenty people sit at level two, with tools in place but no integration.
@@ -214,7 +214,7 @@ Building the architecture is the harder path in month one. It is the much easier
 
 If you are not sure where your firm sits on the automation maturity model, that is the right place to start. An honest assessment of your current state takes less time than you expect and reveals more than most firms anticipate. What you find will tell you exactly where to focus first.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### What is automation architecture?
 

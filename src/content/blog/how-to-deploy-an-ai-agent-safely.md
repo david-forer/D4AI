@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most agent launches are a switch flipped on a Friday. This page is for the founder who wants a rollout where the surprises happen inside the building.
 
-## Key Takeaways
+## The short answer
 
 - To deploy an AI agent safely, run it against real work in shadow mode for 2 weeks before it touches anything.
 - Three things must exist first: a one-sentence job, a written permission list, and a named owner with time to review it weekly.
@@ -145,7 +145,7 @@ The sequence is deliberately slow at the start because that is where the discove
 
 If you want a second opinion on a rollout plan before you switch anything on, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at the actual workflow and the real cases it will meet.
 
-## Frequently Asked Questions
+## Questions that come up often
 
 ### How long does it take to deploy an AI agent safely?
 

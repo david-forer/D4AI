@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most small firms ask how many posts they need and get told to publish more. The better answer starts with what those posts cover.
 
-## Key Takeaways
+## The short answer
 
 - A firm with 5 to 20 staff and no search presence needs 20 to 30 posts on one subject, published within 6 months, to see results.
 - The first measurable movement usually shows up around month 4, and almost never before month 3.
@@ -111,7 +111,7 @@ Movement means continue to month 12 and expect results. No movement after 16 com
 
 20 to 30 posts on one subject in 6 months, checked at month 2, month 4 and month 12. That is the whole answer. The part that decides whether it works is choosing a subject narrow enough that 25 posts covers it, and then building the production system that gets those 25 posts published without depending on one person having a good month. The system is covered in [AI-enabled SEO operations](/blog/ai-enabled-seo-operations), and it matters more than the writing does.
 
-## Frequently Asked Questions
+## Common questions
 
 ### How many blog posts do I need to rank on Google?
 

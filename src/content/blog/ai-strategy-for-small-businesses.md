@@ -11,7 +11,7 @@ articleType: "pillar"
 
 A small business AI strategy should decide what to fix before anyone buys a tool. This framework is built for firms without a technical team.
 
-## Key Takeaways
+## In brief
 
 - An AI strategy framework for a small business has four steps in order: define the business constraint, map the processes that touch it, match AI capability to the process gap, and sequence implementation by return and risk.
 - An AI strategy is a decision framework, not a list of tools. It starts with the business outcome and works backward to the technology.
@@ -184,7 +184,7 @@ The practical starting point is a structured assessment of current operations: w
 
 Building an initial strategy around those specific areas, measuring the results, and expanding from there is a more reliable path than trying to build a comprehensive AI infrastructure from scratch. To get the whole thing onto a single sheet you can pin above a desk, use [the one-page AI strategy](/blog/one-page-ai-strategy), which takes about 90 minutes to write.
 
-## Frequently Asked Questions
+## Questions that come up often
 
 ### What is a good AI strategy framework for a small business?
 

@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Schema markup is structured data that tells search engines what your content means. This guide covers the types of schema that pay off in SEO and how to implement them.
 
-## Key Takeaways
+## Key takeaways
 
 - Schema markup is structured data that tells search engines what your content means, not just what it says, and Google uses it to generate rich results.
 - The highest-value types of schema for SEO are FAQPage, Article and BlogPosting, HowTo, BreadcrumbList, SoftwareApplication, WebSite with SearchAction, Person, and Organization.
@@ -171,7 +171,7 @@ As your implementation matures, expand to supporting schema like BreadcrumbList,
 
 When done correctly, schema markup becomes an invisible layer that makes your content easier to find, easier to understand, and more likely to be clicked.
 
-## Frequently Asked Questions
+## Questions that come up often
 
 ### What are the main types of schema in SEO?
 

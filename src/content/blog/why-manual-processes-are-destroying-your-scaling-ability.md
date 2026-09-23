@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Manual work feels normal until you try to grow. Then it becomes the ceiling on how far the business can go.
 
-## Key Takeaways
+## The short version
 
 - Manual processes scale linearly. Every extra unit of output needs another hour, another person, or another repetition.
 - Businesses without automation infrastructure typically spend 20 to 40 percent of total team time on predictable, repeatable tasks.
@@ -123,7 +123,7 @@ The compound return on systematic automation is significant. Businesses that hav
 
 The gap between the businesses that invest in this and the ones that do not grows wider every year. Manual processes are not just destroying your scaling ability today. The longer they run, the more of your future capacity they consume before it is ever deployed.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### Why can't manual processes scale in a service business?
 

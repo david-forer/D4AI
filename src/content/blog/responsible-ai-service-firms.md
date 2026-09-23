@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most responsible AI writing is built for companies that train models. This page is for the service firm that uses other people's tools on client work and has to keep its word.
 
-## Key Takeaways
+## In brief
 
 - For a small service firm, responsible AI means commitments to clients that can still be kept on a busy day months later, not ethics boards or bias audits.
 - Four responsible AI promises are worth making to clients: you know where client material goes, a named person is responsible for anything delivered, you report problems within a working day, and you do not use client material to train anything.
@@ -129,7 +129,7 @@ If you want a read on which promises your firm can actually keep with clients to
 
 ---
 
-## Frequently Asked Questions
+## Questions that come up often
 
 ### What does responsible AI mean for a small service business?
 

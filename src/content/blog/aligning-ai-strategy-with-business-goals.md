@@ -10,7 +10,7 @@ articleType: "cluster"
 
 An AI tool can work perfectly and still do nothing for the business. Alignment is what ties each investment to a goal you can name and measure.
 
-## Key Takeaways
+## The short answer
 
 - An aligned AI strategy connects every significant AI investment to a specific business objective you can name, explain, and measure.
 - The goals that give AI investment the clearest rationale are revenue growth, margin improvement, client experience, and scalability, because each has an operational constraint underneath it.
@@ -113,7 +113,7 @@ That clarity is rare. Most businesses with active AI tools cannot produce this d
 
 Building that clarity is the core of AI strategy. It is less exciting than implementing new tools, but it is what makes the tools worth having.
 
-## Frequently Asked Questions
+## Common questions
 
 ### What does AI business alignment mean?
 

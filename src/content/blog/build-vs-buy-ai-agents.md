@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most build vs buy advice starts with the price. This page is for the founder who wants to make the call they will not regret in 18 months.
 
-## Key Takeaways
+## What to know first
 
 - For AI agents, buy unless the workflow is the thing clients pay you for, and build only when the process is your differentiator.
 - Cost is the wrong deciding factor, because realistic 3-year numbers for a single well-scoped agent usually land in the same range for both routes.
@@ -128,7 +128,7 @@ For most firms your size the honest sequence is to buy or configure first, run i
 
 If you want a view on whether a specific workflow is a differentiator or just support work, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at the actual process before pricing anything.
 
-## Frequently Asked Questions
+## Common questions
 
 ### Should a small business build or buy an AI agent?
 

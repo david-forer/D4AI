@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most AI policies are written for companies with a compliance officer. This one is for the founder who needs a page the team will remember mid-task.
 
-## Key Takeaways
+## What to know first
 
 - A small firm's AI acceptable use policy needs 6 clauses on one page: where AI may be used, which tools and accounts, what may never go in, who owns the output, when to tell a client, and how to report a problem.
 - Before writing the policy, decide which accounts the team may use and write down 4 real examples of what counts as client data in your firm.
@@ -151,7 +151,7 @@ If you want a read on whether your version covers the way your firm actually han
 
 ---
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### What should an AI acceptable use policy include for a small business?
 

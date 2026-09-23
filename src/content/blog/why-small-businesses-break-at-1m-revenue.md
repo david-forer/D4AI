@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Plenty of businesses stall right after they cross $1M in revenue. The cause is usually the operation underneath, not the team or the market.
 
-## Key Takeaways
+## In brief
 
 - Small businesses break at $1M because the informal systems that got them there cannot carry the extra volume.
 - Five things usually break: the founder becomes the operating system, undocumented processes hit their limit, tool sprawl adds overhead, tribal knowledge becomes a liability, and financial visibility falls behind.
@@ -122,7 +122,7 @@ The operational edge compounds. A business with clean systems and intelligent au
 
 The $1M break is a signal. The question is whether you read it early or late.
 
-## Frequently Asked Questions
+## Common questions
 
 ### Why do small businesses struggle after reaching $1M in revenue?
 

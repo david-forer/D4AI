@@ -11,7 +11,7 @@ articleType: "pillar"
 
 Most small business teams never get past trying AI now and then. This guide explains why adoption stalls and the four-phase process that gets a team using it for real.
 
-## Key Takeaways
+## Key takeaways
 
 - Most small business AI implementations fail because the team never adopts the tools, not because the technology does not work.
 - Teams move through four adoption stages, awareness, trial, integration and mastery, and most small businesses are stuck at stage one or early stage two.
@@ -175,7 +175,7 @@ AI adoption takes longer than most founders expect and produces more than most f
 
 If you are serious about building AI capability in your team, start with an honest assessment of where you are in the four adoption stages. Design the training around your specific workflows, not generic AI demonstrations. Build accountability into the process from day one. And measure continuously so the investment stays visible and the results stay credible.
 
-## Frequently Asked Questions
+## Questions that come up often
 
 ### Why do small business teams resist AI tools?
 

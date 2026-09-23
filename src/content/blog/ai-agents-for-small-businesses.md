@@ -11,7 +11,7 @@ articleType: "pillar"
 
 Most founders hear "AI agent" every week and still cannot say what one would do in their business. This guide gives the plain answer and the cases where an agent is worth the cost.
 
-## Key Takeaways
+## Key takeaways
 
 - An AI agent is a system that takes a goal, decides the steps to reach it, and carries them out across multiple tools, adjusting as it goes.
 - An automation follows rules you defined, a chatbot holds a conversation, and an agent pursues a goal across steps and tools. Most of the value small businesses get from AI today comes from automation, not agents.
@@ -116,7 +116,7 @@ AI agents are real, and they are more capable than the automations that came bef
 
 Answer that with real numbers and agents become a precise tool for a defined problem, rather than an expensive experiment chasing a trend.
 
-## Frequently Asked Questions
+## Questions that come up often
 
 ### What does an AI agent actually do in a small business?
 

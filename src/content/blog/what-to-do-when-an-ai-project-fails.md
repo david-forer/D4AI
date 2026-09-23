@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most advice on failed AI projects is written for companies with a steering committee. This page is for the founder who signed off on the spend and now has to decide what happens next.
 
-## Key Takeaways
+## In brief
 
 - When an AI project fails at a business of 5 to 20 people, the founder has 3 options: salvage the build, restart with a different scope, or stop and close it out.
 - AI projects fail in 4 ways, adoption, fit, build, and ownership, and each type has a different default action.
@@ -158,7 +158,7 @@ Set a written checkpoint at day 30 with a named artifact attached. A project tha
 
 If you are deciding whether to bring someone in for the next attempt, the guide to [working with an AI consultant](/blog/working-with-an-ai-consultant) sets out what a well-run engagement produces and when the timing is right to start one.
 
-## Frequently Asked Questions
+## Questions founders ask
 
 ### Should I keep going with an AI project that isn't working?
 

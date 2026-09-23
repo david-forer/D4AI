@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most comparisons of an AI consultant and an agency weigh price and headcount. This one starts from a simpler question: how much of your business is written down.
 
-## Key Takeaways
+## The short answer
 
 - For a small business choosing between an AI consultant and an agency, how documented its processes are decides it, and budget only sets the ceiling.
 - There are 4 provider types to compare, not 2: the solo AI consultant, the AI or automation agency, the fractional CTO or operations leader, and the systems integrator.
@@ -137,7 +137,7 @@ Shortlisting across types is what makes this decision feel impossible, because a
 
 Once the type is set, the evaluation is a normal one, and the framework in [how to choose an AI consultant](/blog/how-to-choose-an-ai-consultant) applies directly. For the full picture of what an engagement involves before you commit to any of it, start with [working with an AI consultant](/blog/working-with-an-ai-consultant).
 
-## Frequently Asked Questions
+## Questions founders ask
 
 ### Should a small business hire an AI consultant or an AI agency?
 

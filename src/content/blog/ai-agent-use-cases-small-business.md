@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most agent demos are built for a stage, not a small office. This page is for the founder who wants to know which jobs an agent can hold down in a real firm.
 
-## Key Takeaways
+## Key takeaways
 
 - An AI agent use case works in a small business when work arrives on its own schedule, each case differs enough to break a fixed rule, and the output can be checked before it matters.
 - The 7 use cases that hold up are inquiry triage, pre-call research briefs, tier one support, lead qualification, overdue work chasing, document intake, and meeting follow-up.
@@ -138,7 +138,7 @@ Pick the job where work sits in a queue waiting for a person, where every instan
 
 If you want a second opinion on which job in your business fits that description, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at the actual work before naming a tool.
 
-## Frequently Asked Questions
+## Common questions
 
 ### What can AI agents do for a small business?
 

@@ -10,7 +10,7 @@ articleType: "cluster"
 
 A training program that nobody measures ends with a feeling, not an answer. Here is what to track so you know whether AI training worked.
 
-## Key Takeaways
+## In brief
 
 - Measure AI training by behavior change, not by logins, attendance, or hours of content consumed.
 - Track three levels: adoption (are people using AI on the right tasks), quality (is the output good enough), and business impact (is it saving time and adding capacity).
@@ -119,7 +119,7 @@ The second most common mistake is measuring too many things. A dashboard with tw
 
 Measure what is actually happening, not what should be happening. The data tells you where to focus next. That is its primary value.
 
-## Frequently Asked Questions
+## Questions founders ask
 
 ### How do you measure AI training effectiveness?
 

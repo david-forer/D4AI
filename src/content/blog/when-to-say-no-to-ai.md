@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most AI advice is about what to build. This page is about what to turn down, and how to make the no last longer than the next vendor email.
 
-## Key Takeaways
+## The short answer
 
 - Say no to AI when the process is undocumented, runs fewer than 20 times a month, costs more when wrong than it saves, or has nobody to own it after launch.
 - Six tests disqualify a process before anyone books a demo: volume, documentation, cost of being wrong, ownership, stability, and judgment content.
@@ -117,7 +117,7 @@ The cost of the alternative changed. You are about to hire for the work the proc
 
 Outside those 3, a no stands until the annual review. Persistence from a vendor is not a trigger, a competitor's announcement is not a trigger, and a new model release is rarely one either, because the 6 tests above are about your process rather than the technology. That stability is what makes the strategy usable, and it is the part of [AI strategy for small businesses](/blog/ai-strategy-for-small-businesses) that costs nothing and saves the most.
 
-## Frequently Asked Questions
+## Common questions
 
 ### How do I decide what not to automate with AI in my small business?
 

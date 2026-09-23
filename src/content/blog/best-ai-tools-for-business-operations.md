@@ -10,7 +10,7 @@ articleType: "cluster"
 
 The best AI tools for business operations depend on which operational layer you need to fix first. This page sorts the tools into five layers and shows the order to build them in.
 
-## Key Takeaways
+## In brief
 
 - Choose AI tools for operations by the operational layer they serve, not by feature lists. Tool selection without operational context produces tool sprawl.
 - Business operations run on five layers: systems of record, data integration, workflow automation, AI assistance and generation, and visibility and reporting.
@@ -128,7 +128,7 @@ The tool trap looks like progress because there is always a new product that cla
 
 Fix the workflow first. Then select the tool that fits the workflow you have designed.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### What are the best AI tools for operations?
 

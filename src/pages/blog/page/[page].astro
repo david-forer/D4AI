@@ -42,7 +42,7 @@ const defaultPostImage = "/images/ai-operations-logo.webp";
 // Define categories for the navigation
 // Nav chips come from src/lib/hubs.ts so this list can never drift from the
 // hub pages it links to.
-const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
+const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name, navLabel: h.navLabel }));
 
 // Generate page numbers for pagination
 const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
@@ -83,7 +83,7 @@ const endItem = Math.min(currentPage * POSTS_PER_PAGE, totalPosts);
                 href={`/blog/category/${cat.slug}`}
                 class="px-4 py-2 rounded-md transition-colors text-blue-700 hover:text-blue-900 hover:bg-blue-50"
               >
-                {cat.name}
+                {cat.navLabel}
               </a>
             ))}
           </div>

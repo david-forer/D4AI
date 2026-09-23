@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most founders ask what AI training costs. The better question is what the capability is worth, and where the money does the most work.
 
-## Key Takeaways
+## Key takeaways
 
 - A complete AI training budget has three parts: tool subscriptions, the training program itself, and the internal time the team spends learning.
 - Internal time is the line most founders miss. A team of eight spending two hours a week for eight weeks puts in roughly one hundred and thirty hours.
@@ -115,7 +115,7 @@ The conclusion drawn is that AI training is not worth the investment. The actual
 
 The minimum investment for a training program with a reasonable probability of producing lasting adoption is higher than most small business founders initially expect. But it is significantly lower than the cost of purchasing tools and subscriptions for a year, seeing minimal adoption, and repeating the cycle.
 
-## Frequently Asked Questions
+## Common questions
 
 ### How should we prioritize AI training spend?
 

@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most vendor risk advice is written for companies shipping AI products. This page is for the firm that uses AI to run its own work and needs to know what happens when a tool goes away.
 
-## Key Takeaways
+## The short answer
 
 - For a small service firm, the AI vendor and model risk that causes real damage is concentration: one vendor holding one workflow, with no way to get the work out.
 - AI models change underneath you through deprecation, quality shifts and unannounced behaviour changes, and 20 real test cases rerun monthly catch that drift in about 20 minutes.
@@ -145,7 +145,7 @@ If you want a view on where your stack is concentrated and what a forced move wo
 
 ---
 
-## Frequently Asked Questions
+## Questions founders ask
 
 ### What happens to my data if an AI vendor shuts down or gets acquired?
 

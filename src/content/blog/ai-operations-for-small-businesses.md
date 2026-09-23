@@ -11,7 +11,7 @@ articleType: "pillar"
 
 AI operations for a small business means building the operational foundation first and then putting AI where it compounds that foundation. This guide is for founders doing it without an operations team.
 
-## Key Takeaways
+## Key takeaways
 
 - For a small business, AI operations means designing the systems that run the business first and then embedding AI where it creates leverage, not adding AI tools to processes that were never documented.
 - Four things must exist before any AI layer: documented workflows, a single system of record for each data type, defined decision rights, and an integration backbone between core tools.
@@ -205,7 +205,7 @@ Before any implementation decision, understand the current operational state. Wh
 
 Those answers determine the sequence. The sequence determines whether the investment compounds or just adds maintenance burden.
 
-## Frequently Asked Questions
+## Common questions
 
 ### How can a small company use AI for business operations?
 

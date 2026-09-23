@@ -10,7 +10,7 @@ articleType: "cluster"
 
 A growing business does not need more tools. It needs the right few, connected and owned. Here is what that looks like at each stage.
 
-## Key Takeaways
+## The short version
 
 - A lean AI tech stack is intentional, not minimal. Every tool has a defined role, a named owner, and a connection to the rest of the stack.
 - A business at $1M to $2M needs five tools: a CRM, a project management tool, workflow automation, one AI writing assistant, and the built-in reporting it already has.
@@ -134,7 +134,7 @@ That is achievable for any small business willing to design deliberately. The in
 
 The lean stack is not a constraint on what is possible. It is the operational discipline that makes everything the stack is supposed to do actually happen.
 
-## Frequently Asked Questions
+## Questions founders ask
 
 ### How should a lean team scale its tech stack as the business grows?
 

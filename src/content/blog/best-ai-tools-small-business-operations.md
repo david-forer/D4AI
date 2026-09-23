@@ -10,7 +10,7 @@ articleType: "cluster"
 
 This is a category-by-category look at the AI tools that work for small business operations in 2026, and who each one suits.
 
-## Key Takeaways
+## In brief
 
 - The best AI tool for a small business is the one that solves a documented operational problem, connects to your existing systems, and can be run by your team without specialist support.
 - Workflow automation is the highest-value category for most small businesses. Zapier is the easiest start, Make handles complex logic at lower cost per operation, and n8n suits teams with technical capacity.
@@ -106,7 +106,7 @@ The businesses that get the most from their AI tool stack are not the ones that 
 
 ---
 
-## Frequently Asked Questions
+## Questions that come up often
 
 ### What AI tools make sense for small business operations?
 

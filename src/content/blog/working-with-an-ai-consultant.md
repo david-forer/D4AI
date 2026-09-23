@@ -11,7 +11,7 @@ articleType: "pillar"
 
 Working with an AI consultant is a real spend for a small business, so it pays to know what you are buying. This guide covers the work, the cost, and the timing.
 
-## Key Takeaways
+## Key takeaways
 
 - An AI consultant for a small business does five things: discovery and operational mapping, workflow design, implementation, team training and adoption, and handoff.
 - A typical engagement runs in three phases over about fourteen weeks: discovery and audit, design and build, then adoption and handoff.
@@ -153,7 +153,7 @@ Ask directly what you will own at the end of the engagement and who will maintai
 
 A detailed look at evaluation criteria is in [this guide to choosing an AI consultant](/blog/how-to-choose-an-ai-consultant), and the specific questions to ask before committing are in [this article on what to ask before hiring](/blog/questions-to-ask-before-hiring-an-ai-consultant).
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### What does an AI consultant do for a small business?
 

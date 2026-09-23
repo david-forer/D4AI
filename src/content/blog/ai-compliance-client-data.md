@@ -10,7 +10,7 @@ articleType: "cluster"
 
 This page is for the founder whose team already uses AI on client work and wants to know where the line actually sits. The short answer is in a drawer you already own.
 
-## Key Takeaways
+## The short version
 
 - For a small service firm, AI compliance for client data is decided first by client contracts already signed, not by a new regulation.
 - Four contract clauses decide what a firm can do with AI on client work: confidentiality, subcontractors and subprocessors, data location, and audit and information rights.
@@ -138,7 +138,7 @@ If you want a read on whether your current AI use sits inside the contracts you 
 
 ---
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### Can I put client data into AI tools?
 

@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most lists of AI consultant red flags treat every warning the same. This one ranks them, so a founder reading a proposal alone knows which ones end the conversation.
 
-## Key Takeaways
+## Key takeaways
 
 - Red flags when hiring an AI consultant fall into 3 tiers: flags that disqualify, flags worth one follow-up question, and behaviour founders misread as a warning.
 - The 6 disqualifying flags are a named tool before discovery, no written findings deliverable, a return number quoted before seeing your numbers, no definition of what you own at the end, phases with no definition of done, and refusal to say who does the work.
@@ -142,7 +142,7 @@ Screen on structure. 6 flags end the conversation, 5 need a single question, and
 
 If you want the rest of the buying decision in one place, start with the guide to [working with an AI consultant](/blog/working-with-an-ai-consultant), which covers what the work involves, what it costs, and what a well-run engagement produces. When you are ready to compare candidates properly, the framework in [how to choose an AI consultant](/blog/how-to-choose-an-ai-consultant) sits directly alongside this one.
 
-## Frequently Asked Questions
+## Questions founders ask
 
 ### How do I know if an AI consultant is legit?
 

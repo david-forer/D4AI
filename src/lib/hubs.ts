@@ -23,8 +23,10 @@
 export interface Hub {
   /** URL slug. Also the literal tag value used in post frontmatter. */
   slug: string;
-  /** Short label for nav chips and the post byline. */
+  /** Label for the post byline, card badges and the hub page title. Keeps the AI prefix. */
   name: string;
+  /** Short label for the blog nav chip row only. Drops the AI prefix because the whole blog is about AI. */
+  navLabel: string;
   h1: string;
   /** Meta description for the hub page. */
   description: string;
@@ -46,6 +48,7 @@ export const HUBS: Hub[] = [
   {
     slug: 'ai-readiness',
     name: 'AI Readiness',
+    navLabel: 'Readiness',
     h1: 'AI Readiness and Audit Resources',
     description: 'Everything you need to assess, prepare for, and act on an AI readiness audit, from self-assessment to acting on what it finds.',
     body: `Before investing in AI tools, automation systems, or training programs, it is worth understanding where your business actually stands. AI readiness is not primarily a technology question. It is a question of whether your processes, data quality, and team are in a position where AI can make a genuine difference.
@@ -63,6 +66,7 @@ An audit shows you where the exposure is. The rules that come after it (use poli
   {
     slug: 'ai-governance',
     name: 'AI Governance',
+    navLabel: 'Governance',
     h1: 'AI Governance for Small Businesses',
     description: 'How to set AI rules, data limits and review steps in a small business without a compliance team, plus what to do about the AI your staff already use.',
     body: `Most small businesses start using AI before anyone writes down a single rule for it. A bookkeeper pastes a client's payroll export into a free chatbot to reformat the columns. A project manager connects an AI note-taker to every client call because it came bundled with the video tool. Nobody decided either of those things.
@@ -80,6 +84,7 @@ Clear rules make a team faster with AI. Once people know what they can paste whe
   {
     slug: 'ai-operations',
     name: 'AI Operations',
+    navLabel: 'Operations',
     h1: 'AI Operations for Small Businesses',
     description: 'Practical guides on building AI-powered operational systems for small businesses and founder-led teams.',
     body: `Most small business owners reach a point where the business is technically working but feels impossible to manage. Revenue is growing, but so is the chaos. Decisions pile up, manual tasks multiply, and the founder ends up becoming the bottleneck in their own company.
@@ -97,6 +102,7 @@ If you are trying to scale without adding headcount, or you are drowning in the 
   {
     slug: 'ai-training',
     name: 'AI Training',
+    navLabel: 'Training',
     h1: 'AI Training and Team Adoption for Small Business',
     description: 'Resources for training non-technical teams to use AI effectively and consistently.',
     body: `Buying AI tools is straightforward. Getting a team to use them well is a different problem entirely. Most small businesses that struggle with AI adoption do not have a technology problem. They have a training and change management problem.
@@ -114,6 +120,7 @@ The goal is a team that uses AI as a standard part of how they work, not a handf
   {
     slug: 'ai-tools',
     name: 'AI Tools',
+    navLabel: 'Tools',
     h1: 'Choosing and Running an AI Tech Stack',
     description: 'How to choose, compare, buy, replace and retire AI tools without ending up with twelve subscriptions and no system.',
     body: `Most small businesses do not have a tool shortage. They have eleven subscriptions, four of them forgotten, two of them doing the same job, and no clear answer to what would break if any of them were cancelled tomorrow. The problem is rarely finding a tool. It is deciding between them and then living with the decision.
@@ -131,6 +138,7 @@ The aim is a small stack you understand completely, rather than a large one you 
   {
     slug: 'ai-agents',
     name: 'AI Agents',
+    navLabel: 'Agents',
     h1: 'AI Agents for Small Businesses',
     description: 'What AI agents are, how they differ from automations and chatbots, where they pay off in a small business, and how to deploy one without losing control.',
     body: `Every software vendor now calls its product an agent. The chatbot on a scheduling app, the rules engine inside a CRM, the email sequencer a sales rep set up three years ago. Founders hear the word every week and still can't say what one would do in a 12-person firm.
@@ -148,6 +156,7 @@ The order that tends to work is documented processes first, automation second, a
   {
     slug: 'automation',
     name: 'AI Automation',
+    navLabel: 'Automation',
     h1: 'AI Automation Strategy and Architecture',
     description: 'Strategic and technical guides on building automation systems that actually work.',
     body: `Automation is not a tool purchase. It is a design decision that reflects how clearly you understand your own business processes. Implemented well, it removes friction, reduces error, and creates space for higher-value work. Implemented poorly, it automates problems rather than solving them.
@@ -165,6 +174,7 @@ Whether you are running your first business automation or rethinking a system th
   {
     slug: 'workflow-systems',
     name: 'Workflow Systems',
+    navLabel: 'Workflows',
     h1: 'Workflow and Intake Systems for Growing Businesses',
     description: 'Deep dives into workflow design, intake systems, SOPs, and operational frameworks that scale.',
     body: `Work breaks in predictable ways. A client inquiry falls through the cracks because there is no intake process. A recurring task gets done differently each time because no one documented how it should work. A new team member makes the same mistakes because the onboarding process lives in someone's head.
@@ -182,6 +192,7 @@ Workflow design is one of the highest-leverage investments a growing business ca
   {
     slug: 'hiring-an-ai-consultant',
     name: 'Hiring a Consultant',
+    navLabel: 'Hiring a Consultant',
     h1: 'Working With an AI Consultant',
     description: 'What an AI consultant actually does, what an engagement costs, how to choose one, and what the first 90 days look like.',
     body: `Hiring an AI consultant is a decision most founders make exactly once, with no reference points and no way to tell a good engagement from an expensive one until it is over. The market does not help. There is no standard credential, the job title means six different things, and the failure mode is not a dramatic blow-up. It is a slow, costly disappointment that ends with systems nobody owns.
@@ -199,6 +210,7 @@ The test of a good engagement is what your team can do without the consultant af
   {
     slug: 'ai-strategy',
     name: 'AI Strategy',
+    navLabel: 'Strategy',
     h1: 'AI Strategy for Small Businesses',
     description: 'How to sequence AI investment, build a roadmap you will actually follow, and measure whether any of it worked.',
     body: `Most small business AI strategy is a list of tools with no order attached. That is not a strategy, it is a wish list, and it fails in a specific way. The team implements whatever is easiest first, the hard problems stay untouched, and twelve months later the business has spent real money without changing how anything runs.
@@ -216,6 +228,7 @@ A strategy is only real if it tells you what not to do. These articles are writt
   {
     slug: 'seo',
     name: 'SEO + AI',
+    navLabel: 'SEO',
     h1: 'SEO Strategy and AI-Enabled Search',
     description: 'Advanced SEO guides covering topical authority, semantic SEO, and AI search optimization.',
     body: `Search is changing faster than most content strategies can keep up with. Topical authority, semantic relevance, and AI-generated overviews are reshaping how search engines evaluate and surface content. Tactics that worked two or three years ago are producing diminishing returns, and the businesses pulling ahead are building search presence as a compounding system rather than a one-off campaign.
@@ -233,6 +246,7 @@ The underlying principle across every article here is the same: search visibilit
   {
     slug: 'business-functions',
     name: 'AI by Function',
+    navLabel: 'Departments',
     h1: 'AI Across Business Functions',
     description: 'Function-by-function guides on deploying AI in sales, marketing, finance, HR, customer support, and operations.',
     body: `AI implementation looks different depending on where in the business you deploy it. The tools and approaches that work for sales prospecting are not the same as what works for financial reporting or HR onboarding. Generic AI advice tends to miss this entirely, which is why so many AI initiatives produce results in one area and almost nothing in another.

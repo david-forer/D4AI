@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most AI budget advice quotes a monthly seat price and stops there. This page is for the founder who needs a year-one number and a way to stop it drifting.
 
-## Key Takeaways
+## The short answer
 
 - A realistic AI budget for a small business at $1M to $5M in revenue is $12,000 to $40,000 in the first year, covering tools, one build, training, and outside help.
 - Every small business AI budget has 4 lines: tools, build, training, and internal time, and internal time is regularly the largest of the 4.
@@ -104,7 +104,7 @@ Two nos out of 3 means you stop spending and fix rather than extend. That decisi
 
 A budget that cannot be stopped is a subscription. The number at the top of this page is worth having, and the gate between quarter 2 and quarter 3 is worth more. Both belong inside the wider sequencing decision in [AI strategy for small businesses](/blog/ai-strategy-for-small-businesses), because the amount is downstream of knowing what you are trying to change first.
 
-## Frequently Asked Questions
+## Questions founders ask
 
 ### How much should a small business budget for AI?
 

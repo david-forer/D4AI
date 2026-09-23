@@ -10,7 +10,7 @@ articleType: "cluster"
 
 High impressions and almost no clicks is one of the cheapest problems in search to fix. This page shows which of 4 causes you have and what to do about each.
 
-## Key Takeaways
+## Key takeaways
 
 - A page that ranks but gets no clicks usually has a result that is the wrong shape for the question being searched.
 - There are 4 causes: a title that labels instead of answers, a ranking for the wrong query, a real but low position on page 2, and an answer already visible in the search result.
@@ -104,7 +104,7 @@ If nothing moves after 90 days on a page you rewrote carefully, the page is rank
 
 Impressions without clicks is the cheapest problem in search to work on. The ranking is already there. Someone spent months earning it. Collecting the click is a 20-minute diagnosis and a 5-minute rewrite, and most founder-led firms have 10 to 30 pages sitting in exactly that state right now.
 
-## Frequently Asked Questions
+## Common questions
 
 ### Why do I have lots of impressions but no clicks in Search Console?
 

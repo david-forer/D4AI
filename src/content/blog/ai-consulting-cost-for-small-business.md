@@ -10,7 +10,7 @@ articleType: "cluster"
 
 AI consulting for a small business usually costs between $1,500 and $60,000, depending on what you buy. Here is what drives the number and how to tell whether it is worth it.
 
-## Key Takeaways
+## The short answer
 
 - AI consulting for a small business typically costs $1,500 to $5,000 for a discovery and audit, $3,000 to $8,000 for a single workflow automation, $10,000 to $25,000 for a multi-workflow implementation, and $25,000 to $60,000 and up for a full operational buildout.
 - Hourly rates typically run $150 to $400, project fees $5,000 to $30,000, and monthly retainers $2,000 to $8,000.
@@ -138,7 +138,7 @@ When those conditions are in place, a well-scoped AI engagement can produce a me
 
 ---
 
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### How much does AI consulting cost for a small business?
 

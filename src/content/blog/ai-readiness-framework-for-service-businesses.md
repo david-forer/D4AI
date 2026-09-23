@@ -11,7 +11,7 @@ articleType: "pillar"
 
 AI readiness decides whether an AI investment in a service firm pays off or falls apart. Here is a five-dimension framework for measuring it before you spend.
 
-## Key Takeaways
+## Key takeaways
 
 - An AI readiness assessment framework for operations scores a firm across five dimensions: data structure maturity, process clarity, integration maturity, AI usage discipline, and ownership and governance.
 - AI readiness is structural, not technical. Having the tools and subscriptions is not the same as being ready to scale AI into operations.
@@ -214,7 +214,7 @@ The firms that skip this step are the ones who come back six months later wonder
 
 The firms that take it seriously are the ones building operations that actually scale. If you have already done an initial assessment, [what to do after an AI readiness audit](/blog/after-the-ai-audit-how-to-act-on-your-findings) covers how to turn findings into a sequenced action plan.
 
-## Frequently Asked Questions
+## Questions that come up often
 
 ### What is an AI readiness assessment framework for operations?
 
