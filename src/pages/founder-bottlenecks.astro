@@ -94,13 +94,13 @@ const schema = {
     
     .toc-fixed {
       position: fixed;
-      top: 0;
+      top: 4rem; /* below the site nav (h-16), which it used to cover */
       left: 0;
       width: 280px;
-      height: 100vh;
+      height: calc(100vh - 4rem);
       background: white;
       border-right: 1px solid #e5e7eb;
-      z-index: 1000;
+      z-index: 40;
       overflow-y: auto;
       padding: 2rem 1.5rem;
     }
@@ -402,7 +402,7 @@ const schema = {
     </nav>
 
     {/* Mobile TOC Toggle */}
-    <button class="lg:hidden fixed top-4 left-4 z-50 bg-white p-2 rounded shadow-lg" id="toc-toggle">
+    <button class="lg:hidden fixed top-20 left-4 z-40 bg-white p-2 rounded shadow-lg" id="toc-toggle">
       <i class="fas fa-bars text-gray-700"></i>
     </button>
 
