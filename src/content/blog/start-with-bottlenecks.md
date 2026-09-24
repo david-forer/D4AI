@@ -129,7 +129,7 @@ Then ask what would need to change to remove that constraint. Not what tool woul
 
 Only after you answer that question should you think about tools.
 
-If you need a framework for diagnosing bottlenecks, [Fix the Chaos](https://davidjforer.com/fix-the-chaos) is built around this exact approach. If you need help identifying where your constraints are, [an AI Readiness Audit](https://davidjforer.com/ai-readiness-and-ai-audits) provides structured bottleneck discovery.
+If you want a framework for diagnosing bottlenecks, start with [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms). If you want help finding your own constraints, the [free process audit](/fix-the-chaos) maps your top 3 processes and prices your top 5 automation opportunities in dollars.
 
 Do not start with tools. Start with bottlenecks. The tools will make more sense once you understand what you are actually trying to fix.
 

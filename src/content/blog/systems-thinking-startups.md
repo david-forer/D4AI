@@ -117,7 +117,7 @@ Then ask what would make that workflow clearer, more consistent, and less depend
 
 You do not need a perfect system. You need a system that is better than what you have now.
 
-If you need a framework for thinking through these problems, [Fix the Chaos](https://davidjforer.com/fix-the-chaos) is built around this exact approach. It is designed to help small businesses apply systems thinking without over-engineering.
+If you want a framework for these problems, start with [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms). If you want to see where your own business stands, the [free process audit](/fix-the-chaos) maps your top 3 processes and prices your top 5 automation opportunities in dollars.
 
 Systems thinking is not optional for startups that want to scale. It is the difference between growing and collapsing under your own weight.
 

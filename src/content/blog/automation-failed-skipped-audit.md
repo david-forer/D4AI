@@ -126,7 +126,7 @@ Understand the current state before you design the future state. Map the workflo
 
 Ask whether the problem is really automation, or whether it is structure, clarity, or alignment. Automation cannot fix those things. It can only amplify what is already there.
 
-If you need a framework for thinking through operations, [Fix the Chaos](https://davidjforer.com/fix-the-chaos) provides the foundation. If you need help diagnosing where automation fits and where it does not, [an AI Readiness Audit](https://davidjforer.com/ai-readiness-and-ai-audits) is designed for exactly this.
+If you want a framework for thinking through operations, start with [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams). If you want help finding where automation fits in your business and where it does not, the [free process audit](/fix-the-chaos) maps your top 3 processes and prices your top 5 automation opportunities in dollars.
 
 Automation fails when you skip the audit. It succeeds when you take the time to understand what you are building and why.
 

@@ -91,7 +91,7 @@ Before you look at tools, look at your operations. Understand how work moves thr
 
 Ask yourself whether the problem is really speed, or whether it is clarity, alignment, or structure. Automation cannot fix those things. It can only amplify what is already there.
 
-If you need a framework for thinking through these decisions, [Fix the Chaos](https://davidjforer.com/fix-the-chaos) provides the foundation. If you need help diagnosing where automation fits and where it does not, [an AI Readiness Audit](https://davidjforer.com/ai-readiness-and-ai-audits) is the right starting point.
+If you want a framework for these decisions, start with [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams). If you want help finding where automation fits in your business and where it does not, the [free process audit](/fix-the-chaos) maps your top 3 processes and prices your top 5 automation opportunities in dollars.
 
 Automation is not about tools. It is about making strategic decisions that align with how your business works.
 

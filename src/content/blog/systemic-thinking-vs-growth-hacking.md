@@ -134,7 +134,7 @@ Look at where work gets stuck. Look at where coordination breaks down. Look at w
 
 Ask what would need to change to double revenue without doubling headcount. The answer is rarely more hustle. It is usually better systems.
 
-If you need a framework for thinking through these changes, [Fix the Chaos](https://davidjforer.com/fix-the-chaos) is designed for exactly this stage. It helps you move from growth hacking to systemic thinking without over-engineering.
+If you want a framework for these changes, start with [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms). If you want to see where your own business stands, the [free process audit](/fix-the-chaos) maps your top 3 processes and prices your top 5 automation opportunities in dollars.
 
 Growth hacking has an expiration date. After $1M ARR, systemic thinking is what separates businesses that scale from businesses that stall.
 

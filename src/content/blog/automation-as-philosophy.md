@@ -147,7 +147,7 @@ When your philosophy is clear, automation decisions become easier. You know what
 
 When your philosophy is unclear, automation becomes inconsistent. Different systems reflect different values. The business becomes incoherent.
 
-If you need a framework for thinking through these decisions, [Fix the Chaos](https://davidjforer.com/fix-the-chaos) provides the foundation. It helps you articulate what matters and design systems that reflect it.
+If you want a framework for these decisions, start with [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams). If you want to see where your own business stands, the [free process audit](/fix-the-chaos) maps your top 3 processes and prices your top 5 automation opportunities in dollars.
 
 If you need to help your team internalize this philosophy, [AI Training](https://davidjforer.com/ai-training-for-small-business-teams) is designed to build shared understanding around how and when to automate.
 
