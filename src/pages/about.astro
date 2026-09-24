@@ -1,28 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import LeadMagnet from '../components/LeadMagnet.astro';
-
-// Define the lead magnet configuration for this page
-const leadMagnetConfig = {
-  title: "Get Our Free Guide",
-  description: "Learn how to optimize your website with our comprehensive guide.",
-  imageUrl: "/images/guide-cover.jpg",
-  formFields: [
-    {
-      id: "email",
-      label: "Email Address",
-      inputType: "email" as const,
-      required: true,
-      placeholder: "you@example.com"
-    }
-  ],
-  ctaText: "Send Me the Guide",
-  leadMagnetType: "ebook",
-  thankYouMessage: "Your guide is on its way! Please check your email inbox.",
-  variant: "fullWidth" as const, // You can choose: inline, card, fullWidth, sidebar
-  backgroundColor: "bg-blue-50",
-  accentColor: "bg-blue-600"
-};
 ---
 
 <Layout title="About David Forer | AI SEO and AI Operations"
@@ -447,22 +424,6 @@ description="Discover how David leverages AI to streamline operations and boost 
       </div>
   </div>
 </div>
-
-{/* Lead Magnet Section */}
-{/* 
-<section class="bg-white py-16 px-4 md:px-12 lg:px-24">
-  <div class="max-w-5xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Your Ops Are Slowing You Down. Your SEO Isn’t Scaling.</h2>
-    <p class="text-lg md:text-xl text-gray-700 mb-8">In this free 30-minute AI-Ready Insight Audit, I’ll show you exactly where your systems are leaking time, your SEO is stalling, and how AI can unlock scalable growth, without hiring more people.</p>
-    <a href="/insight-audit" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition">Book Your Free Audit</a>
-  </div>
-</section>  */}
-
-  {/* Place the lead magnet where you want it to appear */}
-   {/* 
-  <section class="lead-magnet-section py-8">
-    <LeadMagnet {...leadMagnetConfig} />
-  </section>*/}
 
          
 	</div>
