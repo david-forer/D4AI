@@ -97,7 +97,7 @@ When the engagement formally begins, having these items ready allows the first p
 
 ## The One Thing Most Clients Skip
 
-The single most common gap in client preparation is the failure to complete a process audit before the engagement starts.
+The single most common gap in client preparation is the failure to complete a [process audit](/fix-the-chaos) before the engagement starts.
 
 A process audit is simply a clear picture of what is currently happening across your key workflows, including where the time actually goes, where errors occur, and where handoffs between people break down. You do not need a formal document. A two-page written summary is enough.
 

@@ -242,7 +242,7 @@ The businesses that win in 2026 are not the most automated. They are the most cl
 
 AI just helps them get there faster.
 
-If you are running a small business and you are considering AI adoption, start here. Map your core processes first. Understand what is actually happening. Use AI to accelerate the mapping, refine the analysis, and turn the map into action.
+If you are running a small business and you are considering AI adoption, start here. [Map your core processes first](/fix-the-chaos). Understand what is actually happening. Use AI to accelerate the mapping, refine the analysis, and turn the map into action.
 
 But do not skip the map. That is where the leverage actually is.
 
