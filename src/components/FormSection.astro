@@ -32,6 +32,8 @@ interface Props {
   /** Optional file handed over on success, for a gated giveaway. */
   successHref?: string;
   successLinkText?: string;
+  /** 'split' puts the heading, blurb and slot on the left and a compact form on the right. */
+  layout?: 'stacked' | 'split';
 }
 
 const {
@@ -45,9 +47,35 @@ const {
   successBody = 'Your details are in. I read these myself and I will come back to you shortly.',
   successHref,
   successLinkText,
+  layout = 'stacked',
 } = Astro.props;
 ---
 
+{layout === 'split' ? (
+<section id={id} class="bg-blue-800 w-full py-16 px-4 sm:px-6 lg:px-12 scroll-mt-20">
+  <div class="max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+    <div class="text-white mb-10 lg:mb-0">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">{heading}</h2>
+      {blurb && <p class="text-lg text-blue-100 mb-6 leading-relaxed">{blurb}</p>}
+      <slot />
+    </div>
+
+    <div class="bg-white rounded-xl p-6 shadow-lg">
+      <LeadForm
+        formId="section"
+        surveyId={surveyId}
+        fields={fields}
+        buttonText={buttonText}
+        successHeading={successHeading}
+        successBody={successBody}
+        successHref={successHref}
+        successLinkText={successLinkText}
+        compact
+      />
+    </div>
+  </div>
+</section>
+) : (
 <section id={id} class="bg-blue-800 w-full py-16 px-4 sm:px-6 lg:px-12">
   <div class="max-w-2xl mx-auto">
     <h2 class="text-3xl font-bold mb-3 text-center text-white">{heading}</h2>
@@ -68,3 +96,4 @@ const {
     </div>
   </div>
 </section>
+)}

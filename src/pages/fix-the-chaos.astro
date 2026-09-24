@@ -1,41 +1,72 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import FormSection from '../components/FormSection.astro';
+import { AI_AUDIT_SURVEY, AI_AUDIT_FIELDS } from '../lib/leadForms';
 ---
 
-<Layout title="How I Help with AI, SEO, and Operations - Fix the Chaos | David Forer"
-description="Discover how I help small business owners transform chaotic operations into scalable systems. Learn about my approach to fixing and implementing AI effectively.">
+<Layout title="Fix the Chaos: The 80/20 Process Audit for Founder-Led Businesses | David Forer"
+description="A free 2 to 3 hour process audit for founders with 5 to 20 people. Your top 5 automation opportunities, priced in dollars, delivered the same or next day.">
 	<div class="mx-auto w-full text-black text-xl leading-relaxed">
 
 		{/* Hero Section */}
 		<section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20 w-full">
 			<div class="container mx-auto px-6 max-w-5xl text-center">
 				<h1 class="text-4xl md:text-6xl font-bold text-white mb-6">You built a business. Now it's breaking you.</h1>
-				<p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto">I help small teams scale without chaos by fixing the operations spine and using AI the right way.</p>
-				<a href="/contact" class="inline-block bg-white text-blue-600 font-semibold py-4 px-8 rounded-lg text-lg hover:bg-blue-50 transition duration-300">Let's start with an audit</a>
+				<p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto">I help small teams scale without chaos by writing down the processes your business runs on, then adding AI where it fits.</p>
+				<a href="#free-audit" class="inline-block bg-white text-blue-600 font-semibold py-4 px-8 rounded-lg text-lg hover:bg-blue-50 transition duration-300">Get the $750 audit free</a>
 			</div>
 		</section>
 
-		{/* Section 1: The Hidden Cost of Success */}
-		<section class="py-16 px-6">
-			<div class="container mx-auto max-w-5xl">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">The hidden cost of success</h2>
-				<div class="text-2xl text-gray-700 leading-relaxed space-y-6">
-					<p>From the outside, everything looks fine.<br>
-					You've got clients, a small team, solid revenue.<br>
-					But inside?</p>
-					
-					<ul class="list-disc list-inside space-y-2 ml-4">
-						<li>No onboarding.</li>
-						<li>SOPs that live in your head.</li>
-						<li>You're still the one answering questions, putting out fires, and fixing the same issues again and again.</li>
+		{/* Monday morning scene */}
+		<section class="py-16 px-6 bg-gray-50">
+			<div class="container mx-auto max-w-3xl">
+				<p class="text-sm uppercase tracking-widest text-blue-600 font-semibold mb-4 text-center">Sound familiar?</p>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10 text-center">Monday, 7:40am</h2>
+				<div class="text-xl text-gray-700 leading-relaxed space-y-6">
+					<p>From the outside, everything looks fine. You've got clients and solid revenue.</p>
+
+					<p>Your phone has 14 messages before you've had coffee. Two are from clients. The rest are from your own team.</p>
+
+					<ul class="space-y-4 border-l-4 border-blue-600 pl-6">
+						<li>A project manager wants to know if she can give a client 10% off.</li>
+						<li>The new hire can't find the login for the scheduling tool. The person who set it up left in March.</li>
+						<li>Someone asks where the latest proposal template is. There are 3 versions in 3 folders.</li>
+						<li>A client email has sat unanswered since Thursday, because everyone thought someone else had it.</li>
 					</ul>
-					
-					<p>Every decision runs through you.<br>
-					You can't unplug without something falling apart.</p>
+
+					<p>By 10am you've made 11 decisions. Your team could have made every one of them if the answers lived somewhere other than your head.</p>
+
+					<p>The afternoon you blocked for growth work gets pushed to Friday. It got pushed last week too.</p>
+
+					<p class="text-2xl font-semibold text-blue-600 pt-4">You're running the company and doing the job of the operations manager you never hired.</p>
 				</div>
-				
-				<div class="mt-16">
-					<p class="text-3xl font-semibold text-blue-600 text-center">This is the cost of a business that grew without the structure to support it.</p>
+			</div>
+		</section>
+
+		{/* What the chaos costs */}
+		<section class="py-16 px-6">
+			<div class="container mx-auto max-w-4xl">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">Add up what the chaos costs</h2>
+				<div class="text-lg text-gray-700 leading-relaxed space-y-6">
+					<p>Pick one process. Proposals are a good place to start.</p>
+
+					<p>Proposals take 3 people 6 hours a week each. They find the last one, copy it, fix the pricing, then wait on you to approve it. At $40 an hour, that comes to about $37,000 a year. For one process.</p>
+
+					<div class="bg-blue-50 border border-blue-200 rounded-lg p-6 text-center">
+						<p class="text-lg text-gray-700">3 people x 6 hours x 52 weeks x $40 an hour</p>
+						<p class="text-4xl font-bold text-blue-600 mt-2">$37,440 a year</p>
+					</div>
+
+					<p>Then there are the costs that never show up on a timesheet:</p>
+
+					<ul class="list-disc list-inside space-y-2 ml-4">
+						<li>The client who waited 4 days for a quote and signed with the firm that sent one in 4 hours.</li>
+						<li>The good hire who quit in month 3 because nobody had time to train her.</li>
+						<li>The job you quoted from memory, $2,000 under what it cost you to deliver.</li>
+						<li>The vacation you cut short because something broke and only you knew the fix.</li>
+					</ul>
+
+					<p>Most businesses your size have 4 or 5 processes like this. Nobody has ever put a number on them, so they feel like the normal cost of being busy.</p>
 				</div>
 			</div>
 		</section>
@@ -48,50 +79,46 @@ description="Discover how I help small business owners transform chaotic operati
 					<p>You've tried the usual playbook:</p>
 					
 					<ul class="list-disc list-inside space-y-2 ml-4">
-						<li>More tools</li>
-						<li>More hires</li>
+						<li>More tools, including AI</li>
 						<li>"Just delegate it"</li>
 					</ul>
 					
-					<p>But the chaos doesn't stop. Because delegation without documentation is just abdication.<br>
-					And AI? It's just giving a robot access to your mess.</p>
+					<p>The chaos keeps coming. Delegation without documentation hands the mess to someone else.<br>
+					AI given access to that mess makes more of it.</p>
 					
 					<div class="text-center mt-8">
-						<p class="text-2xl font-semibold text-gray-800">What holds everything up is a spine:</p>
-						<p class="text-2xl font-semibold text-blue-600">a core system the business runs on.</p>
+						<p class="text-2xl font-semibold text-gray-800">Every business runs on a spine:</p>
+						<p class="text-2xl font-semibold text-blue-600">the few processes everything else depends on.</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		{/* Section 3: What Actually Works */}
-		<section class="py-16 px-6">
-			<div class="container mx-auto max-w-4xl">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">What actually works</h2>
-				<div class="text-lg text-gray-700 leading-relaxed space-y-6">
-					<p>After auditing business after business, I started seeing the same patterns:</p>
-					
-					<ul class="list-disc list-inside space-y-2 ml-4">
-						<li>The founder was the bottleneck</li>
-						<li>Everyone was busy but misaligned</li>
-						<li>No feedback loops, no operating rhythm</li>
+		{/* Composite founder story */}
+		<section class="py-16 px-6 bg-blue-50">
+			<div class="container mx-auto max-w-3xl">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">Meet Dana</h2>
+				<p class="text-base text-gray-500 italic text-center mb-10">Dana is a composite. Her details are typical of the founders this page is for.</p>
+				<img src="/images/dana-composite-founder.webp" alt="A founder on the phone at her laptop with a coffee beside her" width="1200" height="675" loading="lazy" class="w-full rounded-lg shadow-lg mb-10" />
+				<div class="text-xl text-gray-700 leading-relaxed space-y-6">
+					<p>Dana runs a 12-person marketing agency. Revenue last year was $2.4M, up from $900K 3 years ago.</p>
+
+					<p>In June she took her first full week off in 4 years. Her daughter was graduating.</p>
+
+					<p>She answered 31 messages that week. On Wednesday a proposal went out with last year's rates, because the new pricing lived in a spreadsheet on her laptop. The client signed, and the job lost $6,000.</p>
+
+					<p>On Friday her best account manager asked, politely, whether there was a plan for any of this. Two months later he left for a job with an onboarding manual.</p>
+
+					<p class="font-semibold text-gray-800">Here's what an 80/20 audit would find in Dana's business:</p>
+
+					<ul class="list-disc list-inside space-y-3 ml-4 text-lg">
+						<li>Proposals take 3 people 5 hours a week each, rebuilt from old files. That's about $31,000 a year.</li>
+						<li>Pricing lives in one spreadsheet only Dana can open. One wrong quote cost $6,000.</li>
+						<li>Handoffs from sales to delivery happen in Slack threads, and something falls through about twice a month.</li>
+						<li>Training a new hire takes about 6 weeks of Dana's time, spread across 100 interruptions.</li>
 					</ul>
-					
-					<p>So I shifted. I stopped doing audits that sat in a drawer.<br>
-					And started helping founders embed operational clarity.</p>
-					
-					<p>Sometimes we started with onboarding.<br>
-					Sometimes internal comms.<br>
-					Sometimes it was just fixing how a task moved from idea to done.</p>
-					
-					<p>But the outcome was the same:</p>
-					
-					<ul class="list-disc list-inside space-y-2 ml-4">
-						<li>Fewer bottlenecks</li>
-						<li>Smarter decisions</li>
-						<li>Teams that move without micromanagement</li>
-						<li>AI that actually works</li>
-					</ul>
+
+					<p>3 of the 4 (proposals, pricing, handoffs) could be written down in a week, and 2 automated after that. None of it needs Dana to work harder.</p>
 				</div>
 			</div>
 		</section>
@@ -105,15 +132,15 @@ description="Discover how I help small business owners transform chaotic operati
 					<table class="w-full bg-white rounded-lg shadow-lg">
 						<thead class="bg-blue-600 text-white">
 							<tr>
-								<th class="px-6 py-4 text-left font-semibold">Bottleneck</th>
-								<th class="px-6 py-4 text-left font-semibold">Breakdown</th>
-								<th class="px-6 py-4 text-left font-semibold">Burnout</th>
+								<th class="px-6 py-4 text-left font-semibold">Pattern</th>
+								<th class="px-6 py-4 text-left font-semibold">What breaks</th>
+								<th class="px-6 py-4 text-left font-semibold">What it costs you</th>
 							</tr>
 						</thead>
 						<tbody class="divide-y divide-gray-200">
 							<tr>
 								<td class="px-6 py-4">
-									<div class="font-semibold text-gray-800">Owner-as-Glue</div>
+									<div class="font-semibold text-gray-800">Owner as glue</div>
 									
 								</td>
 								<td class="px-6 py-4">
@@ -121,14 +148,13 @@ description="Discover how I help small business owners transform chaotic operati
 									
 								</td>
 								<td class="px-6 py-4">
-									<div class="text-gray-600">Team feels stuck. You feel fried</div>
+									<div class="text-gray-600">Team feels stuck, you feel fried</div>
 									
 								</td>
 							</tr>
 							<tr>
-                <tr>
 								<td class="px-6 py-4">
-									<div class="font-semibold text-gray-800">Frankenstein Stack</div>
+									<div class="font-semibold text-gray-800">Frankenstein stack</div>
 									
 								</td>
 								<td class="px-6 py-4">
@@ -136,7 +162,7 @@ description="Discover how I help small business owners transform chaotic operati
 									
 								</td>
 								<td class="px-6 py-4">
-									<div class="text-gray-600">Confusion, duplication, wasted time</div>
+									<div class="text-gray-600">The same work done twice</div>
 									
 								</td>
 							</tr>
@@ -149,17 +175,17 @@ description="Discover how I help small business owners transform chaotic operati
 									<div class="text-gray-600">Docs no one uses or trusts</div>
 								</td>
 								<td class="px-6 py-4">
-									<div class=" text-gray-600">Tribal knowledge reigns</div>
+									<div class=" text-gray-600">Answers live in people's heads</div>
 								</td>
 							</tr>
 
               <tr>
 								<td class="px-6 py-4">
-									<div class="font-semibold text-gray-800">Delegation Traps</div>
+									<div class="font-semibold text-gray-800">Delegation traps</div>
 									
 								</td>
 								<td class="px-6 py-4">
-									<div class="text-gray-600">Handoff = hand grenade</div>
+									<div class="text-gray-600">Work comes back half done</div>
 									
 								</td>
 								<td class="px-6 py-4">
@@ -173,6 +199,52 @@ description="Discover how I help small business owners transform chaotic operati
 			</div>
 		</section>
 
+		{/* Who you'd be working with */}
+		<section class="py-16 px-6">
+			<div class="container mx-auto max-w-4xl">
+				<div class="flex flex-col md:flex-row items-center gap-10">
+					<img src="/images/david-j-forer-li.jpeg" alt="David Forer" width="200" height="200" class="w-48 h-48 rounded-full object-cover shadow-lg flex-shrink-0" loading="lazy" />
+					<div class="text-lg text-gray-700 leading-relaxed space-y-4">
+						<h2 class="text-3xl md:text-4xl font-bold text-gray-800">Who you'd be working with</h2>
+						<p>I started in sales, then spent years running operations for startups, SaaS companies and agencies. The biggest team I ran had 40 people. I wrote the SOPs, built the onboarding and sat in the middle of every handoff.</p>
+						<p>Now I do that work for founders who don't have an operations leader yet. I'm based between Spain and the US. I work with US businesses on US hours.</p>
+						<p><a href="/about" class="text-blue-600 font-semibold hover:underline">More about me</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{/* Mid-page CTA */}
+		<section class="py-12 px-6 bg-blue-600 text-white">
+			<div class="container mx-auto max-w-3xl text-center">
+				<p class="text-2xl md:text-3xl font-semibold mb-6">Find out what your busiest process is costing you.</p>
+				<a href="#free-audit" class="inline-block bg-white text-blue-700 font-semibold py-4 px-8 rounded-lg text-lg hover:bg-blue-50 transition duration-300">Claim one of the 5 free audits</a>
+			</div>
+		</section>
+
+		{/* Section 3: What Actually Works */}
+		<section class="py-16 px-6">
+			<div class="container mx-auto max-w-4xl">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">What changed how I work</h2>
+				<div class="text-lg text-gray-700 leading-relaxed space-y-6">
+					<p>After auditing business after business, I kept seeing the patterns in the table above.</p>
+					
+					<p>So my audits end with the fixes written down, in order, with a dollar figure on each.</p>
+					
+					<p>Sometimes we started with onboarding, sometimes with how a task moved from idea to done.</p>
+					
+					<p>But the outcome was the same:</p>
+					
+					<ul class="list-disc list-inside space-y-2 ml-4">
+						<li>Fewer bottlenecks</li>
+						<li>Smarter decisions</li>
+						<li>Teams that move without micromanagement</li>
+						<li>AI the team uses</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
 		{/* Section 5: My Core Belief */}
 		<section class="py-16 px-6 bg-blue-600 text-white">
 			<div class="container mx-auto max-w-4xl text-center">
@@ -180,10 +252,10 @@ description="Discover how I help small business owners transform chaotic operati
 				<h3 class="text-2xl md:text-3xl font-semibold mb-6">AI accelerates whatever it touches, chaos included.</h3>
 				
 				<div class="text-lg leading-relaxed space-y-6">
-					<p>If your business runs on memory and hope, AI will just get you to burnout faster.</p>
+					<p>If your business runs on memory and hope, AI gets you to burnout faster.</p>
 					
-					<p>Build it on systems your team can follow, and AI becomes your second brain.<br>
-					You finally get to lead instead of react.</p>
+					<p>Build the business on systems your team can follow, and AI has something solid to work from.<br>
+					You get your afternoons back.</p>
 				</div>
 			</div>
 		</section>
@@ -198,7 +270,7 @@ description="Discover how I help small business owners transform chaotic operati
 					<div class="bg-gray-50 border-l-4 border-blue-600 p-8 rounded-r-lg">
 						<p class="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4">"If you just set it up and set it and forget it, it will create chaos."</p>
 						<p class="text-sm text-gray-600 font-semibold">Amy Wood, founder and CEO of Flint Avenue Marketing, in Business Insider</p>
-						<p class="text-sm text-gray-500 mt-2">Wood is not an AI sceptic. She runs several AI assistants in her agency and says she is staying all in.</p>
+						<p class="text-sm text-gray-500 mt-2">Wood is not an AI skeptic. She runs several AI assistants in her agency and says she is staying all in.</p>
 					</div>
 
 					<div class="bg-gray-50 border-l-4 border-blue-600 p-8 rounded-r-lg">
@@ -213,9 +285,9 @@ description="Discover how I help small business owners transform chaotic operati
 				</div>
 
 				<div class="mt-12 text-lg text-gray-700 leading-relaxed space-y-6">
-					<p>Three owners in different industries ran into the same pattern. The tool worked. The business underneath it was not ready to hold what the tool produced.</p>
+					<p>3 owners in different industries ran into the same pattern. The tool worked. The business underneath it was not ready to hold what the tool produced.</p>
 
-					<p>Picarazzi ended up hiring a person to manage the thing that was supposed to save her a person. Downs found that documentation written four months ago was already dead. Wood, who is all in on AI and says so, still warns you about the version of it you install and walk away from.</p>
+					<p>Picarazzi ended up hiring a person to manage the thing that was supposed to save her a person. Downs found his documentation out of date overnight. Wood, who is all in on AI and says so, still warns you about the version of it you install and walk away from.</p>
 
 					<p class="text-xl font-semibold text-gray-800">That is the order of operations. Spine first, then AI.</p>
 				</div>
@@ -225,23 +297,138 @@ description="Discover how I help small business owners transform chaotic operati
 		{/* Section 7: How I Can Help You */}
 		<section class="py-16 px-6">
 			<div class="container mx-auto max-w-4xl">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">How I Can Help You</h2>
-				
-				<div class="text-center mb-8">
-					<h3 class="text-2xl font-semibold text-blue-600 mb-4">Let's break the cycle</h3>
-				</div>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">How I can help you</h2>
 				
 				<div class="text-lg text-gray-700 leading-relaxed space-y-6">
-					<p>I work with small business owners (5 to 15 people, ~$1M in revenue) who are stuck in the chaos of success.</p>
+					<p>I work with small business owners (5 to 20 people, $1M to $5M in revenue) who are stuck in the chaos of success.</p>
 					
 					<p>We codify what works and fix what's fragile.<br>
 					AI goes in only when the business is ready for it.</p>
 					
-					<p class="text-xl font-semibold text-center text-gray-800">No plug-and-play product. No band-aid fixes. Just deep clarity and operational sanity.</p>
+					<p class="text-xl font-semibold text-center text-gray-800">You leave with your processes written down and your team able to run them.</p>
 				</div>
 				
 				<div class="text-center mt-12">
-					<a href="/contact" class="inline-block bg-blue-600 text-white font-semibold py-4 px-8 rounded-lg text-lg hover:bg-blue-700 transition duration-300">Start with an audit</a>
+					<a href="#free-audit" class="inline-block bg-blue-600 text-white font-semibold py-4 px-8 rounded-lg text-lg hover:bg-blue-700 transition duration-300">Get the $750 audit free</a>
+				</div>
+			</div>
+		</section>
+
+
+		{/* What happens after you click */}
+		<section class="py-16 px-6 bg-gray-50">
+			<div class="container mx-auto max-w-5xl">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">What happens after you click</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+					<div class="bg-white rounded-lg shadow p-6">
+						<div class="text-4xl font-bold text-blue-600 mb-3">1</div>
+						<h3 class="text-xl font-semibold text-gray-800 mb-2">Fill in the form below</h3>
+						<p class="text-base text-gray-600">It's right below this section and takes about 2 minutes.</p>
+					</div>
+					<div class="bg-white rounded-lg shadow p-6">
+						<div class="text-4xl font-bold text-blue-600 mb-3">2</div>
+						<h3 class="text-xl font-semibold text-gray-800 mb-2">I email you to book a time</h3>
+						<p class="text-base text-gray-600">One session, 2 to 3 hours. We pick a time that works around your schedule.</p>
+					</div>
+					<div class="bg-white rounded-lg shadow p-6">
+						<div class="text-4xl font-bold text-blue-600 mb-3">3</div>
+						<h3 class="text-xl font-semibold text-gray-800 mb-2">Walk me through your work</h3>
+						<p class="text-base text-gray-600">You talk, I take notes. I map your top 3 processes.</p>
+					</div>
+					<div class="bg-white rounded-lg shadow p-6">
+						<div class="text-4xl font-bold text-blue-600 mb-3">4</div>
+						<h3 class="text-xl font-semibold text-gray-800 mb-2">You get the report</h3>
+						<p class="text-base text-gray-600">Same or next day. Your top 5 automation opportunities, priced in dollars, plus the process sketches.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{/* Free 80/20 audit offer, form on the page */}
+		<FormSection
+			id="free-audit"
+			layout="split"
+			heading="Get the Process Audit Free"
+			blurb="Normally $750. Free for the next 5 founders."
+			surveyId={AI_AUDIT_SURVEY}
+			fields={AI_AUDIT_FIELDS}
+			buttonText="Claim my free audit"
+			successHeading="Got it."
+			successBody="Your details are in. I will be in touch to set up your audit."
+		>
+			<ul class="space-y-3 text-lg text-white">
+				<li class="flex gap-3"><span class="text-blue-300 font-bold" aria-hidden="true">&#10003;</span><span>2 to 3 hours with you, one sitting.</span></li>
+				<li class="flex gap-3"><span class="text-blue-300 font-bold" aria-hidden="true">&#10003;</span><span>Your top 3 processes mapped.</span></li>
+				<li class="flex gap-3"><span class="text-blue-300 font-bold" aria-hidden="true">&#10003;</span><span>Your top 5 automation opportunities, each priced in dollars.</span></li>
+				<li class="flex gap-3"><span class="text-blue-300 font-bold" aria-hidden="true">&#10003;</span><span>A one-page report and the process sketches, yours to keep. Delivered the same day or the next.</span></li>
+			</ul>
+		</FormSection>
+
+		{/* Questions founders ask */}
+		<section class="bg-white py-20 px-6">
+			<div class="container mx-auto max-w-6xl">
+				<div class="lg:grid lg:grid-cols-12 lg:gap-12">
+					<div class="lg:col-span-5">
+						<p class="text-sm font-semibold uppercase tracking-widest text-blue-600">FAQ</p>
+						<h2 class="mt-2 text-3xl md:text-4xl font-bold tracking-tight text-gray-900">Questions Founders Ask</h2>
+						<p class="mt-4 text-lg leading-7 text-gray-600">Have a question that isn't here? Add it to the challenges box in the form and I'll answer before we book anything.</p>
+					</div>
+					<div class="mt-10 lg:col-span-7 lg:mt-0 divide-y divide-gray-200 border-y border-gray-200">
+						<details class="group py-6" open>
+							<summary class="flex w-full cursor-pointer list-none items-start justify-between gap-6 text-left text-gray-900 [&::-webkit-details-marker]:hidden">
+								<span class="text-lg font-semibold leading-7">Why is it free?</span>
+								<span class="ml-6 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-gray-300 text-blue-600 transition group-open:rotate-45 group-open:border-blue-600 group-open:bg-blue-600 group-open:text-white" aria-hidden="true">
+									<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14" /></svg>
+								</span>
+							</summary>
+							<p class="mt-3 pr-12 text-base leading-7 text-gray-600">To earn your trust. You walk away with your top 5 automation opportunities priced and your top 3 processes mapped. From there you can do the work yourself or hire someone, me included, to do it.</p>
+						</details>
+						<details class="group py-6">
+							<summary class="flex w-full cursor-pointer list-none items-start justify-between gap-6 text-left text-gray-900 [&::-webkit-details-marker]:hidden">
+								<span class="text-lg font-semibold leading-7">I don't have time for this.</span>
+								<span class="ml-6 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-gray-300 text-blue-600 transition group-open:rotate-45 group-open:border-blue-600 group-open:bg-blue-600 group-open:text-white" aria-hidden="true">
+									<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14" /></svg>
+								</span>
+							</summary>
+							<p class="mt-3 pr-12 text-base leading-7 text-gray-600">It's one sitting of 2 to 3 hours. You talk, I take notes. You don't prepare anything and you don't get homework.</p>
+						</details>
+						<details class="group py-6">
+							<summary class="flex w-full cursor-pointer list-none items-start justify-between gap-6 text-left text-gray-900 [&::-webkit-details-marker]:hidden">
+								<span class="text-lg font-semibold leading-7">We tried ChatGPT and it didn't stick.</span>
+								<span class="ml-6 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-gray-300 text-blue-600 transition group-open:rotate-45 group-open:border-blue-600 group-open:bg-blue-600 group-open:text-white" aria-hidden="true">
+									<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14" /></svg>
+								</span>
+							</summary>
+							<p class="mt-3 pr-12 text-base leading-7 text-gray-600">That usually happens when a tool lands on a process nobody has written down. The audit starts with the process, so any AI that comes later has something to follow.</p>
+						</details>
+						<details class="group py-6">
+							<summary class="flex w-full cursor-pointer list-none items-start justify-between gap-6 text-left text-gray-900 [&::-webkit-details-marker]:hidden">
+								<span class="text-lg font-semibold leading-7">What's the return?</span>
+								<span class="ml-6 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-gray-300 text-blue-600 transition group-open:rotate-45 group-open:border-blue-600 group-open:bg-blue-600 group-open:text-white" aria-hidden="true">
+									<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14" /></svg>
+								</span>
+							</summary>
+							<p class="mt-3 pr-12 text-base leading-7 text-gray-600">Each of the 5 opportunities comes with the math: hours, people, cost per year. You'll see the number before you spend anything.</p>
+						</details>
+						<details class="group py-6">
+							<summary class="flex w-full cursor-pointer list-none items-start justify-between gap-6 text-left text-gray-900 [&::-webkit-details-marker]:hidden">
+								<span class="text-lg font-semibold leading-7">Is this a sales pitch in disguise?</span>
+								<span class="ml-6 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-gray-300 text-blue-600 transition group-open:rotate-45 group-open:border-blue-600 group-open:bg-blue-600 group-open:text-white" aria-hidden="true">
+									<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14" /></svg>
+								</span>
+							</summary>
+							<p class="mt-3 pr-12 text-base leading-7 text-gray-600">You keep the report and the sketches whether or not we ever work together. If there's a next step that makes sense, I'll tell you what it costs.</p>
+						</details>
+						<details class="group py-6">
+							<summary class="flex w-full cursor-pointer list-none items-start justify-between gap-6 text-left text-gray-900 [&::-webkit-details-marker]:hidden">
+								<span class="text-lg font-semibold leading-7">Will my team push back?</span>
+								<span class="ml-6 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-gray-300 text-blue-600 transition group-open:rotate-45 group-open:border-blue-600 group-open:bg-blue-600 group-open:text-white" aria-hidden="true">
+									<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14" /></svg>
+								</span>
+							</summary>
+							<p class="mt-3 pr-12 text-base leading-7 text-gray-600">The session is with you only. Nothing changes for your team until you decide it should.</p>
+						</details>
+					</div>
 				</div>
 			</div>
 		</section>

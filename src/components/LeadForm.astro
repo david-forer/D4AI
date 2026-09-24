@@ -62,6 +62,8 @@ interface Props {
   formId?: string;
   fields: LeadFormField[];
   heading?: string;
+  /** Two-column contact fields for a narrow card. Off by default. */
+  compact?: boolean;
   buttonText?: string;
   successHeading?: string;
   successBody?: string;
@@ -81,6 +83,7 @@ const {
   formId = "lf",
   fields,
   heading,
+  compact = false,
   buttonText = "Send",
   successHeading = "Got it.",
   successBody = "Your details are in. I read these myself and I will come back to you shortly.",
@@ -138,7 +141,7 @@ const labelClass = "block text-gray-700 text-sm font-bold mb-2 text-left";
           {f.type === "contactInfo" ? (
             <fieldset>
               <legend class={labelClass}>{f.label}</legend>
-              <div class="space-y-3">
+              <div class={compact ? "grid grid-cols-1 sm:grid-cols-2 gap-3" : "space-y-3"}>
                 {f.parts!.map((p) =>
                   p.type === "hidden" ? (
                     /* A hidden part exists only to hold its slot in the
