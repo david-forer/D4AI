@@ -363,8 +363,8 @@ const schema = {
   {/* FontAwesome loaded non-blocking. The 49 icons on this page are decorative,
        so a late paint is preferable to blocking first render on a CDN round trip. */}
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"></noscript>
 
   <div class="bg-gray-50 overflow-x-hidden">
     {/* Fixed Table of Contents */}
@@ -416,7 +416,7 @@ const schema = {
             {/* Main Title & Subtitle */}
             <div class="lg:col-span-7">
               <h1 class="text-4xl sm:text-5xl lg:text-6xl font-light text-white leading-tight mb-6">
-                The Founder Bottleneck
+                The Founder Bottleneck<span class="sr-only">:</span>
                 <span class="block text-xl sm:text-2xl lg:text-3xl font-normal opacity-80 mt-3">Why your business stalls without you, and how to fix it</span>
               </h1>
               <p class="text-base sm:text-xl text-white/90 mb-8 leading-relaxed max-w-full">

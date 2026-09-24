@@ -1,6 +1,6 @@
 ---
 title: "Blog Engine OS"
-description: "An agent that writes, images, and stages SEO blog posts for this site twice a week. I review, then push."
+description: "Blog Engine OS is the agent that writes, illustrates, and stages SEO blog posts for this site twice a week. I review every draft before it goes live."
 seoTitle: "Blog Engine OS | It Drafts, I Approve and Push | Forersight"
 pubDate: 2026-07-20T00:00:00Z
 buildType: "agent"

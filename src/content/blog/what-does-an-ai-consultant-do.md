@@ -1,5 +1,6 @@
 ---
 title: "What Does an AI Consultant Actually Do?"
+seoTitle: "What Does an AI Consultant Actually Do? Discovery to Handoff"
 description: "Most descriptions of AI consulting are either too vague or too technical. Here is what an AI consultant actually does inside a small business engagement, from first week to handoff."
 pubDate: 2026-03-21T00:00:00Z
 tags: ["hiring-an-ai-consultant"]

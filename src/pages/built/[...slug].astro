@@ -35,6 +35,14 @@ function toEmbedUrl(url: string): string | null {
   return null;
 }
 
+// Sibling builds, so no build page depends on /built as its only inbound link.
+const allBuilds = (await getCollection('builds', ({ data }) => data.status !== 'archived'))
+  .sort((a, b) => a.slug.localeCompare(b.slug));
+const idx = allBuilds.findIndex((b) => b.slug === entry.slug);
+const moreBuilds = [1, 2, 3]
+  .map((n) => allBuilds[(idx + n) % allBuilds.length])
+  .filter((b) => b && b.slug !== entry.slug);
+
 const videoUrl = entry.data.videoUrl || '';
 const embedUrl = videoUrl ? toEmbedUrl(videoUrl) : null;
 ---
@@ -110,6 +118,23 @@ const embedUrl = videoUrl ? toEmbedUrl(videoUrl) : null;
       </article>
     </div>
   </section>
+
+  {/* More builds */}
+  {moreBuilds.length > 0 && (
+    <section class="py-12 bg-white border-t border-gray-100">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">More things I have built</h2>
+        <div class="grid gap-6 md:grid-cols-3">
+          {moreBuilds.map((build) => (
+            <a href={`/built/${build.slug}`} class="block bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition duration-300">
+              <h3 class="text-lg font-bold text-blue-700 mb-2">{build.data.title}</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">{build.data.description}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 
   {/* CTA */}
   <section class="py-16 bg-gray-100">

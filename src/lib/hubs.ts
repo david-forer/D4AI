@@ -86,7 +86,7 @@ Clear rules make a team faster with AI. Once people know what they can paste whe
     name: 'AI Operations',
     navLabel: 'Operations',
     h1: 'AI Operations for Small Businesses',
-    description: 'Practical guides on building AI-powered operational systems for small businesses and founder-led teams.',
+    description: 'Practical guides to building AI-powered operating systems for small businesses and founder-led teams, from mapping the work to running it without the founder.',
     body: `Most small business owners reach a point where the business is technically working but feels impossible to manage. Revenue is growing, but so is the chaos. Decisions pile up, manual tasks multiply, and the founder ends up becoming the bottleneck in their own company.
 
 This category covers AI-powered operational systems built specifically for small businesses and founder-led teams. The articles here go beyond surface-level tool recommendations. They address the deeper question of how to design a business that runs on clear processes rather than constant intervention.
@@ -104,7 +104,7 @@ If you are trying to scale without adding headcount, or you are drowning in the 
     name: 'AI Training',
     navLabel: 'Training',
     h1: 'AI Training and Team Adoption for Small Business',
-    description: 'Resources for training non-technical teams to use AI effectively and consistently.',
+    description: 'Guides for training non-technical teams to use AI well and consistently: where to start, what to teach each role, how to budget for it, and how to make it stick.',
     body: `Buying AI tools is straightforward. Getting a team to use them well is a different problem entirely. Most small businesses that struggle with AI adoption do not have a technology problem. They have a training and change management problem.
 
 This category covers AI training, team adoption, and skills development for small business environments. The articles here are built for founders and managers who need practical frameworks for bringing their teams along, not enterprise-scale programs that require a dedicated HR department to run.
@@ -158,7 +158,7 @@ The order that tends to work is documented processes first, automation second, a
     name: 'AI Automation',
     navLabel: 'Automation',
     h1: 'AI Automation Strategy and Architecture',
-    description: 'Strategic and technical guides on building automation systems that actually work.',
+    description: 'Guides to building automation systems that hold up in a small business: what to automate first, which tools to use, and how to maintain it.',
     body: `Automation is not a tool purchase. It is a design decision that reflects how clearly you understand your own business processes. Implemented well, it removes friction, reduces error, and creates space for higher-value work. Implemented poorly, it automates problems rather than solving them.
 
 This category covers AI automation strategy, architecture, and execution for small and mid-size businesses. Articles here address the full picture, from identifying which processes are ready to automate, to building an automation architecture that scales, to calculating the genuine return on automation investment before committing resources.
@@ -176,7 +176,7 @@ Whether you are running your first business automation or rethinking a system th
     name: 'Workflow Systems',
     navLabel: 'Workflows',
     h1: 'Workflow and Intake Systems for Growing Businesses',
-    description: 'Deep dives into workflow design, intake systems, SOPs, and operational frameworks that scale.',
+    description: 'Workflow design, intake systems, SOPs, and operating frameworks for founder-led teams, built so the business runs when the founder steps away.',
     body: `Work breaks in predictable ways. A client inquiry falls through the cracks because there is no intake process. A recurring task gets done differently each time because no one documented how it should work. A new team member makes the same mistakes because the onboarding process lives in someone's head.
 
 These articles focus on the architecture of how work moves through a business: intake systems, workflow design, standard operating procedures, and the operational frameworks that prevent good work from going sideways. The focus is practical and structural.
@@ -230,7 +230,7 @@ A strategy is only real if it tells you what not to do. These articles are writt
     name: 'SEO + AI',
     navLabel: 'SEO',
     h1: 'SEO Strategy and AI-Enabled Search',
-    description: 'Advanced SEO guides covering topical authority, semantic SEO, and AI search optimization.',
+    description: 'SEO guides for small business sites covering topical authority, semantic SEO, schema markup, and getting cited by ChatGPT and Google AI Overviews.',
     body: `Search is changing faster than most content strategies can keep up with. Topical authority, semantic relevance, and AI-generated overviews are reshaping how search engines evaluate and surface content. Tactics that worked two or three years ago are producing diminishing returns, and the businesses pulling ahead are building search presence as a compounding system rather than a one-off campaign.
 
 This category covers SEO strategy for small businesses operating in the current search environment. Articles address both the foundational elements that remain constant, including internal linking architecture, schema markup, and content structure, and the emerging priorities around generative engine optimization, AI search, and entity-based relevance signals.

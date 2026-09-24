@@ -1,6 +1,6 @@
 ---
 title: "Achieving Operational Excellence with AI"
-description: "Discover how AI can transform your business operations, eliminate bottlenecks, and create scalable systems."
+description: "Tribal knowledge and manual tasks are a systems problem. Where AI improves small business operations, how to roll it out, and where people stay in charge."
 pubDate: 2025-05-16T00:00:00Z
 tags: ["ai-readiness"]
 heroImage: "/images/blog/ai-operations.webp"

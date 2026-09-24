@@ -1,6 +1,6 @@
 ---
 title: "Monday Operator Briefing"
-description: "A Claude Code skill that runs my weekly operating review before I wake up on Monday."
+description: "A Claude Code skill that runs my weekly operating review before I wake up Monday. It reads live signals, sets weekly priorities, and saves a dated briefing."
 seoTitle: "Monday Operator Briefing | Review Runs at 6am | Forersight"
 pubDate: 2026-07-14T00:00:00Z
 buildType: "skill"

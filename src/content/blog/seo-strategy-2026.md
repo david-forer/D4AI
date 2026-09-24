@@ -1,6 +1,6 @@
 ---
 title: "SEO Strategy for 2026: What's Working Now"
-description: "Stay ahead of the curve with these effective SEO strategies that are driving results in 2026."
+description: "What search engines reward in 2026, which SEO strategies still produce results, and how to turn them into a working plan for a small business website this year."
 pubDate: 2025-05-15T00:00:00Z
 tags: ["seo"]
 heroImage: "/images/blog/seo-strategies-that-work-2025.webp"
@@ -21,7 +21,7 @@ Several key shifts have transformed SEO over the past year:
 - Mobile-first indexing is now the absolute standard
 - Core Web Vitals have become even more critical ranking factors
 
-## Effective SEO Strategies for 2025
+## Effective SEO Strategies for 2026
 
 ### 1. E-E-A-T is More Important Than Ever
 

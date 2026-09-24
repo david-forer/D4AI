@@ -1,6 +1,6 @@
 ---
 title: "The Best Schema Markup Types for SEO: A Complete Guide"
-description: "Learn which schema markup types deliver measurable SEO impact and how to implement them effectively."
+description: "Which schema markup types move SEO results, from FAQPage and Article to HowTo, BreadcrumbList and WebSite, and how to implement each one on a small business site."
 pubDate: 2025-12-13T00:00:00Z
 updatedDate: 2026-09-23T00:00:00Z
 tags: ["seo"]

@@ -8,6 +8,20 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 const DIST = path.join(__dirname, 'dist');
 
+// Express announces itself in X-Powered-By on every response. Nothing needs it.
+app.disable('x-powered-by');
+
+// Baseline security headers, flagged as missing on every URL by Sitebulb.
+// HSTS leaves out includeSubDomains and preload on purpose: both are hard to
+// back out of, and nothing here has checked every subdomain serves HTTPS.
+app.use((req, res, next) => {
+  res.setHeader('Strict-Transport-Security', 'max-age=31536000');
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  next();
+});
+
 // Gzip text responses. Nothing was compressed before this: the homepage went
 // out as 57KB of plain HTML and the stylesheet as 9KB, both on the critical
 // path. Images and fonts are already compressed formats, so compression skips

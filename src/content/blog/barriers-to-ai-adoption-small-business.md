@@ -1,7 +1,7 @@
 ---
 
 title: "The Real Barriers to AI Adoption in Small Business Teams"
-description: "AI adoption in small businesses stalls for specific, identifiable reasons. Understanding the people, process, technical, and leadership barriers, and how to remove each one, is the prerequisite to building a team that actually uses AI."
+description: "AI adoption in small businesses stalls for specific reasons. The people, process, technical, and leadership barriers, and how to remove each one."
 pubDate: 2026-03-07T00:00:00Z
 updatedDate: 2026-09-23T00:00:00Z
 tags: ["ai-training"]
