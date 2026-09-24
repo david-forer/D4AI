@@ -1,5 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+// Update this whenever the policy text changes.
+const lastUpdated = "September 24, 2026";
+
+const h2 = "text-2xl font-semibold mt-10";
+const link = "text-blue-600 underline";
 ---
 
 <Layout
@@ -17,28 +23,96 @@ import Layout from "../layouts/Layout.astro";
   </div>
 
   {/* Main content, centered, max-w-4xl */}
-  <div class="max-w-4xl mx-auto my-12 px-4">
+  <div class="max-w-4xl mx-auto my-12 px-4 leading-relaxed">
+    <p class="text-sm text-gray-500 mb-6">Last updated: {lastUpdated}</p>
+
     <p class="mb-4">
-      Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use our website and services.
+      This policy explains what personal information davidjforer.com collects, why, which outside services handle it, and what you can ask me to do with it. It covers this website and the conversations that start here.
     </p>
 
-    <h2 class="text-2xl font-semibold mt-8">Information We Collect</h2>
+    <h2 class={h2}>Who is responsible for your data</h2>
     <p class="mt-2">
-      We may collect personal information such as your name, email address, and any details you provide when contacting us or using our services.
+      This site is run by David J Forer through Forersight AI Operations LLC, a limited liability company registered in Wyoming, USA. The company is responsible for the personal information collected here, and I am the person who handles it. You can reach me at
+      <a class={link} href="mailto:david@davidjforer.com">david@davidjforer.com</a>.
     </p>
 
-    <h2 class="text-2xl font-semibold mt-8">How We Use Your Information</h2>
-    <ul class="list-disc ml-6 mt-2 space-y-1">
-      <li>To provide and improve our services</li>
-      <li>To respond to inquiries and support requests</li>
-      <li>To send updates, promotions, or news if you have opted in</li>
-      <li>To comply with legal requirements</li>
+    <h2 class={h2}>What I collect</h2>
+    <p class="mt-2">There are two kinds of information: what you give me, and what your browser sends automatically.</p>
+    <h3 class="text-lg font-semibold mt-6">Information you give me</h3>
+    <ul class="list-disc ml-6 mt-2 space-y-2">
+      <li><strong>Forms and the readiness quiz.</strong> Your name, email address, your answers and anything you type into a free text field. These forms run on Formbricks, which I host on my own server at bricks.davidjforer.com, so the responses are not stored with a third party.</li>
+      <li><strong>Booking a call.</strong> When you book through the Calendly scheduler embedded on this site, Calendly collects your name, email, the time you choose and any answers you give on the booking form, and shares them with me.</li>
+      <li><strong>Email.</strong> If you email me, I receive your address and whatever you write.</li>
     </ul>
+    <h3 class="text-lg font-semibold mt-6">Information collected automatically</h3>
+    <ul class="list-disc ml-6 mt-2 space-y-2">
+      <li><strong>Google Analytics 4.</strong> Counts visits and records which pages are viewed, how you arrived, your approximate location, device and browser. It uses cookies to recognize a returning browser.</li>
+      <li><strong>TruConversion.</strong> Shows me how visitors use a page through heatmaps and session recordings of clicks, scrolling and mouse movement. It also uses cookies.</li>
+      <li><strong>Server logs.</strong> The server that delivers this site records standard request data such as IP address, browser type and the page requested, for security and troubleshooting.</li>
+    </ul>
+    <p class="mt-4">
+      Both analytics tools load only after you scroll, click or tap, or after the page has been open for about 3 seconds. A visit that ends before then is not recorded by either tool.
+    </p>
 
-    <h2 class="text-2xl font-semibold mt-8">Your Rights</h2>
+    <h2 class={h2}>How I use it</h2>
+    <ul class="list-disc ml-6 mt-2 space-y-2">
+      <li>To reply to you and to schedule and hold the calls you book.</li>
+      <li>To show you your quiz result and follow up on it, or on the question you sent me.</li>
+      <li>To deliver consulting work you have agreed to buy.</li>
+      <li>To understand which pages are useful and fix the ones that are not.</li>
+      <li>To keep the site secure and meet legal and tax obligations.</li>
+    </ul>
+    <p class="mt-4">
+      I do not sell your personal information, and I do not share it with advertisers.
+    </p>
+
+    <h2 class={h2}>The legal basis for using it</h2>
     <p class="mt-2">
-      You may request access, correction, or deletion of your personal data. To exercise these rights, contact us at
-      <a class="text-blue-600 underline" href="mailto:david@davidjforer.com"> david@davidjforer.com</a>.
+      Forersight AI Operations LLC is a US business. If you visit from the European Union or the United Kingdom, the GDPR gives you the rights listed below, and I rely on your consent when you submit a form or book a call, on the steps needed to enter into or deliver a contract when we work together, on legal obligation for business and tax records, and on my legitimate interest in running and improving a secure website for analytics and server logs.
+    </p>
+
+    <h2 class={h2}>Outside services that handle your data</h2>
+    <ul class="list-disc ml-6 mt-2 space-y-2">
+      <li><strong>Google Analytics</strong> (Google LLC). <a class={link} href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google privacy policy</a></li>
+      <li><strong>TruConversion</strong>. <a class={link} href="https://www.truconversion.com/privacy-policy/" rel="noopener noreferrer" target="_blank">TruConversion privacy policy</a></li>
+      <li><strong>Calendly</strong> (Calendly LLC). <a class={link} href="https://calendly.com/privacy" rel="noopener noreferrer" target="_blank">Calendly privacy notice</a></li>
+      <li><strong>Vimeo</strong>, which serves the intro video on the homepage when you press play. <a class={link} href="https://vimeo.com/privacy" rel="noopener noreferrer" target="_blank">Vimeo privacy policy</a></li>
+      <li><strong>Cloudflare cdnjs</strong>, which delivers an icon stylesheet on some pages and receives your IP address when it does. <a class={link} href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer" target="_blank">Cloudflare privacy policy</a></li>
+    </ul>
+    <p class="mt-4">
+      Forersight and most of these services are based in the United States, so your data is processed there. Where information comes from the EU or UK, the services above rely on recognized transfer safeguards such as the EU-US Data Privacy Framework or standard contractual clauses.
+    </p>
+
+    <h2 class={h2}>How long I keep it</h2>
+    <p class="mt-2">
+      Form responses and emails are kept while we are in conversation and for up to 2 years after the last contact, unless we start working together. Client records are kept for as long as US tax law requires. Analytics data is kept under the retention settings of each analytics tool. You can ask me to delete your information sooner at any time.
+    </p>
+
+    <h2 class={h2}>Your rights</h2>
+    <p class="mt-2">
+      You can ask me to show you the personal information I hold about you, correct it, delete it, limit how I use it, or send it to you in a portable format. You can object to analytics, and you can withdraw consent at any time without affecting anything done before. Email
+      <a class={link} href="mailto:david@davidjforer.com">david@davidjforer.com</a>
+      and I will reply within 30 days.
+    </p>
+    <p class="mt-4">
+      If you are in the EU or UK and unhappy with my answer, you can complain to the data protection authority in the country where you live. If you are in the United States, you have the same access and deletion options through the email above, whatever state you live in.
+    </p>
+
+    <h2 class={h2}>Cookies and how to turn them off</h2>
+    <p class="mt-2">
+      Google Analytics and TruConversion set analytics cookies. Calendly and Vimeo may set their own cookies when you use the scheduler or play the video. You can block or delete them in your browser settings, or install the
+      <a class={link} href="https://tools.google.com/dlpage/gaoptout" rel="noopener noreferrer" target="_blank">Google Analytics opt-out add-on</a>.
+      Blocking the analytics cookies does not affect how the site works.
+    </p>
+
+    <h2 class={h2}>Children</h2>
+    <p class="mt-2">
+      This site is written for business owners and is not meant for anyone under 16. I do not knowingly collect information from children.
+    </p>
+
+    <h2 class={h2}>Changes to this policy</h2>
+    <p class="mt-2">
+      When the tools or practices described here change, I will update this page and the date at the top.
     </p>
   </div>
 </Layout>
