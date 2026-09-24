@@ -15,7 +15,7 @@ async function head(path) {
   const res = await fetch(SITE + path, { method: 'GET', redirect: 'manual', headers: { 'user-agent': UA } });
   const text = res.headers.get('content-type')?.includes('text') || res.headers.get('content-type')?.includes('xml')
     ? await res.text() : '';
-  return { status: res.status, location: res.headers.get('location'), type: res.headers.get('content-type') || '', powered: res.headers.get('x-powered-by') || '', text };
+  return { status: res.status, location: res.headers.get('location'), type: res.headers.get('content-type') || '', referrer: res.headers.get('referrer-policy') || '', text };
 }
 
 async function expectRedirect(path, to) {
@@ -38,7 +38,9 @@ console.log(`\nChecking ${SITE}\n`);
 console.log('Server');
 {
   const r = await head('/about/');
-  if (r.powered.toLowerCase().includes('express')) ok('Express server is live (X-Powered-By: Express)');
+  // server.js no longer sends X-Powered-By (disabled 2026-09-24), so key on the
+  // Referrer-Policy header it sets on every response instead.
+  if (r.referrer === 'strict-origin-when-cross-origin') ok('Express server is live (Referrer-Policy set by server.js)');
   else fail('Express server is NOT answering. server.js is not running. Check Coolify start command and Logs.');
 }
 
