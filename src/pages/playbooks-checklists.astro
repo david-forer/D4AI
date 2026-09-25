@@ -1,134 +1,169 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import FormSection from '../components/FormSection.astro';
+import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
+
+// The pack is being refreshed. Until it is, the form collects emails and David
+// sends the new set by hand. The old zip stays in public/downloads but nothing
+// links to it. Same survey as the homepage giveaway, meta.url tells them apart.
+const playbooks = [
+  { title: 'Lead intake automation', text: 'New leads land in your CRM, sorted and tagged, minutes after they fill out your form.' },
+  { title: 'AI customer support', text: 'A knowledge base and chatbot that answer the questions your team hears every day, and pass the hard ones to a person.' },
+  { title: 'SEO briefs with AI', text: 'Turn a keyword into a content brief your writer can start on the same day.' },
+  { title: 'Internal SOP library', text: 'Every process in one searchable place, so new hires stop asking you where things are.' },
+  { title: 'AI content calendar', text: 'Plan blog, social and email in one Notion calendar, with AI writing the first drafts.' },
+  { title: 'Client onboarding checklist', text: 'The welcome email and intake form go out on their own the day a client signs.' },
+  { title: 'Your first automation', text: 'Find the one task worth automating first, then build it.' },
+  { title: 'AI email drafting', text: 'First drafts of your routine emails, in your voice, ready for a quick edit.' },
+  { title: 'Website traffic monitoring', text: 'Free tools that watch your site and email you when traffic drops.' },
+  { title: 'Documenting repeatable tasks', text: 'Record a task once and get written steps anyone on your team can follow.' },
+];
+
+const inside = [
+  "Who it's for, and what you'll have running when you finish",
+  'The tools you need, what they cost and how long setup takes',
+  'Step-by-step instructions, in order',
+  'Tips and the mistakes to watch for',
+  "How to tell it's working",
+];
+
+const wins = [
+  { title: 'Leads hear back the same day', text: 'Every form fill lands in your CRM and gets a reply while the lead is still thinking about you.' },
+  { title: 'Your team finds answers without you', text: 'Processes live in one searchable library, so questions stop landing in your inbox.' },
+  { title: 'Clients get the same answer every time', text: 'Routine questions get answered from your knowledge base, and the tricky ones come to a person.' },
+  { title: 'Nobody retypes data', text: 'Details move from forms and emails into your systems on their own.' },
+];
+
+const faqs = [
+  { q: 'Is it really free?', a: "Yes. No call and no card. You get all 10 playbooks by email. If one of them makes you want help building it, you know where to find me." },
+  { q: 'When do I get them?', a: "I'm updating all 10 with current tools and prices. The new set goes to your inbox as soon as the refresh is done, so you won't get an outdated version." },
+  { q: 'Do I need to be technical?', a: "No. Every step assumes you've never built an automation. If you can set up a Google Form, you can follow these." },
+  { q: 'How much do the tools cost?', a: 'Each playbook lists the tools and their prices up front. Several start on free plans, and none need an enterprise contract.' },
+  { q: 'Who are these for?', a: "Founders of service businesses with 5 to 20 people and no ops manager. If you're the person everyone asks where things are, these are for you." },
+  { q: 'What happens after I sign up?', a: 'I email you the playbooks myself. If you reply with a question, I read it and answer it.' },
+];
 ---
 
 <Layout title="Playbooks and Checklists for Small Business Owners"
-description="Download plug-and-play AI playbooks and checklists designed for small business owners. Streamline operations, automate tasks, and save time with actionable workflows.">
-	{/* Blue Hero/Header Section */}
-	<section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20">
-		<div class="container mx-auto px-6 max-w-5xl">
-			<div class="flex flex-col justify-center">
-				<h1 class="text-4xl md:text-5xl font-bold text-white mb-16">Playbooks & <span class="text-gradient">Checklists</span></h1>
-			
-				<p class="text-white text-xl mb-8">Every day, there’s a new tool, a new shortcut, a new AI promise.
-But no one’s showing how to actually plug this stuff into your business.
-Not just marketing. Not just chat prompts. Real operations. Real workflows.</p>
-<p class="text-white text-xl opacity-80">
-  These playbooks were built after helping real businesses automate real work, from scrappy startups to scaling teams with zero time to spare.
-</p>
+description="10 free AI playbooks and checklists for small business owners. Each one takes a job your team does by hand, like lead intake or client onboarding, and shows you how to automate it.">
+	<section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20 relative overflow-hidden text-lg md:text-xl">
+		{/* Background texture, same triangles as the AI training hero. Decorative only. */}
+		<div class="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
+			<div class="absolute top-16 left-24 w-44 h-44 bg-amber-200" style="clip-path: polygon(50% 0, 100% 100%, 0 100%)"></div>
+			<div class="absolute bottom-20 right-20 w-56 h-56 bg-orange-200" style="clip-path: polygon(50% 100%, 0 0, 100% 0)"></div>
+			<div class="absolute top-1/3 left-1/2 w-24 h-24 bg-yellow-100" style="clip-path: polygon(50% 0, 100% 100%, 0 100%)"></div>
+		</div>
+		<div class="container mx-auto px-6 max-w-4xl relative z-10 text-center">
+			<p class="inline-block bg-white/15 border border-white/30 text-white text-lg md:text-xl font-bold uppercase tracking-wider rounded-full py-2 px-6 mb-6">Free for founders</p>
+			<h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">AI playbooks for your team's repeatable work</h1>
+			<p class="text-blue-50 mb-10 max-w-3xl mx-auto">10 step-by-step guides for small business owners. Each one takes a job your team does by hand, like chasing leads or onboarding clients, and shows you how to automate it.</p>
+			<a href="#get-playbooks" class="inline-block bg-white text-blue-700 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-50 transition duration-300">Send me the playbooks</a>
+		</div>
+	</section>
+
+	{/* Pain scene */}
+	<section class="bg-white py-16 px-6 text-lg md:text-xl">
+		<div class="container mx-auto max-w-3xl">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10 text-center">Sound familiar?</h2>
+			<div class="text-gray-700 leading-relaxed space-y-6">
+				<p>It's Friday afternoon. You look back at the week and try to count what moved the business forward.</p>
+				<ul class="space-y-4 border-l-4 border-blue-600 pl-6">
+					<li>A lead filled out your contact form on Tuesday. Nobody replied until Thursday.</li>
+					<li>You answered the same client question for the third time this month.</li>
+					<li>Your office manager spent Wednesday afternoon copying details from emails into the CRM.</li>
+					<li>The new hire shadowed someone for 2 days, because the process only lives in one person's head.</li>
+				</ul>
+				<p>Every one of those jobs can run without you. You already know that. You haven't had a free afternoon to set it up.</p>
+				<p class="font-semibold text-gray-800">These playbooks hand you the setup, step by step. Pick one and give it an afternoon.</p>
 			</div>
 		</div>
 	</section>
 
-<section class="bg-white py-20 px-6 md:px-12 lg:px-24 text-gray-900">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-      Plug-and-Play AI Playbooks for Small Business Owners Who Are Sick of Wasting Time
-    </h2>
-    <p class="text-lg md:text-xl text-gray-700 mb-8">
-      From onboarding to emails, SOPs to SEO. These aren’t <b> "ideas." </b>They’re done-for-you workflows you can copy, customize, and deploy.
-    </p>
+	{/* What the playbooks change, then what they are */}
+	<section class="bg-blue-50 py-20 px-6 text-lg md:text-xl">
+		<div class="max-w-5xl mx-auto">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-4">Turn the busywork into systems that run without you</h2>
+			<p class="text-gray-700 text-center max-w-3xl mx-auto mb-12">Each playbook takes one of those jobs and walks you through setting it up once, so your team stops doing it by hand every week.</p>
+			<div class="grid md:grid-cols-2 gap-6 mb-12">
+				{wins.map((w) => (
+					<div class="bg-white p-6 rounded-lg shadow-sm border-t-4 border-blue-600">
+						<h3 class="text-xl font-semibold text-gray-800 mb-2">{w.title}</h3>
+						<p class="text-gray-700">{w.text}</p>
+					</div>
+				))}
+			</div>
+			<div class="bg-white rounded-xl p-8 max-w-3xl mx-auto text-center shadow-sm">
+				<h3 class="text-2xl font-bold text-gray-800 mb-4">What you get</h3>
+				<p class="text-gray-700 mb-6">10 playbooks as PDFs, one job each. Every one lists the tools and what they cost, how long setup takes and each step in order. They're written for founders with 5 to 20 people and no ops manager, and they assume you've never built an automation.</p>
+				<a href="#get-playbooks" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">Send me the playbooks</a>
+			</div>
+		</div>
+	</section>
 
-    <p class="text-lg md:text-xl text-gray-700 mb-6">
-  Whether you're a solopreneur juggling everything or a growing team ready to scale smart, these playbooks give you the unfair advantage, without the usual tech headaches.
-</p>
+	<section class="bg-slate-200 py-20 px-6 text-lg md:text-xl">
+		<div class="max-w-5xl mx-auto">
+			<h2 class="text-3xl font-bold text-gray-800 text-center mb-4">10 playbooks, one job each</h2>
+			<p class="text-gray-700 text-center mb-10">Start with the job that eats the most of your week.</p>
+			<div class="grid md:grid-cols-2 gap-6">
+				{playbooks.map((p) => (
+					<div class="bg-white p-6 rounded-lg shadow-sm">
+						<h3 class="text-xl font-semibold text-gray-800 mb-2">{p.title}</h3>
+						<p class="text-gray-700">{p.text}</p>
+					</div>
+				))}
+			</div>
+		</div>
+	</section>
 
-<p class="text-sm text-gray-500 mb-8 italic">
-  Used by agency owners, course creators, consultants, and ecom brands already saving hours each week.
-</p>
-    <a href="/downloads/ai-playbooks.zip" download class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition">
-      Download All 10 AI Playbooks
-    </a>
-  </div>
-</section>
+	<section class="bg-gray-50 py-20 px-6 text-lg md:text-xl">
+		<div class="max-w-3xl mx-auto">
+			<h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Inside every playbook</h2>
+			<ul class="space-y-4 max-w-2xl mx-auto">
+				{inside.map((item) => (
+					<li class="flex items-start">
+						<span class="text-blue-600 mr-4 font-bold">✓</span>
+						<span class="text-gray-700">{item}</span>
+					</li>
+				))}
+			</ul>
+		</div>
+	</section>
 
-<section class="bg-gray-200 py-20 px-6 md:px-12 lg:px-24">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-4">What You’ll Get Inside</h2>
-    <p class="text-lg text-gray-700 mb-6">
-      You’re not downloading some fluffy checklist. You’re getting a real-world starter kit for integrating AI into your business ops, built to work, even if you're not techy.
-    </p>
-    <ul class="text-left text-gray-800 space-y-3 mt-8 max-w-2xl mx-auto">
-      <li>✅ Step-by-step AI workflows with diagrams and links</li>
-      <li>✅ Pre-written email copy and SOP templates</li>
-      <li>✅ Tool recommendations (and when to avoid them)</li>
-      <li>✅ High-leverage use cases for small teams</li>
-      <li>✅ Smart checklists to reduce busywork</li>
-    </ul>
-  </div>
-</section>
+	<FormSection
+		id="get-playbooks"
+		layout="split"
+		heading="Get all 10 playbooks, free"
+		blurb="Leave your name and email. I'm refreshing every playbook with current tools and prices, and the new set goes to your inbox as soon as it's ready."
+		surveyId={GIVEAWAY_SURVEY}
+		fields={GIVEAWAY_FIELDS}
+		buttonText="Send me the playbooks"
+		successHeading="You're on the list."
+		successBody="I'll email all 10 playbooks to you as soon as the updated set is ready."
+	/>
 
-<section class="bg-gray-300 py-20 px-6 md:px-12 lg:px-24">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-10">10 Real-World AI Use Cases: Solved</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div>
-        <h3 class="text-xl font-semibold">Lead Intake Automation</h3>
-        <p>Capture, sort, and send new leads straight into your CRM/email list using AI and Make.com.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold">AI Customer Support</h3>
-        <p>Set up chatbots and knowledge bases to reduce 40–60% of support volume.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold">SEO Brief Generator</h3>
-        <p>Create detailed, rank-ready briefs using AI to scale your content efforts.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold">Internal SOP Library</h3>
-        <p>Centralize SOPs in a searchable system that cuts onboarding time and reduces errors.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold">Smart Content Calendar</h3>
-        <p>Plan weeks of content using AI-assisted workflows, not sticky notes.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold">Client Onboarding Checklist</h3>
-        <p>Automate tasks, docs, and emails to deliver a smooth onboarding experience.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold">First Automation Opportunity</h3>
-        <p>Quickly find the highest-impact task to automate first. Save hours each week.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold">AI Email Drafting</h3>
-        <p>Use AI to create first-draft emails and reclaim your time, without losing your voice.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold">Website Traffic Monitoring</h3>
-        <p>Track SEO metrics with simple dashboards, no GA4 headaches required.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold">Repeatable Task Documentation</h3>
-        <p>Turn daily tasks into clear documentation using AI. Create SOPs on autopilot.</p>
-      </div>
-    </div>
-    <p class="text-center text-xl font-bold text-gray-600 mt-32">
-  This is just the highlight reel. Each playbook breaks it down so you can move fast. No guesswork, no fluff.
-</p>
-  </div>
-</section>
-
-<section class="bg-white py-20 px-6 md:px-12 lg:px-24 text-center">
-  <h2 class="text-3xl font-bold mb-4">You Don’t Need More Tools</h2>
-  <p class="text-lg text-gray-700 mb-12">
-  These aren’t some AI trend-chasing PDFs. They’re systems built for doers. For people who are drowning in busywork and know they can’t scale by working harder.  
-  <br>
-  Download them, plug them in, and start feeling like you cloned yourself (without the creepy science).
-</p>
-  <a href="/downloads/ai-playbooks.zip" class="inline-block bg-blue-600 text-white px-6 py-4 rounded-xl font-semibold hover:bg-blue-700 transition">
-    Steal the Playbooks NOW
-  </a>
-</section>
-
+	{/* Questions founders ask, same pattern as /fix-the-chaos */}
+	<section class="bg-white py-20 px-6">
+		<div class="container mx-auto max-w-6xl">
+			<div class="lg:grid lg:grid-cols-12 lg:gap-12">
+				<div class="lg:col-span-5">
+					<p class="text-sm font-semibold uppercase tracking-widest text-blue-600">FAQ</p>
+					<h2 class="mt-2 text-3xl md:text-4xl font-bold tracking-tight text-gray-900">Questions founders ask</h2>
+					<p class="mt-4 text-lg leading-7 text-gray-600">Want someone to build these for you? That's the paid work I do. Start with the <a href="/fix-the-chaos" class="text-blue-700 font-semibold hover:underline">free process audit</a> to see which ones pay off first.</p>
+				</div>
+				<div class="mt-10 lg:col-span-7 lg:mt-0 divide-y divide-gray-200 border-y border-gray-200">
+					{faqs.map((f, i) => (
+						<details class="group py-6" open={i === 0}>
+							<summary class="flex w-full cursor-pointer list-none items-start justify-between gap-6 text-left text-gray-900 [&::-webkit-details-marker]:hidden">
+								<span class="text-lg md:text-xl font-semibold leading-7">{f.q}</span>
+								<span class="ml-6 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-gray-300 text-blue-600 transition group-open:rotate-45 group-open:border-blue-600 group-open:bg-blue-600 group-open:text-white" aria-hidden="true">
+									<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14" /></svg>
+								</span>
+							</summary>
+							<p class="mt-3 pr-12 text-lg md:text-xl leading-relaxed text-gray-600">{f.a}</p>
+						</details>
+					))}
+				</div>
+			</div>
+		</div>
+	</section>
 </Layout>
-
-<style>
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-</style>
