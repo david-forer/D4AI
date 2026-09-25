@@ -23,25 +23,25 @@
 export const CATEGORIES = {
   process: {
     key: 'process',
-    name: 'Process Clarity',
+    name: 'Process clarity',
     blurb:
       'Whether the work is described precisely enough to hand to anyone, human or machine. You cannot automate a process nobody has written down.',
   },
   founder: {
     key: 'founder',
-    name: 'Founder Dependency',
+    name: 'Founder dependency',
     blurb:
       'How much of the business runs through one head. This is the number that caps your growth and the one most owners have never priced.',
   },
   systems: {
     key: 'systems',
-    name: 'System Readiness',
+    name: 'System readiness',
     blurb:
       'Whether your tools can actually be connected to anything. Good software that cannot export or integrate is a dead end for automation.',
   },
   practice: {
     key: 'practice',
-    name: 'AI Practice',
+    name: 'AI practice',
     blurb:
       'Whether AI use is governed and shared, or scattered and personal. Gains that stay with one person do not compound.',
   },
@@ -60,7 +60,7 @@ export const QUESTIONS = [
     id: 'stage',
     type: 'single',
     category: null,
-    helper: 'There is no wrong answer. It decides which version of the report you get.',
+    helper: 'There is no wrong answer. It helps me read your result and does not affect your score.',
     question: 'Which of these sounds most like you right now?',
     options: [
       { value: 'unstarted', label: 'We know we should be doing something with AI, we just do not know what.' },
@@ -83,7 +83,7 @@ export const QUESTIONS = [
     id: 'model',
     type: 'multi',
     category: null,
-    helper: 'Custom work needs more documentation than repeatable work, so this changes what we recommend.',
+    helper: 'Custom work needs more documentation than repeatable work. This helps me read your result and does not affect your score.',
     question: 'How does your business actually make its money?',
     options: [
       { value: 'custom', label: 'Custom or project work for clients' },
@@ -115,7 +115,7 @@ export const QUESTIONS = [
     question: 'When did anyone last update a written process, checklist, or guideline?',
     options: [
       { value: 'month', label: 'Within the last month', points: 3 },
-      { value: 'sixmonths', label: 'Within the last six months', points: 2 },
+      { value: 'sixmonths', label: 'Within the last 6 months', points: 2 },
       { value: 'year', label: 'Over a year ago', points: 1 },
       { value: 'never', label: 'Never, or I genuinely do not know', points: 0 },
     ],
@@ -165,7 +165,7 @@ export const QUESTIONS = [
     category: 'founder',
     helper: 'Be honest here. Picture it actually happening.',
     question:
-      'If you were completely unreachable for four weeks starting tomorrow, with no warning and no handover, what happens?',
+      'If you were unreachable for 4 weeks starting tomorrow, with no warning and no handover, what would happen?',
     options: [
       { value: 'fine', label: 'Most things keep running. A few decisions wait.', points: 3 },
       { value: 'cope', label: 'We would cope, but quality and speed would drop.', points: 2 },
@@ -177,7 +177,7 @@ export const QUESTIONS = [
     id: 'founderHours',
     type: 'number',
     category: 'founder',
-    helper: 'Not sales, not strategy, not growth. The admin, approvals, chasing, and fixing.',
+    helper: 'The admin, approvals, chasing and fixing.',
     question: 'Roughly how many hours a week do you personally spend on work someone else could do?',
     min: 0,
     max: 80,
@@ -227,10 +227,10 @@ export const QUESTIONS = [
     category: 'systems',
     question: 'How many separate tools or apps does your team touch in a normal week?',
     options: [
-      { value: 'few', label: 'One to three', points: 3 },
-      { value: 'some', label: 'Four to seven', points: 2 },
-      { value: 'many', label: 'Eight to twelve', points: 1 },
-      { value: 'sprawl', label: 'More than twelve, or I have lost count', points: 0 },
+      { value: 'few', label: '1 to 3', points: 3 },
+      { value: 'some', label: '4 to 7', points: 2 },
+      { value: 'many', label: '8 to 12', points: 1 },
+      { value: 'sprawl', label: 'More than 12, or I have lost count', points: 0 },
     ],
   },
   {
@@ -250,7 +250,7 @@ export const QUESTIONS = [
     id: 'stack',
     type: 'multi',
     category: 'systems',
-    helper: 'We check whether each one can actually be connected to anything else. Some cannot.',
+    helper: 'I check whether each one can be connected to anything else. Some cannot.',
     question: 'Which of these does your team run?',
     scorer: 'stack',
     options: [
@@ -302,7 +302,7 @@ export const QUESTIONS = [
     id: 'aiRules',
     type: 'single',
     category: 'practice',
-    helper: 'We mean anything written down. A page in Notion counts.',
+    helper: 'I mean anything written down. A page in Notion counts.',
     question: 'Has anyone written down what AI can and cannot be used for here?',
     options: [
       { value: 'yes', label: 'Yes, and the team knows it.', points: 3 },
@@ -346,7 +346,7 @@ export const QUESTIONS = [
     type: 'single',
     category: null,
     helper:
-      'A rough guess is fine. Salary plus tax and overhead, divided by hours. We use this to put a number on what the gaps are costing you.',
+      'A rough guess is fine. Salary plus tax and overhead, divided by hours. I use this to put a number on what the gaps are costing you.',
     question: 'What does an average team member cost per hour, fully loaded?',
     options: [
       { value: 'u30', label: 'Under $30', rate: 25 },
@@ -419,9 +419,9 @@ export const ARCHETYPES = [
     name: 'The Firefighter',
     line: 'The business runs on you and on memory.',
     body:
-      'Almost nothing is written down, so almost nothing can be handed over, to a person or to a machine. That is not a failure of effort. It is the normal result of growing fast enough that documenting never made it to the top of the list. The good news is that this is the cheapest position to fix from, because the first few processes you capture will each buy back real hours.',
+      'Almost nothing is written down, so almost nothing can be handed over, to a person or to a machine. It is the normal result of growing fast enough that documenting never made it to the top of the list. The good news is that this is the cheapest position to fix from, because the first few processes you capture will each buy back real hours.',
     move:
-      'Do not buy another tool. Pick the one process that interrupts you most often and write down what goes in, what decisions get made, and what comes out. One process, one page.',
+      'Pick the one process that interrupts you most often and write down what goes in, what decisions get made, and what comes out. One process, one page.',
   },
   {
     max: 60,
@@ -429,9 +429,9 @@ export const ARCHETYPES = [
     name: 'The Experimenter',
     line: 'You have tried the tools. The tools did not stick.',
     body:
-      'This is the most common place to land and the most frustrating one, because the effort has already been spent. AI did not fail here. It landed on processes that were never defined, so every use was a one-off that needed a person to set it up and check it afterwards. Nothing compounded, so it quietly stopped.',
+      'This is a frustrating place to land, because the effort has already been spent. AI landed on processes that were never defined, so every use was a one-off that needed a person to set it up and check it afterward. Nothing compounded, so it stopped.',
     move:
-      'Stop starting new experiments. Take the one AI use that actually worked, write down exactly how it works, and get a second person using it the same way. Repeatability first, then expansion.',
+      'Before you try anything new, take the one AI use that worked, write down exactly how it works, and get a second person using it the same way. Repeatability first, then expansion.',
   },
   {
     max: 80,
@@ -439,19 +439,19 @@ export const ARCHETYPES = [
     name: 'The Operator',
     line: 'The systems are real. The leverage has not been taken yet.',
     body:
-      'You are further along than most businesses your size. Work is visible, the important processes exist somewhere in writing, and the team does not need you for everything. What you have now is a foundation that AI can actually multiply, which is exactly the point most owners never reach. The gap is no longer clarity, it is that nobody has gone through and asked which of these documented processes should stop being done by a human at all.',
+      'Work is visible, the important processes exist somewhere in writing, and the team does not need you for everything. What you have now is a foundation that AI can multiply. The next step is to ask which of these documented processes should stop being done by a person at all.',
     move:
-      'Take your three most repeated documented processes and work out which steps are judgment and which are just transformation. The transformation steps are where the first real automation goes.',
+      'Take your 3 most repeated documented processes and work out which steps need judgment and which only move or reformat information. Those second steps are where the first real automation goes.',
   },
   {
     max: 100,
     key: 'multiplier',
     name: 'The Multiplier',
-    line: 'Systems are documented, connected, and starting to compound.',
+    line: 'Your systems are documented and connected, and the gains are starting to compound.',
     body:
-      'You are in the small minority who did this in the right order. Processes were written before they were automated, tools were chosen for whether they connect, and improvements get shared rather than hoarded. From here the returns are compounding rather than linear, and the risk changes shape. The thing that slows businesses at this stage is not capability, it is governance and drift, meaning documentation quietly going stale and parallel versions of the same workflow appearing in different corners.',
+      'You did this in the right order. Processes were written before they were automated, tools were chosen for whether they connect, and improvements get shared across the team. From here the returns compound, and the risk changes shape. What slows businesses at this stage is governance and drift: documentation going stale and parallel versions of the same workflow appearing in different corners.',
     move:
-      'Audit for drift rather than for gaps. Find where the written process and the actual process have separated, and decide which one is right before automating either.',
+      'Audit for drift. Find where the written process and the actual process have separated, and decide which one is right before automating either.',
   },
 ];
 
@@ -648,26 +648,26 @@ export function recommendTier(result, answers) {
       name: '80/20 Process Audit',
       shape: 'A single working session',
       pitch:
-        'Two to three hours with me. Your top three processes captured as inputs, decision rules, and outputs, plus the five highest-return automation opportunities with the maths behind each one. You keep the process sketches whether or not you do anything else.',
-      href: '/ai-readiness-and-ai-audits',
+        'Two to three hours with me. Your top three processes captured as inputs, decision rules, and outputs, plus the five highest-return automation opportunities with the math behind each one. You keep the process sketches whether or not you do anything else.',
+      href: '/fix-the-chaos',
     };
   }
   if (result.percent < 45) {
     return {
       key: 'tier2',
       name: 'Quick Assessment',
-      shape: 'A one week engagement',
+      shape: 'A 1-week engagement',
       pitch:
         'One week. Interviews with you and one key person, five to six core processes documented properly, and a ranked table of what each gap costs per year with the founder-dependency line called out separately.',
-      href: '/ai-readiness-and-ai-audits',
+      href: '/fix-the-chaos',
     };
   }
   return {
     key: 'tier3',
     name: 'Full AI Operations Audit',
-    shape: 'A two week engagement',
+    shape: 'A 2-week engagement',
     pitch:
-      'Two weeks, following the customer journey from first enquiry through to billing. Full process library, evidence-linked findings, every opportunity priced in dollars, and a roadmap that names the first two builds. One working automation ships live during the audit itself.',
-    href: '/ai-readiness-and-ai-audits',
+      'Two weeks, following the customer journey from first inquiry through to billing. Full process library, evidence-linked findings, every opportunity priced in dollars, and a roadmap that names the first two builds. One working automation ships live during the audit itself.',
+    href: '/fix-the-chaos',
   };
 }

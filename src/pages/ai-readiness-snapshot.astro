@@ -12,15 +12,15 @@ const categories = Object.values(CATEGORIES);
 const faqs = [
   {
     q: 'What is an AI readiness assessment?',
-    a: 'It measures whether a business can actually get value from AI, rather than whether it has bought AI tools. The things that decide that are unglamorous: whether processes are written down, whether the software can be connected to anything, how much of the operation runs through the owner, and whether useful discoveries get shared or stay with one person. A business can be using AI every day and still be unready, because none of it compounds.',
+    a: 'It measures whether a business can get value from AI. The things that decide that are unglamorous: whether processes are written down, whether the software can be connected to anything, how much of the operation runs through the owner, and whether useful discoveries get shared or stay with one person. A business can be using AI every day and still be unready, because none of it compounds.',
   },
   {
     q: 'How long does the assessment take?',
-    a: 'About five minutes. There are twenty-two questions and most of them are one click. Your answers are kept as you go, so you can close the tab and come back to the same place in the same browser session.',
+    a: 'About 5 minutes. There are 22 questions and most of them are one click. Your answers are kept as you go, so a refresh or a wrong click on Back does not lose your place.',
   },
   {
     q: 'Why does it ask how many hours I spend on work someone else could do?',
-    a: 'Because that number, multiplied out across a year and priced at what a founder hour is actually worth, is usually the single largest cost in the business and almost nobody has calculated it. The result gives you that figure as a range along with the arithmetic used to reach it, so you can argue with the assumptions rather than take it on faith.',
+    a: 'Because that number, multiplied out across a year and priced at what a founder hour is worth, is often one of the largest costs in the business, and few owners have calculated it. The result gives you that figure as a range along with the arithmetic used to reach it, so you can check the assumptions and argue with them.',
   },
   {
     q: 'Is this a sales pitch?',
@@ -28,11 +28,11 @@ const faqs = [
   },
   {
     q: 'How accurate is the cost estimate?',
-    a: 'It is a rough estimate built from what you tell it, which is why it is shown as a range rather than a single number, and it deliberately uses conservative inputs. Forty-six working weeks rather than fifty-two, and only two cost lines rather than every cost that could be argued for. A real audit measures the same things from evidence and interviews rather than recall, and it usually finds the number is higher than the self-assessment suggested.',
+    a: 'It is a rough estimate built from what you tell it, which is why it is shown as a range, and it uses conservative inputs: 46 working weeks a year and only 2 cost lines. A real audit measures the same things from evidence and interviews.',
   },
   {
     q: 'What happens to my answers?',
-    a: 'They are used to generate your result and they come to me. I read them. There is no data sale, no advertising pixel keyed to your responses, and no sequence you cannot leave in one click.',
+    a: 'They are used to generate your result and they come to me. I read them. I do not sell your data or tie any advertising to your answers.',
   },
 ];
 
@@ -67,7 +67,7 @@ const schema = {
 
 <Layout
   title="The AI Readiness Snapshot: A Free 5-Minute Assessment | Score Your Business Across Process Clarity, Founder Dependency, System Readiness and AI Practice, and See What the Gaps Are Costing You Every Year | David J Forer"
-  description="A free five-minute assessment for founder-led businesses. Find out whether your operation is ready for AI, which area is weakest, and roughly what the gaps cost you per year."
+  description="A free 5-minute assessment for founder-led businesses. Find out whether your operation is ready for AI, which area is weakest, and roughly what the gaps cost you per year."
 >
   <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
 
@@ -87,8 +87,7 @@ const schema = {
       </p>
       <p class="text-xl text-gray-600 leading-relaxed mb-10">
         This assessment tells you which of those two situations you are in, which area is weakest,
-        and roughly what the gap is costing you every year. Twenty-two questions, about five
-        minutes.
+        and roughly what the gap is costing you every year. 22 questions, about 5 minutes.
       </p>
 
       <div class="flex flex-wrap gap-4 items-center">
@@ -97,7 +96,7 @@ const schema = {
           class="inline-block bg-[color:var(--primary)] hover:bg-[color:var(--primary-hover)] text-white font-semibold text-lg px-6 py-3 rounded-xl transition"
           >Start the assessment</a
         >
-        <span class="text-sm text-gray-500">No card, no call, result on screen</span>
+        <span class="text-sm text-gray-500">Your result shows on screen. No call needed.</span>
       </div>
     </div>
   </section>
@@ -114,8 +113,7 @@ const schema = {
     <div class="max-w-4xl mx-auto px-4">
       <h2 class="text-3xl font-bold text-gray-900 mb-4">What it measures</h2>
       <p class="text-lg text-gray-600 mb-10 max-w-2xl">
-        Four areas. Each one is a precondition for the next thing working, which is why they are
-        scored separately rather than rolled into a single number.
+        4 areas. Each area has to work before the next one can, so each gets its own score.
       </p>
       <div class="grid sm:grid-cols-2 gap-6">
         {
@@ -133,7 +131,7 @@ const schema = {
   {/* Archetypes */}
   <section class="py-20">
     <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-gray-900 mb-4">The four results</h2>
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">The 4 results</h2>
       <p class="text-lg text-gray-600 mb-10 max-w-2xl">
         Everyone lands in one of these. The order matters more than the label, because the move that
         works in one position is usually wasted in another.
@@ -189,10 +187,10 @@ const schema = {
         </a>
         <a href="/founder-bottleneck-test" class="block group">
           <h3 class="text-xl font-bold text-blue-700 group-hover:underline">
-            The founder bottleneck test: six signs, in order
+            The founder bottleneck test: 6 signs, in order
           </h3>
           <p class="text-gray-600">
-            The six signs you have become the bottleneck, earliest to latest, each with a check you
+            The 6 signs you have become the bottleneck, earliest to latest, each with a check you
             can run this week.
           </p>
         </a>

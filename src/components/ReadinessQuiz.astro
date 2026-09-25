@@ -188,8 +188,7 @@ const BTN_OUTLINE =
           Your snapshot is ready.
         </div>
         <p class="text-gray-600 mb-6">
-          Tell me where to send it and I will show you the result on this page as well. No sequence
-          you cannot leave, and I read the replies myself.
+          Tell me who you are and your result appears below. I read every one myself.
         </p>
 
         <div class="space-y-4">
@@ -289,18 +288,24 @@ const BTN_OUTLINE =
           <p class="text-xl leading-relaxed" data-r-move></p>
         </div>
 
+        {/* Save as PDF. Uses the browser's print dialog, styled by the print rules at the end of this file. */}
+        <div class="mb-10" data-print-hide>
+          <button type="button" data-save-pdf class={BTN_OUTLINE}>Save my results as PDF</button>
+          <p class="text-sm text-gray-500 mt-2">Opens your browser's print window. Choose "Save as PDF" as the printer.</p>
+        </div>
+
         {/* Offer */}
         <div class="border border-gray-300 rounded-2xl p-6 sm:p-8 mb-10">
           <h3 class="text-2xl font-bold text-gray-900 mb-2" data-r-tier-name></h3>
           <p class="text-lg font-semibold text-[color:var(--primary)] mb-4" data-r-tier-shape></p>
           <p class="text-gray-700 leading-relaxed mb-6" data-r-tier-pitch></p>
-          <a href="/ai-readiness-and-ai-audits" class={BTN} data-r-tier-link>
-            See what the audit covers
+          <a href="/fix-the-chaos" class={BTN} data-r-tier-link>
+            Start with the free process audit
           </a>
         </div>
 
         {/* Voice of customer */}
-        <div class="border-t border-gray-200 pt-8">
+        <div class="border-t border-gray-200 pt-8" data-print-hide>
           <label for="q-wish" class="block text-lg font-bold text-gray-900 mb-2">
             One last thing, if you have a minute
           </label>
@@ -321,11 +326,45 @@ const BTN_OUTLINE =
           </div>
         </div>
 
+
         <p class="text-xs text-gray-400 mt-10">
           This is a self-assessment, so it is only as good as the answers. The paid audit measures
           the same things from evidence rather than recall.
         </p>
       </div>
+    </div>
+
+    {/* Print-only report for "Save my results as PDF". Filled by renderReport(). */}
+    <div data-print-report class="hidden" aria-hidden="true">
+      <div class="pr-head">
+        <div>
+          <p class="pr-kicker">AI Readiness Snapshot</p>
+          <p class="pr-for" data-pr-for></p>
+        </div>
+        <div class="pr-brand">David J Forer<br />davidjforer.com</div>
+      </div>
+      <div class="pr-hero">
+        <p class="pr-arch" data-pr-arch></p>
+        <p class="pr-score" data-pr-score></p>
+      </div>
+      <p class="pr-line" data-pr-line></p>
+      <p data-pr-body></p>
+      <h2>Your scores</h2>
+      <table class="pr-table"><tbody data-pr-scores></tbody></table>
+      <p data-pr-weakest></p>
+      <div data-pr-cost-wrap>
+        <h2>What the gaps cost you each year</h2>
+        <p class="pr-cost" data-pr-cost></p>
+        <table class="pr-table pr-math"><tbody data-pr-math></tbody></table>
+      </div>
+      <h2>Your first move</h2>
+      <p data-pr-move></p>
+      <div class="pr-next">
+        <p class="pr-next-title">Want help with your weakest area?</p>
+        <p>Start with the free 80/20 process audit. You get your top 5 automation opportunities, priced in dollars.</p>
+        <p class="pr-url">davidjforer.com/fix-the-chaos</p>
+      </div>
+      <p class="pr-foot">This is a self-assessment, so it is only as good as the answers. The paid audit measures the same things from evidence.</p>
     </div>
   </div>
 </section>
@@ -435,7 +474,7 @@ const BTN_OUTLINE =
       remaining.textContent = isGate
         ? ''
         : qNum <= 3
-          ? 'About five minutes'
+          ? 'About 5 minutes'
           : `${QUESTIONS.length - qNum} to go`;
 
       // The first step has nothing to go back to.
@@ -558,6 +597,49 @@ const BTN_OUTLINE =
 
     /* ---------------- result ---------------- */
 
+    function renderReport(result, cost) {
+      const r = root.querySelector('[data-print-report]');
+      const set = (sel, text) => { r.querySelector(sel).textContent = text; };
+      const date = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+      set('[data-pr-for]', captured && captured.name ? `Prepared for ${captured.name}, ${date}` : date);
+      set('[data-pr-arch]', result.archetype.name);
+      set('[data-pr-score]', `${result.percent}%`);
+      set('[data-pr-line]', result.archetype.line);
+      set('[data-pr-body]', result.archetype.body);
+      set('[data-pr-move]', result.archetype.move);
+      set('[data-pr-weakest]', `Your weakest area is ${result.weakest.name} at ${result.weakest.percent}%, and that is where the next move belongs.`);
+      const tbody = r.querySelector('[data-pr-scores]');
+      tbody.innerHTML = '';
+      result.categories.forEach((c) => {
+        const tr = document.createElement('tr');
+        [c.name, `${c.percent}%`, c.band].forEach((v) => {
+          const td = document.createElement('td');
+          td.textContent = v;
+          tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+      });
+      const costWrap = r.querySelector('[data-pr-cost-wrap]');
+      if (!cost.hasSignal || cost.total <= 0) {
+        costWrap.style.display = 'none';
+      } else {
+        costWrap.style.display = '';
+        set('[data-pr-cost]', `${formatMoney(cost.low)} to ${formatMoney(cost.high)}`);
+        const mathBody = r.querySelector('[data-pr-math]');
+        mathBody.innerHTML = '';
+        root.querySelectorAll('[data-r-cost-math] > div').forEach((row) => {
+          const spans = row.querySelectorAll('span');
+          const tr = document.createElement('tr');
+          [spans[0], spans[spans.length - 1]].forEach((s) => {
+            const td = document.createElement('td');
+            td.textContent = s ? s.textContent : '';
+            tr.appendChild(td);
+          });
+          mathBody.appendChild(tr);
+        });
+      }
+    }
+
     function renderCards(result) {
       const wrap = root.querySelector('[data-r-cards]');
       const tone = {
@@ -613,7 +695,7 @@ const BTN_OUTLINE =
         caveats.push(`You did not give a rate, so this uses ${formatMoney(cost.teamRate)} an hour.`);
       }
       caveats.push(
-        `These are estimates built from what you just told me, shown as a range for that reason. The audit measures the same things from evidence and usually finds the real number is higher.`,
+        `These are estimates built from what you just told me, shown as a range for that reason. The audit measures the same things from evidence.`,
       );
       root.querySelector('[data-r-cost-caveat]').textContent = caveats.join(' ');
     }
@@ -669,6 +751,7 @@ const BTN_OUTLINE =
 
       renderCards(result);
       renderCost(cost);
+      renderReport(result, cost);
 
       form.classList.add('hidden');
       progressWrap.classList.add('hidden');
@@ -783,10 +866,32 @@ const BTN_OUTLINE =
       }
       postToFormbricks(payload).then((ok) => {
         status.textContent = ok
-          ? 'Got it. Thank you, that is genuinely useful.'
-          : 'Noted locally. Capture is not switched on yet.';
+          ? 'Got it. Thank you, that helps.'
+          : 'That did not send. Please try again in a minute.';
       });
     });
+
+    const saveBtn = root.querySelector('[data-save-pdf]');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        const original = document.title;
+        document.title = captured && captured.name
+          ? `AI Readiness Snapshot for ${captured.name}`
+          : 'AI Readiness Snapshot';
+        let host = document.getElementById('print-root');
+        if (!host) {
+          host = document.createElement('div');
+          host.id = 'print-root';
+          document.body.appendChild(host);
+        }
+        const report = root.querySelector('[data-print-report]').cloneNode(true);
+        report.classList.remove('hidden');
+        report.removeAttribute('aria-hidden');
+        host.replaceChildren(report);
+        window.print();
+        document.title = original;
+      });
+    }
 
     /* ---------------- boot ---------------- */
 
@@ -794,3 +899,40 @@ const BTN_OUTLINE =
     show(index, { focus: false });
   }
 </script>
+
+<style is:global>
+  /* Save as PDF: print only the purpose-built report, never the screen layout. */
+  #print-root { display: none; }
+  @media print {
+    /* Zero page margin hides the browser's date and URL lines. The report pads itself. */
+    @page { size: letter; margin: 0; }
+    body > *:not(#print-root) { display: none !important; }
+    #print-root { display: block !important; }
+    [data-print-report] {
+      display: block !important; padding: 13mm 16mm 10mm;
+      font-family: 'Inter Variable', Inter, ui-sans-serif, system-ui, sans-serif;
+      color: #1f2937; font-size: 10.5pt; line-height: 1.5;
+    }
+    [data-print-report] h2 { font-size: 12.5pt; font-weight: 700; color: #1d4ed8; margin: 13pt 0 5pt; }
+    [data-print-report] p { margin: 0 0 8pt; }
+    .pr-head { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2pt solid #2563eb; padding-bottom: 7pt; margin-bottom: 11pt; }
+    .pr-kicker { font-size: 9pt; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #2563eb; }
+    .pr-for { font-size: 10pt; color: #4b5563; }
+    .pr-brand { font-size: 9pt; text-align: right; color: #4b5563; }
+    .pr-hero { display: flex; justify-content: space-between; align-items: baseline; }
+    .pr-arch { font-size: 24pt; font-weight: 800; color: #111827; margin: 0; }
+    .pr-score { font-size: 24pt; font-weight: 800; color: #2563eb; margin: 0; }
+    .pr-line { font-size: 13pt; font-weight: 600; color: #374151; }
+    .pr-table { width: 100%; border-collapse: collapse; margin-bottom: 8pt; }
+    .pr-table td { border-bottom: 0.75pt solid #e5e7eb; padding: 4pt 4pt; }
+    .pr-table td:nth-child(2) { font-weight: 700; text-align: right; width: 18%; }
+    .pr-table td:nth-child(3) { color: #4b5563; text-align: right; width: 22%; }
+    .pr-cost { font-size: 18pt; font-weight: 800; color: #111827; }
+    .pr-math td { font-size: 9.5pt; color: #4b5563; }
+    .pr-math td:nth-child(2) { font-weight: 700; color: #111827; text-align: right; width: 18%; white-space: nowrap; }
+    .pr-next { margin-top: 13pt; padding: 10pt 12pt; border: 1pt solid #bfdbfe; background: #eff6ff; border-radius: 6pt; break-inside: avoid; }
+    .pr-next-title { font-weight: 700; color: #111827; }
+    .pr-url { font-weight: 700; color: #1d4ed8; }
+    .pr-foot { margin-top: 10pt; font-size: 8pt; color: #6b7280; }
+  }
+</style>
