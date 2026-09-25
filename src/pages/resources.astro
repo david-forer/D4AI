@@ -1,390 +1,162 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
+import ModalLeadMagnet from '../components/ModalLeadMagnet.astro';
+import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
+
+// Every card describes something that is live today. Do not add results
+// figures without a source. The readiness checklist uses the same modal and
+// survey as the homepage hero, and arrives by reply.
+const groups = [
+  {
+    heading: 'Guides and checklists',
+    items: [
+      {
+        label: 'Free guide',
+        title: 'Fix First, Scale Smart',
+        text: 'The 10 systems a growing business needs before adding AI to any of them, and the order to build them in.',
+        href: '/#giveaway',
+        cta: 'Get the guide',
+      },
+      {
+        label: 'Free checklist',
+        title: 'AI readiness checklist',
+        text: 'The questions I work through with a founder before recommending a single tool. Two fields and it lands in your inbox.',
+        modal: 'ai-audit-modal',
+        cta: 'Get the checklist',
+      },
+      {
+        label: 'Free by email',
+        title: 'AI playbooks and checklists',
+        text: '10 step-by-step guides for automating the work your team does by hand, like lead intake, client onboarding and SOPs.',
+        href: '/playbooks-checklists',
+        cta: 'Get the playbooks',
+      },
+      {
+        label: 'Guide',
+        title: 'Founder bottlenecks',
+        text: 'A diagnostic for the decisions and know-how that only live in your head, and how to hand them to your team. Run it on yourself first.',
+        href: '/founder-bottlenecks',
+        cta: 'Read the guide',
+      },
+    ],
+  },
+  {
+    heading: 'Tools you can use today',
+    items: [
+      {
+        label: 'Free tools',
+        title: 'Custom GPTs',
+        text: 'The GPTs I built for my own work, including an SOP Specialist and a Support Response Assistant. Open one in ChatGPT and use it today.',
+        href: '/custom-gpts',
+        cta: 'See the GPTs',
+      },
+      {
+        label: 'Skills and agents',
+        title: 'What I built',
+        text: 'The Claude skills and agents that run my own business, from a Monday operating briefing to the system that drafts this blog. See how each one works.',
+        href: '/built',
+        cta: 'See the builds',
+      },
+    ],
+  },
+  {
+    heading: 'Articles',
+    items: [
+      {
+        label: 'Articles',
+        title: 'AI operations',
+        text: 'How a small business runs day to day with AI in the workflow, and where to start.',
+        href: '/blog/category/ai-operations',
+        cta: 'Read the AI operations articles',
+      },
+      {
+        label: 'Articles',
+        title: 'AI automation',
+        text: 'Which work to automate first, how to build it so it holds up, and what it costs.',
+        href: '/blog/category/automation',
+        cta: 'Read the automation articles',
+      },
+      {
+        label: 'Articles',
+        title: 'SEO and AI',
+        text: 'How I run SEO for a small business, with AI doing most of the research and drafting.',
+        href: '/blog/category/seo',
+        cta: 'Read the SEO articles',
+      },
+    ],
+  },
+];
+
+const cardClass = 'group bg-white rounded-xl p-8 shadow-sm border-t-4 border-blue-600 hover:shadow-md transition duration-300 flex flex-col text-left';
 ---
 
 <Layout title="AI Resources for Small Business Owners – Free Playbooks, Checklists, and Custom GPTs – Guides on Founder Bottlenecks and SEO Operations – David J Forer" description="A free library of AI resources for small business owners: playbooks, checklists, custom GPTs, and guides covering founder bottlenecks, SEO, and operations.">
-	<div class="bg-gray-50 overflow-hidden">
-		
-		{/* Hero Section */}
-		<section class="bg-gradient-to-br from-blue-600 to-blue-800 py-20">
-			<div class="container mx-auto px-6 max-w-6xl">
-				<div class="text-center">
-					<h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
-						AI <span class="text-gradient">Resources</span>
-					</h1>
-					<h2 class="text-xl md:text-2xl text-blue-100 mb-8">
-						Essential Tools and Guides for AI-Powered Business Growth
-					</h2>
-					<p class="text-white text-lg mb-8 max-w-3xl mx-auto">
-						Access our comprehensive collection of resources designed to help you implement AI solutions, overcome founder challenges, and scale your business efficiently.
-					</p>
-				</div>
+	<section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20 relative overflow-hidden text-lg md:text-xl">
+		{/* Background texture, same triangles as the AI training hero. Decorative only. */}
+		<div class="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
+			<div class="absolute top-16 left-24 w-44 h-44 bg-amber-200" style="clip-path: polygon(50% 0, 100% 100%, 0 100%)"></div>
+			<div class="absolute bottom-20 right-20 w-56 h-56 bg-orange-200" style="clip-path: polygon(50% 100%, 0 0, 100% 0)"></div>
+			<div class="absolute top-1/3 left-1/2 w-24 h-24 bg-yellow-100" style="clip-path: polygon(50% 0, 100% 100%, 0 100%)"></div>
+		</div>
+		<div class="container mx-auto px-6 max-w-4xl relative z-10 text-center">
+			<p class="inline-block bg-white/15 border border-white/30 text-white text-lg md:text-xl font-bold uppercase tracking-wider rounded-full py-2 px-6 mb-6">Free to use</p>
+			<h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">AI resources for small business owners</h1>
+			<p class="text-blue-50 max-w-3xl mx-auto">Guides, checklists and tools I built for founders running 5 to 20 people.</p>
+		</div>
+	</section>
+
+	{/* Why it is free */}
+	<section class="bg-white py-16 px-6 text-lg md:text-xl">
+		<div class="max-w-3xl mx-auto">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">Why I give this away</h2>
+			<div class="text-gray-700 leading-relaxed space-y-6">
+				<p>Not every business can hire help right now. Some founders would rather build it themselves, and plenty of them do it well.</p>
+				<p>Everything on this page is the same thinking I use with paying clients. Take what you need and put it to work. If you get stuck, or you'd rather hand it off, you'll already know how I work before we talk.</p>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		{/* Founder Bottlenecks Section */}
-		<section class="py-16 bg-white">
-			<div class="container mx-auto px-6 max-w-6xl">
-				<div class="flex flex-col lg:flex-row items-center gap-12">
-					<div class="lg:w-1/2">
-						<div class="inline-block bg-red-100 text-red-800 text-sm font-bold py-1 px-3 rounded-full mb-4">
-							BREAKTHROUGH
-						</div>
-						<h2 class="text-3xl font-bold text-gray-800 mb-6">Founder Bottlenecks</h2>
-						<p class="text-lg text-gray-600 mb-6">
-							Identify and eliminate the critical bottlenecks that prevent your business from scaling. Our proven frameworks help founders break through growth barriers and build systems that work without constant oversight.
-						</p>
-						
-						<div class="space-y-4 mb-8">
-							<div class="flex items-start">
-								<svg class="h-6 w-6 text-red-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-								</svg>
-								<span><strong>Bottleneck Assessment Framework</strong> to identify your biggest constraints</span>
-							</div>
-							<div class="flex items-start">
-								<svg class="h-6 w-6 text-red-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-								</svg>
-								<span><strong>Delegation Templates</strong> for effective team management</span>
-							</div>
-							<div class="flex items-start">
-								<svg class="h-6 w-6 text-red-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-								</svg>
-								<span><strong>Systems Thinking Guides</strong> to build scalable processes</span>
-							</div>
-						</div>
-
-						<div class="bg-red-50 p-6 rounded-lg mb-8">
-							<h3 class="text-xl font-bold text-gray-800 mb-4">Common Bottlenecks We Address:</h3>
-							<ul class="space-y-2 text-gray-700">
-								<li>• Decision-making delays and approval processes</li>
-								<li>• Lack of standardized workflows and procedures</li>
-								<li>• Ineffective delegation and team management</li>
-								<li>• Time management and priority setting challenges</li>
-							</ul>
-						</div>
-
-						<a href="/founder-bottlenecks" class="inline-flex items-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
-							Break Through Your Bottlenecks
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-							</svg>
+	{groups.map((g, gi) => (
+		<section class={`${gi % 2 === 0 ? 'bg-gray-50' : 'bg-slate-200'} py-16 px-6 text-lg md:text-xl`}>
+			<div class="max-w-5xl mx-auto">
+				<h2 class="text-3xl font-bold text-gray-800 text-center mb-10">{g.heading}</h2>
+				<div class={`grid gap-6 ${g.items.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
+					{g.items.map((r) => r.modal ? (
+						<button type="button" data-open-modal={r.modal} class={cardClass}>
+							<span class="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-2">{r.label}</span>
+							<span class="text-2xl font-bold text-gray-800 mb-3">{r.title}</span>
+							<span class="text-gray-700 mb-6 flex-grow">{r.text}</span>
+							<span class="text-blue-700 font-semibold group-hover:underline">{r.cta} &rarr;</span>
+						</button>
+					) : (
+						<a href={r.href} class={cardClass}>
+							<span class="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-2">{r.label}</span>
+							<h3 class="text-2xl font-bold text-gray-800 mb-3">{r.title}</h3>
+							<span class="text-gray-700 mb-6 flex-grow">{r.text}</span>
+							<span class="text-blue-700 font-semibold group-hover:underline">{r.cta} &rarr;</span>
 						</a>
-					</div>
-					
-					<div class="lg:w-1/2">
-						<div class="bg-gradient-to-br from-red-100 to-red-200 p-8 rounded-2xl">
-							<div class="text-center">
-								<div class="text-4xl mb-4">🚧</div>
-								<h3 class="text-2xl font-bold text-gray-800 mb-4">Breakthrough Results</h3>
-								<div class="grid grid-cols-2 gap-6">
-									<div class="text-center">
-										<div class="text-3xl font-bold text-red-600">60%</div>
-										<div class="text-sm text-gray-600">Faster Decision Making</div>
-									</div>
-									<div class="text-center">
-										<div class="text-3xl font-bold text-red-600">40%</div>
-										<div class="text-sm text-gray-600">Reduced Founder Dependency</div>
-									</div>
-									<div class="text-center">
-										<div class="text-3xl font-bold text-red-600">3X</div>
-										<div class="text-sm text-gray-600">Improved Team Efficiency</div>
-									</div>
-									<div class="text-center">
-										<div class="text-3xl font-bold text-red-600">25%</div>
-										<div class="text-sm text-gray-600">Increased Revenue Growth</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+					))}
 				</div>
 			</div>
 		</section>
+	))}
 
-		{/* Custom GPTs Section */}
-		<section class="py-16 bg-gray-50">
-			<div class="container mx-auto px-6 max-w-6xl">
-				<div class="flex flex-col lg:flex-row-reverse items-center gap-12">
-					<div class="lg:w-1/2">
-						<div class="inline-block bg-purple-100 text-purple-800 text-sm font-bold py-1 px-3 rounded-full mb-4">
-							AI TOOLS
-						</div>
-						<h2 class="text-3xl font-bold text-gray-800 mb-6">Custom GPTs</h2>
-						<p class="text-lg text-gray-600 mb-6">
-							Access our collection of specialized AI assistants designed for specific business functions. These custom GPTs are trained on industry best practices and optimized for maximum productivity and accuracy.
-						</p>
-						
-						<div class="space-y-4 mb-8">
-							<div class="flex items-start">
-								<svg class="h-6 w-6 text-purple-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-								</svg>
-								<span><strong>SEO Content Assistant</strong> for optimized content creation</span>
-							</div>
-							<div class="flex items-start">
-								<svg class="h-6 w-6 text-purple-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-								</svg>
-								<span><strong>Operations Optimizer</strong> for workflow and process improvement</span>
-							</div>
-							<div class="flex items-start">
-								<svg class="h-6 w-6 text-purple-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-								</svg>
-								<span><strong>Business Strategy Advisor</strong> for strategic planning and analysis</span>
-							</div>
-						</div>
+	<section class="py-16 bg-blue-600 text-white text-lg md:text-xl">
+		<div class="container mx-auto px-6 max-w-3xl text-center">
+			<h2 class="text-3xl md:text-4xl font-bold mb-6">Want help putting these to work?</h2>
+			<p class="text-blue-50 mb-8">Start with the free process audit. You get your top 5 automation opportunities, priced in dollars.</p>
+			<a href="/fix-the-chaos" class="inline-block bg-white text-blue-700 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-50 transition duration-300">Get the free process audit</a>
+		</div>
+	</section>
 
-						<div class="bg-purple-50 p-6 rounded-lg mb-8">
-							<h3 class="text-xl font-bold text-gray-800 mb-4">Available Custom GPTs:</h3>
-							<div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-gray-700">
-								<div>• SEO Content Creator</div>
-								<div>• Email Marketing Assistant</div>
-								<div>• Process Documentation Helper</div>
-								<div>• Customer Support Agent</div>
-								<div>• Social Media Manager</div>
-								<div>• Data Analysis Specialist</div>
-							</div>
-						</div>
-
-						<a href="/custom-gpts" class="inline-flex items-center bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
-							Explore Custom GPTs
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-							</svg>
-						</a>
-					</div>
-					
-					<div class="lg:w-1/2">
-						<div class="bg-gradient-to-br from-purple-100 to-purple-200 p-8 rounded-2xl">
-							<div class="text-center">
-								<div class="text-4xl mb-4">🤖</div>
-								<h3 class="text-2xl font-bold text-gray-800 mb-4">Productivity Gains</h3>
-								<div class="grid grid-cols-2 gap-6">
-									<div class="text-center">
-										<div class="text-3xl font-bold text-purple-600">80%</div>
-										<div class="text-sm text-gray-600">Faster Content Creation</div>
-									</div>
-									<div class="text-center">
-										<div class="text-3xl font-bold text-purple-600">50%</div>
-										<div class="text-sm text-gray-600">Reduced Research Time</div>
-									</div>
-									<div class="text-center">
-										<div class="text-3xl font-bold text-purple-600">90%</div>
-										<div class="text-sm text-gray-600">More Consistent Output</div>
-									</div>
-									<div class="text-center">
-										<div class="text-3xl font-bold text-purple-600">24/7</div>
-										<div class="text-sm text-gray-600">Available Support</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		{/* SEO & AI Resources Section */}
-		<section class="py-16 bg-white">
-			<div class="container mx-auto px-6 max-w-6xl">
-				<div class="flex flex-col lg:flex-row items-center gap-12">
-					<div class="lg:w-1/2">
-						<div class="inline-block bg-green-100 text-green-800 text-sm font-bold py-1 px-3 rounded-full mb-4">
-							OPTIMIZATION
-						</div>
-						<h2 class="text-3xl font-bold text-gray-800 mb-6">SEO & AI Resources</h2>
-						<p class="text-lg text-gray-600 mb-6">
-							Comprehensive guides, tools, and strategies that combine the power of AI with proven SEO techniques. Stay ahead of the curve with cutting-edge resources for modern digital marketing.
-						</p>
-						
-						<div class="space-y-4 mb-8">
-							<div class="flex items-start">
-								<svg class="h-6 w-6 text-green-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-								</svg>
-								<span><strong>AI-Powered SEO Strategies</strong> for modern search optimization</span>
-							</div>
-							<div class="flex items-start">
-								<svg class="h-6 w-6 text-green-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-								</svg>
-								<span><strong>Content Optimization Tools</strong> and semantic analysis guides</span>
-							</div>
-							<div class="flex items-start">
-								<svg class="h-6 w-6 text-green-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-								</svg>
-								<span><strong>Technical SEO Automation</strong> using AI-powered solutions</span>
-							</div>
-						</div>
-
-						<div class="bg-green-50 p-6 rounded-lg mb-8">
-							<h3 class="text-xl font-bold text-gray-800 mb-4">Resource Categories:</h3>
-							<ul class="space-y-2 text-gray-700">
-								<li>• AI keyword research and content planning tools</li>
-								<li>• Automated technical SEO audit systems</li>
-								<li>• Content optimization and semantic analysis</li>
-								<li>• Performance tracking and AI-driven insights</li>
-							</ul>
-						</div>
-
-						<a href="/blog/category/seo" class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
-							Read the SEO and AI articles
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-							</svg>
-						</a>
-					</div>
-					
-					<div class="lg:w-1/2">
-						<div class="bg-gradient-to-br from-green-100 to-green-200 p-8 rounded-2xl">
-							<div class="text-center">
-								<div class="text-4xl mb-4">🔍</div>
-								<h3 class="text-2xl font-bold text-gray-800 mb-4">SEO Performance</h3>
-								<div class="grid grid-cols-2 gap-6">
-									<div class="text-center">
-										<div class="text-3xl font-bold text-green-600">150%</div>
-										<div class="text-sm text-gray-600">Increase in Organic Traffic</div>
-									</div>
-									<div class="text-center">
-										<div class="text-3xl font-bold text-green-600">300+</div>
-										<div class="text-sm text-gray-600">New Ranking Keywords</div>
-									</div>
-									<div class="text-center">
-										<div class="text-3xl font-bold text-green-600">70%</div>
-										<div class="text-sm text-gray-600">Faster Content Creation</div>
-									</div>
-									<div class="text-center">
-										<div class="text-3xl font-bold text-green-600">45%</div>
-										<div class="text-sm text-gray-600">Better Click-Through Rates</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		{/* Playbooks and Checklists Section */}
-		<section class="py-16 bg-gray-100">
-			<div class="container mx-auto px-6 max-w-6xl">
-				<div class="flex flex-col lg:flex-row-reverse items-center gap-12">
-					<div class="lg:w-1/2">
-						<div class="inline-block bg-orange-100 text-orange-800 text-sm font-bold py-1 px-3 rounded-full mb-4">
-							IMPLEMENTATION
-						</div>
-						<h2 class="text-3xl font-bold text-gray-800 mb-6">Playbooks and Checklists</h2>
-						<p class="text-lg text-gray-600 mb-6">
-							Step-by-step implementation guides and comprehensive checklists to ensure consistent execution. Turn complex strategies into actionable workflows that your team can follow with confidence.
-						</p>
-						
-						<div class="space-y-4 mb-8">
-							<div class="flex items-start">
-								<svg class="h-6 w-6 text-orange-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-								</svg>
-								<span><strong>AI Implementation Playbooks</strong> for systematic rollout</span>
-							</div>
-							<div class="flex items-start">
-								<svg class="h-6 w-6 text-orange-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-								</svg>
-								<span><strong>SEO Audit Checklists</strong> for comprehensive site optimization</span>
-							</div>
-							<div class="flex items-start">
-								<svg class="h-6 w-6 text-orange-600 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-								</svg>
-								<span><strong>Operations Standardization</strong> templates and workflows</span>
-							</div>
-						</div>
-
-						<div class="bg-orange-50 p-6 rounded-lg mb-8">
-							<h3 class="text-xl font-bold text-gray-800 mb-4">Available Resources:</h3>
-							<div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-gray-700">
-								<div>• AI Readiness Assessment</div>
-								<div>• SEO Technical Audit</div>
-								<div>• Content Strategy Playbook</div>
-								<div>• Team Onboarding Checklist</div>
-								<div>• Process Documentation Guide</div>
-								<div>• Performance Tracking Setup</div>
-							</div>
-						</div>
-
-						<a href="/playbooks-checklists" class="inline-flex items-center bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
-							Get Playbooks & Checklists
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-								<path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-							</svg>
-						</a>
-					</div>
-					
-					<div class="lg:w-1/2">
-						<div class="bg-gradient-to-br from-orange-100 to-orange-200 p-8 rounded-2xl">
-							<div class="text-center">
-								<div class="text-4xl mb-4">✅</div>
-								<h3 class="text-2xl font-bold text-gray-800 mb-4">Implementation Success</h3>
-								<div class="grid grid-cols-2 gap-6">
-									<div class="text-center">
-										<div class="text-3xl font-bold text-orange-600">95%</div>
-										<div class="text-sm text-gray-600">Successful Implementation Rate</div>
-									</div>
-									<div class="text-center">
-										<div class="text-3xl font-bold text-orange-600">60%</div>
-										<div class="text-sm text-gray-600">Faster Project Completion</div>
-									</div>
-									<div class="text-center">
-										<div class="text-3xl font-bold text-orange-600">80%</div>
-										<div class="text-sm text-gray-600">Reduced Implementation Errors</div>
-									</div>
-									<div class="text-center">
-										<div class="text-3xl font-bold text-orange-600">100+</div>
-										<div class="text-sm text-gray-600">Ready-to-Use Templates</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		{/* CTA Section */}
-		<section class="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
-			<div class="container mx-auto px-6 max-w-4xl text-center">
-				<h2 class="text-3xl md:text-4xl font-bold mb-6">
-					Ready to Accelerate Your Business Growth?
-				</h2>
-				<p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-					Start implementing these proven strategies today. Access our complete resource library and transform your business with AI-powered solutions.
-				</p>
-				<div class="flex flex-col sm:flex-row gap-4 justify-center">
-					<a href="/contact" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-lg hover:bg-blue-50 transition duration-300">
-						Get Started Today
-					</a>
-					<a href="/ai-readiness-and-ai-audits" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg hover:bg-white hover:text-blue-700 transition duration-300">
-						Start with AI Audit
-					</a>
-				</div>
-			</div>
-		</section>
-
-	</div>
+	<ModalLeadMagnet
+		showModalId="ai-audit-modal"
+		formTitle="Get the AI readiness checklist"
+		formDescription="The questions I work through before recommending a single tool. Two fields, no call."
+		surveyId={GIVEAWAY_SURVEY}
+		fields={GIVEAWAY_FIELDS}
+		buttonText="Send it over"
+		successHeading="Got it."
+		successBody="Your details are in. I send this out personally, so give me a day."
+	/>
 </Layout>
-
-<style>
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-</style>
