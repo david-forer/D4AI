@@ -123,4 +123,4 @@ If AI feels harder than it should, the problem is rarely the tool. It is the sys
 
 *Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) | [Do Not Start With Tools. Start With Bottlenecks](/blog/start-with-bottlenecks)*
 
-If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.
+If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).

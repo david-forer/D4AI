@@ -69,13 +69,6 @@ export const services = [
       'business rather than general-purpose chat.',
   },
   {
-    name: 'Custom Consulting',
-    path: '/custom-consulting',
-    description:
-      'Scoped advisory engagements for operational problems that do not fit ' +
-      'the standard offers.',
-  },
-  {
     name: 'SEO Accelerator',
     path: '/seo-accelerator',
     description:

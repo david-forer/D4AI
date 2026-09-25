@@ -129,4 +129,4 @@ This is not about replacing people with machines. It is about elevating what peo
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [Automation as Business Philosophy](/blog/automation-as-philosophy)*
 
-If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.
+If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).

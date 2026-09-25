@@ -137,4 +137,4 @@ Either way, you have built a capability your business needs. The next process wi
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [SOPs Are the Foundation of Automation](/blog/sops-scalable-automation)*
 
-If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.
+If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).

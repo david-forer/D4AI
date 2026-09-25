@@ -159,5 +159,3 @@ Make those decisions intentionally.
 ---
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [How to Identify High-Leverage Automation Opportunities](/blog/framework-high-leverage-automation)*
-
-If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

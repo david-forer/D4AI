@@ -266,4 +266,4 @@ Simple automations on accessible tools can cost a few hundred dollars a month. E
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) | [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms)*
 
-Ready to build a complete automation system for your business? [Explore AI operations and automation consulting](/custom-consulting).
+Ready to build a complete automation system for your business? [Start with the free process audit](/fix-the-chaos).

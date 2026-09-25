@@ -110,4 +110,4 @@ Understanding the distinction prevents both over-engineering and under-investmen
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [When Not to Automate: The Processes That Should Stay Human](/blog/when-not-to-automate) · [7 AI Agent Use Cases That Survive a Real 30-Person Firm](/blog/ai-agent-use-cases-small-business)*
 
-Building an automation architecture that uses the right tool for each job? [Explore AI operations consulting](/custom-consulting).
+Building an automation architecture that uses the right tool for each job? [Start with the free process audit](/fix-the-chaos).

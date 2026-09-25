@@ -101,5 +101,3 @@ Do that well, and automation becomes a force multiplier. Skip it, and automation
 ---
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [Process Mapping: The Foundation of Successful Automation](/blog/map-business-processes-for-automation)*
-
-If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

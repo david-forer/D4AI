@@ -144,5 +144,3 @@ The earlier you make the shift, the smoother the transition. The longer you wait
 ---
 
 *Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) | [How Smart Companies Standardize LLM Use Across Departments](/blog/standardization-of-operations)*
-
-If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.

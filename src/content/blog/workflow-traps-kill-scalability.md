@@ -120,4 +120,4 @@ The businesses that scale successfully are not lucky. They are deliberate. They 
 
 *Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) | [How to Design Workflows That Adapt Instead of Breaking](/blog/workflows-that-adapt-not-break)*
 
-If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.
+If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).

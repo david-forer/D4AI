@@ -108,4 +108,4 @@ Tracking the manual cost of processes that did not clear the ROI threshold ensur
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [The Strategic Case for Automation](/blog/automation-strategic-decision)*
 
-Ready to build an automation program that delivers real returns? [Explore AI operations consulting](/custom-consulting).
+Ready to build an automation program that delivers real returns? [Start with the free process audit](/fix-the-chaos).

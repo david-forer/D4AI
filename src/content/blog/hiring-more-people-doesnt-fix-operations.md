@@ -86,4 +86,4 @@ The question to ask is not whether to hire. It is whether you have built the thi
 
 *Related reading: [AI Operations for Small Businesses](/blog/ai-operations-for-small-businesses) · [Operational Bottlenecks That Kill Small Business Growth](/blog/operational-bottlenecks-that-kill-small-business-growth)*
 
-If your business is growing but the operations are not keeping up, [explore AI operations consulting](/custom-consulting).
+If your business is growing but the operations are not keeping up, start with the [free process audit](/fix-the-chaos).

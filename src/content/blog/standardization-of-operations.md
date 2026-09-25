@@ -438,4 +438,4 @@ Start standardization now. The longer you wait, the more expensive and disruptiv
 
 *Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) | [Why Dashboards and SOPs Fail Without Operational Clarity](/blog/dashboards-sops-operational-clarity)*
 
-If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.
+If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).

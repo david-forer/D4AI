@@ -153,4 +153,4 @@ SOPs are not boring. They are leverage in disguise.
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [Why Dashboards and SOPs Fail Without Operational Clarity](/blog/dashboards-sops-operational-clarity)*
 
-If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.
+If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).

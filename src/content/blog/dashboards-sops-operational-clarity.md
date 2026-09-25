@@ -164,4 +164,4 @@ It needs it more. Nobody is paid to watch for problems full time, so the system 
 
 *Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) | [SOPs Are the Foundation of Automation](/blog/sops-scalable-automation)*
 
-If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.
+If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).

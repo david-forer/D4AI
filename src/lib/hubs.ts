@@ -202,7 +202,7 @@ This category is written for the buying decision itself. It covers what the work
 Topics include what an AI consultant does day to day in a small business, questions to ask before hiring one, how to prepare so the engagement starts fast, realistic cost ranges, doing it yourself versus bringing someone in, what to expect in the first 90 days, and what you should own when it ends.
 
 The test of a good engagement is what your team can do without the consultant afterwards. Everything here works backwards from that.`,
-    serviceLink: '/custom-consulting',
+    serviceLink: '/services',
     serviceLabel: 'View Consulting Services',
     pillars: ['working-with-an-ai-consultant.md'],
     chooseWhen: 'The buying decision and the engagement itself',

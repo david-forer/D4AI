@@ -88,4 +88,4 @@ The businesses with the most effective automation programs are almost never the 
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [How to Map Your Business Processes for Automation](/blog/map-business-processes-for-automation)*
 
-Ready to build an automation system that compounds over time? [Explore AI operations consulting](/custom-consulting).
+Ready to build an automation system that compounds over time? [Start with the free process audit](/fix-the-chaos).

@@ -38,6 +38,8 @@ app.use((req, res, next) => {
 
 // 301 redirects for old WordPress / previous-site URLs
 const redirects = {
+  '/custom-consulting':                             '/fix-the-chaos',
+  '/Custom-Consulting':                             '/fix-the-chaos',
   // Old "about" URLs
   '/about-me':                                      '/about',
 

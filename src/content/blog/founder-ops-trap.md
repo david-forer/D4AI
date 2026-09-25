@@ -80,4 +80,4 @@ Building that business starts with recognizing the trap for what it is, not a wo
 
 *Related reading: [AI Operations for Small Businesses](/blog/ai-operations-for-small-businesses) · [Founder Burnout and the Operations Problem](/blog/founder-burnout-and-the-operations-problem)*
 
-Ready to build operations that do not run through you? [Explore AI operations consulting](/custom-consulting).
+Ready to build operations that do not run through you? [Start with the free process audit](/fix-the-chaos).

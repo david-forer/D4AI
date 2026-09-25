@@ -580,4 +580,4 @@ Your employees want to use AI effectively. Give them the knowledge to do it righ
 
 *Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) | [The Real Reason Your Automation Failed](/blog/automation-failed-skipped-audit)*
 
-If you need hands-on help implementing these systems, [custom AI operations consulting](/custom-consulting) covers the full build.
+If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).
