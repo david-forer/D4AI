@@ -186,6 +186,8 @@ The goal of this ninety days is not to build the entire system at once. It is to
 
 **Random posting** is the most common failure mode and the most recoverable. Publishing content without a cluster strategy, keyword brief, or defined search intent is essentially creating noise. It consumes production capacity without building topical authority. [How many blog posts before SEO works](/blog/how-many-blog-posts-before-seo-works) explains why coverage of one subject matters more than post count.
 
+For a worked example of these breakdowns on a real site, see this [small business SEO case study](/blog/small-business-seo-case-study).
+
 **No internal links** creates a site full of content that search engines cannot navigate or evaluate in context. Every piece of content that goes live without being connected to the relevant cluster structure is a wasted asset.
 
 **Topic drift** happens when publishing decisions get made based on what is interesting or topical rather than what serves the cluster strategy. A few drifted articles are harmless. A pattern of drift destroys the topical coherence that cluster authority depends on.
