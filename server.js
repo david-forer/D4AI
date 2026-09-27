@@ -40,6 +40,8 @@ app.use((req, res, next) => {
 const redirects = {
   '/custom-consulting':                             '/fix-the-chaos',
   '/Custom-Consulting':                             '/fix-the-chaos',
+  // Merged into best-ai-tools-for-business-operations on 2026-09-27
+  '/blog/best-ai-tools-small-business-operations': '/blog/best-ai-tools-for-business-operations',
   // Old "about" URLs
   '/about-me':                                      '/about',
 

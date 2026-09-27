@@ -1,6 +1,6 @@
 ---
-title: "Process Mapping Before AI Automation"
-seoTitle: "Process Mapping Before AI Automation: How to Do It With AI"
+title: "AI Process Mapping: Map the Process Before You Automate"
+seoTitle: "AI Process Mapping: How to Map Processes Before You Automate"
 description: "Use AI to draft process maps, find decision points and handoff friction, then turn the maps into SOPs and safe automation candidates before you automate anything."
 pubDate: 2025-12-09T00:00:00Z
 updatedDate: 2026-09-23T00:00:00Z

@@ -167,7 +167,7 @@ The automation layer comes second, starting with the highest-volume, most predic
 
 AI assistance layers come on top of a stable foundation. Writing tools, summarisation, analysis, and content generation all deliver more value when they operate in an environment where the surrounding systems are reliable and the data they depend on is consistent.
 
-One new tool at a time, validated before the next is added. This constraint feels slow at the start. After six months, teams that use it are running a coherent stack. Teams that did not are usually rebuilding. If you want a curated view of which tools consistently earn their place, [the best AI tools for small business operations](/blog/best-ai-tools-small-business-operations) covers what works in practice across each stack layer.
+One new tool at a time, validated before the next is added. This constraint feels slow at the start. After six months, teams that use it are running a coherent stack. Teams that did not are usually rebuilding. If you want a curated view of which tools consistently earn their place, [the best AI tools for small business operations](/blog/best-ai-tools-for-business-operations) covers what works in practice across each stack layer.
 
 ---
 
