@@ -8,7 +8,7 @@ heroImage: "/images/blog/why-small-businesses-break-1m.webp"
 articleType: "cluster"
 ---
 
-Plenty of businesses stall right after they cross $1M in revenue. The cause is usually the operation underneath, not the team or the market.
+Plenty of businesses stall right after they cross $1M in revenue. The cause is usually the operation underneath, not the team or the market. Here is why small businesses break at $1M, and the 4 changes that get you to $3M.
 
 ## In brief
 
@@ -34,7 +34,7 @@ But internally, the picture is different.
 
 Decisions are queuing behind one person. Processes that worked at $400k are straining at $1M. The same questions keep surfacing. The same errors keep appearing. And the founder, who should be building the next version of the company, is stuck managing the current one.
 
-This is not a performance problem. It is a structural one.
+This is a structural problem.
 
 ## What Actually Breaks (It's Not What Most Founders Think)
 
@@ -70,7 +70,7 @@ This is not a people problem. The new hires are capable. They are working inside
 
 Hiring before fixing the operational layer is expensive. You pay salaries while the system absorbs the new people. Then you pay again when the same problems resurface at higher volume.
 
-The leverage is in the system, not the headcount.
+The return comes from fixing the system before adding headcount.
 
 ## The Real Signal: A Systems Problem, Not a People Problem
 

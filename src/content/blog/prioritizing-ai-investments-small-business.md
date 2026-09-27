@@ -21,7 +21,7 @@ A small business can fund a few AI projects, not all of them. This is how to dec
 
 ## Why Prioritization Is the Core of AI Strategy
 
-Small businesses do not have unlimited budgets or unlimited team bandwidth. Every AI investment competes with other demands on both. That constraint is not a limitation to work around. It is the condition that makes prioritization the most important skill in building an AI strategy.
+Small businesses do not have unlimited budgets or unlimited team bandwidth. Every AI investment competes with other demands on both. That constraint is the condition that makes prioritization the most important skill in building an AI strategy.
 
 Without prioritization, investment flows toward whatever is most visible or most recently recommended. The result is a stack of tools with uneven value, several half-finished implementations, and a growing maintenance burden that nobody planned for.
 
@@ -65,7 +65,7 @@ An investment that scores 4, 4, and 4 across the three dimensions is a strong ca
 
 ## What High-Priority AI Projects Look Like
 
-High-priority AI projects for small businesses in the $1M to $5M revenue range tend to cluster around a few operational categories.
+High-priority AI projects for small businesses in the $1M to $5M revenue range tend to cluster around a few operational categories. If you are working out how to prioritize AI projects in operations, score these 4 first.
 
 **Intake and lead routing** consistently scores high. It is high volume for most businesses, highly repetitive, and the source of inconsistency that affects every downstream process. Existing no-code tools handle most of the implementation without much difficulty.
 
@@ -116,6 +116,14 @@ One project, fully adopted, well-documented, and producing measurable results, i
 ### How do you prioritize AI investments in a small business?
 
 Rate each candidate project from one to five on impact, readiness, and cost, then compare the totals. Start with the one that is high on all three. Everything else waits its turn.
+
+### How do you prioritize AI investments when budget and resources are limited?
+
+Fund the highest-impact, lowest-cost project first and let the time it frees up pay for the next one. Count team time as a cost next to the subscription, because in a small business it is often the bigger number. Pick systems that run on their own once configured, and finish each project before you start another.
+
+### What are business leaders prioritizing for AI investments?
+
+My view for founder-led businesses: put the first AI money into internal operations, meaning intake and lead routing, follow-up automation, document generation and status reporting. Those processes run every week and the hours saved are easy to count. Brand content, dashboards and customer-facing chatbots tend to get funded early and pay back late. To align AI investments with business goals, score each option on impact, readiness and cost against the problem that matters most this year, then fund the top one and finish it before starting the next.
 
 ### Which AI projects should a small business start with?
 

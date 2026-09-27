@@ -20,11 +20,13 @@ AI automation is workflow automation that can read messy inputs and make judgmen
 
 ## Understand How Modern AI Automation Works Before You Choose a Tool
 
-Automation has been reshaping business operations for decades. What has changed is how intelligent that automation has become. Modern AI automation learns from corrections and handles inputs that needed human judgment a few years ago.
+Automation has been reshaping business operations for decades. What has changed is how intelligent that automation has become. Modern AI automation learns from corrections and handles inputs that needed human judgment a few years ago. Intelligent automation for businesses is that pairing in practice: workflow rules for the repeatable steps, and AI for the steps that need reading or judgment.
 
-This guide covers what AI automation is, how the leading tools work, and how businesses of various sizes can implement it effectively.
+This intelligent automation guide covers what AI automation is, how the leading tools work, and how businesses of various sizes can implement it effectively.
 
 ## Understanding AI Automation and Intelligent Automation
+
+The types of AI automation in this guide fall into 4 groups: AI assistants that answer and route requests, AI steps added to rule-based workflows, orchestration that links several automations together, and generative tools that draft content.
 
 ### What Is AI Automation and How Does It Work
 
@@ -86,9 +88,9 @@ AWS offers AI automation capabilities at a different scale. Services like Amazon
 
 ### AI Automation Implementation Steps and Best Practices
 
-Successful implementation typically follows a pattern. Start by identifying processes that are good candidates for AI automation. Look for tasks that consume significant time, involve variable inputs, and have clear success criteria.
+Implementing AI automations successfully typically follows a pattern. Start by identifying processes that are good candidates for AI automation. Look for tasks that consume significant time, involve variable inputs, and have clear success criteria.
 
-Document the current process thoroughly before automating it. This step is easy to skip but prevents problems later. You need to understand exceptions, edge cases, and the implicit knowledge that people apply without thinking about it.
+Document the current process thoroughly before automating it. A documented process is the foundation of AI automation. This step is easy to skip but prevents problems later. You need to understand exceptions, edge cases, and the implicit knowledge that people apply without thinking about it.
 
 Build a pilot with limited scope. Test with real data and real users, then gather feedback systematically. What works as expected? What fails? What did you miss in the initial analysis?
 
@@ -244,7 +246,7 @@ Hybrid integration platforms help manage this complexity by providing consistent
 
 ### What is artificial intelligence automation?
 
-It is workflow automation with an AI layer that can read documents, emails, and other messy inputs and make decisions based on patterns. Plain automation follows fixed rules. AI automation copes when the input does not look the way you expected.
+It is the use of artificial intelligence for automation: workflow automation with an AI layer that can read documents, emails, and other messy inputs and make decisions based on patterns. Plain automation follows fixed rules. AI automation copes when the input does not look the way you expected.
 
 ### What does intelligent automation look like in a small business?
 

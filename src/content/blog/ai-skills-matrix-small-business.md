@@ -8,7 +8,7 @@ heroImage: "/images/blog/ai-skills-matrix-small-business.webp"
 articleType: "cluster"
 ---
 
-An AI skills matrix shows who on your team can do what with AI, how well, and where training should go first. Here is how to build one for a small team.
+An AI skills matrix (some teams call it an AI capability matrix) shows who on your team can do what with AI, how well, and where training should go first. Here is how to build one for a small team.
 
 ## Key takeaways
 
@@ -20,9 +20,9 @@ An AI skills matrix shows who on your team can do what with AI, how well, and wh
 
 ## Know who on your team can actually do what, before you design any training
 
-A skills matrix is a structured map of capabilities across a team. For AI, it answers the question: who can do what with these tools, how well, and for which tasks? Without this map, training decisions are based on assumption rather than evidence. Programs address gaps that do not exist and miss the ones that do.
+A skills matrix is a structured map of capabilities across a team, so an AI capability matrix is the same document under another name. For AI, it answers the question: who can do what with these tools, how well, and for which tasks? Without this map, training decisions are based on assumption rather than evidence. Programs address gaps that do not exist and miss the ones that do.
 
-The skills matrix is not a performance evaluation. It is a planning tool. The distinction matters because team members who believe they are being evaluated will underreport their struggles, which produces a matrix that reflects desired performance rather than actual capability.
+The skills matrix is a planning tool. Keep it out of performance reviews, because team members who believe they are being evaluated will underreport their struggles, which produces a matrix that reflects desired performance rather than actual capability.
 
 ---
 
@@ -62,7 +62,7 @@ For a small business with operational, client-facing, and administrative roles, 
 
 ## Building the Matrix
 
-Construct the matrix with roles as rows and skill areas as columns. For each cell, record the current proficiency level, the target proficiency level, and the date of last assessment.
+Building an AI team skill matrix starts with a simple grid: roles as rows and skill areas as columns. For each cell, record the current proficiency level, the target proficiency level, and the date of last assessment.
 
 A simple spreadsheet works well for teams of twenty or fewer. Formatting matters only to the extent that it makes the matrix easy to read and update. Color coding by gap size, green for no gap, yellow for one-level gap, red for two-level gap, makes priority areas visible at a glance.
 

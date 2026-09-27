@@ -22,7 +22,7 @@ Rolling AI training out to the whole team at once is a bet. A short pilot turns 
 
 Most small business AI training programs skip the pilot. The founder sees an opportunity, signs up for tools, and rolls training out to the entire team at once. If it works, the enthusiasm carries it forward. If it does not work, the conclusion drawn is that AI training does not work for this team, which is almost always the wrong conclusion.
 
-A pilot program is not a delay. It is the difference between spending two months on training that produces nothing and spending two months on training that generates the evidence you need to build something that lasts.
+A pilot program is the difference between spending two months on training that produces nothing and spending two months on training that generates the evidence you need to build something that lasts.
 
 ---
 
@@ -30,7 +30,7 @@ A pilot program is not a delay. It is the difference between spending two months
 
 An AI training pilot is a time-bounded, controlled test of a training approach with a small subset of your team, using real work, with defined success metrics, before expanding to everyone else.
 
-The key elements are all in that definition. Time-bounded means it has a clear end date, typically four to six weeks. Controlled means the conditions are documented so you know what you actually tested. Small subset means you are not risking the entire team on an untested approach. Real work means the training is not theoretical. Defined success metrics mean you know in advance what a successful pilot looks like.
+The key elements are all in that definition. Time-bounded means it has a clear end date, typically four to six weeks. Controlled means the conditions are documented so you know what you actually tested. Small subset means you are not risking the entire team on an untested approach. Real work means the training is not theoretical. Defined success metrics mean you know in advance what a successful pilot looks like. Those 5 elements hold for any AI pilot program for business, whether you are testing a training approach or a new workflow.
 
 Pilots that skip any of these elements produce ambiguous results that do not help you make better decisions about the broader rollout.
 
@@ -38,7 +38,7 @@ Pilots that skip any of these elements produce ambiguous results that do not hel
 
 ## Choosing What to Pilot
 
-The most common mistake in designing a pilot is choosing the wrong scope. A pilot that is too broad tests too many things at once and cannot tell you which variable caused the outcome. A pilot that is too narrow produces results that do not transfer to the rest of the team or other workflows.
+The most common mistake in AI pilot program design is choosing the wrong scope. A pilot that is too broad tests too many things at once and cannot tell you which variable caused the outcome. A pilot that is too narrow produces results that do not transfer to the rest of the team or other workflows.
 
 The right scope for a small business AI training pilot is one workflow, one role type, and two to four participants. That is it.
 
@@ -83,7 +83,7 @@ Establish the baseline metrics this week. Ask participants to complete their ass
 
 ### Week Two: Supervised Practice
 
-In week two, participants begin using AI for the target workflow with active support. This is not autonomous practice. It is structured learning with feedback built in.
+In week two, participants begin using AI for the target workflow with active support. This is structured learning with feedback built in.
 
 Run two or three thirty-minute working sessions where participants complete real tasks using AI with you available to provide guidance. The goal is to get each participant through the friction phase with support rather than leaving them to struggle and conclude the tool is not useful.
 
@@ -125,7 +125,7 @@ If the pilot does not produce the results you hoped for, that is also useful inf
 
 **There is no baseline.** Without pre-pilot measurements, you cannot demonstrate that the training produced any change. Even informal baselines, time estimates, self-reported confidence, output quality ratings, are better than none.
 
-**The pilot ends without documentation.** The value of a pilot is not just the local results. It is the replicable knowledge it generates. If no one documents the prompts, the process, and the lessons learned, the pilot ends when the participants disperse.
+**The pilot ends without documentation.** A pilot produces local results and replicable knowledge. If no one documents the prompts, the process, and the lessons learned, the pilot ends when the participants disperse.
 
 **Scope creep.** Once a pilot starts, participants and leaders often want to expand it. Adding a second workflow or additional participants mid-pilot makes results harder to interpret. Keep the scope fixed until the pilot ends, then expand deliberately.
 
@@ -137,7 +137,7 @@ A successful pilot produces a defined playbook: the workflow, the tools, the tra
 
 The rollout is faster than the pilot because the variables are no longer unknown. You know what format works for this team. You know which prompts produce good outputs. You know where the friction points are and how to address them. The pilot does the experimental work so the rollout can focus on execution.
 
-This is why organizations that run structured pilots before broad rollouts consistently see better adoption outcomes than those that skip straight to full-team training. The pilot is not overhead. It is the investment that makes everything that follows more efficient.
+This is why organizations that run structured pilots before broad rollouts consistently see better adoption outcomes than those that skip straight to full-team training. The pilot is the investment that makes everything that follows more efficient.
 
 ## Frequently asked questions
 
@@ -149,9 +149,13 @@ It is a short, controlled test of AI on one real workflow with a few people befo
 
 Yes, and that is exactly what a pilot is for. Run one workflow with two to four people for four to six weeks and measure the results against a baseline. You will know whether the approach works for your team before you spend on everyone.
 
+### How do I run a pilot program before a company-wide rollout?
+
+Pick one high-frequency workflow and 2 to 4 people who look like the rest of the team. Set a hard end date 4 to 6 weeks out, write down your metrics, and record a baseline in week 1 before any training. Week 2 is supervised practice on real tasks. Week 3 is independent use with a mid-week check-in. In week 4 you measure again, interview each person, and write up the prompts and process that worked. That write-up becomes the playbook for the company-wide rollout.
+
 ### How long should an AI training pilot run?
 
-Four to six weeks with a hard end date. Past eight weeks, people lose interest and the results get muddy. Short and finished beats long and forgotten.
+Four to six weeks with a hard end date. A two-week AI pilot stops right when supervised practice starts, before anyone has used the tool on their own. Past eight weeks, people lose interest and the results get muddy. Short and finished beats long and forgotten.
 
 ### Who should be in an AI training pilot?
 

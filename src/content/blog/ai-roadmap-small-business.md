@@ -20,11 +20,11 @@ An AI roadmap tells a small business which problems to solve with AI and in what
 
 ## What a Roadmap Actually Is
 
-An AI roadmap is a sequenced plan for building AI capability in your business. It answers two questions: what problems are you addressing with AI, and in what order are you addressing them.
+An AI roadmap is a sequenced plan for building AI capability in your business. It answers two questions: what problems are you addressing with AI, and in what order are you addressing them. You will also see it called an AI enablement roadmap, and for small businesses the two terms mean the same plan.
 
-That is simpler than it sounds, and most founders already have the raw material for a roadmap. They know which processes are the most painful. They have a sense of what would make the biggest difference if it worked reliably. What they often lack is the structure to sequence that knowledge into a coherent plan.
+That is simpler than it sounds, and most founders already have the raw material for a roadmap. They know which processes are the most painful. They have a sense of what would make the biggest difference if it worked reliably. What they often lack is the structure to sequence that knowledge into a coherent plan. An AI roadmap for business supplies that structure, one quarter at a time.
 
-The roadmap is not a project management document. It is not a Gantt chart or a feature backlog. It is closer to a priorities list with dependencies: here is what we are building, here is why we are building it in this order, and here is what each phase delivers before the next one begins.
+The roadmap is a priorities list with dependencies: here is what we are building, here is why we are building it in this order, and here is what each phase delivers before the next one begins.
 
 ---
 
@@ -32,13 +32,15 @@ The roadmap is not a project management document. It is not a Gantt chart or a f
 
 The most common reason roadmaps fail is that they are built around tools rather than problems. A founder creates a list of AI tools they want to implement, assigns them to quarters, and calls it a roadmap. But without the underlying problem-and-outcome framing, there is no basis for evaluating whether the sequence makes sense or whether any of it is producing value.
 
-The second common reason is over-ambition. A roadmap that tries to address ten operational areas in twelve months is not a roadmap. It is a wish list. Realistic roadmaps account for implementation time, team adoption periods, and the reality that things take longer than expected. Typically, a small business can execute two to four significant AI implementations per year, depending on complexity and team capacity.
+The second common reason is over-ambition. A roadmap that tries to address ten operational areas in twelve months is a wish list. Realistic roadmaps account for implementation time, team adoption periods, and the reality that things take longer than expected. Typically, a small business can execute two to four significant AI implementations per year, depending on complexity and team capacity.
 
 The third reason is that roadmaps get built once and never revisited. A roadmap built in January based on what you knew then will not reflect what you have learned by March. The roadmap is a living document, not a fixed plan. Building in a quarterly review prevents it from becoming obsolete and then irrelevant.
 
 ---
 
 ## How to Build Your Roadmap in Five Steps
+
+Here are the 5 steps to create an AI roadmap, in the order I would do them.
 
 ### Step 1: List every operational problem worth addressing
 
@@ -102,7 +104,7 @@ The third principle is to leave room in the roadmap for what you will learn. Imp
 
 ## How Long a Roadmap Should Cover
 
-A twelve-month roadmap is the right planning horizon for most small businesses. Long enough to plan meaningful capability development, short enough to stay connected to current business reality.
+For AI roadmap planning, a 12-month horizon is right for most small businesses. Long enough to plan meaningful capability development, short enough to stay tied to what the business needs now.
 
 Planning beyond twelve months is rarely useful at the small business level. The business changes, priorities shift, and new tools emerge. A three-year AI roadmap written today will be largely obsolete in eighteen months.
 
@@ -125,6 +127,10 @@ The goal is not to stick to the roadmap. The goal is to make consistent progress
 ### What should an AI roadmap for a small business include?
 
 A short list of problems in priority order, and for each one the intended outcome, the proposed solution, an owner, and a realistic timeline. Add the metric and baseline you will judge it by. Tool names come last, if at all.
+
+### How do I create an AI roadmap that delivers measurable business value?
+
+Tie every item to a problem and a number. List the operational problems, score each on impact and readiness, and sequence them by quarter around their dependencies. Before each phase starts, write down the metric you will track and its baseline today, so the quarterly review compares real figures. Then reorder the next quarter based on what those figures show.
 
 ### How many AI projects can a small business take on in a year?
 

@@ -21,7 +21,7 @@ AI consulting pricing for a small business usually runs from $750 to $60,000, de
 
 ## What Drives AI Consulting Costs
 
-Before looking at numbers, here are the factors that determine what a project will cost. Two businesses can engage the same consultant and receive proposals with very different price tags. There is usually a reason for the gap.
+Before looking at numbers, here are the 4 factors that set AI consulting cost for small companies. Two businesses can engage the same consultant and receive proposals with very different price tags. There is usually a reason for the gap. Once you know the 4 factors, you can read any AI consultant cost quote and see where the money goes.
 
 **Scope of the work** is the primary driver. A focused project to automate one intake process costs less than a full operational audit and multi-system buildout. Many founders try to define scope narrowly to control cost, which is reasonable, but it requires honest prioritization of what matters most.
 
@@ -41,13 +41,13 @@ Understanding how consultants price their work helps you compare proposals accur
 
 Hourly pricing is common for early-stage or exploratory work. You might engage someone on an hourly basis for an initial audit, a workshop, or a scoped piece of technical work.
 
-For small business AI consulting, hourly rates typically range from $150 to $400 per hour depending on experience and specialty. Generalists are at the lower end. Specialists with deep implementation experience in your industry or function are at the higher end.
+For small business AI consulting, hourly rates typically range from $150 to $400 per hour depending on experience and specialty. Generalists are at the lower end. Specialists with deep implementation experience in your industry or function are at the higher end. When founders compare AI consulting rates, this hourly figure is usually what they are looking at.
 
 Hourly arrangements are useful when you are not sure how much work is needed. They give you flexibility to stop. The downside is that costs can grow unpredictably if the scope expands.
 
 ### Project-Based Fees
 
-A fixed-scope project with a defined deliverable is the most common model for implementation work. The consultant scopes the work, sets a price, and delivers within that frame.
+A fixed-scope project with a defined deliverable is the most common model for implementation work. In an AI consultancy fixed-price project, the consultant scopes the work, sets a price, and delivers within that frame.
 
 For small businesses, project fees typically range from $3,000 to $25,000 depending on complexity. A focused workflow automation for one business function might come in at the lower end. A multi-system implementation with training and documentation will land higher.
 
@@ -63,7 +63,7 @@ Retainer pricing for small businesses typically ranges from $2,000 to $8,000 per
 
 ## Typical Cost Ranges for Small Business Projects
 
-These ranges are directional, not quotes. Your actual cost will depend on the scope and consultant you choose.
+The table shows what AI consulting services cost at each engagement size for a small business. These ranges are directional, not quotes. Your actual cost will depend on the scope and consultant you choose.
 
 | Engagement | Typical cost | What it covers |
 |---|---|---|
@@ -102,7 +102,7 @@ Several variables can push your final cost above the initial proposal.
 
 ## Hidden Costs to Budget For
 
-Beyond the consulting fee itself, AI implementations carry real ongoing costs.
+Your total small business AI implementation cost includes the consulting fee plus real ongoing costs after launch.
 
 **Tool subscriptions** add up. Many AI platforms charge monthly or per-seat fees. A stack of 4 or 5 tools can run $500 to $2,000 per month or more depending on usage. Some consultants build the tooling costs into their proposals. Others present them separately.
 
@@ -151,6 +151,10 @@ Most small business projects land between $3,000 and $25,000. A single workflow 
 ### How do AI consultants price their work?
 
 Three ways: hourly at roughly $150 to $400, fixed project fees of $3,000 to $25,000, or monthly retainers of $2,000 to $8,000. Hourly suits exploratory work, fixed fees suit defined deliverables, and retainers suit ongoing buildout or support. Pick the model that matches how sure you are about the scope.
+
+### What is the typical cost structure for an AI strategy consulting engagement?
+
+It usually comes in 2 stages. A discovery and audit at $750 to $5,000 comes first and gives you a prioritized roadmap. Implementation follows as a fixed project fee, $3,000 to $8,000 for a single workflow or $10,000 to $25,000 for several connected ones. If you want ongoing support after that, it moves to a monthly retainer of $2,000 to $8,000.
 
 ### What costs are not on the consultant's invoice?
 

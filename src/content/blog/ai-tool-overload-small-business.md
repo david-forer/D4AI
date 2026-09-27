@@ -21,13 +21,20 @@ The solution is not simpler than the adoption problem. But it is more tractable 
 
 ## How Tool Overload Happens
 
-Tool overload is almost never the result of a single bad decision. It accumulates over time through a series of individually reasonable choices.
+Ending up with too many tools in business operations is almost never the result of a single bad decision. It accumulates over time through a series of individually reasonable choices.
 
 A founder reads about a useful AI writing tool and signs up. A team member discovers a meeting transcription tool and starts using it. A vendor demo convinces the operations lead to try a project management AI add-on. Each decision made sense in the moment. Each tool solved a real problem at the point of adoption.
 
 The issue is that these decisions happen without a view of the whole. Nobody is tracking how many tools the team is actively using, how much the stack costs in aggregate, whether any two tools do the same thing, or whether the new tool connects to anything else in the system. The stack grows laterally, without a design, until the maintenance and context-switching burden outweighs the productivity gains the tools were supposed to deliver.
 
-By the time a business recognises it has a tool overload problem, the stack often looks something like this: two CRM systems, one used officially and one used by people who prefer it; three AI writing tools, each used by different team members with no consistency in output; a project management platform with an AI add-on nobody turned on; and four other tools in various states of active use, partial use, or effective abandonment while still generating monthly charges.
+By the time a business recognises it has a tool overload problem, the stack often looks something like this:
+
+- Two CRM systems, one used officially and one used by people who prefer it.
+- Three AI writing tools, each used by different team members with no consistency in output.
+- A project management platform with an AI add-on nobody turned on.
+- Four other tools in various states of active use, partial use, or effective abandonment while still generating monthly charges.
+
+Sales tool overload follows the same pattern. A second CRM and a separate email sequencing tool can each hold part of the same prospect record, and nobody is sure which one is current.
 
 ---
 
@@ -65,7 +72,7 @@ Some of these are obvious. Some are easy to miss unless you are looking for them
 
 ## The Consolidation Framework
 
-Getting from an overloaded stack to a lean, functional one requires a structured approach. The goal is not to minimise tools for its own sake. It is to end up with a stack where every tool earns its place.
+Getting from an overloaded stack to a lean, functional one requires a structured approach. The goal is to end up with a stack where every tool earns its place.
 
 **Step 1: Complete inventory.** List every tool your business is paying for or using, including tools that individual team members have adopted independently. Include the monthly cost, the primary function, and the current owner if one exists.
 
@@ -113,7 +120,7 @@ There is no universal right number of tools for a small business. A five-person 
 
 What the right-sized stack has in common across all these cases is that every tool has a defined role, connects meaningfully to the rest of the system, has a named owner, and earns its cost. Those criteria are the standard. The number that results from applying them is different for every business.
 
-The businesses that get the most from their AI stack are not the ones with the most tools or the ones with the fewest. They are the ones where the tools they have work together and serve the people using them. That outcome requires design, not accumulation.
+The businesses that get the most from their AI stack have tools that work together and serve the people using them, whatever the size of the stack. That outcome comes from deliberate design.
 
 ---
 

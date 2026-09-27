@@ -54,7 +54,9 @@ Your team is the author of the story. AI is the editor and archivist. It helps y
 
 The hardest part of process mapping is getting started. Staring at a blank canvas and trying to remember every step feels overwhelming. You know the work, but translating it into a map takes effort.
 
-This is where AI adds real value. It can take raw, messy inputs and turn them into a rough draft you can refine.
+This is where AI workflow mapping adds real value. It can take raw, messy inputs and turn them into a rough draft you can refine.
+
+AI workflow mapping and traditional process mapping differ in where the first draft comes from. In traditional process mapping, someone interviews the team and draws each step by hand. In process mapping with AI, the draft comes from records the work already left behind, and the interviews go to checking it.
 
 ### Turning Raw Inputs Into Draft Maps
 
@@ -119,7 +121,7 @@ Process maps also show layers of complexity that cut across the step-by-step seq
 
 Give each of these layers its own lane on the map: people, tools, time and emotion. Looking at these layers helps you spot inefficiencies that a linear map would miss.
 
-AI is good at pattern recognition across layers. It can analyze your process from multiple angles at once and generate hypotheses about where things are breaking.
+AI is good at pattern recognition across layers, and this is where AI-powered process mapping earns its place. It can analyze your process from multiple angles at once and generate hypotheses about where things are breaking.
 
 ### People Layer
 
@@ -196,6 +198,10 @@ The principle is simple: automate after clarity, not before.
 
 If you do not understand the process, automation will lock in the confusion.
 
+## Why Process Mapping Comes Before Automation
+
+In any process mapping automation project, the map comes first. The map shows which steps repeat the same way every time and where the decision points sit. An automation built without it copies what the team does today, workarounds included. Map the process, fix what the map exposes, then automate the steps that are left.
+
 ## What AI Should Not Do in Process Mapping
 
 AI is a tool. It has limits, and pretending otherwise creates risk.
@@ -248,7 +254,19 @@ But do not skip the map. The map is where the gains come from.
 
 ### What is AI process mapping?
 
-It is using AI to help document how a process really runs. You feed it transcripts, threads, emails, or task lists, and it drafts the step sequence, flags decision points, and suggests where things break. People then check the draft against reality.
+AI business process mapping is using AI to help document how a process really runs. You feed it transcripts, threads, emails, or task lists, and it drafts the step sequence, flags decision points, and suggests where things break. People then check the draft against reality.
+
+### How do you use AI for process mapping?
+
+Collect what already records the work, such as call transcripts, Slack threads, email chains and task lists. Ask AI to turn them into a step sequence and flag the decision points and handoffs. Then walk the draft through with the people who do the work, correct it, and only then draw the visual map.
+
+### How do you map existing workflows before deciding where AI fits?
+
+Document the workflow as it runs today before you look for AI uses. Have AI draft the step sequence from the records the work leaves, then check it with the team until it matches reality, including the decision points and exceptions nobody wrote down. Once the map is validated, the places AI fits show up as repetitive manual tasks, steps with clear inputs and outputs, and low-risk decisions with consistent logic.
+
+### When should you use automated process mapping instead of manual process mapping?
+
+Use automated workflow mapping when the work already leaves a trail, such as call transcripts, Slack threads, email chains or task lists, and you want a first draft fast. Map by hand through team interviews when little is written down or when the process runs on unwritten rules. The two work best together. AI drafts from the records, and the team corrects the draft.
 
 ### Can process mapping be automated?
 
@@ -264,7 +282,7 @@ Once the map is validated, AI can suggest steps worth automating: repetitive man
 
 ### Which tools do you need to map a process?
 
-AI to draft the step sequence, then Lucidchart, Miro, or a plain whiteboard for the visual map. The tool matters less than the team agreeing on what really happens.
+The AI process mapping tools you need are modest: an AI assistant that can read your transcripts and task lists and draft the step sequence, then Lucidchart, Miro, or a plain whiteboard for the visual map. The tool matters less than the team agreeing on what really happens.
 
 ---
 

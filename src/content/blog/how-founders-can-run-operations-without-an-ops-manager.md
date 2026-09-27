@@ -15,6 +15,8 @@ For most businesses between $1M and $5M, that hire is not happening anytime soon
 
 The answer depends on a distinction most founders miss: the difference between operations work that requires judgment and operations work that requires coordination. One needs a person. The other needs a system.
 
+Founders run operations without an ops manager by handing the coordination work to systems and keeping the judgment calls for themselves.
+
 ---
 
 ## What an Operations Manager Actually Does
@@ -41,7 +43,7 @@ Most small businesses are overwhelmed by coordination work. They mistake it for 
 
 AI and automation tools have matured to the point where the coordination layer is largely solvable without a person.
 
-**Intake and routing**: A structured intake form connected to your project management system can receive a new request, create a task, assign an owner, set a due date, and notify the right people: all without anyone touching it manually.
+**Intake and routing**: A structured intake form that feeds your project management system can receive a new request, create a task, assign an owner, set a due date, and notify the right people, all without anyone touching it manually.
 
 **Status updates and check-ins**: Workflow automation tools can trigger scheduled check-ins, pull task status from your project system, and surface what needs attention without anyone asking. No more chasing for updates.
 
@@ -49,7 +51,7 @@ AI and automation tools have matured to the point where the coordination layer i
 
 **Dashboard visibility**: Instead of someone compiling a weekly status report by hand, an operations dashboard pulls live data and shows you the picture in real time. The [AI Operations Dashboard for Founders](/blog/ai-operations-dashboard-for-founders) model eliminates the majority of manual reporting overhead.
 
-**Recurring process checklists**: Tools like ClickUp, Notion, or Process Street can trigger recurring checklists automatically, ensuring the right steps get followed on every engagement without someone manually initializing the process.
+**Recurring process checklists**: Tools like ClickUp, Notion, or Process Street can trigger recurring checklists automatically, so the right steps get followed on every engagement without someone manually initializing the process.
 
 This is not theoretical. Businesses running on five to fifteen people are operating this way today. The infrastructure exists. What most teams are missing is the architecture that connects it into a coherent system rather than a collection of disconnected tools.
 
@@ -59,7 +61,7 @@ For a practical view of how to sequence the build, [How to Automate Your Busines
 
 ## What Only You Can Own
 
-Systems are not a replacement for judgment. They are a replacement for the coordination overhead that has been consuming your judgment.
+Systems take over the coordination overhead that has been consuming your judgment, and leave the judgment calls with you.
 
 There are things that remain founder work regardless of how sophisticated your automation becomes:
 
@@ -70,7 +72,7 @@ There are things that remain founder work regardless of how sophisticated your a
 
 The goal is not to automate your role. The goal is to automate the work that has been eating your role. When coordination overhead disappears, what remains is almost entirely judgment work: the kind of work that actually requires you.
 
-Most founders who describe themselves as buried in operations are not buried in hard decisions. They are buried in follow-up emails, status checks, and process coordination that has no business sitting in their calendar. That is a solvable structural problem, not a capacity problem.
+Most founders who describe themselves as buried in operations are buried in follow-up emails, status checks, and process coordination that has no business sitting in their calendar. That is a solvable structural problem.
 
 ---
 
@@ -119,7 +121,7 @@ There are conditions where an operations hire makes genuine sense:
 
 At that point, you are not hiring someone to send follow-up emails or compile reports. You are hiring someone to own the exception layer, align systems with strategy, and make judgment calls at volume. That is a meaningfully different role, and a more defensible investment.
 
-Most businesses at the $1M to $5M level are not there yet. They are drowning in coordination work that should have been systematized two years ago.
+Most businesses at the $1M to $5M level are still drowning in coordination work that should have been systematized two years ago.
 
 ---
 

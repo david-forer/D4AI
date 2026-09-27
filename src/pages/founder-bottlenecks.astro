@@ -10,23 +10,23 @@ const dateModified = '2026-09-08';
 const faqs = [
   {
     q: 'What is the founder bottleneck?',
-    a: 'The founder bottleneck is the point where a business can only move as fast as its owner. Decisions, approvals and undocumented judgment calls all route back through one person, so growth is capped by that person’s available hours rather than by demand, capital or team size.',
+    a: 'The founder bottleneck is the point where a business can only move as fast as its owner. Decisions, approvals and undocumented judgment calls all route back through one person, so that person’s available hours cap growth, whatever the demand, capital or team size.',
   },
   {
     q: 'What is a founder decision bottleneck?',
-    a: 'A founder decision bottleneck forms when the number of choices needing the owner’s input grows faster than their available hours. The tell is queue time rather than decision quality. If the team waits two days for a routine answer, the business is running at the founder’s latency instead of its own. The fix is fewer decisions reaching the founder at all, through written spending thresholds, a named owner for each decision type, and a default of proceed unless told otherwise on anything reversible.',
+    a: 'A founder decision bottleneck forms when the number of choices needing the owner’s input grows faster than their available hours. The tell is queue time. If the team waits 2 days for a routine answer, the business is running at the founder’s speed. The fix is fewer decisions reaching the founder at all, through written spending thresholds, a named owner for each decision type, and a default of proceed unless told otherwise on anything reversible.',
   },
   {
     q: 'What is the CEO bottleneck in a small business?',
-    a: 'The CEO bottleneck is the same constraint seen from the org chart. In a company of five to twenty people with no operations lead, the CEO holds three jobs at once: setting direction, running delivery, and acting as the escalation path for anything that does not fit an existing process. It bites hardest between one and five million in revenue, because below that one person can genuinely hold it all and above that there is usually a COO.',
+    a: 'The CEO bottleneck is the same constraint seen from the org chart. In a company of 5 to 20 people with no operations lead, the CEO holds 3 jobs at once: setting direction, running delivery, and acting as the escalation path for anything that does not fit an existing process. It bites hardest between $1M and $5M in revenue, because below that one person can hold it all and above that there is usually a COO.',
   },
   {
     q: 'What is an owner bottleneck?',
-    a: 'An owner bottleneck exists when the business cannot run without the owner present. The test is taking two consecutive weeks off with your phone off and watching what breaks. It is not a character flaw or a time management problem. It is a documentation gap with a person standing in it, and the parts that stall are the parts living in the owner’s head rather than in a system.',
+    a: 'An owner bottleneck exists when the business cannot run without the owner present. The test is taking 2 consecutive weeks off with your phone off and watching what breaks. It is a documentation gap with a person standing in it, and the parts that stall are the parts that live only in the owner’s head.',
   },
   {
     q: 'How do you diagnose a founder bottleneck?',
-    a: 'Measure queue time on routine decisions, list which processes exist only in the owner’s head, and run the two-week absence test. Those three checks separate a genuine capacity problem from a systems problem. Adding headcount fixes the first and makes the second worse.',
+    a: 'Measure queue time on routine decisions, list which processes exist only in the owner’s head, and run the 2-week absence test. Those 3 checks separate a genuine capacity problem from a systems problem. Adding headcount fixes the first and makes the second worse.',
   },
 ];
 
@@ -464,6 +464,10 @@ const schema = {
                 <strong>Founder bottlenecks occur when a business's growth and operational efficiency are hindered by the founder's direct involvement in too many aspects of the business</strong>, leading to decision-making logjams, overwork, and an inability to scale.
               </p>
 
+              <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                A founder bottleneck in a business caps growth at the founder's available hours. When the founder is the bottleneck, work that could move on its own waits for a reply. The pattern looks the same in a trades company, a consulting firm or an agency. In an agency, the founder bottleneck usually sits in client approvals and final sign-off.
+              </p>
+
               <div class="insight-highlight p-8 rounded-lg mb-12">
                 <h3 class="text-2xl font-light text-gray-900 mb-4">The bottleneck paradox</h3>
                 <p class="text-gray-700 leading-relaxed">
@@ -859,7 +863,7 @@ const schema = {
             <div class="mb-6 md:mb-0">
               <h2 class="text-2xl font-light text-gray-900 mb-2">Run it on yourself first</h2>
               <p class="text-gray-700 leading-relaxed">
-                Six signs in the order they actually appear, each with a check you can run this week. Free, no email required.
+                A free founder dependency diagnostic: six signs in the order they actually appear, each with a check you can run this week. No email required.
               </p>
             </div>
             <a href="/founder-bottleneck-test" class="inline-block whitespace-nowrap bg-blue-700 hover:bg-blue-800 text-white font-semibold px-7 py-3.5 rounded-lg transition duration-200">
@@ -877,7 +881,7 @@ const schema = {
           <h2 class="text-4xl font-light text-gray-900 mb-12">How to Fix It</h2>
 
           <p class="text-lg text-gray-700 mb-12 max-w-4xl">
-            Once founder bottlenecks have been identified and diagnosed, the next step is to implement strategies to mitigate them. This involves a combination of empowering people, improving processes, and shifting the founder's focus.
+            Once founder bottlenecks have been identified and diagnosed, the fix is a systems and teams problem. Take a systems-first approach: put the business systems in place first, then hand the team the decisions those systems now support. In practice that means giving people clear decision rights, improving processes, and shifting the founder's focus.
           </p>
 
           {/* Strategies Table */}
@@ -1305,6 +1309,21 @@ const schema = {
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* Visible FAQ, rendered from the same faqs array as the FAQPage schema */}
+      <section id="faq" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-8">
+          <h2 class="text-4xl font-light text-gray-900 mb-12">Frequently Asked Questions</h2>
+          <div class="space-y-10">
+            {faqs.map((f) => (
+              <div>
+                <h3 class="text-2xl font-light text-gray-900 mb-3">{f.q}</h3>
+                <p class="text-lg text-gray-700 leading-relaxed">{f.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
