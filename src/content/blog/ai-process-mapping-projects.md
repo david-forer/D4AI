@@ -36,7 +36,7 @@ Process mapping is the step AI cannot skip. It is also the step where AI can hel
 
 Process mapping is visual storytelling.
 
-As Layla Pomper describes it, process mapping turns invisible work into visible systems. It exposes decisions, delays, handoffs, and friction. It makes implicit knowledge explicit. It shows you what really happens.
+Process mapping turns invisible work into visible systems. It exposes decisions, delays, handoffs, and friction. It makes implicit knowledge explicit. It shows you what really happens.
 
 Most processes live in people's heads. They exist as scattered instructions, oral traditions, and improvised workarounds. When someone leaves the team, the process leaves with them. When something breaks, no one knows which step failed because no one documented the steps.
 
@@ -89,7 +89,7 @@ If AI suggests a 5-step process and your team insists it takes 12 steps, trust t
 
 One of the hardest things to map is decision points. These are the moments where the process branches based on a condition, an approval, or an exception.
 
-In process mapping, Layla Pomper uses a diamond symbol to represent these decision points. The diamond asks a yes-or-no question. One path continues if the answer is yes. Another path branches if the answer is no.
+Process maps use a diamond symbol to represent these decision points. The diamond asks a yes-or-no question. One path continues if the answer is yes. Another path branches if the answer is no.
 
 Humans often miss these decision points because they feel implicit. The team knows that certain invoices need manager approval and others do not, but no one wrote that rule down. The logic exists as tribal knowledge.
 
@@ -117,7 +117,7 @@ When decision points are explicit, new team members can follow the map without a
 
 Process maps also show layers of complexity that cut across the step-by-step sequence.
 
-Layla Pomper calls these swim lanes. Each swim lane represents a different dimension of the process, like people, tools, time, or emotion. Looking at these layers helps you spot inefficiencies that a linear map would miss.
+Give each of these layers its own lane on the map: people, tools, time and emotion. Looking at these layers helps you spot inefficiencies that a linear map would miss.
 
 AI is good at pattern recognition across layers. It can analyze your process from multiple angles at once and generate hypotheses about where things are breaking.
 

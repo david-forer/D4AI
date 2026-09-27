@@ -38,7 +38,7 @@ Most confusion about AI agents comes from blurring three different things. The d
 
 **An automation follows rules you defined.** A workflow that watches a shared inbox, spots invoices, extracts the amounts, and files them in your accounting tool is an automation. It is powerful and reliable precisely because it does the same thing every time. It does not think. It executes. Most of the value small businesses get from AI today comes from automation, not agents, and we cover the difference in practical terms in [AI agents versus automations](/blog/ai-agents-vs-automations).
 
-**A chatbot holds a conversation.** It responds to what you type. Useful for support and lookups, but it waits for you and does not act on its own across your systems.
+**A chatbot holds a conversation.** It responds to what you type. Useful for support and lookups, but it waits for you and does not act on its own across your systems. For a side-by-side comparison, see [AI agents vs chatbots](/blog/ai-agents-vs-chatbots).
 
 **An agent pursues a goal across steps and tools.** Give it an objective and it decides the path. A support agent for a 20-person software company does not just answer one question. It reads the ticket, checks the customer's account status, looks up the relevant documentation, drafts a resolution, and either sends it or escalates to a human based on how confident it is. The path was not scripted in advance. The agent worked it out.
 

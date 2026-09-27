@@ -164,13 +164,13 @@ Thoughtful implementation includes planning for workforce transitions. Training 
 
 ## AI Automation Use Cases and Productivity Boosts
 
-### AI Automation Examples and Successful Deployments
+### AI Automation Examples for a Small Business
 
-A regional insurance company automated claims intake processing, reducing handling time from 45 minutes to under 5 minutes per claim. The AI system extracts information from submitted documents, validates coverage, and routes claims to appropriate adjusters with summary information already prepared.
+Imagine a 12-person insurance agency where each new claim takes about 45 minutes to read, key in and route. An AI intake step can pull the details from the submitted documents, check coverage and draft the routing with a summary attached. A person still checks each claim, but the handling time could drop to around 10 minutes.
 
-A professional services firm automated proposal generation. The system pulls relevant case studies, assembles appropriate team credentials, and drafts initial content based on opportunity parameters. Partners review and refine a draft, which cut proposal time by 60 percent.
+Or picture a 10-person consulting firm where a partner spends 4 to 5 hours on every proposal. An automation that pulls past case studies and team bios and drafts the first version lets the partner start from a draft. For a firm like that, 2 hours per proposal is a reasonable target.
 
-An e-commerce operation automated customer inquiry handling. AI manages routine questions about orders, returns, and products while escalating complex issues to human agents. First-response times dropped from hours to seconds for simple inquiries.
+For example, an online store that answers order-status questions by hand might reply within a few hours. An assistant that answers the routine ones from the order system replies in seconds and passes returns and complaints to a person.
 
 ### Content Generation, Presentation, and Enterprise Search Automation
 
