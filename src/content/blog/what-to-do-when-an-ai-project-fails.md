@@ -144,7 +144,7 @@ Name what the agreement said would exist by now, name what exists, and ask for o
 
 Most reputable consultants will pick one. The response tells you what to do about the relationship, and a written exchange leaves you with a record if the agreement has a remedy clause.
 
-What you should hold at the end of any engagement is covered in [what comes after an AI engagement](/blog/after-your-ai-engagement-long-term-results). Use that list as the basis for what you ask for now.
+What you should hold at the end of any engagement is covered in [what comes after an AI engagement](/blog/realistic-results-from-ai-consulting). Use that list as the basis for what you ask for now.
 
 ---
 

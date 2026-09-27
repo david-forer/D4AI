@@ -111,4 +111,4 @@ A well-structured hybrid engagement leaves your team with a working system and t
 
 *Part of the [Working with an AI Consultant](/blog/working-with-an-ai-consultant) series.*
 
-*Related reading: [Are You Ready to Hire an AI Consultant?](/blog/are-you-ready-to-hire-an-ai-consultant) | [AI Consulting Cost for Small Business](/blog/ai-consulting-cost-for-small-business) | [How to Prepare for an AI Consultant](/blog/how-to-prepare-for-an-ai-consultant) | [AI Consultant vs Agency](/blog/ai-consultant-vs-agency)*
+*Related reading: [Are You Ready to Hire an AI Consultant?](/blog/are-you-ready-to-hire-an-ai-consultant) | [AI Consulting Cost for Small Business](/blog/ai-consulting-cost-for-small-business) | [AI Consultant vs Agency](/blog/ai-consultant-vs-agency)*

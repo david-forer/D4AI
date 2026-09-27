@@ -128,7 +128,7 @@ If the consultant cannot produce a reference at all, treat it as tier 2 and ask 
 
 Flags do not only show up before the contract. The common pattern is a clean sales process followed by a first month with no written output.
 
-Set a checkpoint at day 30 before the work starts, and write it into the agreement. At day 30 you should be holding a findings document, a named priority, and a scoped first build. Our guide to [the first 90 days of an AI engagement](/blog/what-to-expect-first-90-days-ai-engagement) sets out what should exist at each stage.
+Set a checkpoint at day 30 before the work starts, and write it into the agreement. At day 30 you should be holding a findings document, a named priority, and a scoped first build. Our guide to [the first 90 days of an AI engagement](/blog/what-does-an-ai-consultant-do) sets out what should exist at each stage.
 
 If day 30 arrives with nothing written, say so in an email, name the missing artifact, and give a date. An engagement that recovers will produce the document inside a week. One that does not is telling you what the next 60 days look like.
 

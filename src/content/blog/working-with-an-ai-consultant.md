@@ -70,7 +70,7 @@ Build follows design. The implementation timeline depends on the complexity of t
 
 The third phase is where engagements either stick or fall apart. The systems are running, but the team needs supported time with them before they become second nature. This phase involves active use with the consultant still available, iteration based on what the team encounters in real operation, and the gradual transfer of ownership from consultant to client. If an engagement has already fallen apart, [what to do when an AI project fails](/blog/what-to-do-when-an-ai-project-fails) walks through the salvage, restart or stop decision.
 
-By the end of this phase, the systems should be stable, the team should know how to use and troubleshoot them, and the documentation should be thorough enough for someone new to learn from without the consultant present. For a realistic picture of what the first three months look like from the client side, [what to expect in the first 90 days of an AI engagement](/blog/what-to-expect-first-90-days-ai-engagement) covers the common friction points and how to navigate them.
+By the end of this phase, the systems should be stable, the team should know how to use and troubleshoot them, and the documentation should be thorough enough for someone new to learn from without the consultant present. For a realistic picture of what the first three months look like from the client side, [what to expect in the first 90 days of an AI engagement](/blog/what-does-an-ai-consultant-do) covers the common friction points and how to navigate them.
 
 ---
 
@@ -86,7 +86,7 @@ Most of what determines whether an AI consulting engagement succeeds comes from 
 
 **A realistic budget matched to scope.** A focused engagement addressing one or two workflows has a different cost profile than a comprehensive operational build-out. Knowing what you are trying to accomplish allows for scoping that fits your resources.
 
-If you are not sure whether your business is at the right stage, [are you ready to hire an AI consultant](/blog/are-you-ready-to-hire-an-ai-consultant) walks through the honest assessment before you commit to anything. If you are leaning toward handling implementation internally first, [DIY AI vs. hiring a consultant](/blog/diy-ai-vs-hiring-a-consultant) is worth reading before you decide. And if you have already decided to move forward, [the guide to preparing your business for an AI consultant](/blog/how-to-prepare-for-an-ai-consultant) covers the practical steps for getting ready before a project begins.
+If you are not sure whether your business is at the right stage, [are you ready to hire an AI consultant](/blog/are-you-ready-to-hire-an-ai-consultant) walks through the honest assessment before you commit to anything. If you are leaning toward handling implementation internally first, [DIY AI vs. hiring a consultant](/blog/diy-ai-vs-hiring-a-consultant) is worth reading before you decide. And if you have already decided to move forward, [the guide to preparing your business for an AI consultant](/blog/are-you-ready-to-hire-an-ai-consultant) covers the practical steps for getting ready before a project begins.
 
 ---
 
@@ -181,4 +181,4 @@ Watch how the first conversation starts. A good one asks how your business runs 
 
 If you are reading this with genuine intent to engage, the most useful next step is a direct conversation about your specific business. Where the friction is, what the operational picture looks like, and whether an engagement makes sense given where you are right now. [Schedule a call.](https://calendly.com/david-j-forer/30min)
 
-If you have already been through an engagement and want to think about sustaining and extending what was built, [what happens after your AI engagement ends](/blog/after-your-ai-engagement-long-term-results) covers how to keep the momentum going without the consultant in the room.
+If you have already been through an engagement and want to think about sustaining and extending what was built, [what happens after your AI engagement ends](/blog/realistic-results-from-ai-consulting) covers how to keep the momentum going without the consultant in the room.

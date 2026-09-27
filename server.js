@@ -42,6 +42,10 @@ const redirects = {
   '/Custom-Consulting':                             '/fix-the-chaos',
   // Merged into best-ai-tools-for-business-operations on 2026-09-27
   '/blog/best-ai-tools-small-business-operations': '/blog/best-ai-tools-for-business-operations',
+  // Consultant hub merges on 2026-09-27
+  '/blog/how-to-prepare-for-an-ai-consultant':        '/blog/are-you-ready-to-hire-an-ai-consultant',
+  '/blog/what-to-expect-first-90-days-ai-engagement': '/blog/what-does-an-ai-consultant-do',
+  '/blog/after-your-ai-engagement-long-term-results': '/blog/realistic-results-from-ai-consulting',
   // Old "about" URLs
   '/about-me':                                      '/about',
 

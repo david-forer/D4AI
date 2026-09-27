@@ -153,4 +153,4 @@ Take notes during every conversation. Compare them afterward. The answers to the
 
 *Part of the [Working with an AI Consultant](/blog/working-with-an-ai-consultant) series.*
 
-*Related reading: [How to Choose an AI Consultant](/blog/how-to-choose-an-ai-consultant) | [Are You Ready to Hire an AI Consultant?](/blog/are-you-ready-to-hire-an-ai-consultant) | [What to Expect in the First 90 Days](/blog/what-to-expect-first-90-days-ai-engagement)*
+*Related reading: [How to Choose an AI Consultant](/blog/how-to-choose-an-ai-consultant) | [Are You Ready to Hire an AI Consultant?](/blog/are-you-ready-to-hire-an-ai-consultant) | [What to Expect in the First 90 Days](/blog/what-does-an-ai-consultant-do)*
