@@ -134,7 +134,7 @@ app.use((req, res, next) => {
 // (about.6Up92m6Q.css, inter-latin-wght-normal.<hash>.woff2). A changed file
 // gets a new name, so those can be cached forever and never revalidated.
 //
-// Everything else under /images, /downloads, favicons and so on keeps its
+// Everything else, images, favicons and so on, keeps its
 // filename across deploys, so it gets a week with revalidation rather than
 // immutability. HTML is never cached: a deploy has to be visible immediately.
 const YEAR = 60 * 60 * 24 * 365;
@@ -161,6 +161,11 @@ app.use(express.static(DIST, {
   redirect: false,
   setHeaders: (res, filePath) => {
     res.setHeader('Cache-Control', cacheHeaderFor(filePath));
+    // Giveaway files are shared by direct link only. Keep them out of search
+    // results and AI answers without naming where they live.
+    if (/\.(pdf|zip)$/i.test(filePath)) {
+      res.setHeader('X-Robots-Tag', 'noindex, nofollow');
+    }
   },
 }));
 
