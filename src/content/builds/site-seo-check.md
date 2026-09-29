@@ -5,6 +5,7 @@ seoTitle: "Site SEO Check | Catch Regressions Weekly | Forersight"
 pubDate: 2026-07-16T00:00:00Z
 buildType: "skill"
 status: "live"
+githubUrl: "https://github.com/david-forer/site-seo-check"
 stack: ["Claude Code", "Python", "GSC", "GA4"]
 ---
 
