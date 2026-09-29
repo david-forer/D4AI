@@ -11,7 +11,9 @@ featured: true
 
 ## What it does
 
-ClaudeClaw connects Telegram to a Claude Code instance running on my desktop. I can send it a task from anywhere, on a walk, in a waiting room, and it executes on my actual file system with my actual tools. It also runs a small dashboard so I can watch what it is doing.
+ClaudeClaw was built by Mark Kashef and the Early AI-dopters community. I run it on my own machine and install it for clients.
+
+It connects Telegram to a Claude Code instance running on my desktop. I can send it a task from anywhere, on a walk, in a waiting room, and it executes on my actual file system with my actual tools. It also runs a small dashboard so I can watch what it is doing.
 
 ## How it works
 
