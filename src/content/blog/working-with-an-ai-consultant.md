@@ -13,10 +13,10 @@ Working with an AI consultant is a real spend for a small business, so it pays t
 
 ## Key takeaways
 
-- An AI consultant for a small business does five things: discovery and operational mapping, workflow design, implementation, team training and adoption, and handoff.
-- A typical engagement runs in three phases over about fourteen weeks: discovery and audit, design and build, then adoption and handoff.
-- Discovery and audit engagements run $2,000 to $8,000, focused implementation projects $8,000 to $25,000, and comprehensive engagements $25,000 to $60,000 and up.
-- A focused engagement on one or two high-volume processes typically recovers five to fifteen hours per week across the team.
+- An AI consultant for a small business does 5 things: discovery and operational mapping, workflow design, implementation, team training and adoption, and handoff.
+- A typical engagement runs in 3 phases over about 14 weeks: discovery and audit, design and build, then adoption and handoff.
+- Discovery and audit engagements run $750 to $5,000, focused implementation projects $3,000 to $25,000, and comprehensive engagements $25,000 to $60,000 and up.
+- A focused engagement on 1 or 2 high-volume processes typically recovers 5 to 15 hours per week across the team.
 - The timing is right when you can name the workflows eating team time, have hit a wall solving it with tools yourself, and have a named internal person to work alongside the consultant.
 - A good consultant starts with your problem rather than their tools, and ends the engagement with your team owning the systems.
 
@@ -24,29 +24,29 @@ Working with an AI consultant is a real spend for a small business, so it pays t
 
 The pattern is familiar to most founders who have spent time on this. A few tools get added. Some automations run. A chatbot answers basic questions on the website. Three months later the business operates mostly the same as before, with more subscriptions and more things to maintain.
 
-The tools were not the problem. The design was. Most small businesses add AI at the task level. One tool here, one automation there. No framework for how it all connects to the way the business actually operates. The result is capability without architecture, and capability without architecture does not produce results.
+The design was the problem. Most small businesses add AI at the task level. One tool here, one automation there. No framework for how it all connects to the way the business operates. The result is capability without architecture, and capability without architecture does not produce results.
 
-An AI consultant's job is to close that gap. Not by selling tools. Not by building software from scratch. By designing how AI fits into your specific operations, implementing it properly, and making sure your team can sustain and extend what gets built.
+An AI consultant's job is to close that gap by designing how AI fits into your specific operations, implementing it properly, and making sure your team can sustain and extend what gets built.
 
-This guide covers the full picture: what the engagement actually looks like, what it costs, what results are realistic, and how to know whether now is the right time.
+This guide covers the full picture: what the engagement looks like, what it costs, what results are realistic, and how to know whether now is the right time.
 
 ---
 
 ## What an AI Consultant Actually Does
 
-The job title is broad enough to mean almost anything, which is why it is worth being specific. For small businesses, an AI consultant does five things.
+The job title is broad enough to mean almost anything, so it helps to be specific. For small businesses, an AI consultant does 5 things.
 
-**Discovery and operational mapping.** The first phase of any engagement is understanding how the business works. Not how the founder thinks it works. How it actually works at the workflow level. Which processes are manual and high-volume? Where does information change hands between people or systems? Where does work get stuck, duplicated, or dropped? This mapping takes two to four weeks and produces a clear picture of where AI can create real operational leverage.
+**Discovery and operational mapping.** The first phase of any engagement is mapping how the business works at the workflow level, which is often different from how the founder thinks it works. Which processes are manual and high-volume? Where does information change hands between people or systems? Where does work get stuck, duplicated, or dropped? This mapping takes 2 to 4 weeks and produces a clear picture of where AI can make a real operational difference.
 
 **Workflow design.** Once the high-value opportunities are identified, the consultant designs how AI fits into those specific workflows. This means defining inputs, outputs, decision points, exception handling, and the human steps that should remain human. The design work is where most of the value in an engagement lives. Implementation without solid design produces systems that technically run and practically underdeliver.
 
-**Implementation.** The consultant builds what was designed. In a small business context, this typically means configuring automation tools, building integrations between existing systems, setting up AI-assisted workflows, and connecting the pieces into something that operates reliably without constant manual intervention. This is not custom software development. It is operational engineering using tools and platforms that are already mature and well-supported.
+**Implementation.** The consultant builds what was designed. In a small business context, this typically means configuring automation tools, building integrations between existing systems, setting up AI-assisted workflows, and connecting the pieces into something that operates reliably without constant manual intervention. It is operational engineering with tools and platforms that are already mature and well-supported, with no custom software development.
 
-**Team training and adoption.** A system your team does not use delivers no value. Getting adoption right is a significant part of the engagement. Documentation, hands-on training, and supported early operation are all part of the job. A consultant who delivers a working system and then disappears without ensuring the team can use it has done half the work.
+**Team training and adoption.** A system your team does not use delivers no value. Getting adoption right is a significant part of the engagement. Documentation, hands-on training, and supported early operation are all part of the job. A consultant who delivers a working system and then disappears without making sure the team can use it has done half the work.
 
-**Handoff.** Every good engagement ends with you needing the consultant less, not more. The systems are documented. The team is trained. The logic is understood by someone internally who can maintain and extend it. Independence is the objective, not dependency.
+**Handoff.** Every good engagement ends with you needing the consultant less. The systems are documented. The team is trained. The logic is understood by someone internally who can maintain and extend it. The objective is independence.
 
-For a more detailed breakdown of how the role differs from general tech consulting, [what an AI consultant actually does](/blog/what-does-an-ai-consultant-do) covers the scope and day-to-day work in plain terms.
+For more on how the role differs from general tech consulting, [what an AI consultant actually does](/blog/what-does-an-ai-consultant-do) covers the scope and day-to-day work in plain terms.
 
 ---
 
@@ -56,37 +56,37 @@ Engagements vary considerably in scope and duration, but they follow a consisten
 
 ### Phase 1: Discovery and Audit (Weeks 1-4)
 
-The consultant spends the first phase learning the business. This involves conversations with the founder and key team members, reviewing existing tools and workflows, mapping how work actually moves through the organisation, and identifying the highest-value opportunities for AI implementation.
+The consultant spends the first phase learning the business. This involves conversations with the founder and core team members, reviewing existing tools and workflows, mapping how work moves through the organization, and identifying the highest-value opportunities for AI implementation.
 
-The output is a prioritised roadmap. Specific workflows ranked by value, implementation complexity, and readiness. This roadmap becomes the guide for everything that follows. A founder who receives a vague strategy document at the end of the discovery phase rather than a specific, actionable plan should ask why.
+The output is a prioritized roadmap. Specific workflows ranked by value, implementation complexity, and readiness. This roadmap becomes the guide for everything that follows. A founder who gets a vague strategy document at the end of the discovery phase should ask where the specific, actionable plan is.
 
 ### Phase 2: Design and Build (Weeks 4-10)
 
 The design phase translates the roadmap into specific implementation plans. For each priority workflow, the consultant documents the full architecture: what triggers it, what data it needs, what it produces, where exceptions go, and who reviews what before it acts on anything client-facing or financially significant.
 
-Build follows design. The implementation timeline depends on the complexity of the workflows involved. Focused projects typically involve four to eight weeks of active building. The client team is involved throughout. Not as passive observers but as active collaborators who understand what is being built and why.
+Build follows design. The implementation timeline depends on the complexity of the workflows involved. Focused projects typically involve 4 to 8 weeks of active building. The client team is involved throughout, as active collaborators who understand what is being built and why.
 
 ### Phase 3: Adoption and Handoff (Weeks 10-14)
 
 The third phase is where engagements either stick or fall apart. The systems are running, but the team needs supported time with them before they become second nature. This phase involves active use with the consultant still available, iteration based on what the team encounters in real operation, and the gradual transfer of ownership from consultant to client. If an engagement has already fallen apart, [what to do when an AI project fails](/blog/what-to-do-when-an-ai-project-fails) walks through the salvage, restart or stop decision.
 
-By the end of this phase, the systems should be stable, the team should know how to use and troubleshoot them, and the documentation should be thorough enough for someone new to learn from without the consultant present. For a realistic picture of what the first three months look like from the client side, [what to expect in the first 90 days of an AI engagement](/blog/what-does-an-ai-consultant-do) covers the common friction points and how to navigate them.
+By the end of this phase, the systems should be stable, the team should know how to use and troubleshoot them, and the documentation should be thorough enough for someone new to learn from without the consultant present. For a realistic picture of what the first 3 months look like from the client side, [what an AI consultant does in the first 90 days](/blog/what-does-an-ai-consultant-do) covers the common friction points and how to handle them.
 
 ---
 
 ## What You Need in Place Before Starting
 
-Most of what determines whether an AI consulting engagement succeeds comes from the client side, not the consultant side.
+Most of what determines whether an AI consulting engagement succeeds sits on the client side.
 
-**A clearly felt operational problem.** Not general interest in AI. Not curiosity about what is possible. A specific workflow or category of work that is consuming meaningful time, producing errors, or limiting growth. The more specifically you can describe the problem, the more efficiently the engagement addresses it.
+**A clearly felt operational problem.** A specific workflow or category of work that is consuming meaningful time, producing errors, or limiting growth. The more specifically you can describe the problem, the more efficiently the engagement addresses it.
 
-**An owner who will stay engaged throughout.** An AI consulting engagement requires ongoing access to someone who knows the business at an operational level. This is typically the founder in a business under fifteen people, or an operations lead in larger ones. A few reliable hours per week is the minimum. Intermittent access drags timelines and increases cost.
+**An owner who will stay engaged throughout.** An AI consulting engagement requires ongoing access to someone who knows the business at an operational level. This is typically the founder in a business under 15 people, or an operations lead in larger ones. A few reliable hours per week is the minimum. Intermittent access drags timelines and increases cost.
 
-**Basic process clarity in at least one area.** To automate a workflow, the workflow needs to exist in describable form. If the process changes depending on who handles it and nobody can articulate what the intended process is, documenting that process is the first step. Not something to work out at consulting rates.
+**Basic process clarity in at least one area.** To automate a workflow, the workflow needs to exist in describable form. If the process changes depending on who handles it and nobody can articulate what the intended process is, documenting that process is the first step, and it costs far less done in-house than at consulting rates.
 
-**A realistic budget matched to scope.** A focused engagement addressing one or two workflows has a different cost profile than a comprehensive operational build-out. Knowing what you are trying to accomplish allows for scoping that fits your resources.
+**A realistic budget matched to scope.** A focused engagement addressing 1 or 2 workflows has a different cost profile than a comprehensive operational build-out. Knowing what you are trying to accomplish allows for scoping that fits your resources.
 
-If you are not sure whether your business is at the right stage, [are you ready to hire an AI consultant](/blog/are-you-ready-to-hire-an-ai-consultant) walks through the honest assessment before you commit to anything. If you are leaning toward handling implementation internally first, [DIY AI vs. hiring a consultant](/blog/diy-ai-vs-hiring-a-consultant) is worth reading before you decide. And if you have already decided to move forward, [the guide to preparing your business for an AI consultant](/blog/are-you-ready-to-hire-an-ai-consultant) covers the practical steps for getting ready before a project begins.
+If you are not sure whether your business is at the right stage, [are you ready to hire an AI consultant](/blog/are-you-ready-to-hire-an-ai-consultant) walks through the assessment before you commit to anything. If you are leaning toward handling implementation internally first, [DIY AI vs. hiring a consultant](/blog/diy-ai-vs-hiring-a-consultant) is worth reading before you decide. If you have already decided to move forward, the same guide ends with a readiness checklist for the weeks before a project begins.
 
 ---
 
@@ -96,9 +96,9 @@ Not every business is at the right stage for a consulting engagement, and starti
 
 **The timing is right when** specific workflows are consuming disproportionate team time and you can name them, you have tried to address the problem with tools on your own and hit a wall, your team has enough bandwidth to absorb operational change without it derailing delivery, and a named internal person could serve as the primary collaborator throughout the project.
 
-**The timing may be wrong when** you cannot describe a specific problem clearly, your team is currently at capacity and could not absorb new systems without performance suffering, the real issue is accountability or management structure rather than operational design, or you need the problem solved within the next two weeks.
+**The timing may be wrong when** you cannot describe a specific problem clearly, your team is currently at capacity and could not absorb new systems without performance suffering, the underlying problem is accountability or management structure, which operational design will not fix, or you need the problem solved within the next 2 weeks.
 
-Readiness does not mean having clean operations. Most businesses that benefit most from AI consulting have messy operations. That is usually why they are calling. Readiness means having the conditions for an engagement to actually produce results.
+Messy operations are fine. Most businesses that benefit most from AI consulting have messy operations. That is usually why they are calling. Readiness means having the conditions for an engagement to produce results.
 
 ---
 
@@ -106,24 +106,24 @@ Readiness does not mean having clean operations. Most businesses that benefit mo
 
 AI consulting for small businesses falls into a few engagement types with different price profiles.
 
-**Discovery and audit engagements** produce a prioritised roadmap without implementation. These run from $2,000 to $8,000 depending on business complexity and the depth of the operational mapping involved. This is the right starting point for businesses that want clarity before committing to a larger build.
+**Discovery and audit engagements** produce a prioritized roadmap without implementation. These run from $750 to $5,000 depending on business complexity and the depth of the operational mapping involved. This is the right starting point for businesses that want clarity before committing to a larger build.
 
-**Focused implementation projects** cover one or two specific workflows end to end, including design, build, training, and a handoff period. These typically run from $8,000 to $25,000. The range reflects differences in workflow complexity, integration requirements, and how much change management the team needs.
+**Focused implementation projects** cover 1 or 2 specific workflows end to end, including design, build, training, and a handoff period. These typically run from $3,000 to $25,000. The range reflects differences in workflow complexity, integration requirements, and how much change management the team needs.
 
 **Comprehensive engagements** cover multiple departments or a significant rebuild of operational infrastructure. These run from $25,000 to $60,000 and up. They are appropriate when the operational gap is large enough that piecemeal addressing of individual workflows would take longer and cost more in aggregate.
 
-**Ongoing retainer arrangements** for sustained optimisation and extension of existing systems typically run $1,500 to $4,000 per month, depending on scope and hours required.
+**Ongoing retainer arrangements** for sustained optimization and extension of existing systems typically run $2,000 to $8,000 per month, depending on scope and hours required.
 
 | Engagement type | What it covers | Typical cost |
 |---|---|---|
-| Discovery and audit | A prioritised roadmap, no implementation | $2,000 to $8,000 |
-| Focused implementation | One or two workflows end to end, including design, build, training, and handoff | $8,000 to $25,000 |
+| Discovery and audit | A prioritized roadmap, no implementation | $750 to $5,000 |
+| Focused implementation | 1 or 2 workflows end to end, including design, build, training, and handoff | $3,000 to $25,000 |
 | Comprehensive | Multiple departments or a significant rebuild of operational infrastructure | $25,000 to $60,000 and up |
-| Ongoing retainer | Sustained optimisation and extension of existing systems | $1,500 to $4,000 per month |
+| Ongoing retainer | Sustained optimization and extension of existing systems | $2,000 to $8,000 per month |
 
 Price is determined by scope, integration complexity, the number of systems involved, and the amount of change management required. A more detailed breakdown of what drives the price in each engagement type is in [the AI consulting cost guide for small businesses](/blog/ai-consulting-cost-for-small-business).
 
-The right frame for evaluating cost is not the budget line but the return. An engagement that costs $15,000 and recaptures thirty hours per month across a team at $80 per hour pays for itself in roughly six months and compounds from there. The question is not whether the engagement is expensive. It is whether what it delivers is worth more than what it costs.
+Judge the cost against the return. An engagement that costs $15,000 and recaptures 30 hours per month across a team at $80 per hour pays for itself in roughly 6 months and compounds from there. The question to ask is whether what it delivers is worth more than what it costs.
 
 ---
 
@@ -131,7 +131,7 @@ The right frame for evaluating cost is not the budget line but the return. An en
 
 The results that appear in case studies tend to be the exceptional ones. What most businesses can expect from a well-executed engagement is more specific and more reliable.
 
-**Time recaptured from manual work** is the most consistent outcome. The specific hours depend on which workflows get automated and how much volume they handle, but a focused engagement addressing one or two high-volume processes typically recovers five to fifteen hours per week across the team.
+**Time recaptured from manual work** is the most consistent outcome. The specific hours depend on which workflows get automated and how much volume they handle, but a focused engagement addressing 1 or 2 high-volume processes typically recovers 5 to 15 hours per week across the team.
 
 **Error reduction** is often the more valuable outcome, though harder to see before it is measured. Workflows that previously depended on someone remembering to do something, or copying data correctly from one system to another, become reliable by design. The cost of those errors in client experience, rework time, and team trust was real even when it was invisible.
 
@@ -147,7 +147,7 @@ A more detailed look at what outcomes are realistic across different engagement 
 
 The single most important signal is whether they start with your problem or their tools. A consultant who opens every conversation by describing what they build is telling you something. One who opens by asking how your business operates is showing you how they think.
 
-Look for demonstrated experience with businesses at your scale and operational complexity. Enterprise AI implementation and small business operational design are different disciplines. The skills that matter in each context are not the same, and past work in large organisations does not reliably transfer to a fifteen-person service firm. If you are still deciding what kind of provider to hire at all, [AI consultant vs agency](/blog/ai-consultant-vs-agency) compares the 4 options against how documented your processes are.
+Look for demonstrated experience with businesses at your scale and operational complexity. Enterprise AI implementation and small business operational design are different disciplines. The skills that matter in each context are not the same, and past work in large organizations does not reliably transfer to a 15-person service firm. If you are still deciding what kind of provider to hire at all, [AI consultant vs agency](/blog/ai-consultant-vs-agency) compares the 4 options against how documented your processes are.
 
 Ask directly what you will own at the end of the engagement and who will maintain it. The answer should involve your internal team owning the systems, documented well enough to operate without the consultant. If the answer implies ongoing reliance, the incentives are misaligned. That is one of the 6 disqualifying [red flags when hiring an AI consultant](/blog/red-flags-when-hiring-an-ai-consultant).
 
@@ -157,15 +157,15 @@ A detailed look at evaluation criteria is in [this guide to choosing an AI consu
 
 ### What does an AI consultant do for a small business?
 
-They map how work actually moves through the business, design where AI fits, build it, train the team, and hand it over. The design work is where most of the value sits. Tools added without a design tend to run without delivering much.
+They map how work moves through the business, design where AI fits, build it, train the team, and hand it over. The design work is where most of the value sits. Tools added without a design tend to run without delivering much.
 
 ### How much does it cost to hire an AI consultant?
 
-A discovery and audit engagement runs $2,000 to $8,000, and a focused build on one or two workflows runs $8,000 to $25,000. Judge it against the return. An engagement that recaptures thirty hours a month at $80 per hour pays for itself in about six months.
+A discovery and audit engagement runs $750 to $5,000, and a focused build on 1 or 2 workflows runs $3,000 to $25,000. Judge it against the return. An engagement that recaptures 30 hours a month at $80 per hour pays for itself in about 6 months.
 
 ### How long does working with an AI consultant take?
 
-Around fourteen weeks for a focused project, split into discovery, design and build, and adoption. The last phase is the one people want to skip, and it is the one that decides whether the system sticks. Don't cut it short.
+Around 14 weeks for a focused project, split into discovery, design and build, and adoption. The last phase is the one people want to skip, and it is the one that decides whether the system sticks. Don't cut it short.
 
 ### What should I have in place before hiring an AI consultant?
 
@@ -179,6 +179,6 @@ Watch how the first conversation starts. A good one asks how your business runs 
 
 ## The Right Starting Point
 
-If you are reading this with genuine intent to engage, the most useful next step is a direct conversation about your specific business. Where the friction is, what the operational picture looks like, and whether an engagement makes sense given where you are right now. [Schedule a call.](https://calendly.com/david-j-forer/30min)
+If you are seriously considering an engagement, the most useful next step is a direct conversation about your specific business. Where the friction is, what the operational picture looks like, and whether an engagement makes sense given where you are right now. [Schedule a call.](https://calendly.com/david-j-forer/30min)
 
 If you have already been through an engagement and want to think about sustaining and extending what was built, [what happens after your AI engagement ends](/blog/realistic-results-from-ai-consulting) covers how to keep the momentum going without the consultant in the room.
