@@ -74,6 +74,8 @@ A rough word count target helps calibrate scope. This is not about padding to hi
 
 ---
 
+<div data-seo-optin></div>
+
 ## How the Brief Changes AI Output
 
 The difference between a well-briefed AI draft and an unbriefed one is not subtle.

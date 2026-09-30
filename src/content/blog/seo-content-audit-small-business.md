@@ -68,6 +68,8 @@ Removal should be done with a redirect to the most relevant existing page where 
 
 ---
 
+<div data-seo-optin></div>
+
 ## How to Run the Audit
 
 **Step 1: Export your content inventory.** Pull a list of all published URLs on your site along with their performance data. Google Search Console provides impressions, clicks, average position, and click-through rate for each URL. Google Analytics provides traffic, bounce rate, and conversion data. Export both and combine them by URL.

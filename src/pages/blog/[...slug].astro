@@ -6,6 +6,7 @@ import SimpleContainer from '../../components/SimpleContainer.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
 import AuthorBox from '../../components/AuthorBox.astro';
 import SnapshotCta from '../../components/SnapshotCta.astro';
+import SeoOptin from '../../components/SeoOptin.astro';
 import { getImageSize } from '../../lib/imageSize.js';
 
 // Generate static paths for all blog posts
@@ -20,6 +21,10 @@ export async function getStaticPaths() {
 // Get the blog post data
 const { entry } = Astro.props as { entry: CollectionEntry<'blog'> };
 const { Content, headings } = await entry.render();
+
+// Posts that carry the <div data-seo-optin></div> marker get the SEO guide
+// opt-in moved into that spot. See SeoOptin.astro.
+const hasSeoOptin = entry.body.includes('data-seo-optin');
 
 // Intrinsic size of the hero, read from the file at build time. The hero is the
 // LCP element on every post, so it needs real dimensions to stop the reflow and
@@ -157,7 +162,23 @@ const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
           <article>
             <div class="prose prose-lg max-w-none">
               <Content />
+              {hasSeoOptin && (
+                <div id="seo-optin-source" hidden>
+                  <SeoOptin />
+                </div>
+              )}
             </div>
+            {hasSeoOptin && (
+              <script is:inline>
+                (function () {
+                  var src = document.getElementById('seo-optin-source');
+                  var slot = document.querySelector('[data-seo-optin]');
+                  if (!src || !slot || !src.firstElementChild) return;
+                  slot.replaceWith(src.firstElementChild);
+                  src.remove();
+                })();
+              </script>
+            )}
             <SnapshotCta />
             <AuthorBox />
           </article>

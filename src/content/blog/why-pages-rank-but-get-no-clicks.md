@@ -60,6 +60,8 @@ Read the top 10 queries and ask one question of each: if I typed this, would my 
 
 Do this for 5 pages. You will have a pattern within half an hour, and the pattern matters more than any single page.
 
+<div data-seo-optin></div>
+
 ## Fixing a title so the page earns the clicks
 
 For cause 1, the repair is to make the title a claim rather than a label. Take the highest-impression query from the Queries tab and write a title that answers it in the first 5 words.

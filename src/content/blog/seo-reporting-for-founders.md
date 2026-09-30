@@ -79,6 +79,8 @@ Three questions separate them, and you can ask all 3 in an email.
 
 A fourth question worth asking once a quarter: what did you decide not to do. Anyone running a program well is declining work every month, and a person who cannot name what they declined is not prioritising.
 
+<div data-seo-optin></div>
+
 ## How to get the one number nobody reports
 
 Organic inquiries is the number that decides everything and the number almost no founder can produce. Analytics tools are bad at it because the path from first search to inquiry runs across weeks, several devices, and usually a direct visit at the end. The last click gets the credit, and the last click is nearly always direct or branded search.

@@ -66,6 +66,8 @@ Knowledge panels, featured snippets, and people also ask boxes all rely heavily 
 
 A recipe page with proper schema markup for ingredients, cooking time, and nutritional information becomes eligible for rich recipe cards. A local business with complete entity data about location, hours, and services can appear in Google's local pack.
 
+<div data-seo-optin></div>
+
 ## Implementing Entity Mapping: A Practical Framework
 
 Moving from theory to practice requires a systematic approach. Here's how to integrate entity mapping into your content operations.

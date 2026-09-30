@@ -144,6 +144,8 @@ The operating system framework describes the layers. The keyword-to-execution pi
 
 ---
 
+<div data-seo-optin></div>
+
 ## AI in Each Stage of SEO
 
 AI does not replace the SEO operating system. It changes the cost structure of running it.

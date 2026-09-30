@@ -100,6 +100,8 @@ A close read of the posts getting impressions found things a sharp reader would 
 
 No SEO tool flags these. Every one of them costs trust with the person deciding whether to get in touch.
 
+<div data-seo-optin></div>
+
 ## What Was Changed
 
 All of the following went live in a single day.

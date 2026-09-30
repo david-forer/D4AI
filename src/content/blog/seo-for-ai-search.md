@@ -48,6 +48,8 @@ Despite their differences, the three environments share a set of preferences.
 
 ---
 
+<div data-seo-optin></div>
+
 ## What Stays the Same
 
 The fundamentals of strong SEO content do not become irrelevant in an AI search environment. They become more important.

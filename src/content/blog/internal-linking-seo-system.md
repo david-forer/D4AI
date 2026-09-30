@@ -54,6 +54,8 @@ A functioning internal link architecture for a cluster-based content strategy fo
 
 ---
 
+<div data-seo-optin></div>
+
 ## Building the System
 
 The system does not need to be complex. It needs to be consistent.

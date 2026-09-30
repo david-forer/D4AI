@@ -69,6 +69,8 @@ Three checkpoints, and each one has a decision attached.
 
 Movement almost never starts before month 3. A page that ranks in week 2 is ranking for something nobody searches. Anyone promising results in 60 days is selling either a paid channel or a page that will not hold.
 
+<div data-seo-optin></div>
+
 ## What makes the number smaller
 
 Three things move the number down, and they are worth more than doubling your publishing rate.

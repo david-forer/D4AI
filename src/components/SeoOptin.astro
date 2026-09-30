@@ -1,0 +1,84 @@
+---
+/**
+ * Mid-post opt-in for the SEO quick wins guide.
+ *
+ * Posts are .md, so a component cannot sit inside the body. A post opts in by
+ * carrying the marker line <div data-seo-optin></div> where the box belongs.
+ * [...slug].astro renders this component once, hidden, on any post whose body
+ * contains the marker, and a small inline script moves it into place. Without
+ * JavaScript the box stays hidden rather than showing a form that cannot post.
+ *
+ * Same survey and fields as the homepage giveaway. Formbricks records the post
+ * URL in meta.url, which is how David knows which guide to send.
+ */
+import LeadForm from './LeadForm.astro';
+import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
+
+const GUIDE_HREF = '/downloads/58-seo-quick-wins.pdf';
+---
+
+<aside class="seo-optin" aria-labelledby="seo-optin-title">
+  <p class="seo-optin-eyebrow">Free guide</p>
+  <p id="seo-optin-title" class="seo-optin-title">58 SEO quick wins for founders</p>
+  <p class="seo-optin-body">
+    Fixes you can ship this month to get found on Google and in AI answers. Each one comes with the steps and a copy-paste AI prompt.
+  </p>
+  <LeadForm
+    formId="seo-optin"
+    surveyId={GIVEAWAY_SURVEY}
+    fields={GIVEAWAY_FIELDS}
+    buttonText="Send me the guide"
+    successHeading="It's yours."
+    successBody="Grab it below. The link stays on this page."
+    successHref={GUIDE_HREF}
+    successLinkText="Download the 58 SEO quick wins"
+  />
+</aside>
+
+<style is:global>
+  /* Scoped by class, and specific enough to beat the global .prose rules in
+     [...slug].astro, which would otherwise restyle the form's p, h3 and a. */
+  .prose .seo-optin {
+    margin: 2.5rem 0;
+    padding: 1.5rem 1.75rem;
+    border: 1px solid #bfdbfe;
+    border-left: 4px solid #f97316;
+    border-radius: 0.75rem;
+    background: #f8fafc;
+  }
+  .prose .seo-optin p { margin: 0; }
+  .prose .seo-optin .seo-optin-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #ea580c;
+  }
+  .prose .seo-optin .seo-optin-title {
+    margin-top: 0.35rem;
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.25;
+    color: #111827;
+  }
+  .prose .seo-optin .seo-optin-body {
+    margin: 0.5rem 0 1.1rem;
+    font-size: 1rem;
+    line-height: 1.55;
+    color: #4b5563;
+  }
+  /* Name and email side by side on wider screens, button full width below. */
+  @media (min-width: 640px) {
+    .prose .seo-optin [data-leadform-form] {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem 1rem;
+    }
+    .prose .seo-optin [data-leadform-form] > * { margin-top: 0 !important; }
+    .prose .seo-optin [data-leadform-submit],
+    .prose .seo-optin [data-leadform-error] { grid-column: 1 / -1; }
+  }
+  .prose .seo-optin label { font-size: 0.85rem; margin-bottom: 0.3rem; }
+  .prose .seo-optin h3 { margin: 0 0 0.5rem; font-size: 1.35rem; }
+  .prose .seo-optin [data-leadform-success] a { color: #fff; text-decoration: none; margin-top: 1rem; }
+</style>
