@@ -1,0 +1,346 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import { HUBS } from "../../lib/hubs";
+import SimpleContainer from '../../components/SimpleContainer.astro';
+import TableOfContents from '../../components/TableOfContents.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import SnapshotCta from '../../components/SnapshotCta.astro';
+import SeoOptin from '../../components/SeoOptin.astro';
+import { getImageSize } from '../../lib/imageSize.js';
+
+// Generate static paths for every research page
+export async function getStaticPaths() {
+  const entries = await getCollection('research');
+  return entries.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+// Get the research page data
+const { entry } = Astro.props as { entry: CollectionEntry<'research'> };
+const { Content, headings } = await entry.render();
+
+// Posts that carry the <div data-seo-optin></div> marker get the SEO guide
+// opt-in moved into that spot. See SeoOptin.astro.
+const hasSeoOptin = entry.body.includes('data-seo-optin');
+
+// Intrinsic size of the hero, read from the file at build time. The hero is the
+// LCP element on every post, so it needs real dimensions to stop the reflow and
+// an eager, high-priority fetch instead of the browser's default guess.
+const heroSize = getImageSize(entry.data.heroImage);
+
+// JSON-LD structured data
+const siteUrl = "https://davidjforer.com";
+const postUrl = `${siteUrl}/research/${entry.slug}`;
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": entry.data.title,
+  "description": entry.data.description,
+  "url": postUrl,
+  "datePublished": new Date(entry.data.pubDate).toISOString(),
+  ...(entry.data.updatedDate ? { "dateModified": new Date(entry.data.updatedDate).toISOString() } : {}),
+  "image": entry.data.heroImage ? `${siteUrl}${entry.data.heroImage}` : `${siteUrl}/images/ai-automation.webp`,
+  "author": {
+    "@type": "Person",
+    "name": "David Forer",
+    "url": `${siteUrl}/about`,
+    "sameAs": [
+      "https://www.linkedin.com/in/davidforer/",
+      "https://github.com/david-forer"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "David Forer",
+    "url": siteUrl
+  }
+});
+
+// Format the publication date
+const formattedDate = new Date(entry.data.pubDate).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+// Define categories for the navigation
+// Hub chip on the post. Source of truth is src/lib/hubs.ts.
+const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
+---
+
+<Layout
+  title={entry.data.seoTitle || entry.data.title}
+  description={entry.data.description}
+  image={entry.data.heroImage || entry.data.image}
+  type="article"
+>
+  {/* This was outside Layout, which put it before <html> and made the whole
+      document unparseable. The W3C validator reported "Cannot recover after
+      last error" on 137 blog pages because of it. A script is valid flow
+      content inside the body and Google reads JSON-LD from either position. */}
+  <script is:inline type="application/ld+json" set:html={jsonLd} />
+  <div>
+    {/* Hero Section */}
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-12">
+      <div class="container mx-auto px-6 max-w-5xl">
+        <div class="flex flex-col justify-center">
+          <div class="max-w-3xl mx-auto text-center">
+            <a href="/research" class="text-blue-200 hover:text-white mb-6 inline-flex items-center text-sm tracking-wide opacity-75">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+              </svg>
+              Back to Research
+            </a>
+            <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">{entry.data.title}</h1>
+            <p class="text-blue-100">
+              Published on {formattedDate}
+              {entry.data.updatedDate && (
+                <span> | Updated on {new Date(entry.data.updatedDate).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}</span>
+              )}
+            </p>
+            
+            {entry.data.tags && (
+              <div class="mt-4 flex flex-wrap gap-2 justify-center">
+                {entry.data.tags.map((tag) => {
+                  // Find if this tag matches one of our defined categories
+                  const matchedCategory = categories.find(cat =>
+                    cat.slug === tag.toLowerCase() ||
+                    cat.name.toLowerCase() === tag.toLowerCase()
+                  );
+                  
+                  if (!matchedCategory) return null;
+                  return (
+                    <a
+                      href={`/blog/category/${matchedCategory.slug}`}
+                      class="px-2 py-1 bg-blue-500 bg-opacity-30 text-white text-xs rounded-full hover:bg-blue-500 hover:bg-opacity-40 transition-colors"
+                    >
+                      {matchedCategory.name}
+                    </a>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {entry.data.heroImage && (
+      <div class="max-w-[1272px] mx-auto px-6 pt-10">
+        <img
+          src={entry.data.heroImage}
+          alt={entry.data.title}
+          width={heroSize?.width}
+          height={heroSize?.height}
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+          class="w-full h-auto rounded-lg mb-8 shadow-md"
+        />
+      </div>
+    )}
+
+    <SimpleContainer>
+      <div class="pb-12 max-w-6xl mx-auto">
+
+        <div class="lg:grid lg:grid-cols-[240px_1fr] lg:gap-12">
+          {/* TOC: sticky sidebar on desktop, inline box on mobile */}
+          <aside class="mb-8 lg:mb-0">
+            <div class="lg:sticky lg:top-8">
+              <TableOfContents headings={headings} />
+            </div>
+          </aside>
+
+          {/* Article content */}
+          <article>
+            <div class="prose prose-lg max-w-none">
+              <Content />
+              {hasSeoOptin && (
+                <div id="seo-optin-source" hidden>
+                  <SeoOptin />
+                </div>
+              )}
+            </div>
+            {hasSeoOptin && (
+              <script is:inline>
+                (function () {
+                  var src = document.getElementById('seo-optin-source');
+                  var slot = document.querySelector('[data-seo-optin]');
+                  if (!src || !slot || !src.firstElementChild) return;
+                  slot.replaceWith(src.firstElementChild);
+                  src.remove();
+                })();
+              </script>
+            )}
+            <SnapshotCta />
+            <AuthorBox />
+          </article>
+        </div>
+      </div>
+    </SimpleContainer>
+  </div>
+</Layout>
+
+<style is:global>
+  /* Research page prose styling, kept identical to blog posts */
+  .prose h1 {
+    font-size: 2.25rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #1d4ed8;
+  }
+
+  .prose h2 {
+    font-size: 1.75rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: #1d4ed8;
+  }
+
+  /* Zero out top margin on the very first heading so there's no gap below the hero image */
+  .prose h2:first-of-type,
+  .prose h1:first-of-type {
+    margin-top: 0 !important;
+  }
+
+  .prose h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #1d4ed8;
+  }
+
+  .prose p {
+    margin-bottom: 1.25rem;
+    line-height: 1.7;
+  }
+
+  /* Preflight sets list-style:none on every list, so restore markers here. */
+  .prose ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .prose ol {
+    list-style-type: decimal;
+    margin-left: 2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .prose li {
+    margin-bottom: 0.5rem;
+  }
+
+  .prose a {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+
+  .prose blockquote {
+    border-left: 4px solid #3b82f6;
+    padding-left: 1rem;
+    font-style: italic;
+    margin-left: 0;
+    margin-right: 0;
+    color: #4b5563;
+  }
+
+  .prose img {
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  @media (min-width: 768px) {
+    .prose img {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /* Summary box. The heading text rotates per post (geo-this/vary_headings.py),
+     so match every variant by the id Astro generates from it. Keep this list in
+     sync with SUMMARY in that script. The heading becomes a small label and the
+     list below it sits in the same box, so readers can tell it apart from the
+     article that follows. */
+  .prose h2:is(#key-takeaways, #the-short-version, #what-to-know-first, #the-short-answer, #in-brief) {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #1e40af;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-bottom: 0;
+    border-radius: 0.75rem 0.75rem 0 0;
+    padding: 1.1rem 1.5rem 0.4rem;
+    margin: 1.5rem 0 0 !important;
+  }
+
+  .prose h2:is(#key-takeaways, #the-short-version, #what-to-know-first, #the-short-answer, #in-brief) + ul {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-top: 0;
+    border-radius: 0 0 0.75rem 0.75rem;
+    margin: 0 0 2rem;
+    padding: 0.4rem 1.5rem 1rem 2.75rem;
+  }
+
+  /* Tables. No typography plugin is loaded, so markdown tables need real styles. */
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0 2rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    border: 1px solid #e5e7eb;
+  }
+
+  .prose thead th {
+    background: #1d4ed8;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    vertical-align: bottom;
+  }
+
+  .prose tbody td {
+    padding: 0.75rem 1rem;
+    border-top: 1px solid #e5e7eb;
+    vertical-align: top;
+  }
+
+  .prose tbody tr:nth-child(even) td {
+    background: #f9fafb;
+  }
+
+  .prose tbody td:first-child {
+    font-weight: 600;
+    color: #111827;
+  }
+
+  /* Narrow screens: let a wide table scroll sideways instead of crushing columns. */
+  @media (max-width: 767px) {
+    .prose table {
+      display: block;
+      overflow-x: auto;
+      white-space: normal;
+    }
+    .prose thead th,
+    .prose tbody td {
+      min-width: 9rem;
+    }
+  }
+</style>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 366" role="img" aria-labelledby="t d" font-family="Inter, Arial, sans-serif">
+<title id="t">What US businesses using AI report (Intuit, Jan 2026)</title>
+<desc id="d">More productive: 78%; Revenue went up: 43%; Costs went down: 29%; Workday got shorter: 27%; Hired more people: 17%</desc>
+<rect width="820" height="366" fill="#ffffff"/>
+<text x="24" y="40" font-size="20" font-weight="700" fill="#14213d">What US businesses using AI report (Intuit, Jan 2026)</text>
+<text x="318" y="90" font-size="14" text-anchor="end" fill="#333">More productive</text>
+<rect x="330" y="70" width="327.6" height="30" rx="3" fill="#1f4e79"/>
+<text x="665.6" y="90" font-size="14" font-weight="700" fill="#14213d">78%</text>
+<text x="318" y="134" font-size="14" text-anchor="end" fill="#333">Revenue went up</text>
+<rect x="330" y="114" width="180.6" height="30" rx="3" fill="#1f4e79"/>
+<text x="518.6" y="134" font-size="14" font-weight="700" fill="#14213d">43%</text>
+<text x="318" y="178" font-size="14" text-anchor="end" fill="#333">Costs went down</text>
+<rect x="330" y="158" width="121.8" height="30" rx="3" fill="#1f4e79"/>
+<text x="459.8" y="178" font-size="14" font-weight="700" fill="#14213d">29%</text>
+<text x="318" y="222" font-size="14" text-anchor="end" fill="#333">Workday got shorter</text>
+<rect x="330" y="202" width="113.4" height="30" rx="3" fill="#1f4e79"/>
+<text x="451.4" y="222" font-size="14" font-weight="700" fill="#14213d">27%</text>
+<text x="318" y="266" font-size="14" text-anchor="end" fill="#333">Hired more people</text>
+<rect x="330" y="246" width="71.4" height="30" rx="3" fill="#1f4e79"/>
+<text x="409.4" y="266" font-size="14" font-weight="700" fill="#14213d">17%</text>
+<text x="24" y="332" font-size="12" fill="#666">Sources: Intuit QuickBooks.</text>
+<text x="24" y="348" font-size="12" fill="#666">Chart: davidjforer.com</text>
+</svg>

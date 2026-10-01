@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 234" role="img" aria-labelledby="t d" font-family="Inter, Arial, sans-serif">
+<title id="t">Unpaid invoices at US small businesses (Intuit, Jan 2025)</title>
+<desc id="d">Owed money on unpaid invoices: 56%; Invoices 30+ days overdue: 47%</desc>
+<rect width="820" height="234" fill="#ffffff"/>
+<text x="24" y="40" font-size="20" font-weight="700" fill="#14213d">Unpaid invoices at US small businesses (Intuit, Jan 2025)</text>
+<text x="318" y="90" font-size="14" text-anchor="end" fill="#333">Owed money on unpaid invoices</text>
+<rect x="330" y="70" width="235.2" height="30" rx="3" fill="#1f4e79"/>
+<text x="573.2" y="90" font-size="14" font-weight="700" fill="#14213d">56%</text>
+<text x="318" y="134" font-size="14" text-anchor="end" fill="#333">Invoices 30+ days overdue</text>
+<rect x="330" y="114" width="197.4" height="30" rx="3" fill="#1f4e79"/>
+<text x="535.4" y="134" font-size="14" font-weight="700" fill="#14213d">47%</text>
+<text x="24" y="200" font-size="12" fill="#666">Sources: Intuit QuickBooks.</text>
+<text x="24" y="216" font-size="12" fill="#666">Chart: davidjforer.com</text>
+</svg>

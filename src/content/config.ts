@@ -56,4 +56,19 @@ export const collections = {
       featured: z.boolean().default(false),
     }),
   }),
+  // Statistics hubs and other citable data pages, served at /research/<slug>.
+  // Kept out of the blog collection so they never count toward a hub's post
+  // total or show up in the blog index. A tag is optional and, when present,
+  // must still be a hub slug so the chip links to a real hub page.
+  'research': defineCollection({
+    schema: z.object({
+      title: z.string(),
+      description: z.string(),
+      seoTitle: z.string().optional(),
+      pubDate: z.date(),
+      updatedDate: z.date().optional(),
+      heroImage: z.string().optional(),
+      tags: z.array(z.enum(HUB_SLUGS)).max(1).optional(),
+    }),
+  }),
 };

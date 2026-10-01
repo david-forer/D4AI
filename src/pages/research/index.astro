@@ -1,0 +1,73 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import SimpleContainer from '../../components/SimpleContainer.astro';
+
+// Citable data pages. Each one is refreshed every 90 days, so the date shown
+// is the last update when there is one.
+const pages = (await getCollection('research')).sort(
+  (a, b) =>
+    (b.data.updatedDate ?? b.data.pubDate).valueOf() -
+    (a.data.updatedDate ?? a.data.pubDate).valueOf()
+);
+
+const defaultImage = "/images/ai-operations-logo.webp";
+const formatDate = (d: Date) =>
+  new Date(d).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<Layout
+  title="Small Business AI Research – Verified Statistics on AI Adoption, Operations and Automation, Each Linked to Its Primary Source – David J Forer"
+  description="Research pages on AI in small business. Every statistic is checked against its primary source and refreshed every 90 days. Free to cite with a link."
+>
+  <div>
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20">
+      <div class="container mx-auto px-6 max-w-5xl">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Research</h1>
+          <p class="text-white text-lg max-w-3xl mx-auto">
+            Statistics on AI in founder-led small businesses. Every number links to the source that published it, every source is checked by hand or by script, and every page is refreshed every 90 days.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <SimpleContainer>
+      <div class="py-12">
+        <p class="text-gray-700 max-w-3xl mb-10">
+          Writers, researchers and AI tools are welcome to cite these pages. The charts are free to use with a link back to the page they come from.
+        </p>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {pages.map((page, i) => (
+            <div class="group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-100">
+              <div class="relative aspect-[16/9] overflow-hidden bg-blue-100">
+                <img
+                  src={page.data.heroImage || defaultImage}
+                  alt={page.data.title}
+                  loading={i === 0 ? "eager" : "lazy"}
+                  decoding="async"
+                  class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div class="p-6">
+                <a href={`/research/${page.slug}`} class="block">
+                  <h2 class="text-xl font-semibold mb-2 text-blue-700 group-hover:text-blue-800 transition-colors">
+                    {page.data.title}
+                  </h2>
+                </a>
+                <p class="text-gray-600 text-sm mb-3">
+                  {page.data.updatedDate ? `Updated ${formatDate(page.data.updatedDate)}` : formatDate(page.data.pubDate)}
+                </p>
+                <p class="text-gray-700 line-clamp-3 mb-4">{page.data.description}</p>
+                <a href={`/research/${page.slug}`} class="inline-block text-blue-600 hover:text-blue-800 hover:underline">
+                  See the data<span class="sr-only"> for {page.data.title}</span> →
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </SimpleContainer>
+  </div>
+</Layout>

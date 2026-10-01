@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 278" role="img" aria-labelledby="t d" font-family="Inter, Arial, sans-serif">
+<title id="t">Main way small business AI users apply it (May 2026)</title>
+<desc id="d">Personal productivity: 64%; Help with recurring tasks: 26%; Automate whole workflows: 6%</desc>
+<rect width="820" height="278" fill="#ffffff"/>
+<text x="24" y="40" font-size="20" font-weight="700" fill="#14213d">Main way small business AI users apply it (May 2026)</text>
+<text x="318" y="90" font-size="14" text-anchor="end" fill="#333">Personal productivity</text>
+<rect x="330" y="70" width="268.8" height="30" rx="3" fill="#1f4e79"/>
+<text x="606.8" y="90" font-size="14" font-weight="700" fill="#14213d">64%</text>
+<text x="318" y="134" font-size="14" text-anchor="end" fill="#333">Help with recurring tasks</text>
+<rect x="330" y="114" width="109.2" height="30" rx="3" fill="#1f4e79"/>
+<text x="447.2" y="134" font-size="14" font-weight="700" fill="#14213d">26%</text>
+<text x="318" y="178" font-size="14" text-anchor="end" fill="#333">Automate whole workflows</text>
+<rect x="330" y="158" width="25.2" height="30" rx="3" fill="#1f4e79"/>
+<text x="363.2" y="178" font-size="14" font-weight="700" fill="#14213d">6%</text>
+<text x="24" y="244" font-size="12" fill="#666">Sources: US Chamber of Commerce Foundation.</text>
+<text x="24" y="260" font-size="12" fill="#666">Chart: davidjforer.com</text>
+</svg>
