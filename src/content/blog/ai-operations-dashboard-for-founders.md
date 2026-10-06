@@ -93,7 +93,7 @@ Connect the data sources to a single reporting layer. Google Looker Studio is fr
 
 Set up automated refresh and alerts. The dashboard should update without anyone touching it. Alerts should notify the relevant person when a metric crosses a defined threshold, rather than requiring daily manual review.
 
-Add the AI interpretation layer once the data is clean and reliable. A language model reading clean, connected operational data produces genuinely useful summaries. The same model reading incomplete or stale data produces confident-sounding noise.
+Add the AI interpretation layer once the data is clean and reliable. A language model reading clean, connected operational data produces useful summaries. The same model reading incomplete or stale data produces confident-sounding noise.
 
 ## The Operational Discipline That Makes It Useful
 

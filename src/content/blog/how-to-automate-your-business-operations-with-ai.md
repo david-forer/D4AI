@@ -29,7 +29,7 @@ Before the steps, the failure patterns. They are predictable and avoidable.
 
 **No designated owner after launch.** Automation is not a set-it-and-forget-it investment. Workflows break when upstream data changes. Integrations need maintenance when tools update. Without someone accountable for keeping the automation layer healthy, it degrades silently until it fails visibly.
 
-Avoid these three and the rest of the process becomes straightforward.
+Avoid these three and the rest of the process becomes simple.
 
 ## Step 1: Map Before You Build
 

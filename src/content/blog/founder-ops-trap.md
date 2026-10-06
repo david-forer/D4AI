@@ -52,7 +52,7 @@ Founders in the trap often misdiagnose their situation. The experience feels lik
 
 Working longer is not a solution. The trap is not a temporary peak. It is a steady state that will persist and expand as the business grows, because the system that creates it does not change when the hours change.
 
-Hiring helps in some cases, but only if what gets hired is a system, not just another person. Bringing on an operations manager or a project coordinator can be genuinely valuable, but only if their role is defined, their authority is real, and there is an actual process for them to own and improve. Hiring someone to absorb the founder's overflow without changing the underlying routing of decisions and coordination just creates a middle layer that the founder eventually works around.
+Hiring helps in some cases, but only if what gets hired is a system, not just another person. Bringing on an operations manager or a project coordinator can be valuable, but only if their role is defined, their authority is real, and there is an actual process for them to own and improve. Hiring someone to absorb the founder's overflow without changing the underlying routing of decisions and coordination just creates a middle layer that the founder eventually works around.
 
 ---
 
@@ -70,7 +70,7 @@ The third step is automation. Many of the things that route to the founder are n
 
 ## The Business That Does Not Depend on You
 
-The goal is not to remove the founder from the business. It is to remove the founder from the operations infrastructure so their time and attention can go to the work that genuinely requires them: client relationships, strategic decisions, business development, and the areas where their expertise creates the most value.
+The goal is not to remove the founder from the business. It is to remove the founder from the operations infrastructure so their time and attention can go to the work that requires them: client relationships, strategic decisions, business development, and the areas where their expertise creates the most value.
 
 A business designed this way is more resilient, more scalable, and more valuable. The team functions independently on routine work. The founder is available for the decisions that actually matter. Clients experience consistency rather than variability. Growth does not require the founder to personally absorb every additional hour.
 

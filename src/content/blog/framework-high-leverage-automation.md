@@ -67,7 +67,7 @@ Four factors determine feasibility.
 
 **System access and integration.** Can you get data in and out of the relevant systems? Modern software usually provides APIs that enable automation. Legacy systems or specialized tools may not. If the task requires interacting with a system that lacks integration options, feasibility drops significantly.
 
-Check what connectors exist in tools like Zapier or Make. If your systems appear there, basic integration is likely straightforward. If they do not, you may need custom development or workarounds.
+Check what connectors exist in tools like Zapier or Make. If your systems appear there, basic integration is likely simple. If they do not, you may need custom development or workarounds.
 
 **Data quality and structure.** Automation works with data. If the information required for a task is unstructured, inconsistent, or scattered across multiple sources, automation becomes complicated.
 
@@ -77,7 +77,7 @@ Consider what data cleanup might be required. Sometimes the real obstacle is not
 
 **Logic complexity.** Tasks governed by simple, explicit rules are easier to automate than tasks requiring judgment or interpretation.
 
-Can you express the task's decision logic as a series of if-then statements? If yes, automation is straightforward. If the answer is "it depends" followed by nuanced explanation, automation becomes harder.
+Can you express the task's decision logic as a series of if-then statements? If yes, automation is simple. If the answer is "it depends" followed by nuanced explanation, automation becomes harder.
 
 Some complexity can be handled by AI-powered tools that interpret context and make soft judgments. But these add their own complications. Simple logic remains easier to implement and more reliable in operation.
 

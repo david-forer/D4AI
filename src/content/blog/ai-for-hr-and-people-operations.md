@@ -77,7 +77,7 @@ The conventional hiring trigger is workload: when the team is overwhelmed, hire.
 
 Before hiring, the question should be whether the capacity constraint is a judgment problem or an execution problem. Judgment problems (not enough people to do the thinking, the deciding, the relationship-building) require people. Execution problems (not enough capacity for the routine, high-volume, rules-based work) often require better systems rather than more headcount.
 
-AI-powered capacity analysis makes this distinction clearer. When you can see where time is actually going, you can identify how much of the hiring pressure is driven by execution work that could be systematised versus judgment work that genuinely requires another human.
+AI-powered capacity analysis makes this distinction clearer. When you can see where time is actually going, you can identify how much of the hiring pressure is driven by execution work that could be systematised versus judgment work that requires another human.
 
 [For a deeper exploration of this decision: Scaling a Business with AI Instead of Hiring.](/blog/scaling-a-business-with-ai-instead-of-hiring)
 

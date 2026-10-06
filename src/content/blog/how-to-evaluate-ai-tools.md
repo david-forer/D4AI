@@ -113,7 +113,7 @@ Vendors are good at demos. These are the patterns worth watching for.
 
 ## Making the Final Call
 
-After working through the five questions, completing a structured trial, and identifying any red flags, the final decision comes down to a straightforward assessment.
+After working through the five questions, completing a structured trial, and identifying any red flags, the final decision comes down to a simple assessment.
 
 Does the tool solve the documented problem? Does it connect to your existing systems in a way that avoids creating new manual work? Is the total cost of ownership justified by the operational value it delivers? Is there someone internally who can own it? And do you understand what leaving would cost if it does not work out?
 

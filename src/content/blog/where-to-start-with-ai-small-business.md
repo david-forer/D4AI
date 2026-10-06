@@ -61,7 +61,7 @@ These processes appear at the top of the starting-point assessment for most busi
 
 **Lead and inquiry follow-up.** Speed and consistency of follow-up significantly affects conversion rates. This is an area where manual processes regularly fail through delay or dropped balls, and where automation produces measurable revenue impact.
 
-**Internal status tracking and reporting.** Founders and operators spend significant time gathering information that is already in their systems but not aggregated in a useful form. Automating status collection and report assembly recaptures hours per week with relatively straightforward implementation.
+**Internal status tracking and reporting.** Founders and operators spend significant time gathering information that is already in their systems but not aggregated in a useful form. Automating status collection and report assembly recaptures hours per week with relatively simple implementation.
 
 **Document and proposal generation.** For businesses that produce proposals, contracts, or project briefs regularly, templates and automation can reduce the time per document from hours to minutes while improving consistency.
 

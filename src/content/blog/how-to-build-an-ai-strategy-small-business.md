@@ -49,7 +49,7 @@ Not every high-value problem is the right starting point. Prioritization depends
 
 Impact is determined by the operational audit. The highest-impact problems are the ones with the most hours of manual work, the highest error rates, or the most significant downstream effects when something breaks.
 
-Readiness is determined by whether the process is documented clearly enough to automate, whether the team has the bandwidth to participate in a change, and whether the integration requirements are straightforward or complex.
+Readiness is determined by whether the process is documented clearly enough to automate, whether the team has the bandwidth to participate in a change, and whether the integration requirements are simple or complex.
 
 A problem that scores high on both impact and readiness is your starting point. A problem that is high-impact but requires significant process documentation before it can be automated goes on the roadmap for phase two. A problem that is easy to solve but low-impact is a candidate for deprioritization entirely.
 

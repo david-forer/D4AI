@@ -426,7 +426,7 @@ The champion network deserves special attention because it's often the differenc
 
 Do not appoint champions. Recruit volunteers. The best champions are:
 
-- Genuinely enthusiastic about AI (not just willing to do more work)
+- Enthusiastic about AI (not just willing to do more work)
 - Patient and good communicators (can explain technical concepts simply)
 - Respected by peers (people actually ask them questions)
 - Distributed across departments (ensure coverage)

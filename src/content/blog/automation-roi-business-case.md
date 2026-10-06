@@ -60,7 +60,7 @@ A realistic estimate of total automation cost covers build time at the builder's
 
 ## The Breakeven Calculation
 
-With both numbers available, the breakeven point is straightforward. Divide the total first-year cost of the automation by the monthly savings it produces to find how many months until the investment is recovered.
+With both numbers available, the breakeven point is simple. Divide the total first-year cost of the automation by the monthly savings it produces to find how many months until the investment is recovered.
 
 An automation that costs two thousand dollars to build and run in year one and saves three hundred dollars per month in manual process costs breaks even in roughly seven months. After that, the savings accumulate at the full monthly rate.
 

@@ -21,7 +21,7 @@ The audit is not a sales pitch with a diagnostic wrapper. It is not a pass-or-fa
 
 What it is: a clear-eyed assessment of your operational foundation, your current systems, your data landscape, your team's readiness, and the gaps that would prevent AI from delivering real value at your stage.
 
-The findings stand alone. Whether you engage for implementation afterward or take the roadmap and act on it internally, the audit produces something genuinely useful on its own terms.
+The findings stand alone. Whether you engage for implementation afterward or take the roadmap and act on it internally, the audit produces something useful on its own terms.
 
 ## What Gets Assessed
 
@@ -47,7 +47,7 @@ This part of the assessment looks at whether you have a single authoritative sou
 
 ### Your Team's AI Capability and Change Readiness
 
-Technology implementations fail more often for cultural and skills reasons than for technical ones. The audit honestly assesses how your team currently uses AI tools, whether there are capability gaps that would slow adoption, and what the likely points of resistance or enthusiasm look like.
+Technology implementations fail more often for cultural and skills reasons than for technical ones. The audit assesses how your team currently uses AI tools, whether there are capability gaps that would slow adoption, and what the likely points of resistance or enthusiasm look like.
 
 This isn't about judging your team. It's about understanding what support and sequencing the implementation will need.
 

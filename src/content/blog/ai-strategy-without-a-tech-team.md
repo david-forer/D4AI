@@ -59,7 +59,7 @@ The practical skill required for most of these tools is comfort with new softwar
 
 ## What to Outsource vs. What to Own
 
-Some parts of AI implementation are genuinely better handled by someone with more technical depth. Knowing which parts those are helps you make better decisions about when to get outside help.
+Some parts of AI implementation are better handled by someone with more technical depth. Knowing which parts those are helps you make better decisions about when to get outside help.
 
 **Own the strategy.** The decisions about which problems to prioritize, what outcomes to target, and what sequencing makes sense for your business should come from you. No outside person understands your business well enough to make these decisions better than you do.
 

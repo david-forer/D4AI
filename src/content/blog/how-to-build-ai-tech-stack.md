@@ -25,7 +25,7 @@ The standard sequence goes something like this. A founder reads about an AI tool
 
 The result is a collection of tools that each do their specific job while creating overhead in aggregate. Data lives in multiple places without clear authority. New team members spend their first weeks just learning the tools. Integration maintenance becomes a part-time job for someone who should be doing something else.
 
-The underlying problem is that technology decisions were made at the task level rather than the system level. Fixing a task-level problem is straightforward. Fixing a system that was built without architecture requires either a rebuild or sustained effort to retrofit structure onto something that was never designed for it.
+The underlying problem is that technology decisions were made at the task level rather than the system level. Fixing a task-level problem is simple. Fixing a system that was built without architecture requires either a rebuild or sustained effort to retrofit structure onto something that was never designed for it.
 
 Neither of those paths is fast or cheap. The right time to do this well is at the beginning, or at the point where you decide to take the stack seriously.
 

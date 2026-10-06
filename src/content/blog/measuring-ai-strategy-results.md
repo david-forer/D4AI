@@ -13,7 +13,7 @@ The measurement problem in small business AI is not usually a data problem. The 
 
 The result is a common and frustrating pattern: a founder invests in AI, the implementation happens, the team uses it, but three months later nobody can say with confidence whether it was worth it. The feeling might be positive. The team might seem to be working faster. But the actual improvement, the number that would confirm the investment paid off, was never measured.
 
-Measurement is not complicated. It requires two things: deciding before you build what you will measure, and capturing the baseline before the new system starts. Everything after that is straightforward.
+Measurement is not complicated. It requires two things: deciding before you build what you will measure, and capturing the baseline before the new system starts. Everything after that is simple.
 
 ---
 

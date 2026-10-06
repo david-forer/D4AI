@@ -68,7 +68,7 @@ Score 1 if a mistake is caught and fixed before it costs anything. Score 2 if fi
 
 Data exposure is always a 3 on reversibility. Once client material has been pasted into a tool that retains it, there is no version of the next hour in which you get it back.
 
-Multiply the 3 numbers. The result runs from 1 to 27. A workflow scoring 18 or higher is where your firm is genuinely exposed. Anything under 8 is noise you can leave alone this year and stop feeling vaguely guilty about.
+Multiply the 3 numbers. The result runs from 1 to 27. A workflow scoring 18 or higher is where your firm is exposed. Anything under 8 is noise you can leave alone this year and stop feeling vaguely guilty about.
 
 ---
 

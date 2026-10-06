@@ -57,7 +57,7 @@ An AI-capable new hire at a salary premium of fifteen thousand dollars per year 
 
 An upskilling investment of ten thousand dollars that raises AI capability across eight team members, saving each member one to two hours per week on AI-enhanced tasks, produces forty to eighty team hours saved per week at a much higher total value per dollar invested.
 
-The break-even point, where hiring becomes more cost-effective than upskilling, typically requires either a team too small to make group training efficient (two people or fewer), a genuinely specialized AI application requiring deep technical expertise unavailable on the existing team, or a hiring cost significantly below market.
+The break-even point, where hiring becomes more cost-effective than upskilling, typically requires either a team too small to make group training efficient (two people or fewer), a specialized AI application requiring deep technical expertise unavailable on the existing team, or a hiring cost significantly below market.
 
 For most small businesses in the five-to-twenty-person range with operational AI use cases, upskilling produces a higher return per dollar across any reasonable time horizon.
 
@@ -67,9 +67,9 @@ For most small businesses in the five-to-twenty-person range with operational AI
 
 The analysis above does not mean hiring is never the right answer. There are specific conditions where a hire for AI capability makes strategic sense.
 
-**When the AI application is genuinely technical.** Using AI to draft communications or analyze data does not require a specialist. Building custom AI integrations, developing proprietary models, or implementing complex automation infrastructure often does. If your AI use case requires software development or data science expertise, upskilling general staff is not a viable path.
+**When the AI application is technical.** Using AI to draft communications or analyze data does not require a specialist. Building custom AI integrations, developing proprietary models, or implementing complex automation infrastructure often does. If your AI use case requires software development or data science expertise, upskilling general staff is not a viable path.
 
-**When internal training capacity is zero.** A structured upskilling program requires someone to lead it, support it, and sustain it internally. If the business genuinely has no one who can take on the internal AI operations role, even part-time, bringing in someone who can establish the foundation before shifting to maintenance mode is reasonable.
+**When internal training capacity is zero.** A structured upskilling program requires someone to lead it, support it, and sustain it internally. If the business has no one who can take on the internal AI operations role, even part-time, bringing in someone who can establish the foundation before shifting to maintenance mode is reasonable.
 
 **When you need visible leadership on AI adoption.** In some businesses, the founder's ability to champion AI adoption is limited by credibility gaps or organizational dynamics. A senior hire who visibly uses and advocates for AI tools can move the organization faster than training alone. This is a leadership strategy, not a skills strategy, and it carries the associated costs.
 
@@ -79,7 +79,7 @@ The analysis above does not mean hiring is never the right answer. There are spe
 
 The most effective path for most small businesses is a combination: upskill the existing team, designate one internal person as the AI operations lead, and focus any external hiring on roles where AI capability is table stakes rather than a specialty.
 
-This approach captures the cost efficiency of upskilling while building the internal ownership structure that sustains adoption after the initial training investment. The internal AI operations lead does not need to be a specialist. They need to be organized, accountable, and genuinely interested in developing AI capability within the team.
+This approach captures the cost efficiency of upskilling while building the internal ownership structure that sustains adoption after the initial training investment. The internal AI operations lead does not need to be a specialist. They need to be organized, accountable, and interested in developing AI capability within the team.
 
 Over time, as AI literacy becomes a standard hiring criterion, new team members enter with baseline proficiency. The upskilling investment scales more efficiently with each passing hiring cycle.
 

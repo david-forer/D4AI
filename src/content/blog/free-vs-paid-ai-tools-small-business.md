@@ -31,7 +31,7 @@ Free AI tools create a specific kind of false economy. The subscription cost is 
 
 ---
 
-## Where Free Tools Are Genuinely Sufficient
+## Where Free Tools Are Sufficient
 
 With the limitations understood, there are real use cases where free tiers deliver genuine, sustained value without requiring an upgrade.
 

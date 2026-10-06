@@ -37,7 +37,7 @@ The cash flow impact of reliable AR automation is direct and measurable. Average
 
 ### Expense Management and Categorisation
 
-Receipt capture, expense categorisation, and spend visibility are straightforward candidates for AI automation. Receipts captured digitally are categorised automatically against the chart of accounts. Expense reports are generated from categorised data rather than assembled manually.
+Receipt capture, expense categorisation, and spend visibility are simple candidates for AI automation. Receipts captured digitally are categorised automatically against the chart of accounts. Expense reports are generated from categorised data rather than assembled manually.
 
 Spend visibility by category, team, and project becomes available without anyone pulling it together. Policy exceptions (expenses outside defined parameters) are flagged automatically rather than caught inconsistently in manual review.
 
@@ -81,7 +81,7 @@ The practical result is that the monthly accounting engagement gets faster and l
 
 ## Where to Start
 
-Automated invoice follow-up is the single highest-leverage starting point for most service businesses. The cash flow impact is immediate and the implementation is relatively straightforward. It requires a defined follow-up sequence and a billing system that can trigger it.
+Automated invoice follow-up is the single highest-leverage starting point for most service businesses. The cash flow impact is immediate and the implementation is relatively simple. It requires a defined follow-up sequence and a billing system that can trigger it.
 
 The second priority is automated financial reporting. Even basic weekly reporting from your accounting system, generated automatically and delivered to your inbox, changes the quality of financial visibility meaningfully.
 

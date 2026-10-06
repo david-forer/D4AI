@@ -60,7 +60,7 @@ Technical SEO still matters. AI tools can only use content they can access and p
 
 Content quality still matters. Generic, thin, or repetitive content does not serve AI search users any better than it serves traditional search users. The bar for what constitutes useful content is rising, not falling.
 
-The shift is not from SEO to something else entirely. It is from optimizing primarily for rank position toward optimizing for representation in synthesized responses. The underlying requirement is the same: produce content that is genuinely useful, clearly structured, and demonstrably authoritative.
+The shift is not from SEO to something else entirely. It is from optimizing primarily for rank position toward optimizing for representation in synthesized responses. The underlying requirement is the same: produce content that is useful, clearly structured, and demonstrably authoritative.
 
 ---
 

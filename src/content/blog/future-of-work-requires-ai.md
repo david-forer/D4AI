@@ -63,7 +63,7 @@ True AI literacy integrates three dimensions:
 - Making disclosure decisions appropriately
 - Identifying when human judgment should override AI suggestions
 
-Organizations that focus training exclusively on the technical dimension produce employees who can use AI but not necessarily well or safely. Balanced literacy development across all three dimensions creates genuinely capable practitioners.
+Organizations that focus training exclusively on the technical dimension produce employees who can use AI but not necessarily well or safely. Balanced literacy development across all three dimensions creates capable practitioners.
 
 ## The 3 Pillars of a Literate Workforce
 
@@ -199,7 +199,7 @@ For any AI interaction involving data:
 4. If no, can I sanitize the data sufficiently?
 5. If no, I need a different tool or manual approach
 
-This isn't complex. It's straightforward decision logic. But it requires understanding both your organization's data classification system and the data protection characteristics of available tools.
+This isn't complex. It's simple decision logic. But it requires understanding both your organization's data classification system and the data protection characteristics of available tools.
 
 **Disclosure ethics:**
 

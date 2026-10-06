@@ -79,7 +79,7 @@ Separate the execution work from the judgment work. For each task driving the ca
 
 Quantify the hours per week spent on execution tasks. Calculate what AI automation of those tasks would recover in capacity. If the recovered capacity covers the need, the hire is premature. You are about to pay a salary for work a system could do.
 
-If the recovered capacity does not cover the need, you now have a more precise understanding of what the hire actually needs to do. The job description reflects the judgment-heavy work that genuinely requires a person. The execution work has been stripped out. The role is better defined and the hire is more likely to be the right one.
+If the recovered capacity does not cover the need, you now have a more precise understanding of what the hire actually needs to do. The job description reflects the judgment-heavy work that requires a person. The execution work has been stripped out. The role is better defined and the hire is more likely to be the right one.
 
 ## How This Changes the Hiring Profile
 
@@ -87,7 +87,7 @@ The businesses building AI operations into the execution layer hire differently.
 
 They are not hiring for task completion. They are hiring for judgment, relationships, and work that compounds. The roles worth filling are the ones where a skilled person, freed from execution overhead, can produce results that no system could produce.
 
-This changes the caliber of role the business can attract and afford. A person hired to do client work, not client work plus intake processing plus report assembly plus follow-up management, can be genuinely excellent at the client work. The work is more focused. The output is higher quality. The role is more compelling.
+This changes the caliber of role the business can attract and afford. A person hired to do client work, not client work plus intake processing plus report assembly plus follow-up management, can be excellent at the client work. The work is more focused. The output is higher quality. The role is more compelling.
 
 ## The Sequence That Changes Outcomes
 

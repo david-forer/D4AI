@@ -77,7 +77,7 @@ Difficult conversations require people. Feedback on performance, interpersonal f
 
 Culture-building communication (the leadership presence that signals what the organisation values, how it makes decisions, and how it treats people) cannot be systematised without losing its essential quality. Leaders who try to automate their communication with the team consistently underestimate what is lost in the process.
 
-The value of AI operations in internal communications is that it handles the information logistics so that human attention is available for the communication that actually requires humans. That trade-off only works if the human elements remain genuinely human.
+The value of AI operations in internal communications is that it handles the information logistics so that human attention is available for the communication that actually requires humans. That trade-off only works if the human elements remain human.
 
 ## Where to Start
 

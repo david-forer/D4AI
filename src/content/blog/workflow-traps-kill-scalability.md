@@ -35,7 +35,7 @@ Start by identifying what the hero knows that nobody else does. Document it. Cre
 
 Spread responsibility across roles. If one person currently approves all invoices, define criteria that let multiple people approve within certain parameters. If one person handles all client escalations, create a triage process and train others to handle the routine cases.
 
-Use automation to remove heroes from routine work entirely. If every invoice requires human review, automate the validation steps and reserve human involvement for exceptions. The hero should handle the edge cases that genuinely need their expertise, not the standard work that just happens to pass through their desk.
+Use automation to remove heroes from routine work entirely. If every invoice requires human review, automate the validation steps and reserve human involvement for exceptions. The hero should handle the edge cases that need their expertise, not the standard work that just happens to pass through their desk.
 
 The goal is a business where any individual can be absent for a week without operations collapsing. That is not just good for scalability. It is good for the heroes themselves, who finally get to take a real vacation.
 

@@ -32,7 +32,7 @@ Adding another person to that environment does not add structure. It adds anothe
 
 There is a useful diagnostic question to ask before any significant hire: if we double the volume of work, does the problem get better or worse?
 
-If the bottleneck is genuinely capacity (there is simply more demand than the current team can physically complete), doubling the team would largely solve it. The process works. There just is not enough of it.
+If the bottleneck is capacity (there is simply more demand than the current team can physically complete), doubling the team would largely solve it. The process works. There just is not enough of it.
 
 If the bottleneck is a systems problem, doubling the volume makes everything worse. More work flowing through a broken handoff creates more broken handoffs. More tasks entering an undefined workflow creates more chaos. More decisions routing through the founder because there is no system for anyone else to make them creates a founder who is even further underwater. That is the [founder bottleneck](/founder-bottlenecks), and hiring into it makes the queue longer rather than shorter.
 
@@ -58,7 +58,7 @@ Trace a typical piece of work from intake to completion. Where does it slow down
 
 Those points of breakdown are where the operations problem lives. In most cases, they are solvable without adding headcount. Defining a clear process for the recurring work, creating a system for tracking what is in progress, establishing ownership so decisions do not all route upward, and documenting the standards that are currently held only in the founder's head, these changes resolve the bottleneck without increasing payroll.
 
-AI and automation tools extend this capacity further. Intake systems, automated follow-ups, workflow tools, and AI-assisted drafting or analysis can absorb a significant portion of what was previously being handled manually by people. The work gets done. The team's attention is freed for the work that genuinely requires judgment.
+AI and automation tools extend this capacity further. Intake systems, automated follow-ups, workflow tools, and AI-assisted drafting or analysis can absorb a significant portion of what was previously being handled manually by people. The work gets done. The team's attention is freed for the work that requires judgment.
 
 ---
 
@@ -76,7 +76,7 @@ If the business feels like it is constantly one hire away from being under contr
 
 ## The Harder Question
 
-Recognizing that the problem is operational rather than capacity-related requires a kind of intellectual honesty that is genuinely difficult in the middle of a busy period. It is much easier to hire someone than to step back and rebuild the process.
+Recognizing that the problem is operational rather than capacity-related requires a kind of intellectual honesty that is difficult in the middle of a busy period. It is much easier to hire someone than to step back and rebuild the process.
 
 But the rebuild pays off in a way that the hire does not. A team of five operating with a functional system will consistently outperform a team of eight operating without one. The difference compounds over time as the system-driven team gets faster, more consistent, and more reliable while the reactive team gets more complicated.
 

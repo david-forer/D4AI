@@ -33,7 +33,7 @@ An operations manager handles four categories of work:
 
 **Exception handling**: Identifying what falls outside the normal flow and routing it to someone with the authority to decide.
 
-Three of these four categories are largely systematic. Coordination, oversight, and process enforcement can be handled by well-designed automation and tooling. Exception handling is the category that genuinely requires a person: because exceptions, by definition, are the things a system cannot predict.
+Three of these four categories are largely systematic. Coordination, oversight, and process enforcement can be handled by well-designed automation and tooling. Exception handling is the category that requires a person: because exceptions, by definition, are the things a system cannot predict.
 
 Most small businesses are overwhelmed by coordination work. They mistake it for an ops problem that needs a hire. It is a systems problem that needs architecture.
 

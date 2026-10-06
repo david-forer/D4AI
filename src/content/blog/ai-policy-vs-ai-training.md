@@ -13,7 +13,7 @@ Your legal team spent three months drafting a comprehensive AI usage policy. It 
 
 The policy was distributed company-wide. Every employee clicked "I have read and agree." Nobody actually read it.
 
-Three months later, you discover employees are doing exactly the things the policy prohibits. They're not being malicious. They genuinely don't understand how the policy applies to their actual work. The policy exists in a legal framework. Their work exists in a practical context. The two never connected.
+Three months later, you discover employees are doing exactly the things the policy prohibits. They're not being malicious. They don't understand how the policy applies to their actual work. The policy exists in a legal framework. Their work exists in a practical context. The two never connected.
 
 This is the policy-training gap. Organizations invest heavily in creating policies. Written artifacts that satisfy legal and compliance requirements. Then they invest minimally in training. The mechanism that translates policy into behavior. The result: policies that provide legal cover without changing actual practice.
 
@@ -304,7 +304,7 @@ Implementation: Training teaches employees how to review their own AI outputs:
 
 For high-risk content (customer-facing, legal, financial), peer review or manager approval required. For routine content, employee self-review is sufficient.
 
-Result: Employees use AI productively with appropriate safety checks. Manager approval is reserved for genuinely high-stakes content.
+Result: Employees use AI productively with appropriate safety checks. Manager approval is reserved for high-stakes content.
 
 The guardrail approach scales. The roadblock approach creates bottlenecks that kill adoption.
 

@@ -60,7 +60,7 @@ Operational chaos makes your business harder to work in. It is harder to onboard
 
 The cost here shows up in turnover and in the reduced productivity that comes from working in a disorganized environment. Replacing a mid-level employee typically costs somewhere between fifty and one hundred percent of their annual salary when you factor in recruiting, onboarding, and ramp time.
 
-The indirect cost (the drain on morale and performance that comes from operating in a broken system) is harder to calculate but genuinely significant.
+The indirect cost (the drain on morale and performance that comes from operating in a broken system) is harder to calculate but significant.
 
 ---
 

@@ -42,7 +42,7 @@ Sales tool overload follows the same pattern. A second CRM and a separate email 
 
 The cost of too many tools is not just financial, though the financial cost is usually higher than businesses realise.
 
-**Subscription cost without proportional value.** Stack up the monthly charges for every tool your business pays for. Then honestly assess how many of those tools are being used consistently enough to justify the cost. Most businesses find that twenty to thirty percent of their tool spend is going to tools that are partially used or essentially unused.
+**Subscription cost without proportional value.** Stack up the monthly charges for every tool your business pays for. Then assess how many of those tools are being used consistently enough to justify the cost. Most businesses find that twenty to thirty percent of their tool spend is going to tools that are partially used or essentially unused.
 
 **Mental load from context switching.** Every tool your team uses is a context they have to maintain. Different logins, different interfaces, different terminology, different mental models. Research on cognitive switching costs suggests the overhead of moving between contexts is significantly higher than the time the switch takes. A team working across eight tools is absorbing a cognitive load that a team with four well-integrated tools is not.
 
@@ -116,7 +116,7 @@ Consolidation solves the current state. The question is whether you build a gove
 
 ## The Right Size Is Not a Number
 
-There is no universal right number of tools for a small business. A five-person firm and a fifty-person firm have genuinely different requirements. A business with complex client-facing operations needs different tooling than one with primarily internal workflows.
+There is no universal right number of tools for a small business. A five-person firm and a fifty-person firm have different requirements. A business with complex client-facing operations needs different tooling than one with primarily internal workflows.
 
 What the right-sized stack has in common across all these cases is that every tool has a defined role, connects meaningfully to the rest of the system, has a named owner, and earns its cost. Those criteria are the standard. The number that results from applying them is different for every business.
 

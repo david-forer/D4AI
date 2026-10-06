@@ -75,7 +75,7 @@ The final layer surfaces the state of the business so decisions can be made on c
 
 Layer 5 pulls from the systems of record and the automation logs to provide a real-time operational view. Revenue pipeline. Delivery status. Team utilization. Client health signals. Financial position. Automation health.
 
-When the four layers below it are functional, this layer is straightforward to build. The data is clean, connected, and current. A dashboard tool reads directly from authoritative sources and surfaces what matters without someone assembling it.
+When the four layers below it are functional, this layer is simple to build. The data is clean, connected, and current. A dashboard tool reads directly from authoritative sources and surfaces what matters without someone assembling it.
 
 When the layers below are not functional, Layer 5 becomes expensive to build and unreliable to use. The data is incomplete. Manual overrides are required. The dashboard becomes another thing someone maintains rather than a genuine operational asset.
 

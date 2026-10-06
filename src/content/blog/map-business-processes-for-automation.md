@@ -84,7 +84,7 @@ Four criteria matter most when evaluating automation readiness.
 
 **Consistency and standardization.** Automation works best when inputs and outputs are predictable. If every instance of a process is slightly different, automation becomes complicated and fragile. Look for processes where the same steps happen in the same order with the same types of information.
 
-**Clear decision logic.** The best automation candidates have decisions that can be expressed as explicit rules. If you can write "when X, do Y" statements for every branch in the process, automation is straightforward. If decisions require intuition, experience, or subjective judgment, automation is harder or impossible.
+**Clear decision logic.** The best automation candidates have decisions that can be expressed as explicit rules. If you can write "when X, do Y" statements for every branch in the process, automation is simple. If decisions require intuition, experience, or subjective judgment, automation is harder or impossible.
 
 **Digital and structured data.** Automation tools work with data. If your process involves information that exists only on paper, in unstructured emails, or in someone's memory, you will need to solve that problem before automation can help.
 

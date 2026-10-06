@@ -13,7 +13,7 @@ The burnout conversation in founder circles tends to focus on mindset. Rest more
 
 The advice is not wrong. But it addresses the symptom without diagnosing the cause.
 
-For most founders who are genuinely burned out, the underlying cause is operational. The business is structured in a way that requires them to hold too much cognitive load, make too many routine decisions, and stay involved in too much work that the business has not been designed to handle without them.
+For most founders who are burned out, the underlying cause is operational. The business is structured in a way that requires them to hold too much cognitive load, make too many routine decisions, and stay involved in too much work that the business has not been designed to handle without them.
 
 This is a structural problem. Structural problems have structural solutions. Mindset work alone does not fix a broken system.
 
@@ -110,7 +110,7 @@ For founders experiencing genuine operational burnout, the sustainable solution 
 
 None of this requires hiring. It requires building.
 
-For most founders in the $1M to $3M range, a focused six to eight week effort to address these three areas produces a material reduction in operational burden. The work does not disappear. But the work that remains is the work that genuinely requires you. The coordination overhead, the information retrieval, the recurring fires. All of it is solvable.
+For most founders in the $1M to $3M range, a focused six to eight week effort to address these three areas produces a material reduction in operational burden. The work does not disappear. But the work that remains is the work that requires you. The coordination overhead, the information retrieval, the recurring fires. All of it is solvable.
 
 ---
 

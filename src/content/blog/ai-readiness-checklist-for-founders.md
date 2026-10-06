@@ -99,7 +99,7 @@ If the answer is a general desire to "use AI more," that's not specific enough t
 
 **19. Do you have a realistic picture of what AI can and can't do for a business your size?**
 
-AI is genuinely useful. It is also genuinely limited, particularly when the operational foundation underneath it is not solid. Unrealistic expectations produce disappointing implementations and cynicism that makes future adoption harder.
+AI is useful. It is also limited, particularly when the operational foundation underneath it is not solid. Unrealistic expectations produce disappointing implementations and cynicism that makes future adoption harder.
 
 **20. Have you identified what success would look like 12 months after implementing AI?**
 

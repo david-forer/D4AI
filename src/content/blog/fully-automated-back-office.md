@@ -14,7 +14,7 @@ The phrase "fully automated" conjures images of empty offices where robots handl
 
 For a business with five to fifteen employees and no dedicated operations manager, back office work often becomes a distributed burden. The founder reviews invoices. The office manager handles onboarding paperwork. Someone's assistant updates spreadsheets. Everyone does a little administrative work, which means everyone is distracted from their actual job.
 
-A fully automated back office looks different. The routine work happens without human intervention. The people who used to handle that work now spend their time on exceptions, analysis, and decisions that genuinely need their attention.
+A fully automated back office looks different. The routine work happens without human intervention. The people who used to handle that work now spend their time on exceptions, analysis, and decisions that need their attention.
 
 Here is what that actually looks like in practice.
 

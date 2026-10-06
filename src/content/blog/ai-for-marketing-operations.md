@@ -67,7 +67,7 @@ This changes the nature of the marketing review. Instead of spending thirty minu
 
 ## What the Foundation Needs to Look Like
 
-A content calendar that is genuinely used, not aspirational, as the single source of truth for what is being produced and when.
+A content calendar that is used, not aspirational, as the single source of truth for what is being produced and when.
 
 CRM integration so marketing and sales share data. Leads generated from marketing are tracked through to close. Campaign performance is measurable against pipeline outcomes rather than just traffic.
 

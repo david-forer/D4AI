@@ -74,7 +74,7 @@ Exception paths need documentation too. Either they get automated as alternative
 
 ## Translating SOPs Into Automation
 
-With an automation-ready SOP, the translation to software becomes straightforward.
+With an automation-ready SOP, the translation to software becomes simple.
 
 Steps in the SOP become tasks or actions in the automation. "Send confirmation email to client" becomes a specific automated action that sends a templated email to a determined recipient.
 

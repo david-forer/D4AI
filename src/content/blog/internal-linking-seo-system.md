@@ -48,7 +48,7 @@ A functioning internal link architecture for a cluster-based content strategy fo
 
 **Every pillar links to its cluster articles.** The pillar page should function as a navigation hub for the cluster, linking out to the cluster articles that go deeper on each dimension of the topic. This creates a two-way reinforcement structure.
 
-**Cluster articles link laterally to related cluster articles.** Within a cluster, articles on related subtopics should reference each other where the connection is genuinely useful to the reader. This is not about adding links for their own sake. It is about reinforcing the semantic relationships between topics that sit within the same cluster.
+**Cluster articles link laterally to related cluster articles.** Within a cluster, articles on related subtopics should reference each other where the connection is useful to the reader. This is not about adding links for their own sake. It is about reinforcing the semantic relationships between topics that sit within the same cluster.
 
 **Service and conversion pages receive contextual links.** Articles that naturally lead to a service conversation should link to the relevant service page at the appropriate point in the content. These links should appear where the reader is most likely to want to take the next step, not always at the end of the piece.
 

@@ -11,7 +11,7 @@ articleType: "cluster"
 
 Most AI training programs teach team members how to use AI tools. The tools get used occasionally, inconsistently, and with diminishing frequency over time as the team defaults to familiar habits. The training event created awareness. It did not change the workflow.
 
-The reason adoption does not persist is straightforward. When AI use is optional, it competes with established manual processes that are faster in the short term and require no additional thought. AI wins that competition only when it is embedded in the process itself, not presented as an alternative to it.
+The reason adoption does not persist is simple. When AI use is optional, it competes with established manual processes that are faster in the short term and require no additional thought. AI wins that competition only when it is embedded in the process itself, not presented as an alternative to it.
 
 AI-enhanced standard operating procedures solve this problem by making AI a structural part of how work gets done rather than an add-on that requires individual motivation to use.
 
