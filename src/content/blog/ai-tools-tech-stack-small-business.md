@@ -11,7 +11,7 @@ articleType: "pillar"
 
 Owning AI tools and running an AI stack are two different things. This guide covers the difference and how to build the second one in the right order.
 
-## What to know first
+## Key takeaways
 
 - An AI tech stack is an integrated system with a defined system of record, documented data flows, and a named owner for each category of work. A pile of subscriptions is not a stack.
 - Start with an inventory of every tool you pay for, what it connects to, and how clean your data is. Most businesses find the first win is consolidating what they already have.

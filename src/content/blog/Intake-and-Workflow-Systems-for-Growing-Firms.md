@@ -11,7 +11,7 @@ articleType: "pillar"
 
 Growing service firms usually lose work because requests arrive through too many channels with no single place to land.
 
-## What to know first
+## Key takeaways
 
 - Most growing service firms take in work through email, LinkedIn, Slack, forms and hallway conversations with the founder, with no single view of the combined load.
 - The fix is a single source of work truth: a central intake form that routes every request into one project management system with consistent details attached.

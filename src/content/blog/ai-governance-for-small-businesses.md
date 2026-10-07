@@ -11,7 +11,7 @@ articleType: "pillar"
 
 Most small businesses start using AI before they set any rules for it. Here is what governance looks like for a firm without a compliance team.
 
-## In brief
+## Key takeaways
 
 - AI governance for a small business answers 4 questions: what data can go into AI tools, which tools are approved, who checks output before it reaches a client, and what happens when something breaks.
 - Small firms often carry more hidden AI exposure than large ones because they have fewer controls, so AI is already being used in ways leadership cannot see.

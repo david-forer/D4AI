@@ -11,7 +11,7 @@ articleType: "pillar"
 
 A back office gets smarter when its functions share data. This guide shows how to design that connected system in a small business, from the first back-office automation to the AI layer on top.
 
-## What to know first
+## Key takeaways
 
 - Digital transformation of the back office means connecting finance, HR, sales, project operations, and support so data flows automatically between them.
 - Most small businesses need three core hubs: the CRM for client and deal data, the project tool for delivery data, and the accounting system for financial data.
