@@ -124,8 +124,6 @@ Plenty of founders feel this way, and it is a reasonable position. You can build
 
 Add AI later, at the one step where drafting, summarizing or analysis saves real time. The foundation is the same either way.
 
-A note on the 10/20/70 rule, a planning rule from Boston Consulting Group. About 10 percent of AI effort goes to algorithms, 20 percent to technology and data, and 70 percent to people and processes. It matches what I see here. The tools are the smaller part of the work.
-
 ---
 
 ## How to Evaluate Any AI Tool: Five Questions That Matter
@@ -224,10 +222,6 @@ The one that connects to your system of record and solves a problem you have alr
 ### Can AI make $1,000 a day for a small business?
 
 No tool gives you a guaranteed figure, and I would distrust anyone who promises one. Gains come from saved hours and added capacity on specific workflows. Measure those against a baseline before you put a dollar number on anything.
-
-### What is the 10/20/70 rule in AI?
-
-It is a Boston Consulting Group planning rule. About 10 percent of effort goes to algorithms, 20 percent to technology and data, and 70 percent to people and processes. For a small business, most of the work is operations and adoption.
 
 ### What are the 5 main AI tools a small business needs?
 

@@ -166,10 +166,6 @@ Good ones are short. A one-page use policy, an approved tools list, a rule for s
 
 Take a hypothetical 15-person marketing agency. It keeps a list of 5 approved AI tools. Client contracts and personal data never go into them. Every client-facing draft gets a human read before it sends, and one page says who to tell if a file lands in the wrong tool. That is AI governance at small-firm scale.
 
-### What is the 10/20/70 rule for AI?
-
-It is a rule of thumb, usually attributed to Boston Consulting Group, that AI success depends about 10 percent on algorithms, 20 percent on technology and 70 percent on people and processes. Governance sits in that 70 percent.
-
 ### How do AI governance frameworks and responsible AI relate?
 
 Ethical AI governance and responsible AI describe the principles, such as fairness, transparency and accountability. Frameworks are the working rules that apply those principles to your tools and data. Large published frameworks exist, but a firm without a compliance team gets more from the 6 parts above than from a long document nobody maintains.

@@ -162,10 +162,6 @@ The strategy decides what matters and what you are not doing. The roadmap turns 
 
 Learn it by solving one problem from your roadmap. Pick the first item, try the tool on real work, and have the person who owns the process run it. Reading about AI in general teaches less than a month of using it on a task you already do.
 
-### What is the 10/20/70 rule for AI?
-
-It is a planning rule from Boston Consulting Group. About 10 percent of the effort goes to algorithms, 20 percent to technology and data, and 70 percent to people and processes. For a roadmap, that means adoption time and process work deserve more room than tool setup.
-
 ### What small business can I start with AI?
 
 Any business with a repeatable process that eats staff time. Client intake, scheduling, reporting and follow-up emails are common first picks. The type of business matters less than whether the process is documented and stable.

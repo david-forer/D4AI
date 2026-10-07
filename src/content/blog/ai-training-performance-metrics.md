@@ -91,8 +91,6 @@ Use the same three levels for both. Adoption shows whether people use the tools.
 
 For AI-enabled training, where AI helps deliver the training itself, add one more check. Compare how long it takes new hires to reach their first regular AI use before and after you adopt it.
 
-A note on the numbers. A common planning rule from Boston Consulting Group is the 10/20/70 rule: roughly 10 percent of AI effort goes to algorithms, 20 percent to technology and data, and 70 percent to people and processes. Training and measurement sit in that 70 percent, which is why they deserve a real budget line.
-
 ## How to Quantify Training Effectiveness
 
 Quantifying training effectiveness comes down to a before and after comparison on a few workflows. Record the baseline before training starts, then measure the same thing monthly.
@@ -158,10 +156,6 @@ A designated team member, usually the internal AI operations lead. When the foun
 ### What should you do if usage is stuck with two or three people?
 
 Treat it as a support problem. Look for the structural barrier: an undocumented process, a gap in the prompt library, or an open question about data handling. Fix that and usage tends to spread.
-
-### What is the 10/20/70 rule for AI?
-
-It is a planning rule from Boston Consulting Group. About 10 percent of the effort goes to algorithms, 20 percent to technology and data, and 70 percent to people and processes. For a small business, that means most of your AI budget belongs on training and workflow change.
 
 ### How do you quantify training effectiveness?
 
