@@ -149,3 +149,7 @@ Ask what it does without a human present and what it does when it is unsure. The
 ### Why do custom-built AI agents fail in small firms?
 
 Usually because nobody owns them. A model gets deprecated or output shifts, the builder has moved on, and nobody inside can diagnose it. Name the maintainer before you commission anything.
+
+### Can I Build and Sell AI Agents?
+
+Yes, and that is the case where building is the right call. If the agent is the product your clients pay for, the build is the business and the maintenance tail is a cost of goods. If the agent only supports your own operations, buy first.

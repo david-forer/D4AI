@@ -17,7 +17,7 @@ AI doesn't fix a sales process that isn't designed. But when the operational fou
 
 ## What AI Sales Operations Actually Means
 
-AI sales operations is not a CRM with some AI features bolted on. It is the operational design of how leads move from interest to close, and the specific identification of where AI owns steps in that journey.
+AI sales operations is the operational design of how leads move from interest to close, and the specific identification of where AI owns steps along the way. A CRM with a few AI features bolted on does not meet that definition.
 
 The distinction matters because most small businesses adopt AI sales tools at the task level. An AI email assistant here. An AI proposal tool there. Each one delivers some value and then hits a ceiling because it operates in isolation. The leads still need to be manually sorted. The pipeline still requires someone to update it. The follow-up still depends on someone remembering.
 
@@ -39,7 +39,7 @@ This layer alone recovers significant founder time. The operational cost of manu
 
 Most small business deals are lost not because of price or fit but because follow-up didn't happen. Someone got busy. A lead went quiet and no one prompted them. A proposal went out and three weeks passed without a response because no one had a system for chasing it.
 
-Automated follow-up sequences triggered by lead behaviour close this gap. The sequence adapts based on what the lead does (opens, responds, or goes quiet) and continues until a defined endpoint. Messages are drafted by AI from deal context and personalised to each situation. A human reviews before anything sensitive goes out. But the prompting and drafting happen automatically.
+Automated follow-up sequences triggered by lead behavior close this gap. The sequence adapts based on what the lead does (opens, responds, or goes quiet) and continues until a defined endpoint. Messages are drafted by AI from deal context and personalized to each situation. A human reviews before anything sensitive goes out. But the prompting and drafting happen automatically.
 
 The result is that no lead falls through the cracks because someone forgot.
 
@@ -57,7 +57,7 @@ Proposals are one of the highest-cost sales activities in a service business. Ho
 
 AI proposal generation builds from structured deal data (scope, pricing, client context, engagement type) and produces a draft that requires review and tailoring rather than construction from scratch. Turnaround drops from hours to minutes. Consistency improves because the system draws from a maintained template rather than whoever's memory happened to be sharpest that day.
 
-Human review before anything goes to a client is non-negotiable. AI drafts, the founder or sales lead finalises.
+Human review before anything goes to a client is non-negotiable. AI drafts, the founder or sales lead finalizes.
 
 ## What Needs to Exist Before AI Can Help Sales
 
@@ -67,7 +67,7 @@ Defined sales stages with clear criteria are the second prerequisite. Not loose 
 
 A documented qualification framework, what makes a prospect worth pursuing, gives the AI scoring layer something meaningful to work from. Without it, you're automating gut feel, which defeats the purpose. Building those criteria from your own won and lost deals is covered in [AI agents for lead qualification](/blog/ai-agents-for-lead-qualification).
 
-Cleaning this up before adding AI is not a detour. It's the work that makes everything else reliable.
+Cleaning this up before adding AI makes everything else reliable.
 
 ## The Founder Bottleneck in Sales
 
@@ -77,11 +77,23 @@ This creates a hard ceiling on sales volume that no AI tool can break through, b
 
 AI operations addresses the execution layer: the lead processing, the follow-up, the proposal drafting, the pipeline reporting. But the structural question of which parts of the sales process require the founder's specific judgment versus which can be owned by a trained team member supported by AI systems needs to be answered explicitly. That answer is what allows sales operations to scale.
 
+## AI for Sales and Pipeline Management in a Small Team
+
+For a team of 5 to 20, AI for sales and pipeline management comes down to three jobs: keeping deal records current, flagging deals that have gone quiet, and drafting the next message. The founder still decides who gets a call and what gets quoted.
+
+Commissions follow the same logic. If you pay anyone on results, AI commission systems improve sales ops by calculating payouts straight from closed-deal data in your CRM. That removes the monthly spreadsheet reconciliation, and it only works when deal stages and amounts are entered consistently.
+
+## Is AI Replacing Sales Reps?
+
+In a founder-led business, the work AI takes over is the admin around the rep: logging calls, chasing no-replies, building the first draft of a proposal. The conversations that close high-value deals stay with a person.
+
+If you have one salesperson, the realistic outcome is that they spend more of the week talking to buyers. That is the reason to automate the volume work first.
+
 ## Common Mistakes When Adding AI to Sales
 
 Automating before the pipeline data is clean produces automated chaos. The AI routing, scoring, and reporting are only as reliable as the data flowing into them.
 
-Using AI to mask a broken qualification process just means you're pursuing the wrong leads faster. Fix the qualification criteria first.
+Using AI to mask a broken qualification process means you pursue the wrong leads faster. Fix the qualification criteria first.
 
 Over-automating the relationship out of high-value sales is a real risk. Automated follow-up sequences work well for initial outreach and light nurture. They create friction in active deal management with sophisticated buyers. The right line: AI owns the volume work, humans own the relationships.
 
@@ -95,6 +107,6 @@ The prerequisite is the same as for any AI operations project: a single system o
 
 ---
 
-[An AI readiness audit maps your current sales operations against what's possible, and prioritises where to start.](/ai-readiness-and-ai-audits)
+[An AI readiness audit maps your current sales operations against what's possible, and prioritizes where to start.](/ai-readiness-and-ai-audits)
 
 *Related reading: [AI Automation Stack for Small Businesses](/blog/ai-automation-stack-for-small-businesses) | [Scaling a Business with AI Instead of Hiring](/blog/scaling-a-business-with-ai-instead-of-hiring) | [Best AI Tools for Business Operations](/blog/best-ai-tools-for-business-operations)*

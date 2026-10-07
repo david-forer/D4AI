@@ -166,3 +166,7 @@ One named person inside the firm who reads the log every week for the first 2 mo
 ### When should I roll back an AI agent?
 
 When it takes an action from the never list, when a client raises a problem caused by its output, or when the owner has not reviewed the log for 3 weeks running. The work goes back to the person who used to do it, and nothing is lost but a fortnight.
+
+### How do you secure an AI agent?
+
+Start with the written permission list. Give the agent access only to what the one-sentence job needs, name the actions it may never take, and log every action so the owner can read it weekly. Securing it is mostly a matter of limiting reach and keeping a person able to switch it off.

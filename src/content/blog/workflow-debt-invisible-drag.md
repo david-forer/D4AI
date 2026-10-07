@@ -16,7 +16,7 @@ Workflow debt is the accumulated cost of processes that should work better but d
 
 Like financial debt, workflow debt charges interest. Every week you carry it, you pay a cost in wasted time, errors, frustration, and missed opportunities. Unlike financial debt, workflow debt is invisible. It does not appear on any report. You just feel it in the constant friction of running your business.
 
-Understanding workflow debt, measuring it, and strategically paying it down is one of the highest-leverage things a growing business can do.
+Understanding workflow debt, measuring it, and strategically paying it down pays back faster than most projects a growing business can take on.
 
 ## The Nature of Workflow Debt
 
@@ -64,7 +64,13 @@ Workflow debt is frequently the culprit.
 
 **New hires take forever to become productive.** Without documented systems, onboarding means learning tribal knowledge through observation and mistakes. The ramp-up period stretches while the new person figures out how things actually work.
 
-These symptoms often get misdiagnosed. Leadership blames the team for not working hard enough, or the market for being difficult, or the economy for creating headwinds. But the real problem is operational infrastructure that cannot support the business.
+These symptoms often get misdiagnosed. Leadership blames the team for not working hard enough, or the market for being difficult, or the economy for creating headwinds. The cause is operational infrastructure that cannot support the business.
+
+## Workflow Debt vs. Process Debt
+
+Process debt is another name for the same thing. Some teams say process debt when they mean the steps and rules, and workflow debt when they mean the tools and hand-offs that carry those steps. In a 5 to 20 person business the two pile up together, so this post treats them as one.
+
+A hypothetical example is a debt collection workflow. Say a firm chases late invoices by hand. Someone checks the accounting system on Fridays, copies names into a spreadsheet, and writes each reminder from scratch. Nothing is broken, but every overdue invoice costs a person 15 minutes and depends on that person remembering. That is manual debt, hand-off debt, and shadow debt in one process.
 
 ## Auditing Your Workflow Debt
 
@@ -98,7 +104,7 @@ Not all workflow debt is equally urgent. Strategic debt management means priorit
 
 **Automate to address manual debt.** Implement workflows that execute routine tasks without human intervention. Start with the highest-volume, most standardized tasks. Expand as you build confidence and capability.
 
-**Migrate to address tool debt.** Replace systems that constrain you with systems that enable you. This is often the most disruptive type of debt repayment, but sometimes it is necessary. A tool that worked when you were smaller may not support what you need to become.
+**Migrate to address tool debt.** Replace systems that constrain you with systems that enable you. This is often the hardest type of debt repayment, but sometimes it is necessary. A tool that worked when you were smaller may not support what you need to become.
 
 Think of debt repayment as a budget line. Allocate a fixed percentage of operational capacity to continuous process improvement. This prevents the endless deferral that lets debt accumulate. The improvement work gets done because it is scheduled, not because someone finds time for it.
 

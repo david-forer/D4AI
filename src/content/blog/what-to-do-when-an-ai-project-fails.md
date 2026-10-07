@@ -176,6 +176,10 @@ Put it in writing. Name what the agreement said would exist by now, name what ex
 
 Check 3 things: whether anything written has been produced, whether the scope changed without a conversation, and whether your team has used it. All 3 showing up means it failed. None means it is slow, and a date plus a written checkpoint usually fixes slow.
 
+### Who is responsible when an AI project fails?
+
+The signed agreement decides what the consultant owes. What the agreement cannot cover is the day after handover, when someone inside your business has to own the system. If nobody was named before the build started, the gap is yours to fix, and a short handover project usually closes it. Ask for the missing deliverables in writing before you assign blame.
+
 ### When should I stop an AI project?
 
 When the problem costs little each month, when the process is about to change anyway, or when nobody will run the system in 6 months. Closing one out cleanly is fine. Letting it limp along for another year is what costs you.

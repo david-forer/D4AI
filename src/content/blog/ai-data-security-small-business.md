@@ -82,6 +82,10 @@ Keep the answers in one file next to your approved tools list. It is the differe
 
 ---
 
+## Which AI is most secure for business data?
+
+The plan you are on controls most of the risk. The same assistant can train on your inputs on a free personal account and not on a business plan. Pick the business or team tier of whichever tool your staff already use, then check its training and retention settings against the 5 questions above.
+
 ## What breaks first in a small business with no data rule
 
 The failure pattern here is ordinary, which is exactly what makes it hard to notice.

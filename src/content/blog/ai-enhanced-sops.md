@@ -23,7 +23,7 @@ A standard operating procedure documents how a specific task should be completed
 
 An AI-enhanced SOP does the same thing, with one difference. Specific steps in the procedure explicitly incorporate AI tools, including the exact prompts to use, the expected output format, the quality review criteria, and the human judgment checkpoints where the team member evaluates and refines the AI output before moving forward.
 
-The AI is not an optional add-on that a team member can skip if they prefer. It is a defined step in the workflow, like any other step.
+The AI step is a defined part of the workflow, like any other step, and a team member does not skip it when they are busy.
 
 ---
 

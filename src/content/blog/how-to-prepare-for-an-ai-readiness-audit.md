@@ -13,7 +13,7 @@ A common instinct before any kind of business assessment is to tidy up first. Cl
 
 For an AI readiness audit, that instinct is understandable but misplaced. The audit is specifically designed to see your operations as they actually are. Surface-level preparation doesn't change the underlying state of your business, and the gaps that matter most are the ones you haven't noticed yet, not the ones you already know about.
 
-That said, a small amount of genuine preparation does make a difference. Not in hiding anything, but in making sure the time you invest in the process produces the clearest possible findings.
+A small amount of preparation does make a difference. It helps the time you invest in the process produce the clearest possible findings.
 
 Here's what's worth doing, and what you can skip.
 
@@ -65,7 +65,7 @@ Who on the team would be involved in any AI implementation. Not because they nee
 
 An AI readiness audit is a diagnostic, not a prescription. The findings it produces are descriptive of where your business actually stands, not a verdict on whether you're doing things right.
 
-Gaps that surface during the assessment are not failures. They are structural realities that every business at a similar stage of growth tends to share. Finding them is the first step to addressing them in the right order.
+Gaps that surface during the assessment are structural realities that businesses at a similar stage of growth tend to share, so treat them as a starting list rather than a verdict. Finding them is the first step to addressing them in the right order.
 
 The assessment will identify more things to improve than you can act on immediately. That's normal and expected. The value of the findings is in the prioritization, not the length of the list. Knowing which gaps are critical versus which are noise is what makes the roadmap useful.
 
