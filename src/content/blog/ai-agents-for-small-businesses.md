@@ -110,6 +110,21 @@ Firms that skip the first 2 steps and chase agents first build sophisticated sys
 
 ---
 
+## Best AI Agents for Small Business: How to Choose
+
+Founders often ask me for the best AI agents for small business, or the best AI agents for business in general. I do not keep a ranked list, because the best agent depends on the job. A tool that suits marketing work can be a poor fit for support, and a list ages within a few months.
+
+Choose by job, not by brand. Write down the one task you want handled, such as drafting first replies to inbound inquiries, researching leads before calls, or chasing overdue project tasks. Then check each tool against four questions:
+
+- Does it connect to the systems where that work already lives?
+- Can you set what it may do alone and what needs approval?
+- Can you test it on real past cases before it goes live?
+- Can you see what it did and undo it?
+
+For marketing work, that might be an agent that researches a topic and drafts a first pass for a person to edit. For productivity and day-to-day work, it might be an agent that sorts a shared inbox and proposes replies. Free tiers are fine for testing a narrow job, but check what happens to your data before you connect client information.
+
+---
+
 ## The Bottom Line for Founders
 
 AI agents are real, and they are more capable than the automations that came before. They are also earlier, riskier, and more dependent on foundations than the hype admits. For a business running between 5 and 50 people, the right question is "which specific job in our business needs judgment under variation, and is our foundation solid enough to let an agent do it safely."
@@ -125,6 +140,18 @@ An agent takes a goal, like handling an incoming client inquiry, and works out t
 ### Is an AI agent the same as an automation?
 
 No. An automation does the same thing every time, which is why it is cheaper and more predictable. An agent decides its own path, which makes it more capable and riskier. If the work is identical every time, build the automation and save yourself the trouble.
+
+### Which AI agent is best for small business?
+
+It depends on the job. Pick the task first, then test two or three tools on real past cases from your business. The best fit connects to your existing systems, lets you limit what it does alone, and shows you what it did.
+
+### How are small businesses using AI agents?
+
+Mostly in four places: triaging and drafting replies to inbound inquiries, researching leads before sales calls, handling common support tickets, and chasing overdue project tasks. In each case a person approves anything that reaches a client.
+
+### What are the 5 types of AI agents?
+
+The textbook list is simple reflex agents, model-based reflex agents, goal-based agents, utility-based agents, and learning agents. For a small business the useful distinction is simpler. Some agents follow fixed rules, and others pursue a goal and choose their own steps. The agents in this guide are the goal-based kind.
 
 ### Is my business ready for an AI agent?
 

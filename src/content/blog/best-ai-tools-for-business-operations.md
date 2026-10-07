@@ -253,6 +253,22 @@ Pick Zapier if nobody on the team has built an automation before. Pick Make if y
 
 Claude tends to do better with long, context-heavy writing like proposals and detailed client emails. ChatGPT is broadly capable and familiar, which helps adoption. Either one is worth more when it connects to your client records through your automation tool, and Gemini is the easier choice for a business already on Google Workspace.
 
+### How Is AI Used in Operations?
+
+In a small business, AI operations tools mostly do 4 jobs: drafting replies and documents, summarizing calls and long threads, sorting incoming requests, and flagging records that look wrong. The routing and data movement around those jobs belongs to the automation layer, and a person approves anything a client will see.
+
+### What Are the 5 Most Popular AI Tools for Operations?
+
+Popularity matters less than fit. The 5 tools an operations manager touches most often are one per layer: a CRM or other system of record, a connector between tools, a workflow automation tool, an AI assistant, and a reporting dashboard. The layers above name the options at each one. Start with the layer you're weakest in.
+
+### What Are the Big 3 AI Tools?
+
+For general-purpose assistants, this guide covers Claude, ChatGPT and Gemini. All 3 can handle drafting and summarizing for business operations. Choose by where your team already works and by how easily the assistant can read your client records.
+
+### Are There Free AI Tools for Business Operations?
+
+Some of the tools above have free entry points, including the free CRM and the self-hosted n8n edition. Free AI tools for office work and productivity are a fair way to test a workflow before you commit budget. Check each vendor's current plan first, and read [Free vs. Paid AI Tools for Small Businesses](/blog/free-vs-paid-ai-tools-small-business) to see where free stops being enough.
+
 ### Do Small Businesses Need an AI Platform for Business Operations?
 
 Most don't. The all-in-one business operations AI software sold to enterprise operations teams assumes a data team and an IT department to run it. A 5 to 20 person business gets further with a CRM, a project tool and one automation tool connected well, plus an AI assistant on top. That combination covers most of what AI for SMB operations needs to do.

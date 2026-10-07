@@ -11,7 +11,7 @@ articleType: "cluster"
 
 Scale is used so often in business discussions that it has become nearly meaningless. In practical terms, for a small business, scaling means handling meaningfully more volume without proportionally more cost. Specifically: more clients, more revenue, more output, without adding the same number of people it would have taken to get here.
 
-AI contributes to that by doing what humans would otherwise have to do, at the volume and consistency that humans cannot sustain manually. But AI does not automatically produce scale. An AI tool added to a manual operation does not make the operation scalable. A designed AI system, built into documented workflows with clear ownership, can.
+AI contributes to that by doing the work humans would otherwise have to do, at a volume and consistency humans cannot sustain by hand. But AI does not automatically produce scale. An AI tool added to a manual operation leaves the operation manual. A designed AI system, built into documented workflows with clear ownership, can scale.
 
 The distinction is between AI as a set of tools and AI as an operational architecture. Tools help individuals work faster. Architecture helps the business work at a different scale.
 
@@ -37,7 +37,7 @@ The right AI investments at different revenue stages reflect the different opera
 
 At this stage, the primary AI investments should address the processes that consume the most founder time. The founder is typically the operational bottleneck. Their time is distributed across sales, delivery, client communication, administration, and everything else. The first layer of AI strategy reduces the time each of those functions demands from the founder directly.
 
-Common targets at this stage: intake automation, follow-up sequences, proposal generation, and internal status reporting. The goal is not to automate everything. It is to free the founder's time for the work only they can do, while ensuring the operational work is handled reliably.
+Common targets at this stage: intake automation, follow-up sequences, proposal generation, and internal status reporting. The goal is to free the founder's time for the work only they can do, and to handle the operational work reliably.
 
 ### $2M to $5M: Extending capacity
 
@@ -47,7 +47,7 @@ AI investments at this stage focus on systematizing the work the team does and b
 
 ### $5M and beyond: Systematizing judgment
 
-Above $5M, the scale challenges typically involve judgment, not just execution. Decisions that used to be made by the founder are being made by others. Consistency of judgment across the team becomes a real operational concern.
+Above $5M, the scale challenges typically involve judgment as much as execution. Decisions that used to be made by the founder are being made by others. Consistency of judgment across the team becomes a real operational concern.
 
 AI at this stage supports decision frameworks, performance visibility, and capacity planning. The investments are more complex and typically require more sophisticated implementation. But they build on the operational foundation that the earlier stages established.
 
@@ -55,11 +55,11 @@ AI at this stage supports decision frameworks, performance visibility, and capac
 
 ## What to Build Before You Grow Into It
 
-One of the most valuable aspects of a thoughtful AI strategy is the ability to build capability in advance of needing it at full scale. This is different from building speculatively. It is building the foundations of a next-stage operation while the current stage is still manageable.
+One of the most useful parts of a thoughtful AI strategy is the ability to build capability in advance of needing it at full scale. This is different from building speculatively. It is building the foundations of a next-stage operation while the current stage is still manageable.
 
 The intake process that will handle ten clients per week is worth building when you have four, not when you have nine and the system is overloaded. The reporting infrastructure that will give you weekly visibility into team capacity is worth building when your team is small enough that configuration is simple, not when the team has grown and every connection is more complex.
 
-Building ahead of need produces two benefits. The systems are stable and familiar to the team when growth demands them. And the growth itself is enabled by systems that can absorb it, rather than constrained by the absence of systems that nobody had time to build.
+Building ahead of need produces two benefits. The systems are stable and familiar to the team when growth demands them. And the growth itself is enabled by systems that can absorb it, instead of being constrained by the absence of systems that nobody had time to build.
 
 ---
 
@@ -89,13 +89,37 @@ Within the right conditions, AI strategy is a powerful lever for growth. Underst
 
 ---
 
-## Building Toward a Scalable Operation
+## What Is a Good AI Strategy for Your Business?
 
-The endpoint of a well-executed AI strategy is not a specific tool stack or a specific set of automations. It is an operation that can grow without breaking.
+A good AI strategy for your business names the bottleneck, picks the processes to fix first, and sets the order to build in. It fits your revenue stage and puts documentation ahead of any tool. That is the best AI strategy for growth at the $1M to $5M range.
+
+Here is a hypothetical AI strategy example. A 6-person agency at $1.5M in revenue has a founder who writes every proposal. The strategy documents the proposal process, standardizes the template, then automates the first draft with a human reviewing it. Reporting comes later, once the proposal workflow is stable.
+
+A rule often attributed to BCG, the 10/20/70 rule, puts about 10 percent of the effort in algorithms, 20 percent in technology and data, and 70 percent in people and processes. It matches the sequence in this post.
+
+---
+
+## How to Scale a Service Business With AI
+
+To scale a service business with AI, follow the sequence above: document, standardize, then automate. That is how AI can grow your business in practice. It raises the capacity of the team you already have, so the same people serve more clients.
+
+AI for business scaling raises capacity. Demand still has to come from your commercial engine, as the growth trap section covers.
+
+---
+
+## Which AI Is Best for Business Strategy?
+
+No single product is the best AI for business strategy. A general-purpose assistant is useful for pressure-testing a plan, summarizing research, and drafting options. The strategy itself comes from your numbers, your constraints and your revenue stage.
+
+---
+
+## Building an Operation That Can Grow
+
+The endpoint of a well-executed AI strategy is an operation that can grow without breaking.
 
 That means documented workflows that can be taught to new team members. Automated processes that handle high volume consistently without manual intervention. Reporting that gives leadership visibility without requiring time to assemble. And a team that understands the systems they work within well enough to maintain and extend them.
 
-Most small businesses at $1M to $5M revenue are further from that picture than they realize, not because they lack the tools but because the foundation of documentation and process design has not been built. AI strategy, done in the right sequence, builds that foundation and then builds the capability on top of it.
+Most small businesses at $1M to $5M revenue are further from that picture than they realize. The tools are usually in place. The foundation of documentation and process design has not been built. AI strategy, done in the right sequence, builds that foundation and then builds the capability on top of it.
 
 If you want to map what that sequence looks like for your specific business, [schedule a call.](https://calendly.com/david-j-forer/30min)
 

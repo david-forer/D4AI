@@ -229,6 +229,21 @@ An AI operations consultant starts from how the business runs day to day, finds 
 
 A first engagement with a small business usually runs about 90 days. Roughly 2 weeks go to discovery, 2 weeks to design and scoping, 4 weeks to building and 4 weeks to adoption and stabilization. Slow decisions and scope growth are the usual reasons it runs longer.
 
+### What Does an AI Consultant Do, Exactly?
+
+What an AI consultant does day to day is map your workflows, build the ones worth changing, train your team and hand the systems over. Most of the hours go to listening, writing designs and testing automations with your real records.
+
+### How Do I Become an AI Consultant With No Experience?
+
+Start with operations. The people who do this job well usually know how a business runs before they know any tool. Learn Zapier, Make or n8n, build automations for your own work, then for a friend's small business, and write down what changed. A short record of real workflows you built and what they saved is worth more than a certificate. Be honest about your limits until you have a few results behind you.
+
+### What Qualifications Does an AI Consultant Need?
+
+There is no standard AI consultant qualification or license in the US. Clients judge the work. Ask any consultant what they built for their last 3 clients and what those clients run without them today. A relevant degree or a vendor certification can help, but a track record of working systems matters more.
+
+### How Much Does an AI Consultant Cost, and What Do They Make?
+
+Rates depend on the scope, the consultant and the size of the business. I won't quote an industry average here because the range is wide and I have no verified figure worth repeating. [What AI Consulting Costs a Small Business](/blog/ai-consulting-cost-for-small-business) covers realistic price ranges for a business your size. What a consultant earns varies the same way, with the work, the client mix and how much of it is repeat business.
 ---
 
 If you want to see what an AI consultant would find in your business before committing to an engagement, [start with the free process audit](/fix-the-chaos). It takes 2 to 3 hours and gives you your top 5 automation opportunities, priced in dollars.

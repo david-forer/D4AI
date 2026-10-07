@@ -97,7 +97,7 @@ I don't give legal or regulatory advice. Your professional obligations are yours
 
 ## Where AI Tends to Fit First in a Small Firm
 
-The audit ranks opportunities by what they cost your firm now. In accounting practices, the first good candidates in accounting firms tend to share a trait: they sit around the professional work and leave the judgment calls with people.
+The audit ranks opportunities by what they cost your firm now. In accounting practices, the first good candidates tend to share a trait: they sit around the professional work and leave the judgment calls with people.
 
 Document chasing is the usual first candidate. Drafting reminder emails for missing items, tracking what each client still owes you, and sorting uploaded files into the right folders can take hours a week off an admin's plate during busy season.
 
@@ -118,6 +118,19 @@ Some uses need a clear rule before anyone tries them:
 
 A 1-page acceptable use policy covers most of this. It names the approved tools, says what data can go where, and states who reviews AI output. Most small firms can write one in an afternoon once the audit shows what people are already doing.
 
+## AI Tools for Accounting Firms: What to Look For
+
+There is no single best AI for accounting firms. The right tool depends on the task, the data it touches and how it fits your review chain. I don't rank products, because the choice should follow what the audit finds.
+
+AI bookkeeping tools, document extraction tools and AI features inside your practice management or ledger software all work on client data, so each needs the same checks. Where does the data go, who can see it, and does a person review the output? A general chatbot such as ChatGPT can help with a client email template or a spreadsheet formula built from made-up numbers. It should not receive real client records unless your firm has approved that use in writing. Free tools are the main risk, but a paid plan does not settle the question by itself. Read the data terms.
+
+AI agents for accounting firms are the next step up. They act on their own across several tools, for example by chasing a missing document and filing it when it arrives. They need a documented process underneath them and a named reviewer. If the process is not written down yet, start there.
+
+## Benefits and Disadvantages of AI in Accounting
+
+The benefits of AI in accounting show up in admin hours. Document chasing, first-draft client emails, file sorting and call summaries take less staff time, and busy season gets easier to manage. Partners also get a reason to write down knowledge that has only lived in their heads.
+
+The disadvantages are real too. Client data can leak if staff use public tools. AI output can be wrong and sound certain. A process nobody documented gets harder to fix once it is automated. And a tool nobody owns drifts out of date. Those are the reasons the audit looks at data rules and review chains before it looks at tools.
 ## How to Prepare for the Audit
 
 A few hours before the kickoff call is enough.
@@ -172,6 +185,17 @@ Usually the admin work around the professional work: chasing missing documents, 
 
 Yes, and it can be short. A 1-page policy that names approved tools, says what client data can go where, and states who reviews AI output covers most of the risk for a small practice. The audit shows what it needs to say by finding out what staff already do.
 
+### What Does AI Audit Readiness Require?
+
+Four things. Documented processes, so you know what you would be changing. Clean enough data that a tool can read it. A written rule on which client data can go into which tools. And a named person who reviews AI output and owns each system. Without those, the first AI project tends to stall or create risk.
+
+### Are CPAs in Danger of AI?
+
+My view is that the judgment, the client relationships and the professional sign-off stay with people. What changes is the routine work around them. Firms that learn which admin tasks AI can take on safely will have more time for the advisory work clients value. I can't predict how the profession will change over time, and your professional bodies are the right source for guidance on that.
+
+### How Is AI Being Used in Audit and Accounting?
+
+In small firms, mostly around the edges: extracting data from uploaded documents, drafting routine emails, summarizing notes, flagging unusual transactions for a reviewer and tracking missing items. Each use still goes through a human review before it reaches a client.
 ---
 
 If your firm is already using AI in pockets and you want a clear picture before the next busy season, [see how the AI Readiness Audit works and what each tier costs](/ai-readiness-and-ai-audits).
