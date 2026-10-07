@@ -9,11 +9,11 @@ articleType: "cluster"
 
 ## Why Smart Founders Make These Mistakes
 
-The AI strategy mistakes that cost small businesses the most time and money are not made by careless founders. They are made by engaged, intelligent founders who are moving fast, trying to improve their business, and working from incomplete information.
+The AI strategy mistakes that cost small businesses the most time and money come from engaged, intelligent founders who are moving fast, trying to improve their business, and working from incomplete information.
 
-Most of these mistakes are invisible when they happen. They look like progress. A new tool is added, a new automation is running, a new capability has been acquired. The cost only becomes clear later, when the system fails, the team stops using it, or the investment cannot be connected to any measurable outcome.
+Most of these mistakes are invisible when they happen. They look like progress. A new tool is added, a new automation is running, a new capability has been acquired. The cost only becomes clear later, when the system fails, the team stops using it, or the investment cannot be tied to any measurable outcome.
 
-Understanding these patterns is worth the time not because they prove you should avoid AI, but because avoiding them is what makes the difference between AI that builds real operational capability and AI that generates ongoing maintenance work with uncertain return.
+Understanding these patterns is worth the time because avoiding them separates AI that builds real operational capability from AI that generates maintenance work with uncertain return.
 
 ---
 
@@ -47,7 +47,7 @@ Adoption failure happens for a few different reasons. Sometimes the system was b
 
 The best technical implementations fail when adoption is treated as an afterthought. The people who will use the system need to be involved in understanding the problem it solves, given adequate time to learn it, and supported through the adjustment period. A realistic adoption timeline for a significant workflow change is four to eight weeks, not two days.
 
-This is not a technology problem. It is a leadership and change management problem, and it needs to be planned for with the same rigor as the technical implementation.
+Adoption is a leadership and change management problem, and it needs to be planned for with the same rigor as the technical implementation.
 
 ---
 
@@ -77,13 +77,39 @@ The third mistake is measuring too early. Most AI implementations take four to e
 
 ## Mistake 6: Treating AI as a One-Time Project
 
-AI strategy is not a project that ends. It is an ongoing capability that grows over time through regular maintenance, iteration, and expansion.
+AI strategy has no end date. It is a capability that grows over time through regular maintenance, iteration, and expansion.
 
 Founders who treat an AI implementation as a one-time project typically see one of two outcomes. Either the systems gradually degrade as the business evolves and nobody maintains them, or the initial implementation is treated as the full extent of what AI can do for the business and the potential for compounding improvement is never captured.
 
-Building an AI strategy means building a practice. That includes quarterly reviews to assess what is working and what needs adjustment, a named owner for each system with responsibility for ongoing maintenance, and a roadmap that extends the capability over time rather than treating the first implementation as the conclusion.
+Building an AI strategy means building a practice. That includes quarterly reviews to assess what is working and what needs adjustment, a named owner for each system with responsibility for maintenance, and a roadmap that extends the capability over time rather than treating the first implementation as the conclusion.
 
 The businesses that get the most from AI over a three-to-five year horizon are the ones that treated year one as a foundation rather than a finish line.
+
+---
+
+## Mistake 7: Publishing AI Content Without an SEO Strategy
+
+Small businesses often use AI to produce blog posts quickly, then wonder why nothing happens. Output went up and no one decided which searches the business should win.
+
+A workable SEO strategy for small business starts with a short list. Pick the 10 pages that would produce business if they ranked, write down the question each one answers, and check them monthly in Search Console. That small business SEO strategy beats 100 generic posts, because every piece has a job.
+
+The best SEO strategy for small business is the one you can measure. Track impressions, clicks, and inquiries from search, and set a stopping condition before you start. The [SEO reporting for founders](/blog/seo-reporting-for-founders) guide shows the 5 numbers to read, and [SEO strategy for 2026](/blog/seo-strategy-2026) covers how to sequence the work.
+
+---
+
+## What AI Failures Look Like in Small Businesses
+
+Two hypothetical examples show how these mistakes play out.
+
+A 12-person firm buys a customer chatbot before writing down the 10 questions customers actually ask. The bot answers confidently and incorrectly, the team spends hours apologizing, and the tool gets switched off in a month.
+
+Another team automates invoice reminders from a CRM with stale contact data. Reminders go to clients who already paid. Both failures trace back to the mistakes above: a tool bought before the problem was defined, and a process automated before it was fixed.
+
+---
+
+## Do You Need a Business Advisor for Small Businesses Adopting AI?
+
+Not always, but an outside view helps at the front end, where most of these mistakes start. A business advisor for small businesses can pressure-test the problem definition, the adoption plan, and the measurement baseline before money is spent. An AI readiness audit, for example, runs $750 to $5k depending on scope. Compare that with months of rework on the wrong tool.
 
 ---
 
@@ -91,7 +117,7 @@ The businesses that get the most from AI over a three-to-five year horizon are t
 
 Most of these mistakes share a common root: acting before the thinking is complete. Moving from "I want to use AI" directly to implementation, skipping the problem definition, process design, team alignment, and measurement baseline steps.
 
-The remedy is not to move more slowly in general. It is to invest more time in the front end of each project, before a tool is selected or an automation is built. Thirty minutes spent defining a problem precisely, scoping the outcome, and planning the adoption approach prevents days of rework and months of underperformance.
+The remedy is more time at the front end of each project, before a tool is selected or an automation is built. Thirty minutes spent defining a problem precisely, scoping the outcome, and planning the adoption approach prevents days of rework and months of underperformance.
 
 Building a checklist for each implementation that includes problem definition, process review, tool selection rationale, adoption plan, documentation plan, and measurement baseline produces better projects almost regardless of what the checklist contains, because the act of completing it forces the thinking that skipping it would defer.
 

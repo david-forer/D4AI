@@ -14,15 +14,15 @@ Most automation projects fail quietly.
 
 They launch with optimism. They work, technically. The software does what it was designed to do. Notifications go out. Tasks get created. Data moves from one place to another.
 
-But six months later, no one uses it. Or worse, everyone uses it and wishes they did not.
+But six months later, no one uses it. In the worse case, everyone uses it and wishes they did not.
 
 The automation created more work instead of less. It introduced new problems instead of solving old ones. It became something the team works around instead of something that helps.
 
-This is not a tools problem. It is a diagnosis problem.
+The tools were fine. The diagnosis was missing.
 
 Automation fails when you skip the audit. When you build before you understand. When you assume you know what needs to be automated without validating that assumption.
 
-The failures are predictable. They just happen slowly enough that no one connects them back to the original decision.
+The failures are predictable. They happen slowly enough that no one connects them back to the original decision.
 
 ## Failed Automation Stories
 
@@ -32,7 +32,7 @@ A sales team automated lead routing. Every time a form was submitted, a lead was
 
 But it ignored context. High-value leads went to whoever was next, regardless of whether they had experience with that industry. Urgent leads sat in queues because the system had no prioritization logic. The automation created equality at the cost of effectiveness.
 
-The team kept using it because turning it off felt worse than living with it. But no one was happy. The automation just made a structural problem harder to see.
+The team kept using it because turning it off felt worse than living with it. But no one was happy. The automation made a structural problem harder to see.
 
 Or consider the automation that introduced new bottlenecks.
 
@@ -40,7 +40,7 @@ A marketing team automated content approvals. Every draft triggered a notificati
 
 In practice, it created a single point of failure. The approver became a bottleneck. If they were unavailable, everything stopped. The automation removed flexibility instead of adding it.
 
-These are not edge cases. They are the norm. Most automation projects succeed technically but fail operationally because they were designed without understanding the system they were meant to improve.
+Cases like these are the norm. Most automation projects succeed technically but fail operationally because they were designed without understanding the system they were meant to improve.
 
 ## Why Automation Fails Before It Starts
 
@@ -50,7 +50,7 @@ The first is bad inputs.
 
 Automation does not fix bad data. It scales it. If your CRM has duplicate records, automating outreach will send duplicate emails. If your task system has vague descriptions, automating task creation will create vague tasks faster.
 
-Bad inputs do not become good outputs just because software handles them. They become bad outputs at scale.
+Software does not turn bad inputs into good outputs. They become bad outputs at scale.
 
 The second reason is undefined ownership.
 
@@ -68,7 +68,7 @@ These problems are invisible during implementation. They only surface later, whe
 
 ## What an Audit Actually Prevents
 
-An audit is not about checking boxes. It is about understanding the system before you change it.
+An audit exists to help you understand the system before you change it.
 
 When you audit a process, you are asking questions most teams skip.
 
@@ -82,7 +82,7 @@ It identifies edge cases. Automation handles the happy path well. It struggles w
 
 It clarifies dependencies. What other systems does this process touch? What breaks if you change how information flows? What assumptions are baked into the current workflow that automation might violate?
 
-These are not theoretical questions. They are the difference between automation that helps and automation that creates new problems.
+The answers separate automation that helps from automation that creates new problems.
 
 ## Audit vs Implementation
 
@@ -116,7 +116,21 @@ An audit prevents these quiet failures by surfacing misalignment before it gets 
 
 It asks whether the problem is worth solving. It validates that the proposed solution actually addresses the root cause. It ensures that automation will support the team instead of constraining them.
 
-This is not about perfection. It is about avoiding predictable mistakes.
+The goal is to avoid predictable mistakes.
+
+## Why Marketing Automation Fails in Small Businesses
+
+Marketing automation is the case I see most often in small firms. The failure usually traces back to the three causes above.
+
+The contact list has duplicates, so the same lead gets the same sequence twice. Nobody owns the sequences, so they keep sending after the offer or pricing has changed. And no one defined what a good result looks like, so open rates get treated as success while no one checks whether the emails produce booked calls.
+
+A short audit of the list, the owner and the target result before you build any sequence prevents most of this.
+
+## What Is the Problem With Automation?
+
+Automation repeats whatever process you give it. If the process is unclear, unowned or aimed at the wrong goal, the software repeats that faithfully and faster.
+
+That is why a lead routing rule or an approval flow can run without errors and still make the business worse. The software did its job. The process underneath it was never examined.
 
 ## Where to Start
 

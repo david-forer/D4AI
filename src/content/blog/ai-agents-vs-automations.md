@@ -32,7 +32,7 @@ Where automation breaks down is at the boundary of its rules. Inputs it was not 
 
 ## What an AI Agent Is
 
-An AI agent is goal-directed rather than rule-directed. Instead of following a fixed sequence of instructions, it works toward a defined objective, making decisions along the way about how to achieve it.
+An AI agent is goal-directed. It works toward a defined objective and decides along the way how to reach it, with no fixed sequence of instructions to follow.
 
 An agent is typically equipped with a set of tools it can use: the ability to search the web, read and write files, query databases, send messages, browse websites, generate text, or call external APIs. When given a goal, the agent determines which tools to use, in what sequence, based on what it encounters as it works.
 
@@ -80,7 +80,7 @@ Draft generation with contextual awareness is another strong use case. When the 
 
 ## The Hybrid Architecture
 
-In practice, the most effective operational systems combine both. Automations handle the predictable, high-volume backbone. Agents handle the parts that require judgment. The two work together rather than competing.
+In practice, the most effective operational systems combine both. Automations handle the predictable, high-volume backbone. Agents handle the parts that require judgment. The two work together.
 
 A lead management system might use automation to capture and route every incoming lead to the right team member with a basic notification. For leads above a certain value threshold, an agent is triggered to research the company, prepare a briefing, and draft a personalized outreach message. The automation handles volume and consistency. The agent adds intelligence where it creates the most value.
 
@@ -96,7 +96,25 @@ Automation failures are usually easy to detect: the process either ran or it did
 
 Agent failures are more varied. An agent might complete a task but reach a wrong conclusion because of how it interpreted ambiguous information. It might take an unexpected path through a multi-step process that produces a technically valid but unintended result. It might perform differently on different runs of the same task because the information it encountered varied slightly.
 
-Monitoring agents requires more attention to output quality, not just to whether the run completed. Building in human review checkpoints for high-stakes agent outputs is a reasonable safeguard until the agent's behavior on a given task is well-understood and trusted.
+Monitoring agents requires attention to output quality as well as to whether the run completed. Building in human review checkpoints for high-stakes agent outputs is a reasonable safeguard until the agent's behavior on a given task is well-understood and trusted.
+
+---
+
+## Are AI Agents the Same as Automations?
+
+No. An AI agent is a different kind of tool, though in practice the two get combined. Take the client request example above. The automation follows 3 fixed steps on every form. The agent reads what the client wrote and decides what to do with it. If you swap the agent for a fixed rule, the judgment steps disappear.
+
+The question to ask of any tool sold as an agent is whether it picks its own next step based on what it finds. If every step is fixed in advance, it is an automation with an AI label.
+
+## What Is AI Agent Automation?
+
+AI agent automation means an agent runs inside an automated workflow. A trigger starts the process, the agent handles the step that needs judgment, and the automation carries the result onward. The lead example in the hybrid section works this way. The automation captures and routes the lead, and the agent does the research and drafting for high-value ones.
+
+Most small firms get the best results by automating the predictable parts first and adding an agent to one judgment step at a time.
+
+## Free AI Agents and Automations: What to Expect
+
+Many automation and agent platforms offer free tiers, and they are a reasonable way to test a process before you commit. Check the run limits and what happens when you hit them, because agents consume more per run than a simple automation. Once the process matters to the business, assign an owner and budget for monitoring, since a free tool with no one watching it is where quiet failures start.
 
 ---
 

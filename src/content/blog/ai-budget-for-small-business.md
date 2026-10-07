@@ -104,6 +104,16 @@ Two nos out of 3 means you stop spending and fix rather than extend. That decisi
 
 A budget that cannot be stopped is a subscription. The number at the top of this page is worth having, and the gate between quarter 2 and quarter 3 is worth more. Both belong inside the wider sequencing decision in [AI strategy for small businesses](/blog/ai-strategy-for-small-businesses), because the amount is downstream of knowing what you are trying to change first.
 
+## An AI budget spreadsheet you can build in an hour
+
+You do not need a paid AI budget planner or a generator to do this. A free spreadsheet is enough, and it is better if you build it yourself because the cells force you to name each cost.
+
+Make one row for each of the 4 lines: tools, build, training, and internal time. Add columns for planned monthly cost, planned one-time cost, actual to date, an owner, and a review date. Put the tier you chose from the table above in a header cell so every number has a ceiling to answer to.
+
+Add a second tab that lists every subscription with its renewal date and the person who owns it. That tab is where most small budgets get caught out, because tools get added in a hurry and never come off.
+
+Fill the internal time row first. It is the line a free template from the internet will not have, and it is usually the largest gap between what founders plan and what they spend.
+
 ## Questions founders ask
 
 ### How much should a small business budget for AI?
@@ -125,3 +135,7 @@ Internal time. One workflow automation takes 40 to 80 hours of your team's time 
 ### How do small businesses avoid blowing their AI budget?
 
 Release the money in quarterly gates and move on only when the last system is in daily use. At 6 months, if 2 of the 3 review questions come back no, stop spending and fix what you have. Get the first thing working before you buy the second.
+
+### Can AI create a small business AI budget for me for free?
+
+It can draft the layout, add up the lines and turn your tier into monthly figures. It cannot know how many hours your team will lose to testing, or which subscriptions you already pay for. Give it your real tool list and your hourly rates, then check every number against the spreadsheet you keep. The draft is free. The judgment on what to cut is yours.

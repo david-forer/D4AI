@@ -13,7 +13,7 @@ You do not automate a business. You automate workflows.
 
 The distinction matters because most founders skip the design step entirely. They identify a pain point, find a tool, and start connecting things. Six weeks later the automation breaks, nobody knows why, and the team quietly goes back to doing it manually.
 
-The problem was not the tool. It was the sequence.
+The sequence caused the failure.
 
 ## What a Workflow Actually Is
 
@@ -25,7 +25,7 @@ Before any tool discussion, the workflow needs to exist on paper.
 
 ## The Three Workflow Categories in a Small Business
 
-Not all workflows are equally automatable or equally valuable to automate. Organizing them by category helps prioritize.
+Not all workflows are equally automatable or equally worth automating. Organizing them by category helps prioritize.
 
 **Client-facing workflows** cover everything that touches the client relationship: intake, onboarding, delivery milestones, follow-up, and offboarding. These have the highest visibility and the highest cost when they fail. They also tend to be the most documented because client expectations make them necessary to standardize.
 
@@ -61,7 +61,7 @@ A client submits an intake form with a free-text field describing their situatio
 
 The AI step handles interpretation. The automation step handles execution. Together they cover workflows that either layer alone cannot.
 
-## The Five Highest-Leverage Workflow Automation Opportunities
+## The Five Highest-Value Workflow Automation Opportunities
 
 **Client intake and onboarding.** Every new client triggers a predictable sequence: contract, kickoff scheduling, information gathering, system setup, internal briefing. This sequence is the same every time. Automating it means the client experience is consistent and the team is not spending hours on administrative tasks that add no value.
 
@@ -72,6 +72,42 @@ The AI step handles interpretation. The automation step handles execution. Toget
 **Reporting and visibility.** Weekly reports, status updates, and performance summaries assembled manually represent hundreds of hours per year in administrative cost. Automated reporting means the data surfaces without someone building it. Decisions get made faster on more current information.
 
 **Internal task routing and handoffs.** When work moves between people or departments, information gets lost and delays accumulate. Automated handoffs mean the next person receives complete information at the right time without the previous person having to remember to send it.
+
+## Workflow Automation for Small Business: Examples
+
+Three workflow automation examples show the pattern for a firm of 5 to 20 people.
+
+A lead fills in the contact form. Automation creates the CRM record and sends the confirmation. An AI step reads the free-text field and tags the lead by service. A person gets the tagged lead in their queue.
+
+A client signs. Automation creates the project folder, the task list and the kickoff invite. An AI step drafts the first brief from the intake answers, and the project owner edits it.
+
+Friday arrives. Automation pulls the week's numbers from your tools into one sheet. An AI step writes the 5-line summary, and you read it Monday morning.
+
+Each example has a consistent trigger, a defined output and an owner. That is the test from the readiness section above.
+
+## Which AI Is Best for Workflow Automation?
+
+It depends on the step. Choose the platform that will run the workflow first, then pick the AI model for the one step that needs interpretation. Test it on a batch of your own past inputs, such as 20 real intake forms, and compare what comes back to what your team would have done.
+
+The model that reads your messy emails best is the right one for you, whatever a ranking says.
+
+## Can AI Produce a Business Process Workflow?
+
+AI can draft one. Describe how a task runs and it will give you steps, decision points and a suggested owner for each. Treat that as a first draft, because it only knows what you told it. The exceptions and workarounds your team handles every week will be missing until you add them.
+
+Use the draft to speed up the documentation step in the design sequence above, then walk it through with the person who does the work.
+
+## Free Options and What to Pay For
+
+Many workflow automation platforms offer a free plan with limits on runs or connected steps. Check current terms before you build on one, because limits change. A free plan is a fine place to test a single workflow. Once the workflow touches clients or revenue, the cost of an outage is higher than the subscription, so budget for a paid tier.
+
+An AI workflow automation free setup is realistic for a pilot. It does not replace the design step.
+
+## Choosing Workflow Automation Software and Services
+
+For workflow automation software, check 4 things: it connects to the tools you already run, it logs every run so you can see failures, it supports a human review step, and the price holds at your real volume.
+
+For outside help, hire for design before build. A good provider asks to see your current workflow before proposing any tool. If the first conversation is about software, the sequence is wrong.
 
 ## The Design Step Most Founders Skip
 
@@ -100,7 +136,7 @@ If all four are true, build the automation. If any are not, invest in the prepar
 
 ---
 
-Workflow automation is not a tool category. It is a design discipline.
+Workflow automation is a design discipline.
 
 The businesses that treat it that way build automation that compounds. The ones that skip the design build automation they maintain forever.
 

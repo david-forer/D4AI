@@ -44,7 +44,7 @@ That level of specificity is what makes training effective.
 
 The gap analysis starts with the finish line, not the starting line. Before assessing anyone's current skills, define what AI proficiency looks like for each role in your business.
 
-This does not require predicting every possible AI use case. It requires identifying the highest-leverage AI applications for each function and defining the specific skills needed to execute them.
+This does not require predicting every possible AI use case. It requires identifying the AI applications with the biggest payoff for each function and defining the specific skills needed to execute them.
 
 For a client services role, the target state might include: drafting initial client responses using AI with fewer than two rounds of editing, using AI to summarize client communications before meetings, and maintaining a personal prompt library for the five most common response types.
 
@@ -64,7 +64,7 @@ Self-assessment is imperfect. People tend to overestimate their proficiency in a
 
 **The practical skills check** asks each team member to complete two or three tasks from their actual job using AI. Review the outputs and the process. This reveals the gap between perceived skill and actual skill far more accurately than any survey. You will often find that someone who rates their AI confidence as high produces outputs that require extensive editing, and someone who rates themselves as low actually has a strong prompting instinct that just needs direction.
 
-**Direct observation** is the most time-consuming option but produces the richest information. Sitting with a team member for thirty minutes while they work through a real task with AI reveals the friction points, the workarounds, and the habits that neither surveys nor task reviews can capture.
+**Direct observation** is the most time-consuming option but produces the richest information. Sitting with one team member for thirty minutes while they work through a real task with AI reveals the friction points, the workarounds, and the habits that neither surveys nor task reviews can capture.
 
 ---
 
@@ -117,15 +117,15 @@ Run the highest-priority training first. Do not try to close every gap simultane
 
 The first gap analysis establishes your baseline. After that, a lighter-weight version should run every six months.
 
-The AI landscape changes fast enough that new gaps emerge regularly as tools evolve and new use cases become viable. A team that was proficient six months ago may have significant gaps today simply because the capabilities of the tools they use have expanded substantially.
+AI tools change fast enough that new gaps emerge regularly as tools evolve and new use cases become viable. A team that was proficient six months ago may have significant gaps today simply because the capabilities of the tools they use have expanded substantially.
 
-The ongoing gap analysis also serves as a progress measurement. It shows where previous training investments closed gaps and where additional work is needed, making the ROI of your training program visible over time.
+Each repeat round also measures progress. It shows where previous training investments closed gaps and where additional work is needed, making the ROI of your training program visible over time.
 
 ---
 
 ## Common Mistakes in AI Training Gap Analyses
 
-**Assessing tools instead of skills.** The question is not whether people know how to use a specific platform. It is whether they can produce reliable, high-quality outputs using AI for their specific job. A tool-focused assessment misses the underlying skill gaps.
+**Assessing tools instead of skills.** Ask whether people can produce reliable, high-quality outputs with AI for their specific job. Knowing a platform's menus tells you little, and a tool-focused assessment misses the underlying skill gaps.
 
 **Skipping the target state definition.** Without a defined target state, you cannot identify a gap. You can only describe current behavior. Many gap analyses stop at this point and produce training plans that are disconnected from business outcomes.
 
@@ -135,9 +135,37 @@ The ongoing gap analysis also serves as a progress measurement. It shows where p
 
 ---
 
+## An AI Training Gap Analysis Example
+
+Here is a hypothetical example for a 12-person home services company. The target state for the office coordinator says: use AI to draft customer follow-ups in under five minutes each, and keep a shared prompt doc for the six most common message types.
+
+The practical skills check shows she drafts well but writes every prompt from scratch. That is a process gap, because the company has no shared prompt doc. The estimator, on the other hand, rates himself a 4 out of 5 on the survey and produces quotes that need heavy editing. That is a skill gap.
+
+Two people, two different fixes. A single group workshop would have missed both.
+
+## Skill Gap Analysis Tools
+
+You do not need dedicated software for a team of 5 to 20. A spreadsheet with one row per person, one column per target skill, and a score from 1 to 4 does the job. Add a column for gap type and a column for the planned fix.
+
+Survey forms from any tool you already use cover the self-assessment. Skills-platform vendors sell assessment tools too, but they make sense once you have more people and more roles than one spreadsheet can hold. There is no need to look for a GitHub template either. The structure above fits in one tab.
+
+## Can AI or ChatGPT Do a Gap Analysis?
+
+A chat assistant can help with parts of it. It can draft the survey questions, turn interview notes into a list of themes, and suggest a target skill list for a role that you then edit.
+
+It cannot tell you where your people stand. That comes from the survey answers, the practical task, and the thirty minutes you spend watching someone work. Feed the assistant those results afterward and ask it to sort them into the four gap types, then check its sorting yourself.
+
+Do not paste employee names and performance details into a public tool without checking your company's data rules.
+
+## What Is the Best Tool for a Gap Analysis?
+
+For most small teams, the best tool is the practical skills check, supported by a spreadsheet. Software cannot replace watching someone do real work with AI.
+
+If you run out of time or want an outside view, AI gap analysis consulting is one option. A consultant designs the target states, runs the checks, and hands you a ranked training plan. I do this as part of an [AI readiness audit](/ai-readiness-and-ai-audits).
+
 ## The Foundation of Effective AI Training
 
-A training gap analysis is not the most exciting part of building AI capability in your team. It is the most important part. The quality of everything that follows, the training design, the implementation support, the measurement, depends on the accuracy of the map you build here.
+A training gap analysis is the least exciting part of building AI capability in your team, and the most important. The quality of everything that follows, the training design, the implementation support, the measurement, depends on the accuracy of the map you build here.
 
 Businesses that skip this step invest in training that does not address the real gaps, experience low adoption because the training does not connect to actual work, and eventually conclude that AI training is not worth the investment. The problem was never the training itself. The problem was that the training was built on guesswork rather than evidence.
 

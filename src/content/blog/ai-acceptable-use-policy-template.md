@@ -16,7 +16,7 @@ Most AI policies are written for companies with a compliance officer. This one i
 - Before writing the policy, decide which accounts the team may use and write down 4 real examples of what counts as client data in your firm.
 - An AI policy should start permissive, because a policy that opens with a list of bans gets read as an obstacle and routed around.
 - Definitions sections, vendor lists, regulatory recitals and disciplinary ladders add length to an AI policy without adding control in a firm of 20 or 30 people.
-- An AI policy holds when it is walked through in person in 15 minutes, names one person to ask, and treats the first breach as a tooling problem rather than a disciplinary one.
+- An AI policy holds when it is walked through in person in 15 minutes, names one person to ask, and treats the first breach as a tooling problem to fix.
 
 ---
 
@@ -79,6 +79,22 @@ Without the last sentence this clause does nothing, because the incidents you ne
 
 ---
 
+## Using This as a Company AI Policy Example
+
+The 6 clauses double as a corporate AI policy example for a small firm. Paste them into a Word or Google Doc, fill the brackets, and you have a company AI policy you can circulate the same day. If you search for a generative AI policy template, most of what you find covers the same ground at far greater length. Clauses 1 to 4 are the generative AI acceptable use rules. Clauses 5 and 6 cover the client and incident side that longer documents tend to bury.
+
+A few adjustments by organization type.
+
+For a nonprofit, clause 3 needs your own examples: donor records, beneficiary details and grant applications that name individuals. Clause 5 usually points at funder agreements, since funders sometimes set their own AI rules.
+
+If a client has its own AI clause, add that client's rule as a separate page, as covered in the section on when one page stops being enough.
+
+If someone asks about NIST, a NIST-aligned policy is a larger exercise built around the NIST AI Risk Management Framework. A 30-person firm does not need that to get control of day-to-day use, and a client or funder that asks for it should say so in writing.
+
+Treat the template as the company AI use policy for your firm, then change it whenever a real incident or contract says the line is in the wrong place.
+
+---
+
 ## What to leave out, and why
 
 Most of the length in a long AI policy comes from 4 things that do not belong in a firm of your size.
@@ -133,9 +149,9 @@ Three signals, and none of them is headcount alone.
 
 A client writes an AI clause into a contract that is stricter than yours. Their rule now governs that engagement and you need it written down separately.
 
-You start putting client data through a specific approved setup rather than keeping it out. That is a deliberate exception and it needs its own page describing the tool, the terms checked, and who approved it.
+You start putting client data through a specific approved setup instead of keeping it out. That is a deliberate exception and it needs its own page describing the tool, the terms checked, and who approved it.
 
-You deploy something that acts on its own rather than producing drafts. An agent that sends, files or updates records raises questions this policy does not answer, and they should be settled before it runs. That is the argument in [when to use an AI agent](/blog/when-to-use-an-ai-agent).
+You deploy something that acts on its own instead of producing drafts. An agent that sends, files or updates records raises questions this policy does not answer, and they should be settled before it runs. That is the argument in [when to use an AI agent](/blog/when-to-use-an-ai-agent).
 
 Short of those, adding pages adds nothing you can enforce.
 
@@ -172,3 +188,15 @@ The template makes you pick a side: no disclosure for routine help, the same as 
 ### What should I do the first time someone breaks the AI policy?
 
 Deal with the exposure first: which tool, which account, and what was in the document. Then ask why the approved route lost, because it was usually slower or unclear at the moment of the task. People take the shortcut when the main road is blocked, so clear the road.
+
+### Is there a Word version of this AI policy template?
+
+Copy the clause text into a Word or Google Doc. It is about 300 words, so formatting takes minutes. Keep the approved tool list in a separate editable file so the policy itself stays stable.
+
+### Can a nonprofit use this AI policy template?
+
+Yes. Swap the clause 3 examples for donor records, beneficiary details and anything a funder agreement covers. Keep the other 5 clauses as written, and name one staff member in every blank.
+
+### Does this template follow the NIST AI framework?
+
+No, and it does not claim to. It is a working rule set for a small firm. NIST publishes an AI Risk Management Framework for organizations that need a formal structure, which is a bigger project than a one-page policy. Start with the page, and move to the framework only if a client or funder requires it.

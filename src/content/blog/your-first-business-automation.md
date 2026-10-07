@@ -14,7 +14,7 @@ Most businesses that struggle with automation do not struggle because the techno
 
 The first automation a business builds matters more than people expect. A well-chosen first automation builds organizational confidence, demonstrates clear value, and creates a template for the automations that follow. A poorly chosen one creates a maintenance burden, introduces unreliability into a process that was previously predictable, and makes the next attempt harder because skepticism has formed around the idea.
 
-The selection decision is not a technical one. It is a strategic one, and it is worth taking seriously.
+Choosing the first automation is a strategic decision, and it is worth taking seriously.
 
 ---
 
@@ -42,9 +42,9 @@ There are four qualities that make a process a good candidate for a first automa
 
 ---
 
-## Good Starting Points for Most Small Service Businesses
+## First Business Automation Examples for Small Service Businesses
 
-Several categories of work meet all four criteria consistently and produce first automations that hold up well.
+Several categories of work meet all four criteria consistently and produce first automations that hold up well. These are the first business automation examples I see work most often.
 
 **Lead intake and notification.** When a new inquiry arrives through a contact form, a booked call, or an email, an automation that captures the lead information, sends a structured notification to the right team member, and creates a record in a CRM or spreadsheet is high-frequency, rule-based, low-risk, and addresses a common friction point: important leads going unnoticed or taking too long to reach the right person.
 
@@ -80,9 +80,33 @@ The next automation should build on what was learned from the first. Which part 
 
 Over time, the individual automations connect. The lead intake automation feeds the same system as the appointment confirmation automation. The status notification automation draws on the same project management data as the reporting automation. What starts as independent processes gradually becomes an integrated operational layer.
 
-That integration is the goal. But it is reached by building one solid automation at a time, starting with the right first one, and doing each subsequent build with the same care and specificity that the first one required.
+That integration is the goal, and it is reached by building one solid automation at a time, starting with the right first one, and doing each subsequent build with the same care and specificity that the first one required.
 
 The businesses with the most effective automation programs are almost never the ones that launched the most ambitious first project. They are the ones that built a reliable first automation, learned from it, and built consistently from there.
+
+---
+
+## Common Questions About First Automations
+
+### What Does Business Automation Do?
+
+It runs a repeatable task without someone starting each step by hand. A form arrives, a record is created, the right person is notified, a reminder goes out on schedule. The person's time goes to the work that needs judgment.
+
+### What Can I Automate to Make Money?
+
+Automation protects revenue more often than it creates it. Lead intake that notifies the right person within minutes, appointment reminders that cut no-shows, and follow-up messages that go out on schedule all keep income you already earned from slipping away. Pick the one closest to a sale.
+
+### Which Companies Build First Business Automation Tools?
+
+Tools like Zapier and n8n handle trigger-and-action workflows, and many scheduling and CRM tools include built-in automations. For a first build, check what you already pay for before adding another platform.
+
+### Will RPA Be Replaced by AI?
+
+RPA follows fixed rules through screens and systems. AI handles messy inputs such as free-text emails. I expect them to work side by side for a long time, since a rule-based step is cheaper and more predictable when the input is clean. That is why intelligent business automation, which adds AI to a workflow, belongs after a reliable first rule-based automation.
+
+### When Did Automation Start?
+
+Mechanical automation goes back centuries, and the Jacquard loom of 1804 is a common starting point. For your business it starts the day the first trigger-and-action workflow goes live, which is why that first one deserves the care described above.
 
 ---
 

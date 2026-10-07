@@ -25,7 +25,7 @@ A useful SEO report is 1 page and contains 5 numbers: impressions, clicks, avera
 
 Most founders get the opposite. A 40-slide deck arrives on the 8th, it contains domain authority, keyword rankings for 200 phrases, a backlink count, a bounce rate, and a paragraph about algorithm updates. It takes 30 minutes to read and answers no question the founder actually has, which is whether the money is producing anything.
 
-The gap is not that agencies hide bad results. It is that reporting templates are built to demonstrate activity, and activity is the easiest thing in the world to produce. You need a report built to support one decision: continue, change, or stop.
+Reporting templates are built to demonstrate activity, and activity is the easiest thing in the world to produce. A founder needs a report built to support one decision: continue, change, or stop.
 
 ## The 5 numbers a founder should read every month
 
@@ -40,6 +40,8 @@ The gap is not that agencies hide bad results. It is that reporting templates ar
 **What shipped.** Pages published, pages fixed, technical items closed. Plain list, with dates.
 
 Five numbers, 1 page. A founder can read it in 3 minutes and know whether to ask a question.
+
+This table doubles as a free SEO reporting template. Copy it into a spreadsheet or a single document, add a column for each month, and it is the whole report. Search Console is free, so the template costs nothing to run.
 
 | Number | Where it comes from | What it tells you |
 |---|---|---|
@@ -136,6 +138,30 @@ Domain authority and domain rating are scores made up by tool vendors, and Googl
 ### How do I know if my SEO agency is working?
 
 Ask whether the report names a decision, shows the same numbers every month, and whether you own the Search Console and analytics accounts yourself. Then check the organic inquiries. If nobody can tell you how many people found you through search, that is a gap worth closing.
+
+### What is the best SEO reporting for founders?
+
+The shortest version that still ends in a decision. One page, the 5 numbers above, the same layout every month, and a line at the bottom that says continue, change, or stop. Anything longer is usually there to fill a deck.
+
+### Is there a free SEO reporting template?
+
+Yes, and it is the table in this post. Search Console supplies impressions, clicks, and position at no cost. The organic inquiries column comes from the form field and first-call question described above, and the shipped list is a dated note you keep yourself.
+
+### How do I do SEO reporting each month?
+
+Open Search Console, filter to your 10 target pages, and read impressions, clicks, and position against the previous 3 months. Add the inquiries you can trace to search, paste in the shipped list, and write 2 sentences on what changes next. The 15-minute review above is the full routine.
+
+### Is SEO still relevant in 2026?
+
+The way to answer it for your own business is to look at your numbers. If impressions on your 10 target pages are rising and the inquiry log names pages people read before they got in touch, search is working for you. If both are flat after 6 months of steady publishing, that is the stopping condition talking, and it is more reliable than any industry opinion.
+
+### What is the 80/20 rule in SEO?
+
+The usual reading is that a small share of pages produces most of the results. The inquiry spreadsheet shows which ones for your site. That is why the report tracks 10 named pages and ignores a 200-row keyword table.
+
+### Can ChatGPT do an SEO audit?
+
+It can read a page you paste in and point out weak titles or missing headings. It cannot see your Search Console account, and it cannot know which inquiries came from search. Export the Search Console data and ask it to summarize the movement, then check the numbers yourself. The 5-number report still comes from your own accounts.
 
 ### When should I stop paying for SEO?
 
