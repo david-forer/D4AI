@@ -171,6 +171,14 @@ Long-term ROI compounds, so the measure changes over time. In year one you measu
 
 That takes a discipline most small businesses don't build in. Set a quarterly review, even a brief one, that compares current metrics to the baseline, and adjust how you read them as the business changes. The firms that get the most from AI over several years keep measuring and adjusting as the business grows. For a broader framework, see [how to measure whether your AI strategy is working](/blog/measuring-ai-strategy-results).
 
+## How AI Is Changing Consulting Fees and the Future of Consulting
+
+AI has changed what a consultant's hours buy. Building an automation takes less time than it did a few years ago, so a well-run engagement spends less of its budget on build hours and more on scoping, documentation and handoff. Those are the parts that decide whether results last.
+
+That is the reason to judge a proposal by what you own at the end and not by the hourly rate. For the AI future of consulting, I expect fewer open-ended retainers with vague deliverables and more fixed-scope work tied to a named process and a measured baseline.
+
+It also points to where the AI consulting opportunities sit for a small firm. They are in the repeatable work you already have, such as intake, follow-up and reporting, where one project can pay for itself. Open-ended exploration rarely does.
+
 ## Red Flags in Promised Outcomes
 
 Some claims should make you slow down before signing.
@@ -204,6 +212,14 @@ Name one person who owns the systems and involve them in final testing and hando
 ### What Happens to AI Results After the Consultant Leaves?
 
 They hold when someone owns them. Without an owner, platform changes break connections, the process drifts away from how the team works and workarounds spread. Most of the issues that surface at 6 to 12 months are manageable if a quarterly review catches them early.
+
+### What Does an AI Consultant Actually Do?
+
+In this context, an AI consultant finds the processes worth improving, builds or configures the systems, trains your team and sets up the measurement. The engagement ends with a handoff that includes documentation and a named owner on your side.
+
+### What Is the Going Rate for an AI Consultant?
+
+It depends on the shape of the work. With my own clients, an AI readiness audit runs $750 to $5k, a focused project runs $3k to $25k and an ongoing retainer runs $2k to $8k. Compare any quote against the result you can measure afterward. [AI consulting cost for small business](/blog/ai-consulting-cost-for-small-business) breaks the numbers down further.
 
 ### When Should I Bring an AI Consultant Back?
 

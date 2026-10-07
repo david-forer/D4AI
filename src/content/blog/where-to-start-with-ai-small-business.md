@@ -9,11 +9,11 @@ articleType: "cluster"
 
 ## Why "Where Do I Start?" Is the Right Question
 
-The overwhelming feeling most founders have about AI is not really about AI. It is about prioritization. There are too many tools, too many use cases, too much noise about what is possible, and not enough clarity about what is actually worth doing for a business like yours.
+Most founders who feel overwhelmed by AI are really struggling with prioritization. There are too many tools, too many use cases, too much noise about what is possible, and not enough clarity about what is actually worth doing for a business like yours.
 
 Asking where to start is the right instinct. It resists the pull to do everything at once and creates the conditions for focused, high-quality implementation instead of scattered experimentation.
 
-The answer is not a specific tool or platform. It is a set of criteria that point you toward the problem worth solving first, regardless of what category it falls into.
+The answer is a set of criteria that point you toward the problem worth solving first, regardless of what category it falls into. No specific tool or platform gets you there.
 
 ---
 
@@ -47,9 +47,9 @@ These processes are strong AI candidates because automation produces consistency
 
 ### The process that limits everything downstream
 
-The third criterion is leverage. Some processes are bottlenecks that constrain everything that comes after them. If client intake is slow and manual, the downstream delivery, billing, and reporting processes all start with delayed or incomplete information. Fixing intake improves every process downstream.
+The third criterion is downstream impact. Some processes are bottlenecks that constrain everything that comes after them. If client intake is slow and manual, the downstream delivery, billing, and reporting processes all start with delayed or incomplete information. Fixing intake improves every process downstream.
 
-Look for the process that, if it were faster and more reliable, would make several other parts of the business better. That is the highest-leverage starting point.
+Look for the process that, if it were faster and more reliable, would make several other parts of the business better. That is the highest-impact starting point.
 
 ---
 
@@ -57,7 +57,7 @@ Look for the process that, if it were faster and more reliable, would make sever
 
 These processes appear at the top of the starting-point assessment for most businesses in the $1M to $5M revenue range.
 
-**Client intake and onboarding.** High volume, highly repetitive, and foundational to everything downstream. Most businesses still handle intake through email threads and manual data entry, which creates delays and inconsistencies that affect the entire client relationship.
+**Client intake and onboarding.** High volume, highly repetitive, and the base for everything downstream. Most businesses still handle intake through email threads and manual data entry, which creates delays and inconsistencies that affect the entire client relationship.
 
 **Lead and inquiry follow-up.** Speed and consistency of follow-up significantly affects conversion rates. This is an area where manual processes regularly fail through delay or dropped balls, and where automation produces measurable revenue impact.
 
@@ -67,6 +67,23 @@ These processes appear at the top of the starting-point assessment for most busi
 
 ---
 
+## Where to Start with AI as a Beginner
+
+If you have never used AI in your business, start with a pen and paper before you open any tool. List the 10 tasks your team repeats most often and write down roughly how many hours each one takes per week. Then score each task against the three criteria above. The top scorer is your starting point.
+
+That exercise costs nothing and takes an afternoon. It also protects you from the most common beginner error, which is buying a tool first and hunting for a problem afterward.
+
+### Where to Start with AI in a Small Business for Free
+
+You can start for free. Most major AI assistants have a free tier that is enough to test a first idea. Use it to draft a version of the work on a handful of real examples, such as 5 past client intake forms or 5 past follow-up emails. If the output saves your team time on those samples, the idea is worth building properly. If it does not, you have lost an afternoon and no money.
+
+Free tiers have limits on volume and privacy settings, so do not paste in confidential client data until you have checked the terms. Once a process runs daily, a paid plan or a proper automation is usually worth it.
+
+### Where to Start with AI in a Small Business from Home
+
+If you run a home-based or fully remote business, your processes already live in email, calendars, forms, and shared documents. That makes your starting point easier to see. Open your inbox and look for the message you send most often with small changes. Follow-up emails, scheduling replies, and intake questions are common candidates, and they are good first projects for a one-person or small remote team.
+
+---
 ## What Not to Start With
 
 Some use cases sound compelling but rarely produce the return that simpler, higher-volume processes do.

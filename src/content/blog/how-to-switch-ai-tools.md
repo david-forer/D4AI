@@ -75,13 +75,13 @@ The sequencing of a tool migration matters more than most businesses account for
 
 ## Managing Team Transition
 
-The operational impact of a tool transition is not limited to data and integrations. The team that uses the tool has habits, mental models, and muscle memory built around the current tool. That is not an obstacle. It is a real cost of the migration that needs to be planned for.
+A tool transition affects people as well as data and integrations. The team that uses the tool has habits, mental models, and muscle memory built around the current tool. That is a real cost of the migration and it needs to be planned for.
 
 **Communicate before the change, not at the change.** Teams that are informed about why a transition is happening, what it involves, and when it will occur adapt more quickly and with less resistance than teams that encounter the change without context. The communication should include the rationale, the timeline, and what will be different in their daily workflow.
 
 **Train on the actual workflows, not the tool features.** Onboarding that shows people how to use the tool for the specific tasks they perform every day is more effective than a general product walkthrough. Build training around the workflows that matter for each role.
 
-**Expect and plan for the productivity dip.** Every tool transition involves a period where performance is lower than before the change. This is not a failure. It is an expected cost of the transition. Build it into the timeline and set realistic expectations with the team so that the dip does not create pressure to abandon the new tool before it becomes familiar.
+**Expect and plan for the productivity dip.** Every tool transition involves a period where performance is lower than before the change. Treat it as an expected cost of the transition, not a failure. Build it into the timeline and set realistic expectations with the team so that the dip does not create pressure to abandon the new tool before it becomes familiar.
 
 **Designate an internal resource for transition questions.** Someone on the team should be the designated go-to person during the transition period for questions, issues, and feedback. This does not need to be a full-time role. It does need to be explicit and available.
 
@@ -101,9 +101,29 @@ The final step of a migration that is often handled carelessly is the formal ret
 
 ---
 
+## Trying a Switch Without Paying for It
+
+Most AI tools offer a free tier or trial. If you want to switch AI tools free of commitment, use that period to run your real workflow through the new tool, not the demo workflow. Pay only after it passes the success criteria you wrote in the checklist above.
+
+Keep your prompts, workflow notes, and integration maps in one place you control. A shared folder works. So does a repository on GitHub if someone on your team is comfortable with it. When those assets live outside any single tool, a switch means rebuilding settings instead of rebuilding your know-how.
+
+---
+
+## Frequently Asked Questions
+
+### How do I transfer a chat from one AI to another?
+
+Start with the export option in the old tool if it has one. Then ask the old assistant to write a summary of the project: the goal, decisions made, constraints, and open questions. Paste that summary into the first message of a new chat in the new tool. Check the result against the original before you rely on it, because a summary drops detail.
+
+### Can we just switch AI off?
+
+You can, but first find out what depends on it. Integrations, scheduled automations, and team habits often run through the tool without anyone remembering. Use the inventory from the pre-switch checklist, then run the parallel period and the cutover date described above before you cancel anything.
+
+---
+
 ## How to Avoid Needing to Switch Again in 18 Months
 
-The best outcome of a tool migration is not just a successful transition. It is the insight into what went wrong with the original evaluation that you can apply to every tool decision going forward.
+The best outcome of a tool migration is a clear view of what went wrong with the original evaluation, which you can apply to every later tool decision.
 
 Switching tools is expensive. The businesses that switch least are the ones that evaluate most carefully before adopting. Specifically: they test the actual workflow rather than the demo workflow, they verify integration architecture before committing, and they confirm internal ownership before purchase.
 

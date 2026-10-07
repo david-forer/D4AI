@@ -124,10 +124,17 @@ The $1M break is a signal. The question is whether you read it early or late.
 
 ## Common questions
 
-### Why do small businesses struggle after reaching $1M in revenue?
+### Why do small businesses break at $1M in revenue?
 
 The shortcuts that worked at a smaller size stop working under more volume. Decisions pile up behind the founder, informal processes break, and information gets lost between tools. The business did nothing wrong to get there, it just outgrew its setup.
 
+### How much is a business with $1M in revenue worth?
+
+Revenue alone does not set the price. Buyers look at profit, how much of it depends on the owner, and how well the operation runs without them. A $1M business where every decision routes through the founder is worth less than one with documented workflows and a team that runs it. The fixes in this post raise the value of the business as well as its capacity.
+
+### At what revenue are you no longer a small business?
+
+There is no single number. Size standards vary by industry and by who is asking, and government definitions are often based on revenue or headcount depending on the sector. In practice, founders feel the shift well before any official label applies. Somewhere between 5 and 20 staff, the informal way of running things stops working.
 ### Is hiring the answer when a business hits $1M?
 
 Not first. New people inherit the same undocumented processes and build their own workarounds on top. Fix the system, then hire into it, or you end up paying twice for the same problem.

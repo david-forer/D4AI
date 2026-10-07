@@ -79,25 +79,25 @@ High-priority AI projects for small businesses in the $1M to $5M revenue range t
 
 ## Common Low-Priority Areas That Get Overinvested
 
-Some AI use cases attract attention because they are interesting rather than high-value. Recognizing them helps avoid misallocating budget and attention.
+Some AI use cases attract attention because they are interesting, and they pay back little. Spotting them early keeps budget and attention where they count.
 
 **AI-powered brand content** is a common early investment that rarely produces the return founders expect. For most small businesses, content volume is not the constraint. Distribution, strategy, and consistency are. An AI writing tool does not address those problems.
 
 **Advanced analytics and dashboards** sound strategic but require clean, consistent data to produce useful output. Building sophisticated reporting before the underlying workflows produce reliable data creates impressive-looking dashboards that do not reflect business reality.
 
-**Customer-facing chatbots** are frequently overestimated as a starting point. A chatbot that works well requires extensive training, careful design, and ongoing refinement. A chatbot that works poorly creates client experience problems. For most small businesses, the investment required to do this well is better applied to internal operational improvements first.
+**Customer-facing chatbots** are frequently overestimated as a starting point. A chatbot that works well requires extensive training, careful design, and regular refinement. A chatbot that works poorly creates client experience problems. For most small businesses, the investment required to do this well is better applied to internal operational improvements first.
 
 ---
 
 ## How Budget Constraints Shape the Sequence
 
-Budget constraints are real, and they should shape the sequence rather than just limiting what is possible.
+A small budget is a real limit, and it should set the order you work in.
 
 A constrained budget argues for starting with the highest-impact, lowest-cost investment regardless of what else you might want to build. The return from that investment, in time recaptured and team capacity freed, can then fund subsequent investments. This compounds over time in a way that spreading a limited budget across multiple simultaneous investments does not.
 
 Tool subscription costs matter, but they are often not the largest cost in an AI implementation. Team time is frequently the larger variable. A tool that costs $200 per month but requires forty hours of team time to implement and maintain has a higher total cost than a tool that costs $500 per month but can be set up in a few hours and runs reliably with minimal attention.
 
-Prioritize low-maintenance implementations when budget is constrained. Systems that run reliably once configured and require minimal ongoing adjustment produce a better return on both financial and time investment.
+Prioritize low-maintenance implementations when budget is constrained. Systems that run reliably once configured and need little adjustment produce a better return on both financial and time investment.
 
 ---
 
@@ -125,11 +125,19 @@ Fund the highest-impact, lowest-cost project first and let the time it frees up 
 
 My view for founder-led businesses: put the first AI money into internal operations, meaning intake and lead routing, follow-up automation, document generation and status reporting. Those processes run every week and the hours saved are easy to count. Brand content, dashboards and customer-facing chatbots tend to get funded early and pay back late. To align AI investments with business goals, score each option on impact, readiness and cost against the problem that matters most this year, then fund the top one and finish it before starting the next.
 
+### What is the most effective way to invest in AI?
+
+Spend on one named bottleneck, and budget the owner's time as well as the software. In a 5 to 20 person company, the person who runs the process has to document it, test the output and train the others. If that person has no hours set aside, the tool sits unused and the money is wasted. Choose the project, set aside those hours, and fix the measure of success before you buy anything.
+
+### How is prioritizing AI investments in a small business different from an enterprise?
+
+Large companies rank AI projects across departments, run pilots in parallel and absorb a few failures. A founder-led business has one or two people who would run any project, so every project draws on the same few hours. That makes the order of projects the whole decision. The scoring is the same, but readiness and team time carry more weight than they would in a big company.
+
 ### Which AI projects should a small business start with?
 
 Intake and lead routing, follow-up automation, document generation, and status reporting. They are high volume, repetitive, and easy to measure. Nobody writes a case study about follow-up emails, but that is where the hours come back.
 
-### What if the most valuable project is not ready yet?
+### What if the highest-impact project is not ready yet?
 
 Do the prep work first. Document the process, get the team on the same page, and free up some bandwidth, then score it again. Building on a process that changes every week just automates the confusion.
 
