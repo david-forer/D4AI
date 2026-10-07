@@ -37,13 +37,13 @@ Run a candidate process through these before anyone books a demo. Failing one is
 
 **Cost of being wrong.** Where an incorrect output reaches a client, a regulator, or a payment, the checking burden usually cancels the gain. A 95% accurate system that produces 400 items a month generates 20 errors someone has to find, and finding them means reading all 400.
 
-**Ownership.** Name the person who will fix it when it breaks in month 4. If the honest answer is the founder, and the founder is already the bottleneck, the project adds work rather than removing it.
+**Ownership.** Name the person who will fix it when it breaks in month 4. If the honest answer is the founder, and the founder is already the bottleneck, the project adds work to the person who is already the bottleneck.
 
 **Stability.** A process you are about to change, or that changes with every client, is a moving target. Redesign it first, run the new version manually for 2 months, then reconsider.
 
 **Judgment content.** Work that is mostly a specific person's judgment applied to incomplete information resists this cleanly. AI can prepare the inputs for that judgment, and that is a different, smaller project with a different budget.
 
-## When the answer is not yet rather than no
+## Not yet versus no
 
 Most nos are temporary, and mixing the 2 kinds up is what produces the shrug.
 
@@ -91,7 +91,7 @@ The harder nos come from people who work for you and are enthusiastic, which is 
 
 Answer with the criteria. "Run it through the 6 tests and bring me the result" moves the conversation from a preference contest to an evidence one, and roughly half the time the person talks themselves out of it. The other half of the time they come back with a case you had not considered, which is the outcome you actually want.
 
-Set a standing rule that only 1 AI project runs at a time, and that the queue is visible. A no then reads as a queue position rather than a rejection, and the enthusiasm stays pointed at the thing in flight. This is the same constraint that keeps a stack from sprawling into 11 subscriptions, covered in [AI tool overload](/blog/ai-tool-overload-small-business).
+Set a standing rule that only 1 AI project runs at a time, and that the queue is visible. A no then reads as a queue position, and the enthusiasm stays pointed at the thing in flight. This is the same constraint that keeps a stack from sprawling into 11 subscriptions, covered in [AI tool overload](/blog/ai-tool-overload-small-business).
 
 Where the request comes from someone already using an unapproved tool on client data, that is a governance question with a deadline on it. Handle it that week.
 
@@ -99,7 +99,7 @@ Where the request comes from someone already using an unapproved tool on client 
 
 Keep a no list. One page, 4 columns: the idea, the date, the test it failed, and the condition that would reopen it.
 
-An entry looks like this: "Automated proposal drafting, 14 March, failed cost-of-being-wrong, reopen if we move to a fixed-scope offer where proposals stop being bespoke." Thirty seconds to write. It survives the next vendor email, the next conference, and the next quarterly planning session, because the answer to "have we looked at this" is a line with a date on it rather than a memory.
+An entry looks like this: "Automated proposal drafting, 14 March, failed cost-of-being-wrong, reopen if we move to a fixed-scope offer where proposals stop being bespoke." Thirty seconds to write. It survives the next vendor email, the next conference, and the next quarterly planning session, because the answer to "have we looked at this" is a line with a date on it.
 
 The list has a second use that shows up around month 9. Read it in one sitting and the pattern in your nos is visible: 6 entries failing on documentation say the constraint is process, 6 failing on ownership say the constraint is capacity, and that pattern should reshape the plan. A list of declined ideas is a better diagnostic than a list of accepted ones, and it costs nothing to maintain.
 
@@ -115,7 +115,17 @@ The process got documented. Someone wrote the procedure down and it has run the 
 
 The cost of the alternative changed. You are about to hire for the work the process consumes, and a $55,000 salary makes a $9,000 build look different than it did against 6 hours a week of existing staff time.
 
-Outside those 3, a no stands until the annual review. Persistence from a vendor is not a trigger, a competitor's announcement is not a trigger, and a new model release is rarely one either, because the 6 tests above are about your process rather than the technology. That stability is what makes the strategy usable, and it is the part of [AI strategy for small businesses](/blog/ai-strategy-for-small-businesses) that costs nothing and saves the most.
+Outside those 3, a no stands until the annual review. Persistence from a vendor is not a trigger, a competitor's announcement is not a trigger, and a new model release is rarely one either, because the 6 tests above measure your process, and a model release does not change your process. That stability is what makes the strategy usable, and it is the part of [AI strategy for small businesses](/blog/ai-strategy-for-small-businesses) that costs nothing and saves the most.
+
+## Examples of saying no to AI
+
+Two hypothetical cases show how the tests sort real requests.
+
+Say a 9-person agency wants AI to draft client proposals. Every proposal is bespoke and a wrong number reaches a client. It fails the cost-of-being-wrong test, so the entry reads "no, reopen if the offer moves to fixed scope."
+
+Say a 12-person bookkeeping firm wants AI to build its month-end close checklist. Three people do the close three different ways and none of it is written down. It fails only the documentation test, so the entry reads "not yet, rescore in 60 days."
+
+Both answers take a minute to write and neither one reopens until its condition is met.
 
 ## Common questions
 
@@ -134,6 +144,14 @@ When the process runs fewer than about 20 times a month, nobody will own it afte
 ### How do I say no to an AI vendor without a long back and forth?
 
 Ask what it replaces in your business, how many hours the first 90 days take from your team, and what happens to your data if you cancel in month 7. Then decline in one line with a specific reason. Be polite and be specific, and the follow-up emails stop.
+
+### Can you just turn AI off?
+
+For a business, the question is usually which AI features are already running. Many software products let an admin switch their built-in AI features off in settings, and the exact option differs by product, so check each one. Staff using personal accounts on client work is the bigger gap, and a written rule about what may be pasted into any tool covers it.
+
+### What should you never say to AI?
+
+Never paste anything you would not hand to a stranger: client confidential detail, personal data, credentials, or financial records on an account whose data terms you have not read.
 
 ### When should I revisit an AI idea I already turned down?
 

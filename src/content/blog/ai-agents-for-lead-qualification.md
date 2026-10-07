@@ -8,7 +8,7 @@ heroImage: "/images/blog/ai-agents-for-lead-qualification.webp"
 articleType: "cluster"
 ---
 
-Most lead scoring tools hand the sales team a number. This page is for the founder who wants an agent the team will still be using in month 3.
+Most lead scoring tools hand the sales team a number. This page is for the founder who wants lead qualification AI that the team will still be using in month 3.
 
 ## What to know first
 
@@ -53,7 +53,7 @@ Four fields, in this order. Everything else is optional.
 
 **A recommended next action.** Book a call, send the pricing page, ignore, or ask one specific question first. A recommendation is checkable in a way that a score is not.
 
-Add a score afterwards if you want one for sorting. It should be derived from the fields above rather than being the output, so that anybody who distrusts it can read the reasoning underneath.
+Add a score afterwards if you want one for sorting. Derive it from the fields above, so that anybody who distrusts it can read the reasoning underneath.
 
 | | Score only | 4-field brief |
 |---|---|---|
@@ -68,7 +68,7 @@ Add a score afterwards if you want one for sorting. It should be derived from th
 
 The enrichment step is where this becomes worth more than a form.
 
-For each lead, the agent can read their website and work out what the company does in plain terms, check size and sector, look for the signals that matter in your particular business, and note anything in their message that indicates urgency or budget. That is 15 to 20 minutes of a person's time, done in under a minute, on every lead rather than only the ones that look promising.
+For each lead, the agent can read their website and work out what the company does in plain terms, check size and sector, look for the signals that matter in your particular business, and note anything in their message that indicates urgency or budget. That is 15 to 20 minutes of a person's time, done in under a minute, on every lead, including the ones that look weak.
 
 The last part is the real gain. Most firms research selectively, which means the judgment about which leads deserve research is made before any research exists. Doing it on all of them removes a guess from the front of the process.
 
@@ -128,11 +128,27 @@ Also read 10 briefs at random and ask the salesperson whether they would have wr
 
 The output is the whole design. An agent that produces a number gets ignored. An agent that produces a short, evidenced, arguable brief with a recommended next action gets used, because it saves a salesperson the 20 minutes they were skipping anyway.
 
-Build the criteria from your own last 40 outcomes rather than a template. Rank rather than discard. Check quarterly whether the top-ranked leads really do convert better, and rebuild the criteria when they stop.
+Build the criteria from your own last 40 outcomes, not from a template. Rank every lead and discard none. Check quarterly whether the top-ranked leads really do convert better, and rebuild the criteria when they stop.
 
 Done that way, this is one of the safest agents to run, because nothing it produces reaches a customer. It writes a document a person reads before deciding anything.
 
 If you want a view on whether your inbound flow has the volume and variation to justify one, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at last month's real leads first.
+
+## What to look for in the best AI agents for lead qualification
+
+I do not rank vendors here, because the right tool depends on your CRM and your lead mix. These are the tests I would apply to any lead qualification AI.
+
+Can it show its reasoning for each lead? Can it read and write to the CRM you already use? Can you change the criteria yourself without a rebuild? Does it keep a note of the public sources it looked at?
+
+If the answer to the first question is no, move on. A score with no reasoning is the failure this whole page is about.
+
+## Lead qualification and lead generation are different jobs
+
+An AI lead generator finds or attracts people. A qualification agent works on the leads you already have. Most of the lead generation AI tools on the market do the first job, and the second job is where the 4-field brief earns its place.
+
+AI agents can help with lead generation too, for example by researching a target list or drafting a first message for a person to review. Build qualification first, because it tells you which leads were worth finding.
+
+If you want to test the idea before paying for anything, take 10 past leads and run them through a free AI tool using the 4 fields above. Then compare its read with what actually happened. That costs an afternoon and tells you whether your lead data is good enough.
 
 ## Questions founders ask
 

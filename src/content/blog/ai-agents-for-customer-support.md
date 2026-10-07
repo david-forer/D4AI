@@ -22,9 +22,19 @@ Most pitches for AI agents for customer support sell answers. This page is for t
 
 The capability worth paying for is the agent knowing when to stop.
 
-Answering a documented question is close to a commodity now. Any competent product will resolve your top 20 repeat questions once it can read your documentation. The thing that separates a support agent that helps from one that damages your relationships is whether it recognises the case it should hand to a person, and does so before replying rather than after.
+Answering a documented question is close to a commodity now. Any competent product will resolve your top 20 repeat questions once it can read your documentation. The thing that separates a support agent that helps from one that damages your relationships is whether it recognizes the case it should hand to a person and does so before replying, not after.
 
-That single behaviour decides everything else: the volume you need, the rollout sequence, and whether customers notice. It is also the property that makes this an agent rather than a help widget, a distinction covered in [AI agents versus chatbots](/blog/ai-agents-vs-chatbots).
+That single behavior decides everything else: the volume you need, the rollout sequence, and whether customers notice. It is also the property that makes this an agent rather than a help widget, a distinction covered in [AI agents versus chatbots](/blog/ai-agents-vs-chatbots).
+
+---
+
+## What is an AI customer support agent
+
+An AI customer support agent is software that reads an incoming ticket, finds the answer in your documentation and past replies, and either answers or hands the ticket to a person. A chatbot follows a script. An agent decides what to do with each ticket, which is why the escalation rules matter so much.
+
+How can AI be used in customer support? In a small firm it usually means 4 jobs: answering repeat questions from documentation, drafting replies for a person to send, sorting and tagging tickets, and routing urgent or high-value tickets to the right person first.
+
+Some firms also look at AI voice agents for customer support, which answer phone calls the same way. The same rule applies, and it matters more on a call because there is no draft stage. Start with text, where you can see every reply before it goes out.
 
 ---
 
@@ -34,7 +44,7 @@ Roughly 50 tickets a week, with at least half falling into repeatable, documente
 
 Below that, the build and the supervision cost more than the time returned, and you will not see enough cases to learn what it gets wrong. A firm handling 12 tickets a week has a documentation problem or a product problem, and an agent will not touch either.
 
-Be honest about the second half of that number too. Count how many of last month's tickets were actually answerable from something already written down. Most firms guess 70% and find 40%. The gap is not a reason to abandon the idea, it is a reason to fix the documentation first, which pays off whether or not the agent ever gets built.
+Check the second half of that number too. Count how many of last month's tickets were actually answerable from something already written down. Most firms guess 70% and find 40%. The gap is not a reason to abandon the idea, it is a reason to fix the documentation first, which pays off whether or not the agent ever gets built.
 
 The full threshold test for any candidate workflow is in [when to use an AI agent](/blog/when-to-use-an-ai-agent).
 
@@ -46,7 +56,7 @@ Escalation rules written as situations work. Confidence thresholds do not, becau
 
 Start with these and add your own from real tickets.
 
-**Anything mentioning cancelling, refunding, complaining or a legal matter.** No exceptions, regardless of how routine the wording looks.
+**Anything mentioning canceling, refunding, complaining or a legal matter.** No exceptions, regardless of how routine the wording looks.
 
 **Any customer above a value threshold you set.** A 4-figure account gets a person. Decide the number now rather than case by case.
 
@@ -76,7 +86,7 @@ Four weeks, and the agent touches nothing customer-facing for the first 2.
 | 3 | Drafts appear in the queue, a person sends or rewrites | Whether more than about a third of drafts get rewritten |
 | 4 | Handles 1 proven category alone, drafts the rest | That the live category was correct every time in weeks 1 to 3 |
 
-Then widen one category a month, on evidence from the log rather than on how it feels. The full sequence and the stop conditions are in [how to deploy an AI agent safely](/blog/how-to-deploy-an-ai-agent-safely).
+Then widen one category a month, based on the log and not on how it feels. The full sequence and the stop conditions are in [how to deploy an AI agent safely](/blog/how-to-deploy-an-ai-agent-safely).
 
 ---
 
@@ -84,19 +94,19 @@ Then widen one category a month, on evidence from the log rather than on how it 
 
 A realistic settled state for a firm of 5 to 20 people, so you can judge whether yours is working.
 
-Between 30% and 50% of tickets resolved without a person. Not 90%, which is a vendor number from a company with a far narrower product and far better documentation than yours. The remainder are drafted for a human who sends most of them with light edits.
+Between 30% and 50% of tickets resolved without a person. You will see 90% quoted, but that is a vendor number from a company with a far narrower product and far better documentation than yours. The remainder are drafted for a human who sends most of them with light edits.
 
-Response time on the automated categories drops to minutes at any hour, and that is usually the change customers actually notice rather than the volume handled.
+Response time on the automated categories drops to minutes at any hour. Customers usually notice that before they notice anything else.
 
 Your support person spends their time on the hard half. This is the benefit worth naming, because it is the one that reduces turnover in a role that burns people out on repetition.
 
-If you are at 15% after 6 months, the constraint is almost always documentation rather than the agent. If you are above 70%, check the escalation rate, because a high resolution rate combined with a falling escalation rate usually means the agent has become confident rather than correct.
+If you are at 15% after 6 months, the constraint is almost always your documentation and not the agent. If you are above 70%, check the escalation rate, because a high resolution rate combined with a falling escalation rate usually means the agent has become confident rather than correct.
 
 ---
 
 ## The 3 ways support agents damage the relationship
 
-**The confident wrong answer to a frustrated customer.** Somebody already annoyed receives a fluent, polite, incorrect reply. The failure is not the wrong information, it is that the customer now believes nobody read their message. Recovery costs far more than the ticket saved.
+**The confident wrong answer to a frustrated customer.** Somebody already annoyed receives a fluent, polite, incorrect reply. The damage is that the customer now believes nobody read their message. Recovery costs far more than the ticket saved.
 
 **The loop.** A customer replies to an automated answer, gets another automated answer, and replies again. Any second contact must break out to a person, and this rule is worth enforcing even at the cost of a lower automation rate.
 
@@ -112,7 +122,23 @@ Two foundations, and an agent built without them fails in ways no configuration 
 
 **Your ticket history has to be reachable.** The agent needs to see how your people actually answered, in your tone, including the awkward cases. A firm whose support history lives in one person's inbox has a smaller project to do first, and it is a project that pays for itself even if the agent never gets built.
 
-Both of these sit under the same principle running through [AI agents for small businesses](/blog/ai-agents-for-small-businesses): an agent acts faster inside whatever it is given, so weak foundations get amplified rather than fixed.
+Both of these sit under the same principle running through [AI agents for small businesses](/blog/ai-agents-for-small-businesses): an agent acts faster inside whatever it is given, so weak foundations get amplified.
+
+---
+
+## Choosing AI customer service tools
+
+There is no single best AI agent for customer support. The best one for you is the one that reads your documentation, lets you write escalation rules as situations, and shows a log of every reply. Run any tool through the shadow-mode rollout above before you trust a feature list.
+
+If you are comparing AI customer service tools, ask each vendor 3 things:
+
+1. Can I write an escalation rule that forces a handover on a refund or a second contact?
+2. Can I see every reply the agent sent and why?
+3. What happens to a ticket after it escalates, and who sees it?
+
+Free AI tools for customer service exist, and many help desk products now bundle an AI add-on. Check the current plan limits before you rely on one. A free tool is fine for shadow mode, where the only thing at stake is your time.
+
+If your team can build, a custom agent is an option. It needs the same inputs as a bought tool: current documentation, your ticket history, and written escalation rules. Building one yourself is the smaller part of the work.
 
 ---
 
@@ -122,13 +148,13 @@ Yes, briefly, and without making it a feature.
 
 A short line saying an assistant handles common questions and a person picks up anything else sets the right expectation and gives the customer permission to ask for a human. Firms that hide it get caught by the customer who asks directly, and the answer is then defensive.
 
-The commitment to avoid is claiming a person reads everything when the agent handles some categories alone. That is the kind of sentence that gets quoted back to you, and it is why the review design has to match what you say, which is covered in [human in the loop AI review](/blog/human-in-the-loop-ai-review).
+The claim to avoid is saying a person reads everything when the agent handles some categories alone. That is the kind of sentence that gets quoted back to you, and it is why the review design has to match what you say, which is covered in [human in the loop AI review](/blog/human-in-the-loop-ai-review).
 
 ---
 
 ## The bottom line for founders
 
-Support is the agent use case founders reach for first and it is the hardest of the obvious ones, because the escalation judgment has to be right before you can leave it alone, and getting it wrong is visible to customers rather than internal.
+Support is the agent use case founders reach for first and it is the hardest of the obvious ones, because the escalation judgment has to be right before you can leave it alone, and a wrong call shows up in front of customers.
 
 Write the escalation rules from real tickets before you configure anything. Run it in shadow mode for 2 weeks. Go live on one category. Widen monthly on evidence. Accept 30% to 50% as a good outcome and be suspicious of anything much higher.
 
@@ -148,7 +174,7 @@ Roughly 50 a week, with at least half answerable from documentation you already 
 
 ### When should an AI support agent hand off to a human?
 
-On any mention of cancelling, refunds, complaints or legal matters, any high-value customer, any second contact on the same issue, and anything it has not seen a close match for. Write those rules before you configure anything.
+On any mention of canceling, refunds, complaints or legal matters, any high-value customer, any second contact on the same issue, and anything it has not seen a close match for. Write those rules before you configure anything.
 
 ### Should I tell customers they are talking to an AI agent?
 

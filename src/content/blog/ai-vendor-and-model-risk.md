@@ -13,7 +13,7 @@ Most vendor risk advice is written for companies shipping AI products. This page
 ## The short answer
 
 - For a small service firm, the AI vendor and model risk that causes real damage is concentration: one vendor holding one workflow, with no way to get the work out.
-- AI models change underneath you through deprecation, quality shifts and unannounced behaviour changes, and 20 real test cases rerun monthly catch that drift in about 20 minutes.
+- AI models change underneath you through deprecation, quality shifts and unannounced behavior changes, and 20 real test cases rerun monthly catch that drift in about 20 minutes.
 - The 4 vendor failure modes that hit small firms are acquisition and retirement, repricing, capability withdrawal, and the vendor closing.
 - A plain written description of each automated workflow, kept outside the vendor's tool, turns a forced migration from a rebuild into a configuration job.
 - Before signing with an AI vendor, ask which model is underneath, whether configuration can be exported, what the renewal terms are, who funds the company, and what happens on acquisition.
@@ -34,13 +34,13 @@ None of those is a model quality problem. All 3 are dependency problems, and the
 
 When you buy an AI product you are renting a model you do not control, and the vendor can change it whenever they like.
 
-**Models get deprecated.** Providers retire older models on published timelines and vendors follow. A workflow tuned against one model behaves differently on its replacement. Prompts that were reliable start producing a different shape of output, and the change arrives as a support ticket from your own team rather than as a notification.
+**Models get deprecated.** Providers retire older models on published timelines and vendors follow. A workflow tuned against one model behaves differently on its replacement. Prompts that were reliable start producing a different shape of output, and the change arrives as a support ticket from your own team. No notification comes.
 
 **Quality moves in both directions.** A newer model is usually better on average and can be worse on your specific task, particularly where you had tuned prompts around the old one's habits. Average improvement is not improvement for you.
 
-**Behaviour changes without a version number.** Vendors adjust system prompts, safety layers and routing continuously. The label stays the same and the output does not.
+**Behavior changes without a version number.** Vendors adjust system prompts, safety layers and routing continuously. The label stays the same and the output does not.
 
-The practical control is small and unglamorous. Keep 20 real cases with the outputs you consider correct. Run them once a month and after any vendor announcement. It takes 20 minutes and it converts silent drift into something you notice on your own schedule rather than a client's.
+The practical control is small and unglamorous. Keep 20 real cases with the outputs you consider correct. Run them once a month and after any vendor announcement. It takes 20 minutes and it converts silent drift into something you notice on your own schedule. Without it, a client notices first.
 
 ---
 
@@ -63,7 +63,7 @@ Four failure modes, in rough order of how often they hit firms this size.
 | Capability withdrawal | A feature you built on moves to a higher tier or disappears | Nothing broke, the terms changed |
 | The vendor stops | A smaller AI company closes | The export window is weeks, often in a busy month |
 
-Against all 4, the question that matters is the same: how long would it take you to run this work another way, and what would you lose. If the answer is a fortnight of disruption, you have an inconvenience. If the answer is that nobody remembers how the process worked before the tool, you have a real dependency.
+Against all 4, the question that matters is the same: how long would it take you to run this work another way, and what would you lose. If the answer is two weeks of disruption, you have an inconvenience. If the answer is that nobody remembers how the process worked before the tool, you have a real dependency.
 
 ---
 
@@ -75,17 +75,17 @@ A firm adopts a tool. Over a year the workflow gets shaped around it. The prompt
 
 Then the vendor is acquired, and the firm discovers it cannot describe its own process well enough to rebuild it elsewhere.
 
-The fix costs an afternoon a quarter. Keep a plain document outside the tool describing what the workflow does, the rules it applies, and why the exceptions exist. Not a technical export. A description a competent person could work from. That single habit converts a migration from a rebuild into a configuration job, and it is the same discipline behind [mapping business processes for automation](/blog/map-business-processes-for-automation).
+The fix costs an afternoon a quarter. Keep a plain document outside the tool describing what the workflow does, the rules it applies, and why the exceptions exist. Not a technical export. A description a competent person could work from. That document is also the start of your AI operating model: which tools carry which work, who owns each one, and how the work runs without them. That single habit converts a migration from a rebuild into a configuration job, and it is the same discipline behind [mapping business processes for automation](/blog/map-business-processes-for-automation).
 
 ---
 
 ## 5 questions that price a vendor's risk before you sign
 
-Ten minutes in the documentation or one email. Ask them before the tool touches anything important.
+Ten minutes in the documentation or one email. Ask them before the tool touches anything important. This is AI third-party risk management at the size of a small firm: the same job a big company runs through a procurement team, done in one email.
 
 **Which model is underneath this, and do you tell us when it changes?** Some vendors name the provider and publish changes. Some will not say. That answer alone tells you how much drift you are accepting blind.
 
-**Can we export our configuration, not just our data?** Data export is common and is the smaller half. Prompts, rules and workflow logic are the part that took you 9 months to build.
+**Can we export our configuration as well as our data?** Data export is common and is the smaller half. Prompts, rules and workflow logic are the part that took you 9 months to build.
 
 **What are your renewal terms and your notice period on price?** Ask now, while you are the party being courted.
 
@@ -103,7 +103,9 @@ The controls that match this risk at your size are cheap, and the ones being mar
 
 **Do these 4.** Keep 20 test cases and run them monthly. Keep a written description of each automated workflow outside the vendor's tool. Ask the 5 questions before adopting anything that touches client work. Know, for your 2 most important tools, roughly what a move would cost in days.
 
-**Skip these until something changes.** Model evaluation platforms, formal vendor risk management software, dual-vendor redundancy for the same workflow, and a written model governance framework. All are built for organisations with a risk function to run them. Bought at 30 people they become software nobody administers, which is the same pattern described in [AI risk assessment for small business](/blog/ai-risk-assessment-small-business).
+**Skip these until something changes.** Model evaluation platforms, formal vendor risk management software, dual-vendor redundancy for the same workflow, and a written model governance framework. All are built for organizations with a risk function to run them. Bought at 30 people they become software nobody administers, which is the same pattern described in [AI risk assessment for small business](/blog/ai-risk-assessment-small-business).
+
+AI model risk management at this size means the 20 test cases and the monthly rerun. That is the whole control.
 
 Revisit when a regulated client writes a control into a contract, when a single tool starts carrying work you could not run manually for a week, or after your first real incident.
 
@@ -121,7 +123,7 @@ Deprecation notices, acquisitions and pricing letters all arrive the same way, a
 
 **Decide on a date, not on a feeling.** Either you accept the new arrangement, adjust your prompts, or start moving. Pick which one and put it in the calendar. The failure mode here is a firm that reads the notice, feels uneasy, does nothing, and then discovers the change at the same moment a client does.
 
-For most small firms the honest answer to most notices is that nothing needs to happen. The value of having a routine is that you can establish that in 30 minutes rather than carrying it as background worry for 6 weeks.
+For most small firms the honest answer to most notices is that nothing needs to happen. The value of having a routine is that you can establish that in 30 minutes and skip 6 weeks of background worry.
 
 ---
 
@@ -139,9 +141,9 @@ You do not need a second vendor for it. You need the process described outside t
 
 Model quality is the vendor's problem. Dependency is yours.
 
-Pick your 2 most important AI tools, ask the 5 questions, write down what each automated workflow actually does in a file the vendor does not control, and keep 20 test cases you rerun monthly. That is the whole programme, it costs one afternoon plus 20 minutes a month, and it covers the events that realistically happen to firms your size.
+Pick your 2 most important AI tools, ask the 5 questions, write down what each automated workflow actually does in a file the vendor does not control, and keep 20 test cases you rerun monthly. That is the whole program, it costs one afternoon plus 20 minutes a month, and it covers the events that realistically happen to firms your size.
 
-If you want a view on where your stack is concentrated and what a forced move would cost you, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at the real tools and the real workflows rather than the vendor's security page.
+If you want a view on where your stack is concentrated and what a forced move would cost you, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at the real tools and the real workflows, not the vendor's security page.
 
 ---
 
@@ -157,11 +159,29 @@ Keep 20 real cases with the outputs you consider correct, and rerun them monthly
 
 ### Should a small business use two AI vendors for the same workflow?
 
-Usually not. Dual-vendor redundancy is built for organisations with a risk function to run it. What you need is the process written down outside the tool and a rough idea of what a move would cost in days.
+Usually not. Dual-vendor redundancy is built for organizations with a risk function to run it. What you need is the process written down outside the tool and a rough idea of what a move would cost in days.
 
 ### What questions should I ask an AI vendor before signing?
 
-Five: which model is underneath and whether they tell you when it changes, whether you can export configuration and not just data, the renewal terms and notice on price, how long they have operated and who funds them, and what happens on acquisition. Ask while you are still the one being courted.
+Five: which model is underneath and whether they tell you when it changes, whether you can export configuration as well as data, the renewal terms and notice on price, how long they have operated and who funds them, and what happens on acquisition. Ask while you are still the one being courted.
+
+### What is AI model risk?
+
+AI model risk is the chance that the model behind a tool gets worse, changes, or gets retired, and your work breaks as a result. For a small firm the cause is usually a vendor change you were not told about. The 20 test cases above are the control.
+
+### What are the biggest risks of using AI in a business?
+
+Five show up for firms this size: the product gets acquired and retired, the price jumps at renewal, a feature moves to a higher tier or disappears, the vendor shuts down, and the model changes underneath your workflow. All five are dependency problems, and the same habits cover them.
+
+### What are the risks of using AI agents?
+
+An agent takes actions on its own, so a silent model change has more room to do damage. A drafting tool gives you a bad paragraph. An agent with access to your CRM or inbox can act on a bad decision before anyone reads it. Keep a person reviewing anything that reaches a client, and run your test cases after every vendor change.
+
+### Is there an AI vendor and model risk template?
+
+A simple risk and controls matrix is enough. One row per tool, with columns for the work it carries, which of the 4 failure modes would hurt most, the control you keep, who owns it, and when you last checked.
+
+For example, a hypothetical 30-person firm that scores inbound leads in one vendor's tool would write: work carried is lead scoring, biggest risk is capability withdrawal, control is a written description of the scoring rules kept outside the tool, owner is the operations lead, last checked is the date of the monthly test run.
 
 ### How do I reduce my dependency on one AI tool?
 

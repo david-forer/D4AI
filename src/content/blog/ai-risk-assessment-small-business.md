@@ -102,9 +102,9 @@ Write the 3 sentences into your policy so the assessment and the rules people fo
 
 ---
 
-## What a finished AI risk assessment looks like for a 14-person firm
+## AI risk assessment example: what it looks like for a 14-person firm
 
-A recruitment firm runs the exercise on a Thursday afternoon and lists 11 workflows.
+Here is an illustration for a hypothetical recruitment firm. It runs the exercise on a Thursday afternoon and lists 11 workflows.
 
 Candidate CV summarization scores 3 on data, 3 on blast radius since the summary goes to the client, and 3 on reversibility. That is 27, and it has been running for 8 months on a free account.
 
@@ -120,9 +120,19 @@ Total elapsed time is under 3 hours. No consultant, no software, no framework do
 
 ---
 
+## The AI risk assessment template: one row per workflow
+
+You can build the template in Excel or Google Sheets in 10 minutes. Give it one row per workflow and these columns: workflow, owner, data class, blast radius, reversibility, score, control, control owner, and next review date. The score column is the 3 numbers multiplied, so in Excel it is a formula like =C2*D2*E2. Add a status column if you want to track which controls are in place.
+
+That sheet is also your AI risk register. Sort it by score, keep it in the same folder as your policy, and add a row whenever a new workflow appears.
+
+The NIST AI Risk Management Framework is the reference document for larger organizations, built around 4 functions: Govern, Map, Measure, and Manage. A 5 to 20 person firm does not need to adopt it. The workflow list you build here is the kind of input its Map function asks for, so the work carries over if a client ever asks.
+
+---
+
 ## How often to re-run it, and what to do between runs
 
-Twice a year suits most firms this size, and the trigger matters more than the calendar. Re-run when you add a service line, when you take on a client with contractual data obligations, when headcount moves by a third, or when you deploy anything that acts on its own rather than drafting for a person. That last case changes the reversibility column across the board, which is why [when to use an AI agent](/blog/when-to-use-an-ai-agent) is worth settling before an agent goes live.
+Twice a year suits most firms this size, and the trigger matters more than the calendar. Re-run when you add a service line, when you take on a client with contractual data obligations, when headcount moves by a third, or when you deploy anything that acts on its own and no longer waits for a person to read a draft. That last case changes the reversibility column across the board, which is why [when to use an AI agent](/blog/when-to-use-an-ai-agent) is worth settling before an agent goes live.
 
 Between runs, the only maintenance that earns its keep is adding a row when a new workflow appears. Someone starts using AI for a job that was manual last month, it goes on the list with 3 numbers next to it. Thirty seconds of work, and your assessment stays current instead of expiring quietly.
 
@@ -139,6 +149,22 @@ It will not evaluate model quality. Whether a given tool is accurate enough for 
 It will not satisfy a formal audit. A client running a vendor security review will want documented controls and evidence, and this exercise is the input to that work.
 
 It will not replace the rest of your governance. The assessment tells you where the exposure sits. The tools list, the data classes, the access decisions, and the incident plan are what hold the line once you know, and they are laid out in [AI governance for small businesses](/blog/ai-governance-for-small-businesses).
+
+---
+
+## Common questions
+
+### How do you perform an AI risk assessment?
+
+List every workflow where AI output reaches a client, a system of record, or a decision. Score each on data class, blast radius, and reversibility from 1 to 3, multiply, rank, and assign one control and one owner to the top 3.
+
+### Can AI write a risk assessment?
+
+It can help you draft the workflow list and tidy the sheet. The scoring needs someone who knows what each workflow touches, because a chatbot cannot see that your bookkeeper pastes payroll registers into it.
+
+### Which AI tool is best for risk assessment?
+
+At 5 to 20 people, a spreadsheet is enough, and it is free. The method depends on an honest list of workflows, and no tool can supply that for you.
 
 ---
 
