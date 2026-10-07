@@ -11,9 +11,9 @@ articleType: "cluster"
 
 The typical small business AI tool purchase follows a predictable sequence. Someone sees a demo, gets impressed, signs up for a trial, and decides to commit before the trial period ends because switching costs are annoying and the tool seems good enough. Six months later, the tool is partially adopted, partially ignored, and generating a monthly charge that nobody wants to deal with cancelling.
 
-The problem is not that the tool was bad. It is that the evaluation happened in the wrong order. The demo showed what the tool can do in ideal conditions. The questions that actually matter, whether it connects to existing systems, who will own it, what it costs to maintain, and what it costs to leave, did not get asked until after the commitment was made.
+The evaluation happened in the wrong order. The demo showed what the tool can do in ideal conditions. The questions that actually matter, whether it connects to existing systems, who will own it, what it costs to maintain, and what it costs to leave, did not get asked until after the commitment was made.
 
-AI tool evaluation is not complicated. It requires asking the right questions before the purchase rather than after. This article lays out the framework for doing that consistently, regardless of what category of tool you are looking at.
+Evaluating an AI tool takes a short list of questions, asked before the purchase. This article lays out the framework for doing that consistently, regardless of what category of tool you are looking at.
 
 ---
 
@@ -25,7 +25,7 @@ The switching cost problem in software is real, and AI tools have made it worse 
 
 **Integrations break.** If you have connected a tool to other systems in your stack, switching means rebuilding those connections. Depending on how many integrations you built and how complex they are, this is anywhere from a half-day project to a multi-week rebuild.
 
-**Team habits are sticky.** Once a team learns a tool and builds it into their daily workflow, changing it creates a productivity dip that is real and measurable. The new tool has to overcome not just its own learning curve but the resistance of a team that had something working before.
+**Team habits are sticky.** Once a team learns a tool and builds it into their daily workflow, changing it creates a productivity dip that is real and measurable. The new tool has its own learning curve to clear, and it also meets resistance from a team that had something working before.
 
 None of this means you should stay on the wrong tool forever. But it does mean that getting the evaluation right the first time is worth the extra diligence.
 
@@ -39,7 +39,7 @@ These questions apply to any AI tool in any category. Work through all five befo
 
 Your system of record is the authoritative source of truth for your most important data. For most small businesses, that is a CRM for client and deal data and a project management tool for delivery data.
 
-Any AI tool you add to the stack should either connect directly to one of these systems or have a clearly defined handoff process. A tool that operates as an island, where data goes in and output comes out but nothing connects to anything else, creates manual work to bridge the gap.
+Any AI tool you add to the stack should either connect directly to one of these systems or have a clearly defined handoff process. A tool that sits on its own, where data goes in and output comes out but nothing connects to anything else, creates manual work to bridge the gap.
 
 Ask the vendor specifically: what does the native integration with your primary systems look like? What data flows in, what flows out, and what requires manual intervention? If the honest answer is that you would need to copy-paste between systems or build a custom integration, that cost belongs in your evaluation.
 
@@ -89,11 +89,51 @@ A useful trial is structured differently.
 
 **Set success criteria before the trial starts.** Based on your documented problem, what would the tool need to demonstrate in the trial period for you to be confident it works? Write this down before you log in for the first time.
 
-**Test the actual workflow, not the demo workflow.** Vendors build demos that showcase the best version of their product with clean data and ideal conditions. Your trial should test the tool with your actual data, your actual process, and your actual edge cases. The places where your workflow is messy are exactly the places where tool limitations surface.
+**Test the actual workflow, not the demo workflow.** Vendors build demos that show the best version of their product with clean data and ideal conditions. Your trial should test the tool with your actual data, your actual process, and your actual edge cases. The places where your workflow is messy are exactly the places where tool limitations surface.
 
 **Involve the person who will own the tool.** Do not run a trial entirely at the leadership level and then hand it to the team. The person who will live with this tool should be part of the evaluation from the start and should have a clear say in the final decision.
 
+**Judge the output as well as the interface.** Learning how to evaluate AI output is the core of any trial. Run the same 10 real tasks through the tool and have the person who owns the work review each result. Score accuracy, how much editing it needs, and whether the tool gets the same task right on repeat runs. A tool that needs heavy edits on every output has not saved you anything.
+
 **Document what breaks.** Any limitations, confusing behaviours, or integration gaps you encounter during the trial are more useful than the things that work smoothly. Build a clear picture of what you would be accepting if you commit.
+
+---
+
+## A Simple Rubric for Evaluating AI Tools
+
+If you want a rubric for evaluating AI tools, turn the five questions into a scorecard. Rate each tool from 1 to 5 on these criteria:
+
+- Connects to your system of record
+- Total cost of ownership over 12 months
+- Named internal owner
+- Cost and effort to switch away
+- Fit with a documented problem
+- Output quality on your own test tasks
+
+Add a status column and a notes column, and keep one row per tool. Any tool that scores 2 or lower on a criterion needs a written answer before you buy.
+
+The same approach works for evaluating AI agents. Test them on real tasks from your operation and check what they do when an input is wrong or missing.
+
+---
+
+## How to Evaluate Tool Specifications Before Purchasing
+
+Spec sheets and pricing pages describe the product at its best. When you evaluate tool specifications before purchasing, check these against your own setup:
+
+- Which systems the integration list names, and whether each one is native or needs custom work
+- Usage limits, seats and output caps at your expected volume
+- Where your data is stored and whether the vendor trains on it
+- Export formats and contract terms, including the cancellation process
+
+Put each one in writing and ask the vendor to confirm in an email. Verbal answers from a sales call are hard to hold anyone to later.
+
+---
+
+## Can You Evaluate AI Tools for Free?
+
+Yes, up to a point. Most vendors offer a free tier or a trial, and an online evaluation is a fair way to rule tools out. Free tiers rarely match paid-plan limits, integrations or support, so treat a free test as a screen and run the real trial on the plan you would actually buy.
+
+Keep the shortlist small. Two or three tools evaluated properly beat ten tools tried casually.
 
 ---
 

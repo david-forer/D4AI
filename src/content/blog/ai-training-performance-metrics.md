@@ -12,7 +12,7 @@ A training program that nobody measures ends with a feeling, not an answer. Here
 
 ## In brief
 
-- Measure AI training by behavior change, not by logins, attendance, or hours of content consumed.
+- Measure AI training by behavior change. Logins, attendance and hours of content consumed tell you little.
 - Track three levels: adoption (are people using AI on the right tasks), quality (is the output good enough), and business impact (is it saving time and adding capacity).
 - A monthly three-question survey, quarterly one-on-one conversations, and a semi-annual skills gap review are enough for most small businesses.
 - An internal AI operations lead should run the measurement, not the founder, or it will not happen consistently.
@@ -21,7 +21,7 @@ A training program that nobody measures ends with a feeling, not an answer. Here
 
 ## Track behavior change, not completion rates, or you are measuring the wrong thing
 
-Most small business AI training programs end without any clear picture of whether they worked. The founder spent time and money on training, some team members appear to be using the tools, and the general sense is that things are better than they were. That general sense is not measurement. It is a feeling, and it is often wrong.
+Most small business AI training programs end without any clear picture of whether they worked. The founder spent time and money on training, some team members appear to be using the tools, and the general sense is that things are better than they were. That general sense is a feeling, and it is often wrong.
 
 Without measurement, AI training investment cannot be defended, optimized, or scaled. When the next budget cycle comes around, training programs that cannot demonstrate results are the first to be cut. More importantly, without measurement, the specific problems that are limiting adoption stay invisible and unfixed.
 
@@ -29,9 +29,9 @@ Without measurement, AI training investment cannot be defended, optimized, or sc
 
 ## What Measurement Is Actually For
 
-The purpose of measuring AI training outcomes is not to justify the program to skeptics. It is to understand what is working, identify what is not, and make specific improvements that increase the return on the investment already made.
+Measure AI training outcomes to understand what is working, identify what is not, and make specific improvements that increase the return on the investment already made.
 
-This distinction matters because it determines what you measure and how you use the data. Measurement for justification tends toward vanity metrics: number of licenses activated, training sessions attended, hours of content consumed. Measurement for improvement tends toward behavioral metrics: how often team members use AI for relevant tasks, whether outputs meet quality standards, and whether time savings are materializing in specific workflows.
+The purpose determines what you measure and how you use the data. Measurement aimed at justifying the program to skeptics tends toward vanity metrics: number of licenses activated, training sessions attended, hours of content consumed. Measurement aimed at improvement tends toward behavioral metrics: how often team members use AI for relevant tasks, whether outputs meet quality standards, and whether time savings are materializing in specific workflows.
 
 Build your measurement system around the second category.
 
@@ -55,7 +55,7 @@ Adoption metrics tell you whether the training changed behavior. They answer the
 
 Track usage frequency monthly. A simple self-reported survey with four options, never, rarely (monthly or less), sometimes (weekly), and regularly (daily or near-daily), is sufficient for most small businesses. The goal over the first six months is to move the distribution toward regular usage for roles where AI has clear applications.
 
-**Task coverage.** Which tasks are team members applying AI to, and which are they still completing manually? This tells you whether training is translating into workflow integration or staying in the realm of personal productivity experiments.
+**Task coverage.** Which tasks are team members applying AI to, and which are they still completing manually? This tells you whether training is translating into workflow integration or staying a set of personal productivity experiments.
 
 Document the target tasks for each role at the start of the training program. Measure quarterly which of those tasks are now regularly AI-assisted versus still handled manually.
 
@@ -83,6 +83,24 @@ Business impact metrics connect AI training outcomes to operational results. The
 
 ---
 
+## How to Measure AI Performance and Training Effectiveness
+
+Two questions get mixed up here. How to measure AI performance is about the tools: are the outputs accurate, and how much editing do they need? How to measure AI training effectiveness is about the people: did the training change how they work?
+
+Use the same three levels for both. Adoption shows whether people use the tools. Quality shows whether the work holds up. Business impact shows whether the business gained anything. If you can only track one measure per level, pick usage frequency, editing time, and hours saved per workflow.
+
+For AI-enabled training, where AI helps deliver the training itself, add one more check. Compare how long it takes new hires to reach their first regular AI use before and after you adopt it.
+
+A note on the numbers. A common planning rule from Boston Consulting Group is the 10/20/70 rule: roughly 10 percent of AI effort goes to algorithms, 20 percent to technology and data, and 70 percent to people and processes. Training and measurement sit in that 70 percent, which is why they deserve a real budget line.
+
+## How to Quantify Training Effectiveness
+
+Quantifying training effectiveness comes down to a before and after comparison on a few workflows. Record the baseline before training starts, then measure the same thing monthly.
+
+Here is a hypothetical example. A proposal workflow takes four hours before training and ninety minutes after. If the team writes six proposals a month, that is 15 hours recovered. Multiply by the loaded hourly cost of the people involved and you have a dollar figure you can defend.
+
+To assess whether a training program worked, compare four numbers against the baseline: usage frequency, editing time, error rate, and hours saved. Enterprises layer on dashboards and formal ROI models to measure AI success at scale. A team of 5 to 20 does not need that. A simple spreadsheet and a named owner do the job.
+
 ## Building a Simple Measurement System
 
 A measurement system for a small business does not require sophisticated tooling. It requires a cadence, a few defined metrics, and someone responsible for collecting and reviewing the data.
@@ -101,11 +119,11 @@ The person running this system should be the internal AI operations lead, not th
 
 After three months of measurement, the data should give you clear answers to four questions.
 
-Which team members are using AI regularly and which are not? If usage is concentrated in two or three individuals, the barrier is not the tool, it is the adoption support structure for the rest of the team.
+Which team members are using AI regularly and which are not? If usage is concentrated in two or three individuals, the barrier sits in the adoption support structure for the rest of the team.
 
 Which workflows have been successfully AI-integrated and which have not? Workflows with low AI usage three months into a training program usually have a structural barrier: a process that is not documented, a prompt library that does not cover this workflow, or a data handling concern that has not been resolved.
 
-Are outputs getting better or staying the same? If output quality is not improving with AI assistance, the problem is likely in training, specifically in how team members are prompting and reviewing outputs rather than just generating them.
+Are outputs getting better or staying the same? If output quality is not improving with AI assistance, the problem is likely in training, specifically in how team members prompt and review outputs.
 
 Is the time investment paying off? If you can trace two hours per week per team member in recovered time, that is over one hundred hours per year per person. For a team of eight, that is a meaningful operational return. If you cannot trace time savings, the workflows being AI-assisted may not be the right ones.
 
@@ -113,11 +131,11 @@ Is the time investment paying off? If you can trace two hours per week per team 
 
 ## The Measurement Trap to Avoid
 
-The single most common measurement mistake in small business AI training is measuring access instead of behavior. Confirming that everyone has a login, attended the training session, and knows how to open the tools tells you almost nothing about whether the training is producing the outcomes you intended.
+The most common measurement mistake in small business AI training is counting access and ignoring behavior. Confirming that everyone has a login, attended the training session, and knows how to open the tools tells you almost nothing about whether the training is producing the outcomes you intended.
 
 The second most common mistake is measuring too many things. A dashboard with twenty metrics is no more useful than no dashboard, because it is not clear which numbers matter or what to do when they go in the wrong direction. Start with three to five core metrics, maintain them consistently, and add complexity only when the basic metrics are understood and acting on.
 
-Measure what is actually happening, not what should be happening. The data tells you where to focus next. That is its primary value.
+Measure what is happening. The data tells you where to focus next.
 
 ## Questions founders ask
 
@@ -139,7 +157,19 @@ A designated team member, usually the internal AI operations lead. When the foun
 
 ### What should you do if usage is stuck with two or three people?
 
-Treat it as a support problem, not a tool problem. Look for the structural barrier: an undocumented process, a gap in the prompt library, or an open question about data handling. Fix that and usage tends to spread.
+Treat it as a support problem. Look for the structural barrier: an undocumented process, a gap in the prompt library, or an open question about data handling. Fix that and usage tends to spread.
+
+### What is the 10/20/70 rule for AI?
+
+It is a planning rule from Boston Consulting Group. About 10 percent of the effort goes to algorithms, 20 percent to technology and data, and 70 percent to people and processes. For a small business, that means most of your AI budget belongs on training and workflow change.
+
+### How do you quantify training effectiveness?
+
+Take a baseline on a few workflows before training, then measure the same things monthly. Compare usage frequency, editing time, error rate and hours saved. Multiply hours saved by the hourly cost of the people involved to get a dollar figure.
+
+### How do you measure AI performance in a small team?
+
+Sample real outputs each month and score them against a simple rubric. Track the error rate and how long the editing takes. If editing time keeps falling, performance is improving.
 
 ---
 

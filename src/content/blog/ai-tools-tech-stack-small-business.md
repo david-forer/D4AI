@@ -24,7 +24,7 @@ Owning AI tools and running an AI stack are two different things. This guide cov
 
 There is a pattern in how most small businesses approach AI tools. A founder hears about a useful product at a conference. Someone on the team suggests trying another one. A vendor demo convinces leadership to add a third. After 6 months, the business is paying for 8 AI subscriptions, the team is using 3 of them inconsistently, the data between systems does not match, and nobody can explain what the stack is supposed to accomplish.
 
-This is an architecture problem. The tools were acquired before the operations were understood, and the integrations were assumed rather than designed.
+This is an architecture problem. The tools were acquired before the operations were understood, and the integrations were assumed and never designed.
 
 A tech stack is an integrated system where data flows through defined channels, each tool owns a specific category of work, and the whole thing is designed to support how the business operates. Most small businesses have tools. Very few have a stack.
 
@@ -62,7 +62,7 @@ Building a stack means designing the system before selecting the tools. It is a 
 
 ---
 
-## Assess What You Have Before Adding Anything
+## Small Business Tech Stack Audit: Assess What You Have Before Adding Anything
 
 The most useful first step for any business that already has tools in place is an honest inventory. [A tech stack audit](/blog/ai-tech-stack-audit) is the structured version of this, but even an informal pass reveals more than most founders expect.
 
@@ -107,6 +107,24 @@ The design principle throughout: identify where manual steps exist in the curren
 ### Internal Operations
 
 Meeting notes, knowledge management, internal communication, SOP documentation, and HR touchpoints. These are lower urgency than client-facing automation but add up to meaningful overhead in aggregate. The right time to address this layer is after the foundation and client-facing layers are stable and running reliably.
+
+---
+
+## Which AI Tools Are Best for a Small Business
+
+No single AI tool is best for every small business. The best one is the one that connects to your system of record and fixes a problem you have already written down. Start there and the shortlist gets short fast.
+
+People often ask what the 5 main AI tools are. For a small service business, the useful answer is the 5 categories above: workflow automation, AI writing and content assistance, business intelligence and reporting, client-facing operations, and internal operations. Pick one tool per category when you reach that layer, and not before.
+
+The same logic applies to the best AI SEO tools for small businesses. Choose an SEO tool that works with your website and your search data, and check that someone on your team will own it. A tool nobody checks weekly is a wasted subscription. Small business tools of any kind belong in the stack only if they pass the 5 questions in the next section.
+
+### What if you do not want AI?
+
+Plenty of founders feel this way, and it is a reasonable position. You can build most of this stack without AI. Workflow automation is rules-based and does not need it. Clean data, a single system of record and documented processes all pay off on their own.
+
+Add AI later, at the one step where drafting, summarizing or analysis saves real time. The foundation is the same either way.
+
+A note on the 10/20/70 rule, a planning rule from Boston Consulting Group. About 10 percent of AI effort goes to algorithms, 20 percent to technology and data, and 70 percent to people and processes. It matches what I see here. The tools are the smaller part of the work.
 
 ---
 
@@ -157,7 +175,7 @@ The test for any tool addition: what specific operational gap does this address,
 
 ---
 
-## Rollout Sequencing: Build in the Right Order
+## Small Business Tech Stack Setup: Build in the Right Order
 
 Rollout works when you move in the right order. The [guide to building an AI tech stack from scratch](/blog/how-to-build-ai-tech-stack) covers the full sequencing in detail.
 
@@ -198,5 +216,21 @@ Subscribe, in almost every case. Custom builds need internal technical talent to
 ### How fast should a small business add new AI tools?
 
 One at a time, each one validated before the next goes in. It feels slow at the start. After 6 months you have a stack that works, and the teams that rushed are usually rebuilding theirs.
+
+### Which AI tool is best for a small business?
+
+The one that connects to your system of record and solves a problem you have already documented. Compare tools against your own workflow, not a ranked list. If you cannot name the gap, you are not ready to buy.
+
+### Can AI make $1,000 a day for a small business?
+
+No tool gives you a guaranteed figure, and I would distrust anyone who promises one. Gains come from saved hours and added capacity on specific workflows. Measure those against a baseline before you put a dollar number on anything.
+
+### What is the 10/20/70 rule in AI?
+
+It is a Boston Consulting Group planning rule. About 10 percent of effort goes to algorithms, 20 percent to technology and data, and 70 percent to people and processes. For a small business, most of the work is operations and adoption.
+
+### What are the 5 main AI tools a small business needs?
+
+Think in categories: workflow automation, AI writing assistance, reporting and business intelligence, client-facing operations, and internal operations. One well-chosen tool per category covers most small service businesses.
 
 If you want an outside perspective on where your current stack stands and what the highest-return path from here looks like, that conversation starts with a direct look at how your operations are running. [Schedule a call.](https://calendly.com/david-j-forer/30min)

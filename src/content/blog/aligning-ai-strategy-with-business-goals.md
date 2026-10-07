@@ -22,7 +22,7 @@ An AI tool can work perfectly and still do nothing for the business. Alignment i
 
 Most small businesses have AI investments that are technically functional but strategically disconnected. The tools run. The automations fire. But if you ask how the AI investment is serving the business's growth goals, the answer is often vague.
 
-This is the alignment problem. It is not about having the wrong tools or building the wrong automations. It is about making technology decisions without a clear line to the outcomes the business is trying to achieve.
+This is the alignment problem. The tools and automations are usually fine. The gap is that technology decisions get made without a clear line to the outcomes the business is trying to achieve.
 
 Aligned AI strategy means every significant AI investment connects to a specific business objective. You can name the objective, describe how the investment supports it, and measure whether it is contributing. When that connection exists, AI becomes a lever for business development rather than an operational overhead.
 
@@ -57,9 +57,23 @@ The business goal is to [specific objective]. The current operational constraint
 
 That four-part statement forces clarity. If you cannot complete it for a proposed AI investment, the investment is not yet aligned. It may be a reasonable tactical improvement, but it is not a strategic investment until the connection to a business outcome is clear.
 
-Example: The business goal is to increase the number of active client engagements from eight to twelve without adding a full-time team member. The current constraint is that client onboarding takes approximately six hours of team time per client. This AI investment reduces onboarding time to two hours by automating document collection, intake review, and kickoff scheduling. We will know it is working when onboarding time per client drops to under two hours, measured across the next ten engagements.
+Here is a worked example. The business goal is to increase the number of active client engagements from eight to twelve without adding a full-time team member. The current constraint is that client onboarding takes approximately six hours of team time per client. This AI investment reduces onboarding time to two hours by automating document collection, intake review, and kickoff scheduling. We will know it is working when onboarding time per client drops to under two hours, measured across the next ten engagements.
 
 That is an aligned AI initiative. The tool selected to implement it is almost a secondary consideration.
+
+### Business Objectives for AI: A Quick Example Set
+
+Good business objectives for AI are specific and tied to a number. A few examples of what that sounds like, written as hypotheticals:
+
+- Cut proposal turnaround from five days to two without adding staff.
+- Reduce time spent on weekly client reporting from six hours to one.
+- Answer every new lead within an hour during business hours.
+
+Each one names a constraint and a metric. The AI tool comes after.
+
+### What Goes in an AI Strategy Document
+
+An AI strategy document does not need to be long. For a team of 5 to 20, one or two pages is enough. It should hold the business goals for the year, the constraint behind each goal, the AI initiatives you have chosen to address those constraints, the metric and baseline for each, and an owner and review date. Use the four-part statement above as the template for each initiative. Keep the document where the team can see it and revisit it every quarter.
 
 ---
 
@@ -76,6 +90,12 @@ Misalignment tends to happen in one of three ways.
 Regular review of alignment, at least quarterly, prevents the drift that causes an AI stack to become an artifact of a previous stage of the business rather than a current strategic asset.
 
 ---
+
+## Business and IT AI Alignment in a Small Company
+
+In larger companies, business and IT AI alignment is a coordination problem between departments. In a company of 5 to 20, you rarely have an IT department. The founder, an ops person, or an outside contractor picks the tools. That makes alignment easier to lose, because nobody is asked to justify a purchase.
+
+The fix is to have the person who owns the business goal sign off on the tool, and the person who picks the tool answer the four-part statement first. One conversation is usually enough.
 
 ## The Right Order of Thinking
 
@@ -97,7 +117,7 @@ Ask: if this initiative works exactly as intended, what business metric improves
 
 Ask: what is the current value of that metric, and what would a meaningful improvement look like? If you do not know the current value, you have not established the baseline that makes measurement possible.
 
-Ask: is improving this metric the highest-leverage thing we could do with this investment? There may be a different operational problem that, if solved, would contribute more to the business goal. Evaluating alternatives before committing prevents the common outcome of solving the wrong problem well.
+Ask: is improving this metric the highest-impact use of this investment? There may be a different operational problem that, if solved, would contribute more to the business goal. Evaluating alternatives before committing prevents the common outcome of solving the wrong problem well.
 
 If all three questions produce clear, specific answers, the initiative is aligned and ready to plan.
 
@@ -113,6 +133,10 @@ That clarity is rare. Most businesses with active AI tools cannot produce this d
 
 Building that clarity is the core of AI strategy. It is less exciting than implementing new tools, but it is what makes the tools worth having.
 
+## How AI Can Improve Business Strategy
+
+AI improves business strategy mainly by removing the operational constraints that keep a strategy from being carried out. It shortens the time between a decision and its execution. It also gives you cleaner data about what is working, so quarterly reviews rest on numbers instead of impressions. AI does not choose the goals for you. That part stays with the founder.
+
 ## Common questions
 
 ### What does AI business alignment mean?
@@ -126,6 +150,10 @@ Fill in four blanks: the goal, the constraint limiting it, how the investment re
 ### Why do AI investments end up misaligned?
 
 Three common reasons. They treat a symptom instead of the real constraint, they get bought because a demo looked good, or they fit a stage the business has already outgrown. More leads into a team that is already full just makes the backlog longer.
+
+### What should an AI strategy document include?
+
+The business goals, the constraint behind each goal, the AI initiatives chosen to address them, a metric and baseline for each, and an owner with a review date. One or two pages is enough for a small team.
 
 ### How often should we check that our AI strategy still fits our goals?
 

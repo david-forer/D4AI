@@ -154,6 +154,26 @@ Sensitive information, meaning client confidential material, personal data and f
 
 Whenever it reaches a client, moves money or makes a decision with consequences. AI tends to fail quietly, with confident answers that turn out wrong, so the check has to be built into the workflow rather than left to memory. If it is part of how the work moves, it happens by default.
 
+### What are the four pillars of AI governance?
+
+Frameworks name them differently, but they tend to cover the same ground: data, accountability, risk and oversight. For a small firm I turn them into the 4 questions above. What data can go in, which tools are approved, who checks the output, and what happens when something breaks. Answer those and you have a working version of the pillars.
+
+### What are some good AI policies for small businesses?
+
+Good ones are short. A one-page use policy, an approved tools list, a rule for sensitive data and a review rule for client-facing output. The [AI acceptable use policy template](/blog/ai-acceptable-use-policy-template) shows the clauses.
+
+### Can you give an example of AI governance?
+
+Take a hypothetical 15-person marketing agency. It keeps a list of 5 approved AI tools. Client contracts and personal data never go into them. Every client-facing draft gets a human read before it sends, and one page says who to tell if a file lands in the wrong tool. That is AI governance at small-firm scale.
+
+### What is the 10/20/70 rule for AI?
+
+It is a rule of thumb, usually attributed to Boston Consulting Group, that AI success depends about 10 percent on algorithms, 20 percent on technology and 70 percent on people and processes. Governance sits in that 70 percent.
+
+### How do AI governance frameworks and responsible AI relate?
+
+Ethical AI governance and responsible AI describe the principles, such as fairness, transparency and accountability. Frameworks are the working rules that apply those principles to your tools and data. Large published frameworks exist, but a firm without a compliance team gets more from the 6 parts above than from a long document nobody maintains.
+
 ### Can a small business set up AI governance without a compliance team?
 
 Yes. Do the approved tools list and data classification in an afternoon, then the one-page policy, then review checkpoints on the 2 or 3 workflows that touch clients or money. Access rules and incident response can follow as the team grows, and nobody needs to be hired for any of it.

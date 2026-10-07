@@ -11,17 +11,30 @@ articleType: "cluster"
 
 In most founder-led businesses, HR is whoever has capacity. Hiring happens reactively when someone leaves or when the team gets too stretched. Onboarding is a few days of handover and a hope that the new hire figures out the rest. Performance management is a quarterly check-in that keeps getting bumped because something more urgent came up.
 
-This is not laziness. It is the natural state of a growing business where operational infrastructure has not kept pace with team size. And it creates compounding problems: inconsistent hiring decisions, slow time-to-productivity for new hires, and performance issues that go unaddressed until they become serious.
+That is what happens in a growing business where operational infrastructure has not kept pace with team size. It creates compounding problems: inconsistent hiring decisions, slow time-to-productivity for new hires, and performance issues that go unaddressed until they become serious.
 
 AI does not fix the culture questions in people operations. It does not make difficult conversations easier. It does not replace the human judgment involved in building a team. What it does is make the operational layer of people management significantly more manageable, so the time and attention that human judgment requires actually gets applied to the right things.
 
-## The People Operations Problems AI Can Address
+## How Can AI Be Used in HR Operations?
 
 The highest-volume, most repetitive tasks in HR are strong candidates for AI assistance and automation. Screening applications. Scheduling interviews. Collecting documentation. Sending reminders. Generating job descriptions. Producing onboarding checklists. These consume real hours and produce inconsistent results when managed manually.
 
 Visibility gaps (not knowing where a hiring process stands, whether a new hire is on track, or whether a performance issue is being addressed) are addressable through structured tracking and automated check-ins rather than manual follow-up.
 
 The judgment-heavy work (evaluating candidates, having difficult performance conversations, making role design decisions, building team culture) stays with the humans. AI assists around the margins of that work, not at its centre.
+
+### Examples of AI in HR for a Small Team
+
+Here are the examples of AI in HR that I see work in businesses of 5 to 20 people:
+
+- Drafting job descriptions from a structured intake form.
+- Screening applications against written criteria.
+- Self-service scheduling for interviews.
+- Automated pre-start sequences for new hires.
+- Check-in reminders with prep notes for managers.
+- Document collection with automatic follow-up.
+
+Each one takes over a repeatable task and leaves the decision with a person. That is the pattern to look for in any HR operations AI you consider.
 
 ## Hiring Operations with AI
 
@@ -47,7 +60,7 @@ The time savings are real. More importantly, the candidate experience is more pr
 
 The goal of onboarding is to get a new hire to full productivity as quickly as possible while giving them a confident start. Most small business onboarding underdelivers on both because it depends on someone having time to shepherd the new hire through an unstructured process.
 
-A structured onboarding system changes the dynamic. Pre-start sequences handle logistics automatically (welcome communications, paperwork collection, system access provisioning, first-day logistics) before the new hire arrives. The first week has a defined structure delivered systematically rather than improvised.
+A structured onboarding system changes how the first weeks go. Pre-start sequences handle logistics automatically (welcome communications, paperwork collection, system access provisioning, first-day logistics) before the new hire arrives. The first week has a defined structure delivered systematically rather than improvised.
 
 A 30-60-90 day onboarding plan with defined milestones and regular check-in triggers means the new hire's progress is visible and the check-ins actually happen. Knowledge delivery (documentation, training materials, company context) is accessible and structured rather than dependent on a colleague finding time to explain it.
 
@@ -70,6 +83,22 @@ Employment contracts, policies, offer letters, and termination documentation nee
 Workflow automation handles document collection (signatures, returned forms, required certifications) with automated reminders rather than manual chasing. Policy distribution when policies change can be systematised rather than relying on someone to remember to communicate the update.
 
 Employment record maintenance (keeping personnel files current, tracking certifications and renewals, managing documentation requirements) benefits from automated reminders and structured tracking rather than someone's memory.
+
+## Which AI Is Best for HR Professionals?
+
+There is no single best AI for HR and people operations. The right choice depends on the task. A general assistant such as Claude or ChatGPT handles drafting: job descriptions, review prep, policy summaries. A scheduling tool handles interview booking. A workflow automation platform connects the steps and sends the reminders. Your existing HR or payroll software may already cover some of this.
+
+Start with the task that eats the most hours, then pick the simplest tool that does it. I cover how to make that call in [AI Systems That Run Your Business](/blog/ai-systems-that-run-your-business).
+
+## Free AI Tools for HR
+
+Free AI tools for HR are a reasonable place to test a workflow. Most general assistants have a free tier that handles job description drafts and review prep. Check the plan terms before you paste anything with employee names, pay or health details. Free tiers often handle data differently from business plans, and personnel data should not go into a tool you have not vetted.
+
+## People Ops AI Assistant and Scaling HR Support
+
+A people ops AI assistant is a general AI tool set up with your own materials: handbook, onboarding checklist, role briefs, review template. Staff ask it routine questions and managers use it to prepare. Scaling HR support with AI means the assistant answers the repeat questions, so whoever currently acts as HR spends time on the conversations that need a person.
+
+If you are weighing people operations software for a growing startup, map your hiring, onboarding and review steps first. Software works when the process under it is defined. The [AI Readiness Audit](/ai-readiness-and-ai-audits) shows where those gaps sit.
 
 ## The Staffing Decision AI Changes
 

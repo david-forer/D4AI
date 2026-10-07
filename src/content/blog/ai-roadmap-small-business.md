@@ -13,7 +13,7 @@ An AI roadmap tells a small business which problems to solve with AI and in what
 ## The short version
 
 - An AI roadmap for a small business is a sequenced plan that answers two questions: which problems you are addressing with AI, and in what order.
-- Most roadmaps fail because they are built around tools instead of problems, try to do too much, or never get revisited.
+- Most roadmaps fail because they start from tools, try to do too much, or never get revisited.
 - A small business can typically execute two to four significant AI implementations per year.
 - Build it in five steps: list the problems, score each on impact and readiness, map dependencies, sequence by quarter, and define success criteria before each phase starts.
 - Plan twelve months ahead, in detail for the next ninety days and in outline for the rest, and review the roadmap every quarter.
@@ -30,7 +30,7 @@ The roadmap is a priorities list with dependencies: here is what we are building
 
 ## Why Most AI Roadmaps Fail Before They Start
 
-The most common reason roadmaps fail is that they are built around tools rather than problems. A founder creates a list of AI tools they want to implement, assigns them to quarters, and calls it a roadmap. But without the underlying problem-and-outcome framing, there is no basis for evaluating whether the sequence makes sense or whether any of it is producing value.
+The most common reason roadmaps fail is that they start from a list of tools. A founder creates a list of AI tools they want to implement, assigns them to quarters, and calls it a roadmap. But without the underlying problem-and-outcome framing, there is no basis for evaluating whether the sequence makes sense or whether any of it is producing value.
 
 The second common reason is over-ambition. A roadmap that tries to address ten operational areas in twelve months is a wish list. Realistic roadmaps account for implementation time, team adoption periods, and the reality that things take longer than expected. Typically, a small business can execute two to four significant AI implementations per year, depending on complexity and team capacity.
 
@@ -71,6 +71,16 @@ Before any implementation begins, define what success looks like. How will you k
 | 3. Map dependencies | Note which items need others in place first | The order constraints |
 | 4. Sequence | Pick the highest-impact, highest-readiness item with no unmet dependencies, one primary item per quarter | A quarterly plan |
 | 5. Define success | Set the metric and baseline before each phase begins | A way to judge each phase |
+
+---
+
+## AI Roadmap Small Business Template and Example
+
+You do not need special software for an AI roadmap small business template. A spreadsheet with one row per item works. Use these columns: problem, intended outcome, proposed solution, owner, timeline, metric, baseline, quarter, and a status column.
+
+Here is a hypothetical example for a 12-person service firm. Q1 is automating client intake, because every later workflow depends on clean intake data. Q2 is automated weekly reporting built on that data. Q3 is AI-assisted proposal drafting. Q4 is a review of what worked, plus one new item chosen from the backlog.
+
+Each row has an owner and a baseline metric before work starts. That is the whole template. If you want the IT side covered too, add a column for the tools each item touches. An IT roadmap for small businesses is the same plan viewed through software, licenses and integrations, and the AI roadmap should feed it.
 
 ---
 
@@ -147,6 +157,18 @@ Twelve months. Plan the next ninety days in detail and the rest of the year in o
 ### How is an AI roadmap different from an AI strategy?
 
 The strategy decides what matters and what you are not doing. The roadmap turns that into a sequence of projects by quarter, with owners and success criteria. If you do not have the strategy yet, write the one-page version first.
+
+### How can I learn AI for my small business?
+
+Learn it by solving one problem from your roadmap. Pick the first item, try the tool on real work, and have the person who owns the process run it. Reading about AI in general teaches less than a month of using it on a task you already do.
+
+### What is the 10/20/70 rule for AI?
+
+It is a planning rule from Boston Consulting Group. About 10 percent of the effort goes to algorithms, 20 percent to technology and data, and 70 percent to people and processes. For a roadmap, that means adoption time and process work deserve more room than tool setup.
+
+### What small business can I start with AI?
+
+Any business with a repeatable process that eats staff time. Client intake, scheduling, reporting and follow-up emails are common first picks. The type of business matters less than whether the process is documented and stable.
 
 ---
 
