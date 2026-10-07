@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import PageHero from '../../components/PageHero.astro';
 import { HUBS } from "../../lib/hubs";
 import SimpleContainer from '../../components/SimpleContainer.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
@@ -84,17 +85,16 @@ const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
   <script is:inline type="application/ld+json" set:html={jsonLd} />
   <div>
     {/* Hero Section */}
-    <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-12">
-      <div class="container mx-auto px-6 max-w-5xl">
-        <div class="flex flex-col justify-center">
-          <div class="max-w-3xl mx-auto text-center">
-            <a href="/research" class="text-blue-200 hover:text-white mb-6 inline-flex items-center text-sm tracking-wide opacity-75">
+    <PageHero size="post" align="center" title={entry.data.title}>
+      <Fragment slot="before">
+        <a href="/research" class="ph-back">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
               </svg>
               Back to Research
             </a>
-            <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">{entry.data.title}</h1>
+      </Fragment>
+      <Fragment slot="meta">
             <p class="text-blue-100">
               Published on {formattedDate}
               {entry.data.updatedDate && (
@@ -127,10 +127,8 @@ const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
                 })}
               </div>
             )}
-          </div>
-        </div>
-      </div>
-    </section>
+      </Fragment>
+    </PageHero>
 
     {entry.data.heroImage && (
       <div class="max-w-[1272px] mx-auto px-6 pt-10">

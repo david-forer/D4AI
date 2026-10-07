@@ -1,5 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import CtaBand from '../components/CtaBand.astro';
 ---
 
 <Layout title="About David Forer | AI SEO and AI Operations"
@@ -9,19 +11,12 @@ description="Discover how David leverages AI to streamline operations and boost 
 
    {/*  Section 1: Hero/Introduction */}
 
-<section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20 w-full">
-  <div class="container mx-auto px-6 max-w-5xl">
-      <div class="flex flex-col md:flex-row justify-center ">
-          <div class=" mb-10 md:mb-0">
-              <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 items-center">Helping Small Businesses Scale Through AI-Powered Operations & SEO</h2>
-              <h2 class="text-xl md:text-2xl text-blue-100 mb-6">Operations and AI for founder-led businesses</h2>
-              <p class="text-white text-lg mb-8">I'm David Forer, an AI operations consultant who helps growing businesses get out of chaos and build systems that hold up as they grow. When I'm not working on someone's operations, I'm exploring a new country with my family, playing with our two dogs, Opal and Atlas (yes, a nod to travel), or working on my cooking.</p>
-            
-          </div>
-
-      </div>
-  </div>
-</section>
+<PageHero
+  title="Helping Small Businesses Scale Through AI-Powered Operations & SEO"
+  accent="AI-Powered Operations"
+  subtitle="Operations and AI for founder-led businesses"
+  text="I'm David Forer, an AI operations consultant who helps growing businesses get out of chaos and build systems that hold up as they grow. When I'm not working on someone's operations, I'm exploring a new country with my family, playing with our two dogs, Opal and Atlas (yes, a nod to travel), or working on my cooking."
+/>
 {/* Section 2: Professional Value Proposition */}
 <section>
   <div
@@ -120,7 +115,7 @@ description="Discover how David leverages AI to streamline operations and boost 
 
 <div class=" lg:flex-row flex flex-col-reverse items-center lg:space-x-32 justify-center mx-auto container relative z-20 xl:px-0 px-4">
     <div class="lg:w-4/12 ">
-      <h1 tabindex="0" class="focus:outline-none lg:text-5xl text-3xl f-m-w text-blue-700 font-bold">My Professional Journey</h1>
+      <h2 tabindex="0" class="focus:outline-none lg:text-5xl text-3xl f-m-w text-blue-700 font-bold">My Professional Journey</h2>
       <p tabindex="0" class="focus:outline-none lg:text-lg text-sm f-m-m  dark:text-black leading-loose mt-3 mb-8">My professional path has been unconventional but purposeful. Starting in sales, I developed fundamental skills in human connection and strategic thinking. This foundation led me through various leadership roles where I've consistently driven growth through improved systems.</p>
       <p tabindex="0" class="focus:outline-none lg:text-lg text-sm f-m-m  dark:text-black leading-loose mt-3 mb-8">What truly shaped my approach was my evolution from sales to operations to AI integration. This progression gave me a unique lens on how businesses function from multiple angles. My technical training combined with experience managing large teams allows me to bridge the gap between big-picture strategy and hands-on implementation that many consultants can't offer. I spot connections across disciplines that others miss - leading to effective solutions.</p>
       <p class="lg:text-lg text-sm f-m-m  dark:text-black leading-loose mt-3 mb-8">Throughout my career, I've maintained a focus on four core areas: operational excellence, AI integration, strategic SEO, and building sustainable systems. These pillars have allowed me to deliver consistent results across diverse industries and business challenges.</p>
@@ -401,29 +396,25 @@ description="Discover how David leverages AI to streamline operations and boost 
 
 
 {/* Section 8: Call to Action */}
-<div class="bg-indigo-50 py-16">
-  <div class="container mx-auto px-4 lg:px-20">
-      <div class="text-center">
-          <h2 class="font-bold text-4xl text-gray-800 mb-6">Let's Connect</h2>
-          <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">Whether you're looking for help with operations, interested in leveraging AI for your business, or want to discuss how strategic SEO can drive your growth, I'd love to chat.</p>
-          <a href="/contact" class="inline-block bg-indigo-600 text-white font-medium py-3 px-8 rounded-md hover:bg-indigo-700 transition duration-300">Contact Me</a>
-          <div class="mt-8 flex flex-wrap justify-center gap-4">
-              <a href="https://www.linkedin.com/in/davidforer" class="text-indigo-600 hover:text-indigo-800 flex items-center">
-                  <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.04 17.043h-2.962v-4.64c0-1.107-.023-2.531-1.544-2.531-1.544 0-1.78 1.204-1.78 2.449v4.722H7.793V7.5h2.844v1.3h.039c.397-.75 1.364-1.54 2.808-1.54 3.001 0 3.556 1.974 3.556 4.545v5.238zM4.447 6.194c-.954 0-1.72-.771-1.72-1.72s.767-1.72 1.72-1.72c.949 0 1.72.771 1.72 1.72s-.771 1.72-1.72 1.72zm1.484 10.85h-2.98V7.5h2.98v9.543z"/>
-                  </svg>
-                  LinkedIn
-              </a>
-              <a href="/blog" class="text-indigo-600 hover:text-indigo-800 flex items-center">
-                  <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zm-1.207 1.207L3 14.172V17h2.828l9.38-9.379-2.83-2.828z"></path>
-                  </svg>
-                  AI Operations Blog
-              </a>
-          </div>
-      </div>
-  </div>
-</div>
+<CtaBand
+  title="Let's Connect"
+  text="Whether you're looking for help with operations, interested in leveraging AI for your business, or want to discuss how strategic SEO can drive your growth, I'd love to chat."
+  primaryLabel="Contact Me"
+  primaryHref="/contact"
+>
+  <a href="https://www.linkedin.com/in/davidforer">
+    <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.04 17.043h-2.962v-4.64c0-1.107-.023-2.531-1.544-2.531-1.544 0-1.78 1.204-1.78 2.449v4.722H7.793V7.5h2.844v1.3h.039c.397-.75 1.364-1.54 2.808-1.54 3.001 0 3.556 1.974 3.556 4.545v5.238zM4.447 6.194c-.954 0-1.72-.771-1.72-1.72s.767-1.72 1.72-1.72c.949 0 1.72.771 1.72 1.72s-.771 1.72-1.72 1.72zm1.484 10.85h-2.98V7.5h2.98v9.543z"/>
+    </svg>
+    LinkedIn
+  </a>
+  <a href="/blog">
+    <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zm-1.207 1.207L3 14.172V17h2.828l9.38-9.379-2.83-2.828z"></path>
+    </svg>
+    AI Operations Blog
+  </a>
+</CtaBand>
 
          
 	</div>

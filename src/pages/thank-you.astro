@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
 ---
 
 <Layout 
@@ -9,24 +10,21 @@ noindex={true}>
   <div class="bg-gray-50 overflow-hidden">
     
     {/* Thank You Hero Section with Blue Background */}
-    <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20 w-full">
-      <div class="container mx-auto px-6 max-w-5xl">
-        <div class="text-center">
-          <div class="mx-auto h-24 w-24 flex items-center justify-center rounded-full bg-white bg-opacity-20 mb-8">
-            <svg class="h-12 w-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-          </div>
-          <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Thank You!</h1>
-          <p class="text-xl md:text-2xl text-blue-100 mb-6">
-            We've received your submission and will get back to you soon.
-          </p>
-          <p class="text-white text-lg mb-8">
-            In the meantime, feel free to explore our resources or check out our latest blog posts.
-          </p>
+    <PageHero
+      align="center"
+      title="Thank You"
+      accent="Thank You"
+      text="We've received your submission and will get back to you soon."
+      text2="In the meantime, feel free to explore our resources or check out our latest blog posts."
+    >
+      <Fragment slot="before">
+        <div class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full" style="background: rgba(255,122,31,.18)">
+          <svg class="h-10 w-10" style="color: var(--flame)" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+          </svg>
         </div>
-      </div>
-    </section>
+      </Fragment>
+    </PageHero>
 
     {/* Action Buttons Section */}
     <section class="py-16 bg-white">

@@ -317,6 +317,7 @@ const labelClass = "block text-gray-700 text-sm font-bold mb-2 text-left";
 
         form.classList.add("hidden");
         successEl?.classList.remove("hidden");
+        if (typeof window.gtag === "function") window.gtag("event", "guide_submit", { form: root.getAttribute("data-survey") || "leadform", page_path: location.pathname });
       } catch (err) {
         console.error("[LeadForm] submission failed", err);
         button.disabled = false;

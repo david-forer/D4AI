@@ -1,22 +1,149 @@
-{/* components/Footer.astro */}
-<footer>
-  <p>&copy; 2026 David J Forer. All rights reserved.</p>
-  <nav>
-    <a href="/contact">Contact</a>
-    <a href="/privacy-policy">Privacy Policy</a>
-    <a href="/terms-of-service">Terms of Service</a>
-  </nav>
+---
+// Site footer. Navy to match the hero and nav, colour tokens from
+// src/styles/tokens.css. Reasoning lives here, not in HTML comments, because
+// this renders on every page.
+//
+// Contents: who this is, how to book, the three site sections, the legal
+// entity (a cautious buyer checks for one) and a back to top button.
+const year = new Date().getFullYear();
+const BOOKING = 'https://calendly.com/david-j-forer/30min';
+const columns = [
+  {
+    title: 'Services',
+    links: [
+      { href: '/services', label: 'All services' },
+      { href: '/ai-readiness-and-ai-audits', label: 'AI Audit' },
+      { href: '/ai-training-for-small-business-teams', label: 'AI Training' },
+      { href: '/seo-accelerator', label: 'SEO Accelerator' },
+      { href: '/operational-buildout', label: 'Operations Accelerator' },
+      { href: '/ai-automation-accelerator', label: 'AI Automations' },
+    ],
+  },
+  {
+    title: 'Resources',
+    links: [
+      { href: '/resources', label: 'All resources' },
+      { href: '/blog', label: 'Blog' },
+      { href: '/research', label: 'Research' },
+      { href: '/playbooks-checklists', label: 'Playbooks and Checklists' },
+      { href: '/custom-gpts', label: 'Custom GPTs' },
+      { href: '/founder-bottleneck-test', label: 'Founder Bottleneck Test' },
+    ],
+  },
+  {
+    title: 'Company',
+    links: [
+      { href: '/fix-the-chaos', label: 'Fix the Chaos' },
+      { href: '/built', label: 'What I have built' },
+      { href: '/about', label: 'About' },
+      { href: '/contact', label: 'Contact' },
+    ],
+  },
+];
+---
+
+<footer class="site-footer">
+  <div class="inner">
+    <div class="top">
+      <div class="about">
+        <a href="/" class="brand">
+          <span class="brand-bar" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">David J Forer</span>
+            <span class="brand-sub">AI Operations</span>
+          </span>
+        </a>
+        <p class="blurb">AI operations consulting for founder-led businesses doing $1M to $5M. I map how your work runs, then build what takes it off you.</p>
+        <div class="actions">
+          <a class="btn" href={BOOKING}>Book a call <span aria-hidden="true">&rarr;</span></a>
+          <a class="social" href="https://www.linkedin.com/in/davidforer" rel="noopener">LinkedIn</a>
+          <a class="social" href="mailto:david@davidjforer.com">david@davidjforer.com</a>
+        </div>
+      </div>
+
+      {columns.map((col) => (
+        <nav class="col" aria-label={col.title}>
+          <h2>{col.title}</h2>
+          <ul>
+            {col.links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+          </ul>
+        </nav>
+      ))}
+    </div>
+
+    <div class="bottom">
+      <p class="legal">&copy; {year} David J Forer. Forersight AI Operations LLC. All rights reserved.</p>
+      <div class="legal-links">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
+      </div>
+      <a href="#" id="to-top" class="to-top" aria-label="Back to top">
+        <span>Back to top</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" /></svg>
+      </a>
+    </div>
+  </div>
 </footer>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const top = document.getElementById('to-top');
+    if (!top) return;
+    top.addEventListener('click', function (e) {
+      e.preventDefault();
+      const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: calm ? 'auto' : 'smooth' });
+    });
+  });
+</script>
+
 <style>
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #13151a;
-    color: white;
+  .site-footer { position: relative; background: var(--navy); color: var(--blue-ice); padding: 88px 0 36px; overflow: hidden; border-top: 1px solid var(--navy-line); }
+  .site-footer::before { content: ""; position: absolute; inset: 0; background:
+    repeating-linear-gradient(to bottom, transparent 0 47px, rgba(201,214,245,.06) 47px 48px),
+    radial-gradient(700px 360px at 100% 0, rgba(255,122,31,.16), transparent 60%),
+    radial-gradient(600px 400px at 0 100%, rgba(37,56,106,.8), transparent 70%); }
+  .inner { position: relative; max-width: 1280px; margin: 0 auto; padding: 0 28px; }
+
+  .top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 56px; border-bottom: 1px solid var(--navy-line); }
+
+  .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand-bar { width: 6px; height: 40px; border-radius: 99px; background: var(--flame); }
+  .brand-text { display: flex; flex-direction: column; line-height: 1; }
+  .brand-name { font-size: 26px; font-weight: 800; letter-spacing: -.03em; color: #fff; }
+  .brand-sub { margin-top: 6px; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--blue-ice); }
+  .blurb { margin-top: 22px; max-width: 360px; font-size: 16px; line-height: 1.6; }
+  .actions { margin-top: 26px; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 24px; border-radius: 999px; background: var(--flame); color: var(--navy); font-size: 16px; font-weight: 700; text-decoration: none; transition: background .2s var(--ease); }
+  .btn:hover { background: var(--flame-hover); }
+  .social { color: #fff; font-size: 15px; font-weight: 500; text-decoration: none; border-bottom: 1px solid var(--navy-line); padding-bottom: 2px; }
+  .social:hover { border-bottom-color: var(--flame); }
+
+  .col h2 { margin: 0 0 18px; font-size: 13px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #fff; line-height: 1.2; }
+  .col ul { list-style: none; margin: 0; padding: 0; }
+  .col li + li { margin-top: 12px; }
+  .col a { font-size: 16px; color: var(--blue-ice); text-decoration: none; }
+  .col a:hover { color: #fff; text-decoration: underline; text-decoration-color: var(--flame); text-underline-offset: 4px; }
+
+  .bottom { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 32px; padding-top: 28px; }
+  .legal { margin: 0; font-size: 14px; }
+  .legal-links { display: flex; gap: 22px; }
+  .legal-links a { font-size: 14px; color: var(--blue-ice); text-decoration: none; }
+  .legal-links a:hover { color: #fff; text-decoration: underline; }
+
+  .to-top { margin-left: auto; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 20px; border: 1.5px solid rgba(255,255,255,.35); border-radius: 999px; color: #fff; font-size: 15px; font-weight: 600; text-decoration: none; transition: background .2s var(--ease), border-color .2s var(--ease); }
+  .to-top svg { width: 18px; height: 18px; color: var(--flame); transition: transform .2s var(--ease); }
+  .to-top:hover { background: rgba(255,255,255,.08); border-color: #fff; }
+  .to-top:hover svg { transform: translateY(-3px); }
+
+  .btn:focus-visible, .social:focus-visible, .col a:focus-visible, .legal-links a:focus-visible, .to-top:focus-visible, .brand:focus-visible { outline: 3px solid var(--flame); outline-offset: 3px; border-radius: 6px; }
+
+  @media (max-width: 980px) { .top { grid-template-columns: 1fr 1fr; } .about { grid-column: 1 / -1; } }
+  @media (max-width: 520px) {
+    .site-footer { padding: 56px 0 28px; }
+    .inner { padding: 0 20px; }
+    .top { grid-template-columns: 1fr; gap: 36px; }
+    .to-top { margin-left: 0; }
   }
-  nav a {
-    margin: 0 0.5rem;
-    color: #bbb;
-  }
+  @media (prefers-reduced-motion: reduce) { .btn, .to-top, .to-top svg { transition: none; } }
 </style>

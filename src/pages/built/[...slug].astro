@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import PageHero from '../../components/PageHero.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -49,12 +50,10 @@ const embedUrl = videoUrl ? toEmbedUrl(videoUrl) : null;
 
 <Layout title={entry.data.seoTitle || `${entry.data.title} | Forersight`} description={entry.data.description}>
   {/* Header */}
-  <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-16">
-    <div class="container mx-auto px-6 max-w-4xl">
-      <a href="/built" class="text-blue-200 hover:text-white text-sm font-medium transition duration-150">
-        ← Back to everything I have built
-      </a>
-      <div class="mt-6 flex items-center gap-3">
+  <PageHero title={entry.data.title} text={entry.data.description}>
+    <Fragment slot="before">
+      <a href="/built" class="ph-back">&larr; Back to everything I have built</a>
+      <div class="mb-4 flex items-center gap-3">
         <span class={`text-xs font-semibold uppercase tracking-wide px-2 py-1 rounded ${badgeColors[entry.data.buildType]}`}>
           {typeLabels[entry.data.buildType]}
         </span>
@@ -62,30 +61,14 @@ const embedUrl = videoUrl ? toEmbedUrl(videoUrl) : null;
           <span class="text-xs font-medium text-blue-200">in progress</span>
         )}
       </div>
-      <h1 class="text-4xl md:text-5xl font-bold text-white mt-4 mb-4">{entry.data.title}</h1>
-      <p class="text-blue-100 text-xl leading-relaxed">{entry.data.description}</p>
-
-      <div class="mt-8 flex flex-wrap items-center gap-4">
-        {entry.data.githubUrl && (
-          <a
-            href={entry.data.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center bg-white text-blue-700 font-bold py-2 px-6 rounded-lg shadow hover:bg-blue-50 transition duration-300"
-          >
-            View on GitHub
-          </a>
-        )}
-        {entry.data.stack && (
-          <div class="flex flex-wrap gap-2">
-            {entry.data.stack.map(tech => (
-              <span class="text-xs bg-blue-500 bg-opacity-40 text-white px-2 py-1 rounded">{tech}</span>
-            ))}
-          </div>
-        )}
-      </div>
-    </div>
-  </section>
+    </Fragment>
+    {entry.data.githubUrl && (
+      <a class="ph-btn ph-btn-flame" href={entry.data.githubUrl} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    )}
+    {entry.data.stack && entry.data.stack.map(tech => (
+      <span class="ph-chip">{tech}</span>
+    ))}
+  </PageHero>
 
   {/* Video */}
   {videoUrl && (

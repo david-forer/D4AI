@@ -1,0 +1,33 @@
+/* Shared design tokens. Loaded once by Layout.astro, so any page or component
+   can read them. The homepage, PageHero and CtaBand use them today. Pages that
+   have not been migrated keep their own Tailwind colours until they are.
+   One typeface only (Bricolage Grotesque), set in tailwind.config.js. */
+:root {
+  --navy: #0a1630;
+  --navy-2: #11234d;
+  --navy-line: #25386a;
+  --paper: #f3eee4;
+  --paper-2: #e9e2d2;
+  --slip: #fffdf6;
+  --ink: #0f1729;
+  --ink-2: #4a5266;
+  --rule: #cfc6b2;
+  --orange: #b34700;       /* text and fills on paper, white text is 5.5:1 */
+  --orange-deep: #8f3900;
+  --flame: #ff7a1f;        /* accents on navy, navy text on it is 7:1 */
+  --flame-hover: #ff9347;
+  --blue-ice: #c9d6f5;
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
+
+/* Service accents. One muted colour per offer, all at a similar depth so they
+   read as a family next to the navy, paper and orange. Each has an accent
+   (text, icons, buttons, white text on it passes 4.5:1) and two tints for
+   cards. Used by /services today. */
+:root {
+  --svc-audit: #2f55a4;     --svc-audit-t: #e3e9f7;     --svc-audit-t2: #cfdaf1;
+  --svc-training: #7a4a8c;  --svc-training-t: #efe3f3;  --svc-training-t2: #e2cfea;
+  --svc-seo: #3d6b4c;       --svc-seo-t: #e1ece3;       --svc-seo-t2: #cde0d1;
+  --svc-ops: #b34700;       --svc-ops-t: #f7e4d4;       --svc-ops-t2: #f0cfb4;
+  --svc-auto: #1e6b75;      --svc-auto-t: #dbecee;      --svc-auto-t2: #c3dde1;
+}

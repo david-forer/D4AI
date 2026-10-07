@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
 import ModalLeadMagnet from '../components/ModalLeadMagnet.astro';
 import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
 
@@ -98,19 +99,13 @@ const cardClass = 'group bg-white rounded-xl p-8 shadow-sm border-t-4 border-blu
 ---
 
 <Layout title="AI Resources for Small Business Owners – Free Playbooks, Checklists, and Custom GPTs – Guides on Founder Bottlenecks and SEO Operations – David J Forer" description="A free library of AI resources for small business owners: playbooks, checklists, custom GPTs, and guides covering founder bottlenecks, SEO, and operations.">
-	<section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20 relative overflow-hidden text-lg md:text-xl">
-		{/* Background texture, same triangles as the AI training hero. Decorative only. */}
-		<div class="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
-			<div class="absolute top-16 left-24 w-44 h-44 bg-amber-200" style="clip-path: polygon(50% 0, 100% 100%, 0 100%)"></div>
-			<div class="absolute bottom-20 right-20 w-56 h-56 bg-orange-200" style="clip-path: polygon(50% 100%, 0 0, 100% 0)"></div>
-			<div class="absolute top-1/3 left-1/2 w-24 h-24 bg-yellow-100" style="clip-path: polygon(50% 0, 100% 100%, 0 100%)"></div>
-		</div>
-		<div class="container mx-auto px-6 max-w-4xl relative z-10 text-center">
-			<p class="inline-block bg-white/15 border border-white/30 text-white text-lg md:text-xl font-bold uppercase tracking-wider rounded-full py-2 px-6 mb-6">Free to use</p>
-			<h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">AI resources for small business owners</h1>
-			<p class="text-blue-50 max-w-3xl mx-auto">Guides, checklists and tools I built for founders running 5 to 20 people.</p>
-		</div>
-	</section>
+	<PageHero
+		align="center"
+		eyebrow="Free to use"
+		title="AI resources for small business owners"
+		accent="AI resources"
+		text="Guides, checklists and tools I built for founders running 5 to 20 people."
+	/>
 
 	{/* Why it is free */}
 	<section class="bg-white py-16 px-6 text-lg md:text-xl">

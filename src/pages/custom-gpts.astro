@@ -1,6 +1,8 @@
 
 ---
 import Layout from '../layouts/Layout.astro'
+import PageHero from '../components/PageHero.astro';
+import CtaBand from '../components/CtaBand.astro';
 
 const gpts = [
   {
@@ -55,25 +57,15 @@ const gpts = [
 description="Free custom GPTs built by David J Forer for small business work, like SOPs, support replies and SEO writing. Open one in ChatGPT and use it today."
 image="/images/Custom-GPTs.webp">
   {/* Blue Hero/Header Section */}
-  <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-24 relative overflow-hidden">
-        {/* Background texture. Hexagons, a modular motif for a set of assistants. Decorative only. */}
-        <div class="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
-            <div class="absolute top-20 left-20 w-48 h-48 bg-violet-200" style="clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%)"></div>
-            <div class="absolute bottom-16 right-24 w-64 h-64 bg-fuchsia-200" style="clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%)"></div>
-            <div class="absolute top-1/2 left-1/2 w-28 h-28 bg-purple-100" style="clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%)"></div>
-        </div>
-    <div class="container mx-auto px-6 max-w-6xl relative z-10">
-      <div class="text-center">
-        <div>
-          <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">Custom GPTs</h1>
-          <h2 class="text-2xl md:text-3xl text-blue-100 mb-8">AI assistants for business and creative work</h2>
-          <p class="text-white text-xl mb-10 leading-relaxed">Free AI assistants I built for my own work. Open one in ChatGPT and use it today.</p>
-          <a href="#explore-gpts" class="bg-white text-blue-700 font-bold py-4 px-10 rounded-lg shadow-lg hover:bg-blue-50 transition duration-300 text-lg">See the GPTs</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
+  <PageHero
+    align="center"
+    title="Custom GPTs"
+    accent="GPTs"
+    subtitle="AI assistants for business and creative work"
+    text="Free AI assistants I built for my own work. Open one in ChatGPT and use it today."
+  >
+    <a class="ph-btn ph-btn-flame" href="#explore-gpts">See the GPTs <span aria-hidden="true">&rarr;</span></a>
+  </PageHero>
 
   {/* What are Custom GPTs Section */}
   <section class="py-16 bg-white">
@@ -174,16 +166,14 @@ image="/images/Custom-GPTs.webp">
   </section>
 
   {/* CTA Section */}
-  <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-16">
-    <div class="container mx-auto px-6 max-w-5xl text-center">
-      <h2 class="text-3xl font-bold text-white mb-6">Need a custom GPT for your business?</h2>
-      <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">I can build a custom GPT around how your business runs.</p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="/contact" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-50 transition duration-300">Talk to me about a custom GPT</a>
-        <a href="/services" class="bg-transparent text-white border-2 border-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300">See my services</a>
-      </div>
-    </div>
-  </section>
+  <CtaBand
+    title="Need a custom GPT for your business?"
+    text="I can build a custom GPT around how your business runs."
+    primaryLabel="Talk to me about a custom GPT"
+    primaryHref="/contact"
+    secondaryLabel="See my services"
+    secondaryHref="/services"
+  />
 </Layout>
 
 <style>

@@ -1,0 +1,57 @@
+---
+// Standard closing call to action for inner pages. Navy band, one heading,
+// one sentence, one or two buttons. Anything passed in the default slot (extra
+// links, for instance) renders under the buttons.
+// Colour tokens come from src/styles/tokens.css.
+interface Props {
+  title: string;
+  text?: string;
+  primaryLabel: string;
+  primaryHref: string;
+  secondaryLabel?: string;
+  secondaryHref?: string;
+  align?: 'left' | 'center';
+}
+const { title, text, primaryLabel, primaryHref, secondaryLabel, secondaryHref, align = 'center' } = Astro.props;
+const hasExtra = Astro.slots.has('default');
+---
+
+<section class={`cta-band ${align === 'center' ? 'is-center' : ''}`}>
+  <div class="inner">
+    <h2>{title}</h2>
+    {text && <p class="text">{text}</p>}
+    <div class="buttons">
+      <a class="btn btn-flame" href={primaryHref}>{primaryLabel} <span aria-hidden="true">&rarr;</span></a>
+      {secondaryLabel && secondaryHref && <a class="btn btn-ghost" href={secondaryHref}>{secondaryLabel}</a>}
+    </div>
+    {hasExtra && <div class="extra"><slot /></div>}
+  </div>
+</section>
+
+<style>
+  .cta-band { position: relative; background: var(--navy); color: #fff; padding: 110px 0; overflow: hidden; }
+  .cta-band::before { content: ""; position: absolute; inset: 0; background: radial-gradient(800px 420px at 100% 0, rgba(255,122,31,.2), transparent 60%); }
+  .inner { position: relative; max-width: 1160px; margin: 0 auto; padding: 0 28px; }
+  .is-center .inner { text-align: center; }
+  h2 { font-weight: 800; font-size: clamp(34px, 5vw, 62px); line-height: 1; letter-spacing: -.035em; color: #fff; max-width: 18ch; margin: 0; }
+  .is-center h2 { margin-left: auto; margin-right: auto; }
+  .text { margin-top: 22px; max-width: 600px; font-size: 20px; line-height: 1.55; color: var(--blue-ice); }
+  .is-center .text { margin-left: auto; margin-right: auto; }
+  .buttons { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 14px; }
+  .is-center .buttons { justify-content: center; }
+  .btn { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 26px; border-radius: 999px; font-weight: 600; font-size: 17px; text-decoration: none; border: 2px solid transparent; transition: background .2s var(--ease), border-color .2s var(--ease); }
+  .btn:focus-visible, .extra :global(a:focus-visible) { outline: 3px solid var(--flame); outline-offset: 3px; }
+  .btn-flame { background: var(--flame); color: var(--navy); }
+  .btn-flame:hover { background: var(--flame-hover); }
+  .btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.4); }
+  .btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,.08); }
+  .extra { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 12px 28px; }
+  .is-center .extra { justify-content: center; }
+  .extra :global(a) { display: inline-flex; align-items: center; gap: 8px; color: var(--blue-ice); font-weight: 500; text-decoration: none; }
+  .extra :global(a:hover) { color: #fff; text-decoration: underline; }
+  @media (max-width: 520px) {
+    .cta-band { padding: 72px 0; }
+    .inner { padding: 0 20px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+</style>

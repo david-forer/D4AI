@@ -1,0 +1,84 @@
+---
+// Homepage proof of the calculator number. Sits directly under the hero.
+//
+// Reads every published entry in the case-studies collection, so adding a
+// third study is one new file in src/content/case-studies and nothing here.
+// There is deliberately no "all case studies" link or index page. With a few
+// studies it would show the same cards again and add a click. Add one when
+// the count outgrows the grid (David, 2026-10-07).
+//
+// Public wording: estimates from audits I performed. Nothing about where or
+// for whom they were done.
+import { getCollection } from 'astro:content';
+
+const studies = (await getCollection('case-studies', ({ data }) => !data.draft))
+  .sort((a, b) => a.data.order - b.data.order);
+---
+
+{studies.length > 0 && (
+  <section id="case-studies" class="proof">
+    <div class="wrap">
+      <p class="tag sec-head">Proof of the number</p>
+      <h2>The same math, on real audits.</h2>
+      <p class="lede">That $78,000 is a worked example. These are estimates from audits I performed, with the working shown.</p>
+
+      <div class="grid" data-count={studies.length}>
+        {studies.map((s, i) => (
+          <a class="card" href={`/case-studies/${s.slug}`}>
+            <div class="top">
+              <span class="tag">Case study {String(i + 1).padStart(2, '0')}</span>
+            </div>
+            <p class="who">{s.data.card.who}</p>
+            <div class="num">{s.data.card.number}</div>
+            <p class="cap">{s.data.card.caption}</p>
+            <div class="lines">
+              {s.data.card.lines.map((l) => (
+                <div class="line"><span>{l.label}</span><b>{l.value}</b></div>
+              ))}
+            </div>
+            <div class="foot">
+              <span class="go">Read the case study <span aria-hidden="true">&rarr;</span></span>
+              {s.data.videoUrl && (
+                <span class="vid"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Video</span>
+              )}
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .proof { text-align: center; background: var(--paper); color: var(--ink); padding: 84px 0 90px; border-bottom: 1px solid var(--rule); font-size: 18px; line-height: 1.6; }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 28px; }
+  .tag { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; font-weight: 500; }
+  .sec-head { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 22px; color: var(--orange); }
+  .sec-head::before, .sec-head::after { content: ""; width: 44px; height: 2px; background: currentColor; flex: none; }
+  h2 { font-size: clamp(32px, 4vw, 52px); font-weight: 800; max-width: 20ch; margin: 0 auto; letter-spacing: -.03em; line-height: 1.04; }
+  .lede { margin: 16px auto 0; max-width: 560px; color: var(--ink-2); }
+
+  .grid { margin-top: 44px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 26px; }
+  .grid[data-count="1"] { max-width: 440px; margin-left: auto; margin-right: auto; }
+  .grid[data-count="2"] { max-width: 900px; margin-left: auto; margin-right: auto; }
+  .card { text-align: left; display: flex; flex-direction: column; background: var(--slip); border: 1.5px solid var(--ink); padding: 24px 24px 22px; text-decoration: none; color: inherit; transition: transform .25s var(--ease), box-shadow .25s var(--ease); }
+  .card:hover { transform: translateY(-6px); box-shadow: 8px 8px 0 var(--ink); }
+  .card:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+  .top { display: flex; justify-content: space-between; align-items: center; min-height: 34px; padding-bottom: 12px; border-bottom: 2px dashed var(--ink); }
+  .top .tag { font-size: 12px; color: var(--ink-2); }
+  .who { margin-top: 16px; font-size: 14px; color: var(--ink-2); }
+  .num { margin-top: 6px; font-size: clamp(38px, 4vw, 52px); font-weight: 800; letter-spacing: -.04em; line-height: 1; color: var(--orange); font-variant-numeric: tabular-nums; }
+  .cap { margin-top: 6px; font-size: 15px; line-height: 1.35; }
+  .lines { margin-top: 18px; flex: 1; }
+  .line { display: flex; align-items: baseline; gap: 8px; padding: 6px 0; font-size: 14px; color: var(--ink-2); }
+  .line::after { content: ""; order: 2; flex: 1; border-bottom: 2px dotted var(--rule); transform: translateY(-4px); }
+  .line span { order: 1; }
+  .line b { order: 3; color: var(--ink); font-weight: 700; white-space: nowrap; }
+  .foot { margin-top: 18px; padding-top: 14px; border-top: 2px dashed var(--ink); display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+  .go { font-weight: 700; display: inline-flex; gap: 8px; }
+  .vid { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--navy); background: var(--flame); padding: 4px 10px 4px 8px; border-radius: 99px; }
+  .vid svg { width: 12px; height: 12px; }
+
+  @media (max-width: 520px) { .wrap { padding: 0 20px; } .proof { padding: 60px 0 64px; font-size: 17px; } }
+  @media (prefers-reduced-motion: reduce) { .card { transition: none; } }
+</style>

@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
 import FormSection from '../components/FormSection.astro';
 import { AI_AUDIT_SURVEY, AI_AUDIT_FIELDS } from '../lib/leadForms';
 ---
@@ -12,28 +13,16 @@ image="/images/ai-training.webp"
 
 	<body class="bg-white text-gray-800 font-sans">
     {/* Hero Section */}
-<section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20 relative overflow-hidden text-lg md:text-xl">
-        {/* Background texture. Triangles, drawn with clip-path because Tailwind has no triangle utility. Decorative only. */}
-        <div class="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
-            <div class="absolute top-16 left-24 w-44 h-44 bg-amber-200" style="clip-path: polygon(50% 0, 100% 100%, 0 100%)"></div>
-            <div class="absolute bottom-20 right-20 w-56 h-56 bg-orange-200" style="clip-path: polygon(50% 100%, 0 0, 100% 0)"></div>
-            <div class="absolute top-1/3 left-1/2 w-24 h-24 bg-yellow-100" style="clip-path: polygon(50% 0, 100% 100%, 0 100%)"></div>
-        </div>
-    <div class="container mx-auto px-6 max-w-6xl relative z-10">
-        <div class="text-center">
-            <div>
-                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">AI Training for Small Business Teams</h1>
-                <h2 class="text-xl md:text-2xl text-blue-100 mb-6">Practical AI training that turns scattered experimentation into consistent, team-wide capability</h2>
-                <p class="text-white text-lg md:text-xl mb-4">AI tools are everywhere, but most teams are still guessing how to use them.</p>
-                <p class="text-white text-lg md:text-xl mb-8">One person experiments. Another ignores it. Workflows break. Results vary.</p>
-                <div>
-                    <a href="#pricing" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-50 transition duration-300 inline-block">See what training costs</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
+<PageHero
+  align="center"
+  title="AI Training for Small Business Teams"
+  accent="AI Training"
+  subtitle="Practical AI training that turns scattered experimentation into consistent, team-wide capability"
+  text="AI tools are everywhere, but most teams are still guessing how to use them."
+  text2="One person experiments. Another ignores it. Workflows break. Results vary."
+>
+  <a class="ph-btn ph-btn-flame" href="#pricing">See what training costs <span aria-hidden="true">&rarr;</span></a>
+</PageHero>
 
     {/* Qualification Section */}
     <section class="py-16 bg-white text-lg md:text-xl">

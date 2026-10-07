@@ -3,7 +3,11 @@ import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 // Site-wide typeface, self-hosted. Loaded once here so every page that uses
 // Layout inherits it. Do not add font-family declarations anywhere else.
-import '@fontsource-variable/inter';
+// Bricolage Grotesque, the one typeface for headings, body and numbers.
+// The stack is in tailwind.config.js.
+import '@fontsource-variable/bricolage-grotesque';
+// Shared colour tokens used by the homepage, PageHero and CtaBand.
+import '../styles/tokens.css';
 // Site-wide identity graph for AI answer engines. See src/lib/agentInfo.ts.
 import { identityGraph } from '../lib/agentInfo';
 interface Props {
@@ -67,6 +71,38 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 			gtag('config', 'G-8TFRGRQPZ1');
+
+			// Conversion events. One delegated listener, so no page needs its own
+			// wiring. gtag() calls queue until the real script loads. Mark
+			// book_click, guide_submit (sent from LeadForm on success) and calculator_to_pricing as key events in GA4.
+			(function () {
+				function where(el) {
+					var s = el.closest('[data-track-location], section[id], header, footer, nav');
+					return (s && (s.getAttribute('data-track-location') || s.id || s.tagName.toLowerCase())) || 'page';
+				}
+				function send(name, params) {
+					params.page_path = location.pathname;
+					gtag('event', name, params);
+				}
+				var used = false;
+				document.addEventListener('input', function (e) {
+					if (used || !e.target.id || e.target.id.indexOf('calc-') !== 0) return;
+					used = true;
+					send('calculator_use', {});
+				});
+				document.addEventListener('click', function (e) {
+					var el = e.target.closest ? e.target.closest('a, button') : null;
+					if (!el) return;
+					var href = el.getAttribute('href') || '';
+					if (el.hasAttribute('data-calendly') || href.indexOf('calendly.com') > -1) {
+						send('book_click', { location: where(el) });
+					} else if (el.hasAttribute('data-open-modal')) {
+						send('modal_open', { modal: el.getAttribute('data-open-modal') });
+					} else if (href === '#pricing' && el.closest('.receipt')) {
+						send('calculator_to_pricing', {});
+					}
+				});
+			})();
 
 			(function () {
 				var loaded = false;

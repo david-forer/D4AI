@@ -56,6 +56,47 @@ export const collections = {
       featured: z.boolean().default(false),
     }),
   }),
+  // Anonymized operations audits, served at /case-studies/<slug> and shown as
+  // cards under the homepage hero. One .md file per study, frontmatter only.
+  // Add a study by adding a file. `order` sets the card order and `draft: true`
+  // hides it everywhere. `videoUrl` is optional: with no video the page simply
+  // has no video block, never a placeholder.
+  // Public wording rule: "an operations audit I performed". Nothing about where
+  // or for whom the audits were done (David, 2026-10-07).
+  'case-studies': defineCollection({
+    schema: z.object({
+      title: z.string(),
+      accent: z.string().optional(),
+      seoTitle: z.string().optional(),
+      description: z.string(),
+      pubDate: z.coerce.date(),
+      order: z.number(),
+      draft: z.boolean().default(false),
+      videoUrl: z.string().optional(),
+      videoTitle: z.string().optional(),
+      videoText: z.string().optional(),
+      card: z.object({
+        who: z.string(),
+        number: z.string(),
+        caption: z.string(),
+        lines: z.array(z.object({ label: z.string(), value: z.string() })).max(3),
+      }),
+      facts: z.array(z.object({ label: z.string(), value: z.string() })).min(3).max(6),
+      cost: z.object({
+        heading: z.string(),
+        intro: z.string(),
+        receiptTitle: z.string(),
+        lines: z.array(z.object({ label: z.string(), value: z.string(), work: z.string() })),
+        foot: z.string().optional(),
+      }),
+      findingsHeading: z.string(),
+      findings: z.array(z.object({ title: z.string(), paragraphs: z.array(z.string()) })),
+      recsHeading: z.string(),
+      recs: z.array(z.object({ label: z.string(), text: z.string() })),
+      automate: z.array(z.object({ title: z.string(), text: z.string() })),
+      stops: z.string().optional(),
+    }),
+  }),
   // Statistics hubs and other citable data pages, served at /research/<slug>.
   // Kept out of the blog collection so they never count toward a hub's post
   // total or show up in the blog index. A tag is optional and, when present,

@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
 import FormSection from '../components/FormSection.astro';
 import { AI_AUDIT_SURVEY, AI_AUDIT_FIELDS } from '../lib/leadForms';
 ---
@@ -9,13 +10,14 @@ description="A free 2 to 3 hour process audit for founders with 5 to 20 people. 
 	<div class="mx-auto w-full text-black text-xl leading-relaxed">
 
 		{/* Hero Section */}
-		<section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20 w-full">
-			<div class="container mx-auto px-6 max-w-5xl text-center">
-				<h1 class="text-4xl md:text-6xl font-bold text-white mb-6">You built a business. Now it's breaking you.</h1>
-				<p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto">I help small teams scale without chaos by writing down the processes your business runs on, then adding AI where it fits.</p>
-				<a href="#free-audit" class="inline-block bg-white text-blue-600 font-semibold py-4 px-8 rounded-lg text-lg hover:bg-blue-50 transition duration-300">Get the $750 audit free</a>
-			</div>
-		</section>
+		<PageHero
+			align="center"
+			title="You built a business. Now it's breaking you."
+			accent="breaking you"
+			subtitle="I help small teams scale without chaos by writing down the processes your business runs on, then adding AI where it fits."
+		>
+			<a class="ph-btn ph-btn-flame" href="#free-audit">Get the $750 audit free <span aria-hidden="true">&rarr;</span></a>
+		</PageHero>
 
 		{/* Monday morning scene */}
 		<section class="py-16 px-6 bg-gray-50">

@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import PageHero from '../components/PageHero.astro';
 ---
 
 <Layout
@@ -8,23 +9,13 @@ import Layout from "../layouts/Layout.astro";
   image="/images/social-default.webp"
 >
   {/* Blue hero band (divs only), tall enough to feel intentional */}
-  <div class="bg-gradient-to-r from-blue-600 to-blue-800">
-    <div class="mx-auto max-w-5xl px-6 py-24">
-      <div class="flex flex-col items-center text-center">
-        <div class="mb-6 inline-flex items-center justify-center rounded-xl bg-white/10 px-12 py-6 text-white text-xl">
-          <span class="opacity-90">Error</span>
-          <span class="mx-2 opacity-40">/</span>
-          <span class="font-semibold">404</span>
-        </div>
-        <h1 class="text-6xl md:text-5xl font-bold text-white">
-          Wrong turn. Right consultant.
-        </h1>
-        <p class="mt-12 text-white/90 max-w-6xl text-3xl">
-          If your ops feel like this link, we should talk.
-        </p>
-      </div>
-    </div>
-  </div>
+  <PageHero
+    align="center"
+    eyebrow="Error 404"
+    title="Wrong turn. Right consultant."
+    accent="Right consultant."
+    text="If your ops feel like this link, we should talk."
+  />
 
   {/* Main content */}
   <div class="max-w-4xl mx-auto px-6 py-12">

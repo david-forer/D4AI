@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import PageHero from '../../components/PageHero.astro';
 import SimpleContainer from '../../components/SimpleContainer.astro';
 
 // Citable data pages. Each one is refreshed every 90 days, so the date shown
@@ -21,16 +22,12 @@ const formatDate = (d: Date) =>
   description="Research pages on AI in small business. Every statistic is checked against its primary source and refreshed every 90 days. Free to cite with a link."
 >
   <div>
-    <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20">
-      <div class="container mx-auto px-6 max-w-5xl">
-        <div class="text-center">
-          <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Research</h1>
-          <p class="text-white text-lg max-w-3xl mx-auto">
-            Statistics on AI in founder-led small businesses. Every number links to the source that published it, every source is checked by hand or by script, and every page is refreshed every 90 days.
-          </p>
-        </div>
-      </div>
-    </section>
+    <PageHero
+      align="center"
+      title="Research"
+      accent="Research"
+      text="Statistics on AI in founder-led small businesses. Every number links to the source that published it, every source is checked by hand or by script, and every page is refreshed every 90 days."
+    />
 
     <SimpleContainer>
       <div class="py-12">

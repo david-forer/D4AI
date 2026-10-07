@@ -1,6 +1,5 @@
 ---
-// NavBar.astro - Navigation component using Tailwind CSS
-// This component includes mobile responsiveness and vertically centered items
+// Navigation component. Colour tokens come from src/styles/tokens.css.
 //
 // NOTE ON COMMENTS IN THIS FILE: Astro ships `<!-- -->` comments to the built
 // HTML, and this component renders on all 195 pages. Reasoning goes HERE, in
@@ -11,233 +10,195 @@
 // label promised SEO checklists while the page delivers ai-playbooks.zip, which
 // is AI operations playbooks with nothing SEO about it. And it spent the only
 // button visible on every page on a free download. Now it books a call.
-// /playbooks-checklists is still reachable from the Resources dropdown, where
-// it was already linked a second time.
+// /playbooks-checklists is still reachable from the Resources dropdown.
+//
+// Restyled 2026-10-07 to the navy palette. Behaviour:
+//   - A page that renders a hero marked data-dark-top (Hero.astro, PageHero.astro)
+//     gets a transparent bar over the hero and no spacer. The CSS selector is
+//     body:has([data-dark-top]), so there is no script and no flash.
+//   - Any other page gets a solid navy bar and the 64px spacer.
+//   - Once the page scrolls, the bar turns solid navy with a blur (script below).
+//   - Services and Resources are real links. Their menus open on hover and on
+//     keyboard focus. On mobile the label only toggles, so "All services" and
+//     "All resources" are the first rows there.
+const services = [
+  { href: '/ai-readiness-and-ai-audits', label: 'AI Audit' },
+  { href: '/ai-training-for-small-business-teams', label: 'AI Training' },
+  { href: '/seo-accelerator', label: 'SEO Accelerator' },
+  { href: '/operational-buildout', label: 'Operations Accelerator' },
+  { href: '/ai-automation-accelerator', label: 'AI Automations' },
+];
+const resources = [
+  { href: '/blog', label: 'Blog' },
+  { href: '/research', label: 'Research' },
+  { href: '/founder-bottlenecks', label: 'Founder Bottlenecks' },
+  { href: '/custom-gpts', label: 'Custom GPTs' },
+  { href: '/playbooks-checklists', label: 'Playbooks and Checklists' },
+];
+const BOOKING = 'https://calendly.com/david-j-forer/30min';
 ---
 
-<nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
-      {/* Wordmark.
-           This was a 48KB WebP of the words "David J Forer / AI Operations".
-           It is now the words themselves: no request, no decode, no layout
-           wait, and the brand name is real text on every page. Inter is
-           already self-hosted, so it renders identically to the old image.
-           #2e78de is sampled from that image. */}
-      <div class="flex-shrink-0 flex items-center">
-        <a href="/" class="group flex items-center gap-2.5">
-          <span class="block h-9 w-1.5 shrink-0 rounded-full bg-[#2e78de] transition-transform duration-200 group-hover:scale-y-110"></span>
-          <span class="flex flex-col leading-none">
-            <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-[#2e78de]">David J Forer</span>
-            <span class="mt-1 text-[0.78rem] sm:text-[0.88rem] font-semibold uppercase tracking-[0.15em] text-slate-600">AI Operations</span>
-          </span>
-        </a>
-      </div>
-      
-      {/* Desktop Navigation */}
-      <div class="hidden md:ml-6 md:flex md:items-center md:space-x-6">
-        
-        {/* Fix the Chaos - First item */}
-        <div class="relative group h-16 flex items-center">
-          <a href="/fix-the-chaos" class="inline-flex items-center px-1 py-2 text-md font-medium text-gray-800 hover:text-blue-600 transition duration-150">Fix the Chaos</a>
-        </div>
-        
-        {/* Services Dropdown */}
-        <div class="relative group h-16 flex items-center">
-          <button class="inline-flex items-center px-1 py-2 text-md font-medium text-gray-800 hover:text-blue-600 transition duration-150">
-            Services
-            <svg class="ml-1 h-4 w-4 text-gray-600 group-hover:text-blue-600 transition duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div class="absolute left-0 top-full w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-150 transform origin-top-left">
-            <div class="py-1 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
-              <a href="/ai-readiness-and-ai-audits" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">AI Audit</a>
-              <a href="/ai-training-for-small-business-teams" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">AI Training</a>
-              <a href="/seo-accelerator" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">SEO Accelerator</a>
-              <a href="/operational-buildout" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Operations Accelerator</a>
-              <a href="/ai-automation-accelerator" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">AI Automations</a>
-            </div>
-          </div>
-        </div>
-        
-               
-        {/* Resources Dropdown */}
-        <div class="relative group h-16 flex items-center">
-          <button class="inline-flex items-center px-1 py-2 text-md font-medium text-gray-800 hover:text-blue-600 transition duration-150">
-            Resources
-            <svg class="ml-1 h-4 w-4 text-gray-600 group-hover:text-blue-600 transition duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div class="absolute left-0 top-full w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-150 transform origin-top-left">
-            <div class="py-1 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
-              <a href="/resources" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">All Resources</a>
-              <a href="/blog" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Blog</a>
-              <a href="/research" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Research</a>
-              <a href="/founder-bottlenecks" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Founder Bottlenecks</a>
-              <a href="/custom-gpts" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Custom GPTs</a>
-              <a href="/playbooks-checklists" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Playbooks and Checklists</a>
-            </div>
-          </div>
-        </div>
-        
-        {/* 
-        <div class="relative group h-16 flex items-center">
-          <button class="inline-flex items-center px-1 py-2 text-md font-medium text-gray-800 hover:text-blue-600 transition duration-150">
-            Training
-            <svg class="ml-1 h-4 w-4 text-gray-600 group-hover:text-blue-600 transition duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div class="absolute left-0 top-full w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-150 transform origin-top-left">
-            <div class="py-1 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
-              <a href="/training/courses" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Courses</a>
-              <a href="/training/workshops" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Workshops</a>
-              <a href="/training/tutorials" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Tutorials</a>
-              <a href="/training/certification" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600">Certification</a>
-            </div>
-          </div>
-        </div> */}
-        
-        {/* Standard menu items */}
-        <div class="relative group h-16 flex items-center">
-          <a href="/built" class="inline-flex items-center px-1 py-2 text-md font-medium text-gray-800 hover:text-blue-600 transition duration-150">Built</a>
-        </div>
+<header class="site-nav" id="site-nav">
+  <div class="bar">
+    <a href="/" class="brand">
+      <span class="brand-bar" aria-hidden="true"></span>
+      <span class="brand-text">
+        <span class="brand-name">David J Forer</span>
+        <span class="brand-sub">AI Operations</span>
+      </span>
+    </a>
 
-        <div class="relative group h-16 flex items-center">
-          <a href="/about" class="inline-flex items-center px-1 py-2 text-md font-medium text-gray-800 hover:text-blue-600 transition duration-150">About</a>
-        </div>
+    <nav class="links" aria-label="Main">
+      <a class="link" href="/fix-the-chaos">Fix the Chaos</a>
 
-        <div class="h-16 flex items-center">
-          <a href="https://calendly.com/david-j-forer/30min" class="ml-4 px-4 py-2 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150">
-            Book a call
-          </a>
+      <div class="has-menu">
+        <a class="link" href="/services">Services <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg></a>
+        <div class="menu">
+          {services.map((i) => <a href={i.href}>{i.label}</a>)}
         </div>
       </div>
-      
-      {/* Mobile menu button */}
-      <div class="flex items-center md:hidden">
-        <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          {/* Heroicon name: menu */}
-          <svg id="menu-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-          {/* Heroicon name: x */}
-          <svg id="close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
+
+      <div class="has-menu">
+        <a class="link" href="/resources">Resources <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg></a>
+        <div class="menu">
+          {resources.map((i) => <a href={i.href}>{i.label}</a>)}
+        </div>
+      </div>
+
+      <a class="link" href="/built">Built</a>
+      <a class="link" href="/about">About</a>
+      <a class="cta" href={BOOKING}>Book a call</a>
+    </nav>
+
+    <button id="mobile-menu-button" class="burger" type="button" aria-controls="mobile-menu" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg id="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+      <svg id="close-icon" class="is-hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="mobile is-hidden">
+    <a class="m-link" href="/fix-the-chaos">Fix the Chaos</a>
+
+    <div class="m-group">
+      <button class="m-toggle" type="button" aria-expanded="false">
+        <span>Services</span>
+        <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+      </button>
+      <div class="m-sub is-hidden">
+        <a class="strong" href="/services">All services</a>
+        {services.map((i) => <a href={i.href}>{i.label}</a>)}
       </div>
     </div>
-  </div>
-  
-  {/* Mobile menu, toggle classes based on menu state */}
-  <div id="mobile-menu" class="hidden md:hidden">
-    <div class="pt-2 pb-3 space-y-1">
-      
-      {/* Fix the Chaos - First item */}
-      <a href="/fix-the-chaos" class="block px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Fix the Chaos</a>
-      
-      {/* Services */}
-      <div class="mobile-dropdown">
-        <button class="mobile-dropdown-button w-full flex justify-between items-center px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
-          <span>Services</span>
-          <svg class="mobile-dropdown-icon h-5 w-5 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div class="mobile-submenu hidden pl-4 pr-4 py-2 space-y-1">
-          
-          <a href="/ai-readiness-and-ai-audits" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">AI Audit</a>
-          <a href="/ai-training-for-small-business-teams" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">AI Training</a>
-          <a href="/seo-accelerator" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">SEO Accelerator</a>
-          <a href="/operational-buildout" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Operations Accelerator</a>
-          <a href="/ai-automation-accelerator" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">AI Automations</a>
-        </div>
-      </div>
-      
-            
-      {/* Resources */}
-      <div class="mobile-dropdown">
-        <button class="mobile-dropdown-button w-full flex justify-between items-center px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
-          <span>Resources</span>
-          <svg class="mobile-dropdown-icon h-5 w-5 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div class="mobile-submenu hidden pl-4 pr-4 py-2 space-y-1">
-          <a href="/resources" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">All Resources</a>
-          <a href="/blog" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Blog</a>
-          <a href="/research" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Research</a>
-          <a href="/founder-bottlenecks" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Founder Bottlenecks</a>
-          <a href="/custom-gpts" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Custom GPTs</a>
-          <a href="/playbooks-checklists" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Playbooks and Checklists</a>
-        </div>
-      </div>
-      
-      {/* 
-      <div class="mobile-dropdown">
-        <button class="mobile-dropdown-button w-full flex justify-between items-center px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">
-          <span>Training</span>
-          <svg class="mobile-dropdown-icon h-5 w-5 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        <div class="mobile-submenu hidden pl-4 pr-4 py-2 space-y-1">
-          <a href="/training/courses" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Courses</a>
-          <a href="/training/workshops" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Workshops</a>
-          <a href="/training/tutorials" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Tutorials</a>
-          <a href="/training/certification" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-blue-600 hover:bg-gray-50 border-l-2 border-transparent hover:border-blue-600">Certification</a>
-        </div>
-      </div>  */}
-      
-      {/* Standard menu items */}
-      <a href="/built" class="block px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Built</a>
-      <a href="/about" class="block px-4 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">About</a>
-      
-      {/* Mobile CTA */}
-      <div class="px-4 py-3">
-        <a href="https://calendly.com/david-j-forer/30min" class="block w-full px-4 py-2 text-center text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-          Book a call
-        </a>
+
+    <div class="m-group">
+      <button class="m-toggle" type="button" aria-expanded="false">
+        <span>Resources</span>
+        <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+      </button>
+      <div class="m-sub is-hidden">
+        <a class="strong" href="/resources">All resources</a>
+        {resources.map((i) => <a href={i.href}>{i.label}</a>)}
       </div>
     </div>
-  </div>
-</nav>
 
-{/* Add space after the fixed navbar to prevent content from being hidden */}
-<div class="h-16"></div>
+    <a class="m-link" href="/built">Built</a>
+    <a class="m-link" href="/about">About</a>
+    <a class="m-cta" href={BOOKING}>Book a call</a>
+  </div>
+</header>
+
+<div class="nav-spacer"></div>
 
 <script>
-  // JavaScript for mobile menu toggle
-  document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+  document.addEventListener('DOMContentLoaded', function () {
+    const nav = document.getElementById('site-nav');
+    const button = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
     const menuIcon = document.getElementById('menu-icon');
     const closeIcon = document.getElementById('close-icon');
-    
-    if (mobileMenuButton && mobileMenu) {
-      mobileMenuButton.addEventListener('click', function() {
-        mobileMenu.classList.toggle('hidden');
-        menuIcon.classList.toggle('hidden');
-        closeIcon.classList.toggle('hidden');
+
+    // Solid bar once the page has scrolled.
+    const onScroll = () => nav && nav.classList.toggle('is-scrolled', window.scrollY > 8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Mobile menu. An open menu also forces the solid bar so it never floats
+    // transparent over the page.
+    if (button && menu) {
+      button.addEventListener('click', function () {
+        const open = menu.classList.toggle('is-hidden') === false;
+        menuIcon && menuIcon.classList.toggle('is-hidden', open);
+        closeIcon && closeIcon.classList.toggle('is-hidden', !open);
+        button.setAttribute('aria-expanded', String(open));
+        nav && nav.classList.toggle('is-open', open);
       });
     }
-    
-    // Handle mobile submenus
-    const mobileDropdownButtons = document.querySelectorAll('.mobile-dropdown-button');
-    mobileDropdownButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        const submenu = this.nextElementSibling;
-        const icon = this.querySelector('.mobile-dropdown-icon');
-        
-        if (submenu && submenu.classList.contains('mobile-submenu')) {
-          submenu.classList.toggle('hidden');
-          icon.classList.toggle('rotate-180');
-        }
+
+    document.querySelectorAll('.m-toggle').forEach((toggle) => {
+      toggle.addEventListener('click', function () {
+        const sub = toggle.nextElementSibling;
+        if (!sub) return;
+        const open = sub.classList.toggle('is-hidden') === false;
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.classList.toggle('is-open', open);
       });
     });
   });
 </script>
+
+<style>
+  .site-nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 50; background: var(--navy); border-bottom: 1px solid transparent; transition: background .25s var(--ease), border-color .25s var(--ease), backdrop-filter .25s var(--ease); }
+  .nav-spacer { height: 64px; }
+
+  /* A page with a dark hero: transparent at the top, no spacer. */
+  :global(body:has([data-dark-top])) .nav-spacer { display: none; }
+  :global(body:has([data-dark-top])) .site-nav:not(.is-scrolled):not(.is-open) { background: transparent; }
+  .site-nav.is-scrolled { background: rgba(10, 22, 48, .92); border-bottom-color: var(--navy-line); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+  .site-nav.is-open { background: var(--navy); }
+
+  .bar { max-width: 1280px; margin: 0 auto; padding: 0 28px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand-bar { width: 6px; height: 36px; border-radius: 99px; background: var(--flame); transition: transform .2s var(--ease); }
+  .brand:hover .brand-bar { transform: scaleY(1.12); }
+  .brand-text { display: flex; flex-direction: column; line-height: 1; }
+  .brand-name { font-size: 24px; font-weight: 800; letter-spacing: -.03em; color: #fff; }
+  .brand-sub { margin-top: 5px; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--blue-ice); }
+
+  .links { display: none; align-items: center; gap: 26px; }
+
+  .link { display: inline-flex; align-items: center; gap: 4px; height: 64px; font-size: 16px; font-weight: 500; color: var(--blue-ice); text-decoration: none; transition: color .15s; }
+  .link:hover, .has-menu:focus-within > .link { color: #fff; }
+  .caret { width: 14px; height: 14px; opacity: .8; }
+
+  .has-menu { position: relative; }
+  .menu { position: absolute; left: -12px; top: 100%; min-width: 250px; padding: 8px; background: var(--navy-2); border: 1px solid var(--navy-line); border-radius: 12px; box-shadow: 0 18px 40px rgba(0,0,0,.4); opacity: 0; visibility: hidden; transform: translateY(-4px); transition: opacity .15s, transform .15s, visibility .15s; }
+  .has-menu:hover .menu, .has-menu:focus-within .menu { opacity: 1; visibility: visible; transform: none; }
+  .menu a { display: block; padding: 10px 12px; border-radius: 8px; font-size: 15px; color: var(--blue-ice); text-decoration: none; }
+  .menu a:hover { background: rgba(255,255,255,.07); color: #fff; }
+
+  .cta { display: inline-flex; align-items: center; min-height: 40px; padding: 0 20px; border-radius: 999px; background: var(--flame); color: var(--navy); font-size: 15px; font-weight: 700; text-decoration: none; transition: background .2s var(--ease); }
+  .cta:hover { background: var(--flame-hover); }
+
+  .link:focus-visible, .menu a:focus-visible, .cta:focus-visible, .brand:focus-visible, .burger:focus-visible, .m-link:focus-visible, .m-toggle:focus-visible, .m-sub a:focus-visible, .m-cta:focus-visible { outline: 3px solid var(--flame); outline-offset: 3px; border-radius: 6px; }
+
+  .burger { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 0; border-radius: 10px; background: transparent; color: #fff; cursor: pointer; }
+  .burger:hover { background: rgba(255,255,255,.08); }
+  .burger svg { width: 26px; height: 26px; }
+  .is-hidden { display: none; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  .mobile { max-height: calc(100vh - 64px); overflow-y: auto; padding: 8px 20px 24px; background: var(--navy); border-top: 1px solid var(--navy-line); }
+  .m-link, .m-toggle { display: flex; width: 100%; align-items: center; justify-content: space-between; padding: 14px 4px; background: transparent; border: 0; border-bottom: 1px solid var(--navy-line); font-size: 18px; font-weight: 600; color: #fff; text-align: left; text-decoration: none; cursor: pointer; font-family: inherit; }
+  .m-toggle .caret { width: 18px; height: 18px; transition: transform .2s; }
+  .m-toggle.is-open .caret { transform: rotate(180deg); }
+  .m-sub { padding: 6px 0 10px 14px; border-bottom: 1px solid var(--navy-line); }
+  .m-sub a { display: block; padding: 10px 4px; font-size: 16px; color: var(--blue-ice); text-decoration: none; }
+  .m-sub a.strong { color: #fff; font-weight: 600; }
+  .m-cta { display: flex; justify-content: center; align-items: center; min-height: 48px; margin-top: 20px; border-radius: 999px; background: var(--flame); color: var(--navy); font-size: 17px; font-weight: 700; text-decoration: none; }
+
+  @media (min-width: 768px) { .links { display: flex; } .burger { display: none; } .mobile { display: none; } }
+  @media (max-width: 520px) { .bar { padding: 0 20px; } .brand-name { font-size: 21px; } }
+  @media (prefers-reduced-motion: reduce) { .site-nav, .menu, .cta, .brand-bar, .m-toggle .caret { transition: none; } }
+</style>

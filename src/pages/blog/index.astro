@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import PageHero from '../../components/PageHero.astro';
 import { HUBS } from "../../lib/hubs";
 import SimpleContainer from '../../components/SimpleContainer.astro';
 
@@ -37,20 +38,13 @@ const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 <Layout title="AI Operations Blog – Articles on Automation, SEO, and Business Systems for Founder-Led Small Businesses – Practical Guides Without the Hype – David J Forer" description="The AI operations blog for founder-led small businesses: practical articles on automation, SEO, workflow systems, and putting AI to work without the hype.">
   <div>
     {/* Hero Section */}
-    <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20">
-      <div class="container mx-auto px-6 max-w-5xl">
-        <div class="flex flex-col justify-center">
-          <div class="text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">AI Operations Blog</h1>
-            <h2 class="text-xl md:text-2xl text-blue-100 mb-6">Insights on AI, SEO, and Operational Excellence</h2>
-            <p class="text-white text-lg max-w-3xl mx-auto">
-              Practical strategies, case studies, and tutorials to help you leverage AI,
-              optimize your operations, and grow your business through strategic SEO.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <PageHero
+      align="center"
+      title="AI Operations Blog"
+      accent="Blog"
+      subtitle="Insights on AI, SEO, and Operational Excellence"
+      text="Practical strategies, case studies, and tutorials to help you leverage AI, optimize your operations, and grow your business through strategic SEO."
+    />
 
     {/* Blog Introduction Section */}
     <SimpleContainer>

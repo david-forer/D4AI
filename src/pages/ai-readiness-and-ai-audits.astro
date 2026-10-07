@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
 import FormSection from '../components/FormSection.astro';
 import { AI_AUDIT_SURVEY, AI_AUDIT_FIELDS } from '../lib/leadForms';
 
@@ -143,27 +144,16 @@ image="/images/ai-audit.webp"
 
 	<body class="bg-white text-gray-800 font-sans">
     {/* Hero Section */}
-    <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-20 relative overflow-hidden">
-        {/* Background texture. Concentric rings, an assessment motif rather than a solid shape. Decorative only. */}
-        <div class="absolute inset-0 opacity-10 pointer-events-none" aria-hidden="true">
-            <div class="absolute top-16 left-16 w-48 h-48 rounded-full border-[14px] border-cyan-200"></div>
-            <div class="absolute bottom-12 right-24 w-64 h-64 rounded-full border-[20px] border-blue-200"></div>
-            <div class="absolute top-1/2 left-1/2 w-24 h-24 rounded-full border-[10px] border-sky-100"></div>
-        </div>
-        <div class="container mx-auto px-6 max-w-6xl relative z-10">
-            <div class="text-center">
-                <div>
-                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">AI Readiness Audit for Small Businesses</h1>
-                    <h2 class="text-xl md:text-2xl text-blue-100 mb-6">A practical assessment that shows where AI fits, where it does not, and what to do next</h2>
-                    <p class="text-white text-lg mb-4">Most small businesses are already experimenting with AI. Very few know whether they are doing it safely.</p>
-                    <p class="text-white text-lg mb-8">An AI Readiness Audit shows you how AI is actually being used across your business. You come out with a shared picture of where you stand and a realistic plan your team can carry out.</p>
-                    <div>
-                        <a href="#pricing" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-50 transition duration-300 inline-block">See audit options and pricing</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <PageHero
+      align="center"
+      title="AI Readiness Audit for Small Businesses"
+      accent="AI Readiness Audit"
+      subtitle="A practical assessment that shows where AI fits, where it does not, and what to do next"
+      text="Most small businesses are already experimenting with AI. Very few know whether they are doing it safely."
+      text2="An AI Readiness Audit shows you how AI is actually being used across your business. You come out with a shared picture of where you stand and a realistic plan your team can carry out."
+    >
+      <a class="ph-btn ph-btn-flame" href="#pricing">See audit options and pricing <span aria-hidden="true">&rarr;</span></a>
+    </PageHero>
 
     {/* Readiness Section */}
     <section class="py-16 bg-white">

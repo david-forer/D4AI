@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
 
 const pageUrl = 'https://davidjforer.com/founder-bottleneck-test';
 const datePublished = '2026-09-08';
@@ -121,23 +122,14 @@ const schema = {
 
   <div class="bg-white">
     {/* Hero */}
-    <section class="bg-gradient-to-br from-blue-700 to-blue-900 text-white">
-      <div class="max-w-3xl mx-auto px-6 py-20">
-        <p class="text-blue-200 text-sm font-semibold uppercase tracking-wider mb-4">Free self-diagnosis. No email required.</p>
-        <h1 class="text-4xl md:text-5xl font-light leading-tight mb-6">
-          The Founder Bottleneck Test
-          <span class="block text-xl md:text-2xl opacity-80 mt-3">Six signs, in the order they actually appear</span>
-        </h1>
-        <p class="text-lg text-blue-50 leading-relaxed mb-4">
-          Most lists of bottleneck symptoms are unordered, which makes them useless. By the time you recognise the
-          famous ones, the cheap fixes have expired.
-        </p>
-        <p class="text-lg text-blue-50 leading-relaxed">
-          These six are sequenced from earliest to latest. Read down until one stops feeling hypothetical. That is
-          roughly where your business is.
-        </p>
-      </div>
-    </section>
+    <PageHero
+      eyebrow="Free self-diagnosis. No email required."
+      title="The Founder Bottleneck Test"
+      accent="Bottleneck"
+      subtitle="Six signs, in the order they actually appear"
+      text="Most lists of bottleneck symptoms are unordered, which makes them useless. By the time you recognize the famous ones, the cheap fixes have expired."
+      text2="These six are sequenced from earliest to latest. Read down until one stops feeling hypothetical. That is roughly where your business is."
+    />
 
     {/* Framing */}
     <section class="max-w-3xl mx-auto px-6 py-14">
