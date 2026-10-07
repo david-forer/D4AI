@@ -27,7 +27,7 @@ An approval step survives only while approving is faster than doing the work. Cr
 
 That failure is worse than having no review at all. No review is a known risk you can manage. A rubber-stamped queue produces an audit trail saying a person checked, which is what you will point at when a client asks, and it will not be true.
 
-So the design question is not whether to keep a human in the loop. It is how much you can put in front of that human before the loop becomes theatre. This sits inside the wider framework in [AI governance for small businesses](/blog/ai-governance-for-small-businesses).
+The design question is how much you can put in front of the human before the loop becomes theatre. This sits inside the wider framework in [AI governance for small businesses](/blog/ai-governance-for-small-businesses).
 
 ---
 
@@ -90,7 +90,7 @@ None of these announces itself. Each one is worth checking for specifically.
 
 For any category where the agent has proved reliable, replace full review with a sample and a check.
 
-Read 10 random cases a week rather than skimming 60. Ten read properly tells you far more than 60 skimmed, and it takes less time. You are looking for a pattern, and a pattern shows up in 10.
+Read 10 random cases a week and skip the skim of 60. Ten read properly tells you far more than 60 skimmed, and it takes less time. You are looking for a pattern, and a pattern shows up in 10.
 
 Pair that with an exception rule so unusual cases still get seen individually. Anything the agent escalated, anything where a client replied unhappily, anything involving a value above a threshold you set.
 
@@ -104,11 +104,11 @@ Four things, none of which require software.
 
 **Write down what good looks like.** Half a page with 4 approved examples and 2 rejected ones, with a line on why. This is what survives a change of reviewer, and it takes an hour to produce.
 
-**Give them a reject path that is not just reject.** A reviewer who can only approve or discard will approve marginal items, because discarding means doing the work themselves. Let them send it back with one line of correction.
+**Give them a way to send it back.** A reviewer who can only approve or discard will approve marginal items, because discarding means doing the work themselves. Let them send it back with one line of correction.
 
 **Record the corrections.** Every rejection is information about a gap in the agent's instructions. Firms that fix the top 3 correction patterns after month one usually cut their rejection rate by more than half.
 
-**Put a time on it.** Fifteen minutes a day at a set point, rather than a queue that interrupts. An approval step competing with client work loses to client work every time.
+**Put a time on it.** Fifteen minutes a day at a set point beats a queue that interrupts. An approval step competing with client work loses to client work every time.
 
 ---
 
@@ -120,7 +120,7 @@ An answer that comes immediately, with a specific case, means the loop is workin
 
 Ask it monthly. It takes 30 seconds and it is more reliable than any metric the tool reports, because the tool reports approval rates and a rubber stamp produces an excellent approval rate.
 
-If the answer is unconvincing, the fix is not a conversation about diligence. It is to cut what gets reviewed until the remaining items are few enough and consequential enough that reading them is obviously worth it.
+If the answer is unconvincing, cut what gets reviewed until the remaining items are few enough and consequential enough that reading them is obviously worth it.
 
 ---
 
@@ -142,7 +142,7 @@ Service firms get asked this now, and a vague answer costs more than a modest tr
 
 Say what a person checks and when. We use AI to draft and analyse. Anything that reaches you has been read and approved by the person responsible for your account. We keep a record of what was produced and who approved it.
 
-That is defensible because it is specific, and it is only defensible if it is true, which is the reason the 10-second rule matters commercially rather than just operationally. A firm that gates too much and stamps it has given the client an answer it cannot support. Where this sits alongside data handling commitments is covered in [AI compliance and client data](/blog/ai-compliance-client-data).
+That is defensible because it is specific, and it is only defensible if it is true, which is the reason the 10-second rule matters commercially as well as operationally. A firm that gates too much and stamps it has given the client an answer it cannot support. Where this sits alongside data handling commitments is covered in [AI compliance and client data](/blog/ai-compliance-client-data).
 
 ---
 

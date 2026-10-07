@@ -232,6 +232,17 @@ That is the stage where the founder becomes a chokepoint, tools pile up without 
 
 Stabilize before building. Map data and your three to five core processes, audit the manual handoffs between tools, set basic rules for AI use, and run one small pilot on a process that scored well. One working pilot teaches the team more than five half-built ones.
 
+### Is there an AI readiness framework template I can copy?
+
+Yes. The scorecard above works as one. Make a five-row sheet with the dimensions in the first column, a score from one to five in the second and one sentence of evidence in the third. The evidence column keeps the score honest, because "we have a CRM" is not evidence of data structure maturity.
+
+### What does an AI readiness framework example look like?
+
+Here is a hypothetical example for a 14-person accounting firm. Data structure scores 2 because client records live in three places. Process clarity scores 3, integration 2, AI usage discipline 1 and ownership 2. The total is 10, which puts the firm at the top of the foundational band. Week 1 goes to consolidating client records, and no automation gets built until that is done.
+
+### How is this different from an AI evaluation framework for choosing tools?
+
+An AI evaluation framework scores a specific tool on accuracy, cost and fit. This one scores your firm. Run the readiness check first, because a strong tool still produces weak results when the data and ownership underneath it are unclear.
 ### Who should own AI decisions in a small service firm?
 
 One named person, even if the role is informal at first. They decide which tools are approved, keep the prompt library, and review new AI processes before they go live. If the answer today is nobody or the founder, that is the first gap to close.

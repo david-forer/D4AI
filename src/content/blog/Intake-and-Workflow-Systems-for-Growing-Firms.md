@@ -214,3 +214,7 @@ When a process is consistent, frequent and costly to get wrong. If several peopl
 ### How long does it take a growing firm to stabilize intake and workflow?
 
 About 30 days for a first pass: map the channels, centralize, standardize, then monitor and adjust. Aim for a system that is better than before and that the team will use. Redirect the busiest channels first and leave the quiet ones for later.
+
+### What are some examples of workflow systems for a growing firm?
+
+The ones in this post are a central intake form that feeds one shared queue, a status board that shows owner and stage for every item, and a short SOP library for the processes that repeat. Each can run on ordinary tools you already pay for. The system matters more than the software it sits in.

@@ -163,3 +163,7 @@ Ask which parts of the original scope got cut and why, then ask what their team 
 ### What if I spot a red flag after I have already signed?
 
 Hold the day-30 checkpoint. If nothing written exists by then, email the consultant, name the missing document, and give a date. Losing a month stings, but losing a quarter is a lot harder to explain to your team.
+
+### What are the disadvantages of hiring an AI consultant?
+
+The main risk is dependency. If the engagement ends and nobody on your team can run what was built, you are back to paying for every change. The tier 1 flags above are mostly ways that risk gets written into a contract. Cost and time are the other two, which is why a day-30 checkpoint matters.

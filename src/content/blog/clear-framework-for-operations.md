@@ -86,6 +86,25 @@ Establish a clear source of truth for metrics. Assign ownership of definitions a
 
 Reporting fails when different teams use different definitions. CLEAR creates shared language.
 
+## What Are AI Operations?
+
+AI operations is the day-to-day work of running AI inside the processes that keep a business going. That covers who owns each automation, what rules it follows, how its output gets checked and what happens when it fails. CLEAR is the preparation step that comes before all of it.
+
+## AI Operations Framework Example: Invoice Approval
+
+Here is a hypothetical example for a 12-person firm that wants AI to route vendor invoices for approval.
+
+Capture reality: the written policy says every invoice over a set amount goes to the founder. In practice the office manager approves anything from a vendor she recognizes. Write down what happens, not what the policy says.
+
+Label ownership: the office manager owns the routing rules and the founder owns the approval limit.
+
+Eliminate ambiguity: replace "recognized vendor" with a vendor list and a dollar threshold, and define what counts as a duplicate.
+
+Align incentives: if the team is measured on how fast invoices clear, add a check for accuracy so nobody pushes questionable invoices through.
+
+Record decisions: log each routing choice with the rule that triggered it. After a month, the log shows which rules are missing.
+
+Only after those five steps does the automation get built.
 ## CLEAR as an AI Readiness Filter
 
 CLEAR reveals whether a company is ready for AI at all. Teams that skip CLEAR experience tool sprawl and poor ROI.
@@ -98,7 +117,7 @@ If you cannot define a process clearly enough for a human to execute consistentl
 
 CLEAR prevents scaling broken processes. It reduces rework and silent failure. It makes AI systems explainable and governable. It lowers the long-term cost of automation ownership. It builds trust between humans and AI systems.
 
-Companies using CLEAR move from experimentation to operational leverage. They stop chasing tools and start building systems.
+Companies using CLEAR move from experimentation to operations that hold up under load. They build systems and spend less time chasing tools.
 
 Without CLEAR, AI feels chaotic. With it, AI feels predictable.
 
@@ -108,7 +127,7 @@ CLEAR is iterative, not a checklist. Each improvement reveals the next constrain
 
 This is where AI stops feeling magical and starts feeling reliable. You stop asking whether the AI will work and start asking how to improve what it already does.
 
-The companies that succeed with AI are not the ones with the best tools. They are the ones with the clearest operations.
+The companies that succeed with AI have the clearest operations.
 
 ## AI Scales Whatever You Give It
 

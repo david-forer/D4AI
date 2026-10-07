@@ -23,7 +23,7 @@ Bottlenecks disguise themselves as other problems.
 
 Slow delivery looks like a team capacity issue. It is often a handoff problem: work is sitting idle because the next person in the process does not know it is ready for them.
 
-High error rates look like a hiring issue. They are often a process issue: the right steps are not being followed consistently because they live in someone's head rather than in a documented system.
+High error rates look like a hiring issue. They are often a process issue: the right steps are not followed consistently because they live in someone's head and not in a documented system.
 
 Founder overwhelm looks like a time management issue. It is almost always a delegation infrastructure issue: there is no system that makes it safe to hand things off without them falling apart.
 
@@ -37,9 +37,9 @@ When you try to fix the symptom without diagnosing the cause, you add resources 
 
 Every decision routes back to you. Quotes, scope changes, client responses, internal priorities, vendor approvals: all of it requires your sign-off before it can move.
 
-This is the most common bottleneck in founder-led businesses, and it is also the most invisible because it feels like leadership rather than a system failure. The business has simply never been designed to function without your involvement at every step.
+This is the most common bottleneck in founder-led businesses, and it is also the most invisible because it feels like leadership and not like a system failure. The business has simply never been designed to function without your involvement at every step.
 
-The solution is not delegation as a mindset shift. It is delegation as an infrastructure problem: building the decision rights, documented standards, and escalation protocols that allow your team to move without you.
+Delegation here is an infrastructure problem. Build the decision rights, documented standards, and escalation protocols that let your team move without you.
 
 **2. The Information Silo Bottleneck**
 
@@ -61,7 +61,7 @@ Fixing them requires defining what "complete" means at each handoff point: what 
 
 Every time a similar task comes up, someone figures out how to do it from scratch. There is no standard approach, no documented process, no template. The work gets done, but it takes longer than it should and the output varies depending on who does it.
 
-This is an expensive bottleneck because it compounds invisibly. Nobody sees the time spent reinventing. They just see work getting done. The cost shows up as inconsistency, errors, and the inability to bring new people up to speed without extensive handholding.
+This is an expensive bottleneck because it compounds invisibly. Nobody sees the time spent reinventing. They see work getting done. The cost shows up as inconsistency, errors, and the inability to bring new people up to speed without extensive handholding.
 
 SOPs, even simple ones, eliminate this. The standard is documented once. Everyone follows it. When it needs to improve, it improves once and everyone benefits.
 
@@ -71,13 +71,13 @@ The business has accumulated tools that do not talk to each other. Information m
 
 Every manual data transfer is a delay point and an error source. In businesses with significant tool sprawl, team members spend meaningful portions of their week doing work that an integration would eliminate entirely.
 
-The [AI Automation Stack for Small Businesses](/blog/ai-automation-stack-for-small-businesses) covers how to think about the integration layer: not just which tools to use, but how to connect them so information flows without manual intervention.
+The [AI Automation Stack for Small Businesses](/blog/ai-automation-stack-for-small-businesses) covers the integration layer, including which tools to use and how to connect them so information flows without manual intervention.
 
 **6. The Undefined Capacity Bottleneck**
 
 The business takes on work without a clear picture of how much capacity exists. Projects get accepted, committed to, or promised on timelines that the team cannot actually meet. The result is chronic overload, missed deadlines, and the compounding stress of perpetually operating over capacity.
 
-This is partly a sales problem but mostly an operations problem. Without a real-time view of what the team is working on and what bandwidth exists, commitments get made against assumptions rather than data.
+This is partly a sales problem but mostly an operations problem. Without a real-time view of what the team is working on and what bandwidth exists, commitments get made against assumptions and not data.
 
 An operational dashboard that shows live workload across the team closes this gap. The [AI Operations Dashboard for Founders](/blog/ai-operations-dashboard-for-founders) approach is specifically designed to give this kind of visibility to small teams that do not have the infrastructure for enterprise reporting.
 
@@ -101,13 +101,25 @@ This diagnostic takes about an hour to run honestly. The results usually surface
 
 ## Bottlenecks Compound in Both Directions
 
-Clearing a bottleneck does not just relieve pressure. It releases capacity that was being absorbed by the friction around it.
+Clearing a bottleneck relieves pressure and releases capacity that was being absorbed by the friction around it.
 
 When team members are not spending time chasing information, reinventing processes, or waiting for approvals, that time redirects to productive work. When handoffs work reliably, delivery speeds up without adding headcount. When your own involvement in routine decisions shrinks, you have capacity for the strategic work that only you can do.
 
-The businesses that scale efficiently are not the ones that work hardest. They are the ones that have systematically removed the friction that was turning effort into delay.
+The businesses that scale efficiently have systematically removed the friction that was turning effort into delay.
 
 If you are unsure where your biggest bottleneck sits, an [AI operations audit](/ai-readiness-and-ai-audits) will map your process flows and identify the specific constraints that are limiting your throughput.
+
+---
+
+## Operational Bottleneck Questions
+
+### What does an operational bottleneck look like in a real business?
+
+Picture a 9-person design studio where every client quote waits for the owner's review. Quotes sit for two days, clients go cold, and the owner stays late clearing the pile. Nothing is wrong with the sales team. One approval step caps how many deals can move. That is a bottleneck, and it is a hypothetical, but most founder-led businesses have a version of it.
+
+### Do cash flow problems come from operations too?
+
+Often they do. A broken handoff between delivery and billing delays invoices, and a late invoice is a cash flow problem that started in operations. Slow operations push cash out later, and that is where the pressure builds.
 
 ---
 

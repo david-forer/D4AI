@@ -62,6 +62,14 @@ Each field is 1 to 3 sentences. Specific beats complete.
 
 Write all 6 on 1 page, date it, and put a name on it. The whole artifact is roughly 250 words.
 
+## An AI Strategy for a Small Business Example
+
+Here is how the 6 fields read together for a hypothetical 12-person bookkeeping firm. The firm is invented, but the shape is what a real page looks like.
+
+Problem: client documents arrive by email, text, and portal, and the team spends about 10 hours a week sorting them. System: one intake inbox that tags and files each document by client, live by 30 November. Not doing: no client chatbot, no AI-written advice letters, no new accounting software this year. Budget: $9,000 for the year, with the second half released only if sorting time has dropped. Owner: the office manager, 3 hours a week. Number: weekly sorting time, 10 hours today, 3 hours by 31 December.
+
+That is under 100 words, and anyone on the team can read it and know what is being built and what is off the table.
+
 ## What goes on the page and what belongs in an AI usage policy
 
 These 2 documents get confused constantly, and the confusion costs a quarter.
@@ -78,7 +86,7 @@ An acceptable use policy answers what staff may put into which tools, what needs
 | Audience | Founder and project owner | Everyone on the team |
 | Fails as | Tools bought, no result | Client data in a free chatbot account |
 
-Keeping them separate matters because they fail differently. A missing strategy produces a stack of tools and no result. A missing policy produces client data in a free chatbot account, which is a problem with a legal shape rather than a financial one. If your team is already using tools you did not approve, write the policy first and the strategy second. [Governance for small businesses](/blog/ai-governance-for-small-businesses) is the faster of the 2 jobs.
+Keeping them separate matters because they fail differently. A missing strategy produces a stack of tools and no result. A missing policy produces client data in a free chatbot account, which is a legal problem and not a financial one. If your team is already using tools you did not approve, write the policy first and the strategy second. [Governance for small businesses](/blog/ai-governance-for-small-businesses) is the faster of the 2 jobs.
 
 ## How to write the one-page AI strategy in 90 minutes
 
@@ -112,7 +120,7 @@ Read the page against these 4 before you circulate it. The fix in each case is 1
 
 ## Reviewing the page each quarter
 
-Set a 30-minute review on the calendar for the last week of the quarter, and treat the page as replaceable rather than sacred.
+Set a 30-minute review on the calendar for the last week of the quarter, and treat the page as replaceable.
 
 Three questions. Did the system in field 2 ship and is it in daily use without the owner chasing it. Did the number in field 6 move against the baseline. Did anything on the not-doing list earn its way back, meaning the condition you wrote next to it actually changed.
 
@@ -141,3 +149,7 @@ The strategy decides what the business builds and how success is measured. The p
 ### How often should a small business update its AI strategy?
 
 Once a quarter, in a 30-minute review. Check whether the system shipped, whether the number moved, and whether anything on the not-doing list has earned its way back, then rewrite the page.
+
+### How can I use AI for my small business without wasting money?
+
+Pick the operational problem you can put a number on, such as hours spent sorting documents or inquiries answered late. Then build 1 system against it this quarter. The firms that waste money start with the tool and look for a problem afterward.

@@ -11,9 +11,9 @@ articleType: "cluster"
 
 Most AI investments underperform not because the tools are wrong but because the business wasn't ready for them.
 
-The founders who get the most from AI are not necessarily the ones who move fastest. They are the ones who understand their operational starting point clearly enough to deploy AI where it will actually compound rather than just add complexity.
+The founders who get the most from AI understand their operational starting point clearly enough to deploy it where it will compound and not add complexity.
 
-These 20 questions are a structured way to assess that starting point. Answer them honestly, not aspirationally. The gaps you find are not failures. They are the most valuable output of this exercise.
+These 20 questions are a structured way to assess that starting point. Answer them honestly. The gaps you find are the most useful output of this exercise.
 
 ## Data and Systems (Questions 1 to 5)
 
@@ -71,11 +71,11 @@ Which tools are approved for what purposes? What data can be shared with externa
 
 **13. Do you know which team members are already using AI independently?**
 
-Shadow AI use is common in small businesses. People find tools that help them work faster and start using them without a formal decision being made. Knowing what's already happening helps you manage it intentionally rather than discovering it later.
+Shadow AI use is common in small businesses. People find tools that help them work faster and start using them without a formal decision being made. Knowing what's already happening helps you manage it intentionally and avoid discovering it later.
 
 **14. Is there someone in your organization who owns AI tool adoption and standards?**
 
-Not necessarily a dedicated role, but a named person who is responsible for evaluating tools, setting standards, and ensuring consistent adoption. Without ownership, AI capability stays scattered.
+Not necessarily a dedicated role, but a named person who is responsible for evaluating tools, setting standards, and keeping adoption consistent. Without ownership, AI capability stays scattered.
 
 ## Leadership and Decision-Making (Questions 15 to 17)
 
@@ -89,7 +89,7 @@ When something unusual comes up, does the team have guidance on how to handle it
 
 **17. Is there a clear owner for each major operational function?**
 
-Finance, client delivery, sales, team management. When ownership is diffuse or assumed rather than explicit, accountability gaps appear and AI implementations lose their sponsor during the hard parts.
+Finance, client delivery, sales, team management. When ownership is diffuse or merely assumed, accountability gaps appear and AI implementations lose their sponsor during the hard parts.
 
 ## Strategic Clarity (Questions 18 to 20)
 
@@ -111,9 +111,14 @@ Not in abstract terms: fewer hours wasted, better systems, more capacity. In spe
 
 **10 to 15 yeses:** Mixed readiness. Some critical gaps need attention before committing significant investment. Prioritize the questions you answered no to in the Data and Workflows sections.
 
-**Fewer than 10 yeses:** The foundation needs work first. That's not a reason to delay getting started. It's a reason to start with the right things, which the gaps in this checklist will show you.
+**Fewer than 10 yeses:** The foundation needs work first. Start anyway, with the right things, which the gaps in this checklist will show you.
 
-The questions you answered no to are not a list of failures. They are a prioritized view of where to focus. And the clearest next step is usually the same: get an objective picture of your current operational state before deciding how to invest.
+The questions you answered no to are a prioritized view of where to focus. And the clearest next step is usually the same: get an objective picture of your current operational state before deciding how to invest.
+
+## Copilot Readiness Checklist
+
+If you are weighing a Copilot-style assistant that works across your files and email, five of these questions matter most. Question 1 (one source of truth), question 4 (consistent data), and question 5 (could a new hire find things) decide whether the assistant has anything reliable to draw on. Question 12 (a written AI policy) and question 14 (a named owner) decide who controls what it can see and do. If any of those five is a no, fix it before you roll the assistant out to the team.
+
 
 [An AI readiness audit gives you that picture.](/ai-readiness-and-ai-audits)
 

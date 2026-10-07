@@ -19,13 +19,25 @@ The organizations that recognize this shift now and invest in systematic AI lite
 
 This guide explains what AI literacy actually means in a corporate context, how to build it systematically across your workforce, and why investing in literacy now prevents much more expensive talent problems later.
 
+## AI and the Future of Work: Why Literacy Is Needed
+
+Employees are already using AI tools, whether or not the company has trained them. Without literacy, that use creates predictable problems. Sensitive data ends up in the wrong tool. Biased or invented output gets passed along unchecked. Capable people leave to build the skill somewhere else.
+
+Literacy is the fix for all of it, because it gives every employee the judgment to decide when to use AI, how to check the result, and what never to paste in.
+
+### What Did Stephen Hawking Say About AI?
+
+In a 2014 interview with the BBC, Stephen Hawking said that the development of full artificial intelligence could spell the end of the human race. His warning was about advanced systems far beyond today's tools.
+
+For a small team, the lesson is closer to home. People who understand what AI can and cannot do are better placed to use it safely, and that understanding is what the rest of this guide helps you build.
+
 ## Defining "AI Literacy" in the Corporate Context
 
-AI literacy is not prompt engineering expertise. It's not understanding neural network architecture. It's not being able to fine-tune models or deploy machine learning systems.
+AI literacy does not require prompt engineering expertise, knowledge of neural network architecture, or the ability to fine-tune models or deploy machine learning systems.
 
 AI literacy is the knowledge and judgment required to work effectively alongside AI tools. Knowing what they can do, what they can't do, when to use them, how to verify their output, and what ethical implications arise from their use.
 
-### It's Not Just Prompting
+### Prompting Is One Piece of the Picture
 
 Prompting skill is one component of AI literacy, but focusing exclusively on prompting misses the larger picture.
 
@@ -78,14 +90,14 @@ AI literacy begins with task assessment. Recognizing which work activities benef
 Train employees to classify tasks across two dimensions:
 
 **Dimension 1: AI suitability**
-- **High suitability:** Routine, pattern-based, text-heavy, requires speed over deep thinking
-- **Medium suitability:** Mix of routine and novel, requires adaptation of templates
-- **Low suitability:** Unique, requires deep context, emotionally sensitive, high-stakes decisions
+- High suitability: Routine, pattern-based, text-heavy, requires speed over deep thinking
+- Medium suitability: Mix of routine and novel, requires adaptation of templates
+- Low suitability: Unique, requires deep context, emotionally sensitive, high-stakes decisions
 
 **Dimension 2: Tool requirements**
-- **General-purpose LLM:** Content creation, analysis, brainstorming, Q&A
-- **Specialized AI:** Code generation, image creation, data analysis, translation
-- **No AI needed:** Quick tasks, high-emotion communication, situations requiring human accountability
+- General-purpose LLM: Content creation, analysis, brainstorming, Q&A
+- Specialized AI: Code generation, image creation, data analysis, translation
+- No AI needed: Quick tasks, high-emotion communication, situations requiring human accountability
 
 The intersection tells you whether to use AI and which tool to choose.
 
@@ -107,7 +119,7 @@ Literate employees understand the AI tool ecosystem:
 - What their organization approves for what use cases
 - How to evaluate new tools that emerge
 
-This isn't encyclopedic knowledge. It's sufficient awareness to make informed choices and know when to seek guidance.
+The goal is enough awareness to make informed choices and know when to seek guidance. Encyclopedic knowledge is not required.
 
 ### Pillar 2: Interaction (Prompting and Iterating)
 
@@ -127,7 +139,7 @@ Beyond basic prompt writing, literate employees understand:
 
 **Chain of thought:** When to request step-by-step reasoning versus direct answers
 
-These aren't techniques memorized from a manual. They're mental models that guide real-time decision-making about how to interact with AI tools.
+These work as mental models that guide real-time decisions about how to interact with AI tools.
 
 **Conversation management:**
 
@@ -184,7 +196,7 @@ AI models absorb biases present in their training data. Literate employees under
 - Reviewing output with bias awareness
 - Correcting biased language before use
 
-Bias literacy isn't about making employees AI ethics experts. It's about building sufficient awareness that they notice obvious problems and know when to seek expert review.
+Bias literacy builds enough awareness that employees notice obvious problems and know when to seek expert review.
 
 **Data protection judgment:**
 
@@ -199,7 +211,7 @@ For any AI interaction involving data:
 4. If no, can I sanitize the data sufficiently?
 5. If no, I need a different tool or manual approach
 
-This isn't complex. It's simple decision logic. But it requires understanding both your organization's data classification system and the data protection characteristics of available tools.
+This is simple decision logic. It does require understanding both your organization's data classification system and the data protection characteristics of available tools.
 
 **Disclosure ethics:**
 
@@ -225,7 +237,7 @@ Literate employees understand when transparency about AI usage matters:
 - Administrative tasks
 - Editing and proofreading assistance
 
-The framework isn't absolute rules. It's judgment guidance that employees apply to specific situations.
+The framework is judgment guidance that employees apply to specific situations.
 
 ## Integrating AI Literacy into Onboarding
 
@@ -328,7 +340,7 @@ AI proficiency is rapidly becoming career-essential across knowledge work. Emplo
 
 Organizations that provide systematic AI training reduce that anxiety and build loyalty:
 
-"My company is making sure I have the skills I need for the future. They're not just using me for current contribution. They're investing in my long-term capability."
+"My company is making sure I have the skills I need for the future. They're investing in my long-term capability."
 
 Organizations that don't provide training create pressure to leave:
 
@@ -354,7 +366,7 @@ The retention effect is strongest for mid-career employees (5-10 years experienc
 **Solution:** Comprehensive AI upskilling program including:
 
 - Quarterly training on emerging AI capabilities
-- Certification progression (Novice â†’ Practitioner â†’ Expert)
+- Certification progression (Novice to Practitioner to Expert)
 - Integration into performance reviews
 - Public recognition for AI innovation
 - Budget for experimentation with new tools
@@ -366,7 +378,7 @@ The retention effect is strongest for mid-career employees (5-10 years experienc
 - Clients began specifically requesting AI-capable teams
 - Recruiting advantage: "AI-forward culture" became differentiation
 
-**Key insight:** Employees stayed because they felt they were gaining cutting-edge skills, not despite those skills making them more marketable elsewhere.
+**Key insight:** Employees stayed because they felt they were gaining current, in-demand skills, even though those skills made them more marketable elsewhere.
 
 **Case Study 2: Marketing Agency (80 employees)**
 
@@ -375,7 +387,7 @@ The retention effect is strongest for mid-career employees (5-10 years experienc
 **Solution:** Positioned as "AI literacy laboratory":
 - Early access to newest AI tools
 - Dedicated time for AI experimentation (10% of work week)
-- Internal AI showcase events
+- Internal AI demo events
 - Support for speaking at conferences about AI applications
 - Resume-worthy certification in AI-augmented marketing
 
@@ -466,16 +478,16 @@ Building AI literacy requires structured learning resources. These are vetted, h
 
 **Recommendation by role:**
 
-- **Leadership:** Google AI Essentials + industry-specific case studies
-- **Individual contributors:** DeepLearning.AI courses + hands-on practice
-- **Managers:** LinkedIn Learning + internal training on company tools
-- **Technical roles:** IBM certificate + tool-specific documentation
+- Leadership: Google AI Essentials + industry-specific case studies
+- Individual contributors: DeepLearning.AI courses + hands-on practice
+- Managers: LinkedIn Learning + internal training on company tools
+- Technical roles: IBM certificate + tool-specific documentation
 
 The key: combine foundational courses with applied practice using your organization's actual tools and workflows. Knowledge without application doesn't create competency.
 
 ## Conclusion
 
-AI literacy isn't optional. It's the next universal skill requirement for knowledge workers. The only question is whether your organization builds that literacy systematically or lets it develop haphazardly through individual initiative.
+AI literacy is the next universal skill requirement for knowledge workers. The only question is whether your organization builds that literacy systematically or lets it develop haphazardly through individual initiative.
 
 The systematic approach wins. It creates consistent capability across the workforce, reduces security risk through proper training, accelerates productivity gains through effective usage, and builds competitive advantage through organizational learning that compounds over time.
 

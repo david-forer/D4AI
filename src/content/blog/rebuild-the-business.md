@@ -47,7 +47,7 @@ Optimizing workflows treats symptoms. Rebuilding the business addresses root cau
 
 ## What Rebuilding the Business Actually Means
 
-Rebuilding the business is not about tearing everything down and starting over. It is about redesigning the structure that determines how work happens.
+Rebuilding the business means redesigning the structure that determines how work happens. Nothing gets torn down and restarted.
 
 This means examining three things.
 
@@ -109,11 +109,11 @@ Training becomes more effective because the system teaches the principles. New p
 
 Scaling becomes sustainable because the structure supports growth. You can add people without increasing chaos. You can expand into new areas without reinventing everything.
 
-Rebuilding creates leverage.
+Rebuilding gives every later improvement more reach.
 
 When you fix a workflow, you improve one thing. When you rebuild the business, you improve how everything connects. The impact compounds.
 
-This is not about perfection. It is about intentionality. It is about designing the structure instead of letting it evolve by accident.
+The goal is intentionality. You design the structure instead of letting it evolve by accident.
 
 ## Where to Start
 
@@ -129,11 +129,22 @@ Then ask what would need to change to make those things clearer, faster, and mor
 
 This is not a quick process. It requires stepping back, diagnosing the system, and making intentional changes. But it is the only way to create lasting improvement.
 
+## What Is a Business Workflow?
+
+A business workflow is the repeatable sequence of steps that turns a request into a result. A new client inquiry moving from form to quote to signed agreement is one workflow. An invoice moving from job completion to payment is another.
+
+Each workflow has inputs, steps, owners and an end state. Most small businesses run 20 or more of them without ever writing one down.
+
+## How Do I Revamp My Business?
+
+Start with one area, not the whole company. Pick the place where work stalls most often, then write down who decides, who owns and who needs to know at each step.
+
+Fix the gaps in those three answers first. Only then redraw the workflow itself. If you are a founder-led firm of 5 to 20 people, one area at a time is enough to feel the difference within a quarter.
 If you want a framework for these changes, start with [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms). If you want to see where your own business stands, the [free process audit](/fix-the-chaos) maps your top 3 processes and prices your top 5 automation opportunities in dollars.
 
 If you need help applying this approach to your business, [AI Training](https://davidjforer.com/ai-training-for-small-business-teams) can help your team internalize systemic thinking as a shared capability.
 
-Do not just fix workflows. Rebuild the business. The workflows will get better as a result, and the improvements will actually stick.
+Rebuild the business, then fix the workflows. The workflows will get better as a result, and the improvements will actually stick.
 
 
 ---

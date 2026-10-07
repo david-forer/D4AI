@@ -33,13 +33,13 @@ This article walks through what an AI readiness audit actually looks like for a 
 
 Most teams assume readiness is about adoption. Are we using AI. How often. For what tasks.
 
-That framing misses the real issue.
+That framing leaves out how the work actually gets done.
 
 AI compresses time between idea and action. That is useful, but it also removes natural pauses where alignment used to happen. When output appears instantly, it often skips shared discussion, review, or second looks.
 
 In small teams, this creates a subtle shift. Work still gets done. But results depend more on who touched the task than on how the business expects it to be done. Two people can use AI to complete the same job and produce materially different outcomes.
 
-This is not a skill problem. It is a process signal.
+Uneven output is a process signal.
 
 When AI output varies widely, it usually means standards are missing. When decisions move faster than review, it usually means ownership is unclear. When no one notices errors until later, it usually means escalation paths were never defined.
 
@@ -65,7 +65,7 @@ Ownership is the next focus.
 
 In small teams, trust is high. That trust works until AI output starts influencing decisions. An audit looks at who is responsible for approving AI assisted work and what happens when something feels off. Not in theory. In practice.
 
-If no one can answer who owns quality for a given task, that is not a failure. It is a signal.
+If no one can answer who owns quality for a given task, that is a signal worth acting on.
 
 ---
 
@@ -99,9 +99,23 @@ Another learning is how much friction standards actually remove. When prompts, r
 
 Many teams also discover duplicated effort. Multiple AI workflows solving the same problem in parallel. Not because people are careless, but because no one made alignment visible.
 
-These realizations are not failures. They are the natural result of adopting a powerful tool before designing around it.
+These realizations are the natural result of adopting a powerful tool before designing around it.
 
 ---
+
+### AI Readiness Audit Questions
+
+The audit works from a short set of plain questions, asked about real tasks and not in the abstract.
+
+- Which tasks does AI touch today, and who does each one?
+- Does anyone review the output before it reaches a customer or a decision?
+- Who owns the result when the output is wrong?
+- Do two people doing the same job use the same prompts and standards?
+- What happens when someone spots an error, and who hears about it?
+
+### What Do You Need Ready Before an AI Readiness Audit?
+
+Very little. You need AI in use on a few real tasks, one person who can walk through how each task actually gets done, and a handful of recent outputs to look at. You do not need documentation, a policy, or a tool inventory. Those are often what the audit produces.
 
 ### What an AI readiness audit is not
 
@@ -121,9 +135,9 @@ An effective audit respects the pace of a founder led business. It adds structur
 
 Timing matters.
 
-An AI readiness audit is most valuable when AI use is already common, but alignment is not. When output feels uneven. When decisions move quickly and occasionally need correction. When founders sense drift but cannot point to a single cause.
+An AI readiness audit pays off most when AI use is already common, but alignment is not. When output feels uneven. When decisions move quickly and occasionally need correction. When founders sense drift but cannot point to a single cause.
 
-It is also valuable before scaling. Fixing standards at five or ten people is far easier than fixing them at twenty.
+It also helps before scaling. Fixing standards at five or ten people is far easier than fixing them at twenty.
 
 After the audit, founders receive a clear picture of how AI is affecting their operations. Not a long list of ideas. A prioritized set of actions based on risk and effort.
 
@@ -145,7 +159,7 @@ Inconsistent output, unclear ownership, duplicated effort, and decisions made wi
 
 AI can be a multiplier or a liability. The difference is rarely the technology.
 
-If you want clarity on how AI is shaping your business today and what to fix before it scales, an AI readiness audit is the fastest way to get there. Booking a call is not a commitment to change. It is a commitment to see clearly.
+If you want clarity on how AI is shaping your business today and what to fix before it scales, an AI readiness audit is the fastest way to get there. Booking a call does not obligate you to change anything.
 
 
 ---

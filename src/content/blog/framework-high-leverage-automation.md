@@ -11,11 +11,17 @@ articleType: "cluster"
 
 Not every task is worth automating. Some processes are too infrequent to justify the setup time. Others are too variable to work reliably without human judgment. Still others sit in systems that do not support automation without significant technical investment.
 
-The businesses that get the most from automation are not the ones that automate the most things. They are the ones that automate the right things.
+The businesses that get the most from automation pick the right things to automate.
 
 High-leverage tasks are those where automation effort yields disproportionate returns. Finding them requires a systematic approach, not just picking whatever seems annoying or time-consuming.
 
 This framework helps you identify and prioritize the tasks that will deliver the biggest impact from automation investment.
+
+## What Leverage Means in Automation
+
+The leverage automation meaning is simple: a small amount of setup effort produces a large, repeating return. A task has high leverage when one hour of building saves many hours later, or prevents a costly mistake every time it runs.
+
+Low-return automation may still run perfectly. It just does not move the business.
 
 ## The Automation Matrix
 
@@ -35,13 +41,13 @@ Most businesses instinctively gravitate toward the Time Savers quadrant. Easy wi
 
 ## Scoring for Impact
 
-Impact is not just about time saved. A task that takes thirty minutes but happens once a month is less impactful than a task that takes five minutes but happens fifty times a day. Beyond time, consider what happens when things go wrong.
+Time saved is only one input. A task that takes thirty minutes but happens once a month is less impactful than a task that takes five minutes but happens fifty times a day. Beyond time, consider what happens when things go wrong.
 
 Four factors determine impact.
 
 **Error cost.** What happens when this task is done incorrectly? Some errors are minor inconveniences. Others damage customer relationships, create compliance problems, or cost significant money to fix. Tasks with high error costs benefit more from automation because automation eliminates human mistakes.
 
-For example, sending invoices with wrong amounts creates customer service issues, payment delays, and potential disputes. Automating invoice generation from source data eliminates transcription errors. The impact comes not just from time saved but from problems avoided.
+For example, sending invoices with wrong amounts creates customer service issues, payment delays, and potential disputes. Automating invoice generation from source data eliminates transcription errors. The impact comes from time saved and from problems avoided.
 
 **Regulatory and compliance risk.** Tasks that affect compliance carry extra weight. A mistake in payroll tax calculations or data privacy handling can create serious legal and financial consequences. Automation that enforces compliance rules consistently reduces organizational risk.
 
@@ -141,7 +147,7 @@ The most effective approach treats automation as a portfolio of investments.
 
 Allocate most of your automation effort to Quick Wins. These deliver the best returns with manageable effort. They are your bread and butter.
 
-Dedicate some resources to Strategic Projects. These take longer but can be transformative. Plan them properly. Staff them appropriately. Do not expect overnight results.
+Dedicate some resources to Strategic Projects. These take longer but can change how the business runs. Plan them properly. Staff them appropriately. Do not expect overnight results.
 
 Fill remaining capacity with Time Savers. These keep the pipeline moving and build organizational automation skills.
 
@@ -149,7 +155,17 @@ Actively avoid the Low Impact, Low Feasibility quadrant. When someone proposes a
 
 Review and rebalance periodically. As systems change, feasibility scores shift. As business priorities evolve, impact assessments change. Tasks that were Strategic Projects become Quick Wins when new integration options emerge. Tasks that seemed high impact become less important as the business pivots.
 
-The framework is not a one-time exercise. It is an ongoing practice that keeps your automation efforts focused on the highest-value opportunities available at any given time.
+Treat the framework as an ongoing practice that keeps your automation efforts focused on the highest-value opportunities available at any given time.
+
+## Common Questions About Choosing What to Automate
+
+### Which Skill Is Hardest to Automate?
+
+Judgment under ambiguity. In this framework, it shows up as the logic complexity factor. If the honest answer to "how do you decide?" is "it depends," the task scores low on feasibility. Complex client proposals are a good example, which is why they land in Strategic Projects and not Quick Wins.
+
+### What Are Five Examples of Automation?
+
+Five common ones: generating invoices from source data, updating CRM records after a sales call, enforcing payroll tax rules, syncing data between tools through connectors, and drafting first-pass proposals from a template. Each one scores differently on impact and feasibility, which is the point of scoring them before you build anything.
 
 ## The Compounding Returns of Good Prioritization
 
@@ -159,7 +175,7 @@ This compounding effect makes prioritization critically important. Starting with
 
 Over a year, the difference between good prioritization and poor prioritization is substantial. Over several years, it becomes dramatic.
 
-The businesses that gain the most from automation are not the ones with the biggest budgets or the most technical expertise. They are the ones that consistently identify and pursue the highest-leverage opportunities. This framework gives you the structure to do exactly that.
+The businesses that gain the most from automation consistently identify and pursue the highest-leverage opportunities, whatever their budget or technical expertise. This framework gives you the structure to do exactly that.
 
 
 ---

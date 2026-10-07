@@ -75,7 +75,7 @@ This is often the work that falls through the cracks most frequently, because it
 
 Here is the practical consequence of a manual-heavy operation.
 
-Every time you add a new client, your manual processes run again. Every time you bring on a new team member, someone spends time initializing their access, onboarding their context, and ensuring they know the undocumented steps. Every time your volume grows by ten percent, your administrative overhead grows by roughly the same amount.
+Every time you add a new client, your manual processes run again. Every time you bring on a new team member, someone spends time initializing their access, onboarding their context, and making sure they learn the undocumented steps. Every time your volume grows by ten percent, your administrative overhead grows by roughly the same amount.
 
 This creates a ceiling. It is also why processes break at scale: a step one person handled easily at low volume starts getting skipped once the volume doubles and nobody's job has changed. At some point, adding revenue requires adding cost at a ratio that makes growth uneconomical. Each new hire adds weight.
 
@@ -144,6 +144,10 @@ The one you repeat most often. A task that happens fifty times a week pays back 
 ### Why does it get harder to automate a process the longer you wait?
 
 People build habits, workarounds, and backup checks around every manual process. When you finally automate it, you have to untangle all of that too. A quick upgrade turns into a migration project.
+
+### What does manual process mean?
+
+A manual process is any task a person has to start, carry out and finish by hand each time, even though the steps never change. Retyping form details into a CRM or sending the same Tuesday follow-up email are two examples. The four types above (data transfer, reporting, communication triggers and process initialization) cover most of what a small business runs this way.
 
 ### Does automation replace hiring?
 

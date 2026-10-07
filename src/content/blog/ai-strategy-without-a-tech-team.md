@@ -21,7 +21,7 @@ The founder who understands their workflows, can articulate where the friction i
 
 Separating the technical requirements from the operational requirements of AI strategy changes how you think about whether you are equipped to build one.
 
-**Operational requirements** are things that depend on your knowledge of the business. Which processes are the highest priority? What does a good outcome look like for each one? Who needs to be involved? What constraints shape the implementation? These are not technical questions. They are business questions, and you are the person best positioned to answer them.
+**Operational requirements** are things that depend on your knowledge of the business. Which processes are the highest priority? What does a good outcome look like for each one? Who needs to be involved? What constraints shape the implementation? These are business questions, and you are the person best positioned to answer them.
 
 **Technical requirements** are things that depend on how specific tools work. How to configure a particular platform, how to set up an integration between two systems, how to troubleshoot an automation that is not running as expected. These are learnable skills, and most of them are documented in detail by the tool providers themselves.
 
@@ -31,13 +31,13 @@ The operational requirements are harder to acquire than the technical ones if yo
 
 ## The Skills That Actually Matter
 
-The skills that make an AI strategy successful in a small business are not technical. They are operational.
+A successful AI strategy in a small business rests on operational skills.
 
 **Process definition.** The ability to describe a workflow in precise, step-by-step terms is the most important skill in AI implementation. If you can explain exactly what triggers a process, what happens in each step, what a good output looks like, and what the exceptions are, you can translate that description into an automated system. If you cannot, no amount of technical skill can make up for the gap.
 
 **Prioritization.** Knowing which problems to solve first and being willing to defer the others is a discipline that technical experts do not always have. It is a business judgment skill, and it shapes how efficiently you build.
 
-**Adoption management.** Getting your team to actually use new systems is one of the hardest parts of AI implementation. It requires communication, patience, and the authority to set expectations and hold them. These are leadership skills, not technical skills.
+**Adoption management.** Getting your team to actually use new systems is one of the hardest parts of AI implementation. It requires communication, patience, and the authority to set expectations and hold them. That is a leadership job.
 
 **Measurement.** Knowing what to measure, establishing a baseline before you build, and tracking results afterward is an analytical discipline that any founder can develop. It does not require data engineering.
 
@@ -45,15 +45,15 @@ The skills that make an AI strategy successful in a small business are not techn
 
 ## Tools Built for Non-Technical Operators
 
-The no-code and low-code landscape has changed the technical barrier to AI implementation significantly.
+No-code and low-code tools have changed the technical barrier to AI implementation significantly.
 
-Platforms like Make (formerly Integromat) and Zapier allow complex workflow automations to be built through visual interfaces with no programming required. Most AI applications for small business operations, routing, categorization, drafting, summarizing, and data enrichment, can be connected to business processes through these platforms without writing a line of code.
+Platforms like Make (formerly Integromat) and Zapier let you build complex workflow automations through visual interfaces with no programming. Most AI applications for small business operations, routing, categorization, drafting, summarizing, and data enrichment, can be wired into your business processes with these platforms without writing a line of code.
 
 AI-native platforms like Notion AI, HubSpot's AI features, and others embed AI directly into tools many small businesses already use. The integration question does not arise because the AI is already inside the system.
 
 Tools like Airtable and ClickUp allow structured data collection and workflow management without requiring database expertise. When combined with AI automations, they produce significant operational improvements with relatively modest technical investment.
 
-The practical skill required for most of these tools is comfort with new software and patience with configuration, not programming knowledge.
+Most of these tools ask for comfort with new software and patience with configuration. Programming knowledge is optional.
 
 ---
 
@@ -65,9 +65,9 @@ Some parts of AI implementation are better handled by someone with more technica
 
 **Own the process definition.** Document your workflows before you bring in any outside help. This saves significant time and money in any outside engagement, because the consultant is working from clarity rather than spending the first phase extracting information you already have.
 
-**Consider outside help for complex integrations.** When two systems need to exchange data in non-standard ways, or when an implementation requires custom API connections, a technical consultant can save you significant time. These are well-defined, scoped projects rather than ongoing strategy work.
+**Consider outside help for complex integrations.** When two systems need to exchange data in non-standard ways, or when an implementation requires custom API connections, a technical consultant can save you significant time. These are well-defined, scoped projects that do not need a standing strategy relationship.
 
-**Consider outside help for initial design.** A consultant who has built AI systems for businesses like yours can shortcut months of trial and error on the architecture decisions. The value is not in the technical execution. It is in the pattern recognition from previous implementations.
+**Consider outside help for initial design.** A consultant who has built AI systems for businesses like yours can shortcut months of trial and error on the architecture decisions. The value comes from pattern recognition built on previous implementations.
 
 ---
 
@@ -75,11 +75,11 @@ Some parts of AI implementation are better handled by someone with more technica
 
 The goal over a twelve-to-twenty-four month period is to develop enough internal capability that routine maintenance and minor extensions of your AI systems do not require outside help.
 
-This happens through deliberate exposure, not passive observation. The person on your team who will own each system should be involved in building it, not just informed of it after the fact. That involvement builds the understanding required for ongoing ownership.
+This happens through deliberate exposure. The person on your team who will own each system should be involved in building it, not just informed of it after the fact. That involvement builds the understanding required for ongoing ownership.
 
 Documentation built during implementation serves a dual purpose: it captures the system for maintenance, and it is the material a team member studies to build deeper understanding of how things work.
 
-Most small businesses find that one or two people develop genuine AI operations capability over a year of active involvement. Those people become the internal anchor for AI strategy going forward, reducing dependence on outside expertise for all but the most complex technical work.
+Most small businesses find that one or two people develop genuine AI operations capability over a year of active involvement. Those people become the internal anchor for AI strategy from then on, reducing dependence on outside expertise for all but the most complex technical work.
 
 ---
 
@@ -99,6 +99,29 @@ Outside these specific situations, most small business AI strategy work is well 
 
 ---
 
+## AI Without Big Tech: What a Small Business Actually Uses
+
+You do not need a partnership with a large AI vendor or a custom model to run AI in your business. Most small firms I work with run on a general-purpose assistant, an automation platform and the software they already own. That stack costs little and can be swapped later.
+
+The strategic choice is which process to improve first. If a tool disappears or reprices, a well-documented workflow moves to the next one in an afternoon.
+
+---
+
+## How to Explain AI to a Non-Technical Person
+
+Describe it as a fast new hire who has never worked at your company. It can draft and summarize in seconds. It knows nothing about your clients, your pricing rules or your exceptions until you write them down.
+
+That framing also tells your team what their job becomes. They give the new hire clear instructions, check its work and handle the cases it cannot. Once people see it that way, the question becomes which tasks they want to hand off first.
+
+---
+
+## What a Good AI Strategy Looks Like Here
+
+For a founder with no tech team, a good strategy fits on one page. It names 2 or 3 workflows, an owner for each, the result that counts as success and the baseline you measured before building. Everything else is tooling you can change.
+
+If you cannot fill in that page, hold off on buying anything. Documenting the workflow comes first.
+
+---
 *Part of the [AI Strategy for Small Businesses](/blog/ai-strategy-for-small-businesses) series.*
 
 *Related reading: [How to Build an AI Strategy for Your Small Business](/blog/how-to-build-an-ai-strategy-small-business) | [DIY AI vs. Hiring a Consultant](/blog/diy-ai-vs-hiring-a-consultant) | [Where to Start with AI When Everything Feels Overwhelming](/blog/where-to-start-with-ai-small-business)*
