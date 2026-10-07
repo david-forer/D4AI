@@ -164,6 +164,21 @@ Tool subscriptions, maintenance, and your own team's time. A stack of 4 or 5 AI 
 
 Scope, experience, timeline, and how ready your business is. Undocumented processes and messy data mean more discovery time before any building starts. Ask each consultant what they assumed about your data before you compare numbers.
 
+### What is AI consulting?
+
+AI consulting means hiring an outside expert to find where AI saves your team time, then building and documenting those changes with you. For a small business, it usually starts with an audit and moves into AI implementation consulting, where the consultant sets up the workflows and trains your staff to use them.
+
+### What does the AI consulting process look like?
+
+It follows the 2 stages above. First an audit maps your current workflows and ranks the opportunities. Then an install builds the top priorities over a set number of weeks. My own version of that path is under "What I Charge."
+
+### What is a reasonable consulting fee?
+
+Within the ranges above, a reasonable fee is one tied to a named outcome and a fixed scope. A discovery and audit at  to ,000 and a project fee of ,000 to ,000 cover most small business work. Be wary of any quote that cannot say what you get at the end.
+
+### How much does enterprise AI consulting cost?
+
+This guide covers small business engagements, so the ranges above do not apply to enterprise work. Large companies scope projects differently, with more systems, more stakeholders and longer timelines. If you run a team of 5 to 20 people, the small business ranges are the ones to compare against.
 ### Is AI consulting worth it for a small business?
 
 It is when you have a repeatable process eating staff time, enough revenue to absorb the cost, and a specific outcome in mind. Without those, the same engagement tends to produce frustration. A focused project your team uses beats a big one that never lands.

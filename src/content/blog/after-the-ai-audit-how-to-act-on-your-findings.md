@@ -9,7 +9,7 @@ articleType: "cluster"
 
 ## Turn audit findings into a sequenced action plan before momentum dies
 
-An AI readiness audit gives you a clear, prioritized picture of where your business stands and what's blocking AI adoption.
+An AI readiness audit gives you a clear, prioritized picture of where your business stands and what's blocking AI adoption. Whether you ran it with a template, a checklist, or an AI readiness assessment tool, the follow-through is the same.
 
 The next question is what to do with it.
 
@@ -26,6 +26,10 @@ Critical gaps are the things that would undermine any AI implementation you atte
 Improvement opportunities are real gaps worth addressing, but they won't prevent a well-scoped AI implementation from delivering value. They're worth fixing over time, but they don't need to be resolved before you start.
 
 The most important thing to do with your findings is make this distinction clearly. Trying to fix everything before you start is the most common reason AI initiatives stall after an audit. The critical gaps come first. Everything else gets prioritized into a longer-term roadmap.
+
+## What AI Audit Readiness Requires
+
+AI audit readiness comes down to the critical gaps above. Before an implementation holds up, the business needs data in a single system of record, documented workflows, connected tools, clear decision rights, and a named owner for each action. Knowing which of these are missing today matters more than scoring yourself on a scale.
 
 ## Step 1: Separate the Foundation Work from the AI Work
 

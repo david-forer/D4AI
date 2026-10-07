@@ -15,7 +15,7 @@ Most comparisons of an AI consultant and an agency weigh price and headcount. Th
 - For a small business choosing between an AI consultant and an agency, how documented its processes are decides it, and budget only sets the ceiling.
 - There are 4 provider types to compare, not 2: the solo AI consultant, the AI or automation agency, the fractional CTO or operations leader, and the systems integrator.
 - A solo AI consultant is the only one of the 4 whose first deliverable is the documentation itself, which suits a business that has never written its operations down.
-- A consultant closes a defined gap and leaves, while a fractional operations leader holds a role, and at 5 to 20 staff the need is usually a project rather than a role.
+- A consultant closes a defined gap and leaves, while a fractional operations leader holds a role, and at 5 to 20 staff the need is usually a project.
 - A 5-question readiness check picks the provider type: 4 or 5 yeses opens every option, 2 or 3 points to a consultant-led scoping engagement, and 0 or 1 means the documentation is the project.
 
 ## AI consultant vs agency for a small business: the short answer
@@ -26,7 +26,7 @@ An agency builds against a specification. A fractional technology leader directs
 
 A solo consultant is the only one of the 4 whose first deliverable is the documentation itself.
 
-That single distinction resolves the choice faster than any comparison of headcount, portfolio, or price. If you can hand a provider a written description of how a job moves from enquiry to invoice, all 4 options are open. If you cannot, one of them is.
+That single distinction resolves the choice faster than any comparison of headcount, portfolio, or price. If you can hand a provider a written description of how a job moves from inquiry to invoice, all 4 options are open. If you cannot, one of them is.
 
 ---
 
@@ -38,11 +38,17 @@ The question is usually framed as 2 options. There are 4, and the middle 2 get s
 
 **The AI or automation agency.** A team with a sales function, a delivery function, and usually a fixed methodology. Strongest when the work is well defined and needs several people building in parallel.
 
-**The fractional CTO or fractional operations leader.** A part-time executive embedded for a set number of hours a week, typically on a monthly retainer, directing technology or operations rather than doing the build.
+**The fractional CTO or fractional operations leader.** A part-time executive embedded for a set number of hours a week, typically on a monthly retainer, directing technology or operations while others do the build.
 
 **The systems integrator.** A firm that connects existing software so data moves between tools. Their work begins where your systems and their data structures are stable.
 
 Most founders at $1M to $5M in revenue with no operations lead compare option 1 and option 2 only, because those are the 2 that advertise to them.
+
+## What Is the Difference Between a Consultant and an Agency
+
+A consultant diagnoses the problem, documents the process, and then builds or specifies the fix. An agency sells a defined service and delivers it with a team. The consultant's output is clarity about what to build. The agency's output is the build.
+
+If you are searching for a small business operations consultant or an operations consultant for small business, you are usually asking for the first one. You have a constraint somewhere in how work moves, and you need someone to find it before anyone writes code.
 
 ---
 
@@ -55,7 +61,7 @@ Most founders at $1M to $5M in revenue with no operations lead compare option 1 
 | Fractional CTO or ops leader | Directs a function, sets standards | A function with people in it to direct | $8,000 to $15,000 a month | Spends the first quarter writing the documentation at an executive rate |
 | Systems integrator | Connects systems and moves data | Stable systems and clean data | Project-based, varies widely | Integrates processes that change 2 months later |
 
-The cost bands are directional. They come from rates published in 2026 vendor and marketplace content rather than a single verified survey, and they move with geography and specialism. Use them to rule options in or out, not to judge a specific quote. For what a scoped engagement at this size normally involves, see [AI consulting costs for a small business](/blog/ai-consulting-cost-for-small-business).
+The cost bands are directional. They come from rates published in 2026 vendor and marketplace content, and no single verified survey backs them. They move with geography and specialism. Use them to rule options in or out, not to judge a specific quote. For what a scoped engagement at this size normally involves, see [AI consulting costs for a small business](/blog/ai-consulting-cost-for-small-business).
 
 ---
 
@@ -69,7 +75,7 @@ Hand it to a fractional CTO and the first 90 days go into discovery and document
 
 Hand it to a systems integrator and the connections work until the underlying process changes, which at a growing firm happens quarterly.
 
-A solo consultant working the same engagement starts with the process map because there is nothing else to start with. The documentation is the first deliverable rather than a prerequisite, which is why the sequence fits a business that has never written its operations down.
+A solo consultant working the same engagement starts with the process map because there is nothing else to start with. The documentation is the first deliverable, which is why the sequence fits a business that has never written its operations down.
 
 Agencies and fractional leaders become the right answer once the documentation exists. Several of the firms that use them well hired a consultant first to produce it.
 
@@ -121,7 +127,7 @@ Answer these before any sales call. Count the yeses.
 
 Sequencing 2 providers is common and usually cheaper than picking one and hoping.
 
-A scoping engagement with a consultant produces the process map, the priority, and a specification. That specification is what lets you run a competitive quote with 2 or 3 agencies, because they are pricing the same defined thing rather than guessing at your business.
+A scoping engagement with a consultant produces the process map, the priority, and a specification. That specification is what lets you run a competitive quote with 2 or 3 agencies, because they are all pricing the same defined thing.
 
 Founders who do this report a narrower spread between quotes, which is the practical sign that the spec is doing its job.
 
@@ -139,9 +145,21 @@ Once the type is set, the evaluation is a normal one, and the framework in [how 
 
 ## Questions founders ask
 
+### Are AI consultants in high demand?
+
+I do not have a verified demand figure to quote. What I see is that founders at 5 to 20 staff ask for help once a manual process starts costing them real hours, and they often do not know whether to call a consultant or an agency. That confusion is the reason this comparison exists.
+
+### Is ChatGPT an agent or an LLM?
+
+ChatGPT is a chat product built on a large language model (LLM). An LLM generates text. An agent is a system that uses a model to take steps, such as calling tools or updating records, toward a goal. A chat assistant can behave like an agent once it can call tools, but on its own it answers questions.
+
+### How do I find the best AI automation consultant for a small business?
+
+Check reviews and references, then ask for a past scoping document so you can see how they work. Ask what the first deliverable is. If the answer is a process map and a priority list, you are talking to a consultant. If the answer is a build, you are talking to an agency. The framework in [how to choose an AI consultant](/blog/how-to-choose-an-ai-consultant) covers the full vetting list.
+
 ### Should a small business hire an AI consultant or an AI agency?
 
-It depends on whether your processes are written down. An agency builds to a specification, so without one the founder ends up writing it at night. If you can't describe on paper how a job moves from enquiry to invoice, start with a consultant.
+It depends on whether your processes are written down. An agency builds to a specification, so without one the founder ends up writing it at night. If you can't describe on paper how a job moves from inquiry to invoice, start with a consultant.
 
 ### Do I need a fractional CTO or an AI consultant for a 10-person company?
 
@@ -157,4 +175,4 @@ Yes, and it is often cheaper. The consultant produces the process map and a spec
 
 ### How much does an AI consultant cost compared to an agency?
 
-Solo consultants run roughly $150 to $400 an hour or a fixed scope, while agency projects start around $50,000 with retainers from $8,000 a month. The bands are directional, so use them to rule options in or out rather than to judge a specific quote.
+Solo consultants run roughly $150 to $400 an hour or a fixed scope, while agency projects start around $50,000 with retainers from $8,000 a month. The bands are directional, so use them to rule options in or out.

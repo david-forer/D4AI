@@ -10,7 +10,7 @@ articleType: "supporting"
 
 This small business SEO case study follows a B2B services website that Google showed thousands of times a month and almost nobody clicked. If you are asking why your website is not getting traffic when Search Console shows plenty of impressions, this is one worked answer. It covers what was checked, what turned up, what changed in a single day of work and the prescription that came out of it. The results are still coming in, and this post will be updated with them in November 2026.
 
-It's published before the outcome on purpose. Finished case studies tend to arrive polished, with the dead ends cut. The reasoning is the part you can reuse on your own site, so it's all here, misses included.
+This on-page SEO case study is published before the outcome on purpose. Finished case studies tend to arrive polished, with the dead ends cut. The reasoning is the part you can reuse on your own site, so it's all here, misses included.
 
 ## In Brief
 
@@ -37,6 +37,12 @@ Here are the baseline numbers for the 6 pages that mattered most, from Google Se
 
 Across the site that's 3,924 impressions and 3 clicks. People saw the site in results. They saw it at positions 13 to 70, below where most people stop scrolling. The job was to move the pages closest to page one onto it and to make every page say what people were actually searching for.
 
+## Local SEO vs SEO: Which One This Case Covers
+
+This is general on-page SEO. The firm sells to buyers searching by service and problem, not by city, so nothing here is local SEO.
+
+Local SEO is the same foundation with a map layer on top. A business that serves one area adds a complete Google Business Profile, consistent name, address and phone details across the web, and pages written for each place it serves. The checks below still apply to a local site. Terms in titles, headings and body text matter just as much when the search is "plumber near me" as when it is a software category.
+
 ## What Was Checked
 
 The audit ran on free and low-cost data. Nothing here needs an enterprise SEO suite.
@@ -46,7 +52,7 @@ The audit ran on free and low-cost data. Nothing here needs an enterprise SEO su
 - Each target search term checked against the live page: title tag, meta description, main heading, subheadings and body text
 - Index status and last crawl date through URL inspection
 - The live search results for the main terms, to see who ranks and whether an AI Overview answers the question first
-- Structured data on the key pages, compared with what a visitor can actually see
+- Structured data on the main pages, compared with what a visitor can actually see
 - Posts competing for the same searches
 - Internal links pointing at each weak page
 - Every claim, number and example in the posts that were getting impressions
@@ -150,7 +156,7 @@ If your small business site gets impressions and no clicks, this is the order I 
 
 1. Pull query and page pairs from Search Console for 3 months. You want every search term alongside the page Google shows for it. The top 1,000 rows are usually enough for a small site.
 2. Check your own backlog first. If a keyword plan or audit already exists, count how many items were ever done. Execution beats a new plan.
-3. Check each important page for its own search terms. Look for the exact phrase in the title tag, main heading, subheadings and body. Fix the title and main heading on your most valuable page before anything else.
+3. Check each important page for its own search terms. Look for the exact phrase in the title tag, main heading, subheadings and body. Fix the title and main heading on your most important page before anything else.
 4. Work the long tail into the pages you are already editing. The small queries with 5 or 10 impressions make good supporting terms. Adding them now saves a second pass on the same page later.
 5. Split any drop by page before reacting. Compare equal windows. If positions held while impressions fell, it's demand or layout. If a position slid, that page gets attention.
 6. Merge posts that compete for the same searches. Keep the one with more impressions and inbound links, fold the other in, redirect it and update every internal link to the final URL.
@@ -158,6 +164,19 @@ If your small business site gets impressions and no clicks, this is the order I 
 8. Read your posts like a skeptical buyer. Cut or relabel any number, story or example you cannot back up.
 9. Leave new posts alone until Google has recrawled them. Link to them from the right pillar, request indexing and give them a few weeks.
 10. Save a baseline and set a date. Record clicks, impressions and position for every page you change, then compare the same window length 6 weeks later.
+
+## SEO Examples You Can Copy From This Case
+
+Each change above is a small SEO example you can run on your own site.
+
+- Put the exact search phrase in the title tag and main heading of the page that should rank for it
+- Merge 2 posts that split one topic, and redirect the weaker one
+- Show FAQ answers on the page if the markup lists them
+- Replace unsourced case studies with clearly labeled hypotheticals
+
+## An SEO Case Study Template
+
+If you want to write your own, use the same order as this post: baseline numbers, what was checked, what turned up, what changed, what was held back, the prescription and a measurement date. Write the measurement date down before you change anything. That one habit keeps a case study honest.
 
 ## How Results Will Be Measured
 
@@ -183,7 +202,7 @@ Check Search Console before anything else. If your pages get impressions but sit
 
 ### Why does my website get impressions but no clicks?
 
-Most often it's position. A result at 13 or 40 appears in the impression count for anyone who scrolls, but almost nobody clicks that far down. Fix the pages closest to page one first, starting with the title and main heading on your most valuable page.
+Most often it's position. A result at 13 or 40 appears in the impression count for anyone who scrolls, but almost nobody clicks that far down. Fix the pages closest to page one first, starting with the title and main heading on your most important page.
 
 ### How do I improve my Google rankings on a small business site?
 
@@ -196,6 +215,18 @@ Plan on 4 to 6 weeks before judging. Google has to recrawl the changed pages, an
 ### What should a small business SEO case study include?
 
 The starting numbers, what was checked, what changed, what was deliberately left alone and how the result will be measured. A case study that only shows the final graph hides the part you can reuse.
+
+### What is SEO and how does it work?
+
+SEO is the work of making your pages easy for search engines to find, understand and rank for the phrases your buyers type. It works by matching three things: what a page says, how credible and well linked the site looks, and what the searcher wants. This case focused on the first one, because the pages did not use the words people searched.
+
+### How do I do SEO for my website, step by step?
+
+Follow the 10-step prescription above. In short: pull your Search Console data, check each important page for its own search terms, fix titles and headings first, merge competing posts, and measure again after 4 to 6 weeks.
+
+### How do I do local SEO, and how is it different?
+
+Start with the same on-page steps, then add a complete Google Business Profile, consistent business details across directories and a page for each area you serve. Local SEO for small businesses is mostly the standard work plus the map layer. If you are a beginner, fix your titles and headings first, then claim your profile.
 
 ## Status
 
