@@ -8,7 +8,7 @@ heroImage: "/images/blog/ai-agent-use-cases-small-business.webp"
 articleType: "cluster"
 ---
 
-Most agent demos are built for a stage, not a small office. This page is for the founder who wants to know which jobs an agent can hold down in a real firm.
+Most agent demos are built for a stage, not a small office. This page is for the founder who wants to know which jobs an agent can hold down in a real firm. It covers the practical AI use cases for small businesses that justify the work.
 
 ## Key takeaways
 
@@ -41,7 +41,7 @@ Needs about 25 inquiries a week to be worth it. Below that a person handling the
 
 Before a discovery call someone spends 15 to 25 minutes assembling background: what the company does, recent news, who the person is, what they filled in on the form. An agent does that across public sources and has a brief waiting.
 
-This is the safest agent to start with, because the output is a document a person reads rather than an action taken. Nothing it produces reaches a client. A team running 25 calls a week gets back about 7 hours, and reps stop walking into calls cold because they ran out of time.
+This is the safest agent to start with, because the output is a document a person reads, and no action is taken. Nothing it produces reaches a client. A team running 25 calls a week gets back about 7 hours, and reps stop walking into calls cold because they ran out of time.
 
 ## 3. Tier one support resolution with escalation
 
@@ -71,7 +71,7 @@ The review step is the whole design. Extraction is confident even when wrong, so
 
 After a call, an agent produces the summary, extracts what each person committed to, creates the tasks, and drafts the follow-up email. A person approves before it sends.
 
-Worth it for teams running 15 or more external meetings a week. The value is not the summary, which is now commodity. It is that commitments stop evaporating between the call and the calendar.
+Worth it for teams running 15 or more external meetings a week. The summary is now a commodity. The value is that commitments stop evaporating between the call and the calendar.
 
 ---
 
@@ -79,9 +79,9 @@ Worth it for teams running 15 or more external meetings a week. The value is not
 
 More money is lost here than is gained across the 7 above, so this half is worth reading twice.
 
-**Fully autonomous outbound.** An agent that researches prospects, writes personalised messages, and sends them without review. It fails on reputation rather than capability. The agent will eventually send something wrong to someone who matters, and in a firm whose product is trust the recovery cost exceeds every hour it saved. Draft and approve works. Autonomous sending does not.
+**Fully autonomous outbound.** An agent that researches prospects, writes personalised messages, and sends them without review. It fails because of reputation risk. The agent will eventually send something wrong to someone who matters, and in a firm whose product is trust the recovery cost exceeds every hour it saved. Draft and approve works. Autonomous sending does not.
 
-**Contract review before signature.** The valuable action is a judgment nobody can afford to be wrong about, and it cannot be gated cheaply, because checking the agent takes as long as doing the work. This one does not get better with a bigger model, it gets better with a lawyer.
+**Contract review before signature.** The action at stake is a judgment nobody can afford to be wrong about, and it cannot be gated cheaply, because checking the agent takes as long as doing the work. This one does not get better with a bigger model, it gets better with a lawyer.
 
 **"Run our marketing."** Not a workflow. It cannot be counted, its branches cannot be written, and no data set covers it. Every engagement that starts here ends with an expensive pilot and no owner. Scope it to one message type and one action first.
 
@@ -155,6 +155,22 @@ Usually not. It looks like the obvious place to start, but the escalation judgme
 ### How much does it cost to run an AI agent in a small business?
 
 Model and platform charges are typically a few hundred a month at small firm volumes. The bigger cost is 2 to 3 hours a week of someone reading and correcting its output for the first 2 months, dropping to about 30 minutes once it settles.
+
+### How are small businesses using AI agents?
+
+Mostly in narrow, supervised jobs. The common real-life examples are an agent that triages inbound inquiries and drafts replies, one that writes a research brief before a sales call, and one that chases overdue work in a project tracker. A person reviews the output in each case.
+
+### What are 5 common use cases for AI in a small business?
+
+Inquiry triage, pre-call research briefs, lead qualification, document intake, and meeting follow-up. Those 5 fit the test above best, and each one has a person checking the output.
+
+### What other AI solutions for small business are worth a look?
+
+Bookkeeping and accounting software, a website chatbot, a voice agent answering the phone, and marketing drafts are all common. AI automation for small business works in these areas under the same test: the work arrives on its own, each case differs, and a person can check the output quickly. Most small firms get more from one well-run agent than from a stack of assistants nobody supervises.
+
+### What are the disadvantages of AI in business?
+
+The main ones are maintenance, drift, and review time. An agent needs 2 to 3 hours a week of supervision at first. An unsupervised one can send something wrong to a client. A poorly chosen use case can also automate a step that should have been removed.
 
 ### Which AI agent use cases should a small business avoid?
 

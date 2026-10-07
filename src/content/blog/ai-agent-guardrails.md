@@ -10,7 +10,7 @@ articleType: "cluster"
 
 Most guardrail advice assumes an engineering team. This page is for the founder who has to decide what an agent may do before it runs.
 
-## Key takeaways
+## The short version
 
 - AI agent guardrails for a small business are 4 written limits: what the agent may touch, what it may do alone, what it does when unsure, and what gets recorded.
 - Every action an agent can take belongs in 1 of 3 groups: alone, with approval, or never.
@@ -36,7 +36,7 @@ Agents are usually connected by giving them an account, and accounts default to 
 
 Write it as a list. This agent may read the shared support inbox and the customer record for the sender. It may not read finance, HR, or any other client's file.
 
-Then make it true in the tool. Most products let you scope access per connection, and the ones that do not are telling you something about how much thought went into them. Where scoping is impossible, create a dedicated account with only the access the job needs rather than reusing a person's.
+Then make it true in the tool. Most products let you scope access per connection, and the ones that do not are telling you something about how much thought went into them. Where scoping is impossible, create a dedicated account with only the access the job needs. Do not reuse a person's.
 
 This is the guardrail that turns a mistake into an incident when it is missing, because the blast radius of a wrong action is set entirely by what the agent could reach.
 
@@ -58,7 +58,7 @@ Sort every action the agent can take into 3 groups and write the list.
 | With approval | Anything that leaves the building or is hard to reverse | Sending an external message, changing a client record, committing to a date |
 | Never | Actions it should not take at any confidence level | Moving money, deleting anything, changing permissions |
 
-The mistake to avoid is putting too much in the approval group. An agent that asks about everything becomes a queue somebody has to work through, and within a fortnight they are clicking approve without reading, which is worse than no approval step because it manufactures a record of oversight that did not happen.
+Do not put too much in the approval group. An agent that asks about everything becomes a queue somebody has to work through, and within a fortnight they are clicking approve without reading, which is worse than no approval step because it manufactures a record of oversight that did not happen.
 
 Get the alone group as wide as you safely can, keep the approval group short enough that a person reads each one properly, and treat the never list as fixed.
 
@@ -70,7 +70,7 @@ The guardrail most often missing, and the one that separates a working agent fro
 
 An agent handling varied work will meet cases outside what it can judge. Without an instruction it will pick the most plausible action and proceed with full confidence. That is the behaviour that produces the wrong email to the wrong person.
 
-Write the escalation rule in terms of situations rather than confidence scores, because a number the agent generates about its own certainty is not evidence.
+Write the escalation rule as situations, not confidence scores, because a number the agent generates about its own certainty is not evidence.
 
 Escalate when the sender is not in the CRM. Escalate when the message mentions a complaint, a contract, a refund or a legal matter. Escalate when more than one interpretation would lead to a different action. Escalate when the case does not resemble anything in the examples it was given.
 
@@ -102,7 +102,24 @@ Each one comes from a specific missing limit.
 
 None of those is exotic. All 3 are ordinary, and all 3 are prevented by a list somebody wrote in an hour.
 
-What they share is that the agent was allowed to act in a situation nobody had described in advance. That is the definition of a missing guardrail, and it is why the list is written before deployment rather than after the first surprise. The wider case for treating agents as a governed capability rather than a productivity purchase runs through [AI agents for small businesses](/blog/ai-agents-for-small-businesses).
+What they share is that the agent was allowed to act in a situation nobody had described in advance. That is the definition of a missing guardrail, and it is why the list is written before deployment, not after the first surprise. The wider case for treating agents as a governed capability rather than a productivity purchase runs through [AI agents for small businesses](/blog/ai-agents-for-small-businesses).
+
+---
+
+## Types of guardrails in AI, with examples
+
+Technical teams sort guardrails by where they sit, and each type maps to one of the 4 limits above.
+
+Input guardrails check what goes into the agent, such as blocking a prompt injection hidden in an email. Access limits control what the agent can reach. Action limits control what it can do alone. Output checks review what it says before a client sees it.
+
+Here are AI guardrails examples from a typical small firm:
+
+- A support agent may read one inbox and may not open the finance folder.
+- Any external reply waits for approval.
+- A message that mentions a refund goes to a person.
+- An email that tells the agent to ignore its instructions gets flagged, not obeyed.
+
+Those last two are what people mean by guardrails for an LLM in practice. Guardrails are used mainly to prevent wrong actions, data leaks, and off-script replies. You can implement them in plain language first, then add software tools later if you grow a technical team.
 
 ---
 
@@ -118,9 +135,27 @@ A working version takes about 90 minutes and needs no engineer.
 
 **Name the person who reviews the log weekly for the first 2 months.** If that name does not exist, stop. An unsupervised agent is the problem the other 3 guardrails exist to prevent.
 
-**Test against 20 real past cases before it goes live.** You are watching the edges rather than the easy ones, because the easy ones were never the risk.
+**Test against 20 real past cases before it goes live.** Watch the edge cases closely, because the easy ones were never the risk.
 
 Keep the list in the same place as your other operating rules so it is found by whoever inherits the job. Where that sits alongside policy and data rules is covered in [AI governance for small businesses](/blog/ai-governance-for-small-businesses).
+
+---
+
+## How to build an AI agent that stays inside its limits
+
+If you are working out how to build an AI agent, write the guardrails before you pick an AI agent platform. The platform decides what is easy to connect. Your permission list decides what should be connected.
+
+The architecture of a safe agent is simple. It has a narrow job, scoped access, an approval step for anything external, and a log. Examples of AI agents that fit this pattern include a support triage agent, a lead qualifier, and an invoice chaser. My posts on [AI agents for customer support](/blog/ai-agents-for-customer-support) and [AI agents for lead qualification](/blog/ai-agents-for-lead-qualification) show what each one looks like in practice.
+
+---
+
+## Is ChatGPT an AI agent?
+
+A chat assistant answers when you ask. An agent takes actions in your systems, such as sending an email or updating a record. A chatbot agent sits in between, replying to customers on its own. Because an agent acts, the guardrails matter far more than they do for an assistant.
+
+The same split answers the AI agent vs ChatGPT question. ChatGPT in a chat window is an assistant. It becomes part of an agent once it has access to your tools and is allowed to act. For more on the split, see [AI agents vs chatbots](/blog/ai-agents-vs-chatbots).
+
+Which AI has no guardrails? Any agent without a written list, whatever model sits underneath. Built-in model safety filters do not know your client rules, so the permission list has to come from you.
 
 ---
 

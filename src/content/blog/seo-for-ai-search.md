@@ -10,7 +10,7 @@ articleType: "cluster"
 
 ## Search Has a New Surface Area: Here Is What Changes and What Stays the Same
 
-Search behavior is changing. A growing portion of information queries are now answered directly by AI tools rather than by a list of links. Users ask ChatGPT a question and get a synthesized answer. They use Perplexity to research a topic and receive a cited summary. They type a query into Google and find a generated response above all organic results.
+Search behavior is changing. A growing portion of information queries are now answered directly by AI tools instead of a list of links. Users ask ChatGPT a question and get a synthesized answer. They use Perplexity to research a topic and receive a cited summary. They type a query into Google and find a generated response above all organic results.
 
 This does not mean traditional SEO is obsolete. It means the surface area of search has expanded, and the signals that determine visibility in AI-generated responses are meaningfully different from the signals that determine rank position in a standard SERP.
 
@@ -22,7 +22,7 @@ Understanding those differences is increasingly relevant for any content-driven 
 
 In traditional search, Google crawls and indexes content, then ranks pages against a query using hundreds of factors: relevance, authority, page experience, and more. A user clicks a link and reads the source content.
 
-In AI search, a language model retrieves and synthesizes content from multiple sources to generate a direct answer. The user often does not visit the source at all. The model is not ranking pages in a list. It is constructing a response, and the question of whether your content is represented in that response depends on different factors.
+In AI search, a language model retrieves and synthesizes content from multiple sources to generate a direct answer. The user often does not visit the source at all. The model constructs a response, and whether your content is represented in it depends on different factors.
 
 There are three distinct environments worth understanding.
 
@@ -38,13 +38,13 @@ There are three distinct environments worth understanding.
 
 Despite their differences, the three environments share a set of preferences.
 
-**Direct, answer-forward structure.** AI models are trying to extract answers efficiently. Content that buries its main point in a long introduction, uses vague language, or structures information for narrative flow rather than clarity of extraction is harder for AI to use. Content that states its answer clearly near the top, uses descriptive headers, and organizes information in discrete sections is easier to retrieve and cite.
+**Direct, answer-forward structure.** AI models are trying to extract answers efficiently. Content that buries its main point in a long introduction, uses vague language, or favors narrative flow over clear sections is harder for AI to use. Content that states its answer clearly near the top, uses descriptive headers, and organizes information in discrete sections is easier to retrieve and cite.
 
-**Entity coverage and semantic depth.** AI models evaluate content in terms of entities and conceptual completeness, not just keyword presence. An article on a topic that covers the key concepts, relationships, and implications of that topic thoroughly is more likely to be treated as authoritative than an article that covers the surface level. This is the same principle that drives topical authority in traditional SEO, applied with more nuance.
+**Entity coverage and semantic depth.** AI models look at the entities and concepts a page covers as well as its keywords. An article on a topic that covers the main concepts, relationships, and implications of that topic thoroughly is more likely to be treated as authoritative than an article that covers the surface level. This is the same principle that drives topical authority in traditional SEO, applied with more nuance.
 
 **Source authority and E-E-A-T signals.** Experience, expertise, authoritativeness, and trustworthiness are the signals Google has been building toward for years, and they are central to what AI search tools use to evaluate credibility. Content attributed to a named author with demonstrated expertise, published on a domain with consistent topical focus, and supported by citations to credible external sources, carries more weight than anonymous content on a general-interest site.
 
-**Citation-worthy sourcing.** Perplexity and AI Overviews both cite their sources. Content that itself cites credible research, data, or authoritative sources is more likely to be treated as a reliable reference. The practice of sourcing claims with links to authoritative external documents is not just good journalism. It is an optimization signal for AI-generated search results.
+**Citation-worthy sourcing.** Perplexity and AI Overviews both cite their sources. Content that itself cites credible research, data, or authoritative sources is more likely to be treated as a reliable reference. Sourcing claims with links to authoritative external documents also works as an optimization signal for AI-generated search results.
 
 ---
 
@@ -60,7 +60,7 @@ Technical SEO still matters. AI tools can only use content they can access and p
 
 Content quality still matters. Generic, thin, or repetitive content does not serve AI search users any better than it serves traditional search users. The bar for what constitutes useful content is rising, not falling.
 
-The shift is not from SEO to something else entirely. It is from optimizing primarily for rank position toward optimizing for representation in synthesized responses. The underlying requirement is the same: produce content that is useful, clearly structured, and demonstrably authoritative.
+The shift moves from optimizing primarily for rank position toward optimizing for representation in synthesized responses. The underlying requirement is the same: produce content that is useful, clearly structured, and demonstrably authoritative.
 
 ---
 
@@ -78,9 +78,29 @@ The shift is not from SEO to something else entirely. It is from optimizing prim
 
 ---
 
+## SEO for AI Search Questions
+
+### What Is SEO for AI Search Called?
+
+Two names are in use. GEO stands for generative engine optimization. AEO stands for answer engine optimization.
+
+So when someone asks what GEO is in SEO, it means optimizing your content so generative tools cite or mention it. AEO means shaping your content so it becomes the direct answer to a question. Both sit on top of regular SEO.
+
+### Does SEO Still Apply to AI? Is It Still Worth It?
+
+Yes. Is SEO still relevant for generative AI search? The sources behind AI answers are still crawled, indexed, and judged for authority. A page that search engines cannot access or trust has little chance of being cited.
+
+### How Do You Do SEO for AI Search?
+
+Start with the sections above. Put the answer first under each header, cite credible sources, show who wrote the content, and add schema markup. Make sure your pages load fast and can be crawled.
+
+For SEO for AI Overviews, the same steps apply because Overviews pull from indexed content. To optimize your website for AI search results, check your most important pages one at a time against that list.
+
+SEO AI tools and AI search optimization tools can speed up research and drafting. They do not decide whether an AI Overview or Perplexity cites you. Your content does.
+
 ## The Bigger Picture
 
-AI search is not replacing the need for SEO expertise. It is changing what good SEO produces as an outcome.
+AI search changes what good SEO produces as an outcome, and the need for SEO expertise stays.
 
 The goal is no longer only to appear in position one for a set of target keywords, though that still matters. The goal is also to be the source that AI tools cite when they answer questions in your topic area. That requires the same foundation: topical authority, quality content, structural clarity, and credible sourcing.
 

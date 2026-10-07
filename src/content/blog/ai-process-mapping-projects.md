@@ -115,6 +115,10 @@ Fewer surprises. Fewer one-off hero fixes. Cleaner handoffs.
 
 When decision points are explicit, new team members can follow the map without asking for help. Systems can be automated without guessing. Mistakes happen less often because the rules are visible.
 
+### Process Mapping Symbols
+
+You need only a few process mapping symbols. An oval marks where the process starts and ends. A rectangle marks a step. A diamond marks a decision. An arrow shows the direction of flow. Add swimlanes if you want to show who owns each step.
+
 ## Layer Analysis With AI
 
 Process maps also show layers of complexity that cut across the step-by-step sequence.
@@ -218,7 +222,7 @@ Start with reality. Then refine.
 
 AI is trained on patterns from across the internet. Some of those patterns are good. Many are not. AI does not know your industry, your clients, or your constraints.
 
-If AI suggests a best practice, validate it. Ask whether it fits your situation. Do not adopt something just because AI said so.
+If AI suggests a best practice, validate it. Ask whether it fits your situation. Do not adopt a practice because AI said so.
 
 ### Do Not Replace Team Interviews
 
@@ -280,9 +284,33 @@ Not on its own. AI will miss nuance and get some steps wrong, but it gives you a
 
 Once the map is validated, AI can suggest steps worth automating: repetitive manual tasks, steps with clear inputs and outputs, and low-risk decisions with consistent logic. You decide which ones to act on. Automate after clarity, not before.
 
+### How do you create a process map?
+
+Pick one process and list its steps in order. Note who does each step and which tool they use. Mark every decision and exception. Draw it with the symbols above, then walk it through with the people who do the work. AI can draft the list in the first step from the records the work leaves behind.
+
+### What does a process map example look like?
+
+A sales process map is a good first example. It runs from a new lead arriving to a signed contract and the handoff to delivery. The steps are lead intake, qualification, discovery call, proposal, follow-up, and signature. Decisions sit where a lead is disqualified or a proposal stalls. Mapping the sales process this way shows where deals wait for someone.
+
+### What is the difference between a process map and a flowchart?
+
+The terms overlap. A flowchart shows steps and decisions in sequence. A process map usually adds who does each step, which tool they use, and where time is lost, often in swimlanes. Lean process mapping, also called value stream mapping, goes further and marks each step as value-adding or waiting. The time layer above does a light version of that.
+
+### What are L1, L2, and L3 process maps?
+
+Companies define the levels differently, but a common split is simple. L1 is a high-level view with a handful of boxes. L2 shows the steps and who owns each one. L3 adds the detail of each task, the decisions, and the systems involved. For a small business, an L2 map is usually enough to find what to fix.
+
 ### Which tools do you need to map a process?
 
 The AI process mapping tools you need are modest: an AI assistant that can read your transcripts and task lists and draft the step sequence, then Lucidchart, Miro, or a plain whiteboard for the visual map. The tool matters less than the team agreeing on what really happens.
+
+### What is the best tool for process mapping, and is there a free one?
+
+The best tool for process mapping is the one your team will open. Lucidchart and Miro are common paid options. Free process mapping tools include diagrams.net, and a spreadsheet works for a simple list of steps. Excel process mapping means one row per step, with columns for owner, tool, time, and decision. A spreadsheet has no decision symbols, so move to a diagram once branches matter.
+
+### Is there an AI mapping tool?
+
+Yes, though most small teams do not need a dedicated one. A general AI assistant can draft the step sequence from your transcripts and task lists. Some diagramming tools also generate a diagram from text. Check any output against the team before you trust it.
 
 ---
 
