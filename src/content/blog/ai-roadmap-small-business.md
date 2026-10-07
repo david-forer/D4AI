@@ -166,6 +166,10 @@ Learn it by solving one problem from your roadmap. Pick the first item, try the 
 
 Any business with a repeatable process that eats staff time. Client intake, scheduling, reporting and follow-up emails are common first picks. The type of business matters less than whether the process is documented and stable.
 
+### How do you apply the people and process side of an AI roadmap in practice?
+
+Give every roadmap item a named owner, a written version of the current process and a date when the team starts using the change. Schedule training and a review two weeks after launch before you schedule the next tool. Most of the effort sits in those steps, so a roadmap that lists only tools leaves out the largest part of the work.
+
 ---
 
 *Part of the [AI Strategy for Small Businesses](/blog/ai-strategy-for-small-businesses) series.*

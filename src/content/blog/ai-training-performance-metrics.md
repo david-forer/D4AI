@@ -165,6 +165,10 @@ Take a baseline on a few workflows before training, then measure the same things
 
 Sample real outputs each month and score them against a simple rubric. Track the error rate and how long the editing takes. If editing time keeps falling, performance is improving.
 
+### Why does AI spending so often fail to pay back?
+
+Usually the tool works and the habit never forms. People drift back to the old way, nobody checks whether usage changed, and the savings never show up in the numbers. That is what the measures in this post are for. They show whether behavior changed before you judge the tool.
+
 ---
 
 *Related reading: [AI Team Adoption: Why Most Small Business Implementations Fail](/blog/ai-training-team-adoption-small-business) | [How to Run an AI Training Pilot Program in a Small Business](/blog/ai-training-pilot-program)*

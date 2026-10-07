@@ -227,4 +227,8 @@ No tool gives you a guaranteed figure, and I would distrust anyone who promises 
 
 Think in categories: workflow automation, AI writing assistance, reporting and business intelligence, client-facing operations, and internal operations. One well-chosen tool per category covers most small service businesses.
 
+### What are the hidden costs of an AI stack beyond the subscriptions?
+
+Staff time to learn each tool, time spent cleaning up the data it reads, and the review work on every output. Add the upkeep of connections between tools and the cost of switching later if a vendor changes its terms. Price these before you commit. A cheap tool that needs hours of attention every month is not cheap.
+
 If you want an outside perspective on where your current stack stands and what the highest-return path from here looks like, that conversation starts with a direct look at how your operations are running. [Schedule a call.](https://calendly.com/david-j-forer/30min)

@@ -174,6 +174,10 @@ Ethical AI governance and responsible AI describe the principles, such as fairne
 
 Yes. Do the approved tools list and data classification in an afternoon, then the one-page policy, then review checkpoints on the 2 or 3 workflows that touch clients or money. Access rules and incident response can follow as the team grows, and nobody needs to be hired for any of it.
 
+### Who should own the people and process side of AI in a small firm?
+
+In a firm of 5 to 20 people, the founder owns it by default, and that is usually right at the start. Name one person to run the day-to-day work: the approved tools list, the review checkpoints and the questions staff bring up. Give that person the authority to say no to a new tool. If everyone shares ownership, nobody has it, and the rules drift within a quarter.
+
 ---
 
 If you are not sure where your firm's real AI exposure sits right now, that is the first thing worth finding out. You can [book a call](https://calendly.com/david-j-forer/30min) and I will map where your current AI use creates risk, and what a right-sized governance setup looks like for a business your size.
