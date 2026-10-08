@@ -33,9 +33,11 @@ const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name, navLabel: h.na
 
 // Generate page numbers for pagination
 const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
+import { breadcrumbJson } from '../../lib/schema';
 ---
 
 <Layout title="AI Operations Blog – Articles on Automation, SEO, and Business Systems for Founder-Led Small Businesses – Practical Guides Without the Hype – David J Forer" description="The AI operations blog for founder-led small businesses: practical articles on automation, SEO, workflow systems, and putting AI to work without the hype.">
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['Blog','/blog']])} />
   <div>
     {/* Hero Section */}
     <PageHero

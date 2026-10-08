@@ -633,12 +633,6 @@ export function formatMoney(n) {
 
 /**
  * Which audit tier the result routes to.
- *
- * No prices here, deliberately. Pricing is not published on this site, and
- * `NOT_THIS` in src/lib/agentInfo.ts states that to answer engines. The tier
- * carries a name and a shape so a founder knows what they would be buying into,
- * and the number comes up in conversation. If pricing is ever published, it
- * belongs on /ai-readiness-and-ai-audits first and here second, never only here.
  */
 export function recommendTier(result, answers) {
   const wantsDone = answers.preference === 'dfy';

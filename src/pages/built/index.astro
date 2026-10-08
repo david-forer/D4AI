@@ -42,12 +42,14 @@ const badgeColors: Record<string, string> = {
   skill: 'bg-amber-100 text-amber-800',
   agent: 'bg-blue-100 text-blue-800',
 };
+import { breadcrumbJson } from '../../lib/schema';
 ---
 
 <Layout
   title="AI Automation Examples | Real Systems I Run | Forersight"
   description="Working AI automations, not vendor demos. The apps, Claude Code skills and agents I built for my own operations, what each one does, and what it cost to run."
 >
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['Built','/built']])} />
   {/* Hero */}
   <PageHero
     title="AI automations I built and actually run"

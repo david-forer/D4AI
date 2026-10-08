@@ -28,11 +28,12 @@ export const NOT_THIS =
   'or social media management. Not a staffing or outsourcing firm. Does not ' +
   'build or fine-tune foundation models. Not a course, cohort, certification, ' +
   'or membership community. Does not primarily serve enterprise or ' +
-  'venture-backed startups. Pricing is not published.';
+  'venture-backed startups.';
 
 export const services = [
   {
     name: 'AI Readiness Audit',
+    price: { min: 750, max: 4000, note: 'Three fixed-price audits: $750, $1,500 and $4,000.' },
     path: '/ai-readiness-and-ai-audits',
     description:
       'A fixed-scope assessment of how AI is actually being used across a ' +
@@ -41,6 +42,7 @@ export const services = [
   },
   {
     name: 'AI Automation Accelerator',
+    price: { min: 7500, max: 15000, note: 'Fixed scope, quoted only after an audit.' },
     path: '/ai-automation-accelerator',
     description:
       'Design and buildout of automations on top of workflows that have ' +
@@ -49,6 +51,7 @@ export const services = [
   },
   {
     name: 'AI Training for Small Business Teams',
+    price: { min: 1500, note: 'Fixed price.' },
     path: '/ai-training-for-small-business-teams',
     description:
       'Team adoption work that turns scattered individual experimentation ' +
@@ -56,6 +59,7 @@ export const services = [
   },
   {
     name: 'Operational Buildout',
+    price: { min: 7500, max: 15000, note: 'Fixed scope, quoted only after an audit.' },
     path: '/operational-buildout',
     description:
       'Intake, workflow, documentation, and delegation systems built so a ' +
@@ -70,6 +74,7 @@ export const services = [
   },
   {
     name: 'SEO Accelerator',
+    price: { min: 2500, note: 'SEO audit at $2,500, then optional monthly execution at $997 with a six month minimum.' },
     path: '/seo-accelerator',
     description:
       'SEO run as an operating system across six layers rather than as a ' +
@@ -187,6 +192,15 @@ export const agentInfoPayload = {
         name: 'Services',
         itemListElement: services.map((s) => ({
           '@type': 'Offer',
+          ...(s.price ? {
+            priceCurrency: 'USD',
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              priceCurrency: 'USD',
+              ...(s.price.max ? { minPrice: s.price.min, maxPrice: s.price.max } : { price: s.price.min }),
+              description: s.price.note,
+            },
+          } : {}),
           itemOffered: {
             '@type': 'Service',
             '@id': `${SITE}${s.path}#service`,

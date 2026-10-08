@@ -70,6 +70,7 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString('en-US', {
 // Define categories for the navigation
 // Hub chip on the post. Source of truth is src/lib/hubs.ts.
 const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
+import { breadcrumbJson } from '../../lib/schema';
 ---
 
 <Layout
@@ -78,6 +79,7 @@ const categories = HUBS.map((h) => ({ slug: h.slug, name: h.name }));
   image={entry.data.heroImage || entry.data.image}
   type="article"
 >
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['Research','/research'],[entry.data.title,`/research/${entry.slug}`]])} />
   {/* This was outside Layout, which put it before <html> and made the whole
       document unparseable. The W3C validator reported "Cannot recover after
       last error" on 137 blog pages because of it. A script is valid flow

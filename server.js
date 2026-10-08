@@ -49,6 +49,9 @@ const redirects = {
   // Old "about" URLs
   '/about-me':                                      '/about',
 
+  // Legacy thank-you page, replaced by /thank-you
+  '/thankyou':                                      '/thank-you',
+
   // Old contact URLs
   '/contact-seo-specialist':                        '/contact',
   '/book-a-video-call':                             '/contact',

@@ -21,11 +21,13 @@ const AUDIT_FIELDS = [
   { name: 'website', questionId: 'vpo3sx989uxpw2ys218wfdog', label: 'Website URL (Optional)', type: 'url', required: false },
   { name: 'biggest_challenge', questionId: 'egzuz1tpi0uktnh87ndcdqyr', label: "What's your biggest time-wasting task?", type: 'textarea', required: true, rows: 3 },
 ];
+import { breadcrumbJson } from '../lib/schema';
 ---
 
 <Layout title="AI Automation Accelerator: Automate Work Without New Hires"
 description="AI Automation can scale your business without headcount. We implement AI automations to handle tedious work, boost efficiency, & free up your team for high-impact."
 image="/images/ai-automation.webp">
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['AI Automation Accelerator','/ai-automation-accelerator']])} />
 <div class="bg-gray-50 text-gray-800 font-sans">
     {/* Hero Section - Adapted for AI Automation */}
     <PageHero

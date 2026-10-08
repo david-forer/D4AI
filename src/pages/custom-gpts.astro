@@ -51,11 +51,13 @@ const gpts = [
     url: "https://chatgpt.com/g/g-WXoEiVTGr-visionary-ideas"
   }
 ]
+import { breadcrumbJson } from '../lib/schema';
 ---
 
 <Layout title="Custom GPTs made by David J Forer | AI Assistants for Business & Creativity"
 description="Free custom GPTs built by David J Forer for small business work, like SOPs, support replies and SEO writing. Open one in ChatGPT and use it today."
 image="/images/Custom-GPTs.webp">
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['Custom GPTs','/custom-gpts']])} />
   {/* Blue Hero/Header Section */}
   <PageHero
     align="center"

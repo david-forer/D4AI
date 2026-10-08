@@ -46,9 +46,11 @@ const moreBuilds = [1, 2, 3]
 
 const videoUrl = entry.data.videoUrl || '';
 const embedUrl = videoUrl ? toEmbedUrl(videoUrl) : null;
+import { breadcrumbJson } from '../../lib/schema';
 ---
 
 <Layout title={entry.data.seoTitle || `${entry.data.title} | Forersight`} description={entry.data.description}>
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['Built','/built'],[entry.data.title,`/built/${entry.slug}`]])} />
   {/* Header */}
   <PageHero title={entry.data.title} text={entry.data.description}>
     <Fragment slot="before">

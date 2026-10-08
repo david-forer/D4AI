@@ -2,9 +2,78 @@
 import Layout from '../layouts/Layout.astro';
 import PageHero from '../components/PageHero.astro';
 import CtaBand from '../components/CtaBand.astro';
+import { breadcrumbJson } from '../lib/schema';
+
+// Service and Offer markup. Prices match the price strips on this page. If a
+// price changes there, change it here.
+const SITE = 'https://davidjforer.com';
+const provider = { '@id': `${SITE}/#organization` };
+const usd = (min: number, max?: number) => ({
+  '@type': 'Offer',
+  priceCurrency: 'USD',
+  priceSpecification: max
+    ? { '@type': 'PriceSpecification', priceCurrency: 'USD', minPrice: min, maxPrice: max }
+    : { '@type': 'PriceSpecification', priceCurrency: 'USD', price: min },
+});
+const named = (name: string, price: number, description: string) => ({
+  '@type': 'Offer', name, priceCurrency: 'USD', price, url: `${SITE}/ai-readiness-and-ai-audits`,
+  description,
+});
+const servicesJson = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': `${SITE}/ai-readiness-and-ai-audits#service`,
+      name: 'AI Readiness Audit',
+      url: `${SITE}/ai-readiness-and-ai-audits`,
+      provider,
+      areaServed: { '@type': 'Country', name: 'United States' },
+      offers: [
+        named('80/20 Process Audit', 750, 'Two to three hours with the founder, delivered same day or next day.'),
+        named('Quick Assessment', 1500, 'Four to six hours of interviews, one week start to finish.'),
+        named('Full AI Operations Audit', 4000, 'Eight to fifteen hours of interviews over two weeks, with one working automation shipped live.'),
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': `${SITE}/ai-training-for-small-business-teams#service`,
+      name: 'AI Training for Small Business Teams',
+      url: `${SITE}/ai-training-for-small-business-teams`,
+      provider,
+      offers: { ...usd(1500), url: `${SITE}/ai-training-for-small-business-teams` },
+    },
+    {
+      '@type': 'Service',
+      '@id': `${SITE}/seo-accelerator#service`,
+      name: 'SEO Accelerator',
+      url: `${SITE}/seo-accelerator`,
+      provider,
+      offers: { ...usd(2500), name: 'SEO audit', url: `${SITE}/seo-accelerator` },
+    },
+    {
+      '@type': 'Service',
+      '@id': `${SITE}/operational-buildout#service`,
+      name: 'Operational Buildout',
+      url: `${SITE}/operational-buildout`,
+      provider,
+      offers: { ...usd(7500, 15000), url: `${SITE}/operational-buildout` },
+    },
+    {
+      '@type': 'Service',
+      '@id': `${SITE}/ai-automation-accelerator#service`,
+      name: 'AI Automation Accelerator',
+      url: `${SITE}/ai-automation-accelerator`,
+      provider,
+      offers: { ...usd(7500, 15000), url: `${SITE}/ai-automation-accelerator` },
+    },
+  ],
+});
 ---
 
 <Layout title="AI Services for Small Businesses – AI Readiness Audits and Implementation Roadmaps – SEO, Operations, and Automation Accelerators for Founder-Led Teams – David J Forer" description="AI services for founder-led small businesses: readiness audits, SEO and operations accelerators, and automation programs that cut manual work and help you scale without adding headcount.">
+  <script is:inline type="application/ld+json" set:html={servicesJson} />
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['Services','/services']])} />
 	<div class="bg-gray-50 overflow-hidden">
 		
 		<PageHero
@@ -451,7 +520,7 @@ import CtaBand from '../components/CtaBand.astro';
 			title="Want to know what waiting on you costs?"
 			text="The audit puts a dollar number on your biggest bottlenecks and ranks the fixes. Fixed price, from $750."
 			primaryLabel="Book a strategy call"
-			primaryHref="/contact"
+			primaryHref="https://calendly.com/david-j-forer/30min"
 			secondaryLabel="See the audits"
 			secondaryHref="/ai-readiness-and-ai-audits"
 		/>

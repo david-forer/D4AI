@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import PageHero from '../components/PageHero.astro';
 import FormSection from '../components/FormSection.astro';
 import { AI_AUDIT_SURVEY, AI_AUDIT_FIELDS } from '../lib/leadForms';
+import { breadcrumbJson } from '../lib/schema';
 ---
 
 <Layout 
@@ -10,6 +11,7 @@ title="AI Training for Small Business Teams | Strategic AI Implementation"
 description="Practical AI training that turns scattered experimentation into consistent, team-wide capability. Built for small businesses ready to move beyond individual AI use."
 image="/images/ai-training.webp"
 >
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['AI Training for Small Business Teams','/ai-training-for-small-business-teams']])} />
 
 	<body class="bg-white text-gray-800 font-sans">
     {/* Hero Section */}

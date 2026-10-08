@@ -102,11 +102,23 @@ const faqs = [
     a: 'The $750 audit is delivered the same day or next day. The Quick Assessment takes a week and the full audit takes two. On the full audit, one working automation ships live during the audit week, so you see something running and not only a report.',
   },
 ];
+
+// FAQPage markup mirrors the visible FAQ above, same text from the same array.
+const faqJson = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+});
 ---
 
 <Layout
 title="AI Operations Consulting for Founder-Led Businesses | David J Forer"
 description="AI operations consulting for founder-led businesses doing $1M to $5M. I map how your business actually runs, then build the systems that take the work off you. Start with an AI readiness audit." >
+  <script is:inline type="application/ld+json" set:html={faqJson} />
   <div class="fs">
 
     <Hero />

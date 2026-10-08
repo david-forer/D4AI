@@ -15,12 +15,27 @@ const pages = (await getCollection('research')).sort(
 const defaultImage = "/images/ai-operations-logo.webp";
 const formatDate = (d: Date) =>
   new Date(d).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+import { breadcrumbJson } from '../../lib/schema';
+
+const collectionJson = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Small Business AI Research',
+  url: 'https://davidjforer.com/research',
+  hasPart: pages.map((p) => ({
+    '@type': 'Article',
+    headline: p.data.title,
+    url: `https://davidjforer.com/research/${p.slug}`,
+  })),
+});
 ---
 
 <Layout
   title="Small Business AI Research – Verified Statistics on AI Adoption, Operations and Automation, Each Linked to Its Primary Source – David J Forer"
   description="Research pages on AI in small business. Every statistic is checked against its primary source and refreshed every 90 days. Free to cite with a link."
 >
+  <script is:inline type="application/ld+json" set:html={collectionJson} />
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['Research','/research']])} />
   <div>
     <PageHero
       align="center"
