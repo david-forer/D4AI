@@ -3,6 +3,7 @@ title: "The Real Reason Your Automation Failed. You Skipped the Audit"
 seoTitle: "Why Automation Fails | Audit Before Building | David J Forer"
 description: "Most automation fails before anyone builds a workflow. Bad inputs, no owner, no definition of done. An audit catches all three while it is cheap."
 pubDate: 2025-12-19T00:00:00Z
+updatedDate: 2026-10-08T00:00:00Z
 tags: ["automation"]
 heroImage: "/images/blog/real-reason-automation-failed.webp"
 articleType: "cluster"
@@ -41,6 +42,16 @@ A marketing team automated content approvals. Every draft triggered a notificati
 In practice, it created a single point of failure. The approver became a bottleneck. If they were unavailable, everything stopped. The automation removed flexibility instead of adding it.
 
 Cases like these are the norm. Most automation projects succeed technically but fail operationally because they were designed without understanding the system they were meant to improve.
+
+### What an Audit Found Before Anyone Built Anything
+
+In an operations audit I performed for a performance ad agency, the founder and three team members each named the same stretch without prompting, the time from signed agreement to live campaign. Work stalled in two places. Clients were slow to send their assets, and scripts sat waiting on client approval.
+
+Both stalls were about following up with clients, not about making content faster. A tool that sped up editing or script writing would have been built well and changed nothing in that first stretch.
+
+So the recommendation went at the stall. When a client signs, create their intake folder and task board, send the asset request, and nudge them on a schedule until assets and approvals arrive. That automation is simple and fits the problem because the audit found the problem first.
+
+The same audit found something that automation alone would have made worse. The team met for 15 minutes every day to review a client tracker, and the plan was to turn what came up into Asana tasks. The client success manager rated how often that happened at 3 out of 10. Automating the next step before fixing that habit would have produced tasks nobody trusted.
 
 ## Why Automation Fails Before It Starts
 

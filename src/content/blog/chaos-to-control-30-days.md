@@ -3,6 +3,7 @@ title: "Systemize Core Business Processes in 30 Days"
 seoTitle: "Systemize Business Processes | 30-Day Plan | David J Forer"
 description: "A four-week plan to document, simplify and standardize three to five of your highest-impact processes, using tools you already pay for."
 pubDate: 2025-12-09T00:00:00Z
+updatedDate: 2026-10-08T00:00:00Z
 tags: ["ai-readiness"]
 heroImage: "/images/blog/chaos-to-control-30-days.webp"
 articleType: "cluster"
@@ -47,6 +48,16 @@ Schedule one-hour sessions with the people who do the work. Ask them to walk thr
 Record everything. The shortcuts people take. The workarounds they use. The unofficial steps that are not in any procedure but happen every time. The points where things typically break down.
 
 By the end of week one, you should have a clear, honest picture of your target processes in their current state.
+
+### What Week One Looks Like With a Real Company
+
+In an operations audit I performed for an energy services company, I started where this week starts, with the people who do the work. I interviewed 9 of them and ran a survey that 42 employees answered.
+
+The founder described playing five roles at 10 to 15 hours a week each. That is 50 to 75 hours of work running through one person. Opening new states meant licensing and filing paperwork, and the founder put about 40 hours a week of one senior leader's time into it.
+
+That is the 80/20 rule at work. One process was eating most of a full-time job. The survey backed the picture. 13 of 42 employees gave a low score for clear KPI targets, and the same team scored 4.62 out of 5 for commitment to quality work.
+
+Notice what the week-one work found. The people were not the problem. The process around them was undocumented and sitting on one leader. If you only list pain points in a meeting, you hear about the loud ones. Walking through the work shows you the one that is quietly costing a salary.
 
 ## Week Two: Design and Simplification
 

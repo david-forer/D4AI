@@ -2,6 +2,7 @@
 title: "How Smart Companies Standardize LLM Use Across Departments"
 description: "Transform fragmented AI adoption into a coherent operating system. Learn to standardize tools, create SOPs, build governance, and establish consistent AI practices across your organization."
 pubDate: 2025-12-17T00:00:00Z
+updatedDate: 2026-10-08T00:00:00Z
 tags: ["workflow-systems"]
 heroImage: "/images/blog/scalable-automation.webp"
 articleType: "cluster"
@@ -72,6 +73,16 @@ When employees use personal accounts for AI tools, you cannot audit what informa
 Decentralized usage also means decentralized security practices. One team might be careful about data sanitization. Another team might not understand the risks. You're creating Swiss cheese security where protection depends entirely on the most careless user, not your intended security standards.
 
 Compliance frameworks (SOC 2, HIPAA, GDPR) require demonstrable controls over data processing. "We told employees not to use unauthorized AI tools" doesn't meet the standard when audit logs show they're using them anyway. You need technical controls and administrative visibility, which requires centralized tool deployment.
+
+## What Unstandardized AI Looked Like in a Small Agency
+
+In an operations audit I performed for a performance ad agency with 5 core staff, AI came up in most of my interviews. Nobody was ignoring it.
+
+The person who writes ad scripts said the team was building processes to get AI to do most of that work, and that they already had pretty good prompts. Another person was using AI prompts to speed up the brainstorm before ad creative. The client success manager was looking for a way to use AI to produce the weekly client reports she used to write by hand. A fourth team member wanted to build AI workflows for everyone.
+
+All of it was sensible, and every example was one person solving their own problem. There was no shared set of prompts, no rule for which tool handles which job and no person who owned the answer. The team was mostly remote, and people worked in their own silos. Each person kept to their own lane and asked for help only when stuck, so what one person learned stayed with them. When a company is this small, that gap is cheap to close. Name one owner, put the prompts that work in one place and agree what the output has to look like before a human sends it.
+
+Without that, each new tool becomes a separate project, and the best prompts stay with whoever wrote them.
 
 ## Creating Standard Operating Procedures for AI
 
