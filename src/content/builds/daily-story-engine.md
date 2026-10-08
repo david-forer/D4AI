@@ -22,7 +22,3 @@ One rule sits above the rest. It never invents people, scenes, dialogue or numbe
 ## What it looks like
 
 ![The Daily Story Engine's 4 steps from a real moment to a post, and the 6 story shapes it chooses from](/images/builds/daily-story-engine.webp)
-
-## Demo
-
-Video coming soon.

@@ -18,7 +18,3 @@ It connects Telegram to a Claude Code instance running on my desktop. I can send
 ## How it works
 
 A Node service listens for Telegram messages, passes them to Claude Code, and streams responses back to the chat. It runs as a Windows scheduled task so it survives reboots. Guardrails limit what it can touch without confirmation.
-
-## Demo
-
-Video coming soon.

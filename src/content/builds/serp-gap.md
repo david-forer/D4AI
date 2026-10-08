@@ -24,7 +24,3 @@ A local Python script then fetches the top 20 pages and measures each one: word 
 ![A SERP Gap table comparing davidjforer.com's AI readiness audit page with 13 ranking pages, with internal links flagged below the range](/images/builds/serp-gap.webp)
 
 This is its report on my AI readiness audit page, laid out as a table. The page had 1 internal link against a range of 3 to 17 for the pages ranking above it. It flagged the same gap on 3 of my pages.
-
-## Demo
-
-Video coming soon.

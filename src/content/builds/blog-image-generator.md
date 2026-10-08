@@ -26,7 +26,3 @@ A language model reads the post like an art director briefing a photographer. It
 I pasted the post on the founder ops trap and got these two headers back. Here is the first one at full size.
 
 ![A founder alone at a desk late in the day, surrounded by screens of task boards, with the title The Founder Ops Trap](/images/builds/blog-image-generator-output.webp)
-
-## Demo
-
-Video coming soon.

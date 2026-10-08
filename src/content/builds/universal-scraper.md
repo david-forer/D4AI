@@ -15,7 +15,3 @@ I give it a research question, it picks the right scraper from the Apify marketp
 ## How it works
 
 The agent reads the request, searches for a matching Apify actor, checks the input schema, and runs it with sane limits. Results land in the agent's folder for review before anything moves into a project.
-
-## Demo
-
-Video coming soon.

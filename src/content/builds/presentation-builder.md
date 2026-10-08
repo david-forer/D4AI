@@ -29,7 +29,3 @@ These notes on fixing a process before adding AI became a 5 slide deck in the Bo
 ## Get it
 
 Presentation Builder is free and open source. It needs Node 18 or newer and your own Anthropic API key. The [setup guide on GitHub](https://github.com/david-forer/presentation-builder#setup) covers the install.
-
-## Demo
-
-Video coming soon.

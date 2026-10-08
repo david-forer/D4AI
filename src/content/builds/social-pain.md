@@ -34,7 +34,3 @@ Every business owner follows the same path:
 ```
 
 That's the founder bottleneck in about 15 words.
-
-## Demo
-
-Video coming soon.

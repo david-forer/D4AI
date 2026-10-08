@@ -29,7 +29,3 @@ One idea about fixing the process before buying the tool, 3 angles picked, 3 dra
 ## Get it
 
 Content Prism is free and open source. It needs Node 18 or newer. Add an Anthropic or OpenAI API key for AI drafts, or leave it empty and the template engine writes them offline. The [setup guide on GitHub](https://github.com/david-forer/content-prism#setup) covers the install.
-
-## Demo
-
-Video coming soon.

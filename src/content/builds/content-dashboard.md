@@ -16,7 +16,3 @@ When an agent generates 30 images or 15 drafts, reviewing them file by file is s
 ## How it works
 
 A small local server scans the target folder, builds the grid, and writes review comments back to disk. The comment file becomes the work order for the next Claude session. Review happens in the browser, fixes happen in the repo.
-
-## Demo
-
-Video coming soon.

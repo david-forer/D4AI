@@ -16,7 +16,3 @@ Blog Engine OS runs on a schedule, picks the next topic from a planned queue, wr
 ## How it works
 
 A scheduled run invokes a Claude Code skill that holds the whole workflow: topic selection, drafting against my writing rules, image generation, frontmatter, and internal links to the right pillar pages. State lives in a small folder of tracking files so each run knows what came before it.
-
-## Demo
-
-Video coming soon.

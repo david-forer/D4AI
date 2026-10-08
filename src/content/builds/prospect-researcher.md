@@ -36,7 +36,3 @@ no-operations-leader profile. Multi-shareholder firm, not founder-led.
 A list tool would have mailed that firm. In the same batch, a Brookfield agency running brand tours for Keurig and Modelo with fewer than 10 people scored High, and its email opened with the problem of staffing drivers across several markets at once.
 
 For a sales team, the same setup works against your own customer profile. Point it at tomorrow's calls and every rep walks in with a brief instead of a cold start.
-
-## Demo
-
-Video coming soon.

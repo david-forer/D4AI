@@ -15,7 +15,3 @@ Every Monday at 6:10am this skill reads the live signals across my business: app
 ## How it works
 
 The skill is a written procedure Claude Code follows on a schedule. It knows where every signal lives, what a healthy state looks like, and how to rank what needs attention. The output is 1 file to read and 1 file that steers the rest of my tools for the week.
-
-## Demo
-
-Video coming soon.

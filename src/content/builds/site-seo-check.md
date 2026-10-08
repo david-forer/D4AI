@@ -16,7 +16,3 @@ Once a week this skill crawls the full site, pulls search and analytics data, an
 ## How it works
 
 Deterministic Python collectors do the crawling and data pulls. The skill orchestrates them, runs the comparison, ingests any SEO tool exports I drop in an inbox folder, and writes the report. Numbers come from code, judgment comes from the model.
-
-## Demo
-
-Video coming soon.

@@ -16,7 +16,3 @@ LinkedIn OS generates post ideas, plans them onto a calendar, drafts each post i
 ## How it works
 
 A scheduled morning run invokes the skill with a client profile: voice notes, audience, and content rules. It checks the calendar state, writes what is due, and drops everything into a review folder. The same system now onboards client profiles, so it can run for more than one brand.
-
-## Demo
-
-Video coming soon.
