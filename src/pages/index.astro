@@ -148,6 +148,31 @@ description="AI operations consulting for founder-led businesses doing $1M to $5
       </div>
     </section>
 
+    {/* Who this is for. Draft, 2026-10-08, pending David's sign-off. */}
+    <section class="fit">
+      <div class="wrap">
+        <p class="tag sec-head reveal">Is this for you?</p>
+        <div class="fit-grid reveal">
+          <div class="fit-col yes">
+            <h2>A good fit</h2>
+            <ul>
+              <li>A founder-led business doing roughly $1M to $5M with 5 to 20 people.</li>
+              <li>No operations leader, so approvals and decisions still land on you.</li>
+              <li>You want to know where the time goes, whether it is you, your team or your tools.</li>
+            </ul>
+          </div>
+          <div class="fit-col no">
+            <h2>Probably not</h2>
+            <ul>
+              <li>A larger company with an operations team already in place.</li>
+              <li>You want software installed or ads run, not the work mapped first.</li>
+              <li>You want AI rolled out before anyone has looked at how the work runs.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     {/* Pricing. Every number here is the same as on /ai-readiness-and-ai-audits#pricing.
          Do not change one without changing it in the private offer file first.
          Each tier books through a plain anchor. Calendly only loads for the hero button. */}
@@ -356,6 +381,18 @@ description="AI operations consulting for founder-led businesses doing $1M to $5
   .row-item p { color: var(--ink-2); max-width: 460px; }
 
   /* pricing */
+  /* Fit check */
+  .fit { padding: 90px 0; }
+  .fit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .fit-col { padding: 34px 36px; border-radius: 6px; }
+  .fit-col.yes { background: var(--slip); border: 1px solid var(--rule); border-top: 4px solid var(--orange); }
+  .fit-col.no { border: 1px dashed var(--rule); }
+  .fit-col h2 { font-size: 28px; font-weight: 800; margin-bottom: 16px; }
+  .fit-col ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+  .fit-col li { padding-left: 22px; position: relative; color: var(--ink-2); }
+  .fit-col li::before { content: ""; position: absolute; left: 0; top: .7em; width: 10px; height: 2px; background: var(--orange); }
+  .fit-col.no li::before { background: var(--rule); }
+  @media (max-width: 760px) { .fit-grid { grid-template-columns: 1fr; } .fit { padding: 70px 0; } }
   .pricing { background: var(--paper-2); padding: 120px 0; }
   .pricing h2 { font-size: clamp(38px, 5vw, 64px); font-weight: 800; max-width: 700px; }
   /* Headline sits on the right on purpose, to break the all-left rhythm of the page. */
