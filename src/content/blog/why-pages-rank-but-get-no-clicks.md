@@ -46,6 +46,22 @@ The 4 causes need 4 different responses. Two of them are rewrites, one is a deci
 | 3. Real but low position | Average position 11 or worse on every query | Internal links, better coverage, and time |
 | 4. Answer visible in the result | Short definitional searches | Measure on citations, not clicks |
 
+## What click-through rate is and how to calculate it
+
+Click-through rate is the share of people who saw your result and clicked it. In SEO, click-through rate is measured per query and per page in Search Console, and it is the single number that separates a ranking problem from a result problem.
+
+The click-through rate formula is one division: clicks divided by impressions, multiplied by 100. A page with 4,000 impressions and 12 clicks has a click-through rate of 0.3 percent. A page with 400 impressions and 24 clicks has 6 percent. The second page has far fewer impressions and is doing a far better job with the ones it gets.
+
+You do not need a click-through rate calculator for this. Search Console already shows the figure in the CTR column. If you export the data, the spreadsheet version is a single cell: clicks in one column, impressions in the next, and the formula `=B2/C2` formatted as a percentage. Use the exported version when you want to sort every page by click rate at once.
+
+## What is a good click-through rate in SEO
+
+There is no single good SEO click-through rate, and any article that gives you one number for every page is guessing. Click-through rate falls as position drops, runs much higher on searches for your own name, and runs lower when Google answers the question above the results.
+
+So judge a page against the right comparison. Compare it to your other pages that rank in a similar position for similar kinds of queries. A page in the top 10 that sits well below its neighbors is the one to look at first, and under 2 percent on a top 10 page is the clearest sign that the result is not being chosen.
+
+Treat branded searches separately. If most of a page's clicks come from people typing your name, its click-through rate says little about how the page performs for people who have never heard of you. Filter those queries out in the Queries tab before you read the number.
+
 ## How to find the pages losing clicks in Search Console
 
 This takes about 20 minutes and needs no tools beyond the free Search Console account you already have.
@@ -111,6 +127,10 @@ Impressions without clicks is the cheapest problem in search to work on. The ran
 ### Why do I have lots of impressions but no clicks in Search Console?
 
 Google is showing your page, but searchers are choosing a different result. The usual reasons are a title that does not look like the answer, a ranking for a query you cannot serve, a position on page 2, or an answer already shown above the results.
+
+### What is the click-through rate formula?
+
+Divide clicks by impressions and multiply by 100. A page with 12 clicks on 4,000 impressions has a click-through rate of 0.3 percent. Search Console shows the figure for you, so you only need the formula when you work from an export.
 
 ### What is a good click-through rate for a page in the top 10?
 
