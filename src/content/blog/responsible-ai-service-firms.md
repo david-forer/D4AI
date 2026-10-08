@@ -32,7 +32,7 @@ So the useful version of this topic is short. Four promises worth making, a smal
 
 ## The 4 promises worth making
 
-Each of these is specific, checkable, and survivable. That combination is what makes them worth more than a statement of values.
+Each of these is specific, checkable, and survivable. That combination is what makes them worth more than a statement of values. They are also practical responsible AI examples for a firm this size.
 
 **We know where client material goes.** Every tool touching client work is on a business tier account under our domain, with the terms checked and written down. This one is provable in an afternoon and it is the promise clients most often actually want.
 

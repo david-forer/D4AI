@@ -22,7 +22,7 @@ Understanding the difference before you make a hire is one of the most valuable 
 
 Operations problems are structural. They show up in predictable ways: the same mistakes happen repeatedly regardless of who is doing the work, handoffs between people or teams consistently break down, information is hard to find or gets lost entirely, and no one is quite sure what the current state of any given project is at any given moment.
 
-These symptoms feel like capacity problems because they create delays and overwhelm. But the root cause is not that there are too few people. It is that the work lacks structure. There is no defined process, no clear ownership, no system for tracking what is happening, and no feedback loop for catching errors before they compound.
+These symptoms feel like capacity problems because they create delays and overwhelm. But the root cause is a lack of structure in the work, with plenty of people to do it. There is no defined process, no clear ownership, no system for tracking what is happening, and no feedback loop for catching errors before they compound.
 
 Adding another person to that environment does not add structure. It adds another variable operating without adequate support.
 
@@ -46,7 +46,7 @@ The new hire arrives motivated and capable. Within a few weeks, the pattern beco
 
 By month three, the founder is managing the new hire's confusion on top of everything else. The capacity problem has not improved. The management overhead has increased.
 
-This is not a hiring failure. It is a sequencing failure. The hire came before the system.
+The failure here is one of sequencing, not hiring. The hire came before the system.
 
 ---
 
@@ -80,7 +80,7 @@ Recognizing that the problem is operational rather than capacity-related require
 
 But the rebuild pays off in a way that the hire does not. A team of five operating with a functional system will consistently outperform a team of eight operating without one. The difference compounds over time as the system-driven team gets faster, more consistent, and more reliable while the reactive team gets more complicated.
 
-The question to ask is not whether to hire. It is whether you have built the thing that makes a hire actually work.
+Before asking whether to hire, ask whether you have built the thing that makes a hire actually work.
 
 ---
 

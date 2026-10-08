@@ -25,7 +25,7 @@ The categories of operational work that AI handles well are more specific than t
 
 **Draft generation for repetitive communication**: Proposal drafts, client status updates, onboarding emails, meeting summaries, follow-up sequences. These involve context that is already available in your systems and a consistent format the recipient expects. AI can generate the first draft. A human reviews and sends. The time savings are significant even when the human touch remains in the loop.
 
-**Routine customer support responses**: First-response handling for FAQs, order status questions, standard troubleshooting paths, and intake qualification. An AI assistant connected to your knowledge base and CRM can handle a meaningful percentage of inbound support volume without human involvement: routing the complex cases to the appropriate person.
+**Routine customer support responses**: First-response handling for FAQs, order status questions, standard troubleshooting paths, and intake qualification. An AI assistant that can read your knowledge base and CRM can handle a meaningful percentage of inbound support volume without human involvement, and it routes the complex cases to the appropriate person.
 
 **Data analysis and pattern recognition**: Surfacing what is in your data without requiring someone to manually inspect it. Which clients are at churn risk based on engagement patterns. Which projects are falling behind schedule based on task completion rates. Which marketing channels are driving the highest-quality leads. AI does not make the decision: it surfaces the signal so you can.
 
@@ -61,9 +61,9 @@ An AI-assisted onboarding system can receive a signed contract, trigger the appr
 
 **2. Internal knowledge retrieval**
 
-Team members spend significant time searching for information that already exists somewhere in the organization. Policies, templates, past project work, client history, SOPs. An AI assistant connected to your internal knowledge base can surface this on demand: without anyone having to ask the person who knows.
+Team members spend significant time searching for information that already exists somewhere in the organization. Policies, templates, past project work, client history, SOPs. An AI assistant that can read your internal knowledge base can surface this on demand: so nobody has to ask the person who knows.
 
-This is one of the highest-leverage early applications for most small teams. The setup is relatively lightweight and the time savings are immediate.
+This is one of the highest-value early applications for most small teams. The setup is relatively lightweight and the time savings are immediate.
 
 **3. Proposal and contract drafting**
 

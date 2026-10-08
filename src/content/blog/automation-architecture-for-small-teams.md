@@ -116,7 +116,7 @@ Some automation pays back far more than the rest. In a small firm with limited b
 
 **Intake automation** is almost always the [highest-return starting point](/blog/your-first-business-automation). When a new lead comes in, a new client signs, or a new project kicks off, a predictable sequence of tasks needs to happen. This sequence is usually documented nowhere and executed inconsistently. Automating intake creates immediate, visible value.
 
-**Data sync between primary systems** eliminates the manual handoffs that consume the most cumulative time. The CRM to project management connection is the most common example. A won deal in the CRM triggers project creation in the PM tool, which populates with the relevant client data. No manual copying.
+**Data sync between primary systems** eliminates the manual handoffs that consume the most cumulative time. A common example for small teams is the CRM to project management connection. A won deal in the CRM triggers project creation in the PM tool, which populates with the relevant client data. No manual copying.
 
 **Reporting workflows** are high-value because they free up recurring time. If your team spends 2 to 3 hours every week pulling and formatting data for a report, that is a reliable automation target once the underlying data structure is clean enough to support it.
 

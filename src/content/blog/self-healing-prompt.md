@@ -15,7 +15,7 @@ That’s exactly what the **Self-Evaluation & Iteration Module** does, and in th
 
 ---
 
-## 🧠 Why Most AI Outputs Miss the Mark
+## Why Most AI Outputs Miss the Mark
 
 Let’s be honest: even the best GPT prompts sometimes produce fluff, filler, or flat-out forgettable content.
 
@@ -23,13 +23,13 @@ Maybe the insights aren’t deep enough.
 Maybe the structure is confusing.  
 Maybe it’s just... meh.
 
-And sure, you can ask the AI to “improve” or “revise,” but how does it know *what* to fix?
+You can ask the AI to “improve” or “revise,” but how does it know *what* to fix?
 
 That’s where **self-evaluation logic** comes in.
 
 ---
 
-## 🛠️ Introducing: The Self-Evaluation & Iteration Module
+## Introducing: The Self-Evaluation & Iteration Module
 
 This is a plug-and-play block of prompt logic that makes your AI **rate its own output** and **automatically upgrade weak sections**, all without you needing to rewrite anything.
 
@@ -44,17 +44,17 @@ Here’s what it does:
    - Clarity & Structure  
    - Strategic Utility
 
-2. **Identifies low-scoring sections (3 or below)** and flags what’s wrong
+2. It **identifies low-scoring sections (3 or below)** and flags what’s wrong
 
-3. **Automatically rewrites weak parts** with better examples, sharper structure, and expert logic
+3. It **automatically rewrites weak parts** with better examples, sharper structure, and expert logic
 
-4. **Re-rates the improvements** to confirm they now meet quality standards (or marks them for human review if they still suck)
+4. It **re-rates the improvements** to confirm they now meet quality standards (or marks them for human review if they still suck)
 
 ---
 
-## 📦 Self-Evaluation & Iteration Module (Copy & Paste)
+## Self-Evaluation & Iteration Module (Copy & Paste)
 
-You can add this to *any* GPT prompt that generates documents, research, or strategic outputs:
+You can add this to *any* GPT prompt that generates documents, research, or strategic outputs. It also works as a final step on whatever an AI prompt generator gives you, and it is one of the more reusable AI prompt examples you can keep on hand:
 
 ### Self-Evaluation & Iteration Module
 
@@ -94,7 +94,7 @@ For each weak section:
 
 ---
 
-## 💡 When to Use This
+## When to Use This
 
 This works great for:
 
@@ -109,7 +109,7 @@ Basically, anything where **quality matters more than quantity**.
 
 ---
 
-## 🤖 Why This Works So Well
+## Why This Works So Well
 
 AI isn’t bad at writing. It’s bad at _knowing when it’s written something useless_.
 
@@ -119,19 +119,19 @@ It’s like hiring an AI writer _and_ editor in one prompt.
 
 ---
 
-## 🚀 Pro Tip: Use This In Systems
+## Pro Tip: Use This In Systems
 
 This logic plays beautifully with:
 
-- **Notion AI** (drop it into content blocks or templates)  
-- **n8n or Zapier workflows** (auto-trigger review step post-generation)  
-- **Custom GPTs** or tools like Manus or Smol Developer  
+- Use **Notion AI** (drop it into content blocks or templates)  
+- Build it into **n8n or Zapier workflows** (auto-trigger review step post-generation)  
+- Add it to **Custom GPTs** or tools like Manus or Smol Developer  
 
 Want help wiring this into a research system or lead-gen workflow? [Let’s talk](https://davidjforer.com)
 
 ---
 
-## TL;DR
+## In short
 
 Want better AI outputs without rewriting every word yourself?
 

@@ -19,7 +19,7 @@ Understanding why adoption fails, specifically and plainly, is more useful than 
 
 The most common failure in small business AI adoption starts before the first login. A founder sees a demonstration, reads a case study, or hears about a specific platform and decides to implement it. The tool is selected before the problem it will solve is defined.
 
-This creates an adoption failure that is almost guaranteed. The team is handed a tool without a clear understanding of why they need it, what they are supposed to do with it, or how it connects to their actual work. Enthusiasm from the top does not transfer to behavior change at the team level.
+This creates an AI adoption failure that is almost guaranteed. The team is handed a tool without a clear understanding of why they need it, what they are supposed to do with it, or how it connects to their actual work. Enthusiasm from the top does not transfer to behavior change at the team level.
 
 Successful adoption starts with a specific problem, a specific workflow, and a measurable outcome. The tool is selected because it is the best solution for that defined problem. The team understands the connection between the tool and the result. That clarity is what creates motivation to adopt.
 
@@ -43,7 +43,7 @@ AI adoption in small businesses almost always stalls when there is no internal p
 
 Nobody tracks whether the tools are being used. Nobody follows up when a team member struggles. Nobody updates the prompt library when better approaches are found. Nobody reports on progress or escalates when adoption lags.
 
-The absence of an internal owner is not a resource problem. It is a decision problem. The business simply has not decided who is responsible. Designating one person, even informally, with accountability for AI adoption and the mandate to track and support it, changes the outcome substantially.
+The absence of an internal owner points to a decision problem, with resources a minor factor. The business simply has not decided who is responsible. Designating one person, even informally, with accountability for AI adoption and the mandate to track and support it, changes the outcome substantially.
 
 ---
 
@@ -53,7 +53,7 @@ AI tools produce outputs that require judgment to evaluate. A team member who ha
 
 Neither pattern supports adoption. The over-trusting team member eventually encounters a significant error in AI output and loses confidence in the tool entirely. The under-trusting team member concludes that AI creates more work than it saves.
 
-Building output trust requires teaching quality review as a skill alongside prompting. Team members need to understand not just how to get outputs from AI tools, but how to evaluate those outputs quickly and accurately. This is a distinct capability from prompting and is often left out of training programs entirely.
+Building output trust requires teaching quality review as a skill alongside prompting. Team members need to understand how to get outputs from AI tools and how to evaluate those outputs quickly and accurately. This is a distinct capability from prompting and is often left out of training programs entirely.
 
 ---
 
