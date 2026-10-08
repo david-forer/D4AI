@@ -196,6 +196,7 @@ My view is that the judgment, the client relationships and the professional sign
 ### How Is AI Being Used in Audit and Accounting?
 
 In small firms, mostly around the edges: extracting data from uploaded documents, drafting routine emails, summarizing notes, flagging unusual transactions for a reviewer and tracking missing items. Each use still goes through a human review before it reaches a client.
+
 ---
 
 If your firm is already using AI in pockets and you want a clear picture before the next busy season, [see how the AI Readiness Audit works and what each tier costs](/ai-readiness-and-ai-audits).

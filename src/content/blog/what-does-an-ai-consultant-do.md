@@ -244,6 +244,7 @@ There is no standard AI consultant qualification or license in the US. Clients j
 ### How Much Does an AI Consultant Cost, and What Do They Make?
 
 Rates depend on the scope, the consultant and the size of the business. I won't quote an industry average here because the range is wide and I have no verified figure worth repeating. [What AI Consulting Costs a Small Business](/blog/ai-consulting-cost-for-small-business) covers realistic price ranges for a business your size. What a consultant earns varies the same way, with the work, the client mix and how much of it is repeat business.
+
 ---
 
 If you want to see what an AI consultant would find in your business before committing to an engagement, [start with the free process audit](/fix-the-chaos). It takes 2 to 3 hours and gives you your top 5 automation opportunities, priced in dollars.
