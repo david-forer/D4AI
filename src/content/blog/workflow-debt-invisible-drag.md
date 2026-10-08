@@ -3,6 +3,7 @@ title: "Workflow Debt: The Invisible Drag on Your Business Ops"
 seoTitle: "Workflow Debt | Find What Slows Your Team | David J Forer"
 description: "Workflow debt builds through manual steps, shadow processes and hand-offs nobody owns. How to see it, and what it is already costing you."
 pubDate: 2025-12-09T00:00:00Z
+updatedDate: 2026-10-08T00:00:00Z
 tags: ["workflow-systems"]
 heroImage: "/images/blog/workflow-debt.webp"
 articleType: "cluster"
@@ -65,6 +66,18 @@ Workflow debt is frequently the culprit.
 **New hires take forever to become productive.** Without documented systems, onboarding means learning tribal knowledge through observation and mistakes. The ramp-up period stretches while the new person figures out how things actually work.
 
 These symptoms often get misdiagnosed. Leadership blames the team for not working hard enough, or the market for being difficult, or the economy for creating headwinds. The cause is operational infrastructure that cannot support the business.
+
+## What Shadow Debt Looked Like in a 5-Person Agency
+
+In an operations audit I performed for a performance ad agency, the debt did not sit in a broken tool. They had a good one. They used Asana, and Asana held the written steps for how work gets done.
+
+The trouble was that almost nobody opened it. A team member told me the steps were in there, but some of what the team actually did was not, and getting it out of the heads of the two people who knew it was like pulling teeth. Everyone had been there long enough that they did not need the document, so no one kept it up.
+
+The same pattern showed up in the daily meeting. The core team spent 15 minutes every day walking through a client tracker in a Google Sheet. The plan was to turn what came up into Asana tasks afterward. The client success manager rated how often that happened at 3 out of 10, and the founder rated the company's documentation 4 out of 10.
+
+Nothing was failing, and that is why it stayed hidden. The team told me the work was running smoothly. The risk sat one hire or one departure away. A new person would find a task system that did not match reality, and a person leaving would take the unwritten half with them.
+
+That is shadow debt. You do not find it by looking at your tools. You find it by asking who could cover a key job for a week using only what is written down. In that agency, the honest answer was no.
 
 ## Workflow Debt vs. Process Debt
 

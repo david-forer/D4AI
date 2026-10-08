@@ -3,6 +3,7 @@ title: "Why Systemic Thinking Beats Growth Hacking (Especially After $1M ARR)"
 seoTitle: "Systems Thinking | Why It Beats Growth Hacks | David J Forer"
 description: "Growth hacking has an expiration date. After $1M ARR complexity changes the game, and throughput matters more than another clever tactic."
 pubDate: 2025-12-19T00:00:00Z
+updatedDate: 2026-10-08T00:00:00Z
 tags: ["workflow-systems"]
 heroImage: "/images/blog/systemic-thinking-vs-growth-hacking.webp"
 articleType: "cluster"
@@ -125,6 +126,20 @@ Throughput is about making the system more efficient. It is about reducing bottl
 Systemic thinking focuses on throughput. It asks how to deliver more value with the same or fewer inputs. It optimizes for the long term, not the next quarter.
 
 Growth still matters. The goal is growth you can sustain.
+
+## What This Looked Like in an Agency I Audited
+
+I audited a performance ad agency doing about $1M a year with 5 core staff. Growth was not the problem. Referrals kept coming. The problem was where decisions went once they arrived.
+
+The founder answered everything. He was never slow to reply and never hard to reach. That was the trap. Every question got a good answer within minutes, so nobody on the team ever had a reason to make the call themselves. He also never taught them how he decided. They got the answer without the rule behind it, so the next similar question came back to him.
+
+The cost showed up in small stalls. The agency planned to launch ads for itself in the first quarter. At the end of the quarter they still were not running, because the only person who could write ad copy was busy writing client scripts. Scripts sat waiting on client approval with no one owning the follow-up. The team rated their own documentation 4 out of 10.
+
+No growth tactic fixes that. More leads would have landed in the same queue.
+
+What I recommended was unglamorous. Write down which decisions the team can make without asking, and the rule the founder uses for each one. Give operations a named owner. Then answer a question by pointing at the rule, not by solving it again.
+
+Past $1M, one of the most useful systems you can build is a short list of decisions your team no longer needs you for.
 
 ## What Is Systems Thinking?
 

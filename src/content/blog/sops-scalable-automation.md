@@ -3,6 +3,7 @@ title: "SOPs Aren't Boring. They're the Foundation of Automation"
 seoTitle: "SOPs for Automation | The Step Most Skip | David J Forer"
 description: "Explains how well-written SOPs translate human workflows into explicit logic that automation can reliably execute."
 pubDate: 2025-12-09T00:00:00Z
+updatedDate: 2026-10-08T00:00:00Z
 tags: ["automation"]
 heroImage: "/images/blog/wild-workflows.webp"
 articleType: "cluster"
@@ -45,6 +46,16 @@ This pattern repeats constantly. A business decides to automate invoicing. The a
 The SOP would have caught these issues. The act of documenting the process forces clarity. It surfaces the variations, the exceptions, and the tribal knowledge that lived only in people's heads.
 
 Skipping the SOP to go straight to automation is like building a house without blueprints. You might save time initially, but you will spend far more time fixing problems later.
+
+## An Agency's Own Content Never Saw the Light
+
+An agency I know built an automated pipeline to produce its own content. It worked. Finished drafts kept coming out the other end.
+
+They never went live. The drafts needed a human touch before publishing, a final read, a few edits and a decision to post. That step was not written down anywhere. Nobody owned it, nobody knew how long it should take, and nobody could say what "good enough to publish" meant. So the drafts waited for someone to find the time, and no one did.
+
+The automation was fine. The missing piece was a short SOP for the one step a person still had to do. Who reviews, what they check, how fast, and what happens when they do not.
+
+This is where most automation stalls. The machine part gets built and the human hand-off gets assumed. Write the human step down with the same care as the automated ones, because it is the step most likely to hold everything up.
 
 ## How to Write Automation-Ready SOPs
 
