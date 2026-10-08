@@ -13,7 +13,7 @@ Custom AI is appealing. The idea that your business could have an AI system buil
 
 The problem is that most small businesses that pursue custom AI builds significantly underestimate what they are taking on. The build cost is the smallest part of the total investment. Maintenance, iteration, talent dependency, and the opportunity cost of not using well-built off-the-shelf alternatives over the same period are usually far larger. For most businesses below a certain scale, the business case for custom does not hold up under scrutiny.
 
-This article gives you a clear framework for making this decision on the facts, rather than based on what sounds most impressive in a leadership meeting.
+Build vs. buy in AI is the choice between developing a custom system and subscribing to a commercial product that already exists. This article gives you a clear framework for making this decision on the facts, rather than based on what sounds most impressive in a leadership meeting.
 
 ---
 
@@ -53,7 +53,7 @@ When that specificity creates genuine competitive advantage, when the custom sys
 
 **Proprietary process automation.** If your business has a workflow that is truly unique and creates competitive advantage, and if encoding it in a system would reinforce that advantage in a way competitors could not easily replicate, that is a real use case for custom.
 
-**Integration with proprietary data.** Businesses with large, proprietary data assets, long historical records, unique content libraries, or specialised knowledge bases can sometimes build AI systems that leverage those assets in ways no generic tool can match.
+**Integration with proprietary data.** Businesses with large, proprietary data assets, long historical records, unique content libraries, or specialised knowledge bases can sometimes build AI systems that use those assets in ways no generic tool can match.
 
 **Exact fit for complex, high-stakes decisions.** In contexts where the cost of imprecision is high and the decision logic is complex, a custom system tuned precisely to that decision context can outperform a general-purpose tool.
 

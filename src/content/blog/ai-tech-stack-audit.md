@@ -19,7 +19,7 @@ A tech stack audit is the diagnostic step that most businesses skip and most imp
 
 ## What a Tech Stack Audit Actually Examines
 
-An AI readiness audit of your tech stack is looking at five things.
+An AI readiness audit of your tech stack is looking at five things, and the five steps below double as an AI tech stack audit checklist.
 
 **Tool inventory.** The complete list of software your business pays for or uses, including tools that individual team members have adopted independently. Most businesses, when they do this exercise for the first time, find at least a few tools they forgot were running.
 
@@ -61,7 +61,7 @@ For each tool, document what it currently connects to. This includes:
 
 **Automation-layer connections.** Connections built through Zapier, Make, n8n, or similar tools, where a trigger in one system causes an action in another.
 
-**Manual handoffs.** Places where a person moves data from one system to another by hand. Copy-pasting from a form into a CRM. Downloading a report from one tool and uploading it to another. These are not integrations. They are automation candidates.
+**Manual handoffs.** Places where a person moves data from one system to another by hand. Copy-pasting from a form into a CRM. Downloading a report from one tool and uploading it to another. Treat these as automation candidates, since they are not integrations.
 
 **Nothing.** Tools that do not connect to anything else in the stack at all. These are data silos. Every silo creates overhead and reduces the reliability of any reporting or automation that should account for the data in it.
 
@@ -121,7 +121,7 @@ This sequence matters. Adding new AI tools to a stack with data quality problems
 
 ## Running the Audit Without Outside Help
 
-The full audit process described above can be run internally in a small business with a few days of focused effort. The work is not technically complex. It requires honesty about the current state and willingness to document what you find rather than what you wish were true.
+The full audit process described above can be run internally in a small business with a few days of focused effort, so the main cost of an AI tech stack audit is your team's time. If you would rather hand it off, a tech stack audit service can run the same steps for you. The work is not technically complex. It requires honesty about the current state and willingness to document what you find rather than what you wish were true.
 
 The people who need to be involved are the founder or operations lead who has the full view of what the business is trying to accomplish, and the team members who are closest to the specific tools in each category. One person almost never has the full picture of every tool the team uses and how they interact.
 

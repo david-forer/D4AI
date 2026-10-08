@@ -29,7 +29,7 @@ So the useful version of the question is how much of a subject you have to cover
 
 ## Why post count is the wrong unit
 
-A search engine is deciding whether your site is a credible source on a subject. It reads that from the shape of what you have published, not the volume.
+Here is how SEO works in one sentence. A search engine decides whether your site is a credible source on a subject, and it reads that from the shape of what you have published, not the volume.
 
 Think about what a founder searching "AI readiness audit" needs before hiring anyone. What it costs. What happens in it. How long it takes. What they get at the end. What to prepare. What to do with the findings. Whether to do it themselves. That is 7 questions, and a site that answers all 7 looks like a source. A site with 30 posts that answers 2 of them, plus 28 posts about unrelated productivity tips, looks like a blog.
 
@@ -121,7 +121,7 @@ For a small firm starting from zero, plan on 20 to 30 posts covering one subject
 
 ### How often should a small business publish blog posts?
 
-One post a week gets you to 25 posts in about 6 months. Two a week is only better if the quality holds, and for most small teams it does not. Pick a pace the team can keep up in a busy month, not just a quiet one.
+How often to post a blog for SEO comes down to what the team can sustain. One post a week gets you to 25 posts in about 6 months. Two a week is only better if the quality holds, and for most small teams it does not. Pick a pace the team can keep up in a busy month, not just a quiet one.
 
 ### How long does it take for a blog post to show up in Google?
 

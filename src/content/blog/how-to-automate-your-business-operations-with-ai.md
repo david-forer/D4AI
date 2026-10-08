@@ -11,7 +11,7 @@ articleType: "cluster"
 
 Most founders automate tasks. The ones who scale automate systems.
 
-Here is the difference.
+Here is the difference. It is also the short answer to how you automate your work with AI: map the process, fix the data, then automate in order.
 
 Task automation saves minutes. You connect a form to a spreadsheet. You set up a notification trigger. You eliminate one manual step from one workflow. Useful, but limited.
 
@@ -33,7 +33,7 @@ Avoid these three and the rest of the process becomes simple.
 
 ## Step 1: Map Before You Build
 
-No tool decisions yet. No workflow builds yet. Just mapping.
+Hold off on tool decisions and workflow builds. The only job right now is mapping.
 
 Document the actual sequence of how work moves through the business. Pick one process and trace every step: where it starts, who touches it, what decisions get made, where information moves between people or systems, where it ends.
 
@@ -68,6 +68,8 @@ This is the most important infrastructure decision in the process. Automation mo
 The system of record does not need to be expensive or complex. It needs to be designated, consistent, and used by everyone. A CRM that the whole team actually uses is more valuable than a sophisticated tool that half the team works around.
 
 Once the systems of record are defined, every automation you build can reference a reliable source of truth.
+
+This is also why there is no single best AI tool for business automation. The right tool is the one that connects cleanly to your system of record and the tools your team already uses.
 
 ## Step 4: Build the Integration Backbone Before the AI Layer
 

@@ -76,7 +76,7 @@ By the end of this phase, the systems should be stable, the team should know how
 
 ## What You Need in Place Before Starting
 
-Most of what determines whether an AI consulting engagement succeeds sits on the client side.
+Most of what determines whether an AI consulting engagement succeeds sits on the client side. These are the practical AI consultant requirements, and they are about your business more than about the consultant.
 
 **A clearly felt operational problem.** A specific workflow or category of work that is consuming meaningful time, producing errors, or limiting growth. The more specifically you can describe the problem, the more efficiently the engagement addresses it.
 
@@ -123,6 +123,7 @@ AI consulting for small businesses falls into a few engagement types with differ
 
 Price is determined by scope, integration complexity, the number of systems involved, and the amount of change management required. A more detailed breakdown of what drives the price in each engagement type is in [the AI consulting cost guide for small businesses](/blog/ai-consulting-cost-for-small-business).
 
+
 Judge the cost against the return. An engagement that costs $15,000 and recaptures 30 hours per month across a team at $80 per hour pays for itself in roughly 6 months and compounds from there. The question to ask is whether what it delivers is worth more than what it costs.
 
 ---
@@ -146,6 +147,8 @@ A more detailed look at what outcomes are realistic across different engagement 
 ## How to Choose the Right Consultant
 
 The single most important signal is whether they start with your problem or their tools. A consultant who opens every conversation by describing what they build is telling you something. One who opens by asking how your business operates is showing you how they think.
+
+The AI consultant skills that matter for a small business are process mapping, workflow design, tool integration and teaching a team to use what gets built. Deep model knowledge matters less than those four.
 
 Look for demonstrated experience with businesses at your scale and operational complexity. Enterprise AI implementation and small business operational design are different disciplines. The skills that matter in each context are not the same, and past work in large organizations does not reliably transfer to a 15-person service firm. If you are still deciding what kind of provider to hire at all, [AI consultant vs agency](/blog/ai-consultant-vs-agency) compares the 4 options against how documented your processes are.
 

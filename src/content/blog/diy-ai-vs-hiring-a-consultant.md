@@ -69,6 +69,8 @@ Before any tool is opened, an experienced consultant will push you to define the
 
 Consultants also bring experience across multiple implementations. They have seen the edge cases in other businesses, know which tools fail in which circumstances, and can make recommendations based on patterns you have not encountered yet. That reduces the cost of learning by trial and error.
 
+Are consultants getting replaced by AI? Not in this kind of work. The tools handle execution well, but they cannot decide which process deserves fixing or whether your team will use the result. That judgment is the consulting.
+
 Finally, consultants are accountable to a defined outcome. You are paying for a result, not just for hours. That accountability structures the work in a way that self-directed projects often lack.
 
 ---
@@ -93,7 +95,7 @@ These questions help clarify which path fits your situation.
 
 **What is the cost of getting this wrong?** High-stakes processes, anything touching client communication, billing, or data integrity, warrant more investment in getting it right.
 
-**How complex is the integration landscape?** One tool connected to one other tool is manageable DIY. Four tools connected in both directions with exception handling and conditional logic is consultant territory.
+**How many tools are involved?** One tool feeding one other is manageable DIY. Four tools passing data both ways, with exception handling and conditional logic, calls for a consultant.
 
 **What is your goal?** If your goal is to learn and build capability on your team, DIY is the right investment even if it takes longer. If your goal is a reliable system running in ninety days, a consultant will likely get you there faster.
 

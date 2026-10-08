@@ -64,7 +64,7 @@ For a small business with operational, client-facing, and administrative roles, 
 
 Building an AI team skill matrix starts with a simple grid: roles as rows and skill areas as columns. For each cell, record the current proficiency level, the target proficiency level, and the date of last assessment.
 
-A simple spreadsheet works well for teams of twenty or fewer. Formatting matters only to the extent that it makes the matrix easy to read and update. Color coding by gap size, green for no gap, yellow for one-level gap, red for two-level gap, makes priority areas visible at a glance.
+A simple spreadsheet works well for teams of twenty or fewer, and a free one is enough. Treat the grid as a template you can copy and adjust to your roles. Formatting matters only to the extent that it makes the matrix easy to read and update. Color coding by gap size, green for no gap, yellow for one-level gap, red for two-level gap, makes priority areas visible at a glance.
 
 ### Step 1: Define target proficiency levels by role
 
@@ -75,6 +75,8 @@ A client services role that handles initial outreach and follow-up communication
 An operations role that manages reporting, process documentation, and vendor coordination needs confident independent use across most skill areas, since AI has broad applications across those functions.
 
 Writing these targets down before assessing anyone prevents the common error of calibrating expectations to current performance rather than actual operational requirements.
+
+Here is an example of how the target column might look for two roles.
 
 | Skill area | Client services target | Operations target |
 |---|---|---|

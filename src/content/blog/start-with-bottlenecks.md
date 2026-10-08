@@ -11,7 +11,7 @@ articleType: "cluster"
 
 There is always another tool.
 
-A new app that promises to streamline workflows. A platform that claims to fix communication. A system that will finally organize everything.
+A new app that promises to smooth out workflows. A platform that claims to fix communication. A system that will finally organize everything.
 
 The search for the perfect tool feels productive. It feels like progress. You are trying to improve. You are investing in the business.
 
@@ -37,13 +37,15 @@ But if the underlying system is broken, the tool just makes brokenness more effi
 
 You automate chaos instead of fixing it. You speed up handoffs that should not exist. You create visibility into processes that need to be redesigned, not monitored.
 
-Tools feel productive because they are tangible. Bottlenecks feel abstract because they require diagnosis. But diagnosis is what actually creates leverage.
+Tools feel productive because they are tangible. Bottlenecks feel abstract because they require diagnosis. But diagnosis is what actually moves the business forward.
 
 ## What Bottlenecks Actually Are
 
-A bottleneck is not an annoyance. It is a constraint.
+In business, a bottleneck is a constraint, not an annoyance. It is the one step that limits how much work the whole system can finish.
 
 It is the place where work slows down or stops. The stage where tasks pile up. The handoff where information gets lost. The decision that requires approval from someone who is always unavailable.
+
+Examples are easy to find. An owner who approves every quote. A lead form that sits unread for two days. A weekly report someone rebuilds by hand every Friday.
 
 Bottlenecks reveal where systems fail.
 
@@ -51,11 +53,11 @@ They show you where capacity is misaligned with demand. They expose dependencies
 
 Most businesses treat bottlenecks as problems to work around. Someone is too busy, so work waits. A process takes too long, so people find shortcuts. A handoff fails, so someone steps in to fix it manually.
 
-These workarounds feel necessary. They keep things moving. But they hide the real problem.
+These workarounds feel necessary. They keep things moving. But they hide what is actually wrong.
 
-The bottleneck is not the person who is too busy. It is the system that makes one person a single point of failure. The bottleneck is not the slow process. It is the lack of clarity about what the process should accomplish. The bottleneck is not the failed handoff. It is the absence of structure around how work should move.
+The busy person is a symptom of a system that makes one person a single point of failure. The slow process is a symptom of unclear goals for what the process should accomplish. The failed handoff is a symptom of missing structure around how work should move.
 
-When you identify a bottleneck, you identify a system limit. That limit is where you should focus.
+When you identify a bottleneck, you identify a system limit. That limit is where you should focus. Avoiding bottlenecks does not mean working around them. It means finding the constraint and removing it before it caps growth.
 
 ## Why Bottlenecks Beat Brainstorming
 
@@ -65,13 +67,13 @@ They sit in a room and generate ideas. They talk about what would be nice to hav
 
 This creates a bias toward novelty instead of impact.
 
-The most important improvements are rarely the most interesting. They are boring, structural changes that remove friction. They do not feel innovative. They feel obvious in hindsight.
+The most important improvements are rarely the most interesting. They are boring, structural changes that remove friction. They do not feel exciting. They feel obvious in hindsight.
 
 Bottlenecks cut through the noise.
 
 When you start with bottlenecks, you start with focus. You are not asking what could be better. You are asking what is actually breaking. You are not prioritizing based on opinions. You are prioritizing based on where work piles up.
 
-This creates leverage.
+This is where the gains come from.
 
 Most work does not distribute evenly. It concentrates in predictable places. If you fix the place where 80% of delays happen, you improve the entire system. If you fix something that feels important but does not affect throughput, you waste effort.
 

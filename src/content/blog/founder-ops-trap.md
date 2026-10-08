@@ -12,9 +12,9 @@ articleType: "cluster"
 
 Most founders did not set out to run operations. They set out to build a product, deliver a service, develop a skill, or solve a problem they understood deeply. Operations was supposed to be the background function that kept everything running while they focused on the work that actually mattered.
 
-Somewhere along the way, that arrangement reversed itself. Operations became the thing they spent most of their time on. The real work, the client relationships, the strategy, the high-leverage decisions, started happening in the margins, if it happened at all.
+Somewhere along the way, that arrangement reversed itself. Operations became the thing they spent most of their time on. The real work, the client relationships, the strategy, the decisions with the biggest payoff, started happening in the margins, if it happened at all.
 
-This is the founder ops trap. It is not a choice. It is a structural outcome that happens to nearly every founder who builds past the initial stage without deliberately designing around it.
+This is the founder ops trap: the point where the founder becomes the default operations system for the whole business. Nobody chooses it. It is a structural outcome that happens to nearly every founder who builds past the initial stage without deliberately designing around it.
 
 ---
 
@@ -50,7 +50,7 @@ The less visible costs are more significant.
 
 Founders in the trap often misdiagnose their situation. The experience feels like a workload problem, so the response is to work longer hours or hire someone to help carry the load. Neither addresses the underlying structure.
 
-Working longer is not a solution. The trap is not a temporary peak. It is a steady state that will persist and expand as the business grows, because the system that creates it does not change when the hours change.
+Working longer solves nothing. The trap is a steady state, not a temporary peak, and it will persist and expand as the business grows, because the system that creates it does not change when the hours change.
 
 Hiring helps in some cases, but only if what gets hired is a system, not just another person. Bringing on an operations manager or a project coordinator can be valuable, but only if their role is defined, their authority is real, and there is an actual process for them to own and improve. Hiring someone to absorb the founder's overflow without changing the underlying routing of decisions and coordination just creates a middle layer that the founder eventually works around.
 
@@ -64,15 +64,15 @@ The first step is documentation. The answers that currently live only in the fou
 
 The second step is routing. Once the answers exist outside the founder's head, the team needs to be retrained to go to those sources first rather than escalating by default. This requires reinforcement. The first several times a team member asks a question that has a documented answer, pointing them to the documentation rather than just answering is more valuable in the long run than the few seconds it takes to respond directly.
 
-The third step is automation. Many of the things that route to the founder are not actually decisions at all. They are information retrieval, status checks, coordination tasks, and routine approvals that follow predictable patterns. AI tools and workflow automation can handle a significant portion of these entirely. Intake systems that collect and route requests automatically, dashboards that give the team visibility into project status without asking, automated responses to common client questions, these remove the need for founder involvement at the coordination layer entirely.
+The third step is automation. Many of the things that route to the founder turn out to be information retrieval, status checks, coordination tasks, and routine approvals that follow predictable patterns. AI tools and workflow automation can handle a significant portion of these entirely. Intake systems that collect and route requests automatically, dashboards that give the team visibility into project status without asking, automated responses to common client questions, these remove the need for founder involvement at the coordination layer entirely.
 
 ---
 
 ## The Business That Does Not Depend on You
 
-The goal is not to remove the founder from the business. It is to remove the founder from the operations infrastructure so their time and attention can go to the work that requires them: client relationships, strategic decisions, business development, and the areas where their expertise creates the most value.
+The goal is to take the founder out of the operations infrastructure, not out of the business, so their time and attention can go to the work that requires them: client relationships, strategic decisions, business development, and the areas where their expertise creates the most value.
 
-A business designed this way is more resilient, more scalable, and more valuable. The team functions independently on routine work. The founder is available for the decisions that actually matter. Clients experience consistency rather than variability. Growth does not require the founder to personally absorb every additional hour.
+A business designed this way is more resilient, easier to grow, and worth more. The team functions independently on routine work. The founder is available for the decisions that actually matter. Clients experience consistency rather than variability. Growth does not require the founder to personally absorb every additional hour.
 
 Building that business starts with recognizing the trap for what it is, not a workload problem or a team problem, but a systems problem, and deciding to solve it at that level.
 

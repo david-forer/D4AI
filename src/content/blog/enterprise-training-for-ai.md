@@ -16,7 +16,7 @@ Three months later, AI adoption remains spotty and inconsistent. A few early ado
 
 This is the gap between AI aspiration and AI capability. Leadership recognizes AI's strategic importance. They allocate budget. They make declarations. But declarations don't build competency. One-off workshops don't create behavior change. And hoping employees will figure it out on their own guarantees the organization operates far below its potential.
 
-Building actual enterprise AI capability requires a structured training program, not a single event, but a sustained learning system that moves the organization through progressive stages of maturity. This guide provides the roadmap for building that system, from initial assessment through company-wide deployment.
+Building actual enterprise AI capability requires a structured training program, not a single event, but a sustained learning system that moves the organization through progressive stages of maturity. Enterprise AI here means approved tools with enterprise licenses, documented standards, and governance used across the whole organization rather than by a few individuals. This guide provides the roadmap for building that system, from initial assessment through company-wide deployment.
 
 ## Assessing Your Organization's AI Maturity
 
@@ -74,7 +74,7 @@ Characteristics:
 - Quantifiable competitive advantage from AI capability
 - Organization attracts talent based on AI sophistication
 
-Few organizations reach stage 4 yet, but it's where leaders are heading. The transformation isn't about using AI more. It is about using AI differently, in ways that fundamentally change how the business operates.
+Few organizations reach stage 4 yet, but it's where leaders are heading. The transformation comes from using AI differently rather than more, in ways that fundamentally change how the business operates.
 
 ### Surveying Employees to Find the Baseline
 
@@ -140,7 +140,7 @@ Content focus:
 - Investment required: Budget for tools, training, and governance
 - Timeline expectations: Maturity development is measured in quarters, not weeks
 
-The goal isn't teaching executives to write prompts. It's ensuring they understand why AI capability is a strategic priority that requires sustained investment, not a one-time initiative.
+The goal is to make sure executives understand why AI capability is a strategic priority that requires sustained investment, not a one-time initiative.
 
 **Commitment from leadership:**
 
@@ -199,7 +199,7 @@ Week 3: Workflow integration
 
 Week 4: Review and refinement
 - Retrospective: What worked? What was confusing? What's missing?
-- Showcase: Pilot members present effective use cases to each other
+- Demo: Pilot members present effective use cases to each other
 - Assessment: Competency check through practical exercises
 
 **Curriculum refinement:**
@@ -382,25 +382,25 @@ Example: Module on "AI security policies" delivers core rules through LMS video.
 
 ### Lunch & Learns and Peer-to-Peer Sharing
 
-Formal training builds baseline capability. Informal learning mechanisms sustain momentum and foster innovation.
+Formal training builds baseline capability. Informal learning mechanisms sustain momentum and encourage new ideas.
 
 **Monthly lunch & learns:**
 
 Format: 45-minute presentation over lunch (catered or virtual)
 Topics:
 
-- Employee showcase: "Here's how I automated [process] with AI"
-- Tool spotlight: Deep dive on specific feature or capability
+- Employee demo: "Here's how I automated [process] with AI"
+- Tool spotlight: Close look at a specific feature or capability
 - Use case study: Analysis of successful AI implementation
 - Problem-solving session: Group tackles a common challenge
 
 Participation: Optional but incentivized (free lunch, credit toward training requirements, social recognition)
 
-The goal is not comprehensive education. It is about maintaining energy around AI capability development and spreading knowledge organically.
+The goal is maintaining energy around AI capability development and spreading knowledge organically, not comprehensive education.
 
 **Peer champions network:**
 
-Identify 1 AI champion per 10-15 employees. These are not AI experts. They are enthusiastic practitioners willing to help others.
+Identify 1 AI champion per 10-15 employees. Champions are enthusiastic practitioners willing to help others, and they do not need to be AI experts.
 
 Champion responsibilities:
 
@@ -442,7 +442,7 @@ Provide advanced training champions don't get in core curriculum:
 - Teaching techniques (how to help without just doing it for them)
 - Where to find answers when they don't know
 
-Quarterly champion meetings maintain skill and share learnings. Champions from different departments discover their peers' innovative applications.
+Quarterly champion meetings maintain skill and share learnings. Champions from different departments discover their peers' new applications.
 
 **Preventing champion burnout:**
 
@@ -459,7 +459,7 @@ Well-supported champions drive adoption more effectively than any formal trainin
 
 ## Budgeting for AI Education
 
-Training requires investment. Organizations that under-resource training get proportionally diminished results.
+Training requires investment. Organizations that under-resource training get proportionally diminished results. So how much does enterprise AI cost? Using the ranges below, the first year runs from $50,000 to $100,000 for a small organization up to $250,000 to $500,000 for a large one, tools and training included.
 
 ### Allocating Resources for Tools and Trainers
 
@@ -548,7 +548,7 @@ Compressing training into shorter timelines creates resistance and poor retentio
 - Week 1-4: Second half of organization completes core curriculum
 
 **Month 5: Role-specific deep dives**
-- Week 1-4: Deep dive sessions for specialized roles
+- Week 1-4: Sessions for specialized roles
 
 **Month 6: Reinforcement and measurement**
 - Week 1-2: Competency assessment across organization
@@ -559,7 +559,7 @@ By month 6, baseline training is complete and the organization shifts to continu
 
 ## Conclusion
 
-Enterprise AI training is not an event. It is a capability-building system that operates continuously. The organizations that treat it as a one-time initiative discover six months later that adoption has stalled and competency has regressed.
+Enterprise AI training works as a capability-building system that operates continuously, rather than as a single event. The organizations that treat it as a one-time initiative discover six months later that adoption has stalled and competency has regressed.
 
 Sustainable training programs have these characteristics:
 

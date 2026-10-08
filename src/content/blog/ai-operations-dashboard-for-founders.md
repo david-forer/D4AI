@@ -29,6 +29,8 @@ The purpose of an operations dashboard is simple: surface the information that t
 
 ## The Five Panels Every Founder Dashboard Needs
 
+Use these five panels as a template for your own dashboard. Each one comes with examples of what it shows and what should trigger action.
+
 ### Revenue Pipeline Panel
 
 What it shows: active leads by stage, total pipeline value, average conversion rate by stage, average sales cycle length, and projected revenue from current pipeline.
@@ -43,13 +45,13 @@ What it shows: active projects by status, team utilization by person, upcoming d
 
 What triggers action: utilization crossing a threshold that predicts delivery risk, multiple milestones converging in the same week, overdue items that have not moved in more than two days.
 
-Delivery problems are almost always visible in the data before they become client problems. A capacity panel that surfaces these patterns early makes the difference between proactive management and reactive damage control.
+Delivery problems are almost always visible in the data before they become client problems. A capacity panel that surfaces these patterns early makes the difference between catching a problem early and cleaning up after it.
 
 ### Client Health Panel
 
 What it shows: recent communication activity by account, unresolved issues or open tickets by age, satisfaction signals where captured, and accounts that have gone quiet beyond a defined threshold.
 
-What triggers action: accounts with no communication in more than two weeks, open issues past a defined age, negative satisfaction signals, and accounts showing patterns associated with churn in the business history.
+What triggers action: accounts with no communication in more than two weeks, open issues past a defined age, negative satisfaction signals, and accounts that look like past clients who left.
 
 Client health is the most undermonitored panel in most small business operations. The information exists across email, project tools, and CRM. Without a consolidated view, it never gets reviewed systematically.
 
@@ -79,7 +81,7 @@ A traditional dashboard displays data. An AI-enhanced dashboard interprets it.
 
 **Predictive signals** use current pipeline and delivery data to project the likely state of the business in 30 and 60 days. Not a guarantee, but a directional indicator that improves resourcing and sales decisions.
 
-These capabilities are not future-state. They are available now through combinations of existing tools. The limiting factor is not the technology. It is whether the underlying data is clean and connected enough to make the AI layer reliable.
+These capabilities are available now through combinations of existing tools. The limiting factor is whether the underlying data is clean and connected enough to make the AI layer reliable.
 
 ## How to Build Your First Founder Dashboard
 
@@ -89,11 +91,11 @@ For each of the five panels, write down the five metrics that matter most to you
 
 For each metric, identify where the data currently lives. CRM, project tool, spreadsheet, accounting software. This inventory reveals which systems need to talk to each other before the dashboard can be built.
 
-Connect the data sources to a single reporting layer. Google Looker Studio is free, flexible, and connects to most tools through native connectors or the integration layer. Databox is purpose-built for business metrics with cleaner mobile access. The choice matters less than getting started.
+Connect the data sources to a single reporting layer. A free first version is realistic. Google Looker Studio is free, flexible, and connects to most tools through native connectors or the integration layer. Databox is purpose-built for business metrics with cleaner mobile access. The choice matters less than getting started.
 
 Set up automated refresh and alerts. The dashboard should update without anyone touching it. Alerts should notify the relevant person when a metric crosses a defined threshold, rather than requiring daily manual review.
 
-Add the AI interpretation layer once the data is clean and reliable. A language model reading clean, connected operational data produces useful summaries. The same model reading incomplete or stale data produces confident-sounding noise.
+Add the AI interpretation layer once the data is clean and reliable. A language model reading clean, connected operational data produces useful summaries. The same model reading incomplete or stale data produces confident-sounding noise, which is how AI ends up giving wrong information.
 
 ## The Operational Discipline That Makes It Useful
 

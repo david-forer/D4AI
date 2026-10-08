@@ -34,7 +34,7 @@ Estimate your monthly rework hours (the time your team spends fixing things that
 
 Every email asking for a status update is overhead. Every meeting to align on what the current state of a project is represents overhead. Every Slack message asking where the latest version of a document lives is overhead.
 
-Coordination overhead is the cost of running an operation where information is not reliably accessible to the people who need it. It is the tax you pay for not having a single source of truth, defined handoff protocols, and real-time project visibility.
+Coordination overhead is the cost of running an operation where information is not reliably accessible to the people who need it, and it is the tax you pay for not having a single source of truth, defined handoff protocols, and real-time project visibility.
 
 Research consistently estimates that knowledge workers spend 20 to 30 percent of their time searching for information they need to do their jobs. In a small business with five to fifteen people, that is one to four full-time equivalents worth of capacity consumed by looking for things that should already be findable.
 
@@ -50,7 +50,7 @@ Every hour that a task is waiting for your approval is an hour of productive tim
 
 Decision queue delay compounds. It slows delivery, creates client-facing latency, and generates the team frustration that comes from being ready to move and having no way to move.
 
-The fix is not to make faster decisions. It is to build decision infrastructure that reduces the number of decisions requiring your involvement in the first place: documented authority levels, defined criteria for common decisions, and escalation protocols that allow the team to handle routine calls without you.
+Making faster decisions will not fix it, so build decision infrastructure that reduces the number of decisions requiring your involvement in the first place: documented authority levels, defined criteria for common decisions, and escalation protocols that allow the team to handle routine calls without you.
 
 ---
 
@@ -90,7 +90,7 @@ Add these up. The total is an estimate of what your current operational state is
 
 For most businesses in the $1M to $5M range, this number comes out somewhere between $5,000 and $30,000 per month. Sometimes higher.
 
-That is the context for what an investment in operational systems actually returns. Fixing the infrastructure is not a cost center. It is one of the highest-ROI investments available to a business at this stage.
+That is the context for what an investment in operational systems actually returns. Fixing the infrastructure is one of the highest-ROI investments available to a business at this stage, and it does not belong in the cost center column.
 
 ---
 
@@ -102,7 +102,7 @@ Measured against the monthly cost of the chaos those systems replace, the paybac
 
 This is the calculation most founders have not run. They see the setup work as a cost. They have not calculated what the current state of not having it done is costing them every month it continues.
 
-An [AI operations audit](/ai-readiness-and-ai-audits) will run this calculation for your specific operation: identifying the cost centers, the highest-leverage fixes, and the sequence that returns value fastest.
+An [AI operations audit](/ai-readiness-and-ai-audits) will run this calculation for your specific operation: identifying the cost centers, the highest-value fixes, and the sequence that returns value fastest.
 
 ---
 
@@ -114,7 +114,7 @@ More clients means more coordination overhead. More team members means more onbo
 
 This is the arithmetic that makes operational investment urgent, not eventual. The gap between the cost today and the cost in two years of continued manual operation is significant.
 
-Fixing it now is not just about today's efficiency. It is about not carrying a compounding liability into the next stage of growth.
+Fixing it now protects today's efficiency and keeps you from carrying a compounding liability into the next stage of growth.
 
 ---
 

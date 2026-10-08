@@ -28,7 +28,7 @@ Without this foundation, AI adoption tends to follow a predictable pattern. Some
 
 ### Taking a Structured Approach to Measuring AI Readiness
 
-A proper audit examines several dimensions of your business. These typically include data quality, technology infrastructure, organizational culture, skills and training, governance, and strategic alignment.
+What does AI audit readiness require? Honest answers about your data, your systems, your people and the rules you set for using the tools. A proper audit examines several dimensions of your business. These typically include data quality, technology infrastructure, organizational culture, skills and training, governance, and strategic alignment.
 
 Each dimension gets assessed on a maturity scale. You might find that your data practices are reasonably strong while your change management capabilities need work. Or you might discover that your team is enthusiastic about AI but your current systems cannot support it.
 
@@ -100,7 +100,7 @@ Leadership attitude matters enormously. If executives treat AI as something the 
 
 ### Mastering Change Management for AI Transformation
 
-Change management is not a single event. It is an ongoing capability your organization either has or needs to build.
+Change management takes more than a single event. It is a capability your organization either has or needs to build.
 
 Effective AI adoption usually follows a pattern: start small with a willing pilot group, demonstrate tangible value, incorporate feedback, expand gradually, and provide sustained support throughout.
 
@@ -152,9 +152,9 @@ The accessibility of generative AI can actually be a challenge. Because anyone c
 
 Moderna offers an instructive example of AI readiness done well, even though their scale differs dramatically from most small businesses.
 
-The pharmaceutical company built AI capabilities systematically over several years before the pandemic. When they needed to develop a COVID-19 vaccine at unprecedented speed, that foundation proved essential. Their AI systems helped with everything from mRNA sequence design to manufacturing optimization to clinical trial management.
+The pharmaceutical company built AI capabilities systematically over several years before the pandemic. When they needed to develop a COVID-19 vaccine at record speed, that foundation proved essential. Their AI systems helped with everything from mRNA sequence design to manufacturing optimization to clinical trial management.
 
-The relevant lesson is not that small businesses should emulate Moderna's technical sophistication. It is that readiness precedes opportunity. Moderna could move quickly because they had already done the groundwork on data infrastructure, talent development, and organizational culture.
+Small businesses should not try to copy Moderna's technical sophistication. The takeaway is that readiness precedes opportunity. Moderna could move quickly because they had already done the groundwork on data infrastructure, talent development, and organizational culture.
 
 For smaller organizations, the principle translates directly. The businesses that benefit most from AI are those that have assessed their starting point, built the necessary foundations, and positioned themselves to act when the right opportunities emerge.
 

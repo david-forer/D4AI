@@ -23,9 +23,9 @@ This page is for the founder whose team already uses AI on client work and wants
 
 ## AI compliance for client data is a contract question first
 
-The binding rules on your AI use are already written, in agreements you signed before AI was on anyone's list. Confidentiality clauses, data processing terms, subcontractor approval requirements and audit rights all apply to an AI tool exactly as they apply to a freelancer.
+In plain terms, AI compliance means being able to show that your use of AI matches the obligations you have already accepted. Those binding rules are already written, in agreements you signed before AI was on anyone's list. Confidentiality clauses, data processing terms, subcontractor approval requirements and audit rights all apply to an AI tool exactly as they apply to a freelancer.
 
-Most firms searching this topic expect to find a regulation to comply with. For a service business under 20 people, the enforceable constraint is usually commercial rather than regulatory: a client contract you can be held to, and a supplier review you will be asked to complete.
+Most firms searching this topic expect to find a regulation or a set of AI compliance standards to follow. For a service business under 20 people, the enforceable constraint is usually commercial rather than regulatory: a client contract you can be held to, and a supplier review you will be asked to complete.
 
 That is good news, because contracts are readable in an afternoon and they tell you exactly where the line sits. This is the client-facing half of [AI governance for small businesses](/blog/ai-governance-for-small-businesses).
 
@@ -118,7 +118,7 @@ That delay is why this gets deprioritised. There is no incident to react to, so 
 
 ## Proportion: what a 30-person firm actually needs
 
-The market will sell you a compliance platform. At this size the whole programme is 4 things and an afternoon.
+The market, including plenty of AI compliance companies, will sell you a compliance platform. At this size the whole programme is 4 things and an afternoon.
 
 Read the 4 clauses in your top 3 contracts. Buy business tier for the tools that touch client work and move everyone onto company accounts. Keep the 3 records above in one folder. Write the one-paragraph client answer and agree it internally.
 
@@ -130,7 +130,7 @@ Revisit when something specific changes. A regulated client writes AI terms into
 
 Nobody is coming to inspect your AI use. A client will ask, and the asking is now routine rather than exceptional.
 
-The firms that answer well are not the ones with the longest policy. They are the ones that read their own contracts once, moved their team onto accounts they control, and wrote down what they use and why. That work fits in a week and it is durable, because contracts change slowly.
+The firms that answer well read their own contracts once, moved their team onto accounts they control, and wrote down what they use and why, which beats the longest policy. That work fits in a week and it is durable, because contracts change slowly.
 
 The cost of getting it wrong is asymmetric for a small firm. A large company absorbs one mishandled document. A 15-person consultancy whose entire product is trust does not have that cushion.
 

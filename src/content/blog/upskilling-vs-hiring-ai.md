@@ -13,6 +13,8 @@ When small business founders recognize that their team lacks AI capability, the 
 
 The problem is that AI capability is fundamentally different from most specialized skills, and the hiring instinct produces predictably disappointing results in this context. Understanding why, and what the alternatives actually cost, changes how most founders approach the decision.
 
+Upskilling in AI means training the people you already have to use AI well in their own roles, with practice on real tasks instead of general awareness sessions.
+
 ---
 
 ## Why Hiring for AI Capability Is Different
@@ -89,7 +91,7 @@ Over time, as AI literacy becomes a standard hiring criterion, new team members 
 
 The choice between upskilling and hiring is ultimately a question about how AI capability should be distributed across your business. A single AI-capable hire creates a single node of capability. Upskilling creates a distributed capability across roles, which is what drives the operational returns that make AI investment worthwhile.
 
-The tools are available to everyone. The team that uses them consistently, across functions, embedded in documented workflows, has an operational advantage that a single specialized hire cannot produce.
+The tools are available to everyone. No single tool is the best for upskilling, so start with the general assistant your team can already access and train on real tasks from each role. The team that uses them consistently, across functions, embedded in documented workflows, has an operational advantage that a single specialized hire cannot produce.
 
 ---
 

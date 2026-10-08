@@ -17,7 +17,7 @@ None of those. A good AI readiness audit is a structured diagnostic. It surfaces
 
 ## What an AI Readiness Audit Is (and Isn't)
 
-The audit is not a sales pitch with a diagnostic wrapper. It is not a pass-or-fail test that tells you whether your business is good enough for AI. And it is not a technical exercise that requires you to clean up your systems or prepare documentation before you start.
+The audit is no sales pitch with a diagnostic wrapper. Nobody passes or fails it, so it cannot tell you whether your business is good enough for AI. And you do not need to clean up your systems or prepare documentation before you start.
 
 What it is: a clear-eyed assessment of your operational foundation, your current systems, your data landscape, your team's readiness, and the gaps that would prevent AI from delivering real value at your stage.
 
@@ -25,13 +25,13 @@ The findings stand alone. Whether you engage for implementation afterward or tak
 
 ## What Gets Assessed
 
-A thorough AI readiness audit covers five core areas.
+A thorough AI readiness audit covers five core areas, which are also the five pillars of AI readiness: workflows, tech stack, data, team capability, and governance. AI audit readiness requires little from you beyond a few conversations, since the audit is built to find out where you stand.
 
 ### Your Operational Workflows
 
 Where is time going in your business right now? Which processes run on tribal knowledge, meaning they only work correctly when a specific person handles them? Where do errors, delays, or inconsistencies consistently appear?
 
-This part of the assessment maps the actual flow of work through your business, not the idealized version. It identifies the highest-friction points and the processes that would produce the most leverage if they were better documented, integrated, or automated.
+This part of the assessment maps the actual flow of work through your business, not the idealized version. It identifies the highest-friction points and the processes that would pay off most if they were better documented, integrated, or automated.
 
 ### Your Current Tech Stack and Integration Gaps
 
@@ -43,13 +43,13 @@ The audit maps your current tools, assesses how well they're connected, and iden
 
 AI runs on data. The quality, location, and accessibility of your data determines what AI can realistically do for your business.
 
-This part of the assessment looks at whether you have a single authoritative source for key data types like client information and project status, whether the data is clean and consistent, and whether it can be accessed programmatically by the tools you'd want to use. Data problems at this layer don't need to be fixed before the audit, they are what the audit is designed to surface.
+This part of the assessment asks whether you have a single authoritative source for data types like client information and project status, whether the data is clean and consistent, and whether it can be accessed programmatically by the tools you'd want to use. Data problems at this layer can wait until after the audit, since surfacing them is what the audit is for.
 
 ### Your Team's AI Capability and Change Readiness
 
 Technology implementations fail more often for cultural and skills reasons than for technical ones. The audit assesses how your team currently uses AI tools, whether there are capability gaps that would slow adoption, and what the likely points of resistance or enthusiasm look like.
 
-This isn't about judging your team. It's about understanding what support and sequencing the implementation will need.
+The goal here is to understand what support and sequencing the implementation will need, with no judgment of your team.
 
 ### Your Governance Posture
 
@@ -59,7 +59,7 @@ As AI becomes embedded in business operations, governance matters more than most
 
 The process moves through four stages.
 
-**Intake and context-setting.** The engagement starts with a conversation focused on your business goals, not your technology. What are you trying to grow, fix, or protect? Where is time being lost? What have you already tried? This framing ensures the findings connect directly to what actually matters in your situation.
+**Intake and context-setting.** The engagement starts with a conversation about your business goals before any talk of technology. What are you trying to grow, fix, or protect? Where is time being lost? What have you already tried? This framing ensures the findings connect directly to the priorities in your situation.
 
 **Workflow and systems assessment.** This is the diagnostic layer. A combination of structured interviews, documentation review, and systems observation produces a clear picture of where the gaps are and how significant they are relative to your priorities.
 
@@ -67,7 +67,7 @@ The process moves through four stages.
 
 **Findings presentation and roadmap.** The engagement closes with a clear summary of where you stand, what the critical gaps are, and a sequenced roadmap for addressing them. The roadmap is designed to be actionable regardless of what comes next.
 
-A typical AI readiness audit takes one to two weeks from start to findings presentation.
+A typical AI readiness audit takes one to two weeks from start to findings presentation. Readers comparing AI readiness audit services should look for this same shape: a defined scope, a short timeline, and a deliverable that stands alone.
 
 ## What You Get at the End
 
