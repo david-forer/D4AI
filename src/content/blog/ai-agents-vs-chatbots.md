@@ -2,7 +2,7 @@
 title: "AI Agents vs Chatbots: One Answers, One Finishes the Job"
 seoTitle: "AI Agents vs Chatbots – The Difference Between a System That Answers Questions and One That Completes Work, How to Tell Which One a Job Needs, and What Each Costs a Small Business – Forersight"
 description: "AI agents vs chatbots: a chatbot answers a person, an agent finishes a job. Here is how to tell which one a task in your business needs, and what each costs."
-pubDate: 2026-07-27T00:00:00Z
+pubDate: 2026-08-29T00:00:00Z
 updatedDate: 2026-09-23T00:00:00Z
 tags: ["ai-agents"]
 heroImage: "/images/blog/ai-agents-vs-chatbots.webp"
@@ -90,7 +90,7 @@ A firm handling 40 inbound inquiries a week that each need reading, classifying,
 
 ## Why founders get sold agents when chatbots would do
 
-The word "agent" moved from research papers to sales decks in about 18 months, and pricing followed it. A meaningful share of products currently marketed as agents are chatbots with a slightly wider set of permissions, and a meaningful share of real agent products are sold to firms with no foundation to run them on.
+The word "agent" moved from research papers to sales decks quickly, and pricing followed it. A meaningful share of products currently marketed as agents are chatbots with a slightly wider set of permissions, and a meaningful share of real agent products are sold to firms with no foundation to run them on.
 
 Two things protect you. The first is asking a vendor one specific question: what can this system do without a human present, and what does it do when it is not sure? A product that answers with feature names rather than actions is a chatbot. A product that can describe its escalation behavior is an agent, and the quality of that answer tells you how much thought went into it. Applying the same discipline across your whole stack is the point of [how to evaluate AI tools](/blog/how-to-evaluate-ai-tools).
 

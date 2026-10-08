@@ -1,151 +1,143 @@
 ---
 title: "The Best Schema Markup Types for SEO: A Complete Guide"
-description: "Which schema markup types move SEO results, from FAQPage and Article to HowTo, BreadcrumbList and WebSite, and how to implement each one on a small business site."
+description: "Which schema markup types still earn rich results in 2026, which ones Google retired, and how to implement each on a small business site."
 pubDate: 2025-12-13T00:00:00Z
-updatedDate: 2026-09-23T00:00:00Z
+updatedDate: 2026-10-08T00:00:00Z
 tags: ["seo"]
 heroImage: "/images/blog/schema-markup.webp"
 articleType: "cluster"
 ---
 
-Schema markup is structured data that tells search engines what your content means. This guide covers the types of schema that pay off in SEO and how to implement them.
+Schema markup is structured data that tells search engines what your content means. This guide covers which types of schema still earn something in Google Search in 2026, which ones Google has retired, and how to implement each one on a small business site.
 
 ## Key takeaways
 
-- Schema markup is structured data that tells search engines what your content means, not just what it says, and Google uses it to generate rich results.
-- The highest-value types of schema for SEO are FAQPage, Article and BlogPosting, HowTo, BreadcrumbList, SoftwareApplication, WebSite with SearchAction, Person, and Organization.
-- FAQPage and HowTo produce visible rich snippets. Article and Person support content quality and E-E-A-T signals. BreadcrumbList and Organization reinforce site structure and brand identity.
+- Schema markup is structured data that tells search engines what a page is, who wrote it and how it fits your site. Google's own documentation says it does not guarantee that any feature will show up in search results.
+- Several types that used to produce visible rich results no longer do. FAQ rich results stopped appearing on May 7, 2026. HowTo rich results were removed in 2023. The sitelinks search box was removed in 2024.
+- Types that still earn a visible result include BreadcrumbList, Article and BlogPosting, Organization, and SoftwareApplication when it carries pricing and a rating or review.
+- Person and WebSite markup describe your authors and your site to machines. They do not produce a visible rich result.
 - JSON-LD is the preferred format because it keeps structured data separate from your HTML.
-- Validate markup with Google's Rich Results Test and monitor it in Search Console. Schema gives you the chance at rich results but does not guarantee them.
+- Old markup can stay in place. Google says unused structured data does not cause problems for Search.
 
-## The right schema types give you more real estate in search results with less effort than most SEO work.
+## What happened to schema in search results
 
-Schema markup remains one of the most underutilized tools in technical SEO. Most sites either skip it entirely or implement it inconsistently, leaving rankings and click-through rates on the table.
+Schema markup is still worth doing, but the payoff has shrunk and moved. The visible extras that made schema exciting a few years ago have been switched off one at a time.
 
-The reason is simple. Schema requires technical implementation, and the relationship between markup and results is not always obvious. Unlike title tags or meta descriptions, you cannot just eyeball whether your schema is working. You need to understand what each type does, where it applies, and how Google actually uses it.
+Here is the timeline, from Google's own documentation and announcements:
 
-This guide covers the schema types that deliver measurable SEO impact. These are not theoretical recommendations. They improve visibility in search results, increase click-through rates, and help Google understand your content more accurately.
+- In August and September 2023, Google stopped showing HowTo rich results and removed the documentation. It had already limited FAQ rich results to well-known government and health sites.
+- In late 2024, Google removed the sitelinks search box, the search field that appeared inside some branded listings.
+- In June 2025 and November 2025, Google phased out several lesser-used types, including Book Actions, Course Info, Claim Review, Estimated Salary, Learning Video, Special Announcement, Vehicle Listing and Practice Problems.
+- On May 7, 2026, FAQ rich results stopped appearing in Google Search for every site. The FAQ search appearance filter and the Rich Results Test support for FAQ were removed in June 2026, and the Search Console API support ends in August 2026.
+
+John Mueller put the pattern plainly in November 2025: markup types come and go. A page marked up for a feature that disappears loses the feature and nothing else. The markup itself stays valid, so there is no reason to rip it out.
+
+The practical question is no longer which schema gets you the most space in the results. It is which schema describes your pages accurately, and which of it still earns a visible result.
 
 ## Why Schema Markup Matters for SEO
 
-Schema markup is structured data that tells search engines what your content means, not just what it says. When you mark up an article, you are explicitly identifying the headline, author, publish date, and body content. When you mark up a product, you are defining its name, price, availability, and reviews.
+Schema markup is structured data that tells search engines what your content means, not just what it says. When you mark up an article, you are explicitly identifying the headline, author, publish date and body content. When you mark up an organization, you are defining its name, logo and profiles.
 
-Google uses this data to generate rich results. These include FAQ accordions, how-to step lists, breadcrumb trails, and site search boxes directly in the SERP. Rich results occupy more visual space than standard blue links, which increases their likelihood of being clicked.
+Google uses this data to build rich results where a feature exists, and to understand the entities behind a page. Marking up your organization, authors and content types helps a search engine build a more complete model of your site and who stands behind it.
 
-But schema also supports Google's broader understanding of entities and relationships. Marking up your organization, authors, and content types helps the search engine build a more complete model of your site and its expertise. This feeds into E-E-A-T signals, which matter for content quality assessments.
+Structured data does not rank a page on its own, and it does not guarantee a feature. Its job is to remove guesswork about what a page is. Some types still change how your listing looks. Others work in the background.
 
-The key is knowing which schema types to prioritize. Some deliver immediate visual benefits. Others work in the background to improve how Google interprets your site. The following types offer the highest return on implementation effort.
+The following types are the ones worth knowing, with an honest note on what each does today.
 
 ## FAQPage Schema
 
-FAQPage schema enables rich snippets that display as expandable accordions in search results. When a user searches for a question your page answers, Google may show your FAQ directly in the SERP with a dropdown format.
+FAQPage schema used to produce expandable accordions under a search result. That has ended. FAQ rich results no longer appear in Google Search for any site as of May 7, 2026, and Google has removed the matching report and test support.
 
-This format increases your result's footprint, pushing competitors further down the page. It also provides immediate value to searchers, which improves click-through rates.
+FAQPage is still a valid schema.org type, and Google says existing FAQ markup can stay on your pages. Other search engines and tools that read structured data can still use it, and it keeps a clear question and answer structure that is easy for a machine to lift.
 
-Apply FAQPage schema to any page that includes a set of questions and answers. Blog posts that address common objections or concerns work well. Feature pages that explain how something works are another strong fit. Pricing pages that answer "What is included?" or "How does billing work?" are ideal candidates.
+So the advice changes. Do not add FAQPage markup to chase a rich result, because there is none to chase. If your pages already carry it, leave it. If you publish a visible set of questions and answers because readers need them, write them well and mark them up if it costs you nothing.
 
-The schema requires a list of questions, each paired with an accepted answer. Each question and answer must be visible on the page. You cannot use schema to surface content that users cannot see.
-
-One consideration: Google has become stricter about what qualifies as an FAQ. If your page contains only one question, use a different schema type. If your questions are really steps in a process, use HowTo instead. FAQPage should represent genuine questions that a user might ask.
+The rule that was always true still applies. Every question and answer in the markup must be visible on the page. You cannot use schema to surface content that users cannot see.
 
 ## Article and BlogPosting Schema
 
-Article schema tells Google that a piece of content is editorial in nature. It identifies the headline, author, publish date, and modification date. BlogPosting is a more specific subtype that applies to blog content.
+Article schema tells Google that a piece of content is editorial in nature. It identifies the headline, author, publish date and modification date. BlogPosting is a more specific subtype that applies to blog content.
 
-This schema does not generate flashy rich snippets, but it supports how Google evaluates content freshness, authorship, and topical relevance. Marking up your blog posts correctly ensures that Google recognizes them as articles rather than generic web pages.
+Article remains a supported structured data type in Google's search gallery. It does not generate flashy rich snippets for most small sites, but it helps Google read freshness, authorship and topic. Marking up your blog posts correctly ensures that Google recognizes them as articles rather than generic web pages.
 
-You should apply Article or BlogPosting schema to all blog content. If your site publishes news, use NewsArticle instead. If you publish opinion pieces or columns, those can use Article as well.
+You should apply Article or BlogPosting schema to all blog content. If your site publishes news, use NewsArticle instead.
 
-The schema should include the headline, author information (ideally linked to a Person schema), datePublished, dateModified, and publisher details. If your post includes a featured image, include that in the schema as well.
+Google recommends including the headline, a featured image, the dates published and modified, and the author. The author is best linked to a Person entry, and the publisher can point to your Organization entry.
 
-This is one of the simplest schema types to implement, and it forms the foundation for other editorial markup. If you are running a content site and you are not marking up your articles, you are missing a baseline opportunity.
+This is one of the simplest schema types to implement, and it forms the foundation for other editorial markup.
 
 ## HowTo Schema
 
-HowTo schema generates rich snippets that display step-by-step instructions directly in the SERP. Google shows these as numbered or bulleted lists, often with images for each step.
+HowTo schema used to produce step-by-step lists in search results, often with an image for each step. Google removed that rich result in 2023 on both desktop and mobile, and it removed the HowTo documentation soon after.
 
-This format is highly visible and draws attention in competitive search results. It also provides immediate utility, which can drive clicks from users who want to see the full details.
+The schema.org type still exists and the markup is harmless, but it no longer changes how a result looks. There is no reason to add it to new pages, and no urgent reason to remove it from old ones.
 
-Apply HowTo schema to guides and tutorials. Any content structured as "How to [accomplish task]" is a candidate. The page should contain clear, sequential steps. Each step should be labeled explicitly, such as "Step 1: Gather your materials" or "1. Open the settings panel."
-
-The schema requires a name (the task being explained), a list of steps, and optionally an image or video for each step. Google prefers HowTo content that includes images, though they are not required.
-
-One limitation: HowTo schema works best for procedural content. If your page is more conceptual or explanatory, Article schema is a better fit. Do not force a how-to structure onto content that is not inherently instructional.
+The part of the old advice that still holds is the page itself. A guide with clearly labeled, sequential steps is easier for readers to follow and easier for a machine to summarize. Write the steps well and let the headings do the work. Article or BlogPosting schema is the right markup for that page.
 
 ## BreadcrumbList Schema
 
-Breadcrumbs help users understand where they are within your site hierarchy. BreadcrumbList schema tells Google the same thing, and it replaces your URL with a clickable breadcrumb path in search results.
+Breadcrumbs help users understand where they are within your site hierarchy. BreadcrumbList schema tells Google the same thing, and Google can show the path in the result in place of the raw URL.
 
-Instead of showing "example.com/blog/category/post-title", Google displays "Home > Blog > Category > Post Title". This format is easier to read and provides context about the page's place in your site structure.
+Instead of showing "example.com/blog/category/post-title", Google can display "Home > Blog > Category > Post Title". That format is easier to read and shows the page's place in your site structure.
 
-BreadcrumbList schema should be implemented site-wide, particularly on blog posts, category pages, and deep product or feature pages. It requires a list of items, each representing a level in the hierarchy, with a name and URL.
+Google's documentation says the breadcrumb feature is available on desktop. Treat the visible breadcrumb as a bonus on desktop searches and the markup as a clear statement of your site structure everywhere.
 
-The schema should match the actual breadcrumbs visible on your page. If your site does not display breadcrumbs to users, you can still implement the schema, but it is better to add visible breadcrumbs first. Consistency between what users see and what search engines see avoids confusion.
+BreadcrumbList requires a list of items, each with a position, a name and a URL. The final item does not need a URL. The markup should match the breadcrumbs visible on your page. If your site does not display breadcrumbs to users, add visible breadcrumbs first and the markup second.
 
-This schema type is low-effort and high-impact. It improves the visual clarity of your search listings and reinforces your site's information architecture.
+This schema type is low effort, and it is one of the few that still changes how a listing looks.
 
 ## SoftwareApplication Schema
 
-SoftwareApplication schema provides structured data about a software product. It tells Google what your application does, what platforms it supports, pricing details, and user ratings.
+SoftwareApplication schema provides structured data about a software product. It tells Google what your application is, what platforms it supports and what it costs.
 
-This schema is particularly valuable for SaaS companies. It helps Google recognize your product pages as software offerings rather than generic marketing content. If you have user reviews or ratings, including them in the schema can generate star ratings in search results.
+Google's software app feature has stricter requirements than most. To be eligible, the markup needs the application name, an offer with a price (use 0 for a free app), and either an aggregate rating or a review. Markup without a real rating or review does not qualify for the rich result.
 
-Apply SoftwareApplication schema to product pages, feature pages, or anywhere you describe your software in detail. The schema should include the application name, category, operating system or platform, pricing (if applicable), and aggregated rating data if available.
+That makes it a fit for software you actually sell or publish, with genuine user reviews. It is not a fit for a services page, and you should never invent ratings to meet the requirement.
 
-If your software has a free trial or freemium model, you can include that information as well. Google may surface this in rich results, particularly for branded searches where users are looking for details about your product.
-
-One note: if you are marking up a mobile app, use MobileApplication instead. If your product is a web-based tool, SoftwareApplication is the correct choice.
+If you are marking up a mobile app, use MobileApplication. If your product is a web-based tool, SoftwareApplication is the correct choice. Even without the rich result, the markup tells Google clearly that a page describes a software product.
 
 ## WebSite Schema with SearchAction
 
-WebSite schema defines your site as a whole, including its name and URL. When combined with SearchAction, it enables a search box to appear directly in your Google listing.
+WebSite schema defines your site as a whole, including its name and URL. It used to pair with SearchAction to show a search box inside your Google listing for branded searches.
 
-This feature is most useful for sites with robust internal search functionality. When a user searches for your brand, Google may display a search box that lets them query your site without clicking through first.
+Google removed the sitelinks search box in late 2024. The SearchAction markup no longer produces anything, so there is no benefit in building a search URL pattern for it.
 
-Implementing this schema requires defining your site's search URL structure. For example, if your search results appear at "example.com/search?q=query", you need to specify that pattern in the schema. Google will replace "query" with whatever the user types.
-
-WebSite schema should be added to your homepage or implemented globally. It only needs to appear once per site. The SearchAction component is optional but recommended if your site has a functional search feature.
-
-This schema does not directly impact rankings, but it improves user experience for branded searches. If someone is looking for your site specifically, the search box gives them faster access to the content they need.
+WebSite markup on its own is still harmless and still useful. It states your site name and URL in a form machines can read. Add it once to your homepage or load it globally, and skip the SearchAction part on new builds.
 
 ## Person Schema for Author Profiles
 
-Person schema defines an individual, typically an author or subject matter expert. It includes their name, job title, affiliation, and optionally a photo and social media profiles.
+Person schema defines an individual, typically an author or subject matter expert. It includes their name, job title, affiliation and optionally a photo and social profiles.
 
-Marking up authors ties content to real people, which supports Google's E-E-A-T framework. When you publish an article, linking it to a Person schema tells Google who wrote it and what their credentials are.
+Google does not show a visible Person rich result, so this markup has no direct effect on how your listing looks. Its value is clarity. It ties your content to a named, real person and links to places that confirm who they are.
 
-Apply Person schema to author bio pages or embed it within Article schema. If your blog has multiple contributors, each should have a Person schema entry. The schema should include their name, a brief description of their role or expertise, and a link to their profile page if available.
+Apply Person schema to author bio pages or embed it within Article schema. If your blog has multiple contributors, each should have an entry with a name, a brief description of their role and a link to their profile page.
 
-If your authors have published work elsewhere, you can include "sameAs" links to their LinkedIn profiles, Twitter accounts, or other verifiable presences. This helps Google confirm that the person is a real entity with a track record.
-
-Person schema is particularly important for sites in YMYL (Your Money or Your Life) categories. Health, finance, and legal content benefits from clear authorship and credential signals.
+If your authors have published work elsewhere, "sameAs" links to their LinkedIn profiles or other verifiable presences help confirm that the person is a real entity. This matters most for topics where readers need to trust who is speaking, such as health, finance and legal content.
 
 ## Organization Schema
 
-Organization schema defines your business or brand. It includes your name, logo, contact information, social media profiles, and other identifying details.
+Organization schema defines your business or brand. It includes your name, logo, contact information and social profiles.
 
-This schema is foundational. It tells Google who you are, which supports brand recognition across search results, Knowledge Panels, and other Google properties.
+Organization is a supported structured data type in Google's search gallery, and Google uses it for facts such as your logo and legal name. Accurate markup gives it the facts it needs and nothing more.
 
-Implement Organization schema globally, typically in your site's header or footer. The schema should include your official business name, logo URL, a description of what you do, and "sameAs" links to your verified social profiles (LinkedIn, Twitter, Facebook, etc.).
+Implement Organization schema globally. The markup should include your official business name, logo URL, a description of what you do and "sameAs" links to your verified social profiles. If your organization has a physical location, add the address.
 
-If your organization has a physical location, you can include address details. If you have a customer support phone number or email, those can be added as well.
+Organization schema works with other types. When you mark up an article, the publisher field should reference your Organization entry. When you mark up your authors, their affiliation should link back to it.
 
-Organization schema works in tandem with other schema types. When you mark up an article, the publisher field should reference your Organization schema. When you mark up your authors, their affiliation should link back to your organization.
-
-This creates a web of structured data that helps Google understand the relationships between your content, your team, and your brand.
+This creates a web of structured data that helps Google understand the relationships between your content, your team and your brand.
 
 ## Schema Types Compared
 
-| Schema type | Where to apply it | What it does in search |
+| Schema type | Where to apply it | What it does in search now |
 |---|---|---|
-| FAQPage | Pages with a visible set of questions and answers | Expandable FAQ accordions in the SERP |
-| Article and BlogPosting | All blog and editorial content | Supports freshness, authorship, and topical relevance |
-| HowTo | Guides and tutorials with sequential steps | Step-by-step lists in the SERP |
-| BreadcrumbList | Site-wide, especially posts and deep pages | Replaces the URL with a breadcrumb path |
-| SoftwareApplication | Software product and feature pages | Can show star ratings and pricing details |
-| WebSite with SearchAction | Homepage or global, once per site | Can show a search box for branded searches |
-| Person | Author bio pages or inside Article schema | Ties content to real people for E-E-A-T |
-| Organization | Global, in the header or footer | Supports brand recognition and Knowledge Panels |
+| FAQPage | Pages with a visible set of questions and answers | No rich result since May 7, 2026. Markup stays valid |
+| Article and BlogPosting | All blog and editorial content | Supported. Helps Google read freshness, authorship and topic |
+| HowTo | Guides with sequential steps | No rich result since 2023. Markup stays valid |
+| BreadcrumbList | Site-wide, especially posts and deep pages | Supported. Breadcrumb path shown on desktop |
+| SoftwareApplication | Software products with pricing and real reviews | Supported when it has a price and a rating or review |
+| WebSite with SearchAction | Homepage or global, once per site | Search box removed in 2024. WebSite still names your site |
+| Person | Author bio pages or inside Article schema | No visible result. Describes your authors to machines |
+| Organization | Global, in the header or footer | Supported. Gives Google your name, logo and profiles |
 
 ## Implementation Considerations
 
@@ -153,37 +145,43 @@ Schema markup can be added to your site in several ways. JSON-LD is the preferre
 
 Microdata and RDFa are older formats that embed schema directly into your HTML tags. These still work, but JSON-LD is cleaner and easier to maintain.
 
-Once you implement schema, validate it using Google's Rich Results Test tool. This checks whether your markup is formatted correctly and whether it qualifies for rich results. The tool will flag errors and warnings that need to be addressed.
+Once you implement schema, validate it using Google's Rich Results Test and the Schema.org validator. They flag errors and warnings that need to be fixed. Keep in mind that the Rich Results Test no longer reports on FAQ markup.
 
-After deployment, monitor your search performance in Google Search Console. The Enhancements section shows which pages have valid schema and whether they are generating rich results. If your markup is correct but rich results are not appearing, it may be because Google is not showing them for your query or your content does not meet quality thresholds.
+After deployment, check the rich result reports in Google Search Console. They show which pages have valid markup for the types Google still supports. If your markup is correct but a feature is not appearing, Google may not be showing it for your query, or your content may not meet its quality thresholds.
 
-Schema markup is not a guarantee of rich results. Google decides when and where to display them based on relevance, query intent, and content quality. But implementing schema correctly gives you the opportunity to earn those features when they are available.
+Schema markup is not a guarantee of anything. Google decides when and where to show a feature, and it can retire a feature entirely, as it has done several times. Implementing schema correctly keeps you eligible for what exists today and makes your pages easier to understand.
 
 ## Final Thoughts
 
-Schema markup is a technical investment that pays dividends over time. It improves how Google interprets your content, increases your visibility in search results, and provides users with richer, more informative search experiences.
+Schema markup is a modest technical investment that pays off over time. It improves how Google reads your content, and for a few supported types it improves how your listing looks.
 
-The schema types covered here represent the highest-value opportunities for most sites. FAQPage and HowTo generate visible rich snippets. Article and Person support content quality signals. BreadcrumbList and Organization reinforce your site structure and brand identity.
+The types covered here are the ones worth knowing for most sites. Article, BreadcrumbList and Organization still earn their place. Person and WebSite describe you to machines. FAQPage and HowTo are retired as rich results and can stay where they already exist.
 
-Start with the schema types that apply most directly to your content. If you publish blog posts, implement Article and Person first. If you answer common questions, add FAQPage. If you create tutorials, use HowTo.
+Start with the markup that matches your content. If you publish blog posts, implement Article and Person first. Add BreadcrumbList and Organization next. Add SoftwareApplication only for real software with real reviews.
 
-As your implementation matures, expand to supporting schema like BreadcrumbList, Organization, and WebSite. The goal is not to mark up everything possible, but to mark up what matters most accurately.
-
-When done correctly, schema markup becomes an invisible layer that makes your content easier to find, easier to understand, and more likely to be clicked.
+Check Google's documentation before you build around any feature. The list of supported types has changed every year since 2023, and the safest approach is to mark up what is true about your pages and treat any visible feature as a bonus.
 
 ## Questions that come up often
 
 ### What are the main types of schema in SEO?
 
-The ones worth most sites' time are FAQPage, Article or BlogPosting, HowTo, BreadcrumbList, SoftwareApplication, WebSite, Person, and Organization. Some produce visible rich results, others help Google understand who you are and what you publish. You do not need all of them on day one.
+The ones worth most sites' time are Article or BlogPosting, BreadcrumbList, Organization, Person, WebSite and, for real software products, SoftwareApplication. FAQPage and HowTo are still valid types, but Google no longer shows rich results for them.
 
 ### Does schema markup help SEO?
 
-It helps Google interpret your content and can earn rich results that take up more space and draw more clicks. Some types, like WebSite, do not directly affect rankings. Think of it as making your pages easier to read for a machine that is doing the ranking.
+It helps Google interpret your content, and a few supported types can change how your listing looks. It does not rank a page on its own, and Google does not guarantee that any feature will appear. Think of it as making your pages easier to read for a machine.
+
+### Is FAQ schema still worth using?
+
+Not for rich results. Google stopped showing FAQ rich results on May 7, 2026, for every site. The markup is still valid and Google says it can stay in place, so you do not need to remove it. Write FAQ sections for your readers and treat any markup as optional.
+
+### Did Google remove HowTo rich results?
+
+Yes. Google stopped showing HowTo rich results in 2023 on both desktop and mobile and removed its documentation. The markup is harmless, but it no longer changes how a result looks.
 
 ### Which schema types should I implement first?
 
-Match them to your content. A blog should start with Article and Person, a page that answers common questions should add FAQPage, and tutorials should use HowTo. Get those right before you add BreadcrumbList, Organization, and WebSite.
+Match them to your content. A blog should start with Article and Person, then add Organization and BreadcrumbList. Add SoftwareApplication only if you sell or publish software with genuine reviews.
 
 ### What format should schema markup use?
 
@@ -191,7 +189,7 @@ JSON-LD. It sits in a script tag in the page head or body, separate from your vi
 
 ### Why is my schema valid but not showing rich results?
 
-Google decides when to show rich results based on relevance, query intent, and content quality. Correct markup makes you eligible, it does not guarantee a feature. Check the Enhancements section in Search Console to confirm Google sees it, then be patient.
+Google decides when to show a feature based on relevance, query intent and content quality, and some features no longer exist. Correct markup makes you eligible, it does not guarantee a feature. Check the rich result reports in Search Console to confirm Google sees your markup, then be patient.
 
 
 ---
