@@ -10,6 +10,7 @@
 import Layout from '../../layouts/Layout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CtaBand from '../../components/CtaBand.astro';
+import { breadcrumbJson } from '../../lib/schema';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -37,6 +38,7 @@ const embedUrl = d.videoUrl ? toEmbedUrl(d.videoUrl) : null;
 ---
 
 <Layout title={d.seoTitle ?? d.title} description={d.description}>
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],[d.title,'/case-studies/'+entry.slug]])} />
   <PageHero
     eyebrow="Case study"
     title={d.title}

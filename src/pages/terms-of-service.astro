@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import PageHero from '../components/PageHero.astro';
+import { breadcrumbJson } from '../lib/schema';
 ---
 
 <Layout
@@ -8,6 +9,7 @@ import PageHero from '../components/PageHero.astro';
   description="The terms that apply when you use davidjforer.com or its content, including the limits of liability. Read them before booking a call or using any download."
   image="/images/social-default.webp"
 >
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['Terms of Service','/terms-of-service']])} />
   {/* Blue hero band built with divs */}
   <PageHero title="Terms of Service" accent="Terms" />
 

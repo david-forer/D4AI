@@ -2,10 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import PageHero from '../components/PageHero.astro';
 import CtaBand from '../components/CtaBand.astro';
+import { breadcrumbJson } from '../lib/schema';
 ---
 
 <Layout title="About David Forer | AI SEO and AI Operations"
 description="Discover how David leverages AI to streamline operations and boost SEO. Learn about his journey, expertise, and approach to transforming chaos -> scalable systems.">
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['About','/about']])} />
 	<div class="mx-auto w-full text-black text-xl leading-relaxed">
 	
 

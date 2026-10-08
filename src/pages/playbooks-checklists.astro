@@ -43,10 +43,12 @@ const faqs = [
   { q: 'Who are these for?', a: "Founders of service businesses with 5 to 20 people and no ops manager. If you're the person everyone asks where things are, these are for you." },
   { q: 'What happens after I sign up?', a: 'I email you the playbooks myself. If you reply with a question, I read it and answer it.' },
 ];
+import { breadcrumbJson } from '../lib/schema';
 ---
 
 <Layout title="Playbooks and Checklists for Small Business Owners"
 description="10 free AI playbooks and checklists for small business owners. Each one takes a job your team does by hand, like lead intake or client onboarding, and shows you how to automate it.">
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['Playbooks and Checklists','/playbooks-checklists']])} />
 	<PageHero
 		align="center"
 		eyebrow="Free for founders"

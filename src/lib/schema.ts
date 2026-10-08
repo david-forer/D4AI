@@ -15,3 +15,36 @@ export function breadcrumbJson(items: [string, string][]): string {
     })),
   });
 }
+
+// Service with one or more Offers. offers is [name, minPrice, maxPrice]. Prices
+// are USD and must match the visible page copy.
+export function serviceJson(
+  name: string,
+  path: string,
+  description: string,
+  offers: [string, number, number][] = [],
+): string {
+  const node: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name,
+    url: `${SITE}${path}`,
+    description,
+    provider: { '@type': 'Person', name: 'David J. Forer', url: SITE },
+    areaServed: { '@type': 'Country', name: 'United States' },
+  };
+  if (offers.length) {
+    node.offers = offers.map(([oname, min, max]) => ({
+      '@type': 'Offer',
+      name: oname,
+      url: `${SITE}${path}`,
+      priceCurrency: 'USD',
+      ...(min === max
+        ? { price: min }
+        : { priceSpecification: { '@type': 'PriceSpecification', priceCurrency: 'USD', minPrice: min, maxPrice: max } }),
+      availability: 'https://schema.org/InStock',
+    }));
+  }
+  return JSON.stringify(node);
+}
+
