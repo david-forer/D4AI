@@ -137,28 +137,31 @@ const organization = {
   founder: { '@id': `${SITE}/#person` },
   slogan: 'Where AI fits, where it does not, and what to do next',
   areaServed: { '@type': 'Country', name: 'United States' },
-  audience: {
-    '@type': 'BusinessAudience',
-    name: 'US founder-led businesses',
-    description:
-      'Founder-led businesses in the United States, roughly between $1M and ' +
-      '$5M in annual revenue, usually 5 to 20 staff, with no dedicated ' +
-      'operations leader. Most often professional services, agencies, and ' +
-      'other businesses that sell time and expertise. Engagements run remotely ' +
-      'and are scheduled inside US business hours.',
-    yearlyRevenue: {
-      '@type': 'QuantitativeValue',
-      minValue: 1000000,
-      maxValue: 5000000,
-      unitText: 'USD per year',
-    },
-    numberOfEmployees: {
-      '@type': 'QuantitativeValue',
-      minValue: 5,
-      maxValue: 20,
-    },
-  },
   knowsLanguage: 'en',
+};
+
+// `audience` is not a valid property of Organization in schema.org, so it hangs
+// off each Service in the full payload instead.
+const audience = {
+  '@type': 'BusinessAudience',
+  name: 'US founder-led businesses',
+  description:
+    'Founder-led businesses in the United States, roughly between $1M and ' +
+    '$5M in annual revenue, usually 5 to 20 staff, with no dedicated ' +
+    'operations leader. Most often professional services, agencies, and ' +
+    'other businesses that sell time and expertise. Engagements run remotely ' +
+    'and are scheduled inside US business hours.',
+  yearlyRevenue: {
+    '@type': 'QuantitativeValue',
+    minValue: 1000000,
+    maxValue: 5000000,
+    unitText: 'USD per year',
+  },
+  numberOfEmployees: {
+    '@type': 'QuantitativeValue',
+    minValue: 5,
+    maxValue: 20,
+  },
 };
 
 const website = {
@@ -208,6 +211,7 @@ export const agentInfoPayload = {
             url: `${SITE}${s.path}`,
             description: s.description,
             provider: { '@id': `${SITE}/#organization` },
+            audience,
           },
         })),
       },
