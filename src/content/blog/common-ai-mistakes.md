@@ -3,6 +3,7 @@ title: "10 Mistakes Employees Make When Using AI (And How Training Fixes Them)"
 seoTitle: "Common AI Mistakes | 10 Your Team Makes | David J Forer"
 description: "The ten things people actually get wrong with AI at work, from pasting client data into a chatbot to shipping output nobody checked, and the fix for each."
 pubDate: 2025-12-17T00:00:00Z
+updatedDate: 2026-10-08T00:00:00Z
 tags: ["ai-readiness"]
 heroImage: "/images/blog/common-ai-mistakes.webp"
 articleType: "cluster"
@@ -492,6 +493,18 @@ Build this framework into onboarding and refresher training. Include real exampl
 - Tasks where AI was inappropriate
 
 Employees learn faster from concrete examples than abstract rules.
+
+## A Survey Bot That Clients Ignored
+
+A services company with dozens of clients set up an automated survey that went out to each client after every session. The aim was to catch concerns early. It was a sound idea and it saved the team a lot of time.
+
+At an all-hands, a team member said some clients were ignoring the survey account because it looked like the AI agents that reply in social media comments. He suggested the message come from a real person. A second team member said automated messages get ignored when they do not come from a human, and that he now sends a personal note right after the bot's.
+
+The founder had a fair answer. Happy clients rarely leave feedback and unhappy ones do, so the bot gives people a place to say it. Someone else suggested checking in personally with the clients who had gone quiet.
+
+One more detail made it worse. Nobody could read the bot account's direct messages. Any client who did reply went into a box no one checked.
+
+The mistake was not using automation. It was sending a message to a customer that looked automated, then never reading what came back. Send automated messages from a person's name, point replies to an inbox someone reads, and treat silence as information.
 
 ## Developing a "Correction Culture"
 

@@ -3,6 +3,7 @@ title: "Shadow AI is Already in Your Company: Here's How to Fix It with Proper L
 seoTitle: "Shadow AI | Find the Tools Nobody Approved | David J Forer"
 description: "Your team is already using AI you never approved. Why banning it fails, how to find what is in use, and how to bring it under something you govern."
 pubDate: 2025-12-17T00:00:00Z
+updatedDate: 2026-10-08T00:00:00Z
 tags: ["ai-governance"]
 heroImage: "/images/blog/blind-spot.webp"
 articleType: "cluster"
@@ -57,6 +58,16 @@ Monitor productivity patterns for unusual efficiency spikes. If a team member wh
 Look for consistency in output style across different team members. When three different writers produce documents with identical structure, the same transition phrases, or the same stock adjectives, you are seeing the fingerprint of one AI tool used without post-editing guidance.
 
 Survey your employees directly. Create psychological safety around the conversation by positioning AI tools as productivity enhancers rather than prohibited technology. Ask what tools people are using, why they're using them, and what problems those tools solve. The answers will show you exactly where your official processes are failing.
+
+## What Shadow AI Looked Like in an Audit
+
+In an operations audit I performed for a small agency, one senior team member was using ChatGPT on his own judgment to write product descriptions for a client with thousands of products. His prompt generated a unique description for each item. He did not read them all. He only checked that they were unique.
+
+I found no review rule, no approval step and no policy for this. He described it openly, as ordinary work.
+
+The same person told me why this kind of use stays quiet. He spends a good share of his own pay on side experiments with tools and courses, and he often keeps ideas to himself. His words were that if he raises one, it becomes his burden. Share an idea and you get handed the project.
+
+That is the shadow AI problem in one story. The tool use was smart and fast. It also sat entirely inside one person with no check on accuracy, only on uniqueness, because nothing in the company asked him to do more. If you want people to bring their AI use into the open, give them a way to share it that does not turn into extra work for them.
 
 ## The "Ban vs. Enable" Debate
 

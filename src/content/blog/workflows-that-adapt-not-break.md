@@ -3,6 +3,7 @@ title: "How to Design Workflows That Adapt Instead of Breaking"
 seoTitle: "Workflow Design | Build Ones That Bend | David J Forer"
 description: "Describes why brittle workflows fail and outlines practical design principles for building resilient, adaptable processes that handle change gracefully."
 pubDate: 2025-12-09T00:00:00Z
+updatedDate: 2026-10-08T00:00:00Z
 tags: ["workflow-systems"]
 heroImage: "/images/blog/false-reliance.webp"
 articleType: "cluster"
@@ -37,6 +38,16 @@ Understanding failure modes helps you design against them.
 **No exception handling.** The workflow assumes everything will go right. When something goes wrong, there is no defined response. Work simply stops or goes into an undefined state.
 
 Each of these failure modes is avoidable with thoughtful design. The principles below address them directly.
+
+## A Rigid Onboarding That Broke When Work Piled Up
+
+In an operations audit I performed for a small agency, the head of web development described what happens when the work arrives in a bunch. When two big websites were built at the same time, the team could not do small tasks for other clients. When several new clients come in together, everyone focuses on them for the first couple of weeks and loses touch with the existing clients.
+
+Nothing in the process was wrong when work arrived one client at a time. It broke because every new client started the moment they signed. There was no way to delay a start, and no bench of contractors to absorb a spike.
+
+The fix noted in the audit was small. Be able to delay an onboarding by about two weeks, or keep a waitlist. A part-time assistant had already helped. The head of web development put it this way: "We need an option to delay an onboarding for a couple weeks."
+
+That is what adapting looks like in practice. The process did not need a rebuild. It needed one adjustable setting, a start date that could move.
 
 ## Principle One: Build Modular Systems
 
