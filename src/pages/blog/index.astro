@@ -24,6 +24,7 @@ const endIndex = POSTS_PER_PAGE;
 const paginatedPosts = sortedPosts.slice(startIndex, endIndex);
 
 // Default image for posts without a hero image
+import { thumbSrc } from '../../lib/thumb.js';
 const defaultPostImage = "/images/ai-operations-logo.webp";
 
 // Define categories for the navigation
@@ -94,7 +95,7 @@ import { breadcrumbJson } from '../../lib/schema';
               <div class="group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-100">
                 <div class="relative aspect-[16/9] overflow-hidden bg-blue-100">
                   <img
-                    src={post.data.heroImage || defaultPostImage}
+                    src={thumbSrc(post.data.heroImage || defaultPostImage)}
                     alt={post.data.title}
                     loading={i === 0 ? "eager" : "lazy"}
                     decoding="async"

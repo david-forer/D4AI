@@ -23,6 +23,7 @@ const filteredPosts = allPosts
   .filter((post) => post.data.tags?.[0] === category)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
+import { thumbSrc } from '../../../lib/thumb.js';
 const defaultPostImage = "/images/ai-operations-logo.webp";
 ---
 
@@ -94,7 +95,7 @@ const defaultPostImage = "/images/ai-operations-logo.webp";
             <div class="group overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow border border-gray-100 bg-white">
               <div class="relative aspect-[16/9] overflow-hidden bg-blue-100">
                 <img
-                  src={post.data.heroImage || defaultPostImage}
+                  src={thumbSrc(post.data.heroImage || defaultPostImage)}
                   alt={post.data.title}
                   loading={i === 0 ? "eager" : "lazy"}
                   decoding="async"
