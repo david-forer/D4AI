@@ -210,6 +210,9 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
                         
+		{/* Prefetch internal pages on hover. Browser-native, so no script to load.
+		    Chromium acts on it, other browsers ignore it. */}
+		<script type="speculationrules" is:inline set:html={JSON.stringify({ prefetch: [{ where: { and: [{ href_matches: "/*" }, { not: { href_matches: ["/thank-you*", "/thankyou*", "/api/*"] } }] }, eagerness: "moderate" }] })} />
 	</head>
 	<body>
 		<Navigation />
