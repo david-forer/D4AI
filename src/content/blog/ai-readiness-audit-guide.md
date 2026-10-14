@@ -1,167 +1,135 @@
 ---
 title: "AI Readiness Audit for Small Businesses"
 seoTitle: "AI Readiness Audit | See What to Fix First | David J Forer"
-description: "How an AI readiness audit reads your data, systems, skills and governance, so you know which use cases to fund first and which to leave alone."
+description: "What an AI readiness audit checks in a business of 5 to 20 people, the questions it asks, what it costs and what you get, with two real audits."
 pubDate: 2025-12-09T00:00:00Z
+updatedDate: 2026-10-15T00:00:00Z
+faqSchema: true
 tags: ["ai-readiness"]
 heroImage: "/images/blog/backwards-ai-audit.webp"
 articleType: "cluster"
 ---
 
-## Start with your business, not the tools, and you avoid expensive dead ends
+An AI readiness audit is a short, structured look at how your business runs, done before you spend more on AI tools. For a company of 5 to 20 people it takes about a week and ends with a ranked list of what to fix first and where AI fits.
 
-Most businesses approach AI backwards. They start with the technology, pick a tool that sounds promising, and then try to figure out where it fits. A few months later, the subscription sits unused and the team is more skeptical than before.
+I run these audits for founder-led businesses with no operations lead. This page covers what the audit checks, what it found in two real businesses, what it costs and what you walk away with.
 
-An AI readiness audit flips this approach. It starts with your business, your processes, your data, and your people. Only then does it ask what AI can actually do for you.
+## Why Small Businesses Need One Before They Buy More Tools
 
-## Understanding AI Readiness as a Strategic Foundation
+Most small businesses already use AI, and most of that use is one person working faster. In the US Chamber of Commerce Foundation's May 2026 survey, 64% of small business workers who use AI said their main use was personal productivity. Only 6% had used it to automate a workflow with minimal human involvement ([US Chamber of Commerce Foundation](https://www.uschamberfoundation.org/workforce/half-of-small-business-workers-use-ai-most-to-boost-productivity-not-automate-jobs)). Only 14% of businesses in the Goldman Sachs 10,000 Small Businesses network said AI was fully embedded in their core operations ([Goldman Sachs](https://www.goldmansachs.com/pressroom/press-releases/2026/small-businesses-embrace-ai-but-need-training-and-support-to-fully-harness-it)).
 
-### What Is AI Readiness and Why It Matters for Small Businesses
+The rules trail the use. Nationwide's 2026 survey found 36% of small and mid-market owners had written policies for employee AI use, and 27% had rules on what company or customer information can go into AI tools. 35% believed employees were already using AI tools nobody had approved ([Nationwide](https://www.prnewswire.com/news-releases/nationwide-survey-businesses-are-using-ai-faster-than-they-are-managing-its-risks-302879106.html)).
 
-AI readiness is your organization's capacity to adopt and benefit from artificial intelligence. It covers everything from how clean your data is to whether your team has the skills and willingness to work alongside automated systems.
+An audit shows where your business sits in those numbers. It finds where AI is already in use, which work AI can take on, which work needs a person, and what has to change before more people start using it. The full set of figures is on the [small business AI statistics](/research/small-business-ai-statistics) page.
 
-For small businesses, this matters more than it does for enterprises. Larger companies can absorb failed experiments. They have dedicated IT departments and change management teams. A business with 5 to 15 employees does not have that luxury. Every technology investment needs to pull its weight.
+## What an AI Readiness Audit Checks
 
-The good news is that smaller organizations often have advantages they overlook. Decision-making is faster. Processes are more visible. You can test something with a handful of people before rolling it out company-wide. An AI readiness audit helps you see these advantages clearly and build on them.
+Four areas, scored separately, because each one has to hold before the next can. The free [AI Readiness Snapshot](/ai-readiness-snapshot) scores the same four in about 5 minutes if you want a first read before booking anything.
 
-Without this foundation, AI adoption tends to follow a predictable pattern. Someone hears about a tool at a conference. The team tries it for a few weeks. It creates more work than it saves. Everyone moves on, slightly more convinced that AI is overhyped.
+### Process Clarity
 
-### Taking a Structured Approach to Measuring AI Readiness
+Can someone other than the person who does the work run it from what is written down? In the ad agency audit below, I asked whether someone could cover the lead strategist's job for a week from the documentation. The answer was no, and the founder rated the company's documentation 4 out of 10.
 
-What does AI audit readiness require? Honest answers about your data, your systems, your people and the rules you set for using the tools. A proper audit examines several dimensions of your business. These typically include data quality, technology infrastructure, organizational culture, skills and training, governance, and strategic alignment.
+### Founder Dependency
 
-Each dimension gets assessed on a maturity scale. You might find that your data practices are reasonably strong while your change management capabilities need work. Or you might discover that your team is enthusiastic about AI but your current systems cannot support it.
+How much of the business runs through one head, and what does that cost? In the energy company audit below, the founder described playing five roles at 10 to 15 hours each. That is 50 to 75 hours a week of work running through one person.
 
-The goal is not to achieve perfection across every category before moving forward. That would take years and probably is not necessary. The goal is to understand where you are, identify the gaps that would block meaningful progress, and prioritize accordingly.
+### System Readiness
 
-Some companies use formal assessment frameworks. Others work through a series of structured questions with their leadership team. The format matters less than the honesty of the process. An audit that tells you what you want to hear is worthless.
+Can your tools connect to anything? Software that cannot export or integrate is a dead end for automation, and it is cheaper to learn that before you buy. At the ad agency, client work lived in a Google Sheet that the core team walked through in a 15-minute call every day. The plan was to turn what came up into Asana tasks afterward. The client success manager rated how often that happened at 3 out of 10.
 
-## Building an AI Strategy That Aligns With Business Goals
+### AI Practice
 
-### How to Align an AI Strategy With Long-Term Objectives
+Who uses AI, for which tasks, with what data and under which rules? Gains that stay with one person do not compound, and use nobody can see turns into risk. The audit also marks where a person reviews the output before it reaches a customer, moves money or informs a decision.
 
-AI strategy should emerge from business strategy, not the other way around. This sounds obvious, but it is easy to get this backwards when you are surrounded by noise about the latest capabilities.
+## Two Real Audits
 
-Start by articulating what your business is trying to accomplish over the next one to three years. Maybe you want to expand into a new market. Maybe you need to improve margins on existing services. Maybe you are preparing the business for sale or succession.
+Both are operations audits I performed. Each case study shows the working behind every figure.
 
-From there, identify the operational constraints that make these goals difficult. Perhaps your team spends too much time on repetitive admin work. Perhaps you lose deals because your proposal process takes too long. Perhaps quality issues keep cropping up because knowledge lives in people's heads rather than documented systems.
+### An Ad Agency That Stopped at 20 Clients
 
-Now you have a list of problems worth solving. AI might address some of them. Traditional process improvement might address others. Hiring might address others still. The point is that you are choosing AI applications based on strategic fit, not novelty.
+A performance ad agency with about $1M in revenue, 5 core staff and fewer than 20 clients. The audit took about a week. About two-thirds of revenue ran through one strategist whose method was not written down.
 
-### Identifying ROI Opportunities and Improving Operational Efficiency With AI
+The client ceiling was costing about $230,000 a year in revenue: 5 more clients at about $3,000 a month, plus 5 setup fees of about $10,000. That is revenue from 5 more signed clients, not profit. The daily catch-up call added up to about 240 hours a year (4 people, 15 minutes, 5 days a week, 48 weeks), because the task system did not hold the work.
 
-The clearest ROI opportunities usually fall into a few categories.
+The first recommendation was to put an operator in the seat. Read the full [case study on the ad agency client ceiling](/case-studies/ad-agency-client-ceiling).
 
-Time recovery is often the most accessible. If your team spends hours each week on tasks that could be automated or assisted by AI, you can calculate the value of those hours directly. A financial services firm might save 10 hours per week on report generation. At a loaded cost of $75 per hour, that is $39,000 annually from a single application.
+### An Energy Services Company Planning 3 to 5 Times Growth
 
-Error reduction is harder to quantify but often more valuable. Mistakes in quoting, invoicing, or compliance can cost thousands per incident. AI systems that catch inconsistencies or flag potential issues before they become problems deliver returns that compound over time.
+A founder-led energy services company with 42 employees, audited through 9 interviews and a survey. The founder was running five roles, and expansion paperwork for new states was landing on one senior leader at about 40 hours a week.
 
-Capacity expansion matters for growth-oriented businesses. If your current team is maxed out and you would need to hire to take on more clients, AI that extends their capacity changes the math on new business development.
+13 of the 42 employees gave a low score for regular goal setting, and the same number gave a low score for clear KPI targets. The team scored 4.62 out of 5 for being committed to quality work and 4.62 for understanding why their role matters. The people were strong. The goals, KPIs and decision rights had not kept up with the growth.
 
-Not every process is a good candidate. The best targets share a few characteristics: they are repetitive, they involve structured data or predictable inputs, they happen frequently enough to justify the setup effort, and the cost of errors is meaningful.
+Read the full [case study on the energy company founder bottleneck](/case-studies/energy-company-founder-bottleneck).
 
-## Assessing Data and Technological Infrastructure for AI
+## Six Questions the Audit Starts With
 
-### Evaluating Data Infrastructure for Effective AI Applications
+You can try these on your own business today.
 
-AI runs on data. The quality of your data infrastructure determines what AI can realistically do for your business.
+1. If you were out for two weeks, which work would stop?
+2. Which processes eat the most hours each week, and are they written down?
+3. Where does your customer data live, and can your tools export it?
+4. Which AI tools does your team use today, and who chose them?
+5. What can staff paste into an AI tool, and where is that rule written?
+6. Who reviews AI output before it reaches a customer?
 
-This does not mean you need a data warehouse or a dedicated analytics team. It means you need to understand what data you have, where it lives, how accurate it is, and whether it can be accessed programmatically.
+The 20-question version is the [AI readiness checklist for founders](/blog/ai-readiness-checklist-for-founders).
 
-Start with an inventory. Most small businesses have data scattered across several systems: a CRM, an accounting package, email, spreadsheets, shared drives, and various SaaS tools. Some of this data is well-structured and reliable. Some of it is a mess.
+## Where AI Fits and Where a Person Stays
 
-For AI applications to work, they generally need access to relevant data in a format they can process. If your customer information is split across three systems with no common identifier, an AI tool cannot easily build a complete picture of each customer relationship.
+The best targets for AI are repetitive, work from structured or predictable inputs, happen often enough to justify the setup and cost something when they go wrong. Re-keying invoices and copying data between two systems fit. Work that needs judgment stays with your people.
 
-The audit should identify which data sources are essential for your priority use cases, how clean and complete that data is, and what it would take to improve access. Sometimes the answer is simple integration work. Sometimes it reveals that you need to fix upstream data entry problems first.
+The value is easy to price once you have the hours. A financial services firm that saves 10 hours a week on report generation at a loaded cost of $75 an hour recovers about $39,000 a year from that one task. Your numbers will differ, and the audit calculates them from your own hours.
 
-### Modernizing Technological Infrastructure and ERP Systems
+Every audit marks where a person reviews the output. Anything that reaches a customer, moves money or makes a decision has a named reviewer before it goes out.
 
-Your existing technology stack shapes what is possible with AI. Older systems with limited APIs make integration difficult. Cloud-based platforms generally offer more flexibility.
+## What You Get at the End
 
-This does not mean you need to replace everything. Many businesses successfully layer AI capabilities on top of existing systems through middleware, automation platforms, or targeted integrations.
+- Process maps of the workflows we examined, yours to keep.
+- 3 to 6 high-impact opportunities grounded in how your work runs.
+- A phased roadmap that balances quick wins with longer builds.
+- A baseline measured before anything changes, so you can tell later whether it worked.
+- Guidance on whether training, process changes or automation should come next.
+- A review call to walk through the findings.
 
-The audit should map your current technology landscape, identify integration points that would be needed for priority AI use cases, and flag any systems that would create significant barriers.
+## How Long an AI Readiness Audit Takes and What It Costs
 
-ERP systems deserve particular attention. If your operations run through an older ERP with limited connectivity options, that becomes a constraint on the entire AI roadmap. Modern cloud ERPs typically offer better integration capabilities, but migration is a major undertaking that should not be driven solely by AI ambitions.
+The standard audit runs about 7 days. Preparation takes days 0 to 1, interviews days 1 to 2, analysis days 3 to 4, findings days 4 to 5, and the report and review call land by day 7.
 
-The practical question is usually whether your current systems can support the specific AI applications you are considering, not whether they meet some abstract standard of modernity.
+Pricing is fixed and agreed in writing before anything starts, with no retainer and no hourly billing. The 80/20 Process Audit is $750, takes 2 to 3 hours with you and is delivered the same or next day. The Quick Assessment is $1,500, takes 4 to 6 hours of interviews and runs a week. The Full AI Operations Audit is $4,000, takes 8 to 15 hours of interviews, runs two weeks and includes one working automation built during the audit week. See the options on the [AI readiness audit page](/ai-readiness-and-ai-audits).
 
-## Preparing Organizational Culture and Managing Change for AI Success
+## How to Prepare
 
-### Assessing Organizational Culture for AI Adoption
+You do not need to clean up your systems first. A list of the software you use and a walk through one recent job, from the signed agreement to the delivered result, covers most of it. The steps are in [how to prepare for an AI readiness audit](/blog/how-to-prepare-for-an-ai-readiness-audit), and [what to expect from an AI readiness audit](/blog/what-to-expect-from-an-ai-readiness-audit) shows what happens in each session.
 
-Technology implementation fails more often for cultural reasons than technical ones. An AI readiness audit needs to assess whether your organization is prepared to change how it works.
+## Questions Founders Ask About an AI Readiness Audit
 
-Some teams are curious about new tools and willing to experiment. Others are protective of existing processes and skeptical of anything that might threaten their expertise or job security. Most fall somewhere in between.
+### What Is an AI Readiness Audit for a Small Business?
 
-The audit should surface how your team has responded to previous technology changes, who the likely champions and resisters would be, and what concerns people have about AI specifically. Fear of job displacement is common but rarely the only issue. People also worry about being asked to learn new skills, losing autonomy, or having their work judged by systems they do not understand.
+It is a structured review of how your business runs, done before you buy AI tools. It checks your processes, your dependence on the founder, whether your systems can connect and how AI is used today, then ranks where AI should be applied first.
 
-Leadership attitude matters enormously. If executives treat AI as something the team needs to figure out without clear sponsorship and support, adoption will stall. If leadership demonstrates genuine commitment through investment, involvement, and patience, the organization typically follows.
+### How Long Does an AI Readiness Audit Take?
 
-### Mastering Change Management for AI Transformation
+The Quick Assessment runs about a week from start to finish. The 80/20 Process Audit is delivered the same or next day, and the Full AI Operations Audit takes two weeks.
 
-Change management takes more than a single event. It is a capability your organization either has or needs to build.
+### How Much Does an AI Readiness Audit Cost?
 
-Effective AI adoption usually follows a pattern: start small with a willing pilot group, demonstrate tangible value, incorporate feedback, expand gradually, and provide sustained support throughout.
+Fixed prices of $750, $1,500 or $4,000, depending on how many processes and people are in scope. The price is agreed in writing before the work starts.
 
-The audit should evaluate your organization's track record with change, identify what support structures exist for learning and adaptation, and recommend what needs to be in place before rolling out AI initiatives.
+### What Does AI Audit Readiness Require?
 
-Communication is often underestimated. People need to understand why the organization is pursuing AI, how it connects to business goals they care about, what it will and will not change about their work, and how they will be supported through the transition.
+Four things. Processes written down well enough for someone else to follow them, data your tools can reach, a written rule on which customer data can go into which AI tools, and a named person who reviews AI output. The audit shows which of the four you are missing.
 
-### Identifying Skill Gaps to Build an AI-Ready Workforce
+### Do I Need Clean Data Before an AI Readiness Audit?
 
-AI tools require new skills, though perhaps not the ones you might expect. Most small businesses do not need to hire data scientists or machine learning engineers. They need people who can work effectively alongside AI systems.
+No. The audit finds out what state your data is in and what it would take to improve access. Bring a list of your software and one recent job from start to finish.
 
-This includes skills like prompt engineering for generative AI tools, data literacy to understand what AI is actually doing with information, critical evaluation to catch AI errors and limitations, and workflow integration to incorporate AI into existing processes smoothly.
+### Is an AI Readiness Audit Worth It for a Business With Under 20 People?
 
-The audit should identify which roles will interact most heavily with AI systems, what skills those roles need that they currently lack, and how those gaps will be addressed. Options include training existing staff, hiring for new skills, or working with external partners who bring the expertise you need.
-
-## Governance, Risk Management, and AI Feasibility in Your Organization
-
-### Setting Up Governance and Risk Management for AI Initiatives
-
-AI introduces new categories of risk that most small businesses have not had to manage before. These include data privacy concerns, algorithmic bias, accuracy and reliability issues, security vulnerabilities, and regulatory compliance.
-
-The audit should assess what governance structures you need given your specific AI use cases and industry context. A healthcare-adjacent business faces different requirements than a marketing agency.
-
-At minimum, most organizations need clear policies about what data can be used with AI tools, processes for reviewing AI outputs before they reach customers or inform major decisions, and accountability for when things go wrong.
-
-This does not require creating a bureaucracy. For smaller organizations, governance often means designated individuals with specific responsibilities rather than formal committees. The point is that someone is thinking about these issues systematically.
-
-### Assessing AI Feasibility and Implementation Across Business Functions
-
-Not every function is equally ready for AI, and not every AI application is equally feasible. The audit should assess both dimensions.
-
-Some business functions have mature AI solutions available commercially. Customer service, marketing content creation, and data analysis fall into this category. Others have fewer proven options or require more customization.
-
-Feasibility also depends on your specific context. A use case might be technically possible but not practical given your data quality, integration complexity, or available budget. The audit should provide realistic assessments rather than optimistic projections about what AI can do in your particular situation.
-
-## Harnessing Generative AI and Learning from Industry Leaders
-
-### Integrating Generative AI into Your AI Readiness Audit
-
-Generative AI has changed the conversation. Tools like ChatGPT, Claude, and their enterprise variants have made AI accessible in ways that seemed like science fiction just a few years ago.
-
-For small businesses, generative AI often represents the fastest path to value. These tools can assist with content creation, customer communication, research and analysis, coding, and dozens of other tasks without requiring significant technical infrastructure.
-
-Your AI readiness audit should specifically address generative AI capabilities. This includes evaluating which tasks could benefit from generative AI assistance, what policies need to govern its use, how outputs will be reviewed and refined, and what training your team needs to use these tools effectively.
-
-The accessibility of generative AI can actually be a challenge. Because anyone can start using these tools immediately, organizations often end up with inconsistent practices, unmanaged data exposure, and quality issues. The audit helps establish intentional adoption rather than chaotic experimentation.
-
-### Lessons from Moderna: AI Readiness in Action
-
-Moderna offers an instructive example of AI readiness done well, even though their scale differs dramatically from most small businesses.
-
-The pharmaceutical company built AI capabilities systematically over several years before the pandemic. When they needed to develop a COVID-19 vaccine at record speed, that foundation proved essential. Their AI systems helped with everything from mRNA sequence design to manufacturing optimization to clinical trial management.
-
-Small businesses should not try to copy Moderna's technical sophistication. The takeaway is that readiness precedes opportunity. Moderna could move quickly because they had already done the groundwork on data infrastructure, talent development, and organizational culture.
-
-For smaller organizations, the principle translates directly. The businesses that benefit most from AI are those that have assessed their starting point, built the necessary foundations, and positioned themselves to act when the right opportunities emerge.
-
-An AI readiness audit is that starting point. It gives you clarity about where you are, what you need, and how to move forward with intention rather than improvisation.
+It depends on what is holding you back. The ad agency audit above priced a client ceiling at about $230,000 a year in revenue. The free [AI Readiness Snapshot](/ai-readiness-snapshot) takes 5 minutes and tells you whether a paid audit is worth booking.
 
 ---
 
-*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses)*
+Ready to see where your business stands? [Explore the AI readiness audit](/ai-readiness-and-ai-audits).
 
-Ready to assess where your business stands with AI? [Explore the AI readiness audit](/ai-readiness-and-ai-audits).
+*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) | [What an AI Readiness Audit Looks Like for Small, Founder-Led Teams](/blog/ai-readiness-audit-founder-led-teams) | [AI Readiness Checklist for Founders](/blog/ai-readiness-checklist-for-founders)*
