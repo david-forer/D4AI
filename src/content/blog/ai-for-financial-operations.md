@@ -29,7 +29,7 @@ This changes the nature of financial management at a small business. Instead of 
 
 Invoicing is one of the most automatable financial processes in a service business and one of the most frequently managed manually.
 
-AI-triggered invoicing generates invoices automatically based on project milestones, contract terms, or time periods. When a project reaches a defined completion point, the invoice is generated and queued for review. When a retainer period closes, the invoice goes out without anyone needing to initiate it.
+AI-triggered invoicing generates invoices automatically based on project milestones, contract terms, or time periods. When a project reaches a defined completion point, the invoice is generated and queued for review. When a retainer period closes, the invoice goes out without anyone needing to initiate it. The full invoicing workflow, including collections follow-up, is covered in [AI for invoicing and collections](/blog/ai-for-invoicing-and-collections).
 
 AR follow-up, the time-consuming process of chasing overdue payments, runs on automated sequences. A payment not received by the due date triggers a follow-up message. A second message follows at a defined interval. Escalation happens if the account remains unpaid past a threshold. The sequence runs without anyone maintaining a manual follow-up list.
 

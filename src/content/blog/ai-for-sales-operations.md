@@ -55,7 +55,7 @@ This layer changes the nature of your weekly sales review. Instead of assembling
 
 Proposals are one of the highest-cost sales activities in a service business. Hours of time to produce something that largely recycles language from previous proposals. Inconsistent framing depending on who writes them. Delayed turnaround when the founder is the bottleneck for getting them out.
 
-AI proposal generation builds from structured deal data (scope, pricing, client context, engagement type) and produces a draft that requires review and tailoring rather than construction from scratch. Turnaround drops from hours to minutes. Consistency improves because the system draws from a maintained template rather than whoever's memory happened to be sharpest that day.
+AI proposal generation builds from structured deal data (scope, pricing, client context, engagement type) and produces a draft that requires review and tailoring rather than construction from scratch. Turnaround drops from hours to minutes. Consistency improves because the system draws from a maintained template rather than whoever's memory happened to be sharpest that day. The [AI proposal writing](/blog/ai-for-proposal-writing) guide covers what to feed the model and which sections the founder should still write.
 
 Human review before anything goes to a client is non-negotiable. AI drafts, the founder or sales lead finalizes.
 

@@ -17,7 +17,7 @@ AI does not fix the culture questions in people operations. It does not make dif
 
 ## How Can AI Be Used in HR Operations?
 
-The highest-volume, most repetitive tasks in HR are strong candidates for AI assistance and automation. Screening applications. Scheduling interviews. Collecting documentation. Sending reminders. Generating job descriptions. Producing onboarding checklists. These consume real hours and produce inconsistent results when managed manually.
+The highest-volume, most repetitive tasks in HR are strong candidates for AI assistance and automation. Screening applications. Scheduling interviews. Collecting documentation. Sending reminders. Generating job descriptions. Producing onboarding checklists. These consume real hours and produce inconsistent results when managed manually. Hiring has its own workflow, covered in [AI for recruiting in a small business](/blog/ai-for-recruiting-small-business).
 
 Visibility gaps (not knowing where a hiring process stands, whether a new hire is on track, or whether a performance issue is being addressed) are addressable through structured tracking and automated check-ins rather than manual follow-up.
 
