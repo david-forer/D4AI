@@ -84,13 +84,13 @@ The AI layer sits above this. AI assists with work that requires interpretation,
 
 Understanding the dependencies between back-office functions is what makes the integrated design work.
 
-[Sales operations](/blog/ai-for-sales-operations) generates the pipeline and deal data that finance uses for revenue forecasting. When deals close, that information flows into project operations for resource allocation and into [financial operations](/blog/ai-for-financial-operations) for billing. The CRM is the source of truth that both functions read from.
+[Sales operations](/blog/ai-for-sales-operations) generates the pipeline and deal data that finance uses for revenue forecasting. When deals close, that information flows into project operations for resource allocation and into [financial operations](/blog/ai-for-financial-operations) for billing. The CRM is the source of truth that both functions read from. Proposals sit in the middle of that handoff, and [AI proposal writing](/blog/ai-for-proposal-writing) covers how to draft them from structured deal data.
 
 [Project management operations](/blog/ai-for-project-management-operations) generates the delivery data that finance uses for project billing and margin analysis. Time tracked against projects flows into billing triggers. Project health data flows into the capacity planning that informs HR about whether new resource is needed.
 
 [HR and people operations](/blog/ai-for-hr-and-people-operations) manages the capacity data that project operations uses for resource allocation. When someone joins or leaves, capacity changes. When capacity changes, project operations and finance both need to know.
 
-[Customer support operations](/blog/ai-for-customer-support-operations) generates the client interaction data that feeds into retention signals in the CRM. Recurring support issues surface in the product or delivery function as signals of upstream problems. Support volume by client tier informs the resource allocation for client management.
+[Customer support operations](/blog/ai-agents-for-customer-support) generates the client interaction data that feeds into retention signals in the CRM. Recurring support issues surface in the product or delivery function as signals of upstream problems. Support volume by client tier informs the resource allocation for client management.
 
 Every function generates data that another function can use. An integrated design makes that data flow automatically. A siloed design requires someone to manually extract and transfer it, which means it happens inconsistently, with delays, and with errors at every transfer point.
 
@@ -102,11 +102,11 @@ The right approach is sequential: build the integration backbone first, then add
 
 **Start with the core integration backbone.** Connect the three hub systems (CRM, project tool, accounting system) so data flows between them automatically. This foundational layer is what everything else builds on. It is the least glamorous part of the project and the most important.
 
-**Add the financial layer.** With the hubs connected, automated invoicing, AR follow-up, and financial reporting can be built on reliable data. The [AI for financial operations](/blog/ai-for-financial-operations) guide covers the specific workflows worth automating first. This layer often delivers the most immediate measurable return, which sustains momentum for the rest of the build.
+**Add the financial layer.** With the hubs connected, automated invoicing, AR follow-up, and financial reporting can be built on reliable data. The [AI for financial operations](/blog/ai-for-financial-operations) guide covers the specific workflows worth automating first. The [AI for invoicing and collections](/blog/ai-for-invoicing-and-collections) guide goes deeper on invoice creation and AR follow-up. This layer often delivers the most immediate measurable return, which sustains momentum for the rest of the build.
 
 **Add project operations.** Automated project setup, status tracking, milestone alerts, and profitability reporting build on the connected project and finance data. A full breakdown of the AI-assisted workflows available here is in the [AI for project management operations](/blog/ai-for-project-management-operations) guide.
 
-**Add HR and support.** These layers connect to the hubs that already exist, so they need no new infrastructure. [AI for HR and people operations](/blog/ai-for-hr-and-people-operations) and [AI for customer support operations](/blog/ai-for-customer-support-operations) both cover implementation sequencing for teams that have already built the core backbone.
+**Add HR and support.** These layers connect to the hubs that already exist, so they need no new infrastructure. [AI for HR and people operations](/blog/ai-for-hr-and-people-operations) and [AI agents for customer support](/blog/ai-agents-for-customer-support) both cover implementation sequencing for teams that have already built the core backbone. [AI for recruiting in a small business](/blog/ai-for-recruiting-small-business) covers the hiring side in more detail.
 
 **Add the intelligence and BI layer.** With clean, connected, current data across all functions, the AI layer has something real to work with. [AI for business intelligence](/blog/ai-for-business-intelligence-small-business) covers how to build automated reporting, anomaly detection, and on-demand analytical queries on top of a connected data foundation.
 

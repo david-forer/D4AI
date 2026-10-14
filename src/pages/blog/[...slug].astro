@@ -61,6 +61,37 @@ const jsonLd = JSON.stringify({
   }
 });
 
+// FAQPage JSON-LD, opt-in with faqSchema: true in the frontmatter. Built from the
+// last "## Questions ..." section, so the markup always matches the visible text.
+const stripMd = (t: string) => t
+  .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+  .replace(/[*_`]/g, '')
+  .replace(/\s+/g, ' ')
+  .trim();
+let faqJsonLd = '';
+if (entry.data.faqSchema) {
+  const m = entry.body.match(/^## Questions[^\n]*\r?\n([\s\S]*)$/m);
+  const items = (m ? m[1] : '')
+    .split(/^### /m)
+    .slice(1)
+    .map((chunk) => {
+      const [q, ...rest] = chunk.split(/\r?\n/);
+      return { q: stripMd(q), a: stripMd(rest.join(' ')) };
+    })
+    .filter((x) => x.q && x.a);
+  if (items.length) {
+    faqJsonLd = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: items.map((x) => ({
+        '@type': 'Question',
+        name: x.q,
+        acceptedAnswer: { '@type': 'Answer', text: x.a },
+      })),
+    });
+  }
+}
+
 // Format the publication date
 const formattedDate = new Date(entry.data.pubDate).toLocaleDateString('en-US', {
   year: 'numeric',
@@ -86,6 +117,7 @@ import { breadcrumbJson } from '../../lib/schema';
       last error" on 137 blog pages because of it. A script is valid flow
       content inside the body and Google reads JSON-LD from either position. */}
   <script is:inline type="application/ld+json" set:html={jsonLd} />
+  {faqJsonLd && <script is:inline type="application/ld+json" set:html={faqJsonLd} />}
   <div>
     {/* Hero Section */}
     <PageHero size="post" align="center" title={entry.data.title}>

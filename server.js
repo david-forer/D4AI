@@ -46,6 +46,9 @@ const redirects = {
   '/blog/how-to-prepare-for-an-ai-consultant':        '/blog/are-you-ready-to-hire-an-ai-consultant',
   '/blog/what-to-expect-first-90-days-ai-engagement': '/blog/what-does-an-ai-consultant-do',
   '/blog/after-your-ai-engagement-long-term-results': '/blog/realistic-results-from-ai-consulting',
+  // Customer support merge on 2026-10-14
+  '/blog/ai-for-customer-support-operations':       '/blog/ai-agents-for-customer-support',
+  '/blog/customer-support-using-ai':                '/blog/ai-agents-for-customer-support',
   // Old "about" URLs
   '/about-me':                                      '/about',
 

@@ -36,6 +36,9 @@ export const collections = {
       image: z.string().optional(),
       articleType: z.enum(['pillar', 'cluster', 'supporting']).optional(),
       seoTitle: z.string().optional(),
+      // Optional. true builds FAQPage JSON-LD from the "Questions" section at
+      // the end of the post, using the same question and answer text shown on the page.
+      faqSchema: z.boolean().optional(),
     }),
   }),
   'builds': defineCollection({

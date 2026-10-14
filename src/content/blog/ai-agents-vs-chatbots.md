@@ -104,7 +104,7 @@ A chatbot that reads your documentation and answers questions raises modest ques
 
 For firms handling client data under any professional obligation, this is the deciding factor more often than capability is. The right sequence is to write down what a system is allowed to do before you give it the ability to do it, which is the argument running through [AI governance for small businesses](/blog/ai-governance-for-small-businesses). Firms that deploy first and govern after end up rewriting policy under pressure, usually after an incident.
 
-There is a practical middle setting that most small firms should start in. The agent does the work and proposes the action, a human approves in one click, and the approval log becomes the evidence you need before widening its autonomy. Support workloads run this way well, and the same staged approach applies to the broader question of [customer support using AI](/blog/customer-support-using-ai).
+There is a practical middle setting that most small firms should start in. The agent does the work and proposes the action, a human approves in one click, and the approval log becomes the evidence you need before widening its autonomy. Support workloads run this way well, and the same staged approach applies to the broader question of [AI agents for customer support](/blog/ai-agents-for-customer-support).
 
 ---
 
