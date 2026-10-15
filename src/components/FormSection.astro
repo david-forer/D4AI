@@ -12,7 +12,9 @@
  * and its field list. It does not pass colours, padding or width. That is the
  * whole point: matching by construction rather than by copy-paste.
  *
- * The form body is LeadForm, which posts straight to Formbricks. See that file
+ * Since 2026-10-15 the form opens in a popup (native dialog) from a button, instead
+ * of sitting inline. The band around it is a light section so it never blends
+ * into the navy footer. The form body is LeadForm, which posts straight to Formbricks. See that file
  * for the questionId traps, especially the positional contactInfo array.
  */
 import LeadForm from './LeadForm.astro';
@@ -51,38 +53,20 @@ const {
 } = Astro.props;
 ---
 
-{layout === 'split' ? (
-<section id={id} class="bg-blue-800 w-full py-16 px-4 sm:px-6 lg:px-12 scroll-mt-20">
-  <div class="max-w-6xl mx-auto lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
-    <div class="text-white mb-10 lg:mb-0">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">{heading}</h2>
-      {blurb && <p class="text-lg text-blue-100 mb-6 leading-relaxed">{blurb}</p>}
-      <slot />
-    </div>
-
-    <div class="bg-white rounded-xl p-6 shadow-lg">
-      <LeadForm
-        formId="section"
-        surveyId={surveyId}
-        fields={fields}
-        buttonText={buttonText}
-        successHeading={successHeading}
-        successBody={successBody}
-        successHref={successHref}
-        successLinkText={successLinkText}
-        compact
-      />
-    </div>
+<section id={id} class="w-full py-24 px-4 sm:px-6 lg:px-12 scroll-mt-20" style="background:linear-gradient(135deg,#ffa04d 0%,#ff7a1f 45%,#f05a00 100%);color:#0a1630;">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6" style="color:#0a1630;">{heading}</h2>
+    {blurb && <p class="text-2xl mb-10 leading-relaxed" style="color:#0a1630;">{blurb}</p>}
+    <div class="text-left text-lg" style="color:#0a1630;"><slot /></div>
+    <button type="button" data-open-form class="mt-2 inline-flex items-center justify-center min-h-[64px] px-12 rounded-full font-bold text-2xl shadow-lg transition hover:brightness-110" style="background:#0a1630;color:#fff;">{buttonText} <span aria-hidden="true" class="ml-2">&rarr;</span></button>
   </div>
-</section>
-) : (
-<section id={id} class="bg-blue-800 w-full py-16 px-4 sm:px-6 lg:px-12">
-  <div class="max-w-2xl mx-auto">
-    <h2 class="text-3xl font-bold mb-3 text-center text-white">{heading}</h2>
 
-    {blurb && <p class="text-center text-blue-100 mb-8 leading-relaxed">{blurb}</p>}
-
-    <div class="bg-white rounded-xl p-8 shadow-lg">
+  <dialog data-form-dialog class="form-dialog rounded-xl p-0 w-[min(92vw,560px)] max-h-[90vh] overflow-y-auto shadow-2xl">
+    <div class="p-6 sm:p-8">
+      <div class="flex items-start justify-between gap-4 mb-4">
+        <h3 class="text-2xl font-bold text-gray-900">{heading}</h3>
+        <button type="button" data-close-form aria-label="Close" class="text-gray-500 hover:text-gray-900 text-3xl leading-none">&times;</button>
+      </div>
       <LeadForm
         formId="section"
         surveyId={surveyId}
@@ -94,6 +78,21 @@ const {
         successLinkText={successLinkText}
       />
     </div>
-  </div>
+  </dialog>
 </section>
-)}
+
+<style>
+  .form-dialog::backdrop { background: rgba(10, 22, 48, 0.6); }
+  .form-dialog :global(button[type='submit']) { background: #ff7a1f; color: #0a1630; font-size: 18px; }
+  .form-dialog :global(button[type='submit']:hover) { background: #ff9347; }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('section:has([data-form-dialog])').forEach((sec) => {
+    const dlg = sec.querySelector<HTMLDialogElement>('[data-form-dialog]');
+    if (!dlg) return;
+    sec.querySelector('[data-open-form]')?.addEventListener('click', () => dlg.showModal());
+    sec.querySelector('[data-close-form]')?.addEventListener('click', () => dlg.close());
+    dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+  });
+</script>

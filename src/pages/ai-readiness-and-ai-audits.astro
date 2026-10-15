@@ -8,7 +8,7 @@ const pageUrl = 'https://davidjforer.com/ai-readiness-and-ai-audits';
 
 // Bump when the page content materially changes. A dateModified that never
 // moves is worse than none.
-const dateModified = '2026-09-12';
+const dateModified = '2026-10-15';
 
 // Mirrors the visible FAQ section verbatim. Google requires the marked-up
 // answer to match what a visitor actually reads, so edit both or neither.
@@ -293,6 +293,53 @@ image="/images/ai-audit.webp"
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    {/* Checklist, questions and scorecard. Added 2026-10-15. The four areas and the
+         six questions mirror /blog/ai-readiness-audit-guide, change both or neither. */}
+    <section id="checklist" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-bold text-blue-700 mb-4 text-center">AI Readiness Audit Checklist, Questions and Scorecard</h2>
+            <p class="text-xl text-gray-700 mb-12 text-center max-w-3xl mx-auto">The audit scores four areas and starts from six questions. You can run both on your own business today. Treat the result as a first read, because the audit exists to check the answers you cannot check yourself.</p>
+
+            <h3 class="text-3xl font-bold text-gray-800 mb-8 text-center">The four-area scorecard</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-2xl font-bold text-gray-800 mb-3">Process clarity</h4>
+                    <p class="text-lg text-gray-700 mb-4">Could someone other than the person who does the work run it from what is written down?</p>
+                    <ul class="border-t border-gray-100 pt-4 space-y-1 list-none"><li class="text-lg text-gray-700 mb-1"><strong>Ready:</strong> the top processes are documented and current.</li><li class="text-lg text-gray-700 mb-1"><strong>Partly:</strong> documented, but out of date or incomplete.</li><li class="text-lg text-gray-700 mb-1"><strong>Not yet:</strong> the work lives in people's heads.</li></ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-2xl font-bold text-gray-800 mb-3">Founder dependency</h4>
+                    <p class="text-lg text-gray-700 mb-4">How much of the business runs through one person, and what does that cost in hours?</p>
+                    <ul class="border-t border-gray-100 pt-4 space-y-1 list-none"><li class="text-lg text-gray-700 mb-1"><strong>Ready:</strong> decisions and handoffs run without you.</li><li class="text-lg text-gray-700 mb-1"><strong>Partly:</strong> your team handles routine work but escalates most decisions.</li><li class="text-lg text-gray-700 mb-1"><strong>Not yet:</strong> work stops when you are out.</li></ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-2xl font-bold text-gray-800 mb-3">System readiness</h4>
+                    <p class="text-lg text-gray-700 mb-4">Can your tools connect to anything, or are they a dead end for automation?</p>
+                    <ul class="border-t border-gray-100 pt-4 space-y-1 list-none"><li class="text-lg text-gray-700 mb-1"><strong>Ready:</strong> your main tools export data and integrate.</li><li class="text-lg text-gray-700 mb-1"><strong>Partly:</strong> some do, some do not.</li><li class="text-lg text-gray-700 mb-1"><strong>Not yet:</strong> key work lives in spreadsheets and inboxes.</li></ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-2xl font-bold text-gray-800 mb-3">AI practice</h4>
+                    <p class="text-lg text-gray-700 mb-4">Who uses AI, for which tasks, with what data and under which rules?</p>
+                    <ul class="border-t border-gray-100 pt-4 space-y-1 list-none"><li class="text-lg text-gray-700 mb-1"><strong>Ready:</strong> approved tools, a written rule on data, a named reviewer.</li><li class="text-lg text-gray-700 mb-1"><strong>Partly:</strong> people use AI, with no shared rules.</li><li class="text-lg text-gray-700 mb-1"><strong>Not yet:</strong> nobody knows who uses what.</li></ul>
+                </div>
+            </div>
+
+            <h3 class="text-3xl font-bold text-gray-800 mb-8 text-center">Six questions the audit starts with</h3>
+            <div class="bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto">
+                <ol class="list-decimal list-inside space-y-4 text-xl text-gray-800">
+                    <li>If you were out for two weeks, which work would stop?</li>
+                    <li>Which processes eat the most hours each week, and are they written down?</li>
+                    <li>Where does your customer data live, and can your tools export it?</li>
+                    <li>Which AI tools does your team use today, and who chose them?</li>
+                    <li>What can staff paste into an AI tool, and where is that rule written?</li>
+                    <li>Who reviews AI output before it reaches a customer?</li>
+                </ol>
+            </div>
+
+            <p class="text-center text-xl text-gray-700 mt-10 max-w-3xl mx-auto">Mostly "Not yet" is the normal starting point for a business this size, and it is what the audit is for. For the longer version, use the <a href="/blog/ai-readiness-checklist-for-founders" class="text-blue-700 font-bold hover:underline">20-question AI readiness checklist for founders</a>, or read the full <a href="/blog/ai-readiness-audit-guide" class="text-blue-700 font-bold hover:underline">AI readiness audit guide</a>. A faster option is the <a href="/ai-readiness-snapshot" class="text-blue-700 font-bold hover:underline">5 minute AI Readiness Snapshot</a>.</p>
         </div>
     </section>
 

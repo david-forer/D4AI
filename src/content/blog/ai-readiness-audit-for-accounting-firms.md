@@ -204,6 +204,6 @@ In small firms, mostly around the edges: extracting data from uploaded documents
 
 ---
 
-If your firm is already using AI in pockets and you want a clear picture before the next busy season, [see how the AI Readiness Audit works and what each tier costs](/ai-readiness-and-ai-audits).
+If your firm is already using AI in pockets and you want a clear picture before the next busy season, see how the [AI readiness audit](/ai-readiness-and-ai-audits) works and what each tier costs.
 
 *Related reading: [How to Prepare for an AI Readiness Audit](/blog/how-to-prepare-for-an-ai-readiness-audit) | [AI Compliance and Client Data Starts With Your Contracts](/blog/ai-compliance-client-data) | [The One-Page AI Acceptable Use Policy Template](/blog/ai-acceptable-use-policy-template) | [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses)*

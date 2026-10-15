@@ -71,7 +71,7 @@ const hasCorner = Astro.slots.has('corner');
   .mark::after { content: ""; position: absolute; left: -2%; right: -2%; bottom: .02em; height: .14em; background: var(--flame); transform-origin: left; transform: scaleX(0); animation: draw .9s var(--ease) .5s forwards; z-index: -1; }
 
   .subtitle { margin-top: 20px; max-width: 640px; font-size: clamp(17px, 1.7vw, 21px); font-weight: 600; line-height: 1.3; letter-spacing: -.01em; color: #fff; }
-  .text { margin-top: 14px; max-width: 680px; font-size: 17px; line-height: 1.6; color: var(--blue-ice); }
+  .text { margin-top: 16px; max-width: 760px; font-size: 20px; line-height: 1.6; color: var(--blue-ice); }
   .text + .text { margin-top: 10px; }
   .is-center .subtitle, .is-center .text { margin-left: auto; margin-right: auto; }
   .ctas { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 14px; }
@@ -105,7 +105,7 @@ const hasCorner = Astro.slots.has('corner');
   @media (max-width: 520px) {
     .page-hero { padding: 104px 0 52px; }
     .inner { padding: 0 20px; }
-    .text { font-size: 16px; }
+    .text { font-size: 18px; }
   }
   @media (prefers-reduced-motion: reduce) {
     .mark::after { animation: none; transform: scaleX(1); }
