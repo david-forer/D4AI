@@ -100,6 +100,8 @@ const robots = robotsOverride ?? (noindex ? 'noindex,nofollow' : 'index,follow')
 						send('modal_open', { modal: el.getAttribute('data-open-modal') });
 					} else if (href === '#pricing' && el.closest('.receipt')) {
 						send('calculator_to_pricing', {});
+					} else if (el.hasAttribute('data-mode') && el.closest('.receipt')) {
+						send('calculator_mode', { mode: el.getAttribute('data-mode') });
 					}
 				});
 			})();
