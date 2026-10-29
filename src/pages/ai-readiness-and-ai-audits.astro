@@ -8,7 +8,7 @@ const pageUrl = 'https://davidjforer.com/ai-readiness-and-ai-audits';
 
 // Bump when the page content materially changes. A dateModified that never
 // moves is worse than none.
-const dateModified = '2026-10-15';
+const dateModified = '2026-10-28';
 
 // Mirrors the visible FAQ section verbatim. Google requires the marked-up
 // answer to match what a visitor actually reads, so edit both or neither.
@@ -412,6 +412,50 @@ image="/images/ai-audit.webp"
                 <p>You decide what changes. The audit shows what AI would do and what stays with your team, step by step, before anything gets built.</p>
                 <p>Implementation follows the same rule. Each workflow gets only the access it needs, and every automated step has an owner on your team who can see it and stop it.</p>
             </div>
+        </div>
+    </section>
+
+    {/* ChatGPT comparison and fit check. Added 2026-10-28. Neither section is
+         mirrored in the FAQ schema above, so no schema edit is needed. */}
+    <section id="chatgpt" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-3xl font-bold text-blue-700 mb-8 text-center">Can ChatGPT Run This Audit for You?</h2>
+            <div class="space-y-4 text-lg text-gray-700">
+                <p>Ask ChatGPT whether your business is ready for AI and it answers in seconds. It answers before it knows how invoices get approved, who holds the logins, or what stops when your best person is out for two weeks.</p>
+                <p>The audit starts from those facts. I interview you and the people who do the work, map what they actually do, and take the readiness findings from the maps. A chatbot has your description of the business. The audit has the steps nobody thought to mention.</p>
+                <p>If you want to try it anyway, run the six questions from the checklist above through ChatGPT. Then ask the same six questions of two people on your team, separately. The gaps between those answers are the first thing the audit would look at.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fit" class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-3xl font-bold text-blue-700 mb-4 text-center">Is the Audit a Fit for Your Business?</h2>
+            <p class="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">I turn down work that will not get a good result. Here is how I sort it.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-blue-50 p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">A good fit</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="text-blue-700 mr-3 mt-1">✓</span><span>You run a founder-led business at $1M to $5M in revenue with 5 to 20 people and no operations lead.</span></li>
+                        <li class="flex items-start"><span class="text-blue-700 mr-3 mt-1">✓</span><span>Work slows down when you step away from it.</span></li>
+                        <li class="flex items-start"><span class="text-blue-700 mr-3 mt-1">✓</span><span>Your team already uses AI tools and nobody has written the rules.</span></li>
+                        <li class="flex items-start"><span class="text-blue-700 mr-3 mt-1">✓</span><span>You can give 1 to 2 hours to interviews and let me talk to the people who do the work.</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">A poor fit</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start"><span class="text-gray-500 mr-3 mt-1">✗</span><span>You want a tool picked and installed this week. Builds are quoted after the audit, never before.</span></li>
+                        <li class="flex items-start"><span class="text-gray-500 mr-3 mt-1">✗</span><span>You want a savings figure before anyone has looked at how the business runs.</span></li>
+                        <li class="flex items-start"><span class="text-gray-500 mr-3 mt-1">✗</span><span>Your business sits well outside the $1M to $5M range. The method is built for that size.</span></li>
+                        <li class="flex items-start"><span class="text-gray-500 mr-3 mt-1">✗</span><span>You want a revenue result promised in writing. I do not make that promise.</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="text-center text-lg text-gray-700 mt-10 max-w-3xl mx-auto">Unsure which side you are on? Take the <a href="/ai-readiness-snapshot" class="text-blue-700 font-bold hover:underline">5 minute AI Readiness Snapshot</a>, or book the call and I will tell you.</p>
         </div>
     </section>
 
