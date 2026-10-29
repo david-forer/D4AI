@@ -1,0 +1,64 @@
+---
+// Index of the sample SOP series. One card per entry in src/content/sops.
+import Layout from '../../../layouts/Layout.astro';
+import PageHero from '../../../components/PageHero.astro';
+import CtaBand from '../../../components/CtaBand.astro';
+import { breadcrumbJson } from '../../../lib/schema';
+import { getCollection } from 'astro:content';
+
+const sops = (await getCollection('sops', ({ data }) => !data.draft))
+  .sort((a, b) => a.data.order - b.data.order);
+---
+
+<Layout title="Sample SOPs for Small Business Workflows – Where AI Fits and Where People Decide – David J Forer" description="Worked SOPs for founder-led service businesses. Each one maps a real workflow step by step, with the AI and human boundary set at every step.">
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['Resources','/resources'],['Sample SOPs','/resources/sops']])} />
+  <PageHero
+    eyebrow="Free to use"
+    title="Sample SOPs, one workflow at a time"
+    accent="Sample SOPs"
+    text="Each one maps a common workflow in a specific trade, with the tools a shop that size already runs. Every step says what AI does, what a person decides and when the work stops for a human."
+  >
+    <a slot="before" class="ph-back" href="/resources">&larr; All resources</a>
+  </PageHero>
+
+  <section class="list">
+    <div class="wrap">
+      <div class="cards">
+        {sops.map((s) => (
+          <a class="card" href={`/resources/sops/${s.slug}`}>
+            <span class="k">{s.data.niche}</span>
+            <h2>{s.data.title}</h2>
+            <p>{s.data.cardText}</p>
+            <span class="go">Read the SOP &rarr;</span>
+          </a>
+        ))}
+      </div>
+      <p class="more">More trades are on the way. Each one gets a page like these, built from the same template.</p>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Want one for your business?"
+    text="The AI Readiness Audit maps the workflows that cost you the most time, and the process maps are yours to keep."
+    primaryLabel="Book a call"
+    primaryHref="https://calendly.com/david-j-forer/30min"
+    secondaryLabel="See the $750 audit"
+    secondaryHref="/ai-readiness-and-ai-audits#pricing"
+  />
+</Layout>
+
+<style>
+  .list { background: var(--paper); color: var(--ink); padding: 80px 0; font-size: 18px; line-height: 1.6; }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 28px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; }
+  .card { background: var(--slip); border: 1.5px solid var(--ink); padding: 26px 24px; display: flex; flex-direction: column; text-decoration: none; color: var(--ink); transition: transform .25s var(--ease), box-shadow .25s var(--ease); }
+  .card:hover { transform: translateY(-4px); box-shadow: 6px 6px 0 var(--ink); }
+  .card:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+  .k { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--orange); font-weight: 600; margin-bottom: 10px; }
+  .card h2 { font-size: 24px; font-weight: 700; letter-spacing: -.02em; line-height: 1.15; margin-bottom: 10px; }
+  .card p { font-size: 16px; color: var(--ink-2); flex-grow: 1; margin-bottom: 16px; }
+  .go { color: var(--orange); font-weight: 600; }
+  .more { margin-top: 32px; color: var(--ink-2); font-size: 16px; }
+  @media (max-width: 520px) { .wrap { padding: 0 16px; } .list { padding: 56px 0; } }
+  @media (prefers-reduced-motion: reduce) { .card { transition: none; } }
+</style>

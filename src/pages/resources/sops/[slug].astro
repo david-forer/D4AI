@@ -1,0 +1,399 @@
+---
+// Sample SOP template. Content lives in src/content/sops/<slug>.md as
+// frontmatter, so a new niche is a new file and no code change.
+//
+// The workflow diagram is drawn from the steps: four boxes per row on desktop,
+// snaking left to right then right to left, and one column on phones. Box
+// colour comes from each step's owner. Text fields are trusted HTML from the
+// content file, so inline links like <a href="#safety"> work.
+import Layout from '../../../layouts/Layout.astro';
+import PageHero from '../../../components/PageHero.astro';
+import FormSection from '../../../components/FormSection.astro';
+import CtaBand from '../../../components/CtaBand.astro';
+import { breadcrumbJson } from '../../../lib/schema';
+import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../../../lib/leadForms';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const sops = (await getCollection('sops', ({ data }) => !data.draft))
+    .sort((a, b) => a.data.order - b.data.order);
+  return sops.map((entry, i) => ({
+    params: { slug: entry.slug },
+    props: { entry, next: sops.length > 1 ? sops[(i + 1) % sops.length] : null },
+  }));
+}
+
+const { entry, next } = Astro.props;
+const d = entry.data;
+const url = `/resources/sops/${entry.slug}`;
+
+const ownerLabel = { ai: 'AI carries it', auto: 'Automation, no AI', human: 'Person carries it', shared: 'Shared, with a handoff' };
+const usedOwners = (['ai', 'auto', 'human', 'shared'] as const).filter((o) => d.steps.some((s) => s.owner === o));
+
+// Desktop diagram geometry.
+const COLS = 4, W = 200, H = 130, GX = 40, ROWGAP = 140, PAD = 20, TOP = 30;
+const rows = Math.ceil(d.steps.length / COLS);
+const deskH = TOP + rows * H + (rows - 1) * ROWGAP + (d.diagramFooter ? 70 : 30);
+const desk = d.steps.map((s, i) => {
+  const r = Math.floor(i / COLS);
+  const k = i % COLS;
+  const col = r % 2 === 0 ? k : COLS - 1 - k;
+  return { s, i, x: PAD + col * (W + GX), y: TOP + r * (H + ROWGAP), r, col };
+});
+const deskArrows = desk.slice(0, -1).map((a, i) => {
+  const b = desk[i + 1];
+  if (a.r === b.r) {
+    const y = a.y + H / 2;
+    return b.x > a.x ? `M${a.x + W + 2} ${y} H${b.x - 4}` : `M${a.x - 2} ${y} H${b.x + W + 4}`;
+  }
+  const x = a.x + W / 2;
+  return `M${x} ${a.y + H + 2} V${b.y - 4}`;
+});
+
+// Phone diagram geometry.
+const MW = 320, MH = 116, MGAP = 30;
+const mob = d.steps.map((s, i) => ({ s, i, y: 10 + i * (MH + MGAP) }));
+const footerLines = d.diagramFooter ? d.diagramFooter.match(/.{1,38}(\s|$)/g)?.map((l) => l.trim()) ?? [] : [];
+const mobH = 10 + d.steps.length * (MH + MGAP) + footerLines.length * 22 + 10;
+---
+
+<Layout title={d.seoTitle ?? d.title} description={d.description}>
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['Resources','/resources'],['Sample SOPs','/resources/sops'],[d.title, url]])} />
+  <PageHero eyebrow={`Sample SOP: ${d.niche}`} title={d.title} accent={d.accent} text={d.lede}>
+    <a slot="before" class="ph-back" href="/resources/sops">&larr; All sample SOPs</a>
+    <div slot="meta" class="facts">
+      {d.facts.map((f) => (
+        <div class="fact"><small>{f.label}</small><b>{f.value}</b></div>
+      ))}
+    </div>
+    <a class="ph-btn ph-btn-flame" href="#get-template">Get the blank template <span aria-hidden="true">&rarr;</span></a>
+  </PageHero>
+
+  <section class="paper">
+    <div class="wrap narrow">
+      <p class="note" set:html={d.disclaimer} />
+      {d.rolesNote && <p class="note" set:html={d.rolesNote} />}
+      <nav class="jump" aria-label="Page sections">
+        {d.safety && <a href="#safety">Safety</a>}
+        <a href="#ailayer">AI layer</a>
+        <a href="#steps">Steps</a>
+        {d.afterHours && <a href="#afterhours">After hours</a>}
+        {d.consent && <a href="#consent">Consent</a>}
+        <a href="#raci">Who owns what</a>
+        <a href="#metrics">Metrics</a>
+      </nav>
+
+      {d.safety && (
+        <div class="box safety" id="safety">
+          <h2 class="h3">{d.safety.heading}</h2>
+          <p set:html={d.safety.intro} />
+          <ul>{d.safety.items.map((t) => <li set:html={t} />)}</ul>
+          {d.safety.body.map((t) => <p set:html={t} />)}
+          {d.safety.note && <p class="note" set:html={d.safety.note} />}
+        </div>
+      )}
+
+      {d.afterHours && (
+        <div class="box plain" id="afterhours">
+          <h2 class="h3">{d.afterHours.heading}</h2>
+          <p set:html={d.afterHours.text} />
+        </div>
+      )}
+    </div>
+  </section>
+
+  <section class="paper-2">
+    <div class="wrap">
+      <p class="tag sec-head">The workflow at a glance</p>
+      <h2>{d.steps.length} steps, one owner each</h2>
+      <p class="lede" set:html={d.diagramIntro} />
+      <div class="diagram">
+        <svg class="desk" viewBox={`0 0 960 ${deskH}`} role="img" aria-label={`${d.niche} workflow, ${d.steps.length} steps`}>
+          <defs>
+            <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" class="arrowhead" />
+            </marker>
+          </defs>
+          {desk.map(({ s, i, x, y }) => (
+            <g>
+              <rect class={`node node-${s.owner}`} x={x} y={y} width={W} height={H} rx="12" />
+              <text x={x + 16} y={y + 28} class="t-step">STEP {i + 1}</text>
+              <text x={x + 16} y={y + 52} class="t-title">{s.short ?? s.title}</text>
+              {s.diagram.map((line, li) => <text x={x + 16} y={y + 78 + li * 18} class="t-line">{line}</text>)}
+            </g>
+          ))}
+          {deskArrows.map((p) => <path class="arrow" d={p} marker-end="url(#ah)" />)}
+          {d.diagramFooter && <text x="20" y={deskH - 20} class="t-foot">{d.diagramFooter}</text>}
+        </svg>
+        <svg class="mob" viewBox={`0 0 360 ${mobH}`} role="img" aria-label={`${d.niche} workflow, ${d.steps.length} steps, stacked`}>
+          <defs>
+            <marker id="ahm" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" class="arrowhead" />
+            </marker>
+          </defs>
+          {mob.map(({ s, i, y }) => (
+            <g>
+              <rect class={`node node-${s.owner}`} x="20" y={y} width={MW} height={MH} rx="12" />
+              <text x="36" y={y + 24} class="m-step">STEP {i + 1}</text>
+              <text x="36" y={y + 48} class="m-title">{s.short ?? s.title}</text>
+              {s.diagram.slice(0, 2).map((line, li) => <text x="36" y={y + 72 + li * 22} class="m-line">{line}</text>)}
+              {i < d.steps.length - 1 && <path class="arrow" d={`M180 ${y + MH + 2} V${y + MH + MGAP - 2}`} marker-end="url(#ahm)" />}
+            </g>
+          ))}
+          {footerLines.map((l, li) => <text x="20" y={10 + d.steps.length * (MH + MGAP) + 12 + li * 22} class="m-line faint">{l}</text>)}
+        </svg>
+        <div class="legend">
+          {usedOwners.map((o) => <span class={`l-${o}`}>{ownerLabel[o]}</span>)}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper">
+    <div class="wrap narrow">
+      <p class="tag sec-head" id="ailayer">Where the AI comes from</p>
+      <p set:html={d.aiLayer.intro} />
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Source</th><th>What it does here</th><th>AI or automation</th></tr></thead>
+          <tbody>{d.aiLayer.rows.map((r) => <tr><td set:html={r.source} /><td set:html={r.does} /><td set:html={r.kind} /></tr>)}</tbody>
+        </table>
+      </div>
+      {d.aiLayer.note && <p class="note" set:html={d.aiLayer.note} />}
+
+      <p class="tag sec-head mt">Before and after</p>
+      <p class="big" set:html={d.beforeAfter.summary} />
+      <p set:html={d.beforeAfter.today} />
+      <div class="tablewrap">
+        <table>
+          <thead><tr>
+            <th>Removed ({d.beforeAfter.removed.length})</th>
+            <th>Stay, with a review point ({d.beforeAfter.stay.length})</th>
+            <th>New work ({d.beforeAfter.newWork.length})</th>
+          </tr></thead>
+          <tbody><tr>
+            <td><ul>{d.beforeAfter.removed.map((t) => <li set:html={t} />)}</ul></td>
+            <td><ul>{d.beforeAfter.stay.map((t) => <li set:html={t} />)}</ul></td>
+            <td><ul>{d.beforeAfter.newWork.map((t) => <li set:html={t} />)}</ul></td>
+          </tr></tbody>
+        </table>
+      </div>
+      {d.beforeAfter.note && <p class="note" set:html={d.beforeAfter.note} />}
+    </div>
+  </section>
+
+  <section class="paper-2" id="steps">
+    <div class="wrap narrow">
+      <p class="tag sec-head">The steps</p>
+      {d.steps.map((s, i) => (
+        <article class="step" id={`s${i + 1}`}>
+          <div class="step-head"><span class={`num num-${s.owner}`}>{i + 1}</span><h3>{s.title}</h3></div>
+          <div class="field"><div class="label">Who</div><div set:html={s.who} /></div>
+          <div class="field"><div class="label">Tools</div><div>{s.tools.map((t) => <span class="chip">{t}</span>)}</div></div>
+          <div class="field"><div class="label">Procedure</div><div><ol>{s.procedure.map((p) => <li set:html={p} />)}</ol></div></div>
+          {s.automationDoes && <div class="field"><div class="label">Automation does</div><div set:html={s.automationDoes} /></div>}
+          {s.aiDoes && <div class="field"><div class="label">AI does</div><div set:html={s.aiDoes} /></div>}
+          <div class="field"><div class="label">Person does</div><div set:html={s.personDoes} /></div>
+          {s.boxes.map((b) => (
+            <div class={`field box-${b.kind}`}><div class="label">{b.label}</div><div set:html={b.text} /></div>
+          ))}
+          <p class="done" set:html={s.done} />
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="paper">
+    <div class="wrap narrow">
+      {d.outage && (
+        <>
+          <p class="tag sec-head">When the system is down</p>
+          <ul class="plain-list">{d.outage.map((t) => <li set:html={t} />)}</ul>
+        </>
+      )}
+
+      {d.consent && (
+        <>
+          <p class="tag sec-head mt" id="consent">Consent and disclosure</p>
+          <ul class="plain-list">{d.consent.items.map((t) => <li set:html={t} />)}</ul>
+          <p class="note" set:html={d.consent.note} />
+        </>
+      )}
+
+      <p class="tag sec-head mt" id="raci">Who owns what</p>
+      <p>R is responsible for doing it, A is accountable for the result, C is consulted, I is informed.</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Step</th><th>R</th><th>A</th><th>C</th><th>I</th></tr></thead>
+          <tbody>{d.raci.map((r) => <tr><td>{r.step}</td><td>{r.r}</td><td>{r.a}</td><td>{r.c}</td><td>{r.i}</td></tr>)}</tbody>
+        </table>
+      </div>
+      {d.ownership.map((t) => <p set:html={t} />)}
+
+      <p class="tag sec-head mt" id="metrics">What to measure</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Measure</th><th>Baseline</th><th>Starting target</th><th>Owner</th><th>How measured</th></tr></thead>
+          <tbody>{d.metrics.map((m) => <tr><td>{m.measure}</td><td>{m.baseline}</td><td>{m.target}</td><td>{m.owner}</td><td>{m.how}</td></tr>)}</tbody>
+        </table>
+      </div>
+      {d.metricsNote && <p class="note" set:html={d.metricsNote} />}
+
+      <p class="tag sec-head mt">Workflow snapshot</p>
+      <div class="snapshot">
+        {d.snapshot.map((s) => <div class="field"><div class="label">{s.label}</div><div set:html={s.value} /></div>)}
+      </div>
+
+      <p class="tag sec-head mt">Change log</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Date</th><th>Change</th><th>Version</th><th>Changed by</th></tr></thead>
+          <tbody>{d.changelog.map((c) => <tr><td>{c.date}</td><td>{c.change}</td><td>{c.version}</td><td>{c.by}</td></tr>)}</tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <FormSection
+    id="get-template"
+    layout="split"
+    heading="Get the blank SOP template"
+    blurb="The same structure as this page, empty and ready for your own workflow. Steps, the unless rules, after hours, owners and metrics."
+    surveyId={GIVEAWAY_SURVEY}
+    fields={GIVEAWAY_FIELDS}
+    buttonText="Send me the template"
+    successHeading="Here it is."
+    successBody="Open it in Word or upload it to Google Docs. Start with the workflow that runs most often."
+    successHref="/downloads/sop-template.docx"
+    successLinkText="Download the template"
+  />
+
+  {next && (
+    <section class="next">
+      <div class="wrap">
+        <a class="next-link" href={`/resources/sops/${next.slug}`}>
+          <span class="tag">Next sample SOP</span>
+          <b>{next.data.title}</b>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </section>
+  )}
+
+  <CtaBand
+    title="Want this mapped for your business?"
+    text="The AI Readiness Audit maps the workflows that cost you the most time, and the process maps are yours to keep. Fixed price."
+    primaryLabel="Book a call"
+    primaryHref="https://calendly.com/david-j-forer/30min"
+    secondaryLabel="See the $750 audit"
+    secondaryHref="/ai-readiness-and-ai-audits#pricing"
+  />
+</Layout>
+
+<style>
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 28px; }
+  .narrow { max-width: 920px; }
+  .paper { background: var(--paper); color: var(--ink); padding: 80px 0; }
+  .paper-2 { background: var(--paper-2); color: var(--ink); padding: 80px 0; }
+  section { font-size: 18px; line-height: 1.6; }
+  .tag { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; font-weight: 500; }
+  .sec-head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; color: var(--orange); }
+  .sec-head::before { content: ""; width: 44px; height: 2px; background: currentColor; flex: none; }
+  .mt { margin-top: 56px; }
+  h2 { font-size: clamp(30px, 4vw, 48px); font-weight: 800; letter-spacing: -.03em; line-height: 1.05; }
+  .h3 { font-size: 22px; font-weight: 700; letter-spacing: -.02em; margin-bottom: 10px; }
+  p { margin-bottom: 14px; }
+  .lede { margin-top: 14px; color: var(--ink-2); max-width: 720px; }
+  .big { font-size: 21px; font-weight: 700; }
+  .note { font-size: 15px; color: var(--ink-2); }
+  section :global(a) { color: var(--orange); text-decoration: underline; }
+
+  .facts { margin-top: 18px; display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); border: 1px solid var(--navy-line); border-radius: 14px; overflow: hidden; background: rgba(255,255,255,.03); }
+  .fact { padding: 14px 18px; border-right: 1px solid var(--navy-line); border-bottom: 1px solid var(--navy-line); }
+  .fact small { display: block; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--blue-ice); font-weight: 500; }
+  .fact b { display: block; margin-top: 6px; font-size: 16px; font-weight: 600; line-height: 1.3; color: #fff; }
+
+  .jump { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 18px 0 8px; font-size: 16px; font-weight: 600; }
+
+  .box { border-radius: 14px; padding: 22px 24px; margin-top: 24px; }
+  .box ul { margin: 0 0 12px 20px; list-style: disc; }
+  .box li { margin-bottom: 4px; }
+  .box.safety { background: #fbe9e4; border: 1.5px solid #b42318; }
+  .box.safety .h3 { color: #8f1c12; }
+  .box.plain { background: var(--slip); border: 1.5px solid var(--ink); }
+
+  /* diagram */
+  .diagram { margin-top: 28px; background: var(--slip); border: 1.5px solid var(--ink); border-radius: 14px; padding: 14px; }
+  .diagram svg { width: 100%; height: auto; display: block; }
+  .diagram .mob { display: none; }
+  .node { stroke-width: 2; }
+  .node-ai { fill: #d9f0ed; stroke: #0f766e; }
+  .node-human { fill: #fdecd2; stroke: #b45309; }
+  .node-shared { fill: #e2e6fb; stroke: #3b4cca; }
+  .node-auto { fill: #ebedf0; stroke: #4a5266; stroke-dasharray: 6 4; }
+  .arrow { stroke: var(--ink-2); stroke-width: 2; fill: none; }
+  .arrowhead { fill: var(--ink-2); }
+  .diagram text { fill: var(--ink); font-family: inherit; }
+  .t-step, .m-step { font-size: 12px; letter-spacing: .1em; opacity: .7; }
+  .t-title { font-size: 16px; font-weight: 700; }
+  .t-line { font-size: 12px; }
+  .t-foot { font-size: 13px; opacity: .75; }
+  .m-title { font-size: 18px; font-weight: 700; }
+  .m-line { font-size: 14px; }
+  .faint { opacity: .75; }
+  .legend { display: flex; flex-wrap: wrap; gap: 18px; font-size: 14px; color: var(--ink-2); margin: 10px 4px 0; }
+  .legend span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; border: 2px solid; }
+  .l-ai::before { background: #d9f0ed; border-color: #0f766e !important; }
+  .l-human::before { background: #fdecd2; border-color: #b45309 !important; }
+  .l-shared::before { background: #e2e6fb; border-color: #3b4cca !important; }
+  .l-auto::before { background: #ebedf0; border-color: #4a5266 !important; border-style: dashed !important; }
+
+  /* tables */
+  .tablewrap { overflow-x: auto; margin: 10px 0 14px; }
+  table { width: 100%; border-collapse: collapse; background: var(--slip); border: 1.5px solid var(--ink); font-size: 16px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); background: var(--paper-2); }
+  tr:last-child td { border-bottom: 0; }
+  td ul { margin: 0; padding-left: 18px; list-style: disc; }
+  td li { margin-bottom: 6px; }
+
+  /* steps */
+  .step { background: var(--slip); border: 1.5px solid var(--ink); border-radius: 14px; padding: 22px 24px; margin-top: 20px; scroll-margin-top: 90px; }
+  .step-head { display: flex; gap: 12px; align-items: center; margin-bottom: 10px; }
+  .step-head h3 { font-size: 22px; font-weight: 700; letter-spacing: -.02em; }
+  .num { flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; color: #fff; }
+  .num-ai { background: #0f766e; } .num-human { background: #b45309; } .num-shared { background: #3b4cca; } .num-auto { background: #4a5266; }
+  .field { display: grid; grid-template-columns: 160px 1fr; gap: 4px 18px; padding: 10px 0; border-top: 1px solid var(--rule); font-size: 17px; }
+  .label { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); padding-top: 4px; font-weight: 600; }
+  .field ol { margin: 0; padding-left: 20px; list-style: decimal; }
+  .field li { margin-bottom: 4px; }
+  .chip { display: inline-block; font-size: 14px; border: 1px solid var(--rule); border-radius: 999px; padding: 1px 10px; margin: 0 6px 4px 0; background: var(--paper); }
+  .box-stop, .box-after, .box-why { border-top: 0; border-radius: 8px; padding: 10px 14px; margin-top: 10px; }
+  .box-stop { background: #fbe9e4; border-left: 4px solid #b42318; }
+  .box-stop .label { color: #8f1c12; }
+  .box-after { background: #e2e6fb; border-left: 4px solid #3b4cca; }
+  .box-after .label { color: #2a3797; }
+  .box-why { background: var(--paper); border-left: 4px solid var(--ink-2); }
+  .done { margin: 12px 0 0; font-size: 16px; color: var(--ink-2); }
+
+  .plain-list { margin: 0 0 14px 20px; list-style: disc; }
+  .plain-list li { margin-bottom: 6px; }
+  .snapshot { background: var(--slip); border: 1.5px solid var(--ink); border-radius: 14px; padding: 4px 22px; }
+  .snapshot .field:first-child { border-top: 0; }
+
+  .next { background: var(--paper-2); padding: 0 0 60px; }
+  .next-link { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; padding: 22px 26px; background: var(--slip); border: 1.5px solid var(--ink); text-decoration: none !important; color: var(--ink) !important; }
+  .next-link .tag { color: var(--orange); }
+  .next-link b { flex: 1; min-width: 220px; font-size: 22px; font-weight: 700; }
+  .next-link .arrow { font-size: 24px; color: var(--orange); }
+
+  @media (max-width: 680px) {
+    .diagram .desk { display: none; }
+    .diagram .mob { display: block; }
+    .field { grid-template-columns: 1fr; }
+    .label { padding-top: 0; }
+    .wrap { padding: 0 16px; }
+    .paper, .paper-2 { padding: 56px 0; }
+    section { font-size: 17px; }
+  }
+</style>

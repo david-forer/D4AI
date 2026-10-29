@@ -100,6 +100,70 @@ export const collections = {
       stops: z.string().optional(),
     }),
   }),
+  // Sample SOPs, one per niche, served at /resources/sops/<slug>. Frontmatter
+  // only, so a new niche is a new file and no code change. The businesses are
+  // composites, never a real company. Text fields may carry inline links
+  // (<a href="#safety">) and are rendered as HTML.
+  // Step owner sets the colour in the diagram: ai, auto (rules, no AI), human
+  // or shared. Box kinds: stop (red), after (after hours), why (neutral).
+  'sops': defineCollection({
+    schema: z.object({
+      title: z.string(),
+      accent: z.string().optional(),
+      seoTitle: z.string().optional(),
+      description: z.string(),
+      niche: z.string(),
+      cardText: z.string(),
+      lede: z.string(),
+      disclaimer: z.string(),
+      pubDate: z.coerce.date(),
+      updatedDate: z.coerce.date().optional(),
+      order: z.number(),
+      draft: z.boolean().default(false),
+      facts: z.array(z.object({ label: z.string(), value: z.string() })).min(3).max(8),
+      rolesNote: z.string().optional(),
+      safety: z.object({ heading: z.string(), intro: z.string(), items: z.array(z.string()), body: z.array(z.string()), note: z.string().optional() }).optional(),
+      afterHours: z.object({ heading: z.string(), text: z.string() }).optional(),
+      diagramIntro: z.string(),
+      diagramFooter: z.string().optional(),
+      aiLayer: z.object({
+        intro: z.string(),
+        rows: z.array(z.object({ source: z.string(), does: z.string(), kind: z.string() })),
+        note: z.string().optional(),
+      }),
+      beforeAfter: z.object({
+        summary: z.string(),
+        today: z.string(),
+        removed: z.array(z.string()),
+        stay: z.array(z.string()),
+        newWork: z.array(z.string()),
+        note: z.string().optional(),
+      }),
+      steps: z.array(z.object({
+        title: z.string(),
+        // Shorter title for the diagram box, which fits about 20 characters.
+        short: z.string().optional(),
+        owner: z.enum(['ai', 'auto', 'human', 'shared']),
+        diagram: z.array(z.string()).min(1).max(3),
+        who: z.string(),
+        tools: z.array(z.string()),
+        procedure: z.array(z.string()),
+        automationDoes: z.string().optional(),
+        aiDoes: z.string().optional(),
+        personDoes: z.string(),
+        boxes: z.array(z.object({ kind: z.enum(['stop', 'after', 'why']), label: z.string(), text: z.string() })).default([]),
+        done: z.string(),
+      })).min(3),
+      outage: z.array(z.string()).optional(),
+      consent: z.object({ items: z.array(z.string()), note: z.string() }).optional(),
+      raci: z.array(z.object({ step: z.string(), r: z.string(), a: z.string(), c: z.string(), i: z.string() })),
+      ownership: z.array(z.string()),
+      metrics: z.array(z.object({ measure: z.string(), baseline: z.string(), target: z.string(), owner: z.string(), how: z.string() })),
+      metricsNote: z.string().optional(),
+      snapshot: z.array(z.object({ label: z.string(), value: z.string() })),
+      changelog: z.array(z.object({ date: z.string(), change: z.string(), version: z.string(), by: z.string() })),
+    }),
+  }),
   // Statistics hubs and other citable data pages, served at /research/<slug>.
   // Kept out of the blog collection so they never count toward a hub's post
   // total or show up in the blog index. A tag is optional and, when present,
