@@ -1,6 +1,6 @@
 ---
 title: "AI Governance for Small Businesses: How to Use AI Safely Without a Compliance Team"
-seoTitle: "AI Governance for Small Businesses – How to Manage AI Policy, Risk, Data Security and Shadow AI Without a Compliance Department – A Practical Framework for Founder-Led Firms – Forersight"
+seoTitle: "AI Governance | Safe AI With No Compliance Team | David J Forer"
 description: "Most small businesses adopt AI with no rules around data, tools, or review. Here is a practical governance framework that manages AI risk and security without a compliance team."
 pubDate: 2026-07-12T00:00:00Z
 updatedDate: 2026-09-23T00:00:00Z

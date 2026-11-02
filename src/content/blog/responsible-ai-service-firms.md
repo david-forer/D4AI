@@ -1,6 +1,6 @@
 ---
 title: "Responsible AI for Service Firms Is a Client Promise"
-seoTitle: "Responsible AI for Service Firms – Why the Only Commitments That Matter Are the Ones You Can Keep, the 4 Promises Worth Making to Clients, and What to Refuse to Sign – Forersight"
+seoTitle: "Responsible AI | 4 Promises Worth Making Clients | David J Forer"
 description: "Responsible AI for a service firm means promises you can keep. Here are the 4 worth making to clients, and the commitments you should refuse to sign."
 pubDate: 2026-09-23T00:00:00Z
 tags: ["ai-governance"]

@@ -1,6 +1,6 @@
 ---
 title: "AI Agents for Lead Qualification: The Reason Beats the Score"
-seoTitle: "AI Agents for Lead Qualification – Why a Score Nobody Can Interrogate Gets Ignored Within a Month, What to Make the Agent Output Instead, and the Inbound Volume That Justifies One – Forersight"
+seoTitle: "AI Lead Qualification | Make the Agent Explain | David J Forer"
 description: "AI agents for lead qualification fail when they output a score nobody trusts. What to make the agent produce instead, and the volume that justifies it."
 pubDate: 2026-09-23T00:00:00Z
 tags: ["ai-agents"]

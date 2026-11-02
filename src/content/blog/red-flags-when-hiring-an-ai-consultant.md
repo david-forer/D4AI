@@ -1,6 +1,6 @@
 ---
 title: "Red Flags When Hiring an AI Consultant, Ranked by Severity"
-seoTitle: "Red Flags When Hiring an AI Consultant – The 6 That Should End the Conversation, the 5 That Only Need a Follow-Up Question, the 5 Founders Misread, and Where in the Proposal to Find Them – Forersight"
+seoTitle: "AI Consulting Red Flags | Ranked by Severity | David J Forer"
 description: "Red flags when hiring an AI consultant come in 3 tiers. Here are the 6 that disqualify, the 5 worth one question, and the 5 founders misread."
 pubDate: 2026-09-23T00:00:00Z
 tags: ["hiring-an-ai-consultant"]

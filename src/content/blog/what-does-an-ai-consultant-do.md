@@ -1,6 +1,6 @@
 ---
 title: "What Does an AI Consultant Do? Roles, Responsibilities and the First 90 Days"
-seoTitle: "What Does an AI Consultant Do – What Is an AI Consultant and What AI Consulting Means for a Small Business – Roles, Responsibilities and the First 90 Days – Forersight"
+seoTitle: "What Does an AI Consultant Do | First 90 Days | David J Forer"
 description: "An AI consultant maps how your business runs, builds AI and automation into the workflows that cost the most time, trains your team and hands the systems over."
 pubDate: 2026-03-21T00:00:00Z
 updatedDate: 2026-09-27T00:00:00Z

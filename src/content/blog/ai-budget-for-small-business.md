@@ -1,6 +1,6 @@
 ---
 title: "What an AI Budget for a Small Business Should Actually Be"
-seoTitle: "AI Budget for a Small Business – What a $1M to $5M Firm Should Plan to Spend in Year One, the 4 Lines Every Budget Has, the Internal-Time Cost Nobody Counts, and the Quarterly Gate That Stops It Drifting – Forersight"
+seoTitle: "AI Budget for Small Business | Year-One Plan | David J Forer"
 description: "An AI budget for a small business at $1M to $5M revenue runs $12,000 to $40,000 in year one. Here is the split across 4 lines and how to phase it."
 pubDate: 2026-09-23T00:00:00Z
 tags: ["ai-strategy"]

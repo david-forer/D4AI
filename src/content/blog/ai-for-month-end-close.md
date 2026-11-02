@@ -1,6 +1,6 @@
 ---
 title: "AI Month-End Close for a Small Business With No Controller"
-seoTitle: "AI Month-End Close for Small Business – What QuickBooks and Xero AI Reconciliation Handles, the Close Steps It Leaves Behind, and a Checklist a Part-Time Bookkeeper Can Own – Forersight"
+seoTitle: "AI Month-End Close | A Bookkeeper Checklist | David J Forer"
 description: "AI month-end close for a small business: what QuickBooks and Xero AI reconciliation does, which close steps it leaves, and who should own them each month."
 pubDate: 2026-10-18T00:00:00Z
 tags: ["business-functions"]

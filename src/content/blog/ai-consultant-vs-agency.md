@@ -1,6 +1,6 @@
 ---
 title: "AI Consultant vs Agency: Which One a Small Business Needs"
-seoTitle: "AI Consultant vs Agency for a Small Business – The 4 Provider Types, What Each One Needs You to Have Documented Already, the 2026 Cost Bands, and the 5-Question Readiness Check – Forersight"
+seoTitle: "AI Consultant vs Agency | Which Fits Your Firm | David J Forer"
 description: "AI consultant vs agency for a small business: how documented your processes are decides it. Compare 4 provider types, cost bands and a readiness check."
 pubDate: 2026-09-23T00:00:00Z
 tags: ["hiring-an-ai-consultant"]

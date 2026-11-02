@@ -1,6 +1,6 @@
 ---
 title: "Best AI Tools for Business Operations: What Small Teams Use at Each Layer"
-seoTitle: "Best AI Tools for Business Operations – Best AI Tools for Business, AI Business Software and AI for Operations Management in a Small Business – A Starter Stack and How to Choose"
+seoTitle: "Best AI Tools for Business | A Starter Stack | David J Forer"
 description: "The best AI tools for business operations, sorted by the layer each one fixes. AI business software for a 5 to 20 person company, with a starter stack and a comparison table."
 pubDate: 2026-03-04T00:00:00Z
 updatedDate: 2026-10-13T00:00:00Z

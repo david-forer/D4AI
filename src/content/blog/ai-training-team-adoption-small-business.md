@@ -1,6 +1,6 @@
 ---
 title: "AI Team Adoption: Why Most Small Business Implementations Fail (And What Actually Works)"
-seoTitle: "AI Team Adoption for Small Businesses – Why Most Implementations Fail and What Actually Changes Team Behavior – The Four-Phase Framework From Training to Measurable Results – Forersight"
+seoTitle: "AI Team Adoption | Why Rollouts Fail, What Works | David J Forer"
 description: "Most small businesses buy AI tools and see almost no return because their teams never adopt them. This guide covers why adoption fails and how to build a system that actually changes behavior."
 pubDate: 2026-03-07T00:00:00Z
 updatedDate: 2026-09-23T00:00:00Z

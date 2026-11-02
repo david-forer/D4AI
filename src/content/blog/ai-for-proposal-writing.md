@@ -1,6 +1,6 @@
 ---
 title: "AI Proposal Writing: What to Hand Over and What to Keep"
-seoTitle: "AI Proposal Writing for Service Businesses – What to Feed the Model, Which Sections It Can Draft, Which 4 Sections the Founder Writes by Hand, and the Final Read When Nobody Else Checks – Forersight"
+seoTitle: "AI Proposal Writing | What to Keep for Yourself | David J Forer"
 description: "AI proposal writing for a service business: what to feed the model, which sections it can draft, and the 4 clauses the founder should write by hand."
 pubDate: 2026-09-25T00:00:00Z
 tags: ["business-functions"]

@@ -1,6 +1,6 @@
 ---
 title: "SEO Reporting for Founders: The 5 Numbers That Matter"
-seoTitle: "SEO Reporting for Founders – The 5 Numbers Worth Reading, the 6 Vanity Metrics to Strike From the Template, and the 15-Minute Monthly Review That Replaces a 40-Page Agency Deck – Forersight"
+seoTitle: "SEO Reporting for Founders | 5 Numbers to Read | David J Forer"
 description: "SEO reporting for founders comes down to 5 numbers. Here is what to read each month, what to delete from the agency template, and when to stop paying."
 pubDate: 2026-09-23T00:00:00Z
 tags: ["seo"]

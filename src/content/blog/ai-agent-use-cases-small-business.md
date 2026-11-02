@@ -1,6 +1,6 @@
 ---
 title: "7 AI Agent Use Cases That Survive a Real 30-Person Firm"
-seoTitle: "AI Agent Use Cases for Small Business – The 7 Jobs That Hold Up in a Firm of 5 to 20 People, What Each One Costs to Run, and the 4 Use Cases That Get Sold Constantly and Fail – Forersight"
+seoTitle: "AI Agent Use Cases | 7 Jobs That Hold Up | David J Forer"
 description: "AI agent use cases for a small business are narrower than the demos suggest. Here are the 7 that hold up in real firms, and the 4 that reliably fail."
 pubDate: 2026-09-23T00:00:00Z
 tags: ["ai-agents"]

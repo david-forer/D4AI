@@ -1,6 +1,6 @@
 ---
 title: "AI Agents vs Chatbots: One Answers, One Finishes the Job"
-seoTitle: "AI Agents vs Chatbots – The Difference Between a System That Answers Questions and One That Completes Work, How to Tell Which One a Job Needs, and What Each Costs a Small Business – Forersight"
+seoTitle: "AI Agents vs Chatbots | Which Job Needs Which | David J Forer"
 description: "AI agents vs chatbots: a chatbot answers a person, an agent finishes a job. Here is how to tell which one a task in your business needs, and what each costs."
 pubDate: 2026-08-29T00:00:00Z
 updatedDate: 2026-09-23T00:00:00Z

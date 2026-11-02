@@ -1,6 +1,6 @@
 ---
 title: "Are You Ready to Hire an AI Consultant? How to Tell and How to Prepare"
-seoTitle: "Are You Ready to Hire an AI Consultant? – Signs You Need One and When to Hire – What to Prepare Before the First Call – AI Consultant Readiness Checklist"
+seoTitle: "Ready to Hire an AI Consultant | Checklist | David J Forer"
 description: "How to tell if you're ready to hire an AI consultant, the signs the timing is off, what to prepare before the first call, and a readiness checklist to run."
 pubDate: 2026-03-21T00:00:00Z
 updatedDate: 2026-09-27T00:00:00Z

@@ -1,6 +1,6 @@
 ---
 title: "AI Readiness Audit for Accounting Firms: What It Covers and How to Prepare"
-seoTitle: "AI Readiness Audit for Accountants – What It Covers in a CPA, Bookkeeping or Tax Practice – Client Data, Busy Season and Review Chains – How to Prepare – Forersight"
+seoTitle: "AI Readiness Audit for Accountants | Prep Guide | David J Forer"
 description: "What an AI readiness audit for accounting firms looks at: client data handling, busy season load, document intake, review chains and where AI fits first."
 pubDate: 2026-09-27T00:00:00Z
 updatedDate: 2026-10-15T00:00:00Z

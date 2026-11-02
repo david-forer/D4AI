@@ -1,6 +1,6 @@
 ---
 title: "What an AI Agent Costs to Run Each Month"
-seoTitle: "How Much Does an AI Agent Cost to Run – Monthly Cost Lines, a Worked Example for a 12-Person Firm, and How to Cap the Bill – Forersight"
+seoTitle: "AI Agent Cost per Month | How to Cap the Bill | David J Forer"
 description: "How much does an AI agent cost to run each month? Five cost lines, a worked example for a 12-person firm and the steps that cap the monthly bill."
 pubDate: 2026-10-18T00:00:00Z
 tags: ["ai-agents"]

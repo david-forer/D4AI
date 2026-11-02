@@ -1,6 +1,6 @@
 ---
 title: "AI Hiring for a Small Business With No HR Person"
-seoTitle: "AI Hiring for Small Business Without HR – Which Recruiting Tasks AI Can Take, Which Stay Human, Which Laws Apply at Your Headcount and Hiring Location, and the Paper Trail to Keep – Forersight"
+seoTitle: "AI Hiring Without HR | What AI Can Take Over | David J Forer"
 description: "AI hiring for small business without an HR person: which recruiting tasks AI can take, which stay human, and which rules apply at your size and location."
 pubDate: 2026-09-25T00:00:00Z
 tags: ["business-functions"]

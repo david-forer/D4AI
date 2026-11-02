@@ -1,6 +1,6 @@
 ---
 title: "How Many Blog Posts Before SEO Works: The Honest Answer"
-seoTitle: "How Many Blog Posts Before SEO Works – Why Post Count Is the Wrong Unit, What a 5 to 20 Person Firm Should Publish in the First 6 Months, and the 3 Checkpoints That Tell You Whether to Continue – Forersight"
+seoTitle: "How Many Blog Posts for SEO | 3 Checkpoints | David J Forer"
 description: "How many blog posts before SEO works depends on coverage, not count. Here is the real number for a small firm, and the 3 checkpoints that prove it."
 pubDate: 2026-09-23T00:00:00Z
 tags: ["seo"]

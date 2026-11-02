@@ -1,6 +1,6 @@
 ---
 title: "AI Enabled SEO Operations: The 6 Layers of SEO Success"
-seoTitle: "AI-Enabled SEO Operations – The Six-Layer System That Turns Search Into a Repeatable Production Engine – How Small Teams Build Topical Authority That Compounds Over Time – Forersight"
+seoTitle: "SEO Operating System | 6 Layers for Small Teams | David J Forer"
 description: "AI doesn't make SEO easier. It makes a well-designed SEO system more productive. Learn the six-layer framework that turns search into a repeatable production system."
 pubDate: 2026-02-07T00:00:00+01:00
 updatedDate: 2026-10-08T00:00:00Z
@@ -102,7 +102,7 @@ The production layer is where content gets made. For most small teams, this is t
 
 A content brief template is the most important single tool in this layer. A good brief captures the target keyword, search intent, cluster position, required entities, suggested structure, competitor benchmarks, and internal linking targets before a single word of content is written. The [content brief format for AI-assisted writing](/blog/seo-content-brief-for-ai-writing) is worth reviewing before you build your own template. The brief is what makes it possible for multiple people to produce content that meets a consistent standard. It is also what makes AI drafting produce usable output rather than generic filler.
 
-AI draft process using a well-constructed brief produces a structured first draft that covers the required territory and meets the structural requirements of the brief. This draft is scaffolding. The value is that the scaffold is already standing, which means the human refinement work is editing and elevating rather than creating from zero.
+AI draft process using a well-constructed brief produces a structured first draft that covers the required territory and meets the structural requirements of the brief. This draft is scaffolding. The value is that the scaffold is already standing, which means the human refinement work is editing and improving rather than creating from zero.
 
 Human refinement is where voice, expertise, and credibility enter the content. The distinction between AI-assisted content that builds authority and AI-assisted content that is clearly generic comes down entirely to the quality and depth of the human refinement step. This step should not be rushed and should not be treated as proofreading. It is the step where the content becomes worth reading.
 

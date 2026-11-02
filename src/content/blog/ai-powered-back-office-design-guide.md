@@ -1,6 +1,6 @@
 ---
 title: "The AI-Powered Back Office: A System Design Guide for Small Businesses"
-seoTitle: "AI-Powered Back Office Design for Small Businesses – How to Connect Finance, HR, Sales, and Operations Into One Intelligent System – Event-Driven Architecture for Founders – Forersight"
+seoTitle: "AI Back Office | Connect Finance, HR and Sales | David J Forer"
 description: "Building AI into individual business functions only gets you so far. Here is how to design back office automation as one integrated system, where the functions work together and AI compounds."
 pubDate: 2026-03-19T00:00:00Z
 updatedDate: 2026-09-23T00:00:00Z

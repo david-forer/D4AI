@@ -1,6 +1,6 @@
 ---
 title: "Intake and Workflow Systems for Growing Firms: How to Stop Work From Falling Through the Cracks"
-seoTitle: "Intake and Workflow Systems for Growing Firms – How to Stop Work From Falling Through the Cracks – Build a Single Source of Truth That Scales With Your Team – Forersight"
+seoTitle: "Intake and Workflow Systems | Stop Work Slipping | David J Forer"
 description: "Work entering from 6 channels, priorities shifting daily, and no single source of truth. Learn how growing service firms build intake and workflow systems that scale."
 pubDate: 2026-02-03T00:00:00Z
 updatedDate: 2026-09-23T00:00:00Z

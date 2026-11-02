@@ -1,6 +1,6 @@
 ---
 title: "The One-Page AI Strategy a Small Business Can Write Today"
-seoTitle: "One-Page AI Strategy for a Small Business – The 6 Fields, the Exact Sentences That Go in Each One, How It Differs From an AI Usage Policy, and the 90 Minutes It Takes to Write – Forersight"
+seoTitle: "One-Page AI Strategy | 6 Fields, 90 Minutes | David J Forer"
 description: "A one-page AI strategy for a small business needs 6 fields. Here is what goes in each one, with example text, and how to write it in 90 minutes."
 pubDate: 2026-09-23T00:00:00Z
 tags: ["ai-strategy"]

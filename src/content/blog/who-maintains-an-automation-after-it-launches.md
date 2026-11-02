@@ -1,6 +1,6 @@
 ---
 title: "Who Maintains an Automation After It Launches?"
-seoTitle: "Who Maintains an Automation After It Launches – How to Assign an Owner, Set a Monthly Check, and Keep Small Business Automations Running – Forersight"
+seoTitle: "Who Maintains an Automation | Assign an Owner | David J Forer"
 description: "Who maintains an automation after it launches? Name one owner and a backup, add a failure alert and run a 15-minute monthly check so it keeps working."
 pubDate: 2026-10-18T00:00:00Z
 tags: ["automation"]

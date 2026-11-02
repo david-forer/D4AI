@@ -1,6 +1,6 @@
 ---
 title: "AI Agents for Scheduling and Dispatch in a Small Service Business"
-seoTitle: "AI Agent for Scheduling and Dispatch Small Business – What the Agent Decides, What You Keep, and a 4-Week Pilot – Forersight"
+seoTitle: "AI Scheduling Agent | A 4-Week Pilot Plan | David J Forer"
 description: "Can an AI agent handle scheduling and dispatch for a small business? Where it helps, where it fails, and a 4-week pilot that keeps a person in charge."
 pubDate: 2026-10-18T00:00:00Z
 tags: ["ai-agents"]

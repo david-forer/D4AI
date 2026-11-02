@@ -1,6 +1,6 @@
 ---
 title: "Small Business SEO Case Study: A Prescription for a Site Google Showed but Nobody Clicked"
-seoTitle: "Small Business SEO Case Study – Why a Website Gets Impressions but No Clicks, What Search Console Showed, What Changed and a 10-Step Prescription – Forersight"
+seoTitle: "Small Business SEO Case Study | Fix No Clicks | David J Forer"
 description: "A small business SEO case study: a site with thousands of impressions and almost no clicks, what was checked, what changed and a 10-step prescription."
 pubDate: 2026-09-27T00:00:00Z
 tags: ["seo"]

@@ -1,6 +1,6 @@
 ---
 title: "When to Say No to AI, and How to Make the Call Stick"
-seoTitle: "When to Say No to AI – The 6 Tests That Disqualify a Process, How to Turn Down a Vendor in 10 Minutes, and the Dated No List That Stops the Same Idea Coming Back Every Quarter – Forersight"
+seoTitle: "When to Say No to AI | 6 Tests to Disqualify | David J Forer"
 description: "Knowing when to say no to AI is most of the strategy. Here are 6 tests that disqualify a process, plus how to write the no down so it holds."
 pubDate: 2026-09-23T00:00:00Z
 tags: ["ai-strategy"]

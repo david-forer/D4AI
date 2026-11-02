@@ -1,6 +1,6 @@
 ---
 title: "Automation Architecture for Small Teams: Why Building Without a Blueprint Costs More Than It Saves"
-seoTitle: "Automation Architecture for Small Teams – Why Building Without a Blueprint Costs More Than It Saves – Design the Foundation First and Let the ROI Compound – Forersight"
+seoTitle: "Automation Architecture | Foundation First | David J Forer"
 description: "Small firms that automate without an architecture end up with more tools and the same problems. Learn how to build automation architecture the right way for teams of 5 to 25 people."
 pubDate: 2026-02-14T00:00:00Z
 updatedDate: 2026-09-23T00:00:00Z

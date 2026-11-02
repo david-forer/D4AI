@@ -1,6 +1,6 @@
 ---
 title: "When to Replace a Spreadsheet With Automation"
-seoTitle: "When to Replace a Spreadsheet With Automation – 5 Signs It Is Time, What to Move First, and How to Graduate Without Breaking the Process – Forersight"
+seoTitle: "Replace a Spreadsheet With Automation | 5 Signs | David J Forer"
 description: "When should you replace a spreadsheet with automation? Five signs it is time, what to keep in the sheet and how to move one piece at a time."
 pubDate: 2026-10-18T00:00:00Z
 tags: ["automation"]

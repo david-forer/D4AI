@@ -1,6 +1,6 @@
 ---
 title: "What to Do When an AI Project Fails at a Small Business"
-seoTitle: "What to Do When an AI Project Fails – The 4 Failure Types, the 3 Numbers That Decide Salvage, Restart or Stop, and What to Recover Before You Shut It Down – Forersight"
+seoTitle: "When an AI Project Fails | Salvage or Stop | David J Forer"
 description: "What to do when an AI project fails: name the failure type, run 3 numbers, then salvage, restart or stop. A decision a founder can make in one afternoon."
 pubDate: 2026-09-23T00:00:00Z
 tags: ["hiring-an-ai-consultant"]

@@ -1,6 +1,6 @@
 ---
 title: "AI Tools and Tech Stack for Small Businesses: Build a Stack That Works With Your Operations, Not Against Them"
-seoTitle: "AI Tools and Tech Stack for Small Businesses – Build a Lean Integrated Stack That Works With Your Operations Instead of Against Them – How to Evaluate, Choose, and Sequence AI Tools – Forersight"
+seoTitle: "AI Tech Stack for Small Business | Keep It Lean | David J Forer"
 description: "Most small businesses collect AI tools without building a stack. Here is how to design an integrated AI tech stack that delivers real operational results."
 pubDate: 2026-03-21T00:00:00Z
 updatedDate: 2026-09-23T00:00:00Z

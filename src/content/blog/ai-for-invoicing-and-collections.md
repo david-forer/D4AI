@@ -1,6 +1,6 @@
 ---
 title: "AI Accounts Receivable Automation Before You Buy a Tool"
-seoTitle: "AI Accounts Receivable Automation for Small Business – What QuickBooks and Xero Already Do, a 5-Step Reminder Sequence a Bookkeeper Can Run, and the Point Where a Dedicated AR Tool Pays for Itself – Forersight"
+seoTitle: "AI Accounts Receivable | 5-Step Reminder Plan | David J Forer"
 description: "AI accounts receivable automation for a small business: what QuickBooks and Xero already do, a reminder sequence, and when a paid AR tool is worth it."
 pubDate: 2026-09-25T00:00:00Z
 tags: ["business-functions"]

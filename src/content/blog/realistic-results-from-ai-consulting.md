@@ -6,7 +6,7 @@ updatedDate: 2026-09-27T00:00:00Z
 tags: ["hiring-an-ai-consultant"]
 heroImage: "/images/blog/realistic-results-from-ai-consulting.webp"
 articleType: "cluster"
-seoTitle: "Realistic Results From AI Consulting – What to Expect in Year One, How to Measure AI ROI for a Small Business and How to Keep Momentum After the Consultant Leaves – Forersight"
+seoTitle: "AI Consulting Results | Year-One Expectations | David J Forer"
 ---
 
 Realistic results from AI consulting, for a business with 5 to 20 people, are smaller and more specific than most sales pages suggest. In year one you should expect a handful of named processes to take less time and produce fewer errors. The gains show up first in hours saved and only later in revenue. They last after the consultant leaves if someone on your team owns the systems and you keep measuring them.

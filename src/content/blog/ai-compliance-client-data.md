@@ -1,6 +1,6 @@
 ---
 title: "AI Compliance and Client Data Starts With Your Contracts"
-seoTitle: "AI Compliance and Client Data – Why Your Existing Client Contracts Decide the Answer, the 4 Clauses to Read Before Any Tool Touches Client Work, and How to Answer a Supplier Review – Forersight"
+seoTitle: "AI Client Data Compliance | Contracts First | David J Forer"
 description: "AI compliance for client data is decided by contracts you already signed. The 4 clauses to read, and how to answer when a client asks what you use."
 pubDate: 2026-09-23T00:00:00Z
 tags: ["ai-governance"]

@@ -1,6 +1,6 @@
 ---
 title: "AI Strategy for Small Businesses: A Practical Framework for Getting Real Results"
-seoTitle: "AI Strategy for Small Businesses – A Practical Framework for Getting Real Results Without a Technical Team – Build an AI Implementation Plan Aligned to Your Business Goals – Forersight"
+seoTitle: "AI Strategy for Small Business | Real Results | David J Forer"
 description: "Most small businesses approach AI by buying tools before having a strategy. Here is how to build an AI strategy for your small business that produces real results without a technical team."
 pubDate: 2026-03-21T00:00:00Z
 updatedDate: 2026-09-23T00:00:00Z

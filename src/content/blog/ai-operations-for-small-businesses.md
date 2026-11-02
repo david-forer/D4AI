@@ -1,6 +1,6 @@
 ---
 title: "AI Operations for Small Businesses: The Complete Guide"
-seoTitle: "AI Operations for Small Businesses – Build the Operational Foundation That Makes AI Actually Compound – Scale Your Capacity Without Constant Hiring – The Five-Layer AI Ops Stack – Forersight"
+seoTitle: "AI Operations | Scale Without Constant Hiring | David J Forer"
 description: "What AI operations means for founders, why small businesses break without it, and how to build the foundation that lets AI add capacity before you hire."
 pubDate: 2026-03-04T00:00:00Z
 updatedDate: 2026-09-24T00:00:00Z

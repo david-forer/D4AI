@@ -1,6 +1,6 @@
 ---
 title: "AI Readiness Framework for Service Businesses: Why Most Firms Get It Wrong Before They Even Start"
-seoTitle: "AI Readiness Framework for Service Businesses – Five Dimensions That Determine Whether Your AI Investment Will Deliver or Fall Apart – Assess and Score Your Operational Readiness – Forersight"
+seoTitle: "AI Readiness Framework | 5 Dimensions to Score | David J Forer"
 description: "Most service firms think they're AI ready. They're not. Learn the five-dimension readiness model that separates tool adoption from structural readiness, and why it determines your ROI."
 pubDate: 2026-02-23T00:00:00Z
 updatedDate: 2026-09-23T00:00:00Z

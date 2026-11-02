@@ -1,6 +1,6 @@
 ---
 title: "The AI Features Already Inside the Software You Pay For"
-seoTitle: "AI Features in Software You Already Pay For – How to Find Them, Which to Switch On and Which to Skip Before Buying a New Tool – Forersight"
+seoTitle: "AI Software Features | Which to Switch On | David J Forer"
 description: "Your CRM, accounting and email tools may already include AI features. How to find them, which to switch on first, and when to skip a new subscription."
 pubDate: 2026-10-18T00:00:00Z
 tags: ["ai-tools"]

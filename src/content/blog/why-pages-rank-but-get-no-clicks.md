@@ -1,6 +1,6 @@
 ---
 title: "Why Pages Rank but Get No Clicks: The 4 Causes and Fixes"
-seoTitle: "Why Pages Rank but Get No Clicks – The 4 Causes of High Impressions and a Low Click Rate in Search Console, How to Tell Which One You Have in 20 Minutes, and the Fix That Matches Each – Forersight"
+seoTitle: "Why Pages Rank but Get No Clicks | 4 Causes | David J Forer"
 description: "Pages that rank but get no clicks have 4 causes. Here is how to tell which one you have from Search Console data, and the fix that matches each."
 pubDate: 2026-09-23T00:00:00Z
 tags: ["seo"]
