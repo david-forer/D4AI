@@ -168,6 +168,23 @@ export const collections = {
   // Kept out of the blog collection so they never count toward a hub's post
   // total or show up in the blog index. A tag is optional and, when present,
   // must still be a hub slug so the chip links to a real hub page.
+  // Free downloadable guides, served at /resources/guides/<slug>. The markdown
+  // body is the guide text, and the PDF in public/downloads/guides carries the
+  // same words.
+  'guides': defineCollection({
+    schema: z.object({
+      title: z.string(),
+      seoTitle: z.string().optional(),
+      description: z.string(),
+      lede: z.string(),
+      format: z.enum(['checklist', 'step-by-step', 'teardown']),
+      pdf: z.string(),
+      cardText: z.string(),
+      pubDate: z.coerce.date(),
+      order: z.number(),
+      draft: z.boolean().default(false),
+    }),
+  }),
   'research': defineCollection({
     schema: z.object({
       title: z.string(),

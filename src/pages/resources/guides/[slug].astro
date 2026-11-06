@@ -1,0 +1,58 @@
+---
+// Free guide page. Text lives in src/content/guides/<slug>.md, and the PDF in
+// public/downloads/guides/<slug>.pdf carries the same words.
+import Layout from '../../../layouts/Layout.astro';
+import PageHero from '../../../components/PageHero.astro';
+import { breadcrumbJson } from '../../../lib/schema';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides', ({ data }) => !data.draft);
+  return guides.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+const url = `/resources/guides/${entry.slug}`;
+const { Content } = await entry.render();
+const eyebrow = d.format === 'checklist' ? 'Free checklist' : d.format === 'teardown' ? 'Free teardown' : 'Free step-by-step guide';
+---
+
+<Layout title={d.seoTitle ?? d.title} description={d.description}>
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['Resources','/resources'],[d.title, url]])} />
+  <PageHero eyebrow={eyebrow} title={d.title} text={d.lede}>
+    <a slot="before" class="ph-back" href="/resources">&larr; All resources</a>
+    <a class="ph-btn ph-btn-flame" href={d.pdf} download>Download the PDF <span aria-hidden="true">&rarr;</span></a>
+  </PageHero>
+
+  <section class="guide">
+    <div class="wrap">
+      <div class="prose prose-lg max-w-none">
+        <Content />
+      </div>
+      <p class="dl"><a href={d.pdf} download>Download this guide as a PDF</a></p>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .guide { background: #fff; padding: 64px 0 80px; }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+  .guide :global(h2) { font-size: 1.75rem; font-weight: 700; margin: 2.2rem 0 1rem; color: #1f2937; }
+  .guide :global(h3) { font-size: 1.3rem; font-weight: 700; margin: 1.6rem 0 .6rem; color: #1f2937; }
+  .guide :global(p) { margin-bottom: 1rem; }
+  .guide :global(ul), .guide :global(ol) { margin: 0 0 1.2rem 1.4rem; }
+  .guide :global(ul) { list-style: disc; }
+  .guide :global(li) { margin-bottom: .4rem; }
+  .guide :global(li.task-list-item), .guide :global(ul.contains-task-list) { list-style: none; }
+  .guide :global(ul.contains-task-list) { margin-left: 0; }
+  .guide :global(li input[type="checkbox"]) { margin-right: .6rem; }
+  .guide :global(a) { color: #1d4ed8; text-decoration: underline; }
+  .guide :global(table) { width: 100%; border-collapse: collapse; margin: 1rem 0 1.4rem; font-size: 1rem; }
+  .guide :global(th) { text-align: left; border-bottom: 2px solid #c2410c; padding: .5rem; }
+  .guide :global(td) { border-bottom: 1px solid #e5e7eb; padding: .5rem; height: 2.4rem; }
+  .guide :global(pre) { background: #f3eee4; color: #111827; padding: 1rem 1.2rem; border-radius: 6px; white-space: pre-wrap; font-size: .95rem; }
+  .guide :global(blockquote) { background: #f3eee4; border-left: 4px solid #c2410c; padding: .9rem 1.2rem; margin: 0 0 1rem; font-style: normal; color: #111827; }
+  .guide :global(blockquote p) { margin: 0 0 .3rem; }
+  .dl { margin-top: 2.5rem; font-weight: 600; }
+</style>
