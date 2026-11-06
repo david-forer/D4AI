@@ -3,7 +3,7 @@ title: "Best AI Tools for Business Operations: What Small Teams Use at Each Laye
 seoTitle: "Best AI Tools for Business | A Starter Stack | David J Forer"
 description: "The best AI tools for business operations, sorted by the layer each one fixes. AI business software for a 5 to 20 person company, with a starter stack and a comparison table."
 pubDate: 2026-03-04T00:00:00Z
-updatedDate: 2026-11-02T00:00:00Z
+updatedDate: 2026-11-06T00:00:00Z
 tags: ["ai-operations"]
 heroImage: "/images/blog/best-ai-tools-business-operations.webp"
 articleType: "cluster"
@@ -198,6 +198,12 @@ The sequence:
 5. Build dashboards on top of the clean, connected data.
 
 This is a matter of weeks for the first 2 layers in most small businesses. The order means you hold off on layer 4 until layer 2 is solid. [How to Build an AI Tech Stack](/blog/how-to-build-ai-tech-stack) goes into the build step by step.
+
+## How I Chose the Tools on This Page
+
+I have used every tool named on this page. Slack, Zoom and Loom are part of my own week, and for meeting notes I have also tried Granola and Fathom. The AI assistants (ChatGPT, Claude, Gemini, Copilot and Perplexity) and the automation tools (Zapier, Make and n8n) come from hands-on use, not from a vendor's feature list.
+
+I picked these for a small team with no operations lead, which is a different job from picking for a company with an IT department. A tool made the list when a founder could get a first result in an afternoon, when it connected to what the team already runs, and when the cost stayed sensible as usage grew. Tools that need a developer to keep them running made the list only where the trade-off is stated, as with n8n. Rankings change fast, so read this as a list of what has worked for businesses this size and not a verdict on yours.
 
 ## How to Choose AI Tools for Business Operations and AI Software for a Small Business
 
