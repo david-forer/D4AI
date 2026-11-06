@@ -11,9 +11,9 @@ articleType: "cluster"
 
 The subscription price of an AI tool is easy to see. The cost of switching to a different one is harder to calculate because most of it does not appear in a budget line.
 
-Data migration. Integration rebuilds. Team retraining. The productivity dip while the new tool becomes familiar. The accumulated configuration in the old tool that needs to be recreated in the new one. Each of these has a real cost that organisations consistently underestimate when they decide to switch.
+Data migration. Integration rebuilds. Team retraining. The productivity dip while the new tool becomes familiar. The accumulated configuration in the old tool that needs to be recreated in the new one. Each of these has a real cost that organizations consistently underestimate when they decide to switch.
 
-None of this means you should stay on the wrong tool. But it does mean that switching decisions deserve the same rigor as initial adoption decisions, and that the migration process needs to be planned rather than improvised. This article covers how to make that decision clearly and execute the migration in a way that minimises the disruption.
+None of this means you should stay on the wrong tool. But it does mean that switching decisions deserve the same rigor as initial adoption decisions, and that the migration process needs to be planned rather than improvised. This article covers how to make that decision clearly and execute the migration in a way that minimizes the disruption.
 
 ---
 
@@ -91,13 +91,13 @@ A tool transition affects people as well as data and integrations. The team that
 
 The final step of a migration that is often handled carelessly is the formal retirement of the old tool.
 
-**Confirm the new tool is fully operational first.** The old tool should not be cancelled until the new one has been running without issues for a defined validation period. The validation period is the insurance policy against a problem with the new tool forcing a rollback at the worst possible moment.
+**Confirm the new tool is fully operational first.** The old tool should not be canceled until the new one has been running without issues for a defined validation period. The validation period is the insurance policy against a problem with the new tool forcing a rollback at the worst possible moment.
 
-**Complete the final data archive.** Even after migrating the data you plan to use in the new tool, run a final export from the old tool and archive it. Data you did not migrate because you do not currently need it may become relevant in the future. Having an archive costs almost nothing compared to the cost of discovering you need data from a cancelled subscription.
+**Complete the final data archive.** Even after migrating the data you plan to use in the new tool, run a final export from the old tool and archive it. Data you did not migrate because you do not currently need it may become relevant in the future. Having an archive costs almost nothing compared to the cost of discovering you need data from a canceled subscription.
 
 **Update all documentation.** Any SOPs, onboarding guides, training materials, or workflow documentation that references the old tool needs to be updated to reflect the new one. This is easy to defer and consistently creates confusion when overlooked.
 
-**Cancel the subscription properly.** Confirm the cancellation is complete and that billing has stopped. Tools that appear to be cancelled but continue billing are a known category of tool spend waste.
+**Cancel the subscription properly.** Confirm the cancellation is complete and that billing has stopped. Tools that appear to be canceled but continue billing are a known category of tool spend waste.
 
 ---
 

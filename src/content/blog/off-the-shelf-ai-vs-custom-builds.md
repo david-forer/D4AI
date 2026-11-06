@@ -53,7 +53,7 @@ When that specificity creates genuine competitive advantage, when the custom sys
 
 **Proprietary process automation.** If your business has a workflow that is truly unique and creates competitive advantage, and if encoding it in a system would reinforce that advantage in a way competitors could not easily replicate, that is a real use case for custom.
 
-**Integration with proprietary data.** Businesses with large, proprietary data assets, long historical records, unique content libraries, or specialised knowledge bases can sometimes build AI systems that use those assets in ways no generic tool can match.
+**Integration with proprietary data.** Businesses with large, proprietary data assets, long historical records, unique content libraries, or specialized knowledge bases can sometimes build AI systems that use those assets in ways no generic tool can match.
 
 **Exact fit for complex, high-stakes decisions.** In contexts where the cost of imprecision is high and the decision logic is complex, a custom system tuned precisely to that decision context can outperform a general-purpose tool.
 
@@ -97,7 +97,7 @@ Between pure off-the-shelf and fully custom sits a range of hybrid options that 
 
 **Heavily configured off-the-shelf.** Many commercial AI tools allow substantial configuration through APIs, custom prompts, fine-tuning, and integration with proprietary data. This often achieves eighty percent of what a custom build would deliver at ten percent of the cost and without the maintenance burden.
 
-**Modular custom on an off-the-shelf foundation.** Some businesses build custom components that sit on top of commercial platforms. The foundation is maintained by the vendor. The custom layer handles the specific differentiation. This approach captures the support and reliability of commercial products while allowing meaningful specialisation.
+**Modular custom on an off-the-shelf foundation.** Some businesses build custom components that sit on top of commercial platforms. The foundation is maintained by the vendor. The custom layer handles the specific differentiation. This approach captures the support and reliability of commercial products while allowing meaningful specialization.
 
 **Vendor APIs with custom orchestration.** Using the APIs of commercial AI models to build custom applications that call those models rather than hosting the models themselves. The underlying AI capability is provided and maintained by the vendor. The specific application logic, the orchestration, and the integration with your systems is custom. This is often the right architecture for businesses that need custom application logic without taking on the model maintenance problem.
 

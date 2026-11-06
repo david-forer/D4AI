@@ -35,7 +35,7 @@ AR follow-up, the time-consuming process of chasing overdue payments, runs on au
 
 The cash flow impact of reliable AR automation is direct and measurable. Average days outstanding tends to fall when follow-up is consistent and prompt rather than whenever someone remembers.
 
-### Expense Management and Categorisation
+### Expense Management and Categorization
 
 Receipt capture, expense categorization, and spend visibility are simple candidates for AI automation. Receipts captured digitally are categorized automatically against the chart of accounts. Expense reports are generated from categorized data rather than assembled manually.
 

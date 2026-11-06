@@ -8,7 +8,7 @@ heroImage: "/images/blog/ai-agents-for-scheduling-and-dispatch.webp"
 articleType: "supporting"
 ---
 
-Someone in your firm spends an hour every morning moving jobs around because a client cancelled, a tech called in sick, or a visit ran long. That hour is the work an AI agent for scheduling and dispatch is meant to take over.
+Someone in your firm spends an hour every morning moving jobs around because a client canceled, a tech called in sick, or a visit ran long. That hour is the work an AI agent for scheduling and dispatch is meant to take over.
 
 ## Key Takeaways
 
@@ -48,7 +48,7 @@ If your pain sits in the first two rows, fix your booking tool and stop there. T
 
 A useful rule of thumb is time. Ask the person who schedules to log how many minutes a day go to rearranging, not to first-time booking. If it is under 30 minutes a day, the saving will not cover the setup and review time.
 
-If it is an hour or more, the maths changes. An hour a day is about 20 hours a month, which at $35 an hour is $700 of loaded cost spent on shuffling. An agent that cuts that in half, while adding some review time, is worth testing. These figures are illustrative, so replace them with your own.
+If it is an hour or more, the math changes. An hour a day is about 20 hours a month, which at $35 an hour is $700 of loaded cost spent on shuffling. An agent that cuts that in half, while adding some review time, is worth testing. These figures are illustrative, so replace them with your own.
 
 Team size matters too. A firm with 2 techs can see the whole day in a glance. A firm with 8 crews across a service area cannot, and the cost of a bad route is a wasted hour of every crew.
 

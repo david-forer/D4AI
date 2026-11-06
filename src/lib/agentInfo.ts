@@ -113,7 +113,7 @@ const person = {
     'Workflow and intake system design',
     'Automation architecture for small teams',
     'AI team adoption and training',
-    'Search engine optimisation operations',
+    'Search engine optimization operations',
   ],
 };
 

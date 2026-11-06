@@ -67,11 +67,11 @@ Build the automation layer with documented workflows. Every automated connection
 
 ## The AI Assistance Layer: Build on Top of a Working Foundation
 
-AI assistance tools, the ones that generate, analyse, summarise, and assist with judgment-heavy tasks, deliver the most value when the operational foundation beneath them is solid.
+AI assistance tools, the ones that generate, analyze, summarize, and assist with judgment-heavy tasks, deliver the most value when the operational foundation beneath them is solid.
 
 An AI writing tool fed client context from your CRM produces output that is relevant and specific. The same tool operated in isolation produces output that requires significant editing to make it useful. The connection is what makes the tool useful.
 
-An AI that summarises meeting notes and extracts action items delivers value when the outputs flow directly into your project management tool and the right people are notified. When the summaries go into a folder that someone checks inconsistently, the value degrades.
+An AI that summarizes meeting notes and extracts action items delivers value when the outputs flow directly into your project management tool and the right people are notified. When the summaries go into a folder that someone checks inconsistently, the value degrades.
 
 The design principle is integration before adoption. Before adding any AI assistance tool, map where its outputs need to go and how they get there. If the answer is "someone copies them manually," that is the gap to close before the tool goes into the stack.
 
@@ -95,7 +95,7 @@ When data flows cleanly from your operational systems into a reporting layer, th
 
 At the small business level, this layer often starts with a well-structured dashboard built directly in your primary tools rather than a dedicated BI platform. Most project management tools and CRMs have built-in reporting that is underused because nobody configured it properly. Before adding a reporting tool, explore whether the tools you already have can serve this function with better configuration.
 
-When the operational data volume and complexity justify a dedicated reporting layer, tools like Looker Studio or Metabase connect to primary data sources and surface visualisations without requiring manual report construction. The prerequisite is the same as always: clean, consistent data in the upstream systems.
+When the operational data volume and complexity justify a dedicated reporting layer, tools like Looker Studio or Metabase connect to primary data sources and surface visualizations without requiring manual report construction. The prerequisite is the same as always: clean, consistent data in the upstream systems.
 
 ---
 
@@ -129,7 +129,7 @@ Foundation first. Clean data, consistent usage, single systems of record.
 
 Automation layer second. Connect the primary systems, eliminate the manual handoffs that consume the most time.
 
-AI assistance third. Layer in generation, summarisation, and analysis on top of a connected foundation.
+AI assistance third. Layer in generation, summarization, and analysis on top of a connected foundation.
 
 Reporting layer fourth. Surface the operational picture from the clean data flowing through the connected systems.
 

@@ -66,7 +66,7 @@ As the business grows, the operational complexity increases. The team is larger,
 
 **Proposal and document generation.** At higher deal volume, the time cost of manual proposal construction becomes a bottleneck. A tool that connects to CRM context and generates proposal drafts produces measurable time savings at this stage. The integration with the CRM is the critical feature, not the template design capability.
 
-**Meeting capture and action extraction.** At this scale, the team is in more meetings, with more clients, producing more action items that need to be tracked. A tool that captures and summarises meetings and pushes action items directly to the project management system starts earning its cost in ways that are clear.
+**Meeting capture and action extraction.** At this scale, the team is in more meetings, with more clients, producing more action items that need to be tracked. A tool that captures and summarizes meetings and pushes action items directly to the project management system starts earning its cost in ways that are clear.
 
 **Better reporting.** When the operational data volume exceeds what the built-in reporting in primary tools can effectively surface, a reporting layer is justified. Looker Studio or Metabase pointed at primary data sources delivers real-time operational visibility without manual assembly.
 
@@ -86,13 +86,13 @@ Each addition should go through the same evaluation: specific problem, clear int
 
 Some tools are commonly adopted before the business is in a position to get value from them. These are the most frequent premature additions.
 
-**Advanced BI tools before data quality is solid.** Business intelligence platforms that require significant data modelling and configuration deliver nothing useful if the underlying data is inconsistent. The investment in data quality comes before the investment in BI, not at the same time.
+**Advanced BI tools before data quality is solid.** Business intelligence platforms that require significant data modeling and configuration deliver nothing useful if the underlying data is inconsistent. The investment in data quality comes before the investment in BI, not at the same time.
 
-**AI personalisation tools before the CRM is reliable.** Personalisation tools that use client data to tailor communications depend entirely on that data being accurate. If the CRM has inconsistent records, duplicate contacts, and missing fields, the personalisation output reflects that inconsistency directly.
+**AI personalization tools before the CRM is reliable.** Personalization tools that use client data to tailor communications depend entirely on that data being accurate. If the CRM has inconsistent records, duplicate contacts, and missing fields, the personalization output reflects that inconsistency directly.
 
 **AI agents for autonomous workflows before the underlying processes are documented.** AI agents that take autonomous action in workflows work reliably when the processes they execute are well-defined and tested. They create unpredictable results when they are trying to execute processes that nobody fully understands yet.
 
-**Enterprise platforms before the team can use them.** Tools designed for large organisations with dedicated technical staff frequently underperform in small business environments not because of the tools themselves but because the internal capacity to configure and maintain them is not there. Matching tool sophistication to internal capacity is a prerequisite, not a nice-to-have.
+**Enterprise platforms before the team can use them.** Tools designed for large organizations with dedicated technical staff frequently underperform in small business environments not because of the tools themselves but because the internal capacity to configure and maintain them is not there. Matching tool sophistication to internal capacity is a prerequisite, not a nice-to-have.
 
 ---
 

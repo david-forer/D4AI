@@ -25,7 +25,7 @@ When an AI project fails at a business of 5 to 20 people, the decision in front 
 
 Getting there takes 2 steps. Name which of the 4 failure types you are looking at, then run 3 numbers. Both fit in an afternoon, and neither requires a board, a steering committee, or an IT department.
 
-The recovery frameworks written for large organisations have the right shape. They ask what the unsolved problem costs, what finishing would cost, and what the existing work is worth. They then assume an executive sponsor, an asset inventory process, and a team to run the analysis. At a 12-person firm the founder approved the spend personally and is now doing the review alone, between client work.
+The recovery frameworks written for large organizations have the right shape. They ask what the unsolved problem costs, what finishing would cost, and what the existing work is worth. They then assume an executive sponsor, an asset inventory process, and a team to run the analysis. At a 12-person firm the founder approved the spend personally and is now doing the review alone, between client work.
 
 Here is that same test, resized.
 

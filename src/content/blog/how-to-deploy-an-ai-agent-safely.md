@@ -107,7 +107,7 @@ Weekly for 2 months, then monthly. Fifteen minutes each time.
 
 **The cases it handled alone.** Read 10 at random. You are checking whether the category you widened is still behaving.
 
-**What changed underneath it.** Model updates and vendor changes alter behaviour without altering your configuration, which is covered in [AI vendor and model risk](/blog/ai-vendor-and-model-risk).
+**What changed underneath it.** Model updates and vendor changes alter behavior without altering your configuration, which is covered in [AI vendor and model risk](/blog/ai-vendor-and-model-risk).
 
 **Whether the owner still has the time.** The most common quiet failure is that the named person got busy 5 weeks in and stopped reading. Nothing breaks visibly. The agent just stops being supervised, and nobody decides that, it simply happens.
 
@@ -131,7 +131,7 @@ Decide the conditions before you launch, because deciding them during an inciden
 
 Roll back if the agent takes an action you had put in the never category. Roll back if a client raises something caused by its output. Roll back if the owner has not reviewed the log for 3 weeks running.
 
-A rollback is also the moment to re-examine whether this job suited an agent in the first place, rather than assuming the rollout was at fault. The catalogue of jobs that hold up in firms this size is in [AI agent use cases for small business](/blog/ai-agent-use-cases-small-business), and the pillar behind all of it is [AI agents for small businesses](/blog/ai-agents-for-small-businesses).
+A rollback is also the moment to re-examine whether this job suited an agent in the first place, rather than assuming the rollout was at fault. The catalog of jobs that hold up in firms this size is in [AI agent use cases for small business](/blog/ai-agent-use-cases-small-business), and the pillar behind all of it is [AI agents for small businesses](/blog/ai-agents-for-small-businesses).
 
 Rolling back is cheap and reversible. The work returns to the person who used to do it and you have a fortnight of evidence about what to fix. Firms that treat a rollback as failure tend to leave a misbehaving agent running while they debate it, and that is how a small problem becomes a client conversation. Where the limits get written down is covered in [AI governance for small businesses](/blog/ai-governance-for-small-businesses).
 

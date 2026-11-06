@@ -27,7 +27,7 @@ An approval step survives only while approving is faster than doing the work. Cr
 
 That failure is worse than having no review at all. No review is a known risk you can manage. A rubber-stamped queue produces an audit trail saying a person checked, which is what you will point at when a client asks, and it will not be true.
 
-The design question is how much you can put in front of the human before the loop becomes theatre. This sits inside the wider framework in [AI governance for small businesses](/blog/ai-governance-for-small-businesses).
+The design question is how much you can put in front of the human before the loop becomes theater. This sits inside the wider framework in [AI governance for small businesses](/blog/ai-governance-for-small-businesses).
 
 ---
 
@@ -82,7 +82,7 @@ None of these announces itself. Each one is worth checking for specifically.
 
 **Habituation.** The first 200 approvals were all correct, so the 201st gets a glance. This is a normal human response to a reliable system and no amount of instruction prevents it. It is managed by sampling rather than by asking people to concentrate harder.
 
-**Reviewer drift.** The person approving changes, and the new one has different standards because nobody wrote down what good looks like. Six weeks later the agent's effective behaviour has changed without a single configuration edit.
+**Reviewer drift.** The person approving changes, and the new one has different standards because nobody wrote down what good looks like. Six weeks later the agent's effective behavior has changed without a single configuration edit.
 
 ---
 
@@ -140,7 +140,7 @@ Name a second person at the same time. A single reviewer is a single point of fa
 
 Service firms get asked this now, and a vague answer costs more than a modest true one.
 
-Say what a person checks and when. We use AI to draft and analyse. Anything that reaches you has been read and approved by the person responsible for your account. We keep a record of what was produced and who approved it.
+Say what a person checks and when. We use AI to draft and analyze. Anything that reaches you has been read and approved by the person responsible for your account. We keep a record of what was produced and who approved it.
 
 That is defensible because it is specific, and it is only defensible if it is true, which is the reason the 10-second rule matters commercially as well as operationally. A firm that gates too much and stamps it has given the client an answer it cannot support. Where this sits alongside data handling commitments is covered in [AI compliance and client data](/blog/ai-compliance-client-data).
 

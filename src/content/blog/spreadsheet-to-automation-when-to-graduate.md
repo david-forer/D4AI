@@ -39,7 +39,7 @@ Keep the sheet when:
 
 - Fewer than 3 people use it and they sit in the same conversations.
 - The data changes slowly, such as a price list or a staff roster.
-- The main use is thinking and analysis, such as modelling a quarter.
+- The main use is thinking and analysis, such as modeling a quarter.
 - You cannot yet describe the process in plain steps.
 
 The last point deserves weight. Automating a process that nobody has written down bakes in whatever confusion exists now. The [process mapping guide](/blog/map-business-processes-for-automation) covers how to write the steps first.

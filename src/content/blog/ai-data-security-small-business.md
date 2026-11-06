@@ -60,7 +60,7 @@ Tier decides how the tool treats data. The second control decides what reaches t
 
 3 classes works because of sorting speed. A paralegal at a 20-person practice with a document in front of them has about 2 seconds of willingness to think about this. Client name on it means restricted. Ours and unpublished means internal. Already public means open. That is the whole test, and it is one people will still be applying correctly in 6 months.
 
-Write the rule down. What protects you is the behaviour, and a rule nobody can recall mid-task never reaches behaviour, which is the argument made at length in [AI policy versus AI training](/blog/ai-policy-vs-ai-training).
+Write the rule down. What protects you is the behavior, and a rule nobody can recall mid-task never reaches behavior, which is the argument made at length in [AI policy versus AI training](/blog/ai-policy-vs-ai-training).
 
 ---
 
@@ -102,7 +102,7 @@ The cost is asymmetric for a small firm. A 2,000-person company absorbs one mish
 
 Worth being direct about the tooling question, because the search results on this topic are dominated by products.
 
-Data loss prevention platforms, AI monitoring software, compliance suites, and 40-page policies written by a consultant are built for organisations with hundreds of staff, a security team to run them, and a regulatory obligation that names them specifically. Bought at 30 people, they become expensive software nobody administers.
+Data loss prevention platforms, AI monitoring software, compliance suites, and 40-page policies written by a consultant are built for organizations with hundreds of staff, a security team to run them, and a regulatory obligation that names them specifically. Bought at 30 people, they become expensive software nobody administers.
 
 The controls that carry most of your risk at this size are 3 business tier subscriptions, one page of rules, and the habit of asking 5 questions before a new tool touches client work. A few hundred a month, and one afternoon of a founder's attention.
 

@@ -62,7 +62,7 @@ Under data protection rules that cover most US service firms with European clien
 
 That single difference is why the account tier decision carries more weight than the policy wording, an argument made in full in [AI data security for small business](/blog/ai-data-security-small-business).
 
-A recruiter putting candidate CVs through a tool, a bookkeeper processing named client accounts, and an agency analysing a customer list are all handling personal data, and all 3 usually believe they are not.
+A recruiter putting candidate CVs through a tool, a bookkeeper processing named client accounts, and an agency analyzing a customer list are all handling personal data, and all 3 usually believe they are not.
 
 ---
 
@@ -76,7 +76,7 @@ Clients now send questionnaires. Firms that keep 3 short records answer in 20 mi
 
 **Who has access.** Which people can reach client material through which tools. Company accounts under your domain make this answerable. Personal accounts leave you guessing, and guessing is the answer clients react to.
 
-None of that is a compliance programme. It is 3 files, and it is the difference between telling a client you have checked and telling them you believe so.
+None of that is a compliance program. It is 3 files, and it is the difference between telling a client you have checked and telling them you believe so.
 
 ---
 
@@ -84,9 +84,9 @@ None of that is a compliance programme. It is 3 files, and it is the difference 
 
 They will, and increasingly it arrives as a clause in a renewal rather than a question.
 
-**Answer specifically.** Name the category of use and the safeguard. We use AI to draft and summarise. Client material goes only through business tier accounts under our domain, with training disabled and a named person approving anything that reaches you. Vagueness reads as evasion, and it is usually a sign the firm does not know.
+**Answer specifically.** Name the category of use and the safeguard. We use AI to draft and summarize. Client material goes only through business tier accounts under our domain, with training disabled and a named person approving anything that reaches you. Vagueness reads as evasion, and it is usually a sign the firm does not know.
 
-**Do not overclaim.** Saying no AI touches client data is a commitment you will breach the first time somebody summarises a call transcript. A modest accurate answer survives scrutiny and an ambitious one does not.
+**Do not overclaim.** Saying no AI touches client data is a commitment you will breach the first time somebody summarizes a call transcript. A modest accurate answer survives scrutiny and an ambitious one does not.
 
 **Ask what they need.** Some clients want a general assurance. Some want a named tool list. Some have a policy requiring approval of each subprocessor. The effort differs enormously and guessing wastes it.
 
@@ -118,7 +118,7 @@ That delay is why this gets deprioritised. There is no incident to react to, so 
 
 ## Proportion: what a 30-person firm actually needs
 
-The market, including plenty of AI compliance companies, will sell you a compliance platform. At this size the whole programme is 4 things and an afternoon.
+The market, including plenty of AI compliance companies, will sell you a compliance platform. At this size the whole program is 4 things and an afternoon.
 
 Read the 4 clauses in your top 3 contracts. Buy business tier for the tools that touch client work and move everyone onto company accounts. Keep the 3 records above in one folder. Write the one-paragraph client answer and agree it internally.
 

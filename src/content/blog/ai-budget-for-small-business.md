@@ -30,7 +30,7 @@ The gap is the whole picture: what you will spend across a year, on what, in wha
 
 Every AI budget a founder-led firm will build has the same 4 lines. The proportions shift, the lines do not.
 
-**Tools.** Subscriptions, per-seat licences, API usage. For a 5 to 20 person firm running a deliberate stack, this is $200 to $1,200 a month. It rises fast if nobody owns the list, which is how a firm ends up with 11 subscriptions and 4 of them forgotten.
+**Tools.** Subscriptions, per-seat licenses, API usage. For a 5 to 20 person firm running a deliberate stack, this is $200 to $1,200 a month. It rises fast if nobody owns the list, which is how a firm ends up with 11 subscriptions and 4 of them forgotten.
 
 **Build.** The one-time cost of making something work: an intake automation, a document generator, a reporting pipeline. Done with a consultant, a single workflow runs $3,000 to $8,000 and a multi-workflow implementation runs $10,000 to $25,000. Done internally, the cost moves to the internal time line rather than disappearing.
 
@@ -62,7 +62,7 @@ If none of those tiers is fundable this year, the correct budget is $3,000 to $5
 
 An annual number released in January is an annual number spent by March on tools. Release it in 4 gates instead.
 
-**Quarter 1, about 15% of the budget.** Tools for the one workflow you are building, and nothing else. No firm-wide licences. The deliverable at the end of the quarter is one working system with a named owner.
+**Quarter 1, about 15% of the budget.** Tools for the one workflow you are building, and nothing else. No firm-wide licenses. The deliverable at the end of the quarter is one working system with a named owner.
 
 **Quarter 2, about 35%.** The build itself, plus the training that makes it stick. This is the heaviest quarter because the work is concentrated and the learning is highest.
 

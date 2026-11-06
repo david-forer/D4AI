@@ -65,7 +65,7 @@ The process still costs what it cost. A no closes one option and leaves the unde
 
 **A checklist.** Most processes that fail the documentation test improve 30% from a 1-page checklist pinned where the work happens. It takes an afternoon and removes the variance that made automation impossible in the first place.
 
-**A template.** Work that fails the judgment test often has a repeatable container around a small judgment core. Standardising the container, the proposal structure, the report layout, the onboarding email, recovers most of the time without touching the judgment.
+**A template.** Work that fails the judgment test often has a repeatable container around a small judgment core. Standardizing the container, the proposal structure, the report layout, the onboarding email, recovers most of the time without touching the judgment.
 
 **A price or scope change.** Where a process is expensive because it is bespoke per client, the fix is commercial. Make the bespoke version a paid option and the standard version the default, and the volume problem solves itself.
 

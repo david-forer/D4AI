@@ -44,7 +44,7 @@ Both decisions have to be made by a person, not inherited from a template, or th
 
 Here is the whole thing. Replace the bracketed parts.
 
-**1. Where AI may be used.** AI tools may be used for any work in this firm unless a clause below prohibits it. Drafting, summarising, research, code, analysis and first versions of client-facing material are all permitted and encouraged.
+**1. Where AI may be used.** AI tools may be used for any work in this firm unless a clause below prohibits it. Drafting, summarizing, research, code, analysis and first versions of client-facing material are all permitted and encouraged.
 
 Starting permissive matters. A policy whose first move is a list of bans gets read as an obstacle and routed around, and shadow use is the outcome you are trying to prevent.
 
@@ -121,7 +121,7 @@ The document is 20% of the work. Getting it used is the rest.
 
 **Put it where the work is.** A policy in a shared drive nobody opens is not deployed. Pin it in the channel people work in.
 
-A written rule changes behaviour only when someone can recall it mid-task, which is the argument made at length in [AI policy versus AI training](/blog/ai-policy-vs-ai-training). One page exists to serve recall, not brevity for its own sake.
+A written rule changes behavior only when someone can recall it mid-task, which is the argument made at length in [AI policy versus AI training](/blog/ai-policy-vs-ai-training). One page exists to serve recall, not brevity for its own sake.
 
 ---
 
@@ -129,7 +129,7 @@ A written rule changes behaviour only when someone can recall it mid-task, which
 
 This happens in the first quarter in nearly every firm, and how you handle it decides whether the policy survives.
 
-The usual case is not defiance. Somebody pasted a client document into a personal account to hit a deadline, then read clause 3 afterwards and realised. What you do in the next 10 minutes sets whether anyone ever tells you again.
+The usual case is not defiance. Somebody pasted a client document into a personal account to hit a deadline, then read clause 3 afterwards and realized. What you do in the next 10 minutes sets whether anyone ever tells you again.
 
 **Deal with the exposure first, separately from the person.** Find out which tool, which account, and what was in the document. Delete the conversation if the product allows it, check the retention setting on that account, and note whether the client has a contract clause the incident touches. That is the whole technical response in most cases.
 

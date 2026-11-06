@@ -103,9 +103,9 @@ With the inventory, integration map, and data quality assessment in hand, the ga
 
 ## Step 5: Build the Priority Matrix
 
-The output of the audit should be a prioritised action list that tells you what to address first.
+The output of the audit should be a prioritized action list that tells you what to address first.
 
-Organise actions across four categories.
+Organize actions across four categories.
 
 **Fix first.** Data quality issues and broken integrations that are currently causing problems or that block planned improvements. These get addressed before anything new is added to the stack.
 

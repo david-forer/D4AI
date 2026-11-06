@@ -47,7 +47,7 @@ This is the safest agent to start with, because the output is a document a perso
 
 For a firm handling 50 or more tickets a week where a meaningful share are documented, repeatable cases. The agent resolves those end to end and escalates the rest.
 
-The capability being bought is the escalation judgment, an agent recognising it is out of its depth. That is what separates this from a help widget, a distinction covered in [AI agents versus chatbots](/blog/ai-agents-vs-chatbots).
+The capability being bought is the escalation judgment, an agent recognizing it is out of its depth. That is what separates this from a help widget, a distinction covered in [AI agents versus chatbots](/blog/ai-agents-vs-chatbots).
 
 ## 4. Lead qualification and routing
 
@@ -79,7 +79,7 @@ Worth it for teams running 15 or more external meetings a week. The summary is n
 
 More money is lost here than is gained across the 7 above, so this half is worth reading twice.
 
-**Fully autonomous outbound.** An agent that researches prospects, writes personalised messages, and sends them without review. It fails because of reputation risk. The agent will eventually send something wrong to someone who matters, and in a firm whose product is trust the recovery cost exceeds every hour it saved. Draft and approve works. Autonomous sending does not.
+**Fully autonomous outbound.** An agent that researches prospects, writes personalized messages, and sends them without review. It fails because of reputation risk. The agent will eventually send something wrong to someone who matters, and in a firm whose product is trust the recovery cost exceeds every hour it saved. Draft and approve works. Autonomous sending does not.
 
 **Contract review before signature.** The action at stake is a judgment nobody can afford to be wrong about, and it cannot be gated cheaply, because checking the agent takes as long as doing the work. This one does not get better with a bigger model, it gets better with a lawyer.
 
@@ -132,7 +132,7 @@ If nobody has those hours, the honest answer is not yet. An unsupervised agent d
 
 ## The bottom line for founders
 
-The realistic yield for a firm your size is 1 agent, occasionally 2. That is not a disappointing result, it is the correct one, and a single agent handling inbound triage gives back more founder hours than a broad AI programme that never leaves pilot.
+The realistic yield for a firm your size is 1 agent, occasionally 2. That is not a disappointing result, it is the correct one, and a single agent handling inbound triage gives back more founder hours than a broad AI program that never leaves pilot.
 
 Pick the job where work sits in a queue waiting for a person, where every instance is a bit different, and where a human can check the output in seconds. Build that one. Leave the other 6 until it has proved itself.
 

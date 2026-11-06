@@ -123,7 +123,7 @@ The goal is a team that uses AI as a standard part of how they work, not a handf
     navLabel: 'Tools',
     h1: 'Choosing and Running an AI Tech Stack',
     description: 'How to choose, compare, buy, replace and retire AI tools without ending up with twelve subscriptions and no system.',
-    body: `Most small businesses do not have a tool shortage. They have eleven subscriptions, four of them forgotten, two of them doing the same job, and no clear answer to what would break if any of them were cancelled tomorrow. The problem is rarely finding a tool. It is deciding between them and then living with the decision.
+    body: `Most small businesses do not have a tool shortage. They have eleven subscriptions, four of them forgotten, two of them doing the same job, and no clear answer to what would break if any of them were canceled tomorrow. The problem is rarely finding a tool. It is deciding between them and then living with the decision.
 
 This category covers tool selection, stack design, and the decisions that surround them. The articles here treat buying software as an operational choice rather than a shopping exercise, which means they spend more time on evaluation criteria, switching costs, and what happens in month six than on feature comparisons that go stale in a quarter.
 
@@ -217,7 +217,7 @@ The test of a good engagement is what your team can do without the consultant af
 
 This category covers the sequencing decisions: what to do first, what to deliberately not do this year, how much to spend before you have evidence, and how to tell whether the last decision worked before making the next one. It assumes no technical team and no separate budget line, because that is the situation most firms this size are actually in.
 
-Topics include building an AI roadmap that survives contact with a busy quarter, aligning AI investment to business goals rather than to capability, prioritising between competing opportunities, the strategy mistakes that show up repeatedly in founder-led firms, and measuring results in numbers that mean something to the person paying for it.
+Topics include building an AI roadmap that survives contact with a busy quarter, aligning AI investment to business goals rather than to capability, prioritizing between competing opportunities, the strategy mistakes that show up repeatedly in founder-led firms, and measuring results in numbers that mean something to the person paying for it.
 
 A strategy is only real if it tells you what not to do. These articles are written to produce that list as much as the other one.`,
     serviceLink: '/ai-readiness-and-ai-audits',

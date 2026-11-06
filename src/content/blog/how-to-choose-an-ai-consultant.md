@@ -71,7 +71,7 @@ The quality and specificity of the answers to these questions tells you more tha
 
 These patterns are reliable indicators of a poor-fit engagement.
 
-**Vague scope with confident pricing.** A fixed-price quote produced before meaningful discovery has happened is either based on guessing or on a standardised scope that will be applied to your situation regardless of fit. Neither is good.
+**Vague scope with confident pricing.** A fixed-price quote produced before meaningful discovery has happened is either based on guessing or on a standardized scope that will be applied to your situation regardless of fit. Neither is good.
 
 **No plan for your independence.** If the conversation about what you will own at the end produces a vague or evasive answer, the engagement may create lasting dependency on the consultant, on purpose or by accident, and leave your team without the skills to run what was built.
 
@@ -91,7 +91,7 @@ When you receive a proposal, evaluate it on these dimensions.
 
 **What is and is not included.** Proposals that include implementation but not training, or training but not documentation, or build but not adoption support are scoping these components out for a reason. The engagement will cost more to complete properly than the proposal suggests, either in additional fees or in outcomes that fall short because the full process was not funded.
 
-**Alignment between your problem and their solution.** The proposal should read like a response to the specific situation you described, not like a standardised document with your name inserted at the top. If you could plausibly imagine them sending the same proposal to any other small business, they probably did.
+**Alignment between your problem and their solution.** The proposal should read like a response to the specific situation you described, not like a standardized document with your name inserted at the top. If you could plausibly imagine them sending the same proposal to any other small business, they probably did.
 
 ---
 

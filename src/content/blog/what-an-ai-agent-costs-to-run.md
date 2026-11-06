@@ -57,7 +57,7 @@ Review should shrink as the agent proves itself. Start at 100 percent, then move
 
 ## Maintenance and Error Cost
 
-Agents need upkeep. Instructions drift out of date when your offer or policy changes, a connected tool changes its behaviour, and the agent meets cases nobody planned for. Budget a few hours a month in the first quarter and track the actual figure.
+Agents need upkeep. Instructions drift out of date when your offer or policy changes, a connected tool changes its behavior, and the agent meets cases nobody planned for. Budget a few hours a month in the first quarter and track the actual figure.
 
 Error cost is the hardest line to estimate and the one people leave out. It includes the time to fix a wrong output, a credit or refund given to a client, and the damage from a message that should not have gone out. Estimate it from your test results. If the agent was wrong on 4 of 100 test cases and each error costs 30 minutes to fix, that is 2 hours of rework per 100 tasks. The [guardrails guide](/blog/ai-agent-guardrails) covers limits that reduce this line.
 

@@ -68,7 +68,7 @@ Get the alone group as wide as you safely can, keep the approval group short eno
 
 The guardrail most often missing, and the one that separates a working agent from an expensive one.
 
-An agent handling varied work will meet cases outside what it can judge. Without an instruction it will pick the most plausible action and proceed with full confidence. That is the behaviour that produces the wrong email to the wrong person.
+An agent handling varied work will meet cases outside what it can judge. Without an instruction it will pick the most plausible action and proceed with full confidence. That is the behavior that produces the wrong email to the wrong person.
 
 Write the escalation rule as situations, not confidence scores, because a number the agent generates about its own certainty is not evidence.
 

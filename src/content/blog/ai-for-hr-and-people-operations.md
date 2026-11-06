@@ -21,7 +21,7 @@ The highest-volume, most repetitive tasks in HR are strong candidates for AI ass
 
 Visibility gaps (not knowing where a hiring process stands, whether a new hire is on track, or whether a performance issue is being addressed) are addressable through structured tracking and automated check-ins rather than manual follow-up.
 
-The judgment-heavy work (evaluating candidates, having difficult performance conversations, making role design decisions, building team culture) stays with the humans. AI assists around the margins of that work, not at its centre.
+The judgment-heavy work (evaluating candidates, having difficult performance conversations, making role design decisions, building team culture) stays with the humans. AI assists around the margins of that work, not at its center.
 
 ### Examples of AI in HR for a Small Team
 
@@ -64,7 +64,7 @@ A structured onboarding system changes how the first weeks go. Pre-start sequenc
 
 A 30-60-90 day onboarding plan with defined milestones and regular check-in triggers means the new hire's progress is visible and the check-ins actually happen. Knowledge delivery (documentation, training materials, company context) is accessible and structured rather than dependent on a colleague finding time to explain it.
 
-The human elements of onboarding (relationship building, cultural orientation, complex question answering) still require people. The operational scaffolding that supports those elements can be largely systematised.
+The human elements of onboarding (relationship building, cultural orientation, complex question answering) still require people. The operational scaffolding that supports those elements can be largely systematized.
 
 ## Performance Operations with AI
 
@@ -80,7 +80,7 @@ Performance tracking against documented goals requires that goals be documented 
 
 Employment contracts, policies, offer letters, and termination documentation need to be current, consistent, and accessible. In small businesses these often exist as files that were created once and not updated since, stored somewhere that requires a search to find them.
 
-Workflow automation handles document collection (signatures, returned forms, required certifications) with automated reminders rather than manual chasing. Policy distribution when policies change can be systematised rather than relying on someone to remember to communicate the update.
+Workflow automation handles document collection (signatures, returned forms, required certifications) with automated reminders rather than manual chasing. Policy distribution when policies change can be systematized rather than relying on someone to remember to communicate the update.
 
 Employment record maintenance (keeping personnel files current, tracking certifications and renewals, managing documentation requirements) benefits from automated reminders and structured tracking rather than someone's memory.
 
@@ -106,7 +106,7 @@ The conventional hiring trigger is workload: when the team is overwhelmed, hire.
 
 Before hiring, the question should be whether the capacity constraint is a judgment problem or an execution problem. Judgment problems (not enough people to do the thinking, the deciding, the relationship-building) require people. Execution problems (not enough capacity for the routine, high-volume, rules-based work) often require better systems rather than more headcount.
 
-AI-powered capacity analysis makes this distinction clearer. When you can see where time is actually going, you can identify how much of the hiring pressure is driven by execution work that could be systematised versus judgment work that requires another human.
+AI-powered capacity analysis makes this distinction clearer. When you can see where time is actually going, you can identify how much of the hiring pressure is driven by execution work that could be systematized versus judgment work that requires another human.
 
 [For a deeper exploration of this decision: Scaling a Business with AI Instead of Hiring.](/blog/scaling-a-business-with-ai-instead-of-hiring)
 

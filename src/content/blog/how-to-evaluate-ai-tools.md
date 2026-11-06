@@ -9,7 +9,7 @@ articleType: "cluster"
 
 ## Most AI Tool Decisions Are Made Backwards
 
-The typical small business AI tool purchase follows a predictable sequence. Someone sees a demo, gets impressed, signs up for a trial, and decides to commit before the trial period ends because switching costs are annoying and the tool seems good enough. Six months later, the tool is partially adopted, partially ignored, and generating a monthly charge that nobody wants to deal with cancelling.
+The typical small business AI tool purchase follows a predictable sequence. Someone sees a demo, gets impressed, signs up for a trial, and decides to commit before the trial period ends because switching costs are annoying and the tool seems good enough. Six months later, the tool is partially adopted, partially ignored, and generating a monthly charge that nobody wants to deal with canceling.
 
 The evaluation happened in the wrong order. The demo showed what the tool can do in ideal conditions. The questions that actually matter, whether it connects to existing systems, who will own it, what it costs to maintain, and what it costs to leave, did not get asked until after the commitment was made.
 
@@ -83,7 +83,7 @@ If you cannot write that down clearly, the purchase is premature. If you can, us
 
 ## How to Run a Proper Trial
 
-Most free trials are used badly. The team pokes around, tries a few features, decides it seems fine, and the trial period ends with a default to keeping it because cancelling requires effort.
+Most free trials are used badly. The team pokes around, tries a few features, decides it seems fine, and the trial period ends with a default to keeping it because canceling requires effort.
 
 A useful trial is structured differently.
 
@@ -95,7 +95,7 @@ A useful trial is structured differently.
 
 **Judge the output as well as the interface.** Learning how to evaluate AI output is the core of any trial. Run the same 10 real tasks through the tool and have the person who owns the work review each result. Score accuracy, how much editing it needs, and whether the tool gets the same task right on repeat runs. A tool that needs heavy edits on every output has not saved you anything.
 
-**Document what breaks.** Any limitations, confusing behaviours, or integration gaps you encounter during the trial are more useful than the things that work smoothly. Build a clear picture of what you would be accepting if you commit.
+**Document what breaks.** Any limitations, confusing behaviors, or integration gaps you encounter during the trial are more useful than the things that work smoothly. Build a clear picture of what you would be accepting if you commit.
 
 ---
 

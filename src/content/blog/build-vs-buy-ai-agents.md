@@ -46,7 +46,7 @@ Four situations, and the first one carries most of the weight.
 
 **The workflow is your differentiator.** A recruitment firm whose screening method reliably finds candidates others miss should not hand that method to a vendor who will sell the same thing to competitors next year. If a client would notice the difference between your version of this process and the market's, build it.
 
-**Your data is the advantage.** Eight years of scoped-and-delivered projects, or a labelled history of which leads actually closed, is an asset a bought tool cannot use. Building lets the agent reason from it.
+**Your data is the advantage.** Eight years of scoped-and-delivered projects, or a labeled history of which leads actually closed, is an asset a bought tool cannot use. Building lets the agent reason from it.
 
 **Nothing on the market fits the shape.** This is true sometimes, and worth testing properly rather than assuming. Trial 2 products against 20 of your real cases before concluding it.
 
@@ -84,7 +84,7 @@ It also keeps the failure cheap. A configured workflow that turns out to be wron
 
 A large share of products sold as AI agents are automations with a good interface, and a smaller share are genuine agents sold to firms with no foundation to run them. Two questions separate them before you sign.
 
-**What can this do without a human present, and what does it do when it is unsure?** A vendor answering with feature names is selling a tool. A vendor who can describe escalation behaviour is selling an agent, and the quality of that answer tells you how much thought went into it. The distinction is set out in [AI agents versus automations](/blog/ai-agents-vs-automations).
+**What can this do without a human present, and what does it do when it is unsure?** A vendor answering with feature names is selling a tool. A vendor who can describe escalation behavior is selling an agent, and the quality of that answer tells you how much thought went into it. The distinction is set out in [AI agents versus automations](/blog/ai-agents-vs-automations).
 
 **What happens to the work if we leave?** Configured logic, prompts and accumulated decisions are assets. Some products let you export them. Many do not, and that is the real switching cost, not the subscription. Ask before you build 8 months of process inside something. The wider discipline is in [how to evaluate AI tools](/blog/how-to-evaluate-ai-tools).
 

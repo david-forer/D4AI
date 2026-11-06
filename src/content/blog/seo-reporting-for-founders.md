@@ -79,7 +79,7 @@ Three questions separate them, and you can ask all 3 in an email.
 
 **Can you get to the source?** You should have direct access to the Search Console and analytics accounts for your own domain, in your own name, not through a login the agency controls. If the answer is no, that is worth fixing before anything else, because it is also what happens to your data when the relationship ends.
 
-A fourth question worth asking once a quarter: what did you decide not to do. Anyone running a program well is declining work every month, and a person who cannot name what they declined is not prioritising.
+A fourth question worth asking once a quarter: what did you decide not to do. Anyone running a program well is declining work every month, and a person who cannot name what they declined is not prioritizing.
 
 <div data-seo-optin></div>
 

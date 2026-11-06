@@ -22,9 +22,9 @@ Most responsible AI writing is built for companies that train models. This page 
 
 ## What responsible AI means for a service firm
 
-A commitment you can still honour on a busy Thursday in month 8.
+A commitment you can still honor on a busy Thursday in month 8.
 
-Responsible AI in the enterprise sense involves ethics boards, bias audits and model documentation, and it is built for organisations that train models and deploy them at scale. A 30-person consultancy does none of that. It uses tools other people built, on work clients paid for, and its exposure is entirely about what it promised those clients and whether the promise survives contact with a deadline.
+Responsible AI in the enterprise sense involves ethics boards, bias audits and model documentation, and it is built for organizations that train models and deploy them at scale. A 30-person consultancy does none of that. It uses tools other people built, on work clients paid for, and its exposure is entirely about what it promised those clients and whether the promise survives contact with a deadline.
 
 So the useful version of this topic is short. Four promises worth making, a small number worth refusing, and the practice that keeps them true. Where this sits in the wider structure is [AI governance for small businesses](/blog/ai-governance-for-small-businesses).
 
@@ -89,17 +89,17 @@ A promise made once decays unless something keeps it honest. Three habits do it,
 
 **Re-ask the vendors annually.** Terms change, companies get acquired, defaults move. The answers you filed last year are evidence about last year.
 
-**Test the incident promise.** Ask your team what they would do if they realised they had pasted a client contract into a personal account. If the honest answer is that they would quietly delete it and say nothing, you do not have that promise, you have a sentence.
+**Test the incident promise.** Ask your team what they would do if they realized they had pasted a client contract into a personal account. If the honest answer is that they would quietly delete it and say nothing, you do not have that promise, you have a sentence.
 
 ---
 
 ## Where the real exposure sits for a firm this size
 
-Not bias, and not model behaviour, which is what most writing on responsible AI covers.
+Not bias, and not model behavior, which is what most writing on responsible AI covers.
 
 It is confident wrong output reaching a client with nobody having read it properly. A figure that is plausible and incorrect, a citation to something that does not exist, a summary that inverts a caveat. That is the failure that costs a service firm its relationship, and it is a review design problem rather than an ethics one. The way to keep review real is set out in [human in the loop AI review](/blog/human-in-the-loop-ai-review).
 
-Second is client material sitting somewhere you did not choose deliberately. Third, and only for firms deploying agents that act rather than draft, is a system taking an action nobody authorised.
+Second is client material sitting somewhere you did not choose deliberately. Third, and only for firms deploying agents that act rather than draft, is a system taking an action nobody authorized.
 
 Everything else discussed under this heading is either handled by your vendor or does not apply to you. Spending your limited attention on the first 2 is the responsible choice, and treating them as an ethics topic rather than an operational one is how firms end up with a values statement and an unread queue.
 

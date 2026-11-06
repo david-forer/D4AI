@@ -23,7 +23,7 @@ Most lead scoring tools hand the sales team a number. This page is for the found
 
 A score with no reasoning attached gets ignored within about a month.
 
-The pattern is consistent. A firm deploys lead scoring, the agent starts labelling inbound leads 82 or 34, and for 3 weeks the sales team pays attention. Then someone works a 34 that closes, or ignores an 82 that was never going to buy, and the number loses authority. After that it is decoration on a CRM field.
+The pattern is consistent. A firm deploys lead scoring, the agent starts labeling inbound leads 82 or 34, and for 3 weeks the sales team pays attention. Then someone works a 34 that closes, or ignores an 82 that was never going to buy, and the number loses authority. After that it is decoration on a CRM field.
 
 The agents that survive output something a person can argue with. Not a number, a short statement of what the lead appears to need, what evidence supports that, and what is missing. A salesperson can disagree with a sentence. They cannot disagree with an 82, so they discount it instead.
 
@@ -45,7 +45,7 @@ The variation requirement matters as much as the volume. If every lead arrives t
 
 Four fields, in this order. Everything else is optional.
 
-**What they appear to need, in one sentence.** Written from what they actually said, not from a category. "Wants a fixed-fee audit before committing to a retainer" beats "Consulting enquiry".
+**What they appear to need, in one sentence.** Written from what they actually said, not from a category. "Wants a fixed-fee audit before committing to a retainer" beats "Consulting inquiry".
 
 **The evidence.** The 2 or 3 specifics the conclusion rests on. Company size from their site, the phrase they used about timing, the fact that they named a competitor. This is what makes the output arguable, and arguable is what makes it used.
 

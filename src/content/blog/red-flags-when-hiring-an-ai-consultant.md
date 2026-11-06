@@ -12,7 +12,7 @@ Most lists of AI consultant red flags treat every warning the same. This one ran
 
 ## Key takeaways
 
-- Red flags when hiring an AI consultant fall into 3 tiers: flags that disqualify, flags worth one follow-up question, and behaviour founders misread as a warning.
+- Red flags when hiring an AI consultant fall into 3 tiers: flags that disqualify, flags worth one follow-up question, and behavior founders misread as a warning.
 - The 6 disqualifying flags are a named tool before discovery, no written findings deliverable, a return number quoted before seeing your numbers, no definition of what you own at the end, phases with no definition of done, and refusal to say who does the work.
 - A high price, enterprise-only case studies, discovery longer than 2 weeks, a financial relationship with a vendor, and a templated proposal each call for one follow-up question rather than a rejection.
 - An AI consultant who tells you not to do something, declines to quote a fixed price before discovery, or works alone is usually showing good practice.
@@ -27,7 +27,7 @@ A tier 1 flag is disqualifying. You stop, regardless of price, chemistry, or how
 
 A tier 2 flag is a prompt for one specific follow-up question. The answer decides it.
 
-A tier 3 flag is behaviour that founders read as a warning and that is standard practice in a well-run engagement.
+A tier 3 flag is behavior that founders read as a warning and that is standard practice in a well-run engagement.
 
 The ranking matters because of who is doing the reading. At a firm of 5 to 20 people with no operations lead, the founder evaluates the proposal alone. There is nobody in the building whose job is to catch a bad recommendation. An undifferentiated list of 12 warning signs does not help that person decide. It just makes every candidate look slightly suspicious.
 
@@ -37,7 +37,7 @@ Every flag below is checkable against a document or a direct question. None of t
 |---|---|---|---|
 | Tier 1 | 6 flags | The engagement cannot produce what you are paying for | Stop, regardless of price or chemistry |
 | Tier 2 | 5 flags | Looks alarming, resolves either way | Ask one specific follow-up question and decide on the answer |
-| Tier 3 | 5 behaviours | Read as a warning, standard in a well-run engagement | Treat it as a sign of a consultant worth hiring |
+| Tier 3 | 5 behaviors | Read as a warning, standard in a well-run engagement | Treat it as a sign of a consultant worth hiring |
 
 ---
 
@@ -53,7 +53,7 @@ These 6 are structural. Each one means the engagement is built in a way that can
 
 **No definition of what you own at the end.** Ask who runs the system on day 91. If the answer does not name your team, name where the work lives, and name the login your business controls, the engagement produces dependency rather than capability. This is the flag that costs the most and shows up the latest.
 
-**Phases with no written definition of done.** Payment tied to phase completion is normal. Phase completion with no stated deliverable is a blank cheque, because the consultant decides when a phase ended. Every phase needs a named artifact attached to it.
+**Phases with no written definition of done.** Payment tied to phase completion is normal. Phase completion with no stated deliverable is a blank check, because the consultant decides when a phase ended. Every phase needs a named artifact attached to it.
 
 **Refusal to say who does the work.** A proposal from one person and delivery by someone else is a real pattern. Ask directly. If the answer is vague about which named human is in your business each week, the flag stands.
 
@@ -75,13 +75,13 @@ These look alarming and resolve either way depending on the answer. Ask the ques
 
 ---
 
-## Tier 3: the behaviour founders misread as a warning
+## Tier 3: the behavior founders misread as a warning
 
 These 5 come up constantly in first conversations and point the other way.
 
 **They tell you not to do something.** A consultant who says the automation you asked about is a bad idea at your size is doing the job. The ability to reduce scope is the strongest available signal that the revenue on the invoice is not driving the recommendation.
 
-**They will not quote a fixed price before discovery.** A firm number produced before anyone has seen your processes is either a guess or a standard package. Declining to give one is correct behaviour.
+**They will not quote a fixed price before discovery.** A firm number produced before anyone has seen your processes is either a guess or a standard package. Declining to give one is correct behavior.
 
 **They work alone.** Team size has no relationship to outcome at this scale. A solo consultant with 20 relevant engagements will usually deliver more than an agency that assigns you a junior. The [consultant against agency question](/blog/diy-ai-vs-hiring-a-consultant) turns on what your business already has documented, not on headcount.
 
