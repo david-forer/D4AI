@@ -2,7 +2,7 @@
 title: "How to Create an AI Roadmap for Your Small Business"
 description: "What an AI roadmap is, how to build one that actually reflects your business priorities, and how to use it to make consistent progress without getting distracted."
 pubDate: 2026-03-21T00:00:00Z
-updatedDate: 2026-09-23T00:00:00Z
+updatedDate: 2026-11-06T00:00:00Z
 tags: ["ai-strategy"]
 heroImage: "/images/blog/ai-roadmap-small-business.webp"
 articleType: "cluster"
@@ -169,6 +169,10 @@ Any business with a repeatable process that eats staff time. Client intake, sche
 ### How do you apply the people and process side of an AI roadmap in practice?
 
 Give every roadmap item a named owner, a written version of the current process and a date when the team starts using the change. Schedule training and a review two weeks after launch before you schedule the next tool. Most of the effort sits in those steps, so a roadmap that lists only tools leaves out the largest part of the work.
+
+### What is the 10/20/70 rule for AI?
+
+A rule often attributed to BCG that puts about 10 percent of the effort in algorithms, 20 percent in technology and data, and 70 percent in people and processes. For a roadmap it means most of each phase goes to training and process change. The [AI strategy for growth](/blog/ai-strategy-for-growth) post covers how it fits the sequence.
 
 ---
 
