@@ -76,7 +76,7 @@ Compliance frameworks (SOC 2, HIPAA, GDPR) require demonstrable controls over da
 
 ## What Unstandardized AI Looked Like in a Small Agency
 
-In an operations audit I performed for a performance ad agency with 5 core staff, AI came up in most of my interviews. Nobody was ignoring it.
+In an operations audit I performed for a performance ad agency with 5 to 10 staff, AI came up in most of my interviews. Nobody was ignoring it.
 
 The person who writes ad scripts said the team was building processes to get AI to do most of that work, and that they already had pretty good prompts. Another person was using AI prompts to speed up the brainstorm before ad creative. The client success manager was looking for a way to use AI to produce the weekly client reports she used to write by hand. A fourth team member wanted to build AI workflows for everyone.
 

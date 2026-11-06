@@ -29,7 +29,7 @@
     },
     {
       "label": "Team",
-      "value": "5 core staff"
+      "value": "5 to 10 staff"
     },
     {
       "label": "Revenue",

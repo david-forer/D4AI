@@ -48,7 +48,7 @@ All three are operations audits I performed. Each case study shows the working b
 
 ### An Ad Agency That Stopped at 20 Clients
 
-A performance ad agency with about $1M in revenue, 5 core staff and fewer than 20 clients. The audit took about a week. About two-thirds of revenue ran through one strategist whose method was not written down.
+A performance ad agency with about $1M in revenue, 5 to 10 staff and fewer than 20 clients. The audit took about a week. About two-thirds of revenue ran through one strategist whose method was not written down.
 
 The client ceiling was costing about $230,000 a year in revenue: 5 more clients at about $3,000 a month, plus 5 setup fees of about $10,000. That is revenue from 5 more signed clients, not profit. The daily catch-up call added up to about 240 hours a year (4 people, 15 minutes, 5 days a week, 48 weeks), because the task system did not hold the work.
 
@@ -56,9 +56,9 @@ The first recommendation was to put an operator in the seat. Read the full [case
 
 ### An Energy Services Company Planning 3 to 5 Times Growth
 
-A founder-led energy services company with 42 employees, audited through 9 interviews and a survey. The founder was running five roles, and expansion paperwork for new states was landing on one senior leader at about 40 hours a week.
+A founder-led energy services company with about 40 employees, audited through about 10 interviews and a survey. The founder was running five roles, and expansion paperwork for new states was landing on one senior leader at about 40 hours a week.
 
-13 of the 42 employees gave a low score for regular goal setting, and the same number gave a low score for clear KPI targets. The team scored 4.62 out of 5 for being committed to quality work and 4.62 for understanding why their role matters. The people were strong. The goals, KPIs and decision rights had not kept up with the growth.
+About a third of the employees gave a low score for regular goal setting, and about the same share gave a low score for clear KPI targets. The team scored about 4.5 out of 5 for being committed to quality work and for understanding why their role matters. The people were strong. The goals, KPIs and decision rights had not kept up with the growth.
 
 Read the full [case study on the energy company founder bottleneck](/case-studies/energy-company-founder-bottleneck).
 

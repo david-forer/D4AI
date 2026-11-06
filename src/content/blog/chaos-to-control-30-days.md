@@ -51,11 +51,11 @@ By the end of week one, you should have a clear, honest picture of your target p
 
 ### What Week One Looks Like With a Real Company
 
-In an operations audit I performed for an energy services company, I started where this week starts, with the people who do the work. I interviewed 9 of them and ran a survey that 42 employees answered.
+In an operations audit I performed for an energy services company, I started where this week starts, with the people who do the work. I interviewed around ten of them and ran a survey that about 40 employees answered.
 
 The founder described playing five roles at 10 to 15 hours a week each. That is 50 to 75 hours of work running through one person. Opening new states meant licensing and filing paperwork, and the founder put about 40 hours a week of one senior leader's time into it.
 
-That is the 80/20 rule at work. One process was eating most of a full-time job. The survey backed the picture. 13 of 42 employees gave a low score for clear KPI targets, and the same team scored 4.62 out of 5 for commitment to quality work.
+That is the 80/20 rule at work. One process was eating most of a full-time job. The survey backed the picture. About a third of employees gave a low score for clear KPI targets, and the same team scored about 4.5 out of 5 for commitment to quality work.
 
 Notice what the week-one work found. The people were not the problem. The process around them was undocumented and sitting on one leader. If you only list pain points in a meeting, you hear about the loud ones. Walking through the work shows you the one that is quietly costing a salary.
 
@@ -85,7 +85,7 @@ Do the same for outputs. What exactly should the process produce? What constitut
 
 With unnecessary steps removed and inputs standardized, design how the process should work.
 
-Create a simple flow diagram showing the steps, decision points, and handoffs. Keep it as streamlined as possible. Every step should have a clear purpose. Every decision should have explicit criteria. Every handoff should be well-defined.
+Create a simple flow diagram showing the steps, decision points, and handoffs. Keep it as simple as possible. Every step should have a clear purpose. Every decision should have explicit criteria. Every handoff should be well-defined.
 
 Document the rules that govern the process. When does work move forward? What triggers escalation? What are the thresholds and criteria for decisions?
 

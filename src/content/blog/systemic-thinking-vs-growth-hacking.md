@@ -129,7 +129,7 @@ Growth still matters. The goal is growth you can sustain.
 
 ## What This Looked Like in an Agency I Audited
 
-I audited a performance ad agency doing about $1M a year with 5 core staff. Growth was not the problem. Referrals kept coming. The problem was where decisions went once they arrived.
+I audited a performance ad agency doing about $1M a year with 5 to 10 staff. Growth was not the problem. Referrals kept coming. The problem was where decisions went once they arrived.
 
 The founder answered everything. He was never slow to reply and never hard to reach. That was the trap. Every question got a good answer within minutes, so nobody on the team ever had a reason to make the call themselves. He also never taught them how he decided. They got the answer without the rule behind it, so the next similar question came back to him.
 

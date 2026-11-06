@@ -18,7 +18,7 @@
       },
       {
         "label": "No clear goals below leadership",
-        "value": "13 of 42"
+        "value": "about a third"
       }
     ]
   },
@@ -29,7 +29,7 @@
     },
     {
       "label": "Survey",
-      "value": "42 employees"
+      "value": "About 40 employees"
     },
     {
       "label": "Planned growth",
@@ -41,7 +41,7 @@
     },
     {
       "label": "Audit",
-      "value": "9 interviews plus a survey"
+      "value": "About 10 interviews plus a survey"
     }
   ],
   "videoTitle": "How this audit worked, in about two minutes",
@@ -63,7 +63,7 @@
       },
       {
         "label": "No clear goals below leadership",
-        "value": "13 of 42",
+        "value": "about a third",
         "work": "Employees who gave a low score for regular goal setting. The same count gave a low score for KPI targets."
       },
       {
@@ -98,13 +98,13 @@
     {
       "title": "Goals and KPIs stopped at the top",
       "paragraphs": [
-        "Of 42 employees, 13 gave a low score for regular goal setting and 13 gave a low score for clear KPI targets. The average for KPI targets, 3.95 out of 5, was one of the lowest in the survey. 14 employees said they did not have regular performance conversations with their manager."
+        "Of about 40 employees, around a third gave a low score for regular goal setting and around a third gave a low score for clear KPI targets. The average for KPI targets, about 4 out of 5, was one of the lowest in the survey. About a third said they did not have regular performance conversations with their manager."
       ]
     },
     {
       "title": "The team was strong and the system was missing",
       "paragraphs": [
-        "In the same survey the team scored 4.62 out of 5 for being committed to quality work and 4.62 for understanding why their role matters. They scored 4.5 for feeling encouraged to innovate and 4.45 for understanding the company vision. The people were not the problem. The company had grown past the structure around them."
+        "In the same survey the team scored about 4.5 out of 5 for being committed to quality work and for understanding why their role matters. They also scored about 4.5 for feeling encouraged to innovate and for understanding the company vision. The people were not the problem. The company had grown past the structure around them."
       ]
     }
   ],
