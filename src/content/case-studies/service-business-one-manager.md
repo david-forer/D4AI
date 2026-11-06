@@ -1,7 +1,7 @@
 ---
 {
-  "title": "How one manager became the answer to over 90% of the questions at a small business",
-  "accent": "the answer to over 90% of the questions",
+  "title": "Why one manager answered over 90% of the questions",
+  "accent": "over 90% of the questions",
   "seoTitle": "Case Study: Over 90% of Questions to One Manager | David J Forer",
   "description": "An operations audit of a founder-led service business with 10 to 20 staff. One manager answered over 90% of the questions, the owners had stepped back for years, and marketing had been switched off for good reason.",
   "pubDate": "2026-11-06",
@@ -13,27 +13,23 @@
     "caption": "of staff and customer questions answered by one manager",
     "lines": [
       {
-        "label": "Revenue that recurs",
-        "value": "about 60%"
+        "label": "Late invoice cash",
+        "value": "$15,000 to $35,000"
       },
       {
-        "label": "Marketing switched off",
-        "value": "4 to 5 years"
-      },
-      {
-        "label": "Growth talks with a manager",
-        "value": "about 2 of 5"
+        "label": "Uncategorized spend",
+        "value": "about $300,000"
       }
     ]
   },
   "facts": [
     {
       "label": "Business",
-      "value": "Founder-led service business"
+      "value": "Service business"
     },
     {
       "label": "Team",
-      "value": "10 to 20 full time, mostly remote"
+      "value": "10 to 20 staff"
     },
     {
       "label": "Revenue",
@@ -41,15 +37,11 @@
     },
     {
       "label": "Owners",
-      "value": "A few hours a week each, other businesses"
-    },
-    {
-      "label": "Operations lead",
-      "value": "No one owned operations"
+      "value": "Part-time"
     },
     {
       "label": "Audit",
-      "value": "Interviews, a team meeting and a company survey"
+      "value": "Interviews and a survey"
     }
   ],
   "cost": {
@@ -61,16 +53,6 @@
         "label": "Questions answered by one manager",
         "value": "over 90%",
         "work": "The owner's own estimate, for questions from staff and from customers."
-      },
-      {
-        "label": "Revenue that comes from recurring plans",
-        "value": "about $1.5M a year",
-        "work": "About 60% of roughly $2.5M in the profit and loss. This is exposure and not a loss, because slow follow-up puts that revenue at risk."
-      },
-      {
-        "label": "Time since the business last pushed for growth",
-        "value": "4 to 5 years",
-        "work": "The owners said marketing had been off that long and new work came from referrals. They kept it off because operations could not absorb more jobs."
       },
       {
         "label": "Jobs invoiced by hand each month",
