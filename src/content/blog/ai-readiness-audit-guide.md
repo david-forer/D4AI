@@ -1,9 +1,9 @@
 ---
 title: "AI Readiness Audit for Small Businesses"
 seoTitle: "AI Readiness Audit | See What to Fix First | David J Forer"
-description: "What an AI readiness audit checks in a business of 5 to 20 people, the questions it asks, what it costs and what you get, with two real audits."
+description: "What an AI readiness audit checks in a business of 5 to 20 people, the questions it asks, what it costs and what you get, with three real audits."
 pubDate: 2025-12-09T00:00:00Z
-updatedDate: 2026-10-15T00:00:00Z
+updatedDate: 2026-11-06T00:00:00Z
 faqSchema: true
 tags: ["ai-readiness"]
 heroImage: "/images/blog/backwards-ai-audit.webp"
@@ -42,9 +42,9 @@ Can your tools connect to anything? Software that cannot export or integrate is 
 
 Who uses AI, for which tasks, with what data and under which rules? Gains that stay with one person do not compound, and use nobody can see turns into risk. The audit also marks where a person reviews the output before it reaches a customer, moves money or informs a decision.
 
-## Two Real Audits
+## Three Real Audits
 
-Both are operations audits I performed. Each case study shows the working behind every figure.
+All three are operations audits I performed. Each case study shows the working behind every figure.
 
 ### An Ad Agency That Stopped at 20 Clients
 
@@ -61,6 +61,14 @@ A founder-led energy services company with 42 employees, audited through 9 inter
 13 of the 42 employees gave a low score for regular goal setting, and the same number gave a low score for clear KPI targets. The team scored 4.62 out of 5 for being committed to quality work and 4.62 for understanding why their role matters. The people were strong. The goals, KPIs and decision rights had not kept up with the growth.
 
 Read the full [case study on the energy company founder bottleneck](/case-studies/energy-company-founder-bottleneck).
+
+### A Service Business Where One Manager Held the Answers
+
+A founder-led service business with 10 to 20 staff and about $2.5M in revenue, audited through interviews, a team meeting and a survey. One manager answered over 90% of the questions from staff and customers, and the owners had stepped back to a few hours a week.
+
+Marketing had been off for four or five years because operations could not absorb more jobs. About 60% of revenue recurred, yet a service ticket could sit for about a month if the customer did not call twice, and one owner invoiced hundreds of jobs a month by hand. The team scored about 4 out of 5 for understanding why their role mattered and about 2 for regular conversations about growth.
+
+Read the full [case study on the service business where one manager held the answers](/case-studies/service-business-one-manager).
 
 ## Six Questions the Audit Starts With
 
