@@ -98,7 +98,7 @@ Nobody owns it. An agent needs a named person who checks its output weekly for t
 
 The team is mid-change. Onboarding a new operations hire, migrating a CRM, or absorbing a 25 percent headcount increase all move the ground the agent stands on. Ship it after, not during.
 
-The same hours are available cheaper elsewhere. If a 2 hour process mapping session would remove the work entirely, do that first. Removing a step beats automating a step, and it is a smaller project. Most firms find at least one of these when they run the exercise in [mapping business processes for automation](/blog/map-business-processes-for-automation).
+The same hours are available cheaper elsewhere. If a 2 hour [process mapping](/blog/ai-process-mapping-projects) session would remove the work entirely, do that first. Removing a step beats automating a step, and it is a smaller project. Most firms find at least one of these when they run the exercise in [mapping business processes for automation](/blog/map-business-processes-for-automation).
 
 ---
 

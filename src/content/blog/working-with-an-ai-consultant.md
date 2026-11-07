@@ -148,7 +148,7 @@ A more detailed look at what outcomes are realistic across different engagement 
 
 The single most important signal is whether they start with your problem or their tools. A consultant who opens every conversation by describing what they build is telling you something. One who opens by asking how your business operates is showing you how they think.
 
-The AI consultant skills that matter for a small business are process mapping, workflow design, tool integration and teaching a team to use what gets built. Deep model knowledge matters less than those four.
+The AI consultant skills that matter for a small business are [process mapping](/blog/ai-process-mapping-projects), workflow design, tool integration and teaching a team to use what gets built. Deep model knowledge matters less than those four.
 
 Look for demonstrated experience with businesses at your scale and operational complexity. Enterprise AI implementation and small business operational design are different disciplines. The skills that matter in each context are not the same, and past work in large organizations does not reliably transfer to a 15-person service firm. If you are still deciding what kind of provider to hire at all, [AI consultant vs agency](/blog/ai-consultant-vs-agency) compares the 4 options against how documented your processes are.
 

@@ -109,7 +109,7 @@ Frequency is the multiplier. A task that happens fifty times a week yields fifty
 
 Start with the highest-frequency manual work. Map it. Clean it. Automate it. Then look at the next highest-frequency item.
 
-[How to Automate Your Business Operations with AI](/blog/how-to-automate-your-business-operations-with-ai) covers the full sequence from process mapping through tool selection through implementation, and is the practical starting point for most founders running this for the first time.
+[How to Automate Your Business Operations with AI](/blog/how-to-automate-your-business-operations-with-ai) covers the full sequence from [process mapping](/blog/ai-process-mapping-projects) through tool selection through implementation, and is the practical starting point for most founders running this for the first time.
 
 If you are not sure which processes to target first or which ones are automatable with your current stack, an [AI operations audit](/ai-readiness-and-ai-audits) will identify the highest-return automation opportunities in your specific operation.
 

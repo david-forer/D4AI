@@ -62,7 +62,7 @@ The complaint that arrived phrased as a question. The client who asked 3 things 
 
 Ordinary volume will not surface these for months, and they are where an agent either escalates sensibly or acts confidently and wrongly. Testing them deliberately in week 2 costs an hour and moves the discovery from a client's inbox to yours.
 
-Adjust the escalation rules based on what you see, then rerun the same 15. You are looking for the agent to now stop and ask on the ones that need judgment. Perfect answers on hard cases are not the goal, correct escalation is.
+Adjust the [escalation rules](/blog/ai-agents-for-customer-support) based on what you see, then rerun the same 15. You are looking for the agent to now stop and ask on the ones that need judgment. Perfect answers on hard cases are not the goal, correct escalation is.
 
 **Stop here if** it still acts confidently on cases where your best person would have asked a colleague. That gap does not close with more prompting, and it usually means the job needs narrowing.
 

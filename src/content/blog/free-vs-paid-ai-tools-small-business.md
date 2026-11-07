@@ -57,7 +57,7 @@ A free AI tools list only helps if it maps to a job. These are the common ones.
 
 **Reception and scheduling.** A free AI receptionist is a fair way to test the idea. Once it answers real customer calls, you need the reliability and support that paid plans provide.
 
-**Websites, automation and process maps.** A free AI website builder or a free business process mapping tool is fine for a first draft you may rebuild. Workflow tools such as Zapier offer a free plan, which suits one simple test workflow and not much more.
+**Websites, automation and process maps.** A free AI website builder or a free business [process mapping](/blog/ai-process-mapping-projects) tool is fine for a first draft you may rebuild. Workflow tools such as Zapier offer a free plan, which suits one simple test workflow and not much more.
 
 ---
 

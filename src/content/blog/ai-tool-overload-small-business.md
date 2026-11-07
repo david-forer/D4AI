@@ -116,7 +116,7 @@ Consolidation solves the current state. The question is whether you build a gove
 
 ## Which AI Tools Do Small Business Owners Need?
 
-Owners often ask for the best AI tools for small business, and the lists online run to dozens of names. For a team of 5 to 20 people, I would start from categories and add a tool only when a category has a clear owner and a clear job.
+Owners often ask for the [best AI tools for small business](/blog/best-ai-tools-for-business-operations), and the lists online run to dozens of names. For a team of 5 to 20 people, I would start from categories and add a tool only when a category has a clear owner and a clear job.
 
 Most small firms get by with one tool in each of these:
 

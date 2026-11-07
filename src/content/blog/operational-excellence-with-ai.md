@@ -44,7 +44,7 @@ Beyond automating individual tasks, AI provides a full view of operational workf
 
 **Bottlenecks that slow down production:** AI can analyze process flow data to pinpoint specific stages or resources that consistently cause delays. By simulating different scenarios, AI can recommend adjustments to resource allocation, task sequencing, or process design to eliminate these bottlenecks and improve throughput.
 
-**Redundant steps that waste resources:** Through detailed process mapping and analysis, AI can identify and eliminate unnecessary or duplicated steps within a workflow. This leads to leaner processes, reduced waste, and more efficient utilization of resources, both human and technological.
+**Redundant steps that waste resources:** Through detailed [process mapping](/blog/ai-process-mapping-projects) and analysis, AI can identify and eliminate unnecessary or duplicated steps within a workflow. This leads to leaner processes, reduced waste, and more efficient utilization of resources, both human and technological.
 
 **Opportunities for parallel processing:** AI can identify tasks that can be executed concurrently rather than sequentially, significantly reducing overall cycle times. This is particularly valuable in complex manufacturing, logistics, or service delivery processes where parallelization can deliver substantial efficiency gains.
 
