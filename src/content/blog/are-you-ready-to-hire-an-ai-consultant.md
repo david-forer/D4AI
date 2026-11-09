@@ -194,7 +194,7 @@ Start with a diagnostic step. A process audit maps how work moves through the bu
 
 ## Start With a Free Process Audit
 
-If you ran the checklist and landed in the middle, the fastest way to close the gap is a [free 80/20 process audit](/fix-the-chaos). I spend 2 to 3 hours with you on your top processes, and you get your top 5 automation opportunities, priced in dollars, the same or next day. You'll come away with the process notes and the named problem this guide asks for, whether you work with me afterward or hire someone else.
+If you ran the checklist and landed in the middle, the fastest way to close the gap is the [$750 80/20 process audit](/fix-the-chaos). I spend 2 to 3 hours with you on your top processes, and you get your top 5 automation opportunities, priced in dollars, the same or next day. You'll come away with the process notes and the named problem this guide asks for, whether you work with me afterward or hire someone else.
 
 *Part of the [Working with an AI Consultant](/blog/working-with-an-ai-consultant) series.*
 
