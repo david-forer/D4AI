@@ -101,4 +101,4 @@ The goal is not perfection. The goal is progress. One broken workflow fixed is o
 
 *Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) | [Do Not Start With Tools. Start With Bottlenecks](/blog/start-with-bottlenecks)*
 
-If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).
+If you want hands-on help building these systems, start with the [80/20 process audit](/fix-the-chaos).

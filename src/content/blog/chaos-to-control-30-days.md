@@ -198,4 +198,4 @@ Pick the three to five processes that cost you the most time or cause the most e
 
 *Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) | [Workflow Debt: The Invisible Drag on Your Business Ops](/blog/workflow-debt-invisible-drag)*
 
-If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).
+If you want hands-on help building these systems, start with the [80/20 process audit](/fix-the-chaos).

@@ -176,3 +176,5 @@ Yes, and it is often cheaper. The consultant produces the process map and a spec
 ### How much does an AI consultant cost compared to an agency?
 
 Solo consultants run roughly $150 to $400 an hour or a fixed scope, while agency projects start around $50,000 with retainers from $8,000 a month. The bands are directional, so use them to rule options in or out.
+
+*Related reading: [AI Implementation Partner vs Consultant](/blog/ai-implementation-partner-vs-consultant) | [AI Marketing Agency vs AI Consultant](/blog/ai-marketing-agency-vs-ai-consultant)*

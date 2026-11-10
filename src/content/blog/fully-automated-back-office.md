@@ -131,4 +131,4 @@ The goal is better work for the people you have, with no one replaced by a machi
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [Automation as Business Philosophy](/blog/automation-as-philosophy)*
 
-If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).
+If you want hands-on help building these systems, start with the [80/20 process audit](/fix-the-chaos).

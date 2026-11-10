@@ -3,7 +3,7 @@ title: "AI Readiness Audit for Accounting Firms: What It Covers and How to Prepa
 seoTitle: "AI Readiness Audit for Accountants | Prep Guide | David J Forer"
 description: "What an AI readiness audit for accounting firms looks at: client data handling, busy season load, document intake, review chains and where AI fits first."
 pubDate: 2026-09-27T00:00:00Z
-updatedDate: 2026-10-15T00:00:00Z
+updatedDate: 2026-11-10T00:00:00Z
 tags: ["ai-readiness"]
 heroImage: "/images/blog/ai-readiness-audit-for-accounting-firms.webp"
 articleType: "cluster"
@@ -15,7 +15,7 @@ I run these audits for founder-led firms with 5 to 20 people and no operations l
 
 ## In Brief
 
-- An AI readiness assessment for CPA firms maps how work moves through the practice and ends with a ranked list of where AI fits first.
+- An AI readiness audit for accountants, also called an AI readiness assessment for CPA firms, maps how work moves through the practice and ends with a ranked list of where AI fits first.
 - Accounting firms differ from other service businesses in 5 ways that shape the audit: confidential client data, seasonal load around tax deadlines, document-heavy intake, knowledge held by partners, and multi-step review before anything reaches a client.
 - The first safe uses of AI in a small firm tend to sit around the edges of the work: chasing missing documents, drafting routine client emails, summarizing notes, and preparing workpapers for a human reviewer.
 - The riskiest move is staff pasting client financial data into public AI tools with no written rule about it. The audit checks for this directly.
@@ -204,6 +204,6 @@ In small firms, mostly around the edges: extracting data from uploaded documents
 
 ---
 
-If your firm is already using AI in pockets and you want a clear picture before the next busy season, see how the [AI readiness audit](/ai-readiness-and-ai-audits) works and what each tier costs.
+If your firm is already using AI in pockets and you want a clear picture before the next busy season, see how the [AI readiness audit for small businesses](/ai-readiness-and-ai-audits#pricing) works and what each tier costs.
 
 *Related reading: [How to Prepare for an AI Readiness Audit](/blog/how-to-prepare-for-an-ai-readiness-audit) | [AI Compliance and Client Data Starts With Your Contracts](/blog/ai-compliance-client-data) | [The One-Page AI Acceptable Use Policy Template](/blog/ai-acceptable-use-policy-template) | [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses)*

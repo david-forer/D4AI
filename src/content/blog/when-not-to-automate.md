@@ -127,4 +127,4 @@ The opposite of automation is manual work, where a person performs every step. "
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [The Framework for High-Leverage Automation](/blog/framework-high-leverage-automation) · [When to Say No to AI](/blog/when-to-say-no-to-ai)*
 
-Not sure where your automation boundary should be? [Start with the free process audit](/fix-the-chaos).
+Not sure where your automation boundary should be? [Start with the 80/20 process audit](/fix-the-chaos).

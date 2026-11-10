@@ -133,4 +133,4 @@ Take a hypothetical firm where one person approves every invoice. At 20 invoices
 
 *Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) | [How to Design Workflows That Adapt Instead of Breaking](/blog/workflows-that-adapt-not-break)*
 
-If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).
+If you want hands-on help building these systems, start with the [80/20 process audit](/fix-the-chaos).

@@ -124,4 +124,4 @@ If the answers are yes, you have found the right starting point. Build it, docum
 
 *Part of the [AI Strategy for Small Businesses](/blog/ai-strategy-for-small-businesses) series.*
 
-*Related reading: [How to Build an AI Strategy for Your Small Business](/blog/how-to-build-an-ai-strategy-small-business) | [How to Create an AI Roadmap](/blog/ai-roadmap-small-business) | [Prioritizing AI Investments on a Small Business Budget](/blog/prioritizing-ai-investments-small-business)*
+*Related reading: [How to Build an AI Strategy for Your Small Business](/blog/how-to-build-an-ai-strategy-small-business) | [How to Create an AI Roadmap](/blog/ai-roadmap-small-business) | [Prioritizing AI Investments on a Small Business Budget](/blog/prioritizing-ai-investments-small-business) | [How to Know If Your Small Business Is Ready for AI](/blog/how-to-know-if-your-small-business-is-ready-for-ai)*

@@ -185,3 +185,5 @@ Watch how the first conversation starts. A good one asks how your business runs 
 If you are seriously considering an engagement, the most useful next step is a direct conversation about your specific business. Where the friction is, what the operational picture looks like, and whether an engagement makes sense given where you are right now. [Schedule a call.](https://calendly.com/david-j-forer/30min)
 
 If you have already been through an engagement and want to think about sustaining and extending what was built, [what happens after your AI engagement ends](/blog/realistic-results-from-ai-consulting) covers how to keep the momentum going without the consultant in the room.
+
+*Related reading: [AI Implementation Partner vs Consultant](/blog/ai-implementation-partner-vs-consultant) | [AI Marketing Agency vs AI Consultant](/blog/ai-marketing-agency-vs-ai-consultant)*

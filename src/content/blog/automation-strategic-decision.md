@@ -113,7 +113,7 @@ Before you look at tools, look at your operations. Understand how work moves thr
 
 Ask yourself whether the problem is really speed, or whether it is clarity, alignment, or structure. Automation cannot fix those things. It can only amplify what is already there.
 
-If you want a framework for these decisions, start with [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams). If you want help finding where automation fits in your business and where it does not, the [free process audit](/fix-the-chaos) maps your top 3 processes and prices your top 5 automation opportunities in dollars.
+If you want a framework for these decisions, start with [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams). If you want help finding where automation fits in your business and where it does not, the [80/20 process audit](/fix-the-chaos) maps your top 3 processes and prices your top 5 automation opportunities in dollars.
 
 Good automation comes from strategic decisions that fit how your business works.
 

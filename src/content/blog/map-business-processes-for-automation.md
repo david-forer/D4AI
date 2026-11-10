@@ -159,4 +159,4 @@ Either way, you have built a capability your business needs. The next process wi
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [SOPs Are the Foundation of Automation](/blog/sops-scalable-automation)*
 
-If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).
+If you want hands-on help building these systems, start with the [80/20 process audit](/fix-the-chaos).

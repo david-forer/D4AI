@@ -227,7 +227,7 @@ Bring one back when you're expanding scope significantly, replacing a core tool,
 
 ## Start With the Process That Costs You the Most
 
-The fastest way to get a realistic result is to start with the right process. [Fix the Chaos](/fix-the-chaos) is a free process audit for founders with 5 to 20 people. I look at how work moves through your business today and give you the top automation opportunities, each one priced in dollars, so you know what a result could be worth before you spend anything on building it.
+The fastest way to get a realistic result is to start with the right process. [Fix the Chaos](/fix-the-chaos) is an 80/20 process audit for founders with 5 to 20 people. I look at how work moves through your business today and give you the top automation opportunities, each one priced in dollars, so you know what a result could be worth before you spend anything on building it.
 
 *Part of the [Working with an AI Consultant](/blog/working-with-an-ai-consultant) series.*
 

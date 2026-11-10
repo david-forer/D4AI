@@ -250,3 +250,5 @@ One named person, even if the role is informal at first. They decide which tools
 ---
 
 Ready to see where your firm really stands on AI readiness? [Book a 30-minute call.](https://calendly.com/david-j-forer/30min)
+
+*Related reading: [How to Know If Your Small Business Is Ready for AI](/blog/how-to-know-if-your-small-business-is-ready-for-ai)*

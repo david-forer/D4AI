@@ -611,4 +611,4 @@ Your employees want to use AI effectively. Give them the knowledge to do it righ
 
 *Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) | [The Real Reason Your Automation Failed](/blog/automation-failed-skipped-audit)*
 
-If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).
+If you want hands-on help building these systems, start with the [80/20 process audit](/fix-the-chaos).

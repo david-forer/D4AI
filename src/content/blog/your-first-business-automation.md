@@ -112,4 +112,4 @@ Mechanical automation goes back centuries, and the Jacquard loom of 1804 is a co
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [How to Map Your Business Processes for Automation](/blog/map-business-processes-for-automation)*
 
-Ready to build an automation system that compounds over time? [Start with the free process audit](/fix-the-chaos).
+Ready to build an automation system that compounds over time? [Start with the 80/20 process audit](/fix-the-chaos).

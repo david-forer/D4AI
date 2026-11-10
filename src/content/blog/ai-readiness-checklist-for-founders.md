@@ -122,4 +122,4 @@ If you are weighing a Copilot-style assistant that works across your files and e
 
 [An AI readiness audit gives you that picture.](/ai-readiness-and-ai-audits)
 
-*Related reading: [AI Readiness Audit for Small Businesses](/blog/ai-readiness-audit-guide) | [Signs Your Business Needs AI Operations](/blog/signs-your-business-needs-ai-operations) | [AI Operations for Small Businesses: The Complete Guide](/blog/ai-operations-for-small-businesses)*
+*Related reading: [AI Readiness Audit for Small Businesses](/blog/ai-readiness-audit-guide) | [Signs Your Business Needs AI Operations](/blog/signs-your-business-needs-ai-operations) | [AI Operations for Small Businesses: The Complete Guide](/blog/ai-operations-for-small-businesses) | [How to Know If Your Small Business Is Ready for AI](/blog/how-to-know-if-your-small-business-is-ready-for-ai)*

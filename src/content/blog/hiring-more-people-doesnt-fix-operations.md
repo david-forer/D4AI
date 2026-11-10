@@ -86,4 +86,4 @@ Before asking whether to hire, ask whether you have built the thing that makes a
 
 *Related reading: [AI Operations for Small Businesses](/blog/ai-operations-for-small-businesses) · [Operational Bottlenecks That Kill Small Business Growth](/blog/operational-bottlenecks-that-kill-small-business-growth)*
 
-If your business is growing but the operations are not keeping up, start with the [free process audit](/fix-the-chaos).
+If your business is growing but the operations are not keeping up, start with the [80/20 process audit](/fix-the-chaos).

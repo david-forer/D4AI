@@ -154,4 +154,4 @@ Start by quantifying your debt. Pick the highest-interest item. Pay it down. The
 
 *Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) | [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams)*
 
-If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).
+If you want hands-on help building these systems, start with the [80/20 process audit](/fix-the-chaos).

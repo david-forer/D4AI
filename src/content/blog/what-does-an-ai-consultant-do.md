@@ -247,7 +247,7 @@ Rates depend on the scope, the consultant and the size of the business. I won't 
 
 ---
 
-If you want to see what an AI consultant would find in your business before committing to an engagement, [start with the free process audit](/fix-the-chaos). It takes 2 to 3 hours and gives you your top 5 automation opportunities, priced in dollars.
+If you want to see what an AI consultant would find in your business before committing to an engagement, [start with the 80/20 process audit](/fix-the-chaos). It takes 2 to 3 hours and gives you your top 5 automation opportunities, priced in dollars.
 
 *Part of the [Working with an AI Consultant](/blog/working-with-an-ai-consultant) series.*
 

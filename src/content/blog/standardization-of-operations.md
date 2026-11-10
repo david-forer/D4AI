@@ -449,4 +449,4 @@ Start standardization now. The longer you wait, the more expensive and painful i
 
 *Related reading: [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) | [Why Dashboards and SOPs Fail Without Operational Clarity](/blog/dashboards-sops-operational-clarity)*
 
-If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).
+If you want hands-on help building these systems, start with the [80/20 process audit](/fix-the-chaos).

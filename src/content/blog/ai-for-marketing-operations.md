@@ -113,4 +113,4 @@ The SEO layer is the second priority. It compounds over time in a way that paid 
 
 [The AI readiness audit identifies where your marketing operations infrastructure has gaps and what to build first.](/ai-readiness-and-ai-audits)
 
-*Related reading: [AI-Enabled SEO Operations](/blog/ai-enabled-seo-operations) | [AI Automation Stack for Small Businesses](/blog/ai-automation-stack-for-small-businesses) | [How to Automate Your Business Operations with AI](/blog/how-to-automate-your-business-operations-with-ai)*
+*Related reading: [AI-Enabled SEO Operations](/blog/ai-enabled-seo-operations) | [AI Automation Stack for Small Businesses](/blog/ai-automation-stack-for-small-businesses) | [How to Automate Your Business Operations with AI](/blog/how-to-automate-your-business-operations-with-ai) | [AI Marketing Agency vs AI Consultant](/blog/ai-marketing-agency-vs-ai-consultant)*

@@ -182,4 +182,4 @@ The businesses that gain the most from automation consistently identify and purs
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [Automation Is Not a Tool. It Is a Strategic Decision](/blog/automation-strategic-decision)*
 
-If you want hands-on help building these systems, start with the [free process audit](/fix-the-chaos).
+If you want hands-on help building these systems, start with the [80/20 process audit](/fix-the-chaos).

@@ -1,9 +1,9 @@
 ---
 title: "Are You Ready to Hire an AI Consultant? How to Tell and How to Prepare"
-seoTitle: "Ready to Hire an AI Consultant | Checklist | David J Forer"
+seoTitle: "When to Hire an AI Consultant | 6 Signs, 4 Red Flags and a Checklist | David J Forer"
 description: "How to tell if you're ready to hire an AI consultant, the signs the timing is off, what to prepare before the first call, and a readiness checklist to run."
 pubDate: 2026-03-21T00:00:00Z
-updatedDate: 2026-09-27T00:00:00Z
+updatedDate: 2026-11-10T00:00:00Z
 tags: ["hiring-an-ai-consultant"]
 heroImage: "/images/blog/are-you-ready-to-hire-an-ai-consultant.webp"
 articleType: "cluster"
@@ -192,10 +192,10 @@ The clearest signs are a workflow you can name that eats hours every week, tools
 
 Start with a diagnostic step. A process audit maps how work moves through the business and ranks where automation would help most. That gives you the specific problem a larger engagement needs, and it often shows whether you need a consultant at all.
 
-## Start With a Free Process Audit
+## Start With the 80/20 Process Audit
 
 If you ran the checklist and landed in the middle, the fastest way to close the gap is the [$750 80/20 process audit](/fix-the-chaos). I spend 2 to 3 hours with you on your top processes, and you get your top 5 automation opportunities, priced in dollars, the same or next day. You'll come away with the process notes and the named problem this guide asks for, whether you work with me afterward or hire someone else.
 
 *Part of the [Working with an AI Consultant](/blog/working-with-an-ai-consultant) series.*
 
-*Related reading: [What Does an AI Consultant Actually Do?](/blog/what-does-an-ai-consultant-do) | [How to Choose an AI Consultant](/blog/how-to-choose-an-ai-consultant) | [Questions to Ask Before Hiring an AI Consultant](/blog/questions-to-ask-before-hiring-an-ai-consultant)*
+*Related reading: [What Does an AI Consultant Actually Do?](/blog/what-does-an-ai-consultant-do) | [How to Choose an AI Consultant](/blog/how-to-choose-an-ai-consultant) | [Questions to Ask Before Hiring an AI Consultant](/blog/questions-to-ask-before-hiring-an-ai-consultant) | [AI Implementation Partner vs Consultant](/blog/ai-implementation-partner-vs-consultant)*

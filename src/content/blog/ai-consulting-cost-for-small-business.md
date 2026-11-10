@@ -1,8 +1,9 @@
 ---
 title: "AI Consulting Cost for Small Business: What to Expect"
+seoTitle: "How Much Does AI Consulting Cost for a Small Business? 2026 Price Ranges | David J Forer"
 description: "Understand what AI consulting costs for small businesses, what drives those costs, and how to evaluate whether the investment makes sense."
 pubDate: 2026-03-21T00:00:00Z
-updatedDate: 2026-09-27T00:00:00Z
+updatedDate: 2026-11-10T00:00:00Z
 tags: ["hiring-an-ai-consultant"]
 heroImage: "/images/blog/ai-consulting-cost-for-small-business.webp"
 articleType: "cluster"
@@ -174,7 +175,7 @@ It follows the 2 stages above. First an audit maps your current workflows and ra
 
 ### What is a reasonable consulting fee?
 
-Within the ranges above, a reasonable fee is one tied to a named outcome and a fixed scope. A discovery and audit at  to ,000 and a project fee of ,000 to ,000 cover most small business work. Be wary of any quote that cannot say what you get at the end.
+Within the ranges above, a reasonable fee is one tied to a named outcome and a fixed scope. A discovery and audit at $750 to $5,000 and a project fee of $3,000 to $25,000 cover most small business work. Be wary of any quote that cannot say what you get at the end.
 
 ### How much does enterprise AI consulting cost?
 
@@ -187,4 +188,4 @@ It is when you have a repeatable process eating staff time, enough revenue to ab
 
 *Part of the [Working with an AI Consultant](/blog/working-with-an-ai-consultant) series.*
 
-*Related reading: [Realistic Results from AI Consulting](/blog/realistic-results-from-ai-consulting) | [DIY AI vs. Hiring a Consultant](/blog/diy-ai-vs-hiring-a-consultant) | [Questions to Ask Before Hiring an AI Consultant](/blog/questions-to-ask-before-hiring-an-ai-consultant)*
+*Related reading: [Realistic Results from AI Consulting](/blog/realistic-results-from-ai-consulting) | [DIY AI vs. Hiring a Consultant](/blog/diy-ai-vs-hiring-a-consultant) | [Questions to Ask Before Hiring an AI Consultant](/blog/questions-to-ask-before-hiring-an-ai-consultant) | [AI Implementation Partner vs Consultant](/blog/ai-implementation-partner-vs-consultant) | [AI Marketing Agency vs AI Consultant](/blog/ai-marketing-agency-vs-ai-consultant)*

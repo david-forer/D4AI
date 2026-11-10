@@ -140,7 +140,7 @@ Each workflow has inputs, steps, owners and an end state. Most small businesses 
 Start with one area, not the whole company. Pick the place where work stalls most often, then write down who decides, who owns and who needs to know at each step.
 
 Fix the gaps in those three answers first. Only then redraw the workflow itself. If you are a founder-led firm of 5 to 20 people, one area at a time is enough to feel the difference within a quarter.
-If you want a framework for these changes, start with [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms). If you want to see where your own business stands, the [free process audit](/fix-the-chaos) maps your top 3 processes and prices your top 5 automation opportunities in dollars.
+If you want a framework for these changes, start with [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms). If you want to see where your own business stands, the [80/20 process audit](/fix-the-chaos) maps your top 3 processes and prices your top 5 automation opportunities in dollars.
 
 If you need help applying this approach to your business, [AI Training](https://davidjforer.com/ai-training-for-small-business-teams) can help your team internalize systemic thinking as a shared capability.
 

@@ -99,4 +99,4 @@ Achieving operational excellence in the modern era depends on the strategic adop
 
 *Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) | [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms) | [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams)*
 
-Ready to build operational excellence across your business? [Start with the free process audit](/fix-the-chaos).
+Ready to build operational excellence across your business? [Start with the 80/20 process audit](/fix-the-chaos).

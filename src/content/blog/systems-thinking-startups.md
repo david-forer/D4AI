@@ -127,7 +127,7 @@ Then ask what would make that workflow clearer and less dependent on any one per
 
 A system that is better than what you have now is enough.
 
-If you want a framework for these problems, start with [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms). If you want to see where your own business stands, the [free process audit](/fix-the-chaos) maps your top 3 processes and prices your top 5 automation opportunities in dollars.
+If you want a framework for these problems, start with [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms). If you want to see where your own business stands, the [80/20 process audit](/fix-the-chaos) maps your top 3 processes and prices your top 5 automation opportunities in dollars.
 
 For startups that want to scale, systems thinking is the difference between growing and collapsing under your own weight.
 

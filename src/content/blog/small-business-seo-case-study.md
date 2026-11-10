@@ -232,6 +232,6 @@ Start with the same on-page steps, then add a complete Google Business Profile, 
 
 In progress. Results update: November 2026.
 
-If you want this kind of review on your own site, [see how my SEO Accelerator works](/seo-accelerator). If the bigger problem is how your operations run, [start with the free process audit](/fix-the-chaos).
+If you want this kind of review on your own site, [see how my SEO Accelerator works](/seo-accelerator). If the bigger problem is how your operations run, [start with the 80/20 process audit](/fix-the-chaos).
 
 *Related reading: [AI-Enabled SEO Operations](/blog/ai-enabled-seo-operations) | [How to Run an SEO Content Audit for a Small Business](/blog/seo-content-audit-small-business) | [Schema Markup for SEO](/blog/schema-markup-seo-guide)*
