@@ -1,6 +1,6 @@
 ---
 title: "AI Readiness Checklist: 20 Questions Every Founder Should Answer Before Investing in AI"
-description: "Before committing budget or time to AI tools and implementation, answer these 20 questions honestly. The gaps you find tell you exactly where to focus first."
+description: "Before committing budget or time to AI tools and implementation, answer these 20 questions truthfully. The gaps you find tell you exactly where to focus first."
 pubDate: 2026-03-15T00:00:00Z
 tags: ["ai-readiness"]
 heroImage: "/images/blog/ai-self-evaluation.webp"
@@ -13,7 +13,7 @@ Most AI investments underperform not because the tools are wrong but because the
 
 The founders who get the most from AI understand their operational starting point clearly enough to deploy it where it will compound and not add complexity.
 
-These 20 questions are a structured way to assess that starting point. Answer them honestly. The gaps you find are the most useful output of this exercise.
+These 20 questions are a structured way to assess that starting point. Answer them truthfully. The gaps you find are the most useful output of this exercise.
 
 ## Data and Systems (Questions 1 to 5)
 
