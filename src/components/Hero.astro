@@ -5,6 +5,7 @@ import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
 // Homepage hero. The calculator is a receipt: it multiplies only the two
 // numbers the visitor types, so nothing on screen is an assumption of mine.
 // The defaults show a worked example of 6 hours at $250. The "Example" stamp was removed 2026-10-08.
+// 2026-11-11: the "Weeks in a year / 52" line became "40-hour weeks lost a year", same height.
 //
 // The modal was a Formbricks iframe until 2026-09-18. It is now a native
 // LeadForm, which made it the last third-party form embed on the site.
@@ -59,7 +60,7 @@ import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
 
         <div class="lines" aria-hidden="true">
           <div class="ln"><span>Cost per week</span><output id="calc-week">$1,500</output></div>
-          <div class="ln"><span>Weeks in a year</span><output>52</output></div>
+          <div class="ln"><span>40-hour weeks lost a year</span><output id="calc-weeks">7.8</output></div>
           <div class="ln"><span>Cost per month</span><output id="calc-month">$6,500</output></div>
         </div>
 
@@ -154,6 +155,7 @@ import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
     const yearlyOut = document.getElementById("calc-yearly");
     const weekOut = document.getElementById("calc-week");
     const monthOut = document.getElementById("calc-month");
+    const weeksOut = document.getElementById("calc-weeks");
     const titleEl = document.getElementById("calc-title");
     const hoursLabel = document.getElementById("calc-hours-label");
     const rateLabel = document.getElementById("calc-rate-label");
@@ -233,6 +235,13 @@ import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
         const year = week * 52;
         weekOut.textContent = money(week);
         monthOut.textContent = money(year / 12);
+        // Hours lost in a year divided by a 40 hour week. Still only the
+        // visitor's own numbers, so nothing here is an assumption of mine
+        // beyond what a working week is.
+        if (weeksOut) {
+          const hoursLost = (mode === "team" ? toNumber(peopleInput) : 1) * toNumber(hoursInput) * 52;
+          weeksOut.textContent = (Math.round((hoursLost / 40) * 10) / 10).toLocaleString("en-US");
+        }
         tween(year);
       };
       const clamp = (el: HTMLInputElement) => {

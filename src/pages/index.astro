@@ -11,6 +11,7 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import LeadForm from '../components/LeadForm.astro';
 import CaseStudyProof from '../components/CaseStudyProof.astro';
+import TaskCostRanker from '../components/TaskCostRanker.astro';
 import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
 import { getCollection } from 'astro:content';
 
@@ -125,6 +126,9 @@ description="How many hours a week does your business wait on you or your team? 
 
     {/* Proof of the calculator number. Reads the case-studies collection. */}
     <CaseStudyProof />
+
+    {/* Ranked-tasks calculator. Added 2026-11-11, alongside the hero slip, which is untouched. */}
+    <TaskCostRanker />
 
     {/* What an audit gives you */}
     <section class="sec deliver">

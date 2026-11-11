@@ -1,0 +1,201 @@
+---
+// Homepage section under the hero. Same rule as the hero calculator: it only
+// multiplies what the visitor types (hours x rate x 52) and sorts the result.
+// The starting hours are a worked example, said so on the page. Nothing here
+// claims a share of time that I measured. Colour tokens come from tokens.css.
+// Added 2026-11-11.
+const BOOKING = 'https://calendly.com/david-j-forer/30min';
+
+const tasks = [
+  { id: 'approvals', label: 'Approvals and quotes', hint: 'Waiting for your yes', hours: 4 },
+  { id: 'inbox', label: 'Inbox and follow-up', hint: 'Replies, chasing, reminders', hours: 5 },
+  { id: 'reporting', label: 'Reports and updates', hint: 'Numbers pulled by hand', hours: 3 },
+  { id: 'scheduling', label: 'Scheduling and coordination', hint: 'Who is doing what, and when', hours: 2 },
+  { id: 'entry', label: 'Retyping data between tools', hint: 'Copy, paste, fix, repeat', hours: 3 },
+  { id: 'questions', label: 'Answering the same questions', hint: 'Where is the file, how do we do this', hours: 2 },
+];
+---
+
+<section class="rk" id="where-it-goes" aria-labelledby="rk-title">
+  <div class="rk-wrap">
+    <p class="rk-tag">Where it comes from</p>
+    <h2 id="rk-title">Where does your week go?</h2>
+    <p class="rk-sub">Put in the hours a week each of these takes. The slip ranks them by what they cost you a year. The starting numbers are an example, so change every one. An audit does this ranking from interviews and your own records.</p>
+
+    <div class="rk-grid">
+      <form class="rk-form" onsubmit="return false" aria-label="Where your week goes">
+        <div class="rk-field rk-rate">
+          <label for="rk-rate">What an hour of this time costs you</label>
+          <div class="rk-row"><span class="rk-unit">$</span><input id="rk-rate" type="number" inputmode="decimal" min="0" max="5000" step="10" value="150" /></div>
+        </div>
+        {tasks.map((t) => (
+          <div class="rk-field">
+            <label for={`rk-${t.id}`}>{t.label} <small>{t.hint}</small></label>
+            <div class="rk-row"><input id={`rk-${t.id}`} data-task={t.id} data-label={t.label} type="number" inputmode="decimal" min="0" max="80" step="0.5" value={t.hours} /><span class="rk-unit">hrs a week</span></div>
+          </div>
+        ))}
+      </form>
+
+      <div class="rk-slip">
+        <div class="rk-slip-head"><b>RANKED BY YEARLY COST</b></div>
+        <ol class="rk-list" id="rk-list">
+          {tasks.map((t) => (
+            <li data-row={t.id}>
+              <span class="rk-pos" aria-hidden="true">1</span>
+              <div class="rk-body">
+                <div class="rk-line"><span class="rk-name">{t.label}</span><output class="rk-amt">$0</output></div>
+                <div class="rk-bar" aria-hidden="true"><i></i></div>
+              </div>
+            </li>
+          ))}
+        </ol>
+        <div class="rk-total">
+          <span class="rk-tag2">All of it costs you</span>
+          <span class="rk-big" id="rk-total" aria-hidden="true">$0</span>
+          <span class="rk-after" id="rk-after"></span>
+          <span class="rk-sr" id="rk-live" aria-live="polite"></span>
+        </div>
+        <div class="rk-cta">
+          <a class="rk-btn rk-btn-orange" href={BOOKING}>Book a Strategy Call <span aria-hidden="true">&rarr;</span></a>
+          <a class="rk-btn rk-btn-ghost" href="#pricing">See the audits</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const rate = document.getElementById("rk-rate") as HTMLInputElement | null;
+    const inputs = Array.from(document.querySelectorAll<HTMLInputElement>("input[data-task]"));
+    const list = document.getElementById("rk-list");
+    const totalEl = document.getElementById("rk-total");
+    const afterEl = document.getElementById("rk-after");
+    const liveEl = document.getElementById("rk-live");
+    if (!rate || !inputs.length || !list || !totalEl || !afterEl) return;
+
+    const money = (n: number) => "$" + Math.round(n).toLocaleString("en-US");
+    const num = (el: HTMLInputElement) => {
+      const v = parseFloat(el.value);
+      return Number.isFinite(v) && v > 0 ? v : 0;
+    };
+    const clamp = (el: HTMLInputElement) => {
+      const max = parseFloat(el.max);
+      if (Number.isFinite(max) && parseFloat(el.value) > max) el.value = String(max);
+    };
+
+    const rows = new Map<string, HTMLElement>();
+    list.querySelectorAll<HTMLElement>("li[data-row]").forEach((li) => rows.set(li.dataset.row || "", li));
+
+    const update = () => {
+      clamp(rate);
+      inputs.forEach(clamp);
+      const perHour = num(rate);
+      const costs = inputs.map((el, i) => ({
+        id: el.dataset.task || "",
+        label: el.dataset.label || "",
+        cost: num(el) * perHour * 52,
+        i,
+      }));
+      const ranked = [...costs].sort((a, b) => b.cost - a.cost || a.i - b.i);
+      const max = ranked[0] ? ranked[0].cost : 0;
+      const total = costs.reduce((s, c) => s + c.cost, 0);
+
+      ranked.forEach((c, pos) => {
+        const li = rows.get(c.id);
+        if (!li) return;
+        li.style.order = String(pos);
+        li.classList.toggle("zero", c.cost === 0);
+        const posEl = li.querySelector<HTMLElement>(".rk-pos");
+        const amt = li.querySelector<HTMLElement>(".rk-amt");
+        const bar = li.querySelector<HTMLElement>(".rk-bar i");
+        if (posEl) posEl.textContent = String(pos + 1);
+        if (amt) amt.textContent = money(c.cost);
+        if (bar) bar.style.width = max > 0 ? (c.cost / max) * 100 + "%" : "0%";
+        li.classList.toggle("top", pos < 3 && c.cost > 0);
+      });
+
+      totalEl.textContent = money(total);
+      totalEl.classList.toggle("long", (totalEl.textContent || "").length > 9);
+
+      const topThree = ranked.slice(0, 3).reduce((s, c) => s + c.cost, 0);
+      if (total > 0) {
+        const share = Math.round((topThree / total) * 100);
+        afterEl.textContent = "a year. The top three are " + share + "% of it. That is where an audit starts.";
+        if (liveEl) liveEl.textContent = "Biggest cost: " + ranked[0].label + ", " + money(ranked[0].cost) + " a year. Total " + money(total) + " a year.";
+      } else {
+        afterEl.textContent = "Add hours to any task to see the ranking.";
+        if (liveEl) liveEl.textContent = "";
+      }
+    };
+
+    rate.addEventListener("input", update);
+    inputs.forEach((el) => el.addEventListener("input", update));
+    update();
+  });
+</script>
+
+<style>
+  .rk { background: var(--paper); color: var(--ink); padding: 110px 0; }
+  .rk-wrap { max-width: 1160px; margin: 0 auto; padding: 0 28px; }
+  .rk-tag { display: flex; align-items: center; gap: 14px; margin: 0 0 22px; color: var(--orange); font-size: 13px; letter-spacing: .14em; text-transform: uppercase; font-weight: 500; }
+  .rk-tag::before { content: ""; width: 44px; height: 2px; background: currentColor; flex: none; }
+  .rk h2 { font-size: clamp(38px, 5vw, 64px); font-weight: 800; letter-spacing: -.025em; line-height: 1.04; max-width: 760px; }
+  .rk-sub { margin-top: 18px; max-width: 640px; color: var(--ink-2); }
+
+  .rk-grid { margin-top: 52px; display: grid; grid-template-columns: .9fr 1.1fr; gap: 44px; align-items: start; }
+
+  .rk-form { border-top: 4px solid var(--ink); }
+  .rk-field { display: grid; grid-template-columns: 1fr 150px; gap: 16px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .rk-field label { font-weight: 600; font-size: 17px; line-height: 1.25; }
+  .rk-field label small { display: block; margin-top: 2px; font-weight: 400; font-size: 14px; color: var(--ink-2); }
+  .rk-rate { background: var(--paper-2); padding-left: 14px; padding-right: 14px; margin: 0 -14px; }
+  .rk-row { display: flex; align-items: center; background: var(--slip); border: 1.5px solid var(--rule); border-radius: 6px; transition: box-shadow .15s, border-color .15s; font-variant-numeric: tabular-nums; }
+  .rk-row:focus-within { border-color: var(--orange); box-shadow: 0 0 0 3px rgba(179,71,0,.3); }
+  .rk-unit { padding: 0 10px; color: var(--ink-2); font-size: 13px; font-weight: 500; white-space: nowrap; }
+  .rk-row input { width: 100%; min-width: 0; border: 0; background: transparent; padding: 8px 4px 8px 10px; font-family: inherit; font-size: 20px; font-weight: 700; color: var(--ink); outline: none; }
+  .rk-rate .rk-row input { padding-left: 0; }
+
+  .rk-slip { background: var(--slip); border: 1.5px solid var(--ink); padding: 24px 26px 26px; font-variant-numeric: tabular-nums; }
+  .rk-slip-head { padding-bottom: 14px; border-bottom: 2px dashed var(--ink); }
+  .rk-slip-head b { font-weight: 700; font-size: 13px; letter-spacing: .14em; }
+  .rk-list { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-direction: column; }
+  .rk-list li { display: grid; grid-template-columns: 28px 1fr; gap: 10px; padding: 11px 0; border-bottom: 1px dotted var(--rule); order: 0; transition: opacity .25s; }
+  .rk-list li.zero { opacity: .4; }
+  .rk-pos { font-weight: 800; font-size: 22px; line-height: 1.1; color: transparent; -webkit-text-stroke: 1.5px var(--ink-2); }
+  .rk-list li.top .rk-pos { -webkit-text-stroke-color: var(--orange); }
+  .rk-line { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-size: 16px; }
+  .rk-name { font-weight: 600; }
+  .rk-amt { font-weight: 700; }
+  .rk-bar { margin-top: 7px; height: 8px; background: var(--paper-2); border-radius: 4px; overflow: hidden; }
+  .rk-bar i { display: block; height: 100%; width: 0; background: var(--ink-2); border-radius: 4px; transition: width .35s cubic-bezier(.2,.7,.2,1), background .25s; }
+  .rk-list li.top .rk-bar i { background: var(--orange); }
+
+  .rk-total { margin-top: 12px; padding-top: 14px; border-top: 2px dashed var(--ink); }
+  .rk-tag2 { display: block; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; font-weight: 500; color: var(--ink-2); }
+  .rk-big { display: block; margin: 4px 0; font-weight: 800; font-size: clamp(40px, 4.4vw, 56px); letter-spacing: -.04em; line-height: 1; color: var(--orange); }
+  .rk-big.long { font-size: clamp(32px, 3.6vw, 44px); }
+  .rk-after { display: block; font-size: 14px; line-height: 1.4; color: var(--ink-2); }
+  .rk-sr { position: absolute; left: -9999px; }
+
+  .rk-cta { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 12px; }
+  .rk-btn { display: inline-flex; align-items: center; gap: 10px; min-height: 46px; padding: 0 22px; border-radius: 999px; font-weight: 600; font-size: 16px; text-decoration: none; border: 2px solid transparent; transition: background .2s, border-color .2s; }
+  .rk-btn:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+  .rk-btn-orange { background: var(--orange); color: #fff; }
+  .rk-btn-orange:hover { background: var(--orange-deep); }
+  .rk-btn-ghost { color: var(--ink); border-color: var(--ink); }
+  .rk-btn-ghost:hover { background: var(--ink); color: #fff; }
+
+  @media (max-width: 980px) {
+    .rk { padding: 80px 0; }
+    .rk-grid { grid-template-columns: 1fr; gap: 36px; }
+  }
+  @media (max-width: 520px) {
+    .rk-wrap { padding: 0 20px; }
+    .rk-field { grid-template-columns: 1fr 128px; gap: 12px; }
+    .rk-slip { padding: 20px 18px 22px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .rk-bar i, .rk-row, .rk-list li, .rk-btn { transition: none; }
+  }
+</style>
