@@ -250,7 +250,7 @@ Process mapping fixes that.
 
 The businesses that win in 2026 are the most clearly understood. They know what they do, how they do it, and where the friction is. They use AI to move faster and keep the thinking in-house.
 
-If you are running a small business and you are considering AI adoption, start here. [Map your core processes first](/fix-the-chaos). Find out what is really happening. Use AI to accelerate the mapping, refine the analysis, and turn the map into action.
+If you are running a small business and you are considering AI adoption, start here. [Map your core processes first](/fix-the-chaos). Find out what is happening. Use AI to accelerate the mapping, refine the analysis, and turn the map into action.
 
 But do not skip the map. The map is where the gains come from.
 
@@ -258,7 +258,7 @@ But do not skip the map. The map is where the gains come from.
 
 ### What is AI process mapping?
 
-AI business process mapping is using AI to help document how a process really runs. You feed it transcripts, threads, emails, or task lists, and it drafts the step sequence, flags decision points, and suggests where things break. People then check the draft against reality.
+AI business process mapping is using AI to help document how a process runs. You feed it transcripts, threads, emails, or task lists, and it drafts the step sequence, flags decision points, and suggests where things break. People then check the draft against reality.
 
 ### How do you use AI for process mapping?
 
@@ -302,7 +302,7 @@ Companies define the levels differently, but a common split is simple. L1 is a h
 
 ### Which tools do you need to map a process?
 
-The AI process mapping tools you need are modest: an AI assistant that can read your transcripts and task lists and draft the step sequence, then Lucidchart, Miro, or a plain whiteboard for the visual map. The tool matters less than the team agreeing on what really happens.
+The AI process mapping tools you need are modest: an AI assistant that can read your transcripts and task lists and draft the step sequence, then Lucidchart, Miro, or a plain whiteboard for the visual map. The tool matters less than the team agreeing on what happens.
 
 ### What is the best tool for process mapping, and is there a free one?
 

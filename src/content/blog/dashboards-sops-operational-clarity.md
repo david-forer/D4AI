@@ -44,7 +44,7 @@ Several problems plague most small business dashboards.
 
 **Metrics disconnect from action.** You see that a number is red, but you have no idea what to do about it. Which process is failing? Who is responsible? What specific steps would improve the metric? If your dashboard cannot answer these questions, it is showing you problems without showing you solutions.
 
-The result is a kind of operational theater. You look at the dashboard in your Monday meeting. You note that some numbers went up and others went down. You discuss possible reasons. Then everyone goes back to work and does exactly what they were going to do anyway, because the dashboard did not actually tell you what to change.
+The result is a kind of operational theater. You look at the dashboard in your Monday meeting. You note that some numbers went up and others went down. You discuss possible reasons. Then everyone goes back to work and does exactly what they were going to do anyway, because the dashboard did not tell you what to change.
 
 ## The SOP Problem
 
@@ -56,13 +56,13 @@ In practice, SOPs fail for different reasons than dashboards, but fail just as o
 
 **They become outdated immediately.** The business changes, tools get updated, better approaches emerge. But the SOP sits unchanged in a shared drive somewhere, growing more disconnected from reality with each passing month.
 
-**They live in the wrong place.** SOPs that exist in documents separate from where work happens get ignored. People do not stop their workflow to open a different application and search for the relevant procedure. They just do what they remember or what seems reasonable.
+**They live in the wrong place.** SOPs that exist in documents separate from where work happens get ignored. People do not stop their workflow to open a different application and search for the relevant procedure. They do what they remember or what seems reasonable.
 
 **They describe what but not why.** Procedures that list steps without explaining the reasoning behind them get followed mechanically at best and abandoned at first inconvenience. When people understand why a process works a certain way, they are more likely to follow it and more capable of adapting when circumstances change.
 
 **Nobody enforces them.** An SOP without accountability is a suggestion. If following the documented process is optional, people will take shortcuts when they are busy or stressed, which is precisely when consistent processes matter most.
 
-The cumulative effect is that most businesses have SOPs that do not reflect how work actually gets done, and dashboards that do not reflect what the SOPs say should happen. The gap between these two things is where operational clarity goes to die.
+The cumulative effect is that most businesses have SOPs that do not reflect how work gets done, and dashboards that do not reflect what the SOPs say should happen. The gap between these two things is where operational clarity goes to die.
 
 ## The Measurement-Action Gap
 
@@ -82,7 +82,7 @@ Closing this gap is how you achieve actual operational clarity.
 
 The solution is not to create better dashboards or better SOPs in isolation. The solution is to build them as connected parts of a single system.
 
-Start with the outcome you care about. Pick a metric that actually matters to your business. Revenue per employee. Customer retention rate. Average time to deliver. Something that, if it improved, would make a meaningful difference.
+Start with the outcome you care about. Pick a metric that matters to your business. Revenue per employee. Customer retention rate. Average time to deliver. Something that, if it improved, would make a meaningful difference.
 
 Trace that metric back to its sources. What activities and processes directly influence this outcome? If you want to improve customer retention, which processes touch the customer experience? Onboarding? Support? Billing? Account management? Identify the specific workflows that feed the metric.
 
@@ -117,7 +117,7 @@ When a metric turns red, you know exactly which step to examine. When you change
 
 ## Operational Clarity as Competitive Advantage
 
-Most of your competitors are flying blind. They have dashboards full of numbers they do not really understand and procedures nobody actually follows. They make decisions based on gut feel and anecdote because their data does not tell them what they need to know.
+Most of your competitors are flying blind. They have dashboards full of numbers they do not really understand and procedures nobody follows. They make decisions based on gut feel and anecdote because their data does not tell them what they need to know.
 
 Operational clarity, real clarity where measurement and action align, is surprisingly rare. The businesses that achieve it gain the ability to identify problems faster, diagnose root causes more accurately, and implement fixes more confidently.
 
@@ -129,7 +129,7 @@ For a business your size, without a dedicated operations person, this alignment 
 
 Dashboards do not create clarity. SOPs do not create clarity. Only the connection between them creates clarity.
 
-This means rethinking how you approach both. Stop building dashboards that just aggregate available data. Start with the processes that drive your most important outcomes and build metrics that reflect how those processes perform.
+This means rethinking how you approach both. Stop building dashboards that aggregate available data. Start with the processes that drive your most important outcomes and build metrics that reflect how those processes perform.
 
 Stop writing SOPs as documentation exercises. Start designing processes with measurement built in, ideally with automation that forces compliance and generates metrics automatically.
 
@@ -141,7 +141,7 @@ That is operational clarity. Everything else is theater.
 
 ### What should an SOP dashboard show?
 
-It should show how each step of a documented process is performing, not just the final outcome. Time between steps, error rates, and handoff delays tell you where work stalls. If a red number does not point to a specific step and owner, the dashboard is decoration.
+It should show how each step of a documented process is performing, not only the final outcome. Time between steps, error rates, and handoff delays tell you where work stalls. If a red number does not point to a specific step and owner, the dashboard is decoration.
 
 ### Why do dashboards fail to improve operations?
 

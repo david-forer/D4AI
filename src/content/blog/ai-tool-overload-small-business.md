@@ -126,7 +126,7 @@ Most small firms get by with one tool in each of these:
 - A project management tool.
 - A marketing tool, for example for SEO research or content scheduling, if marketing is a real channel for you.
 
-Those 5 categories cover the main AI tools most owners use day to day. Within each one, the best choice is the tool your team will actually use and that connects to the rest of your stack. Run any new candidate through the intake process described below before you buy it.
+Those 5 categories cover the main AI tools most owners use day to day. Within each one, the best choice is the tool your team will use and that connects to the rest of your stack. Run any new candidate through the intake process described below before you buy it.
 
 ## What Happens If You Overuse AI?
 

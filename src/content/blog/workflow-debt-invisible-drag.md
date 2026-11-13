@@ -111,7 +111,7 @@ Not all workflow debt is equally urgent. Strategic debt management means priorit
 
 **Target high-interest debt first.** Some debt compounds faster than others. A manual process that happens fifty times daily extracts more cost than one that happens weekly. A shadow system held by someone planning to leave creates more risk than one held by a long-tenured employee. Prioritize the debt that costs the most or creates the most risk.
 
-**Standardize to address shadow debt.** Bring informal processes into official systems. Document the knowledge that lives in people's heads. Create SOPs that capture how things actually work. This does not require fancy tools. It requires deciding on standard approaches and making them accessible to everyone.
+**Standardize to address shadow debt.** Bring informal processes into official systems. Document the knowledge that lives in people's heads. Create SOPs that capture how things work. This does not require fancy tools. It requires deciding on standard approaches and making them accessible to everyone.
 
 **Integrate to address hand-off debt.** Connect systems so data flows automatically between them. Eliminate the re-keying and context-switching that happens at every transition point. Modern integration platforms make this accessible without custom development.
 
@@ -145,7 +145,7 @@ This requires ongoing attention. Regular audits to assess where debt is accumula
 
 For a business without a dedicated operations manager, this attention must be built into how leadership thinks about the company. It cannot be delegated because there is nobody to delegate to. It must be a priority that competes with sales, product, and customer service for mindshare.
 
-The payoff justifies the effort. Workflow debt is the silent drag that keeps good businesses from becoming great ones. Addressing it systematically removes that drag and unleashes growth potential that was always there, just buried under accumulated operational friction.
+The payoff justifies the effort. Workflow debt is the silent drag that keeps good businesses from becoming great ones. Addressing it systematically removes that drag and unleashes growth potential that was always there, buried under accumulated operational friction.
 
 Start by quantifying your debt. Pick the highest-interest item. Pay it down. Then move to the next one. The journey of a thousand miles begins with a single step, and the journey to operational excellence begins with recognizing the debt you carry and committing to reduce it.
 

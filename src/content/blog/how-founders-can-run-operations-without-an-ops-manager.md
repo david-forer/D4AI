@@ -21,7 +21,7 @@ Founders run operations without an ops manager by handing the coordination work 
 
 ## What an Operations Manager Actually Does
 
-To decide what can be replaced, you need to understand what the role actually contains.
+To decide what can be replaced, you need to understand what the role contains.
 
 An operations manager handles four categories of work:
 
@@ -70,7 +70,7 @@ There are things that remain founder work regardless of how sophisticated your a
 - Judgment calls where the right answer depends on nuance no system captures
 - The ongoing work of deciding what the process should be
 
-The goal is not to automate your role. The goal is to automate the work that has been eating your role. When coordination overhead disappears, what remains is almost entirely judgment work: the kind of work that actually requires you.
+The goal is not to automate your role. The goal is to automate the work that has been eating your role. When coordination overhead disappears, what remains is almost entirely judgment work: the kind of work that requires you.
 
 Most founders who describe themselves as buried in operations are buried in follow-up emails, status checks, and process coordination that has no business sitting in their calendar. That is a solvable structural problem.
 
@@ -84,7 +84,7 @@ You do not need an enterprise platform. For a team of five to twenty-five people
 
 **A structured intake system**: A form or defined process for how new work enters the system. Every request gets routed, assigned, and tracked from the moment it comes in: not after someone notices it is sitting in an inbox.
 
-**An automation layer**: A tool like n8n or Make connecting your systems so that when something changes in one place, the appropriate things happen in the others. New client signed ? onboarding task created. Project marked complete ? invoice triggered. These connections compound over time.
+**An automation layer**: A tool like n8n or Make connecting your systems so that when something changes in one place, the appropriate things happen in the others. New client signed → onboarding task created. Project marked complete → invoice triggered. These connections compound over time.
 
 **A live ops dashboard**: One view that shows what is overdue, what is at risk, and what needs a decision today. Not a report you build weekly: a view that is always current.
 
@@ -104,11 +104,11 @@ Every hour you spend on coordination (following up on tasks, compiling status, c
 
 At ten hours per week, that is roughly a quarter of a standard working week spent on work a system could do. Over a year, that compounds into thousands of hours of capacity that was never deployed on anything strategic.
 
-Systems do not cost money in the way a hire does. They cost setup time and discipline. The return on that investment is recoverable capacity: and that capacity is what scaling actually requires.
+Systems do not cost money in the way a hire does. They cost setup time and discipline. The return on that investment is recoverable capacity: and that capacity is what scaling requires.
 
 ---
 
-## When You Actually Do Need to Hire
+## When an Operations Hire Makes Sense
 
 Systems cover a lot. They do not cover everything.
 

@@ -51,7 +51,7 @@ This is why automation is not neutral. It amplifies the founder's worldview. If 
 
 ## What Founders Unintentionally Encode
 
-Most founders do not set out to encode philosophy. They just want things to work.
+Most founders do not set out to encode philosophy. They want things to work.
 
 But every automated decision carries assumptions. Assumptions about who can be trusted with what. Assumptions about what information matters. Assumptions about when speed is more important than accuracy.
 
@@ -117,7 +117,7 @@ When a process depends on a specific person, automation often tries to preserve 
 
 This feels practical. The person is good at what they do. The business needs them to stay involved.
 
-But automating around a person does not scale. It just makes the bottleneck more efficient. The person still becomes a constraint. The business still cannot grow without them.
+But automating around a person does not scale. It makes the bottleneck more efficient. The person still becomes a constraint. The business still cannot grow without them.
 
 The better approach is to automate the system, not the person. Document what the person knows. Encode the logic they use. Create a process that anyone can execute.
 

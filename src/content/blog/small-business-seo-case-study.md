@@ -79,7 +79,7 @@ Impressions across the site fell by roughly 45% from mid-September. On a chart t
 
 4 pages accounted for about 470 of the lost impressions, and 3 of them held the same average position throughout. Fewer people saw them at the same spot. That points to lower search demand or more space taken above the results, and neither one is a ranking loss.
 
-Only one page actually slid, a pillar guide that went from position 22.5 to 34.7. The sitewide average hid it completely. That's the page worth attention.
+Only one page slid, a pillar guide that went from position 22.5 to 34.7. The sitewide average hid it completely. That's the page worth attention.
 
 ### A New Post That Never Ranked
 
@@ -134,7 +134,7 @@ The strongest page now shows its questions and answers on the page, built from t
 
 ### Honest Examples
 
-The unsourced case studies became clearly labeled hypotheticals, and prices were brought in line with what the business actually charges.
+The unsourced case studies became clearly labeled hypotheticals, and prices were brought in line with what the business charges.
 
 ### 1 New Post
 

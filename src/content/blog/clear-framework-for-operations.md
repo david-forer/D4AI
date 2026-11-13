@@ -70,7 +70,7 @@ Lean tells you to eliminate waste. CLEAR tells you how to define waste in a way 
 
 ### Client Intake and Qualification
 
-Capture reality by documenting what information is actually used to accept or reject leads, not what your intake form collects. Label ownership so someone is accountable for lead quality and routing logic. Eliminate ambiguity by defining clear qualification rules and edge cases. Align incentives between sales speed and lead quality. Record decisions to track why leads were accepted, rejected, or escalated.
+Capture reality by documenting what information is used to accept or reject leads, not what your intake form collects. Label ownership so someone is accountable for lead quality and routing logic. Eliminate ambiguity by defining clear qualification rules and edge cases. Align incentives between sales speed and lead quality. Record decisions to track why leads were accepted, rejected, or escalated.
 
 Most intake processes fail because the criteria are fuzzy. What does "good fit" mean? CLEAR forces you to define it before you automate it.
 

@@ -123,7 +123,7 @@ AI tool spend should be evaluated as a percentage of the operational overhead it
 
 A tool that costs $200 per month and saves four hours of founder time per week at a conservative $150 per hour equivalent is returning $600 per month on a $200 investment. That math is clear. A tool that costs $50 per month and saves fifteen minutes per week across two people is a much weaker case.
 
-The mistake most businesses make is evaluating AI tool spend as a line item against a budget rather than as an investment against a return. The budget question is whether you can afford it. The investment question is whether you should. They are different questions with different answers, and the investment question is the one that actually tells you whether the spend is justified.
+The mistake most businesses make is evaluating AI tool spend as a line item against a budget rather than as an investment against a return. The budget question is whether you can afford it. The investment question is whether you should. They are different questions with different answers, and the investment question is the one that tells you whether the spend is justified.
 
 ---
 

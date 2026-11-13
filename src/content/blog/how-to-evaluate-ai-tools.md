@@ -77,7 +77,7 @@ This is the question most evaluations skip, and it is the one that prevents the 
 
 Before starting any evaluation, write down the specific operational problem you are trying to solve. Not "we want to use AI more" or "we heard this tool is good." The specific workflow, the specific cost or friction it creates, and the specific outcome that would tell you the problem is solved.
 
-If you cannot write that down clearly, the purchase is premature. If you can, use it as the primary lens for the entire evaluation. Does the tool solve that specific problem, in the way your workflow actually operates, without creating more problems than it solves?
+If you cannot write that down clearly, the purchase is premature. If you can, use it as the primary lens for the entire evaluation. Does the tool solve that specific problem, in the way your workflow operates, without creating more problems than it solves?
 
 ---
 
@@ -131,7 +131,7 @@ Put each one in writing and ask the vendor to confirm in an email. Verbal answer
 
 ## Can You Evaluate AI Tools for Free?
 
-Yes, up to a point. Most vendors offer a free tier or a trial, and an online evaluation is a fair way to rule tools out. Free tiers rarely match paid-plan limits, integrations or support, so treat a free test as a screen and run the real trial on the plan you would actually buy.
+Yes, up to a point. Most vendors offer a free tier or a trial, and an online evaluation is a fair way to rule tools out. Free tiers rarely match paid-plan limits, integrations or support, so treat a free test as a screen and run the real trial on the plan you would buy.
 
 Keep the shortlist small. Two or three tools evaluated properly beat ten tools tried casually.
 

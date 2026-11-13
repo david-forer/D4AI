@@ -360,7 +360,7 @@ Workflow mistakes involve using AI in situations where human judgment is essenti
 
 A manager uses AI to draft a termination letter. The output is legally accurate but emotionally tone-deaf. The terminated employee feels dehumanized.
 
-An employee uses AI to write an apology to a customer for a major service failure. The apology hits the right structural points but lacks genuine empathy. The customer feels the company doesn't actually care.
+An employee uses AI to write an apology to a customer for a major service failure. The apology hits the right structural points but lacks genuine empathy. The customer feels the company doesn't care.
 
 Someone uses AI to write a condolence message to a colleague who lost a family member. The message is appropriate but generic. It feels hollow.
 

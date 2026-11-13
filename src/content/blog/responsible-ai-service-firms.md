@@ -113,19 +113,19 @@ A 2,000-person firm that mishandles one client document absorbs it. There is a p
 
 That cuts both ways, and the second direction is the one founders miss. A small firm that can answer a client's AI question specifically, today, with records to back it, differentiates itself against competitors who cannot. Buyers are asking this now, and most suppliers are still improvising the answer.
 
-So the work is worth doing, and it is worth doing in the modest form described above rather than the enterprise form, which would consume attention you need elsewhere and still not answer the question a client actually asks.
+So the work is worth doing, and it is worth doing in the modest form described above rather than the enterprise form, which would consume attention you need elsewhere and still not answer the question a client asks.
 
 ---
 
 ## The bottom line for founders
 
-Responsible AI at this size is 4 promises you can actually keep, a short list of contract terms you decline, one decision about disclosure, and 2 hours a quarter checking that the promises are still true.
+Responsible AI at this size is 4 promises you can keep, a short list of contract terms you decline, one decision about disclosure, and 2 hours a quarter checking that the promises are still true.
 
 The firms that get this wrong are rarely the ones that thought about it too little. They are the ones that published a page of principles and never changed a single account setting, which is a reputational risk of its own the first time a client asks a specific question.
 
 Make fewer commitments and keep them. In a business where the entire product is trust, a modest promise that holds is worth more than an ambitious one you discover you have been breaching for 5 months.
 
-If you want a read on which promises your firm can actually keep with clients today, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at the real accounts and the real contracts rather than the policy on paper.
+If you want a read on which promises your firm can keep with clients today, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at the real accounts and the real contracts rather than the policy on paper.
 
 ---
 

@@ -8,7 +8,7 @@ heroImage: "/images/blog/ai-compliance-client-data.webp"
 articleType: "cluster"
 ---
 
-This page is for the founder whose team already uses AI on client work and wants to know where the line actually sits. The short answer is in a drawer you already own.
+This page is for the founder whose team already uses AI on client work and wants to know where the line sits. The short answer is in a drawer you already own.
 
 ## The short version
 

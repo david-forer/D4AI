@@ -130,7 +130,7 @@ Even experienced SEO practitioners can stumble with entity implementation. Watch
 
 Overstuffing content with entity mentions feels mechanical and hurts readability. Entities should appear naturally within the flow of your content, not inserted awkwardly to check boxes.
 
-Ignoring entity variations creates gaps in coverage. Search engines understand synonyms, but your content should still address the terms your audience actually uses. Technical documentation might reference "authentication protocols" while users search for "how to log in securely."
+Ignoring entity variations creates gaps in coverage. Search engines understand synonyms, but your content should still address the terms your audience uses. Technical documentation might reference "authentication protocols" while users search for "how to log in securely."
 
 Weak internal linking structure undermines entity relationships. If you never link between related entity pages, you're missing opportunities to reinforce topical connections.
 

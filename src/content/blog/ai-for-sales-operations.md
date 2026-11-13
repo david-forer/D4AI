@@ -61,7 +61,7 @@ Human review before anything goes to a client is non-negotiable. AI drafts, the 
 
 ## What Needs to Exist Before AI Can Help Sales
 
-A CRM your team actually uses consistently is the foundation everything else depends on. If deal data is split between the CRM and email, or if updates only happen sporadically, the automations built on top of that data will reflect the inconsistency.
+A CRM your team uses consistently is the foundation everything else depends on. If deal data is split between the CRM and email, or if updates only happen sporadically, the automations built on top of that data will reflect the inconsistency.
 
 Defined sales stages with clear criteria are the second prerequisite. Not loose labels that mean different things to different people, but specific definitions: what makes a lead qualified, what moves it to proposal, what constitutes an active engagement. The automation can only route correctly if the stages are real.
 

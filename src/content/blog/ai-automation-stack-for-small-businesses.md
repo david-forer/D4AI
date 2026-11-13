@@ -35,7 +35,7 @@ One system owns client data. One system owns project and task data. One system o
 
 Everything else reads from or writes to these systems. If the same information exists in multiple places with no clear authority, the automation built on top of it will constantly work with incomplete or conflicting data.
 
-The decision at this layer is which tools the entire team will actually use consistently. A CRM that half the team works around is only a partial data source, with gaps that cannot be automated around.
+The decision at this layer is which tools the entire team will use consistently. A CRM that half the team works around is only a partial data source, with gaps that cannot be automated around.
 
 Consolidate first. Get the team using a consistent set of systems before building anything on top of them.
 

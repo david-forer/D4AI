@@ -21,7 +21,7 @@ This framework helps you identify and prioritize the tasks that will deliver the
 
 The leverage automation meaning is simple: a small amount of setup effort produces a large, repeating return. A task has high leverage when one hour of building saves many hours later, or prevents a costly mistake every time it runs.
 
-Low-return automation may still run perfectly. It just does not move the business.
+Low-return automation may still run perfectly. It does not move the business.
 
 ## The Automation Matrix
 
@@ -137,9 +137,9 @@ The appeal is obvious. Quick wins feel productive. Checking items off a list pro
 
 The trap is opportunity cost. Time spent on low-impact automation is time not spent on high-impact automation. If you fill your capacity with Time Savers, you never get to the Quick Wins that would deliver much more value.
 
-Resist the urge to automate something just because you can. Always ask whether there is a higher-impact opportunity available. If there is, pursue that first.
+Resist the urge to automate something only because you can. Always ask whether there is a higher-impact opportunity available. If there is, pursue that first.
 
-The Time Savers quadrant is not worthless. Once you have addressed your high-impact opportunities, or while waiting for resources to tackle Strategic Projects, filling in Time Savers makes sense. Just do not let them crowd out better options.
+The Time Savers quadrant is not worthless. Once you have addressed your high-impact opportunities, or while waiting for resources to tackle Strategic Projects, filling in Time Savers makes sense. Do not let them crowd out better options.
 
 ## Building an Automation Portfolio
 

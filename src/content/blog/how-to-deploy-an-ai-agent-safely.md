@@ -117,7 +117,7 @@ Weekly for 2 months, then monthly. Fifteen minutes each time.
 
 **Launching without shadow mode.** Saves 2 weeks and moves every discovery into production, where the audience includes clients.
 
-**Testing on invented examples.** Made-up cases are always cleaner than real ones, and a clean pass on them tells you nothing about the messy inbox the agent will actually meet.
+**Testing on invented examples.** Made-up cases are always cleaner than real ones, and a clean pass on them tells you nothing about the messy inbox the agent will meet.
 
 **Approving in bulk.** A person clicking through 30 approvals in 2 minutes is not a control. Narrow the list until it is.
 

@@ -65,13 +65,13 @@ Understanding the failure modes of DIY helps you recognize when you are heading 
 
 A good AI consultant does not just build the system. They shape the process the system runs.
 
-Before any tool is opened, an experienced consultant will push you to define the workflow in specific terms, identify where errors and inconsistencies occur, understand what happens in exception cases, and assess whether the team using the system will actually adopt it. That upfront work is where most of the value lives.
+Before any tool is opened, an experienced consultant will push you to define the workflow in specific terms, identify where errors and inconsistencies occur, understand what happens in exception cases, and assess whether the team using the system will adopt it. That upfront work is where most of the value lives.
 
 Consultants also bring experience across multiple implementations. They have seen the edge cases in other businesses, know which tools fail in which circumstances, and can make recommendations based on patterns you have not encountered yet. That reduces the cost of learning by trial and error.
 
 Are consultants getting replaced by AI? Not in this kind of work. The tools handle execution well, but they cannot decide which process deserves fixing or whether your team will use the result. That judgment is the consulting.
 
-Finally, consultants are accountable to a defined outcome. You are paying for a result, not just for hours. That accountability structures the work in a way that self-directed projects often lack.
+Finally, consultants are accountable to a defined outcome. You are paying for a result, not for hours. That accountability structures the work in a way that self-directed projects often lack.
 
 ---
 
@@ -79,9 +79,9 @@ Finally, consultants are accountable to a defined outcome. You are paying for a 
 
 DIY feels cheap because the visible cost is low. Most no-code tools are $50 to $200 per month. There is no consulting fee.
 
-But the full cost of DIY includes your time, which has a real value. If you spend thirty hours building a system that a consultant could have built and documented in eight, the calculus changes. At any reasonable hourly rate for a founder, the DIY option is often not cheaper, just differently expensive.
+But the full cost of DIY includes your time, which has a real value. If you spend thirty hours building a system that a consultant could have built and documented in eight, the calculus changes. At any reasonable hourly rate for a founder, the DIY option is often not cheaper, only differently expensive.
 
-There is also the cost of the wrong system. A consultant who starts with discovery will identify that the process you want to automate is not actually the bottleneck, and redirect the work toward a more impactful problem. DIY builders often automate the process they initially had in mind, regardless of whether it is the highest-value target.
+There is also the cost of the wrong system. A consultant who starts with discovery will identify that the process you want to automate is not the bottleneck, and redirect the work toward a more impactful problem. DIY builders often automate the process they initially had in mind, regardless of whether it is the highest-value target.
 
 ---
 

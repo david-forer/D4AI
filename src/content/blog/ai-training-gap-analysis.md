@@ -22,7 +22,7 @@ An AI training gap analysis shows where each person on your team stands against 
 
 Most small businesses approach AI training the same way they approach most problems: they identify a solution before they fully understand the problem. A team member attends a conference and returns with enthusiasm for a specific platform. A founder reads that AI can save twenty hours a week and signs up for a tool that afternoon. Training gets built around whatever was just purchased rather than what the team actually needs.
 
-The result is predictable. The training covers the wrong skills for the wrong roles. People learn things they will never use. The gaps that are actually limiting performance stay in place.
+The result is predictable. The training covers the wrong skills for the wrong roles. People learn things they will never use. The gaps that are limiting performance stay in place.
 
 A training gap analysis fixes this by starting with the question that should come first: where is each person on the team relative to where they need to be?
 
@@ -62,7 +62,7 @@ Once you have a target state defined for each role, assess where each team membe
 
 Self-assessment is imperfect. People tend to overestimate their proficiency in areas where they have had positive experiences and underestimate in areas where they feel uncertain. Use the survey as a starting point, not a final answer.
 
-**The practical skills check** asks each team member to complete two or three tasks from their actual job using AI. Review the outputs and the process. This reveals the gap between perceived skill and actual skill far more accurately than any survey. You will often find that someone who rates their AI confidence as high produces outputs that require extensive editing, and someone who rates themselves as low actually has a strong prompting instinct that just needs direction.
+**The practical skills check** asks each team member to complete two or three tasks from their actual job using AI. Review the outputs and the process. This reveals the gap between perceived skill and actual skill far more accurately than any survey. You will often find that someone who rates their AI confidence as high produces outputs that require extensive editing, and someone who rates themselves as low has a strong prompting instinct that just needs direction.
 
 **Direct observation** is the most time-consuming option but produces the richest information. Sitting with one team member for thirty minutes while they work through a real task with AI reveals the friction points, the workarounds, and the habits that neither surveys nor task reviews can capture.
 
@@ -187,7 +187,7 @@ The ones on tasks that happen often and cost the most time or quality. An operat
 
 ### How often should you run an AI training gap analysis?
 
-Run a full one to set your baseline, then a lighter version every six months. The tools change fast enough that new gaps appear even on a well-trained team. Each round also shows whether the last round of training actually worked.
+Run a full one to set your baseline, then a lighter version every six months. The tools change fast enough that new gaps appear even on a well-trained team. Each round also shows whether the last round of training worked.
 
 ### How do you get honest answers from staff?
 

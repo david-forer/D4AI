@@ -68,7 +68,7 @@ A simple spreadsheet works well for teams of twenty or fewer, and a free one is 
 
 ### Step 1: Define target proficiency levels by role
 
-Before assessing anyone, fill in the target proficiency column for each role. This requires thinking carefully about what AI capability each function actually needs to perform at the level you expect.
+Before assessing anyone, fill in the target proficiency column for each role. This requires thinking carefully about what AI capability each function needs to perform at the level you expect.
 
 A client services role that handles initial outreach and follow-up communications needs confident independent use in prompting for written outputs and output review. A basic awareness of data summarization may be sufficient if that role rarely needs to synthesize large volumes of information.
 
@@ -142,7 +142,7 @@ Open a spreadsheet, put roles down the side and AI skill areas across the top. F
 
 ### What skill areas belong in an AI skills matrix?
 
-The ones tied to the work your team actually does. For most small businesses that means prompting for written outputs, output review, workflow integration, data summarization, prompt library upkeep, and AI policy and data handling. Skip abstract categories like "AI tools" because they will not tell you what to train.
+The ones tied to the work your team does. For most small businesses that means prompting for written outputs, output review, workflow integration, data summarization, prompt library upkeep, and AI policy and data handling. Skip abstract categories like "AI tools" because they will not tell you what to train.
 
 ### How is a skills matrix different from a performance review?
 

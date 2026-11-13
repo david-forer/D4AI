@@ -58,7 +58,7 @@ The examples carry this clause. "Sensitive data" means nothing at 4pm on a Thurs
 
 **4. You own the output.** Anything you produce with AI is your work and you are answerable for it. Check facts, figures, names and quotes before it leaves the firm. Do not send AI-written material to a client without reading it in full.
 
-This is the clause that prevents the failure mode that actually damages small firms, which is confident wrong output reaching a client with nobody having read it.
+This is the clause that prevents the failure mode that damages small firms, which is confident wrong output reaching a client with nobody having read it.
 
 **5. Tell a client when it matters.** [Choose one: we do not disclose routine AI assistance, in the same way we do not disclose spellcheck. / We tell clients when AI has been used substantially in work delivered to them.] Where a client contract sets its own rule, that rule wins.
 
@@ -103,7 +103,7 @@ Most of the length in a long AI policy comes from 4 things that do not belong in
 
 **Vendor lists inside the policy.** Tools change every quarter. Keep the list separate and the policy stable.
 
-**Regulatory recitals.** Naming 4 frameworks that do not apply to you reads as seriousness and creates obligations you have not scoped. Name only what a client contract or your sector actually imposes.
+**Regulatory recitals.** Naming 4 frameworks that do not apply to you reads as seriousness and creates obligations you have not scoped. Name only what a client contract or your sector imposes.
 
 **Enforcement and sanctions language.** In a 20-person firm the escalation path is a conversation. Writing a disciplinary ladder makes the document adversarial and makes clause 6 fail, because people stop reporting.
 
@@ -163,7 +163,7 @@ Your exposure comes from a handful of people, using a handful of tools, on a han
 
 Write it this week, walk the team through it once, and revisit it when a client contract or an agent forces the question. That is a real control. A 14-page instrument nobody has finished reading is paperwork you can point at after something has already gone wrong.
 
-If you want a read on whether your version covers the way your firm actually handles client work, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at the real documents rather than the policy on paper.
+If you want a read on whether your version covers the way your firm handles client work, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at the real documents rather than the policy on paper.
 
 ---
 

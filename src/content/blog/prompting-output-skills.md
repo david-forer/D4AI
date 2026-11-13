@@ -74,14 +74,14 @@ Constraints improve output quality by eliminating possibilities that don't match
 AI might:
 - Summarize in 50 words or 500 words
 - Focus on chronological order or thematic grouping
-- Include emotional context or just facts
+- Include emotional context or facts only
 - Use bullet points or paragraphs
 
 You don't know what you'll get until you see it. If it doesn't match your needs, you iterate. This wastes time.
 
 **With constraints:**
 
-"Summarize this customer conversation in 3-4 bullet points, focusing only on action items we committed to. Don't include the back-and-forth discussion. Just the final outcomes. Format as: 'We will [action] by [date]' for each commitment."
+"Summarize this customer conversation in 3-4 bullet points, focusing only on action items we committed to. Don't include the back-and-forth discussion. Only the final outcomes. Format as: 'We will [action] by [date]' for each commitment."
 
 AI generates exactly what you specified. If you need something different later, you know what constraint to adjust.
 
@@ -581,7 +581,7 @@ Hey [Name],
 
 Following up on our chat about your customer onboarding data entry bottleneck. I know you were concerned about integration complexity with [their CRM].
 
-I just wrapped a call with [Similar Company] who had the same concern. Turned out our pre-built [CRM] connector handled 90% of it. Their team had it running in a week, not the 6 weeks they feared.
+I wrapped up a call with [Similar Company] who had the same concern. Turned out our pre-built [CRM] connector handled 90% of it. Their team had it running in a week, not the 6 weeks they feared.
 
 Happy to send over the case study if that's helpful. Or if this isn't priority right now, totally understand. Feel free to reach back out when timing's better.
 
@@ -623,7 +623,7 @@ Teaching prompting isn't complex. The skills are learnable. The patterns are pre
 
 Build the training. Teach context provision, constraint specification, and iterative refinement. Show before/after examples. Practice with real work scenarios. Measure quality improvement.
 
-Your AI tools are only as good as your team's ability to use them. Invest in the user, not just the model.
+Your AI tools are only as good as your team's ability to use them. Invest in the user, not only the model.
 
 
 ---

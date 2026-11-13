@@ -15,7 +15,7 @@ AI has fully crossed the line from "interesting experiment" to "core operational
 
 The tricky part. Businesses still talk about AI as if it's just automation with better branding. But AI is a system that inherits the clarity, chaos, biases, and blind spots of the organization using it. If the company is well structured, AI becomes a force multiplier. If the company is messy, AI accelerates the mess.
 
-What's emerging now is a split reality. AI offers massive operational upside. Yet the ethical, cultural, and operational risks are expanding just as quickly.
+What's emerging now is a split reality. AI offers massive operational upside. Yet the ethical, cultural, and operational risks are expanding as quickly.
 
 ## The Promise of Progress (and why efficiency is addictive)
 

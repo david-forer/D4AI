@@ -79,7 +79,7 @@ Separate the execution work from the judgment work. For each task driving the ca
 
 Quantify the hours per week spent on execution tasks. Calculate what AI automation of those tasks would recover in capacity. If the recovered capacity covers the need, the hire is premature. You are about to pay a salary for work a system could do.
 
-If the recovered capacity does not cover the need, you now have a more precise understanding of what the hire actually needs to do. The job description reflects the judgment-heavy work that requires a person. The execution work has been stripped out. The role is better defined and the hire is more likely to be the right one.
+If the recovered capacity does not cover the need, you now have a more precise understanding of what the hire needs to do. The job description reflects the judgment-heavy work that requires a person. The execution work has been stripped out. The role is better defined and the hire is more likely to be the right one.
 
 ## How This Changes the Hiring Profile
 

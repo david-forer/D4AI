@@ -21,7 +21,7 @@ Here is how to tell the difference.
 
 Not every difficulty is a sign that something is broken.
 
-Operational pain is the friction that comes with growth. More clients means more complexity. A bigger team means more coordination. Some of that is just the cost of building a real business.
+Operational pain is the friction that comes with growth. More clients means more complexity. A bigger team means more coordination. Some of that is the cost of building a real business.
 
 Operational failure is different. It is what happens when the systems underneath the business can no longer hold the weight of what is running on top of them. Work slows down. Errors increase. The same fixes stop holding. The founder gets pulled back into the day-to-day no matter how many times they try to step back.
 
@@ -67,7 +67,7 @@ Recurring errors point to a process problem, not a training problem. When the sa
 
 Look at where the actual work is happening. Is it in the CRM, or in a personal spreadsheet someone built because the CRM does not have the right fields? Is it in the project management tool, or in a Slack thread that nobody else can find?
 
-Shadow systems are a symptom of tool-process misalignment. When the official systems do not match how work actually gets done, people build workarounds. The workarounds become load-bearing. The official systems become decoration.
+Shadow systems are a symptom of tool-process misalignment. When the official systems do not match how work gets done, people build workarounds. The workarounds become load-bearing. The official systems become decoration.
 
 ### You Cannot Take a Full Week Off Without Things Degrading
 

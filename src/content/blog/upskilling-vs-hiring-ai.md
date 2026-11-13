@@ -11,7 +11,7 @@ articleType: "cluster"
 
 When small business founders recognize that their team lacks AI capability, the reflex is often to hire. Find someone who already knows the tools, bring them in, and let them lead the rest of the team. It is a familiar pattern from every other skill gap the business has ever faced.
 
-The problem is that AI capability is fundamentally different from most specialized skills, and the hiring instinct produces predictably disappointing results in this context. Understanding why, and what the alternatives actually cost, changes how most founders approach the decision.
+The problem is that AI capability is fundamentally different from most specialized skills, and the hiring instinct produces predictably disappointing results in this context. Understanding why, and what the alternatives cost, changes how most founders approach the decision.
 
 Upskilling in AI means training the people you already have to use AI well in their own roles, with practice on real tasks instead of general awareness sessions.
 

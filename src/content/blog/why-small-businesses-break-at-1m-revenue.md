@@ -42,7 +42,7 @@ The instinct is to look at the team. Someone isn't performing. A hire didn't wor
 
 Sometimes those things are true. But they are symptoms, not causes.
 
-Here is what actually breaks at $1M:
+Here is what breaks at $1M:
 
 **The founder becomes the operating system.** Every non-routine decision routes through one person. Approvals, context, judgment, exceptions. The business can only move as fast as the founder can respond. At lower revenue, this is manageable. At $1M and above, it becomes a hard ceiling.
 
@@ -50,7 +50,7 @@ Here is what actually breaks at $1M:
 
 **Tool sprawl creates coordination overhead.** A project management tool here. A CRM there. A shared spreadsheet for the thing neither system handles well. Each tool made sense when you added it. Together, they create a fragmented information environment where nothing connects and context gets lost at every handoff.
 
-**Tribal knowledge becomes a liability.** Key information lives in people's heads, not in systems. How to handle a specific client type. Why a particular process has an exception. What onboarding actually involves. When those people are unavailable, work stops. When they leave, the knowledge goes with them.
+**Tribal knowledge becomes a liability.** Key information lives in people's heads, not in systems. How to handle a specific client type. Why a particular process has an exception. What onboarding involves. When those people are unavailable, work stops. When they leave, the knowledge goes with them.
 
 **Financial visibility gaps start mattering more.** At $200k in revenue, a founder can hold the numbers in their head. At $1M, they cannot. Without automated financial reporting and real-time operational data, decisions get made on incomplete information. Cash flow surprises become more common. Margin erosion goes undetected until it's significant.
 
@@ -84,7 +84,7 @@ The harder diagnosis is more accurate: the operational infrastructure cannot sup
 
 This distinction matters because it determines what you fix. If the problem is the team, you manage people. If the problem is the system, you rebuild the system.
 
-Rebuilding systems takes time and deliberate effort. It requires stepping back from the day-to-day long enough to see how work actually flows through the business. Where decisions get made. Where information moves. Where things get stuck. Where errors originate.
+Rebuilding systems takes time and deliberate effort. It requires stepping back from the day-to-day long enough to see how work flows through the business. Where decisions get made. Where information moves. Where things get stuck. Where errors originate.
 
 Most founders don't make this investment until the pain forces them to. The ones who make it early gain a structural advantage that compounds over time.
 

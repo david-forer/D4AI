@@ -84,7 +84,7 @@ In practice, the most effective operational systems combine both. Automations ha
 
 A lead management system might use automation to capture and route every incoming lead to the right team member with a basic notification. For leads above a certain value threshold, an agent is triggered to research the company, prepare a briefing, and draft a personalized outreach message. The automation handles volume and consistency. The agent adds intelligence where it creates the most value.
 
-This architecture also helps manage cost. Agents are more expensive per operation than automations. Running an agent for every instance of a high-frequency, low-complexity process is wasteful. Reserving agents for the instances where their judgment capability actually matters keeps the cost proportionate to the value being created.
+This architecture also helps manage cost. Agents are more expensive per operation than automations. Running an agent for every instance of a high-frequency, low-complexity process is wasteful. Reserving agents for the instances where their judgment capability matters keeps the cost proportionate to the value being created.
 
 ---
 
@@ -120,9 +120,9 @@ Many automation and agent platforms offer free tiers, and they are a reasonable 
 
 ## Matching the Tool to the Task
 
-The practical rule is simple. If the work is predictable, consistent, and rule-expressible, build an automation. If the work requires judgment, handles variable inputs, or involves multi-step reasoning toward a goal, consider an agent. If the work has both predictable elements and judgment elements, build a hybrid that uses automation where rules suffice and deploys agent capabilities where they are actually needed.
+The practical rule is simple. If the work is predictable, consistent, and rule-expressible, build an automation. If the work requires judgment, handles variable inputs, or involves multi-step reasoning toward a goal, consider an agent. If the work has both predictable elements and judgment elements, build a hybrid that uses automation where rules suffice and deploys agent capabilities where they are needed.
 
-Understanding the distinction prevents both over-engineering and under-investment. Simple processes deserve simple solutions. Complex processes deserve tools that can actually handle their complexity. Getting that match right is a significant part of what makes an automation architecture effective over time.
+Understanding the distinction prevents both over-engineering and under-investment. Simple processes deserve simple solutions. Complex processes deserve tools that can handle their complexity. Getting that match right is a significant part of what makes an automation architecture effective over time.
 
 ---
 

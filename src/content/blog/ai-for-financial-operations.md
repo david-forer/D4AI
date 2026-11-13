@@ -15,7 +15,7 @@ The cause is operational design. The numbers exist somewhere: in the accounting 
 
 AI-powered financial operations does not replace your accountant or your bookkeeper. It builds the operational layer beneath them: automated data flow, real-time reporting, early visibility into problems, and the integration between your financial system and the rest of the business.
 
-## What AI-Powered Financial Operations Actually Looks Like
+## What AI-Powered Financial Operations Looks Like in Practice
 
 The headline outcome is this: the financial picture of your business is visible in real time, without anyone assembling it.
 
@@ -59,7 +59,7 @@ Early warning signals, the weeks where the projected position drops below a defi
 
 ### Project and Client Profitability
 
-Knowing your overall P&L is necessary but not sufficient. Knowing the margin on each project and each client tells you what is actually driving profitability and what is consuming resources without adequate return.
+Knowing your overall P&L is necessary but not sufficient. Knowing the margin on each project and each client tells you what is driving profitability and what is consuming resources without adequate return.
 
 This requires connecting project delivery data to financial data. Time tracking integrated with project records. Project costs allocated against revenue per engagement. The comparison between estimated and actual margin visible at the close of each project and cumulatively by client over time.
 

@@ -15,9 +15,9 @@ A new app that promises to smooth out workflows. A platform that claims to fix c
 
 The search for the perfect tool feels productive. It feels like progress. You are trying to improve. You are investing in the business.
 
-But tool accumulation rarely solves the underlying problem. It just creates more surface area to manage.
+But tool accumulation rarely solves the underlying problem. It creates more surface area to manage.
 
-The businesses that actually improve their operations do not start with tools. They start with bottlenecks.
+The businesses that improve their operations do not start with tools. They start with bottlenecks.
 
 In a company under twenty people, that bottleneck is usually the owner. The [founder bottleneck](/founder-bottlenecks) is its own diagnostic problem, and it is worth ruling out before you go looking at software.
 
@@ -33,13 +33,13 @@ The promise of each tool is simplicity. The reality of many tools is complexity.
 
 This happens because tool selection feels like action. You can demo software, make a decision, and see immediate results. The tool works. The problem feels solved.
 
-But if the underlying system is broken, the tool just makes brokenness more efficient.
+But if the underlying system is broken, the tool makes brokenness more efficient.
 
 You automate chaos instead of fixing it. You speed up handoffs that should not exist. You create visibility into processes that need to be redesigned, not monitored.
 
-Tools feel productive because they are tangible. Bottlenecks feel abstract because they require diagnosis. But diagnosis is what actually moves the business forward.
+Tools feel productive because they are tangible. Bottlenecks feel abstract because they require diagnosis. But diagnosis is what moves the business forward.
 
-## What Bottlenecks Actually Are
+## What a Bottleneck Is
 
 In business, a bottleneck is a constraint, not an annoyance. It is the one step that limits how much work the whole system can finish.
 
@@ -53,7 +53,7 @@ They show you where capacity is misaligned with demand. They expose dependencies
 
 Most businesses treat bottlenecks as problems to work around. Someone is too busy, so work waits. A process takes too long, so people find shortcuts. A handoff fails, so someone steps in to fix it manually.
 
-These workarounds feel necessary. They keep things moving. But they hide what is actually wrong.
+These workarounds feel necessary. They keep things moving. But they hide what is wrong.
 
 The busy person is a symptom of a system that makes one person a single point of failure. The slow process is a symptom of unclear goals for what the process should accomplish. The failed handoff is a symptom of missing structure around how work should move.
 
@@ -71,7 +71,7 @@ The most important improvements are rarely the most interesting. They are boring
 
 Bottlenecks cut through the noise.
 
-When you start with bottlenecks, you start with focus. You are not asking what could be better. You are asking what is actually breaking. You are not prioritizing based on opinions. You are prioritizing based on where work piles up.
+When you start with bottlenecks, you start with focus. You are not asking what could be better. You are asking what is breaking. You are not prioritizing based on opinions. You are prioritizing based on where work piles up.
 
 This is where the gains come from.
 
@@ -107,7 +107,7 @@ When you map these patterns, you find the constraints that limit your system. Th
 
 Once you understand the bottleneck, the right tool becomes obvious.
 
-If the bottleneck is handoffs, you need visibility. A shared system where status is clear and handoffs are explicit. That might be a project management tool, but only if it is designed around how your handoffs actually work.
+If the bottleneck is handoffs, you need visibility. A shared system where status is clear and handoffs are explicit. That might be a project management tool, but only if it is designed around how your handoffs work.
 
 If the bottleneck is delays, you need prioritization. A way to surface what needs attention and what can wait. That might be a queue system or a notification workflow, but only after you clarify who owns what.
 
@@ -115,9 +115,9 @@ If the bottleneck is rework, you need clarity. Templates, checklists, or documen
 
 The tool does not solve the bottleneck. The tool supports the solution you designed.
 
-This is why tool-first approaches fail. You pick a tool based on features, not on fit. You implement it without understanding the system it needs to integrate with. You hope it will fix the problem, but it just adds complexity.
+This is why tool-first approaches fail. You pick a tool based on features, not on fit. You implement it without understanding the system it needs to integrate with. You hope it will fix the problem, but it adds complexity.
 
-When you start with bottlenecks, tools become tactical. You know exactly what you need and why. You can evaluate whether a tool actually addresses the constraint or just adds noise.
+When you start with bottlenecks, tools become tactical. You know exactly what you need and why. You can evaluate whether a tool addresses the constraint or adds noise.
 
 ## Where to Start
 
@@ -133,7 +133,7 @@ Only after you answer that question should you think about tools.
 
 If you want a framework for diagnosing bottlenecks, start with [Intake and Workflow Systems for Growing Firms](/blog/intake-and-workflow-systems-for-growing-firms). If you want help finding your own constraints, the [80/20 process audit](/fix-the-chaos) maps your top 3 processes and prices your top 5 automation opportunities in dollars.
 
-Do not start with tools. Start with bottlenecks. The tools will make more sense once you understand what you are actually trying to fix.
+Do not start with tools. Start with bottlenecks. The tools will make more sense once you understand what you are trying to fix.
 
 
 ---

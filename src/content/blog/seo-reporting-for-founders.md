@@ -29,7 +29,7 @@ Reporting templates are built to demonstrate activity, and activity is the easie
 
 ## The 5 numbers a founder should read every month
 
-**Impressions on your target subject.** From Search Console, filtered to the pages you are actually working on. This is the earliest signal that anything is happening, and it moves 2 to 3 months before clicks do. Rising impressions with flat clicks is a real result, not a failure, and it tells you the next work is titles rather than more content.
+**Impressions on your target subject.** From Search Console, filtered to the pages you are working on. This is the earliest signal that anything is happening, and it moves 2 to 3 months before clicks do. Rising impressions with flat clicks is a real result, not a failure, and it tells you the next work is titles rather than more content.
 
 **Clicks, same filter.** The number of people who arrived. Compared month over month and against the same month last year, because search has seasonality that month-over-month comparisons will mislead you about.
 

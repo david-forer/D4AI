@@ -46,11 +46,11 @@ Define your scope before you start mapping. Everything else flows from these bou
 
 ### Step Two: Gather Data From the People Who Do the Work
 
-The biggest mistake in process mapping is documenting how things are supposed to work instead of how they actually work. Managers often have an idealized view of processes. The people executing the work daily know the reality.
+The biggest mistake in process mapping is documenting how things are supposed to work instead of how they work. Managers often have an idealized view of processes. The people executing the work daily know the reality.
 
-Talk to the people who actually perform each step. Watch them do the work if possible. Ask questions like:
+Talk to the people who perform each step. Watch them do the work if possible. Ask questions like:
 
-What do you actually do, step by step? What information do you need before you can start? Where does that information come from? What decisions do you make along the way? What do you do when something goes wrong or does not fit the normal pattern? Where do you send your output when you finish?
+What do you do, step by step? What information do you need before you can start? Where does that information come from? What decisions do you make along the way? What do you do when something goes wrong or does not fit the normal pattern? Where do you send your output when you finish?
 
 Pay special attention to the workarounds. When someone says "normally I do X, but sometimes I have to do Y instead," you have found something important. Those exceptions often reveal where processes break down or where automation will need special handling.
 
@@ -76,7 +76,7 @@ Take your draft back to the team members you interviewed. Walk through it step b
 
 Expect to make revisions. The first draft is rarely complete. Important details surface during validation that nobody thought to mention during initial interviews.
 
-Once your map reflects reality, you have a shared understanding of how work actually flows through your business.
+Once your map reflects reality, you have a shared understanding of how work flows through your business.
 
 ## A Business Process Mapping Example
 

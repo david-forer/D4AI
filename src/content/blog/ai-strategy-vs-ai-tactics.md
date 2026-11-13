@@ -27,7 +27,7 @@ Tactical AI adoption has a recognizable pattern.
 
 A problem surfaces. You look for a tool that addresses it. You sign up, configure it, and move on. Later, another problem surfaces, and the cycle repeats. Over the course of a year, you have accumulated a stack of tools, some of which are actively used, some of which are working in the background, and some of which you are still paying for but have mostly stopped using.
 
-This is not failure. Tactical adoption can produce real results. The writing tool saves time on content. The CRM automation actually does reduce manual data entry. The proposal template does speed up sales.
+This is not failure. Tactical adoption can produce real results. The writing tool saves time on content. The CRM automation does reduce manual data entry. The proposal template does speed up sales.
 
 The problem is what the collection of tactics does not produce. It does not produce coherence. The tools do not build on each other. There is no clear sense of what comes next. The business is more capable in a scattered way, but not meaningfully more capable in the direction that matters most for growth.
 
@@ -75,7 +75,7 @@ Tool-first thinking tends to produce a stack that reflects vendor marketing more
 
 The shift does not require starting over. Most founders can reframe their existing investments and build a strategy around what is already in place.
 
-Start by auditing what you have. List every AI tool and automation currently running. For each one, ask what problem it solves, whether it is actually being used, and what metric would tell you whether it is working.
+Start by auditing what you have. List every AI tool and automation currently running. For each one, ask what problem it solves, whether it is being used, and what metric would tell you whether it is working.
 
 From that list, identify the highest-impact tools, the ones that address significant operational problems and that your team relies on consistently. Those are the core of your existing AI capability and the foundation your strategy builds from.
 

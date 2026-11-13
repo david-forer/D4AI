@@ -17,7 +17,7 @@ Most lead scoring tools hand the sales team a number. This page is for the found
 - A lead qualification agent is justified at about 30 inbound leads a week, where the leads differ from each other and arrive through several channels.
 - Scoring criteria should come from your last 20 won clients and last 20 lost or declined opportunities, not from a template.
 - For a small firm the safer routing design ranks every lead and discards none.
-- To check it works, compare how the agent's highest-ranked and lowest-ranked leads actually converted, monthly from month 2.
+- To check it works, compare how the agent's highest-ranked and lowest-ranked leads converted, monthly from month 2.
 
 ## Why AI agents for lead qualification get switched off
 
@@ -45,7 +45,7 @@ The variation requirement matters as much as the volume. If every lead arrives t
 
 Four fields, in this order. Everything else is optional.
 
-**What they appear to need, in one sentence.** Written from what they actually said, not from a category. "Wants a fixed-fee audit before committing to a retainer" beats "Consulting inquiry".
+**What they appear to need, in one sentence.** Written from what they said, not from a category. "Wants a fixed-fee audit before committing to a retainer" beats "Consulting inquiry".
 
 **The evidence.** The 2 or 3 specifics the conclusion rests on. Company size from their site, the phrase they used about timing, the fact that they named a competitor. This is what makes the output arguable, and arguable is what makes it used.
 
@@ -94,7 +94,7 @@ Two things, and both are cheap relative to the agent.
 
 **A definition of a good lead that a person can state.** If 2 salespeople would describe your ideal client differently, the agent will produce output that one of them rejects. Settle that first, in a sentence, with the founder in the room.
 
-**A CRM the agent can read and write.** Half-populated records mean the agent reasons from gaps, and it will fill them with plausible guesses. Fixing the fields you actually use is a smaller project than the agent, and it makes every other system better. That sequencing argument runs through [AI agents for small businesses](/blog/ai-agents-for-small-businesses).
+**A CRM the agent can read and write.** Half-populated records mean the agent reasons from gaps, and it will fill them with plausible guesses. Fixing the fields you use is a smaller project than the agent, and it makes every other system better. That sequencing argument runs through [AI agents for small businesses](/blog/ai-agents-for-small-businesses).
 
 ---
 
@@ -106,7 +106,7 @@ Qualification and routing usually ship together, and routing carries the sharper
 
 **Over-filtering.** An agent set to ignore poor-fit leads will eventually ignore a good one. For a firm your size the safer design is that nothing gets discarded, only ranked, because the cost of a missed good lead is far higher than the cost of a salesperson skimming a weak one.
 
-**The unattended escalation.** The agent correctly flags a lead as needing a person immediately, and that flag lands somewhere nobody watches on a Friday afternoon. Test where the urgent path actually goes, on a real Friday.
+**The unattended escalation.** The agent correctly flags a lead as needing a person immediately, and that flag lands somewhere nobody watches on a Friday afternoon. Test where the urgent path goes, on a real Friday.
 
 The permission and escalation list that prevents all 3 is covered in [AI agent guardrails](/blog/ai-agent-guardrails).
 
@@ -116,7 +116,7 @@ The permission and escalation list that prevents all 3 is covered in [AI agent g
 
 One number, reviewed monthly, and it is not the score distribution.
 
-Take the leads the agent ranked highest last month and the ones it ranked lowest, and look at what actually happened to both. If your best-ranked leads converted at a meaningfully better rate than your worst-ranked, the agent is adding judgment. If the 2 groups converted the same, it is producing confident noise and the criteria need rebuilding from your own closed deals.
+Take the leads the agent ranked highest last month and the ones it ranked lowest, and look at what happened to both. If your best-ranked leads converted at a meaningfully better rate than your worst-ranked, the agent is adding judgment. If the 2 groups converted the same, it is producing confident noise and the criteria need rebuilding from your own closed deals.
 
 Do this from month 2 and keep doing it quarterly. Lead patterns shift with your positioning and your market, and a scoring model built once and never revisited is describing the business you had 2 years ago.
 
@@ -148,7 +148,7 @@ An AI lead generator finds or attracts people. A qualification agent works on th
 
 AI agents can help with lead generation too, for example by researching a target list or drafting a first message for a person to review. Build qualification first, because it tells you which leads were worth finding.
 
-If you want to test the idea before paying for anything, take 10 past leads and run them through a free AI tool using the 4 fields above. Then compare its read with what actually happened. That costs an afternoon and tells you whether your lead data is good enough.
+If you want to test the idea before paying for anything, take 10 past leads and run them through a free AI tool using the 4 fields above. Then compare its read with what happened. That costs an afternoon and tells you whether your lead data is good enough.
 
 ## Questions founders ask
 

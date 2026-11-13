@@ -79,7 +79,7 @@ This foundation determines what AI can actually do. AI assistance at the content
 
 AI makes it easy to produce significantly more content. That is not automatically useful.
 
-More content without a distribution system creates volume without reach. More content without a clear audience and message creates noise. More content without a measurement system produces activity without insight into what is actually working.
+More content without a distribution system creates volume without reach. More content without a clear audience and message creates noise. More content without a measurement system produces activity without insight into what is working.
 
 The marketing operations question is how to produce the right amount of the right content, in the right channels, reaching the right people, measured against the right outcomes. AI helps execute that system at scale. It does not design the system.
 

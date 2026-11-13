@@ -122,7 +122,7 @@ Read the page against these 4 before you circulate it. The fix in each case is 1
 
 Set a 30-minute review on the calendar for the last week of the quarter, and treat the page as replaceable.
 
-Three questions. Did the system in field 2 ship and is it in daily use without the owner chasing it. Did the number in field 6 move against the baseline. Did anything on the not-doing list earn its way back, meaning the condition you wrote next to it actually changed.
+Three questions. Did the system in field 2 ship and is it in daily use without the owner chasing it. Did the number in field 6 move against the baseline. Did anything on the not-doing list earn its way back, meaning the condition you wrote next to it changed.
 
 Then rewrite the page. Same 6 fields, new quarter, and keep the old version in the same file underneath. After 4 quarters that file is a record of what the business tried, what it declined, and what followed, which is more useful than any dashboard and takes 2 hours a year to maintain.
 

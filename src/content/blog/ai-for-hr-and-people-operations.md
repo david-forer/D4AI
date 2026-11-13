@@ -40,7 +40,7 @@ Each one takes over a repeatable task and leaves the decision with a person. Tha
 
 ### Job Description and Posting
 
-Job descriptions written without a structured brief tend to reflect what the writer thinks the role is rather than what it actually needs to be. An AI-assisted process starts with a structured intake (role objectives, required skills, team context, performance criteria) and generates a first draft from that data.
+Job descriptions written without a structured brief tend to reflect what the writer thinks the role is rather than what it needs to be. An AI-assisted process starts with a structured intake (role objectives, required skills, team context, performance criteria) and generates a first draft from that data.
 
 Multi-channel posting from a single approved brief means the same role is communicated consistently across job boards, LinkedIn, and direct outreach rather than having slightly different versions circulating with different framings.
 
@@ -62,7 +62,7 @@ The goal of onboarding is to get a new hire to full productivity as quickly as p
 
 A structured onboarding system changes how the first weeks go. Pre-start sequences handle logistics automatically (welcome communications, paperwork collection, system access provisioning, first-day logistics) before the new hire arrives. The first week has a defined structure delivered systematically rather than improvised.
 
-A 30-60-90 day onboarding plan with defined milestones and regular check-in triggers means the new hire's progress is visible and the check-ins actually happen. Knowledge delivery (documentation, training materials, company context) is accessible and structured rather than dependent on a colleague finding time to explain it.
+A 30-60-90 day onboarding plan with defined milestones and regular check-in triggers means the new hire's progress is visible and the check-ins happen. Knowledge delivery (documentation, training materials, company context) is accessible and structured rather than dependent on a colleague finding time to explain it.
 
 The human elements of onboarding (relationship building, cultural orientation, complex question answering) still require people. The operational scaffolding that supports those elements can be largely systematized.
 
@@ -70,7 +70,7 @@ The human elements of onboarding (relationship building, cultural orientation, c
 
 Performance management in small businesses most often fails at the cadence level. Check-ins were supposed to happen quarterly. They got pushed. By the time a performance issue is addressed, it has been compounding for months.
 
-Automated check-in cadences solve the cadence problem. Scheduled check-ins are triggered automatically and both parties receive prompts and preparation materials. The conversation still happens between people. The system ensures it actually happens on schedule.
+Automated check-in cadences solve the cadence problem. Scheduled check-ins are triggered automatically and both parties receive prompts and preparation materials. The conversation still happens between people. The system ensures it happens on schedule.
 
 AI-assisted review preparation generates structured documents from manager inputs (goal progress, observations, development areas) rather than requiring managers to write reviews from scratch. The output is more consistent and the process takes less time.
 
@@ -106,7 +106,7 @@ The conventional hiring trigger is workload: when the team is overwhelmed, hire.
 
 Before hiring, the question should be whether the capacity constraint is a judgment problem or an execution problem. Judgment problems (not enough people to do the thinking, the deciding, the relationship-building) require people. Execution problems (not enough capacity for the routine, high-volume, rules-based work) often require better systems rather than more headcount.
 
-AI-powered capacity analysis makes this distinction clearer. When you can see where time is actually going, you can identify how much of the hiring pressure is driven by execution work that could be systematized versus judgment work that requires another human.
+AI-powered capacity analysis makes this distinction clearer. When you can see where time is going, you can identify how much of the hiring pressure is driven by execution work that could be systematized versus judgment work that requires another human.
 
 [For a deeper exploration of this decision: Scaling a Business with AI Instead of Hiring.](/blog/scaling-a-business-with-ai-instead-of-hiring)
 

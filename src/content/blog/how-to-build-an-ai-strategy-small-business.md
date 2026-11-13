@@ -13,13 +13,13 @@ The most common mistake small business founders make with AI is starting with to
 
 So you sign up. You spend a few days configuring it. You use it for a while. Then something else comes up. The tool keeps running. The subscription keeps billing. But the original problem may or may not have been solved, and there is no clear sense of what to do next.
 
-Strategy is what makes the difference between AI that compounds and AI that accumulates. A strategy starts with a clear picture of how your business actually operates, identifies where the highest-value problems are, and sequences investments so each one builds on the last. Without it, you are spending time and money on capabilities that do not add up to anything.
+Strategy is what makes the difference between AI that compounds and AI that accumulates. A strategy starts with a clear picture of how your business operates, identifies where the highest-value problems are, and sequences investments so each one builds on the last. Without it, you are spending time and money on capabilities that do not add up to anything.
 
 ---
 
 ## Step 1: Audit Your Current Operations
 
-You cannot design an AI strategy without knowing where the friction is. An operational audit is a structured review of how work actually moves through your business. It does not need to be complex.
+You cannot design an AI strategy without knowing where the friction is. An operational audit is a structured review of how work moves through your business. It does not need to be complex.
 
 Start by listing every recurring process that happens more than once per week. Think by function: client intake, project delivery, team communication, billing, reporting, customer support, sales follow-up. For each one, ask three questions.
 
@@ -53,7 +53,7 @@ Readiness is determined by whether the process is documented clearly enough to a
 
 A problem that scores high on both impact and readiness is your starting point. A problem that is high-impact but requires significant process documentation before it can be automated goes on the roadmap for phase two. A problem that is easy to solve but low-impact is a candidate for deprioritization entirely.
 
-This prioritization conversation is often where founders realize that the problem they came in thinking was the most important is actually the third or fourth in line. That is a useful insight. It means the strategy is working.
+This prioritization conversation is often where founders realize that the problem they came in thinking was the most important is the third or fourth in line. That is a useful insight. It means the strategy is working.
 
 ---
 

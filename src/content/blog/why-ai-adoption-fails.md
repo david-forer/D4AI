@@ -111,4 +111,4 @@ They are not. The adoption architecture is the harder problem. The businesses th
 
 *Related reading: [AI Team Adoption: Why Most Small Business Implementations Fail](/blog/ai-training-team-adoption-small-business) | [Barriers to AI Adoption in Small Business Teams](/blog/barriers-to-ai-adoption-small-business) | [What to Do When an AI Project Fails](/blog/what-to-do-when-an-ai-project-fails)*
 
-Ready to build an adoption program that actually works? [Explore AI training for small business teams](/ai-training-for-small-business-teams).
+Ready to build an adoption program that works? [Explore AI training for small business teams](/ai-training-for-small-business-teams).

@@ -134,7 +134,7 @@ Two foundations, and an agent built without them fails in ways no configuration 
 
 **Your documentation has to be current.** The agent answers from what is written down, so anything outdated becomes a wrong answer delivered confidently and at speed. Spend a day auditing your top 20 answers before you spend anything on a tool. Most firms find 4 or 5 that are quietly wrong, which is worth knowing regardless.
 
-**Your ticket history has to be reachable.** The agent needs to see how your people actually answered, in your tone, including the awkward cases. A firm whose support history lives in one person's inbox has a smaller project to do first, and it is a project that pays for itself even if the agent never gets built.
+**Your ticket history has to be reachable.** The agent needs to see how your people answered, in your tone, including the awkward cases. A firm whose support history lives in one person's inbox has a smaller project to do first, and it is a project that pays for itself even if the agent never gets built.
 
 Both of these sit under the same principle running through [AI agents for small businesses](/blog/ai-agents-for-small-businesses): an agent acts faster inside whatever it is given, so weak foundations get amplified.
 

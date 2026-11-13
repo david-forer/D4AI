@@ -152,7 +152,7 @@ Human review is a real control at the size where a person can actually read what
 
 Decide what must always have a person on it, sample everything else, write down what good looks like so the standard survives a change of reviewer, and ask once a month what the last rejection was. If the honest answer is that nobody remembers rejecting anything, either the agent is excellent or the loop is empty, and you should find out which.
 
-If you want a view on whether your approval step is a control or a queue, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at what the reviewer actually sees and how long they actually have.
+If you want a view on whether your approval step is a control or a queue, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at what the reviewer sees and how long they have.
 
 ---
 

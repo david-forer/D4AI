@@ -25,7 +25,7 @@ Is AI improving how work flows through your business, or is it quietly adding ri
 
 For teams of 5 to 20 people, readiness has very little to do with advanced models or complex tooling. It has everything to do with how work moves, who owns decisions, and what happens when output is wrong. An audit does not start with software. It starts with reality.
 
-This article walks through what an AI readiness audit actually looks like for a small, founder led team. Not a framework. Not a checklist. A clear view of what gets examined, why it matters, and what founders usually learn along the way.
+This article walks through what an AI readiness audit looks like for a small, founder led team. Not a framework. Not a checklist. A clear view of what gets examined, why it matters, and what founders usually learn along the way.
 
 ---
 
@@ -33,7 +33,7 @@ This article walks through what an AI readiness audit actually looks like for a 
 
 Most teams assume readiness is about adoption. Are we using AI. How often. For what tasks.
 
-That framing leaves out how the work actually gets done.
+That framing leaves out how the work gets done.
 
 AI compresses time between idea and action. That is useful, but it also removes natural pauses where alignment used to happen. When output appears instantly, it often skips shared discussion, review, or second looks.
 
@@ -51,7 +51,7 @@ AI readiness is about whether your team can absorb speed without losing control.
 
 A proper audit does not open with a list of tools. It opens with work.
 
-The first step is to trace how tasks actually move through the business. Where requests come from. How they get handled. Where decisions are made. Where AI enters the flow.
+The first step is to trace how tasks move through the business. Where requests come from. How they get handled. Where decisions are made. Where AI enters the flow.
 
 In practice, this often looks simple. A content draft. A customer response. A report. A planning doc. The audit follows that task from start to finish and observes where AI is used and what changes because of it.
 
@@ -95,7 +95,7 @@ They are rarely in the tools. They are almost always in handoffs.
 
 One common insight is the gap between trust and verification. High trust teams assume competence. AI changes the equation because output can look confident while being wrong. Founders often realize that trust needs lightweight structure to scale.
 
-Another learning is how much friction standards actually remove. When prompts, review criteria, or output formats are shared, work moves faster with fewer revisions. People stop guessing what good looks like.
+Another learning is how much friction standards remove. When prompts, review criteria, or output formats are shared, work moves faster with fewer revisions. People stop guessing what good looks like.
 
 Many teams also discover duplicated effort. Multiple AI workflows solving the same problem in parallel. Not because people are careless, but because no one made alignment visible.
 
@@ -115,7 +115,7 @@ The audit works from a short set of plain questions, asked about real tasks and 
 
 ### What Do You Need Ready Before an AI Readiness Audit?
 
-Very little. You need AI in use on a few real tasks, one person who can walk through how each task actually gets done, and a handful of recent outputs to look at. You do not need documentation, a policy, or a tool inventory. Those are often what the audit produces.
+Very little. You need AI in use on a few real tasks, one person who can walk through how each task gets done, and a handful of recent outputs to look at. You do not need documentation, a policy, or a tool inventory. Those are often what the audit produces.
 
 ### What an AI readiness audit is not
 

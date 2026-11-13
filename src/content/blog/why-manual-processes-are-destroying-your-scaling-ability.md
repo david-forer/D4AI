@@ -32,7 +32,7 @@ This is the structural reason why some businesses grow to $10M with fifteen peop
 
 Most founders underestimate how much of their operation is manual: not because they are not paying attention, but because manual work is invisible when it is normalized.
 
-When the same person has been sending the same weekly report by hand for three years, nobody thinks of it as a problem. It is just how the report gets done. When onboarding a new client requires someone to copy data between four different tools, that is just the onboarding process. When following up on outstanding proposals requires someone to check a spreadsheet every Tuesday morning and send individual emails, that is just sales follow-up.
+When the same person has been sending the same weekly report by hand for three years, nobody thinks of it as a problem. It is just how the report gets done. When onboarding a new client requires someone to copy data between four different tools, that is the onboarding process. When following up on outstanding proposals requires someone to check a spreadsheet every Tuesday morning and send individual emails, that is sales follow-up.
 
 None of these feel like crises. They feel like work. The issue is that they are all work that does not need to happen the way it is happening.
 
@@ -117,11 +117,11 @@ If you are not sure which processes to target first or which ones are automatabl
 
 ## The Compounding Return
 
-Automating a manual process does not just save the time spent on that process. It releases the mental overhead of managing it, the error-catching that surrounds it, and the workarounds that grew up to compensate for it.
+Automating a manual process saves the time spent on that process. It also releases the mental overhead of managing it, the error-catching that surrounds it, and the workarounds that grew up to compensate for it.
 
-The compound return on systematic automation is significant. Businesses that have rebuilt their operations around automated workflows do not just work faster: they work more consistently, make fewer errors, and have cleaner data to make decisions with.
+The compound return on systematic automation is significant. Businesses that have rebuilt their operations around automated workflows work faster and more consistently, make fewer errors, and have cleaner data to make decisions with.
 
-The gap between the businesses that invest in this and the ones that do not grows wider every year. Manual processes are not just destroying your scaling ability today. The longer they run, the more of your future capacity they consume before it is ever deployed.
+The gap between the businesses that invest in this and the ones that do not grows wider every year. Manual processes are destroying your scaling ability today. The longer they run, the more of your future capacity they consume before it is ever deployed.
 
 ## Frequently asked questions
 

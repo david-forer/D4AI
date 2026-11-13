@@ -111,7 +111,7 @@ If the answer is that it removes rote, low-judgment work and frees attention for
 
 Automation discipline means being precise. The businesses that get the most from automation are the ones that automate aggressively in the right areas and resist the pressure to automate in the wrong ones.
 
-The goal is a business where the systems handle everything they are better at, and the people handle everything that actually requires them. Getting that balance right is the actual work of building an operation that holds up as you grow.
+The goal is a business where the systems handle everything they are better at, and the people handle everything that requires them. Getting that balance right is the actual work of building an operation that holds up as you grow.
 
 ---
 

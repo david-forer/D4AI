@@ -120,7 +120,7 @@ Specific answers to all four are a good sign. The longer list in [questions to a
 
 After the evaluation process, the decision usually comes down to one thing: do you believe this person understands your business well enough to improve it, and do you trust them to tell you when something is not working?
 
-The best AI consulting relationships involve honesty in both directions. You tell them what you are actually seeing in your operations. They tell you when your expectations are not realistic, when a workflow is not ready to automate, or when the problem you described is not the one that is actually driving the friction.
+The best AI consulting relationships involve honesty in both directions. You tell them what you are seeing in your operations. They tell you when your expectations are not realistic, when a workflow is not ready to automate, or when the problem you described is not the one that is driving the friction.
 
 You will not see that kind of honest working relationship in a portfolio. You see it in a direct conversation. If the first substantive conversation leaves you feeling like you were heard and the responses were honest, that is worth more than an impressive case study.
 

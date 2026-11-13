@@ -51,7 +51,7 @@ Pattern recognition across time periods (revenue trends, project delivery veloci
 
 Not all metrics are equally useful, and tracking too many creates noise.
 
-Revenue and margin by client, project, and service line. These are the metrics that tell you what is actually driving business performance and what is consuming resources without adequate return.
+Revenue and margin by client, project, and service line. These are the metrics that tell you what is driving business performance and what is consuming resources without adequate return.
 
 Pipeline coverage and deal velocity. How much pipeline do you have relative to target, and how fast is it moving? These are leading indicators of revenue performance, visible before the revenue itself lands.
 
@@ -71,7 +71,7 @@ On-demand analysis is the capability to ask a specific question and get an answe
 
 ## Building Decision Cadences Around Operational Data
 
-The information advantage of real-time BI is only realized if it actually changes how decisions get made. That requires building the decision cadences to use it.
+The information advantage of real-time BI is only realized if it changes how decisions get made. That requires building the decision cadences to use it.
 
 A weekly operational review using current dashboard data takes thirty minutes instead of an hour, because the first thirty minutes of assembling data is eliminated. The meeting is about decisions, not information transfer.
 

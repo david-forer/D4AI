@@ -24,7 +24,7 @@ Most vendor risk advice is written for companies shipping AI products. This page
 
 Your exposure is concentration. One vendor, holding one workflow, with your process built inside it and no way to get the work out.
 
-Most writing on this topic covers model bias, hallucination rates and evaluation frameworks. Those are real engineering concerns for a company shipping an AI product. For a 30-person service firm using AI to run its own operations, the events that actually cause damage are duller and more likely: the vendor gets acquired and the product is retired, the price triples at renewal, or the model underneath changes and output quality shifts without anyone announcing it.
+Most writing on this topic covers model bias, hallucination rates and evaluation frameworks. Those are real engineering concerns for a company shipping an AI product. For a 30-person service firm using AI to run its own operations, the events that cause damage are duller and more likely: the vendor gets acquired and the product is retired, the price triples at renewal, or the model underneath changes and output quality shifts without anyone announcing it.
 
 None of those is a model quality problem. All 3 are dependency problems, and they are managed differently. This sits inside the wider framework in [AI governance for small businesses](/blog/ai-governance-for-small-businesses).
 
@@ -115,7 +115,7 @@ Revisit when a regulated client writes a control into a contract, when a single 
 
 Deprecation notices, acquisitions and pricing letters all arrive the same way, as an email somebody skims. A short standing response keeps it from turning into a month of firefighting.
 
-**Work out what the change actually touches.** Most announcements affect one product tier or one model. Read to the specific, because the alarming headline often does not reach your setup at all.
+**Work out what the change touches.** Most announcements affect one product tier or one model. Read to the specific, because the alarming headline often does not reach your setup at all.
 
 **Run your 20 test cases before the change lands, not after.** If a model is being retired on a date, most vendors let you run against the replacement early. Twenty minutes of testing in the notice window tells you whether your prompts survive, while you still have both options available.
 
@@ -141,7 +141,7 @@ You do not need a second vendor for it. You need the process described outside t
 
 Model quality is the vendor's problem. Dependency is yours.
 
-Pick your 2 most important AI tools, ask the 5 questions, write down what each automated workflow actually does in a file the vendor does not control, and keep 20 test cases you rerun monthly. That is the whole program, it costs one afternoon plus 20 minutes a month, and it covers the events that realistically happen to firms your size.
+Pick your 2 most important AI tools, ask the 5 questions, write down what each automated workflow does in a file the vendor does not control, and keep 20 test cases you rerun monthly. That is the whole program, it costs one afternoon plus 20 minutes a month, and it covers the events that realistically happen to firms your size.
 
 If you want a view on where your stack is concentrated and what a forced move would cost you, you can [book a call](https://calendly.com/david-j-forer/30min) and we will look at the real tools and the real workflows, not the vendor's security page.
 

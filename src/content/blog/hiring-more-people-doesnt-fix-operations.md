@@ -32,7 +32,7 @@ Adding another person to that environment does not add structure. It adds anothe
 
 There is a useful diagnostic question to ask before any significant hire: if we double the volume of work, does the problem get better or worse?
 
-If the bottleneck is capacity (there is simply more demand than the current team can physically complete), doubling the team would largely solve it. The process works. There just is not enough of it.
+If the bottleneck is capacity (there is simply more demand than the current team can physically complete), doubling the team would largely solve it. The process works. There is not enough of it.
 
 If the bottleneck is a systems problem, doubling the volume makes everything worse. More work flowing through a broken handoff creates more broken handoffs. More tasks entering an undefined workflow creates more chaos. More decisions routing through the founder because there is no system for anyone else to make them creates a founder who is even further underwater. That is the [founder bottleneck](/founder-bottlenecks), and hiring into it makes the queue longer rather than shorter.
 
@@ -68,7 +68,7 @@ None of this means you should never hire. It means the timing and the sequencing
 
 Hire after the system exists, not before. When the process is defined, the workflow is tracked, and the standards are documented, a new person can be onboarded into a functioning structure. They have a clear role, a clear process to follow, and a clear definition of what good work looks like. They become productive faster, need less management, and do not add chaos.
 
-The businesses that scale well tend to hire into systems. The businesses that struggle with growth tend to hire into gaps, hoping the new person will figure out what the gap actually requires. That rarely works.
+The businesses that scale well tend to hire into systems. The businesses that struggle with growth tend to hire into gaps, hoping the new person will figure out what the gap requires. That rarely works.
 
 If the business feels like it is constantly one hire away from being under control, the problem is almost certainly not the headcount. It is the structure underneath it.
 
@@ -80,7 +80,7 @@ Recognizing that the problem is operational rather than capacity-related require
 
 But the rebuild pays off in a way that the hire does not. A team of five operating with a functional system will consistently outperform a team of eight operating without one. The difference compounds over time as the system-driven team gets faster, more consistent, and more reliable while the reactive team gets more complicated.
 
-Before asking whether to hire, ask whether you have built the thing that makes a hire actually work.
+Before asking whether to hire, ask whether you have built the thing that makes a hire work.
 
 ---
 

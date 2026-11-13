@@ -13,7 +13,7 @@ Most founders go into consultant conversations unprepared. They listen to a pitc
 
 That tends to produce bad outcomes. Not because the consultant was dishonest, but because the wrong fit is expensive regardless of intent. A consultant who specializes in enterprise deployments may not translate well to a 12-person operation. A generalist who follows a rigid template may not understand your specific workflow problems.
 
-The questions below are designed to surface real information, not credentials. You are not checking boxes. You are listening for how someone thinks, whether they understand your context, and whether their process matches what you actually need.
+The questions below are designed to surface real information, not credentials. You are not checking boxes. You are listening for how someone thinks, whether they understand your context, and whether their process matches what you need.
 
 ---
 
@@ -35,7 +35,7 @@ This question reveals whether they are tool-agnostic or vendor-aligned. Some con
 
 The best consultants start with the problem, evaluate several options, and explain the tradeoffs. If they always recommend the same stack regardless of the business, that is worth noting.
 
-### What does implementation actually look like?
+### What does implementation look like in practice?
 
 You want specifics here. Who does the technical work? Is it the consultant or a team they subcontract? How do they handle handoffs to your staff? What does a typical rollout timeline look like?
 
@@ -103,7 +103,7 @@ Consultants who are confident in their work are not afraid of this question. The
 
 This question is often overlooked. The best AI projects require real participation from the client side. You need someone who can provide process documentation, make decisions in a reasonable timeframe, and keep the consultant connected to the people doing the actual work.
 
-If a consultant says they need very little from you, ask more questions. Hands-off engagements rarely produce systems your team will actually use.
+If a consultant says they need very little from you, ask more questions. Hands-off engagements rarely produce systems your team will use.
 
 ---
 
@@ -135,7 +135,7 @@ Some answers are worth pausing on regardless of how confident they sound.
 
 **Dismissiveness about your current systems.** A consultant who makes you feel behind or foolish before they understand your business is not a good partner. Respect for where you are is a baseline requirement.
 
-**Vague answers about what they actually build.** If they struggle to describe a specific deliverable, a specific output, or a specific workflow they have improved, they may not have done the work they are selling.
+**Vague answers about what they build.** If they struggle to describe a specific deliverable, a specific output, or a specific workflow they have improved, they may not have done the work they are selling.
 
 **No mention of your team.** AI projects fail when staff are not included. A consultant who focuses only on the technology without asking about your team's capacity or willingness to change has a blind spot.
 

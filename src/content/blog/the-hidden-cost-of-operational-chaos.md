@@ -24,7 +24,7 @@ When processes are undocumented or inconsistently followed, errors are predictab
 
 Error recovery is expensive. Finding the mistake, tracing it back to its source, correcting the downstream consequences, and communicating the fix to everyone affected: each of these activities consumes time that should have been spent on something productive.
 
-For service businesses, errors that reach clients have an additional cost: the relationship repair work, the discounts, the extra calls, and occasionally the churn. A client who experiences operational friction does not usually say "you seem disorganized." They just do not renew.
+For service businesses, errors that reach clients have an additional cost: the relationship repair work, the discounts, the extra calls, and occasionally the churn. A client who experiences operational friction does not usually say "you seem disorganized." They do not renew.
 
 Estimate your monthly rework hours (the time your team spends fixing things that should have been right the first time) and multiply by your team's effective hourly cost. For most small service businesses, this number is uncomfortable.
 

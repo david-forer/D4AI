@@ -29,7 +29,7 @@ This work is unglamorous. It precedes any meaningful AI layer. And most business
 
 ## Gap 2: Processes That Live in People's Heads
 
-Ask most founders to describe their client onboarding process and you'll get a confident answer. Ask the team member who actually runs it and you'll get a slightly different one. Ask a third person and it changes again.
+Ask most founders to describe their client onboarding process and you'll get a confident answer. Ask the team member who runs it and you'll get a slightly different one. Ask a third person and it changes again.
 
 Undocumented processes block automation. You cannot automate a process that only exists informally. You cannot train AI on a workflow that produces different outputs depending on who's running it. And you cannot hand off, improve, or quality-check a process that isn't written down anywhere.
 
@@ -91,7 +91,7 @@ Then ask the team member who runs the workflow every day to describe it without 
 
 None of these gaps are fatal. They are sequencing problems. The businesses that implement AI successfully understand their gaps clearly enough to address them in the right order.
 
-The audit tells you which of these gaps are most significant in your specific situation and which ones are creating the most friction for the AI use cases you actually care about. That prioritization is what turns a long list of potential improvements into a focused implementation plan.
+The audit tells you which of these gaps are most significant in your specific situation and which ones are creating the most friction for the AI use cases you care about. That prioritization is what turns a long list of potential improvements into a focused implementation plan.
 
 Most businesses can close their critical gaps in four to eight weeks. The work is not technically complex. It takes clarity and consistency in the foundational layer before the AI layer goes on top.
 

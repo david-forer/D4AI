@@ -119,7 +119,7 @@ The current workflow has the workarounds, exceptions, and informal adjustments t
 
 The better sequence is:
 
-1. Document the current workflow as it actually runs
+1. Document the current workflow as it runs
 2. Identify the steps that exist because of process gaps, not because they add value
 3. Design the workflow as it should run
 4. Automate the designed version

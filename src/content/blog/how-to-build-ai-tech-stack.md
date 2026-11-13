@@ -41,7 +41,7 @@ Every well-functioning AI tech stack is built on a data foundation. And every da
 
 **System of record for project and delivery data.** This is your project management tool. Scope, tasks, status, deadlines, and delivery notes all live here. When a client asks for an update, the answer should come from this system, not from a conversation with whoever happened to be paying attention.
 
-**Consistent team usage.** A system of record that people use inconsistently works as a tool that some people use some of the time, which produces data that reflects that inconsistency back at you. Establishing consistent usage habits is harder than choosing the right tool. It requires explicit expectations, onboarding that covers why not just how, and periodic review of whether the team is actually using the systems as intended.
+**Consistent team usage.** A system of record that people use inconsistently works as a tool that some people use some of the time, which produces data that reflects that inconsistency back at you. Establishing consistent usage habits is harder than choosing the right tool. It requires explicit expectations, onboarding that covers why, not only how, and periodic review of whether the team is using the systems as intended.
 
 This foundation work is unglamorous. It is also the prerequisite for everything that comes after. Every automation, every AI-assisted workflow, and every reporting layer you build will be only as reliable as the data it draws from.
 

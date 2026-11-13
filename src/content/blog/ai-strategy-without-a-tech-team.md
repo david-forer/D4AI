@@ -17,7 +17,7 @@ The founder who understands their workflows, can articulate where the friction i
 
 ---
 
-## What AI Strategy Actually Requires
+## What an AI Strategy Requires
 
 Separating the technical requirements from the operational requirements of AI strategy changes how you think about whether you are equipped to build one.
 
@@ -37,7 +37,7 @@ A successful AI strategy in a small business rests on operational skills.
 
 **Prioritization.** Knowing which problems to solve first and being willing to defer the others is a discipline that technical experts do not always have. It is a business judgment skill, and it shapes how efficiently you build.
 
-**Adoption management.** Getting your team to actually use new systems is one of the hardest parts of AI implementation. It requires communication, patience, and the authority to set expectations and hold them. That is a leadership job.
+**Adoption management.** Getting your team to use new systems is one of the hardest parts of AI implementation. It requires communication, patience, and the authority to set expectations and hold them. That is a leadership job.
 
 **Measurement.** Knowing what to measure, establishing a baseline before you build, and tracking results afterward is an analytical discipline that any founder can develop. It does not require data engineering.
 
@@ -99,7 +99,7 @@ Outside these specific situations, most small business AI strategy work is well 
 
 ---
 
-## AI Without Big Tech: What a Small Business Actually Uses
+## AI Without Big Tech: What a Small Business Uses Day to Day
 
 You do not need a partnership with a large AI vendor or a custom model to run AI in your business. Most small firms I work with run on a general-purpose assistant, an automation platform and the software they already own. That stack costs little and can be swapped later.
 

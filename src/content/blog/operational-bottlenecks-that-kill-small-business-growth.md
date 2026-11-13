@@ -131,7 +131,7 @@ Pick the bottleneck that is causing the most friction right now. Define what the
 
 That sequence (identify, fix, stabilize, repeat) is how small businesses clear the operational ceiling that is keeping them from the next revenue tier.
 
-The [Why Small Businesses Break at $1M Revenue](/blog/why-small-businesses-break-at-1m-revenue) article covers the broader pattern behind why the growth stall happens and what the infrastructure shift actually looks like.
+The [Why Small Businesses Break at $1M Revenue](/blog/why-small-businesses-break-at-1m-revenue) article covers the broader pattern behind why the growth stall happens and what the infrastructure shift looks like.
 
 ---
 

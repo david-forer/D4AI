@@ -90,7 +90,7 @@ The financial calculation captures the direct ROI. It does not fully capture the
 
 **Scalability without proportional cost.** A manual process that takes twenty minutes costs twenty minutes at any volume. An automation that takes twenty minutes to build can run a thousand times at near-zero marginal cost. The ROI of an automation improves as volume grows, which makes it a strong investment in a growing business.
 
-**Freed attention.** When a team member is no longer spending time on a repetitive manual process, that time is available for higher-value work. The value of this depends entirely on what the freed time actually gets directed toward. If it goes to higher-value work, the benefit is real. If it simply reduces idle time, it is harder to quantify.
+**Freed attention.** When a team member is no longer spending time on a repetitive manual process, that time is available for higher-value work. The value of this depends entirely on what the freed time gets directed toward. If it goes to higher-value work, the benefit is real. If it simply reduces idle time, it is harder to quantify.
 
 ---
 

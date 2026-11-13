@@ -116,8 +116,8 @@ Training translates this into actionable workflow:
 
 "Before sending any AI-drafted response to a customer:
 
-1. Check that technical steps actually work (try them if you're unsure)
-2. Verify product features mentioned actually exist in the customer's plan
+1. Check that technical steps work (try them if you're unsure)
+2. Verify product features mentioned exist in the customer's plan
 3. Confirm pricing information matches current rates
 4. Make sure tone matches the customer's emotional state
 5. Add specific details about this customer's situation
@@ -513,7 +513,7 @@ Start with policy training and tool training. They carry the most risk reduction
 
 AI for training and development works best when it supports your own material. Use it to draft quiz questions from your policy, build scenario exercises for each department, and write refresher summaries. A person still checks every item before it reaches staff.
 
-There is no single best AI for training and development. A general assistant covers drafting. Your existing learning platform covers delivery and tracking. Pick the simplest setup that your team will actually use. If you are searching for an AI training website, check that the content covers your approved tools and your own rules. Generic courses do not.
+There is no single best AI for training and development. A general assistant covers drafting. Your existing learning platform covers delivery and tracking. Pick the simplest setup that your team will use. If you are searching for an AI training website, check that the content covers your approved tools and your own rules. Generic courses do not.
 
 ## University AI Policy Examples and Faculty Policies
 
@@ -541,11 +541,11 @@ Organizations that treat policy and training as separate initiatives see:
 
 The investment required to connect policy and training is modest. For each policy clause, budget 2-4 hours of training development translating legal language into practical guidance. For a full AI policy, that's 20-40 hours of curriculum development. A small fraction of the time spent drafting the policy itself.
 
-But the impact is disproportionate. Those 20-40 hours determine whether your carefully crafted policy actually changes behavior or only provides legal cover while employees continue doing whatever they were doing before.
+But the impact is disproportionate. Those 20-40 hours determine whether your carefully crafted policy changes behavior or only provides legal cover while employees continue doing whatever they were doing before.
 
 Build the bridge between policy and training. Translate legal requirements into practical workflows. Create guardrails that enable rather than roadblocks that frustrate. Measure compliance through behavior change, and track acknowledgment completion as a secondary number.
 
-Your policy documents what's required. Your training makes it actually happen. Connect them explicitly, and both become far more useful.
+Your policy documents what's required. Your training makes it happen. Connect them explicitly, and both become far more useful.
 
 
 ---

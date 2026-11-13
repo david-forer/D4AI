@@ -61,7 +61,7 @@ Every one of these questions is an interruption. Research on interruption and co
 
 Building the infrastructure that reduces these interruptions is a systems conversation, not a delegation conversation. An internal knowledge base reduces "where is that file?" A project management tool with live visibility reduces "what is the status?" Documented SOPs reduce "what is the process?" Decision criteria reduce "what should we do?"
 
-These tools do not just give the team what they need. They give the founder their concentration back.
+These tools give the team what they need. They also give the founder their concentration back.
 
 ---
 
@@ -85,7 +85,7 @@ The [Operational Bottlenecks That Kill Small Business Growth](/blog/operational-
 
 The reason delegation is hard in most small businesses is a missing infrastructure for delegation, not a founder who cannot let go. Delegation without infrastructure looks like handing off a task, watching it not get done the way you expected, and then taking it back. That cycle repeats a few times and the conclusion becomes "I should just do it myself."
 
-What looks like a failure to delegate is actually a failure to build the systems that make delegation reliable.
+What looks like a failure to delegate is a failure to build the systems that make delegation reliable.
 
 Those systems include:
 
@@ -118,7 +118,7 @@ For most founders in the $1M to $3M range, a focused six to eight week effort to
 
 Founders who have been in operational burnout for an extended period often cannot see the system clearly enough to fix it themselves. The same cognitive load that is causing the problem makes it hard to step back and diagnose it.
 
-This is where an outside perspective is useful. An [AI operations audit](/ai-readiness-and-ai-audits) gives you a structured look at what is actually happening in your operation: where the load is concentrated, what is automatable, and what sequence of changes produces the fastest relief.
+This is where an outside perspective is useful. An [AI operations audit](/ai-readiness-and-ai-audits) gives you a structured look at what is happening in your operation: where the load is concentrated, what is automatable, and what sequence of changes produces the fastest relief.
 
 Treat it as a systems diagnosis. Mindset work comes later, if at all.
 

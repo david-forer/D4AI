@@ -117,7 +117,7 @@ Movement means continue to month 12 and expect results. No movement after 16 com
 
 ### How many blog posts do I need to rank on Google?
 
-For a small firm starting from zero, plan on 20 to 30 posts covering one subject over 6 months. The count matters less than whether those posts answer the questions your buyers actually ask.
+For a small firm starting from zero, plan on 20 to 30 posts covering one subject over 6 months. The count matters less than whether those posts answer the questions your buyers ask.
 
 ### How often should a small business publish blog posts?
 

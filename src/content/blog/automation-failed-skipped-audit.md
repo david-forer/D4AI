@@ -125,7 +125,7 @@ These failures do not show up in dashboards. They show up as frustration, ineffi
 
 An audit prevents these quiet failures by surfacing misalignment before it gets encoded into software.
 
-It asks whether the problem is worth solving. It validates that the proposed solution actually addresses the root cause. It ensures that automation will support the team instead of constraining them.
+It asks whether the problem is worth solving. It validates that the proposed solution addresses the root cause. It ensures that automation will support the team instead of constraining them.
 
 The goal is to avoid predictable mistakes.
 

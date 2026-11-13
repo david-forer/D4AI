@@ -84,7 +84,7 @@ Training exercise: Provide a 10-page document. Have employees prompt an AI to su
 
 **Meeting preparation and follow-up:** AI can generate agendas from rough notes and turn voice recordings into structured minutes.
 
-Training exercise: Give employees meeting notes or a transcript. Have them prompt an AI to create: (1) a structured agenda with time allocations, (2) meeting minutes organized by topic, (3) a follow-up task list with ownership assigned. Teach them to verify that the AI didn't misrepresent discussions or create tasks that weren't actually agreed to.
+Training exercise: Give employees meeting notes or a transcript. Have them prompt an AI to create: (1) a structured agenda with time allocations, (2) meeting minutes organized by topic, (3) a follow-up task list with ownership assigned. Teach them to verify that the AI didn't misrepresent discussions or create tasks that weren't agreed to.
 
 **Schedule optimization and calendar management:** AI can analyze calendar patterns and suggest better time allocation.
 
@@ -143,7 +143,7 @@ Effective training addresses this directly in the opening session, before fear b
 
 Then back this up with specifics:
 
-**What AI actually does:** Handles repetitive components of knowledge work. First drafts, data formatting, summarization, pattern recognition. It compresses time-to-output for routine tasks.
+**What AI does:** Handles repetitive components of knowledge work. First drafts, data formatting, summarization, pattern recognition. It compresses time-to-output for routine tasks.
 
 **What AI cannot do:** Make nuanced judgment calls, understand your company's internal politics, build authentic relationships, handle ambiguous situations with missing information, or take accountability for outcomes.
 

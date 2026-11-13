@@ -58,7 +58,7 @@ Even small businesses have IT operations, whether they recognize it or not. Some
 
 An automated approach changes this significantly.
 
-Self-service handles routine requests. Employees reset their own passwords through identity management systems. Software access requests flow through automated approval workflows that check against role-based policies. Common questions get answered by documentation that is actually findable because it lives in a structured knowledge base.
+Self-service handles routine requests. Employees reset their own passwords through identity management systems. Software access requests flow through automated approval workflows that check against role-based policies. Common questions get answered by documentation that is findable because it lives in a structured knowledge base.
 
 System monitoring happens automatically. Services get checked continuously. When something fails or performs poorly, alerts route to the right person with enough context to diagnose the issue. In many cases, the system can remediate automatically: restarting a hung service, clearing a full disk, scaling resources to handle load spikes.
 
@@ -98,7 +98,7 @@ It also has implications for hiring. You need fewer people to handle the same vo
 
 If your back office today relies heavily on manual processes, full automation is not a weekend project. But it is achievable incrementally.
 
-Start by documenting your current processes. You cannot automate what you do not understand. Map out how work actually flows, who does what, and where the manual effort concentrates.
+Start by documenting your current processes. You cannot automate what you do not understand. Map out how work flows, who does what, and where the manual effort concentrates.
 
 Identify the highest-volume, most routine tasks. These are your best automation candidates. The work that happens every day, follows the same pattern, and does not require judgment is where automation pays back fastest.
 
@@ -116,7 +116,7 @@ A fully automated back office does more than save time and money. It changes wha
 
 Growth becomes less painful. Adding customers does not require proportional increases in administrative staff. Operations scale efficiently because the systems handle the additional volume.
 
-Response time improves. Automated processes run continuously, not just during business hours. Invoices process overnight. Onboarding preparation happens before the new hire's first day. Nothing waits for a human to get around to it.
+Response time improves. Automated processes run continuously, not only during business hours. Invoices process overnight. Onboarding preparation happens before the new hire's first day. Nothing waits for a human to get around to it.
 
 Quality and consistency increase. Automated processes do not have bad days. They do not get distracted or make typos. They execute the same way every time, which means predictable, reliable results.
 

@@ -36,7 +36,7 @@ There is a version of AI implementation that looks successful from the outside. 
 
 But scratch beneath the surface and you find something different. Three people on the team use AI regularly. The other 12 tried it once, did not get a result they were happy with, and went back to doing things the way they always had. The founder assumed the tools would be self-explanatory. They were not.
 
-This is the adoption gap. It is the distance between having access to AI tools and actually using them consistently, correctly, and in ways that compound into operational advantage.
+This is the adoption gap. It is the distance between having access to AI tools and using them consistently, correctly, and in ways that compound into operational advantage.
 
 The adoption gap is the default outcome when a business treats AI as a technology rollout and skips the behavior change.
 
@@ -141,7 +141,7 @@ Understanding the failure patterns is as important as understanding the framewor
 
 **Ignoring the emotional dimension.** Teams that feel threatened by AI, confused about expectations, or embarrassed about their skill gaps will not adopt. Most AI adoption programs are designed as technical training programs. They do not address the fear, uncertainty, or resistance that governs actual behavior change. [AI adoption change management](/blog/ai-adoption-change-management) is its own discipline, and treating it as an afterthought is one of the most consistent failure patterns.
 
-**Over-automating too quickly.** The enthusiasm of early AI wins can lead to rapid expansion across too many workflows simultaneously. The team gets overwhelmed. Quality degrades. The team blames AI for what was a poorly managed rollout. Rolling out [in phases rather than all at once](/blog/enterprise-training-for-ai), starting from an honest assessment of where each team actually is, is the correction.
+**Over-automating too quickly.** The enthusiasm of early AI wins can lead to rapid expansion across too many workflows simultaneously. The team gets overwhelmed. Quality degrades. The team blames AI for what was a poorly managed rollout. Rolling out [in phases rather than all at once](/blog/enterprise-training-for-ai), starting from an honest assessment of where each team is, is the correction.
 
 **No internal champion.** Every successful AI adoption effort has one person inside the business who owns it. That person is a team member, separate from the founder who mandated it, who is accountable for standards, available to help, and tracking results. Without this person, adoption is nobody's job.
 

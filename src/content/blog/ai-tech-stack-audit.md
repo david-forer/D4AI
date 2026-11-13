@@ -9,7 +9,7 @@ articleType: "cluster"
 
 ## The Problem With Adding AI to a Stack You Have Never Examined
 
-Most businesses approach AI adoption by looking forward. What new tools could we add? What workflows could we automate? What capability could we build? The question of what the current state actually looks like, what tools are running, how they connect, whether the data in them is reliable, and who owns what, often gets skipped.
+Most businesses approach AI adoption by looking forward. What new tools could we add? What workflows could we automate? What capability could we build? The question of what the current state looks like, what tools are running, how they connect, whether the data in them is reliable, and who owns what, often gets skipped.
 
 The result is predictable. New AI tools get added to an existing stack that was never designed to support them. Automations get built on top of data that is inconsistent enough to make the outputs unreliable. Integration projects run into unexpected complexity because nobody mapped the existing connections before trying to extend them.
 

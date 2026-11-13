@@ -65,7 +65,7 @@ One source for client information. One source for project status. One source for
 
 This is the most important infrastructure decision in the process. Automation moves data between systems. If the same data exists in multiple places with no clear authority, the automation will constantly work with incomplete or contradictory information.
 
-The system of record does not need to be expensive or complex. It needs to be designated, consistent, and used by everyone. A CRM that the whole team actually uses is more valuable than a sophisticated tool that half the team works around.
+The system of record does not need to be expensive or complex. It needs to be designated, consistent, and used by everyone. A CRM that the whole team uses is more valuable than a sophisticated tool that half the team works around.
 
 Once the systems of record are defined, every automation you build can reference a reliable source of truth.
 
@@ -114,7 +114,7 @@ Before launching any workflow automation, establish baselines:
 - Time currently spent on the process per week
 - Error rate or rework rate for the current process
 - Handoff delays (how long does work sit before it moves to the next step)
-- Team adoption rate after launch (are people actually using it)
+- Team adoption rate after launch (are people using it)
 
 Measure the same metrics after launch. The delta is your ROI case. It also tells you where the automation is not working as expected before the problem compounds.
 

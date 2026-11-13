@@ -98,11 +98,11 @@ Some use cases sound compelling but rarely produce the return that simpler, high
 
 ## The Goal of Your First AI Project
 
-Your first AI project has two jobs. The first is to solve a specific operational problem in a way that your team actually uses. The second is to demonstrate, to you and your team, that AI investment produces real results and is worth continuing.
+Your first AI project has two jobs. The first is to solve a specific operational problem in a way that your team uses. The second is to demonstrate, to you and your team, that AI investment produces real results and is worth continuing.
 
 This is why narrower is better. A focused first project that fully solves one clearly defined problem and gets adopted consistently by the team is worth more than an ambitious first project that partially solves three problems and creates ongoing maintenance headaches.
 
-The first project also teaches you things you cannot know from reading about AI or watching demos. You will learn how long implementation actually takes for your business. You will learn how your team responds to workflow changes. You will learn what maintenance looks like in practice. That knowledge makes every subsequent project faster and more effective.
+The first project also teaches you things you cannot know from reading about AI or watching demos. You will learn how long implementation takes for your business. You will learn how your team responds to workflow changes. You will learn what maintenance looks like in practice. That knowledge makes every subsequent project faster and more effective.
 
 ---
 

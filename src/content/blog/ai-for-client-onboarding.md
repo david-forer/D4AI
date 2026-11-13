@@ -53,7 +53,7 @@ The early client communication cadence (check-ins, progress updates, next-step c
 
 The embedding phase is where the client either settles into a productive working rhythm or starts wondering if they made the right choice. Check-ins at the right intervals prevent the latter.
 
-Progress check-ins triggered at defined intervals in the onboarding timeline mean they actually happen. Satisfaction signals collected early, not at the end of the engagement, give the team early warning if something is off and time to address it.
+Progress check-ins triggered at defined intervals in the onboarding timeline mean they happen. Satisfaction signals collected early, not at the end of the engagement, give the team early warning if something is off and time to address it.
 
 Internal milestone tracking means the team has current visibility on where each onboarding is, which clients are on track, and which need attention, without someone manually checking in on every active engagement.
 

@@ -28,7 +28,7 @@ Here is the plain version. An AI agent is a system that can take a goal, decide 
 
 A traditional automation follows a fixed path. When this happens, do that. A chatbot answers questions in a conversation. An agent is given an objective, like "process this incoming client inquiry," and works out the sequence itself: read the message, check the CRM, draft a response, flag anything unusual for a human. It makes its own decisions along the way.
 
-This guide covers what agents actually are, where they earn their place in a firm running between 5 and 50 people, where they are not ready yet, and how to deploy one without creating a mess you have to clean up later.
+This guide covers what agents are, where they earn their place in a firm running between 5 and 50 people, where they are not ready yet, and how to deploy one without creating a mess you have to clean up later.
 
 ---
 
@@ -42,7 +42,7 @@ Most confusion about AI agents comes from blurring three different things. The d
 
 **An agent pursues a goal across steps and tools.** Give it an objective and it decides the path. A support agent for a 20-person software company reads the ticket, checks the customer's account status, looks up the relevant documentation, drafts a resolution, and either sends it or escalates to a human based on how confident it is. The agent worked out that path itself.
 
-The reason this matters for a founder is simple. Automations are cheaper, more predictable, and right for the large majority of small business use cases. Agents are more capable and more expensive to get right, and they carry more risk because they make decisions. Knowing which one a problem actually needs saves you from building a complex agent where a simple automation would have done the job better.
+The reason this matters for a founder is simple. Automations are cheaper, more predictable, and right for the large majority of small business use cases. Agents are more capable and more expensive to get right, and they carry more risk because they make decisions. Knowing which one a problem needs saves you from building a complex agent where a simple automation would have done the job better.
 
 | | Automation | Chatbot | AI agent |
 |---|---|---|---|

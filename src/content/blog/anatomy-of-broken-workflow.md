@@ -58,17 +58,17 @@ Understanding why your workflows broke helps you avoid making the same mistakes 
 
 ## The Framework for Automating It Right
 
-Automation done poorly just speeds up a bad process. You end up with the same problems, happening faster. The goal is not to automate what you have. The goal is to build something better and then automate that.
+Automation done poorly speeds up a bad process. You end up with the same problems, happening faster. The goal is not to automate what you have. The goal is to build something better and then automate that.
 
 Here is a practical framework for doing it right.
 
 **Step one: Audit the actual process.** Map out how work really happens, not how it is supposed to happen according to a procedure nobody follows. Watch people do the work. Ask questions. Document every step, every hand-off, every workaround. This is where you find the real problems.
 
-**Step two: Simplify before you automate.** Look at your map and ask hard questions. Does this step add value, or is it just something we have always done? Can we eliminate this hand-off entirely? Is there a simpler way to get the same result? Remove every step that does not need to exist. Tighten what remains. The best automation projects start by making the underlying process as lean as possible.
+**Step two: Simplify before you automate.** Look at your map and ask hard questions. Does this step add value, or is it something we have always done? Can we eliminate this hand-off entirely? Is there a simpler way to get the same result? Remove every step that does not need to exist. Tighten what remains. The best automation projects start by making the underlying process as lean as possible.
 
 **Step three: Define what success looks like.** Before you build anything, decide how you will know it is working. What metrics matter? How much time should this process take? What error rate is acceptable? These targets guide your design decisions and give you a way to measure results after implementation.
 
-**Step four: Choose the right tool for the job.** Different automation challenges call for different solutions. Simple integrations between modern software tools often just need a connector platform like Zapier or Make. More complex processes with multiple decision points might need a workflow automation platform. Legacy systems that cannot be replaced sometimes require robotic process automation (RPA) to bridge the gap. Start with the simplest tool that solves the problem.
+**Step four: Choose the right tool for the job.** Different automation challenges call for different solutions. Simple integrations between modern software tools often need a connector platform like Zapier or Make. More complex processes with multiple decision points might need a workflow automation platform. Legacy systems that cannot be replaced sometimes require robotic process automation (RPA) to bridge the gap. Start with the simplest tool that solves the problem.
 
 **Step five: Build, test, and refine.** Implement your automated workflow with a small pilot first. Run real work through it. Watch for edge cases and exceptions you did not anticipate. Refine the process based on what you learn. Then roll it out more broadly.
 
@@ -80,7 +80,7 @@ The broken version looks something like this. A project manager emails the offic
 
 The automated version starts when the project manager marks work complete in the project management tool. That triggers an automatic invoice generation in the accounting software, pulling client details and project information directly from the source systems. The invoice goes out automatically. Payment tracking happens through the accounting software's built-in features. The office manager reviews exceptions and handles the occasional issue, but the routine work happens without manual intervention.
 
-The time savings are significant. But the bigger win is reliability. Invoices go out consistently. Nothing falls through the cracks. The office manager can focus on actually managing the office instead of shuffling paperwork.
+The time savings are significant. But the bigger win is reliability. Invoices go out consistently. Nothing falls through the cracks. The office manager can focus on managing the office instead of shuffling paperwork.
 
 ## Moving From Reactive to Prepared
 

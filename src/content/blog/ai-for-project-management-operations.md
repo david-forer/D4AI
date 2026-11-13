@@ -21,9 +21,9 @@ AI project operations replaces the information logistics that currently take hum
 
 AI can give you visibility into project health in real time, without someone assembling it. It can trigger the right actions at the right moments (client updates, internal handoffs, risk escalations) based on what is actually happening in the project data. It can surface problems before they become escalations by monitoring against defined thresholds.
 
-What it cannot do: make judgment calls about complex scope situations, manage client relationships through difficult moments, evaluate quality in a way that reflects the standards the client actually cares about, or handle the interpersonal dynamics that project work inevitably involves. Those stay with the humans.
+What it cannot do: make judgment calls about complex scope situations, manage client relationships through difficult moments, evaluate quality in a way that reflects the standards the client cares about, or handle the interpersonal dynamics that project work inevitably involves. Those stay with the humans.
 
-The point of AI project operations is to remove the operational overhead from project management so the humans can focus on the things that actually require them.
+The point of AI project operations is to remove the operational overhead from project management so the humans can focus on the things that require them.
 
 ## Can I Use AI for Project Management?
 
@@ -47,7 +47,7 @@ Project status should update from actual work data (tasks completed, milestones 
 
 When status reflects real activity, the project overview is accurate in real time. Milestone tracking with automatic alerts when deadlines are approaching or at risk means problems surface early, before something has already slipped. Capacity view (who is allocated to what, where overload is building) is visible without someone maintaining a manual resource plan.
 
-Client-facing status updates can generate automatically from internal project data at defined intervals. Instead of a team member writing a weekly update email from scratch, the system generates a structured progress summary from what has actually happened in the project that week. The team reviews and sends. The writing time drops from twenty minutes to two.
+Client-facing status updates can generate automatically from internal project data at defined intervals. Instead of a team member writing a weekly update email from scratch, the system generates a structured progress summary from what has happened in the project that week. The team reviews and sends. The writing time drops from twenty minutes to two.
 
 ### Communication and Coordination
 
@@ -65,7 +65,7 @@ Issue logging in a structured format means problems are visible and tracked, and
 
 Scope changes are where service businesses most commonly lose margin, and where the lack of an operational system is most costly.
 
-When scope is tracked in the project management system against the original statement of work, deviations are visible. What was agreed, what was actually delivered, and what changed in between are all recorded. Automated change request documentation creates a paper trail without administrative overhead. Approval routing means scope changes that affect pricing or timeline get sign-off before work continues.
+When scope is tracked in the project management system against the original statement of work, deviations are visible. What was agreed, what was delivered, and what changed in between are all recorded. Automated change request documentation creates a paper trail without administrative overhead. Approval routing means scope changes that affect pricing or timeline get sign-off before work continues.
 
 Without this, scope creep compounds silently until the project closes and the margin analysis reveals how much was given away without realizing it.
 
@@ -89,7 +89,7 @@ The same logic applies in construction and other field-heavy work. AI for constr
 
 ## Building the Foundation First
 
-A project management tool your team actually uses consistently is the prerequisite. The most sophisticated project AI in the world is useless if the underlying data is not being maintained.
+A project management tool your team uses consistently is the prerequisite. The most sophisticated project AI in the world is useless if the underlying data is not being maintained.
 
 Defined project stages with clear criteria for what moves a project from one stage to the next. Use specific definitions the system can track, not labels that mean different things to different people.
 

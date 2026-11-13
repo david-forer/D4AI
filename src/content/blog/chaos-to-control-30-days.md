@@ -67,7 +67,7 @@ The second week transforms those messy current-state processes into something be
 
 For each process, go through the documented steps and ask hard questions.
 
-Does this step add value, or is it something we do because we have always done it? Can we eliminate this handoff by having one person handle both steps? Is this check actually necessary, or is it vestigial from an old problem that no longer exists? Would the outcome be worse if we skipped this entirely?
+Does this step add value, or is it something we do because we have always done it? Can we eliminate this handoff by having one person handle both steps? Is this check necessary, or is it vestigial from an old problem that no longer exists? Would the outcome be worse if we skipped this entirely?
 
 Most processes accumulate unnecessary steps over time. Requirements change but steps remain. Someone adds a check after an error and the check persists long after the root cause was fixed. Eliminating these steps costs nothing and simplifies everything.
 

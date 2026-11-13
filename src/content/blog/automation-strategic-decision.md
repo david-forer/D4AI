@@ -27,7 +27,7 @@ These automations work, technically. The tools perform exactly as designed.
 
 But working and helping are different things.
 
-When you treat automation as a tool, you focus on what the software can do instead of what your business actually needs. You automate because you can, not because you should.
+When you treat automation as a tool, you focus on what the software can do instead of what your business needs. You automate because you can, not because you should.
 
 This creates fragility. Workflows stack on top of each other without coordination. No one understands how the pieces connect. When something breaks, the person who built it is the only one who knows how to fix it.
 
@@ -53,11 +53,11 @@ Most businesses do not plan for that cost upfront. They assume automation can be
 
 Automation should start with a question, not a solution.
 
-What problem are you actually solving? Is the problem a lack of speed, or a lack of clarity? Are you automating because the work is repetitive, or because you have not figured out a better way to do it?
+What problem are you solving? Is the problem a lack of speed, or a lack of clarity? Are you automating because the work is repetitive, or because you have not figured out a better way to do it?
 
 If you automate chaos, you get faster chaos.
 
-A messy workflow does not become clean just because software handles it. Unclear ownership does not become clear just because a task gets created automatically. Poor communication does not improve just because a notification goes out.
+A messy workflow does not become clean when software handles it. Unclear ownership does not become clear when a task gets created automatically. Poor communication does not improve when a notification goes out.
 
 Automation makes existing systems more rigid. Poorly designed systems get harder to fix once they are automated.
 
@@ -77,7 +77,7 @@ Good automation supports judgment instead of replacing it. It removes friction s
 
 Bad automation hides complexity. It creates dependencies that no one understands. It optimizes for speed without considering what happens when things go wrong.
 
-The difference is not the tool. The difference is whether automation aligns with how the business actually operates.
+The difference is not the tool. The difference is whether automation aligns with how the business operates.
 
 Strategic automation requires diagnosis before implementation. You have to understand the system before you change it. You have to know what you are optimizing for and what tradeoffs you are willing to accept.
 
@@ -111,7 +111,7 @@ If you are thinking about automation, start by stepping back.
 
 Before you look at tools, look at your operations. Understand how work moves through your business. Identify what creates friction and what creates real gains.
 
-Ask yourself whether the problem is really speed, or whether it is clarity, alignment, or structure. Automation cannot fix those things. It can only amplify what is already there.
+Ask yourself whether the problem is speed, or whether it is clarity, alignment, or structure. Automation cannot fix those things. It can only amplify what is already there.
 
 If you want a framework for these decisions, start with [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams). If you want help finding where automation fits in your business and where it does not, the [80/20 process audit](/fix-the-chaos) maps your top 3 processes and prices your top 5 automation opportunities in dollars.
 

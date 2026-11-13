@@ -11,7 +11,7 @@ articleType: "cluster"
 
 A common instinct before any kind of business assessment is to tidy up first. Clean the data, document a few processes, make sure the CRM is reasonably current.
 
-For an AI readiness audit, that instinct is understandable but misplaced. The audit is specifically designed to see your operations as they actually are. Surface-level preparation doesn't change the underlying state of your business, and the gaps that matter most are the ones you haven't noticed yet, not the ones you already know about.
+For an AI readiness audit, that instinct is understandable but misplaced. The audit is specifically designed to see your operations as they are. Surface-level preparation doesn't change the underlying state of your business, and the gaps that matter most are the ones you haven't noticed yet, not the ones you already know about.
 
 A small amount of preparation does make a difference. It helps the time you invest in the process produce the clearest possible findings.
 
@@ -63,13 +63,13 @@ Who on the team would be involved in any AI implementation. Not because they nee
 
 ## Setting the Right Expectations
 
-An AI readiness audit is a diagnostic, not a prescription. The findings it produces are descriptive of where your business actually stands, not a verdict on whether you're doing things right.
+An AI readiness audit is a diagnostic, not a prescription. The findings it produces are descriptive of where your business stands, not a verdict on whether you're doing things right.
 
 Gaps that surface during the assessment are structural realities that businesses at a similar stage of growth tend to share, so treat them as a starting list rather than a verdict. Finding them is the first step to addressing them in the right order.
 
 The assessment will identify more things to improve than you can act on immediately. That's normal and expected. The value of the findings is in the prioritization, not the length of the list. Knowing which gaps are critical versus which are noise is what makes the roadmap useful.
 
-Honest answers produce better findings. If you manage expectations with the assessment team or give the version of your operations you wish were true rather than the version that actually is, the findings will reflect that. The more accurate the inputs, the more actionable the outputs.
+Honest answers produce better findings. If you manage expectations with the assessment team or give the version of your operations you wish were true rather than the version that is, the findings will reflect that. The more accurate the inputs, the more actionable the outputs.
 
 ## Who Should Be Involved
 

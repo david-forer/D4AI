@@ -132,7 +132,7 @@ The businesses that get the most from their AI tech stack have tools that work t
 
 That is achievable for any small business willing to design deliberately. The investment is mostly discipline. That means evaluating before adopting, retiring what is not working, maintaining ownership over time, and measuring whether the stack is delivering what it was built to deliver.
 
-The lean stack is the operational discipline that makes everything the stack is supposed to do actually happen.
+The lean stack is the operational discipline that makes everything the stack is supposed to do happen.
 
 ## Questions founders ask
 

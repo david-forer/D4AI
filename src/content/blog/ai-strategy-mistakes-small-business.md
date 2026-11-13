@@ -43,7 +43,7 @@ Before automating any process, spend time with the people who run it. Understand
 
 A system your team does not use delivers no value. This is the most overlooked truth in AI implementation, and the resulting problem is both common and predictable.
 
-Adoption failure happens for a few different reasons. Sometimes the system was built without involving the people who will use it, so it does not reflect how they actually work. Sometimes the training was inadequate and people do not feel confident using the new workflow. Sometimes there was no communication about why the change is happening, so resistance formed before anyone had a chance to see the benefit.
+Adoption failure happens for a few different reasons. Sometimes the system was built without involving the people who will use it, so it does not reflect how they work. Sometimes the training was inadequate and people do not feel confident using the new workflow. Sometimes there was no communication about why the change is happening, so resistance formed before anyone had a chance to see the benefit.
 
 The best technical implementations fail when adoption is treated as an afterthought. The people who will use the system need to be involved in understanding the problem it solves, given adequate time to learn it, and supported through the adjustment period. A realistic adoption timeline for a significant workflow change is four to eight weeks, not two days.
 
@@ -101,7 +101,7 @@ The best SEO strategy for small business is the one you can measure. Track impre
 
 Two hypothetical examples show how these mistakes play out.
 
-A 12-person firm buys a customer chatbot before writing down the 10 questions customers actually ask. The bot answers confidently and incorrectly, the team spends hours apologizing, and the tool gets switched off in a month.
+A 12-person firm buys a customer chatbot before writing down the 10 questions customers ask. The bot answers confidently and incorrectly, the team spends hours apologizing, and the tool gets switched off in a month.
 
 Another team automates invoice reminders from a CRM with stale contact data. Reminders go to clients who already paid. Both failures trace back to the mistakes above: a tool bought before the problem was defined, and a process automated before it was fixed.
 

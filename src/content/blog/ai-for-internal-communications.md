@@ -49,7 +49,7 @@ AI-assisted knowledge base search turns "searching for a document" into "asking 
 
 The prerequisite is a knowledge base that is accurate, current, and well-structured. AI cannot surface reliable answers from a knowledge base that is outdated or internally inconsistent. Maintaining the knowledge base (updating it when processes change, reviewing it periodically for accuracy, adding content when repeat questions reveal gaps) needs to be a defined operational process, not something that happens when someone has time.
 
-When the knowledge base is well-maintained, a meaningful proportion of the questions that currently route to people route to the system instead. The team's attention is freed from information retrieval and applied to work that actually requires them.
+When the knowledge base is well-maintained, a meaningful proportion of the questions that currently route to people route to the system instead. The team's attention is freed from information retrieval and applied to work that requires them.
 
 ### Meeting Support
 
@@ -100,7 +100,7 @@ Difficult conversations require people. Feedback on performance, interpersonal f
 
 Culture-building communication (the leadership presence that signals what the organization values, how it makes decisions, and how it treats people) cannot be systematized without losing its essential quality. Leaders who try to automate their communication with the team consistently underestimate what is lost in the process.
 
-The value of AI operations in internal communications is that it handles the information logistics so that human attention is available for the communication that actually requires humans. That trade-off only works if the human elements remain human.
+The value of AI operations in internal communications is that it handles the information logistics so that human attention is available for the communication that requires humans. That trade-off only works if the human elements remain human.
 
 ## Where to Start
 

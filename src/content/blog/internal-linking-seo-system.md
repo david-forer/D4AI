@@ -16,7 +16,7 @@ Internal linking is the operational architecture that determines whether your cl
 
 ---
 
-## What Internal Links Actually Do
+## What Internal Links Do for SEO
 
 The common explanation is that internal links help search engines crawl your site. That is true but incomplete.
 

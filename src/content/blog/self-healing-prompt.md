@@ -139,9 +139,9 @@ Add this self-evaluation module to your prompts and let the AI:
 
 - Score itself  
 - Fix weak spots  
-- Deliver content you can actually use  
+- Deliver content you can use  
 
-Because the future of prompt writing isn’t just _generation_. It’s _iteration_.
+Because the future of prompt writing is _iteration_ as much as _generation_.
 
 ---
 

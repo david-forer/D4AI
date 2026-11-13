@@ -27,7 +27,7 @@ Real improvement requires rebuilding the business, not just the workflow.
 
 Workflows are tangible. You can see them, map them, and measure them. This makes them an attractive target for improvement.
 
-But workflows exist within systems. They depend on structure that is often invisible. Decision-making paths, ownership boundaries, and information flow all shape how workflows actually operate.
+But workflows exist within systems. They depend on structure that is often invisible. Decision-making paths, ownership boundaries, and information flow all shape how workflows operate.
 
 When you optimize a workflow without addressing the underlying structure, you create fragility.
 
@@ -41,7 +41,7 @@ But if the marketing team and sales team do not agree on what qualifies as a lea
 
 Or consider a business that streamlines approvals. They reduce the number of steps. They set clear timelines. They automate notifications.
 
-But if ownership is unclear and no one knows who has authority to make which decisions, the streamlined process just moves the bottleneck. Approvals still take too long because the structure forces escalation.
+But if ownership is unclear and no one knows who has authority to make which decisions, the streamlined process moves the bottleneck somewhere else. Approvals still take too long because the structure forces escalation.
 
 Optimizing workflows treats symptoms. Rebuilding the business addresses root causes.
 
@@ -55,7 +55,7 @@ The first is decision-making paths.
 
 How do decisions get made in your business? Who has authority to make which decisions? What information do they need to make those decisions well? What happens when the normal path is unavailable?
 
-Most businesses have decision-making paths that evolved organically. Someone made a decision once, and it became the way things are done. No one questioned whether it was the best way. It just became the default.
+Most businesses have decision-making paths that evolved organically. Someone made a decision once, and it became the way things are done. No one questioned whether it was the best way. It became the default.
 
 Over time, these paths calcify. They create dependencies that should not exist. They centralize decisions that should be distributed. They slow down the business because no one took the time to design how decisions should flow.
 
@@ -97,7 +97,7 @@ Rebuilding requires confronting these legacy decisions. It requires asking wheth
 
 This is why most businesses avoid it. Fixing workflows feels safer. It does not require confronting hard questions or making uncomfortable tradeoffs.
 
-But avoiding the discomfort just delays the inevitable. The structure will break eventually. The only question is whether you rebuild intentionally or reactively.
+But avoiding the discomfort only delays the inevitable. The structure will break eventually. The only question is whether you rebuild intentionally or reactively.
 
 ## What Rebuilding Enables
 
@@ -125,7 +125,7 @@ Ask three questions.
 
 How do decisions get made in this area? Who owns what? How does information flow?
 
-Then ask what would need to change to make those things clearer, faster, and more aligned with how the business actually operates.
+Then ask what would need to change to make those things clearer, faster, and more aligned with how the business operates.
 
 This is not a quick process. It requires stepping back, diagnosing the system, and making intentional changes. But it is the only way to create lasting improvement.
 
@@ -144,7 +144,7 @@ If you want a framework for these changes, start with [Intake and Workflow Syste
 
 If you need help applying this approach to your business, [AI Training](https://davidjforer.com/ai-training-for-small-business-teams) can help your team internalize systemic thinking as a shared capability.
 
-Rebuild the business, then fix the workflows. The workflows will get better as a result, and the improvements will actually stick.
+Rebuild the business, then fix the workflows. The workflows will get better as a result, and this time the improvements will stick.
 
 
 ---

@@ -70,9 +70,9 @@ AI readiness is a profile across five dimensions, each of which affects the othe
 
 ### Dimension 1: Data Structure Maturity
 
-Everything AI does depends on data. The question is not whether you have data. Every firm has data. The question is whether your data is structured, consistent, and accessible in a way that AI can actually use.
+Everything AI does depends on data. The question is not whether you have data. Every firm has data. The question is whether your data is structured, consistent, and accessible in a way that AI can use.
 
-Structured data lives in defined fields in consistent formats. Your CRM has a deal stage field that your team actually uses the same way. Your project tracker records time against specific phases. Your invoicing data maps cleanly to client accounts.
+Structured data lives in defined fields in consistent formats. Your CRM has a deal stage field that your team uses the same way. Your project tracker records time against specific phases. Your invoicing data maps cleanly to client accounts.
 
 Unstructured data is everything else. Email threads. Shared drive folders with inconsistent naming. Spreadsheets that one person built and only they fully understand. Notes in the comments section of project cards.
 
@@ -118,7 +118,7 @@ Prompt inconsistency is the other major issue. Different team members prompting 
 
 Output validation is the discipline of treating AI outputs as drafts that require human review before they are used or sent. Firms that skip this step accumulate errors quietly over time. The cost surfaces later, usually in a client relationship.
 
-Discipline in all three areas is what separates a firm that has AI tools from one that has [operational excellence with AI](/blog/operational-excellence-with-ai), where the bottlenecks are actually eliminated rather than relocated. The underlying capability is [AI literacy](/blog/future-of-work-requires-ai), which is becoming a job requirement rather than a differentiator and has to be built deliberately.
+Discipline in all three areas is what separates a firm that has AI tools from one that has [operational excellence with AI](/blog/operational-excellence-with-ai), where the bottlenecks are eliminated rather than relocated. The underlying capability is [AI literacy](/blog/future-of-work-requires-ai), which is becoming a job requirement rather than a differentiator and has to be built deliberately.
 
 Evaluating your firm's AI usage discipline means taking a frank look at how much of your current AI activity is visible, governed, and consistently executed versus ad hoc and invisible.
 
@@ -170,9 +170,9 @@ Before building anything new, stabilize what exists.
 
 **Week 3: Risk and governance setup.** Conduct an honest inventory of current AI tool usage across your team. Establish basic policies around approved tools, data handling, and output review. Assign ownership for AI operations even if that is an informal designation for now. The policies are easier to write once you know [the ten things employees actually get wrong with AI at work](/blog/common-ai-mistakes), because most of them are habits rather than knowledge gaps.
 
-**Week 4: Controlled pilot launch.** Select one process that scored well on both data structure and process clarity. Build a limited pilot using that process. Define what success looks like before you start. Review outputs daily during the pilot period. [What to expect from an AI readiness audit](/blog/what-to-expect-from-an-ai-readiness-audit) sets realistic expectations for what this month actually produces.
+**Week 4: Controlled pilot launch.** Select one process that scored well on both data structure and process clarity. Build a limited pilot using that process. Define what success looks like before you start. Review outputs daily during the pilot period. [What to expect from an AI readiness audit](/blog/what-to-expect-from-an-ai-readiness-audit) sets realistic expectations for what this month produces.
 
-The goal of this month is to stop the bleeding, get visibility into what you are actually working with, and prove that a small, well-scoped implementation can work.
+The goal of this month is to stop the bleeding, get visibility into what you are working with, and prove that a small, well-scoped implementation can work.
 
 ---
 
@@ -206,13 +206,13 @@ The firms that see the best results from AI, whatever their technical level, did
 
 Readiness determines ROI. A firm with high readiness and basic AI tools will outperform a firm with low readiness and sophisticated AI tools every time. The technology is not the differentiator. The structure is.
 
-If you are serious about AI adoption in your firm, start with an honest assessment of where you stand across the five dimensions. Not where you aspire to be. Where you actually are today.
+If you are serious about AI adoption in your firm, start with an honest assessment of where you stand across the five dimensions. Not where you aspire to be. Where you are today.
 
 That assessment is the strategic foundation for everything that follows. It tells you what to build first, where you are likely to hit friction, and what a realistic timeline looks like given your current state.
 
 The firms that skip this step are the ones who come back six months later wondering why their AI investment did not deliver.
 
-The firms that take it seriously are the ones building operations that actually scale. If you have already done an initial assessment, [what to do after an AI readiness audit](/blog/after-the-ai-audit-how-to-act-on-your-findings) covers how to turn findings into a sequenced action plan.
+The firms that take it seriously are the ones building operations that scale. If you have already done an initial assessment, [what to do after an AI readiness audit](/blog/after-the-ai-audit-how-to-act-on-your-findings) covers how to turn findings into a sequenced action plan.
 
 ## Questions that come up often
 
@@ -249,6 +249,6 @@ One named person, even if the role is informal at first. They decide which tools
 
 ---
 
-Ready to see where your firm really stands on AI readiness? [Book a 30-minute call.](https://calendly.com/david-j-forer/30min)
+Ready to see where your firm stands on AI readiness? [Book a 30-minute call.](https://calendly.com/david-j-forer/30min)
 
 *Related reading: [How to Know If Your Small Business Is Ready for AI](/blog/how-to-know-if-your-small-business-is-ready-for-ai)*

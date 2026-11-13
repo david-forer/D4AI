@@ -12,7 +12,7 @@ articleType: "cluster"
 
 There is a common frustration with AI writing tools: the output sounds like it was written by someone who read a lot of articles on the topic but has never actually done the work. That quality problem almost always starts before the AI generates a single word.
 
-The brief is where the output is determined. A vague brief produces generic content. A specific brief produces content that can actually be refined into something useful.
+The brief is where the output is determined. A vague brief produces generic content. A specific brief produces content that can be refined into something useful.
 
 This is more consequential when you are using AI as part of a production system. If you are publishing at volume, which is what it takes to build topical authority, the quality floor of your content is set by the quality of your briefs. The AI cannot add specificity that the brief never provided.
 

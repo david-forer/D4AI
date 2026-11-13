@@ -49,7 +49,7 @@ If outcomes depend heavily on who's doing the work, the process itself isn't wel
 
 **8. Do you know which five workflows consume the most team time each week?**
 
-You can't prioritize automation opportunities you haven't measured. If this question requires guesswork, it's worth spending an hour with your team to understand where time is actually going.
+You can't prioritize automation opportunities you haven't measured. If this question requires guesswork, it's worth spending an hour with your team to understand where time is going.
 
 **9. Have you mapped where errors most commonly originate in your operations?**
 
