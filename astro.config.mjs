@@ -30,9 +30,26 @@ function blogLastmodMap() {
 }
 const lastmodMap = blogLastmodMap();
 
+// Dev server only: 301 /path/ to /path, matching the nginx rule in production.
+const stripTrailingSlashInDev = {
+  name: 'strip-trailing-slash-dev',
+  configureServer(server) {
+    server.middlewares.use((req, res, next) => {
+      const [p, q] = req.url.split('?');
+      if (p.length > 1 && p.endsWith('/')) {
+        res.writeHead(301, { Location: p.replace(/\/+$/, '') + (q ? '?' + q : '') });
+        return res.end();
+      }
+      next();
+    });
+  },
+};
+
 export default defineConfig({
   site: 'https://davidjforer.com',
   trailingSlash: 'never',
+
+  vite: { plugins: [stripTrailingSlashInDev] },
 
   // Dev/preview server port comes from the environment when assigned (falls back to Astro's 4321)
   server: ({ command }) => ({
