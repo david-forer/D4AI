@@ -2,6 +2,7 @@
 title: "When Not to Automate: The Processes That Should Stay Human"
 description: "Not every business process should be automated. Knowing what to automate and what not to automate matters as much as picking the right tools. Here is the diagnostic that separates good automation decisions from expensive ones."
 pubDate: 2026-03-07T00:00:00+01:00
+updatedDate: 2026-11-18T00:00:00Z
 tags: ["automation"]
 heroImage: "/images/blog/when-not-to-automate.webp"
 draft: false
@@ -17,6 +18,18 @@ Sooner or later every founder asks the same thing: to automate or not to automat
 That framing is incomplete, and following it without judgment leads to a particular kind of expensive mistake: automating the work that should not be automated, then spending months unwinding the damage.
 
 Automation discipline means deciding what to hand off to a system and what to keep. The two decisions are inseparable, and most small business automation programs that stall or fail do so because they skipped the second one.
+
+### When Not to Automate: A Quick Checklist
+
+Keep a step human, or redesign it first, if any of these is true:
+
+- The right answer depends on context that lives in someone's head, not in a system.
+- The step is a relationship moment, like the first call with a large lead or the reply to an upset client.
+- Fewer than roughly 70 to 80 percent of cases follow the standard path.
+- Nobody has mapped the process, or three people do it three different ways.
+- Nobody can say who would notice if the automation got it wrong.
+
+One yes is enough. The sections below explain each one.
 
 ---
 

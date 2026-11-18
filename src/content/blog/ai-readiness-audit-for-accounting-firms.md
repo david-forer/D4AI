@@ -24,7 +24,7 @@ I run these audits for founder-led firms with 5 to 20 people and no operations l
 
 ## Why Accounting Firms Are a Particular Case
 
-Most of the audit method is the same for any small service business. I interview the owner and a few people who do the work, document the processes that matter, review the systems, and rank what to do first. Accounting practices change the weighting of almost every step.
+Most of the audit method is the same for any small service business, and my [AI readiness audit guide](/blog/ai-readiness-audit-guide) walks through it in full. I interview the owner and a few people who do the work, document the processes that matter, review the systems, and rank what to do first. Accounting practices change the weighting of almost every step.
 
 ### Client Data Is the Whole Business
 

@@ -105,7 +105,7 @@ Build your priority list by scoring each identified gap on two dimensions: how o
 
 The training plan that emerges from a gap analysis looks fundamentally different from a generic AI training program. It is specific, prioritized, and tied to actual work.
 
-For each high-priority gap, define: the specific skill being developed, the format of training that best addresses it, the timeline, and the metric that will confirm the gap has closed.
+For each high-priority gap, define: the specific skill being developed, the format of training that best addresses it, the timeline, and the metric that will confirm the gap has closed (the post on [how to measure AI training success](/blog/ai-training-performance-metrics) covers which metrics to pick).
 
 Knowledge gaps get addressed with targeted demonstrations and examples drawn from the actual role. Skill gaps get addressed with supervised practice and structured feedback. Motivation gaps get addressed with evidence, peer examples, and direct conversation about the concerns. Process gaps get addressed with process redesign before or alongside training.
 
@@ -145,7 +145,7 @@ Two people, two different fixes. A single group workshop would have missed both.
 
 ## Skill Gap Analysis Tools
 
-You do not need dedicated software for a team of 5 to 20. A spreadsheet with one row per person, one column per target skill, and a score from 1 to 4 does the job. Add a column for gap type and a column for the planned fix.
+You do not need dedicated software for a team of 5 to 20. A spreadsheet with one row per person, one column per target skill, and a score from 1 to 4 does the job. That grid is an [AI team skill matrix](/blog/ai-skills-matrix-small-business), and it stays useful long after the first analysis. Add a column for gap type and a column for the planned fix.
 
 Survey forms from any tool you already use cover the self-assessment. Skills-platform vendors sell assessment tools too, but they make sense once you have more people and more roles than one spreadsheet can hold. There is no need to look for a GitHub template either. The structure above fits in one tab.
 

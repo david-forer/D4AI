@@ -3,7 +3,7 @@ title: "AI Process Mapping: Map the Process Before You Automate"
 seoTitle: "AI Process Mapping: How to Map Processes Before You Automate"
 description: "Use AI to draft process maps, find decision points and handoff friction, then turn the maps into SOPs and safe automation candidates before you automate anything."
 pubDate: 2025-12-09T00:00:00Z
-updatedDate: 2026-09-23T00:00:00Z
+updatedDate: 2026-11-18T00:00:00Z
 tags: ["automation"]
 heroImage: "/images/blog/systemizing-processes.webp"
 articleType: "cluster"
@@ -205,6 +205,14 @@ If you do not understand the process, automation will lock in the confusion.
 ## Why Process Mapping Comes Before Automation
 
 In any process mapping automation project, the map comes first. The map shows which steps repeat the same way every time and where the decision points sit. An automation built without it copies what the team does today, workarounds included. Map the process, fix what the map exposes, then automate the steps that are left.
+
+## RPA Process Mapping vs. AI Process Mapping
+
+RPA process mapping documents a task at the level a software robot needs. Robotic process automation tools such as UiPath or Power Automate Desktop replay clicks and keystrokes, so the map has to name every screen, field and button in order, with no judgment calls left in. A bookkeeper's routine for keying vendor invoices into QuickBooks can run to forty steps on an RPA map.
+
+AI process mapping works one level up. It maps the decisions and handoffs between people, which is where most small business processes go wrong, and it can hold an "it depends" step because a person or an AI step makes the call.
+
+Start with the AI process map. Write the RPA-level map only for the steps it shows are stable and rule-bound enough to automate.
 
 ## What AI Should Not Do in Process Mapping
 

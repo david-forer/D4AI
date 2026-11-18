@@ -2,7 +2,7 @@
 title: "How to Measure AI Training Success in a Small Business"
 description: "If you cannot measure whether your AI training is working, you cannot improve it or justify continuing it. Here is a practical framework for tracking the metrics that actually tell you something useful."
 pubDate: 2026-03-07T00:00:00Z
-updatedDate: 2026-09-23T00:00:00Z
+updatedDate: 2026-11-18T00:00:00Z
 tags: ["ai-training"]
 heroImage: "/images/blog/ai-training-performance-metrics.webp"
 articleType: "cluster"
@@ -140,6 +140,10 @@ Measure what is happening. The data tells you where to focus next.
 ### How do you measure AI training effectiveness?
 
 Look at what people do after the training, not whether they attended it. Track how often each role uses AI on its target tasks, whether the output meets your quality bar, and how much time each workflow saves. If those three are moving, the training is working.
+
+### How do you measure AI-enabled training?
+
+Measure it the way you would measure any training, by usage on real tasks, output quality and hours saved, then add one check for the AI part. Compare how long new hires take to reach regular AI use before and after AI started delivering the training.
 
 ### What is the difference between vanity metrics and useful AI training metrics?
 

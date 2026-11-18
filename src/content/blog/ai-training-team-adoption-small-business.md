@@ -127,7 +127,7 @@ Implementation starts with one or two high-frequency workflows. Each successful 
 
 Measurement closes the loop. Without it, adoption drifts. With it, the business can see what is working, identify where skill gaps persist, and make the case for continued investment in AI capability.
 
-The right metrics for a small business are simple: time saved on specific tasks, output quality scores, adoption rates by role, and error rates in AI-assisted processes. Consistent tracking is enough.
+The right metrics for a small business are simple: time saved on specific tasks, output quality scores, adoption rates by role, and error rates in AI-assisted processes. Consistent tracking is enough. For the full set and a review schedule, see [how to measure AI training success](/blog/ai-training-performance-metrics).
 
 ---
 
