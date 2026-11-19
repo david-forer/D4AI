@@ -1,0 +1,98 @@
+---
+// Start Here. A reading order for first-time visitors: three posts, then the
+// calculator, then the $750 audit. Linked from the nav and /blog.
+// The calculator is not copied here. It lives only in Hero.astro, so this page
+// links to it at /#calculator.
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { breadcrumbJson } from '../lib/schema';
+
+const steps = [
+  {
+    href: '/blog/when-not-to-automate',
+    title: 'When Not to Automate: The Processes That Should Stay Human',
+    take: "A five-question check for which steps in your business should stay with a person. Read it before you pay for another tool, because the cheapest automation is the one you don't build.",
+  },
+  {
+    href: '/blog/diy-ai-vs-hiring-a-consultant',
+    title: 'DIY AI vs. Hiring a Consultant: How to Decide',
+    take: 'One process can take 15 to 40 hours to build, test and document yourself. This shows when that trade makes sense for a founder and when outside help costs less.',
+  },
+  {
+    href: '/blog/ai-readiness-audit-guide',
+    title: 'AI Readiness Audit for Small Businesses',
+    take: 'What an audit checks, what three real audits found and what each one costs. Fixed prices, from $750.',
+  },
+];
+---
+
+<Layout
+  title="Start Here: Three Articles for Founders Who Are the Bottleneck, in Reading Order | David J Forer"
+  description="New to the site? Three articles in order for founders of $1M to $5M businesses: what to keep human, whether to build AI yourself, and what an audit checks."
+>
+  <script is:inline type="application/ld+json" set:html={breadcrumbJson([['Home','/'],['Start here','/start-here']])} />
+  <PageHero
+    eyebrow="Start here"
+    title="New here? Read these three first."
+    accent="these three"
+    text="This site is for founders of $1M to $5M businesses where the work still waits on them. There are more than 160 articles here. These three, in this order, cover what to keep human, whether to build it yourself and what an audit checks."
+  />
+
+  <section class="path">
+    <div class="wrap">
+      <ol class="steps">
+        {steps.map((s, i) => (
+          <li class="step">
+            <span class="n">{String(i + 1).padStart(2, '0')}</span>
+            <div>
+              <h2><a href={s.href}>{s.title}</a></h2>
+              <p>{s.take}</p>
+              <a class="read" href={s.href}>Read it <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </li>
+        ))}
+        <li class="step last">
+          <span class="n">04</span>
+          <div>
+            <h2>Then run your own number.</h2>
+            <p>Put two numbers into the Bottleneck Cost slip: the hours a week work waits on you, and what your hour is worth. You get what that waiting costs you in a year.</p>
+            <a class="read" href="/#calculator">Open the calculator <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <CtaBand
+    title="Want to know where that number comes from?"
+    text="The 80/20 Process Audit is the smallest first step. Two to three hours with you, your top three processes mapped, and the report delivered the same or next day. $750, fixed."
+    primaryLabel="See the $750 audit"
+    primaryHref="/ai-readiness-and-ai-audits#pricing"
+    secondaryLabel="Book a call"
+    secondaryHref="https://calendly.com/david-j-forer/30min"
+  />
+</Layout>
+
+<style>
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 28px; }
+  .path { background: var(--paper); color: var(--ink); padding: 90px 0; font-size: 18px; line-height: 1.6; }
+  .steps { list-style: none; margin: 0; padding: 0; border-top: 4px solid var(--ink); }
+  .step { display: grid; grid-template-columns: 96px 1fr; gap: 22px; padding: 34px 0; border-bottom: 1px solid var(--rule); }
+  .step .n { font-weight: 800; font-size: 68px; line-height: .85; color: transparent; -webkit-text-stroke: 2px var(--orange); font-variant-numeric: tabular-nums; }
+  .step h2 { font-size: 26px; font-weight: 700; letter-spacing: -.03em; line-height: 1.15; margin-bottom: 12px; }
+  .step h2 a { color: var(--ink); text-decoration: none; }
+  .step h2 a:hover { text-decoration: underline; }
+  .step p { color: var(--ink-2); max-width: 640px; }
+  .read { display: inline-flex; gap: 8px; margin-top: 14px; font-weight: 600; color: var(--orange); text-decoration: none; }
+  .read:hover { text-decoration: underline; }
+  .step a:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+  .step.last { background: var(--slip); padding-left: 20px; padding-right: 20px; }
+
+  @media (max-width: 520px) {
+    .path { padding: 64px 0; font-size: 17px; }
+    .wrap { padding: 0 20px; }
+    .step { grid-template-columns: 64px 1fr; }
+    .step .n { font-size: 46px; }
+  }
+</style>

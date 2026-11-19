@@ -12,6 +12,13 @@
 // button visible on every page on a free download. Now it books a call.
 // /playbooks-checklists is still reachable from the Resources dropdown.
 //
+// CTA changed again 2026-11-19 (David's call): the button now says Start here
+// and points at /start-here, a reading order for first-time visitors. Booking
+// links already sit on most pages (hero, pricing, footer, case studies), so the
+// nav spends its button on the visitor who is not ready to book yet. Book a call
+// stays as a plain link beside it, hidden under 1100px where the bar runs out
+// of room. In the mobile menu it is a second, outlined button.
+//
 // Restyled 2026-10-07 to the navy palette. Behaviour:
 //   - A page that renders a hero marked data-dark-top (Hero.astro, PageHero.astro)
 //     gets a transparent bar over the hero and no spacer. The CSS selector is
@@ -67,7 +74,8 @@ const BOOKING = 'https://calendly.com/david-j-forer/30min';
 
       <a class="link" href="/built">Built</a>
       <a class="link" href="/about">About</a>
-      <a class="cta" href={BOOKING}>Book a call</a>
+      <a class="link book" href={BOOKING}>Book a call</a>
+      <a class="cta" href="/start-here">Start here</a>
     </nav>
 
     <button id="mobile-menu-button" class="burger" type="button" aria-controls="mobile-menu" aria-expanded="false">
@@ -104,7 +112,8 @@ const BOOKING = 'https://calendly.com/david-j-forer/30min';
 
     <a class="m-link" href="/built">Built</a>
     <a class="m-link" href="/about">About</a>
-    <a class="m-cta" href={BOOKING}>Book a call</a>
+    <a class="m-cta" href="/start-here">Start here</a>
+    <a class="m-cta m-cta-ghost" href={BOOKING}>Book a call</a>
   </div>
 </header>
 
@@ -198,6 +207,8 @@ const BOOKING = 'https://calendly.com/david-j-forer/30min';
   .m-sub a.strong { color: #fff; font-weight: 600; }
   .m-cta { display: flex; justify-content: center; align-items: center; min-height: 48px; margin-top: 20px; border-radius: 999px; background: var(--flame); color: var(--navy); font-size: 17px; font-weight: 700; text-decoration: none; }
 
+  .m-cta-ghost { margin-top: 12px; background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.4); }
+  @media (max-width: 1099px) { .link.book { display: none; } }
   @media (min-width: 768px) { .links { display: flex; } .burger { display: none; } .mobile { display: none; } }
   @media (max-width: 520px) { .bar { padding: 0 20px; } .brand-name { font-size: 21px; } }
   @media (prefers-reduced-motion: reduce) { .site-nav, .menu, .cta, .brand-bar, .m-toggle .caret { transition: none; } }
