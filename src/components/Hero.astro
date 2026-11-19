@@ -6,6 +6,10 @@ import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
 // numbers the visitor types, so nothing on screen is an assumption of mine.
 // The defaults show a worked example of 6 hours at $250. The "Example" stamp was removed 2026-10-08.
 // 2026-11-11: the "Weeks in a year / 52" line became "40-hour weeks lost a year", same height.
+// 2026-11-19: the slip's button carries the visitor's own yearly figure ("Find where
+// my $78,000 goes") and fires a calc_cta_click GA4 event with it. It was "See where
+// it comes from". Changed outright rather than split tested, at this traffic a test
+// would not settle for months.
 //
 // The modal was a Formbricks iframe until 2026-09-18. It is now a native
 // LeadForm, which made it the last third-party form embed on the site.
@@ -70,7 +74,7 @@ import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
           <span class="big" id="calc-yearly" aria-hidden="true">$78,000</span>
           <span class="after" id="calc-after">a year, before anyone else waits on you. The $750 audit shows where it comes from and what to fix first.</span>
         </div>
-        <a class="btn btn-orange" href="#pricing">See where it comes from <span class="arr" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-orange" href="#pricing" id="calc-cta">Find where my <span id="calc-cta-figure">$78,000</span> goes <span class="arr" aria-hidden="true">&rarr;</span></a>
       </form>
     </div>
   </div>
@@ -163,6 +167,8 @@ import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
     const totalTag = document.getElementById("calc-total-tag");
     const afterEl = document.getElementById("calc-after");
     const liveEl = document.getElementById("calc-live");
+    const ctaEl = document.getElementById("calc-cta");
+    const ctaFigure = document.getElementById("calc-cta-figure");
     if (hoursInput && rateInput && peopleInput && peopleField && yearlyOut && weekOut && monthOut) {
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       const toNumber = (el: HTMLInputElement) => {
@@ -242,6 +248,8 @@ import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
           const hoursLost = (mode === "team" ? toNumber(peopleInput) : 1) * toNumber(hoursInput) * 52;
           weeksOut.textContent = (Math.round((hoursLost / 40) * 10) / 10).toLocaleString("en-US");
         }
+        // The button shows the final figure straight away, not the count-up.
+        if (ctaFigure) ctaFigure.textContent = money(year);
         tween(year);
       };
       const clamp = (el: HTMLInputElement) => {
@@ -287,6 +295,11 @@ import { GIVEAWAY_SURVEY, GIVEAWAY_FIELDS } from '../lib/leadForms';
       rateInput.addEventListener("input", touched);
       peopleInput.addEventListener("input", touched);
       paint(shown);
+      if (ctaEl) {
+        ctaEl.addEventListener("click", () => {
+          if (typeof window.gtag === "function") window.gtag("event", "calc_cta_click", { mode, yearly: Math.round(total() * 52) });
+        });
+      }
     }
   });
 </script>

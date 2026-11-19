@@ -136,6 +136,8 @@ To automate is to have software or a machine do a task that a person used to do 
 
 The opposite of automation is manual work, where a person performs every step. "No automation" means the same thing. Most healthy small businesses sit between the two, with automation on routine steps and people on judgment steps.
 
+Send this to whoever on your team asks whether a client should hear from a real person.
+
 ---
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [The Framework for High-Leverage Automation](/blog/framework-high-leverage-automation) · [When to Say No to AI](/blog/when-to-say-no-to-ai)*

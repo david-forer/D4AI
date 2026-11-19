@@ -128,6 +128,8 @@ Yes, and many founders do. Keep notes on what you built, which tools it connects
 
 One single-purpose automation on a stable process, such as sending a reminder when a form comes in or logging new leads into a spreadsheet. If it fails, the damage is small, and you learn how the tools behave before you trust them with anything bigger.
 
+Send this to the teammate who has already built three automations on their lunch break.
+
 ---
 
 *Part of the [Working with an AI Consultant](/blog/working-with-an-ai-consultant) series.*

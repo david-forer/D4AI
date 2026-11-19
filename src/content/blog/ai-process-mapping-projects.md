@@ -320,6 +320,8 @@ The best tool for process mapping is the one your team will open. Lucidchart and
 
 Yes, though most small teams do not need a dedicated one. A general AI assistant can draft the step sequence from your transcripts and task lists. Some diagramming tools also generate a diagram from text. Check any output against the team before you trust it.
 
+Send this to the person on your team who keeps saying the process lives in their head.
+
 ---
 
 *Related reading: [Automation Architecture for Small Teams](/blog/automation-architecture-for-small-teams) · [Process Mapping: The Foundation of Successful Automation](/blog/map-business-processes-for-automation)*
