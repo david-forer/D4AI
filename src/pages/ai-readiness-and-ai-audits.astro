@@ -8,18 +8,18 @@ const pageUrl = 'https://davidjforer.com/ai-readiness-and-ai-audits';
 
 // Bump when the page content materially changes. A dateModified that never
 // moves is worse than none.
-const dateModified = '2026-11-18';
+const dateModified = '2026-11-23';
 
 // Mirrors the visible FAQ section verbatim. Google requires the marked-up
 // answer to match what a visitor actually reads, so edit both or neither.
 const faqs = [
   {
     q: 'What is an AI readiness audit?',
-    a: "An AI readiness audit is a structured review of how your business actually runs, done before you buy any AI tools. It shows which work AI can take on, which work it can't, and what to fix first.",
+    a: "An AI readiness audit is a structured review of how your business actually runs. It is done before you buy any AI tools. It shows which work AI can take on, which work it can't, and what to fix first.",
   },
   {
     q: 'How much does an AI readiness audit cost?',
-    a: 'An AI readiness audit costs $750 for the 80/20 Process Audit, $1,500 for the Quick Assessment or $4,000 for the Full AI Operations Audit. Each is a fixed price agreed in writing before anything starts, with no retainer and no hourly billing.',
+    a: 'An AI readiness audit costs $750 to $4,000, at a fixed price. That is $750 for the 80/20 Process Audit, $1,500 for the Quick Assessment or $4,000 for the Full AI Operations Audit. Each price is agreed in writing before anything starts, with no retainer and no hourly billing.',
   },
   {
     q: 'How long does the AI Audit take?',
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: 'Do I need technical knowledge about AI?',
-    a: 'No technical knowledge is required. We explain everything in business terms and provide guidance on implementation regardless of your technical background.',
+    a: 'No technical knowledge is required. I explain everything in business terms and provide guidance on implementation regardless of your technical background.',
   },
   {
     q: 'Will this disrupt our current operations?',
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: 'Is my business too small for AI?',
-    a: 'Not at all. Our AI Audit is designed for small businesses between $1M and $5M in revenue who want to scale without adding headcount.',
+    a: 'Not at all. The AI Audit is designed for small businesses between $1M and $5M in revenue who want to scale without adding headcount.',
   },
   {
     q: 'How do I know if my small business is ready for AI?',
@@ -47,15 +47,15 @@ const faqs = [
   },
   {
     q: 'What does an AI readiness audit involve for a growing business?',
-    a: 'It runs in 5 phases over about a week: preparation and context, interviews and discovery, readiness analysis, findings and synthesis, then delivery and next-step planning. You get a clear read on AI readiness for your business and a prioritized plan for what to do first.',
+    a: 'It runs in 5 phases: preparation and context, interviews and discovery, readiness analysis, findings and synthesis, then delivery and next-step planning. It takes from one day to two weeks, depending on the tier. You get a clear read on AI readiness for your business and a prioritized plan for what to do first.',
   },
   {
     q: 'Do you help with implementation?',
-    a: 'Yes. We provide implementation planning as part of the audit, and we offer additional implementation services if you need hands-on assistance.',
+    a: 'Yes. I provide implementation planning as part of the audit, and I offer additional implementation services if you need hands-on assistance.',
   },
 ];
 
-// The five delivery phases, taken from the visible "Our AI Readiness Audit
+// The five delivery phases, taken from the visible "My AI Readiness Audit
 // Process" section.
 const phases = [
   'Preparation and Context',
@@ -164,6 +164,7 @@ image="/images/ai-audit.webp"
       text="Most small businesses are already experimenting with AI. Very few know whether they are doing it safely."
       text2="An AI Readiness Audit shows you how AI is actually being used across your business. You come out with a shared picture of where you stand and a realistic plan your team can carry out."
     >
+      <Fragment slot="meta"><p>Fixed price from $750, built for founder-led businesses with 5 to 20 people.</p></Fragment>
       <a class="ph-btn ph-btn-flame" href="#pricing">See audit options and pricing <span aria-hidden="true">&rarr;</span></a>
     </PageHero>
 
@@ -172,7 +173,7 @@ image="/images/ai-audit.webp"
         <div class="container mx-auto px-6 max-w-5xl">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-blue-700 mb-4">Is Your Business Actually Ready for AI?</h2>
-                <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-6">An AI readiness audit is a structured review of how your business actually runs, done before you buy any AI tools. It shows which work AI can take on, which work it can't, and what to fix first.</p>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-6">An AI readiness audit is a structured review of how your business actually runs. It is done before you buy any AI tools. It shows which work AI can take on, which work it can't, and what to fix first.</p>
                 <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-6"><a href="/blog/ai-operations-for-small-businesses" class="text-blue-700 font-bold hover:underline">AI adoption</a> rarely fails because of technology. It fails because businesses skip the groundwork.</p>
                 <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-8">Without shared standards, clear priorities, and an understanding of <a href="/blog/intake-and-workflow-systems-for-growing-firms" class="text-blue-700 font-bold hover:underline">real workflows</a>, AI use becomes fragmented. One person experiments while another avoids it, and leadership can't see either. Risk builds quietly.</p>
                 <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">The AI Readiness Audit is built for small businesses between $1M and $5M in revenue. It checks AI readiness for small business teams before anyone buys another tool, so adoption happens on purpose.</p>
@@ -233,10 +234,10 @@ image="/images/ai-audit.webp"
     {/* Process Section */}
     <section class="py-16 bg-white">
         <div class="container mx-auto px-6 max-w-5xl">
-            <h2 class="text-3xl font-bold text-blue-700 mb-8 text-center">Our AI Readiness Audit Process</h2>
+            <h2 class="text-3xl font-bold text-blue-700 mb-8 text-center">My AI Readiness Audit Process</h2>
             
             <div class="max-w-3xl mx-auto text-center mb-12">
-                <p class="text-lg text-gray-700">This small business AI readiness audit is thorough and light on your team's time. It checks AI audit readiness across your workflows, tools, data and team, and looks at how work actually happens before making any recommendation.</p>
+                <p class="text-lg text-gray-700">This small business AI readiness audit is thorough and light on your team's time. It checks AI audit readiness across your workflows, tools, data and team, and looks at how work actually happens before making any recommendation. The days below follow the one-week Quick Assessment.</p>
             </div>
             
             <div class="space-y-12">
@@ -246,7 +247,7 @@ image="/images/ai-audit.webp"
                     </div>
                     <div class="md:w-3/4">
                         <h3 class="text-2xl font-bold text-gray-800 mb-2">Preparation and Context</h3>
-                        <p class="text-gray-600 mb-4">We gather background on your business, goals, <a href="/blog/ai-tools-tech-stack-small-business" class="text-blue-700 font-bold hover:underline">tools</a>, and constraints to ensure the audit reflects reality, not theory.</p>
+                        <p class="text-gray-600 mb-4">I gather background on your business, goals, <a href="/blog/ai-tools-tech-stack-small-business" class="text-blue-700 font-bold hover:underline">tools</a>, and constraints to ensure the audit reflects reality, not theory.</p>
                         <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
                             <p class="text-sm text-gray-500"><strong>Timeline:</strong> Days 0-1</p>
                         </div>
@@ -259,7 +260,7 @@ image="/images/ai-audit.webp"
                     </div>
                     <div class="md:w-3/4">
                         <h3 class="text-2xl font-bold text-gray-800 mb-2">Interviews and Discovery</h3>
-                        <p class="text-gray-600 mb-4">We speak with leadership and key team members to find where the friction is and how AI is being used today.</p>
+                        <p class="text-gray-600 mb-4">I speak with leadership and key team members to find where the friction is and how AI is being used today.</p>
                         <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
                             <p class="text-sm text-gray-500"><strong>Timeline:</strong> Days 1-2</p>
                         </div>
@@ -272,7 +273,7 @@ image="/images/ai-audit.webp"
                     </div>
                     <div class="md:w-3/4">
                         <h3 class="text-2xl font-bold text-gray-800 mb-2">Readiness Analysis</h3>
-                        <p class="text-gray-600 mb-4">We assess <a href="/blog/ai-readiness-framework-for-service-businesses" class="text-blue-700 font-bold hover:underline">AI maturity</a> across workflows, skills, risk exposure, and operational structure to identify where AI will help or hurt.</p>
+                        <p class="text-gray-600 mb-4">I assess <a href="/blog/ai-readiness-framework-for-service-businesses" class="text-blue-700 font-bold hover:underline">AI maturity</a> across workflows, skills, risk exposure, and operational structure to identify where AI will help or hurt.</p>
                         <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
                             <p class="text-sm text-gray-500"><strong>Timeline:</strong> Days 3-4</p>
                         </div>
@@ -285,7 +286,7 @@ image="/images/ai-audit.webp"
                     </div>
                     <div class="md:w-3/4">
                         <h3 class="text-2xl font-bold text-gray-800 mb-2">Findings and Synthesis</h3>
-                        <p class="text-gray-600 mb-4">We consolidate insights into a clear picture of readiness, gaps, and opportunities.</p>
+                        <p class="text-gray-600 mb-4">I consolidate insights into a clear picture of readiness, gaps, and opportunities.</p>
                         <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
                             <p class="text-sm text-gray-500"><strong>Timeline:</strong> Days 4-5</p>
                         </div>
@@ -390,7 +391,7 @@ image="/images/ai-audit.webp"
                     <ul class="space-y-4">
                         <li class="flex items-start">
                             <span class="text-blue-700 mr-3 mt-1">✓</span>
-                            <span>Process maps of the workflows we examine, yours to keep (<a href="/resources/sops/hvac-service-call" class="text-blue-700 font-bold hover:underline">see a sample SOP</a>)</span>
+                            <span>Process maps of the workflows I examine, yours to keep (<a href="/resources/sops/hvac-service-call" class="text-blue-700 font-bold hover:underline">see a sample SOP</a>)</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-blue-700 mr-3 mt-1">✓</span>
@@ -720,12 +721,12 @@ image="/images/ai-audit.webp"
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                 <div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">What is an AI readiness audit?</h3>
-                    <p class="text-gray-600">An AI readiness audit is a structured review of how your business actually runs, done before you buy any AI tools. It shows which work AI can take on, which work it can't, and what to fix first.</p>
+                    <p class="text-gray-600">An AI readiness audit is a structured review of how your business actually runs. It is done before you buy any AI tools. It shows which work AI can take on, which work it can't, and what to fix first.</p>
                 </div>
 
                 <div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">How much does an AI readiness audit cost?</h3>
-                    <p class="text-gray-600">An AI readiness audit costs $750 for the 80/20 Process Audit, $1,500 for the Quick Assessment or $4,000 for the Full AI Operations Audit. Each is a fixed price agreed in writing before anything starts, with no retainer and no hourly billing.</p>
+                    <p class="text-gray-600">An AI readiness audit costs $750 to $4,000, at a fixed price. That is $750 for the 80/20 Process Audit, $1,500 for the Quick Assessment or $4,000 for the Full AI Operations Audit. Each price is agreed in writing before anything starts, with no retainer and no hourly billing.</p>
                 </div>
 
                 <div>
@@ -735,7 +736,7 @@ image="/images/ai-audit.webp"
                 
                 <div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">Do I need technical knowledge about AI?</h3>
-                    <p class="text-gray-600">No technical knowledge is required. We explain everything in business terms and provide guidance on implementation regardless of your technical background.</p>
+                    <p class="text-gray-600">No technical knowledge is required. I explain everything in business terms and provide guidance on implementation regardless of your technical background.</p>
                 </div>
                 
                 <div>
@@ -745,7 +746,7 @@ image="/images/ai-audit.webp"
                 
                 <div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">Is my business too small for AI?</h3>
-                    <p class="text-gray-600">Not at all. Our AI Audit is designed for small businesses between $1M and $5M in revenue who want to scale without adding headcount.</p>
+                    <p class="text-gray-600">Not at all. The AI Audit is designed for small businesses between $1M and $5M in revenue who want to scale without adding headcount.</p>
                 </div>
                 
                 <div>
@@ -760,12 +761,12 @@ image="/images/ai-audit.webp"
                 
                 <div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">What does an AI readiness audit involve for a growing business?</h3>
-                    <p class="text-gray-600">It runs in 5 phases over about a week: preparation and context, interviews and discovery, readiness analysis, findings and synthesis, then delivery and next-step planning. You get a clear read on AI readiness for your business and a prioritized plan for what to do first.</p>
+                    <p class="text-gray-600">It runs in 5 phases: preparation and context, interviews and discovery, readiness analysis, findings and synthesis, then delivery and next-step planning. It takes from one day to two weeks, depending on the tier. You get a clear read on AI readiness for your business and a prioritized plan for what to do first.</p>
                 </div>
                 
                 <div>
                     <h3 class="text-xl font-bold text-gray-800 mb-3">Do you help with implementation?</h3>
-                    <p class="text-gray-600">Yes. We provide implementation planning as part of the audit, and we offer additional implementation services if you need hands-on assistance.</p>
+                    <p class="text-gray-600">Yes. I provide implementation planning as part of the audit, and I offer additional implementation services if you need hands-on assistance.</p>
                 </div>
             </div>
         </div>
