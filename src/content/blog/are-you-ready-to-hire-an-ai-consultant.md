@@ -67,7 +67,7 @@ These patterns tend to produce engagements that cost the full amount and deliver
 
 ### You Can't Describe a Specific Problem Yet
 
-Curiosity about AI with no felt operational need leads to expensive weeks spent looking for a problem to solve. If you know something is off and can't yet say what, start smaller. An [AI readiness audit](/blog/ai-readiness-audit-guide) or a short process audit is built for that stage, and it will tell you whether a larger engagement makes sense.
+Curiosity about AI with no felt operational need leads to expensive weeks spent looking for a problem to solve. If you know something is off and can't yet say what, start smaller. An [AI readiness audit](/ai-readiness-and-ai-audits) or a short process audit is built for that stage, and it will tell you whether a larger engagement makes sense.
 
 ### Your Team Is Already at Capacity
 

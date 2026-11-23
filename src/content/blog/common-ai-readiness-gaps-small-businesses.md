@@ -97,4 +97,4 @@ Most businesses can close their critical gaps in four to eight weeks. The work i
 
 [Find out where your business stands with an AI readiness assessment.](/ai-readiness-and-ai-audits)
 
-*Related reading: [AI Readiness Audit for Small Businesses](/blog/ai-readiness-audit-guide) | [Why Small Businesses Break at $1M Revenue](/blog/why-small-businesses-break-at-1m-revenue) | [AI Automation Stack for Small Businesses](/blog/ai-automation-stack-for-small-businesses)*
+*Related reading: [What Is an AI Readiness Audit?](/blog/ai-readiness-audit-guide) | [Why Small Businesses Break at $1M Revenue](/blog/why-small-businesses-break-at-1m-revenue) | [AI Automation Stack for Small Businesses](/blog/ai-automation-stack-for-small-businesses)*

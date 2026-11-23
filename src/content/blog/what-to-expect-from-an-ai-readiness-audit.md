@@ -101,4 +101,4 @@ No. The audit is a standalone engagement with a defined scope and deliverable. T
 
 If you've been thinking about AI operations but aren't sure where your business stands, the audit is the right starting point. [Learn more about how the AI readiness assessment works.](/ai-readiness-and-ai-audits)
 
-*Related reading: [AI Readiness Audit for Small Businesses](/blog/ai-readiness-audit-guide) | [AI Operations for Small Businesses: The Complete Guide](/blog/ai-operations-for-small-businesses)*
+*Related reading: [What Is an AI Readiness Audit?](/blog/ai-readiness-audit-guide) | [AI Operations for Small Businesses: The Complete Guide](/blog/ai-operations-for-small-businesses)*

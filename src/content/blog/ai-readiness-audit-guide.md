@@ -1,9 +1,9 @@
 ---
-title: "AI Readiness Audit for Small Businesses"
-seoTitle: "AI Readiness Audit Explained: What It Checks, 6 Questions and 3 Real Audits | David J Forer"
-description: "What an AI readiness audit checks in a business of 5 to 20 people, the questions it asks, what it costs and what you get, with three real audits."
+title: "What Is an AI Readiness Audit? What It Checks and What It Finds"
+seoTitle: "What Is an AI Readiness Audit? What It Checks, With 3 Real Audits | David J Forer"
+description: "What an AI readiness audit checks in a business of 5 to 20 people, the six questions it starts with, and what it found in three real audits."
 pubDate: 2025-12-09T00:00:00Z
-updatedDate: 2026-11-10T00:00:00Z
+updatedDate: 2026-11-23T00:00:00Z
 faqSchema: true
 tags: ["ai-readiness"]
 heroImage: "/images/blog/backwards-ai-audit.webp"
@@ -12,7 +12,7 @@ articleType: "cluster"
 
 An AI readiness audit is a short, structured look at how your business runs, done before you spend more on AI tools. For a company of 5 to 20 people it takes about a week and ends with a ranked list of what to fix first and where AI fits.
 
-I run these audits for founder-led businesses with no operations lead. This page covers what the audit checks, what it found in two real businesses, what it costs and what you walk away with. If you already know you want one, the [AI readiness audit service page](/ai-readiness-and-ai-audits) has the three fixed-price tiers and the booking link.
+I run these audits for founder-led businesses with no operations lead. This page covers what the audit checks and what it found in three real businesses. If you already know you want one, my [AI readiness audit](/ai-readiness-and-ai-audits) page has the three fixed-price tiers, what each one includes and the booking link.
 
 ## Why Small Businesses Need One Before They Buy More Tools
 
@@ -91,20 +91,9 @@ The value is easy to price once you have the hours. A financial services firm th
 
 Every audit marks where a person reviews the output. Anything that reaches a customer, moves money or makes a decision has a named reviewer before it goes out.
 
-## What You Get at the End
+## How Long It Takes and What It Costs
 
-- Process maps of the workflows we examined, yours to keep.
-- 3 to 6 high-impact opportunities grounded in how your work runs.
-- A phased roadmap that balances quick wins with longer builds.
-- A baseline measured before anything changes, so you can tell later whether it worked.
-- Guidance on whether training, process changes or automation should come next.
-- A review call to walk through the findings.
-
-## How Long an AI Readiness Audit Takes and What It Costs
-
-The standard audit runs about 7 days. Preparation takes days 0 to 1, interviews days 1 to 2, analysis days 3 to 4, findings days 4 to 5, and the report and review call land by day 7.
-
-Pricing is fixed and agreed in writing before anything starts, with no retainer and no hourly billing. The 80/20 Process Audit is $750, takes 2 to 3 hours with you and is delivered the same or next day. The Quick Assessment is $1,500, takes 4 to 6 hours of interviews and runs a week. The Full AI Operations Audit is $4,000, takes 8 to 15 hours of interviews, runs two weeks and includes one working automation built during the audit week. See the full [AI readiness audit pricing and tier breakdown](/ai-readiness-and-ai-audits#pricing).
+A standard audit runs about a week and ends with a written report and a review call. Prices are fixed and agreed in writing before anything starts, with no retainer and no hourly billing. The three tiers, what each one includes and the booking link are on the [AI readiness audit](/ai-readiness-and-ai-audits#pricing) page.
 
 ## How to Prepare
 
@@ -122,7 +111,7 @@ The Quick Assessment runs about a week from start to finish. The 80/20 Process A
 
 ### How Much Does an AI Readiness Audit Cost?
 
-Fixed prices of $750, $1,500 or $4,000, depending on how many processes and people are in scope. The price is agreed in writing before the work starts.
+The price is fixed, depends on how many processes and people are in scope, and is agreed in writing before the work starts. The three tiers are on the [AI readiness audit](/ai-readiness-and-ai-audits#pricing) page.
 
 ### What Does AI Audit Readiness Require?
 
@@ -140,4 +129,4 @@ It depends on what is holding you back. The ad agency audit above priced a clien
 
 Ready to see where your business stands? [Book an AI readiness audit for your small business](/ai-readiness-and-ai-audits#pricing).
 
-*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) | [What an AI Readiness Audit Looks Like for Small, Founder-Led Teams](/blog/ai-readiness-audit-founder-led-teams) | [AI Readiness Checklist for Founders](/blog/ai-readiness-checklist-for-founders)*
+*Related reading: [AI Readiness Framework for Service Businesses](/blog/ai-readiness-framework-for-service-businesses) | [What an AI Readiness Audit Looks Like for Small, Founder-Led Teams](/blog/ai-audit-for-small-teams) | [AI Readiness Checklist for Founders](/blog/ai-readiness-checklist-for-founders)*

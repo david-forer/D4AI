@@ -26,7 +26,7 @@ Most service firms think they are ready for AI. They have the tools. They have t
 
 And then the pilot fails. Or it works in isolation but never scales. Or it creates three new problems for every one it solves.
 
-The issue is not the technology. The issue is that readiness for AI is a structural problem, not a technical one. And most firms skip the part where they figure out if they are actually ready. That skipped step has a name and a method: [an AI readiness audit](/blog/ai-readiness-audit-guide) reads your data, systems, skills and governance so you know which use cases to fund first.
+The issue is not the technology. The issue is that readiness for AI is a structural problem, not a technical one. And most firms skip the part where they figure out if they are actually ready. That skipped step has a name and a method: [an AI readiness audit](/ai-readiness-and-ai-audits) reads your data, systems, skills and governance so you know which use cases to fund first.
 
 This article walks through a five-dimension model for assessing AI readiness in service businesses, how to score where your firm really stands, and what a realistic path forward looks like. If you are running a firm between five and twenty-five people, this framework was built for your situation.
 

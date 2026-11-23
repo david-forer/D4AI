@@ -1,7 +1,9 @@
 ---
 title: "What an AI Readiness Audit Looks Like for a 10-Person Business"
-description: "Learn what an AI readiness audit actually reviews for small businesses and how it helps founder-led teams scale AI without creating hidden operational risk."
+seoTitle: "Already Using AI? What a Readiness Audit Checks in a 10-Person Team | David J Forer"
+description: "Your team already uses AI every day. Here is what an AI readiness audit reviews in a 5 to 20 person business, the questions it asks, and the risks it finds before they spread."
 pubDate: 2026-01-03T00:00:00Z
+updatedDate: 2026-11-23T00:00:00Z
 tags: ["ai-readiness"]
 heroImage: "/images/blog/ai-readiness-audit.webp"
 articleType: "cluster"
@@ -92,6 +94,24 @@ Fewer people means less buffer for errors.
 Usage does not equal readiness. Frequency hides inconsistency.
 
 An audit compares output quality, not usage volume.
+
+## What an AI Readiness Audit Asks
+
+The audit works from a short set of plain questions, asked about real tasks and not in the abstract.
+
+- Which tasks does AI touch today, and who does each one?
+- Does anyone review the output before it reaches a customer or a decision?
+- Who owns the result when the output is wrong?
+- Do two people doing the same job use the same prompts and standards?
+- What happens when someone spots an error, and who hears about it?
+
+You need very little ready beforehand: AI in use on a few real tasks, one person who can walk through how each task gets done, and a handful of recent outputs to look at. You do not need documentation, a policy or a tool inventory. Those are often what the audit produces.
+
+## What an AI Readiness Audit Is Not
+
+It is not a tool recommendation exercise. Tools may come up, but they are never the starting point. Changing software does not fix unclear ownership or broken handoffs.
+
+It is also not enterprise governance. Small teams do not need heavy policy. They need simple standards, clear owners and a defined escalation path when something looks wrong. A good audit respects the pace of a founder-led business and adds structure only where it pays for itself.
 
 ## When an Audit Makes Sense vs When It Does Not
 

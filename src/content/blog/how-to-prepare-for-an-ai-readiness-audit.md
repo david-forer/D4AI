@@ -95,4 +95,4 @@ That's it. You're ready.
 
 [Learn more about what the AI readiness audit process involves.](/ai-readiness-and-ai-audits)
 
-*Related reading: [AI Readiness Audit for Small Businesses](/blog/ai-readiness-audit-guide) | [AI Process Mapping for Small Business Projects](/blog/ai-process-mapping-projects) | [AI Readiness Audit for Small Teams](/blog/ai-audit-for-small-teams)*
+*Related reading: [What Is an AI Readiness Audit?](/blog/ai-readiness-audit-guide) | [AI Process Mapping for Small Business Projects](/blog/ai-process-mapping-projects) | [Already Using AI? What an Audit Checks](/blog/ai-audit-for-small-teams)*

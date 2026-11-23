@@ -49,6 +49,10 @@ export default defineConfig({
   site: 'https://davidjforer.com',
   trailingSlash: 'never',
 
+  redirects: {
+    '/blog/ai-readiness-audit-founder-led-teams': '/blog/ai-audit-for-small-teams',
+  },
+
   vite: { plugins: [stripTrailingSlashInDev] },
 
   // Dev/preview server port comes from the environment when assigned (falls back to Astro's 4321)

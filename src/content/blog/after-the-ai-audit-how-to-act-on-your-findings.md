@@ -107,4 +107,4 @@ The sequencing principle applies here as well: foundation before automation, aut
 
 [Ready to start with the assessment? Learn how the AI readiness audit works.](/ai-readiness-and-ai-audits)
 
-*Related reading: [AI Readiness Audit for Small Businesses](/blog/ai-readiness-audit-guide) | [AI Operations for Small Businesses: The Complete Guide](/blog/ai-operations-for-small-businesses) | [AI Automation Stack for Small Businesses](/blog/ai-automation-stack-for-small-businesses) | [Scaling a Business with AI Instead of Hiring](/blog/scaling-a-business-with-ai-instead-of-hiring)*
+*Related reading: [What Is an AI Readiness Audit?](/blog/ai-readiness-audit-guide) | [AI Operations for Small Businesses: The Complete Guide](/blog/ai-operations-for-small-businesses) | [AI Automation Stack for Small Businesses](/blog/ai-automation-stack-for-small-businesses) | [Scaling a Business with AI Instead of Hiring](/blog/scaling-a-business-with-ai-instead-of-hiring)*
